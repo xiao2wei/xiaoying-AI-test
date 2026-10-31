@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-10-31T07:35:36.696760+00:00",
+  "completed_at": "2026-10-31T07:36:50.006Z",
+  "passed": true,
+  "scope": "Two real browser questions through the existing Agent; not a new formal evaluation.",
+  "browser": "156.0.8078.74",
+  "questions": [
+    "校内申诉从知道权利受侵害之日起多久内提出？因不可抗力逾期，障碍消除后多久可以提起？",
+    "这里的30天和10天都是工作日吗？请分别说明从什么时候开始计算。"
+  ],
+  "session_id": "05c3088e63c443848cacc117238f4466",
+  "real_turns": 2,
+  "actual_history_verified": true,
+  "model_requests": 8,
+  "tool_calls": 4,
+  "total_tokens": 29317,
+  "browser_errors": [],
+  "mobile_no_horizontal_overflow": true,
+  "outputs": [
+    {
+      "path": "examples/submission/web-ui/real-turn-1.json",
+      "sha256": "737b239aaa477467f0ae20466c4649ff3583b421ae8a96baa233e8eb251109c1"
+    },
+    {
+      "path": "examples/submission/web-ui/real-turn-2.json",
+      "sha256": "592cb0c59650bdb0c7110ea1c94c95d974be5bebc36361f624789333733e57bb"
+    }
+  ],
+  "screenshots": [
+    "docs/images/web-welcome.png",
+    "docs/images/web-overview.png",
+    "docs/images/web-citations.png",
+    "docs/images/web-trace.png",
+    "docs/images/web-conversation.png",
+    "docs/images/web-mobile.png"
+  ],
+  "validation_started_at": "2026-10-31T07:36:38.897Z",
+  "reused_first_turn_after_capture_selector_fix": true
+}

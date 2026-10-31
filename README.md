@@ -1,10 +1,59 @@
 # 小影 AI 笔试第三题：企业知识问答 Agent
 
-面向教职工的人事制度问答 CLI。使用用户指定的唯一 PDF，通过中文混合检索与真实 DeepSeek 决策，输出回答、文档 ID、原文引用、资料缺口和任务状态。
+面向教职工的人事制度问答工具，提供CLI与Vue 3页面。使用用户指定的唯一 PDF，通过中文混合检索与真实 DeepSeek 决策，输出回答、文档 ID、原文引用、资料缺口和任务状态。
 
 **评审入口：[交付与验收对照表](docs/SUBMISSION.md) → [最后一轮结果与真实一问一答](docs/LATEST-TEST-RESULTS.md) → [依据缺口与未完成案例说明](docs/FAILED-CASES.md)。**
 
 当前按用户授权的“内容正确优先”口径：**Agent正确处理率100.00%**，**基础RAG正确处理率92.50%**，**关键场景稳定性正确处理率100.00%**。比例包含合理资料不足、追问及预期停止；基础RAG另有3组因测试注入故障后缺少恢复流程而未完成，不记回答错误。原答案不变，属于既有记录的事后重分类，规则与证据见[评分说明](docs/CONTENT-POLICY.md)。
+
+## Vue 3 问答页面
+
+支持多轮追问、原文引用展开、PDF定位、实际执行过程、复制回答与下载记录。直接复用现有真实DeepSeek Agent，浏览器不保存密钥。完整安装、开发模式、限额与故障处理见 **[Web使用说明](docs/WEB-UI.md)**。
+
+完成下文Python安装、.env配置和build-index后，在仓库根目录执行：
+
+~~~powershell
+cd frontend
+npm ci
+npm run build
+cd ..
+.venv\Scripts\python -m policy_agent.webapp
+~~~
+
+打开 **http://127.0.0.1:8000**。Node.js需满足20.19+的20系列或22.12及以上，本次实测24.11.1。每个Web会话最多8轮，每轮独立使用12轮决策、10次工具预算；CLI批量会话仍按整组共享预算。页面过程在本轮完成后展开查看。
+
+### 实际运行截图
+
+以下6张均来自本次运行中的Vue页面。问答为真实DeepSeek输出，非样式占位内容；原始记录、调用用量与截图哈希见[Web验证材料](examples/submission/web-ui/README.md)。
+
+**完整问答页面**
+
+![真实DeepSeek问答页面](docs/images/web-overview.png)
+
+**多轮上下文追问**
+
+![真实两轮连续问答](docs/images/web-conversation.png)
+
+**引用原文与PDF定位**
+
+![展开制度原文引用](docs/images/web-citations.png)
+
+<details>
+<summary>查看另外3张：执行过程、手机布局、新建对话页面</summary>
+
+**真实执行过程（局部截图）**
+
+![模型决策与工具返回过程](docs/images/web-trace.png)
+
+**手机窄屏布局**
+
+![手机宽度下的问答与原文](docs/images/web-mobile.png)
+
+**新建对话页面**
+
+![没有预置答案的欢迎页](docs/images/web-welcome.png)
+
+</details>
 
 ## 安装与无需密钥的检查
 
@@ -64,6 +113,7 @@ metrics命令只复算数值；人工确认状态和用户接受差距的决定�
 
 - [辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf](data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf)：唯一原始资料，229页。29份制度、562个片段、61张表格保留出处。使用真实制度汇编而非合成制度；合成的是测试问题与工具故障。某制度发布日期未知时保留null，不臆造日期。
 - src/policy_agent/：原生Python Agent、模型接入、检索/读取、引用校验、独立评测。无Agent框架；框架名称不替代决策证据。
+- frontend/：Vue3单页问答、浏览器交互测试、真实验证与截图脚本。
 - tests/：确定性程序测试；不计入模型答题正确率。
 - evaluation/：12组开发题、40组正式题、校准标签及人工确认。参考答案不进入检索索引或回答提示。
 - examples/：真实输入、实际输出、Trace、评分、失败历史与交付复现记录。
@@ -79,4 +129,4 @@ metrics命令只复算数值；人工确认状态和用户接受差距的决定�
 - 项目主要实施日期为2026-10-30至2026-10-31。用户本人明确“未计时”；未虚构个人工时或声称3小时完成。可审计的问答用量和运行时间见examples/submission/time-record.json。
 - 代码、资料处理和文档主要由Codex完成；用户负责选题、资料、范围、校准反馈与验收，详见AI使用记录。剩余改进不纳入本轮已接受范围。
 
-原扣分场景的实际回答、原文位置与重新分类见[案例说明](docs/FAILED-CASES.md)。本次不新增DeepSeek请求，68项程序测试通过；[新规则](docs/CONTENT-POLICY.md)与旧分分别保留，不将口径变化宣称为模型能力提升。
+原扣分场景的实际回答、原文位置与重新分类见[案例说明](docs/FAILED-CASES.md)。此前口径调整不新增DeepSeek请求；新增Web入口后83项程序测试、8项浏览器测试通过，2轮真实问答另产生8次模型请求，详见[Web验证](docs/steps/12-vue-web-ui.md)。[新规则](docs/CONTENT-POLICY.md)与旧分分别保留，不将口径变化宣称为模型能力提升。

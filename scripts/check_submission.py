@@ -39,13 +39,13 @@ def check(out):
  perturb=load(r/'examples/submission/evidence-change/summary.json');record('real_document_view_change',perturb['passed'] and perturb['not_in_formal_40_or_stability_30'],perturb['checks'])
  record('personal_time_honest',load(r/'examples/submission/time-record.json')['personal_time']=='未计时')
  files=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=r).decode().split('\0');files=[p for p in files if p and (r/p).is_file()]
- forbidden=[p for p in files if p=='.env' or p.startswith(('data/cache/','work/','.venv/')) or p in ['examples/external-status/deepseek-20261031.json','examples/external-status/tls-check-20261031.json']]
+ forbidden=[p for p in files if p=='.env' or p.startswith(('data/cache/','work/','.venv/','frontend/node_modules/','frontend/dist/','frontend/test-results/','frontend/playwright-report/')) or p in ['examples/external-status/deepseek-20261031.json','examples/external-status/tls-check-20261031.json']]
  record('private_and_generated_files_excluded',not forbidden,forbidden)
  secret=[];reasoning=[];large=[]
  for p in files:
   f=r/p
   if f.stat().st_size>=100_000_000:large.append(p)
-  if f.suffix.lower() in ['.py','.json','.jsonl','.md','.txt','.log','.toml'] or f.name in ['.env.example','.gitignore']:
+  if f.suffix.lower() in ['.py','.json','.jsonl','.md','.txt','.log','.toml','.js','.mjs','.vue','.css','.html'] or f.name in ['.env.example','.gitignore']:
    txt=f.read_text(encoding='utf-8',errors='replace')
    if re.search(r'(?:sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)',txt):secret.append(p)
    if re.search(r'"reasoning_content"\s*:\s*"[^"\n]{20}',txt):reasoning.append(p)

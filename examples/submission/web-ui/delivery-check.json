@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-10-31T07:41:14.016Z",
+  "passed": true,
+  "npm_ci_exit": 0,
+  "npm_build_exit": 0,
+  "python_tests": {
+    "passed": 83,
+    "total": 83
+  },
+  "browser_tests": {
+    "passed": 8,
+    "total": 8,
+    "failures": 0
+  },
+  "local_document_links": {
+    "checked": 87,
+    "missing": []
+  },
+  "bundle_credential_flags": [],
+  "screenshot_hashes": [
+    {
+      "path": "docs/images/web-welcome.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "docs/images/web-overview.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "docs/images/web-citations.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "docs/images/web-trace.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "docs/images/web-conversation.png",
+      "sha256_matches": true
+    },
+    {
+      "path": "docs/images/web-mobile.png",
+      "sha256_matches": true
+    }
+  ],
+  "real_output_hashes": [
+    {
+      "path": "examples/submission/web-ui/real-turn-1.json",
+      "sha256_matches": true
+    },
+    {
+      "path": "examples/submission/web-ui/real-turn-2.json",
+      "sha256_matches": true
+    }
+  ],
+  "real_model_requests": 8,
+  "real_total_tokens": 29317,
+  "formal_evaluation_repeated": false
+}

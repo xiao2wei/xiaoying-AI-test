@@ -1,0 +1,560 @@
+{
+  "mode": "agent",
+  "question": "校内申诉从知道权利受侵害之日起多久内提出？因不可抗力逾期，障碍消除后多久可以提起？",
+  "history": [],
+  "output": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。",
+        "citations": [
+          {
+            "chunk_id": "D24-C012",
+            "quote": "第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "doc_id": "D24",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "version_date": "2021-05-30"
+          }
+        ]
+      },
+      {
+        "text": "因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。",
+        "citations": [
+          {
+            "chunk_id": "D24-C012",
+            "quote": "因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "doc_id": "D24",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "version_date": "2021-05-30"
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "answer": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。\n因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。"
+  },
+  "raw_final": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。",
+        "citations": [
+          {
+            "chunk_id": "D24-C012",
+            "quote": "第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "doc_id": "D24",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "version_date": "2021-05-30"
+          }
+        ]
+      },
+      {
+        "text": "因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。",
+        "citations": [
+          {
+            "chunk_id": "D24-C012",
+            "quote": "因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "doc_id": "D24",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "version_date": "2021-05-30"
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "answer": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。\n因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。"
+  },
+  "validation_errors": [],
+  "trace": [
+    {
+      "kind": "model",
+      "purpose": "agent",
+      "model": "deepseek-flash",
+      "time": "2026-10-31T07:35:36.752154+00:00",
+      "attempt": 1,
+      "prompt_sha256": "c429fdfa0eca9dfcc5821e4f6249201c7d817058c5bbef4c782f334689e975f1",
+      "real_api": true,
+      "thinking": "disabled",
+      "reasoning_effort": null,
+      "read_timeout_seconds": 40,
+      "response_transport": "json_object",
+      "http_status": 200,
+      "response_id": "38f32ac1-3364-449a-b4b8-88d62ce7931c",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2101,
+        "completion_tokens": 41,
+        "total_tokens": 2142,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 181
+      },
+      "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"校内申诉 知道权利受侵害之日起 期限 不可抗力 障碍消除\"},\"reason\":\"检索校内申诉提出期限及不可抗力逾期规则\"}}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 5.750999999999999e-05,
+      "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+      "format_repairs": [
+        "redundant_closing_braces"
+      ],
+      "seconds": 1.1757
+    },
+    {
+      "kind": "decision",
+      "step": 1,
+      "action": "search",
+      "arguments": {
+        "query": "校内申诉 知道权利受侵害之日起 期限 不可抗力 障碍消除"
+      },
+      "reason": "检索校内申诉提出期限及不可抗力逾期规则"
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "校内申诉 知道权利受侵害之日起 期限 不可抗力 障碍消除"
+      },
+      "result": {
+        "ok": true,
+        "query": "校内申诉 知道权利受侵害之日起 期限 不可抗力 障碍消除",
+        "hits": [
+          {
+            "chunk_id": "D24-C012",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "score": 0.095238,
+            "semantic_score": 0.736548,
+            "lexical_score": 109.3148,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十一条 第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C014",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十三条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "score": 0.080515,
+            "semantic_score": 0.652192,
+            "lexical_score": 23.7364,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十三条 第十三条 申诉处理委员会在收到申诉书之日起5个工作日内，依据本办法第\n八、九、十、十一条进行审查，区别情况作出如下处理：\n（一）符合申诉条件的，决定复查，同时书面告知申诉人和被申诉人。\n（二）不符合申诉条件的，不予受理或驳回，同时书面告知申诉人。\n（三）对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通\n知申诉人需要补正的全部内容和补正期限。逾期补正视为放弃申诉。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C003",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第二条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              183
+            ],
+            "printed_pages": [
+              178
+            ],
+            "score": 0.080128,
+            "semantic_score": 0.653055,
+            "lexical_score": 23.3817,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二条 第二条 教职工校内申诉制度是《中华人民共和国教师法》赋予教职工享有申诉\n权利在学校内部管理的具体体现，属于非诉讼意义上的行政申诉。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C024",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第二十三条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              185
+            ],
+            "printed_pages": [
+              180
+            ],
+            "score": 0.076812,
+            "semantic_score": 0.658512,
+            "lexical_score": 16.7258,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十三条 第二十三条 申诉处理期间，申诉人就申诉事项或与之牵连事项，另行提起诉讼\n的，应以书面形式通知教职工校内申诉处理委员会，申诉处理委员会接到上述通知\n后，应立即中止复查工作。\n第六章 附 则",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C009",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第八条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              183
+            ],
+            "printed_pages": [
+              178
+            ],
+            "score": 0.075714,
+            "semantic_score": 0.656195,
+            "lexical_score": 19.4023,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第八条 第八条 有下列情形之一的，申诉人可以向申诉处理委员会提起申诉：\n（一）对学校或学校有关行政部门作出的行政处分（处理，下同）决定持有异议的；\n（二）认为学校或学校有关行政部门不执行学校相关规章制度致使其合法权益受\n到侵害，要求学校处理的；\n（三）申诉处理委员会认为应当受理的其他申诉事项。",
+            "related_table_chunks": []
+          }
+        ],
+        "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+      },
+      "seconds": 0.0114,
+      "attempt_number": 1
+    },
+    {
+      "kind": "model",
+      "purpose": "agent",
+      "model": "deepseek-flash",
+      "time": "2026-10-31T07:35:37.991363+00:00",
+      "attempt": 1,
+      "prompt_sha256": "c3ef46b3ab98ae4192d768eabd912c386ad51eb418dfb951c37f2bbf07e5b5eb",
+      "real_api": true,
+      "thinking": "disabled",
+      "reasoning_effort": null,
+      "read_timeout_seconds": 40,
+      "response_transport": "json_object",
+      "http_status": 200,
+      "response_id": "3269b51e-2bbe-4c3e-91e8-336d92077765",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3240,
+        "completion_tokens": 34,
+        "total_tokens": 3274,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        },
+        "prompt_cache_hit_tokens": 2048,
+        "prompt_cache_miss_tokens": 1192
+      },
+      "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C012\"]}, \"reason\": \"读取申诉期限条款原文以准确引用\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.000205344,
+      "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+      "seconds": 0.6636
+    },
+    {
+      "kind": "decision",
+      "step": 2,
+      "action": "read",
+      "arguments": {
+        "chunk_ids": [
+          "D24-C012"
+        ]
+      },
+      "reason": "读取申诉期限条款原文以准确引用"
+    },
+    {
+      "kind": "tool",
+      "name": "read",
+      "arguments": {
+        "chunk_id": "D24-C012"
+      },
+      "result": {
+        "ok": true,
+        "chunk": {
+          "doc_id": "D24",
+          "article": "第十一条",
+          "text": "第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。",
+          "pdf_pages": [
+            184
+          ],
+          "table_ids": [],
+          "chunk_id": "D24-C012",
+          "printed_pages": [
+            179
+          ],
+          "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+          "version_date": "2021-05-30",
+          "previous_chunk_id": "D24-C011",
+          "next_chunk_id": "D24-C013",
+          "related_table_chunks": []
+        },
+        "tables": []
+      },
+      "seconds": 0.0,
+      "attempt_number": 2
+    },
+    {
+      "kind": "model",
+      "purpose": "agent",
+      "model": "deepseek-flash",
+      "time": "2026-10-31T07:35:38.705324+00:00",
+      "attempt": 1,
+      "prompt_sha256": "46738d0c7c161a68ea36acec6f441101a23537837e8c19b65fe549e852b5d900",
+      "real_api": true,
+      "thinking": "disabled",
+      "reasoning_effort": null,
+      "read_timeout_seconds": 40,
+      "response_transport": "json_object",
+      "http_status": 200,
+      "response_id": "d5cce669-c415-486c-8903-839550060c61",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3509,
+        "completion_tokens": 217,
+        "total_tokens": 3726,
+        "prompt_tokens_details": {
+          "cached_tokens": 3200
+        },
+        "prompt_cache_hit_tokens": 3200,
+        "prompt_cache_miss_tokens": 309
+      },
+      "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。\", \"citations\": [{\"chunk_id\": \"D24-C012\", \"quote\": \"第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\\n向申诉处理委员会提出。\"}]}, {\"text\": \"因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。\", \"citations\": [{\"chunk_id\": \"D24-C012\", \"quote\": \"因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。\"}]}], \"gaps\": []}, \"reason\": \"已读取第十一条原文，完整覆盖两个子问\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00018614999999999997,
+      "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+      "seconds": 1.3764
+    },
+    {
+      "kind": "decision",
+      "step": 3,
+      "action": "finish",
+      "arguments": {},
+      "reason": "已读取第十一条原文，完整覆盖两个子问"
+    },
+    {
+      "kind": "model",
+      "purpose": "agent_review",
+      "model": "deepseek-flash",
+      "time": "2026-10-31T07:35:40.137636+00:00",
+      "attempt": 1,
+      "prompt_sha256": "5cf906707f142efb87487eb4f8ebecf0332a6eff0948ef6de02a9c55640778b9",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "high",
+      "read_timeout_seconds": 40,
+      "response_transport": "json_object",
+      "http_status": 200,
+      "response_id": "cc02cd78-d9bf-4c1f-9868-c421b9493b1b",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3961,
+        "completion_tokens": 628,
+        "total_tokens": 4589,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 2041
+      },
+      "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"学生 校内申诉 知道或者应当知道 权利受到侵害 期限 障碍消除 工作日\"}, \"reason\": \"核对是否存在适用于学生的不同申诉期限，避免将教职工办法误用于学生\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00068871,
+      "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+      "seconds": 4.8476
+    },
+    {
+      "kind": "decision",
+      "step": 4,
+      "action": "search",
+      "arguments": {
+        "query": "学生 校内申诉 知道或者应当知道 权利受到侵害 期限 障碍消除 工作日"
+      },
+      "reason": "核对是否存在适用于学生的不同申诉期限，避免将教职工办法误用于学生"
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "学生 校内申诉 知道或者应当知道 权利受到侵害 期限 障碍消除 工作日"
+      },
+      "result": {
+        "ok": true,
+        "query": "学生 校内申诉 知道或者应当知道 权利受到侵害 期限 障碍消除 工作日",
+        "hits": [
+          {
+            "chunk_id": "D24-C012",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "score": 0.095238,
+            "semantic_score": 0.777987,
+            "lexical_score": 136.6499,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十一条 第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C009",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第八条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              183
+            ],
+            "printed_pages": [
+              178
+            ],
+            "score": 0.087121,
+            "semantic_score": 0.701837,
+            "lexical_score": 35.5006,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第八条 第八条 有下列情形之一的，申诉人可以向申诉处理委员会提起申诉：\n（一）对学校或学校有关行政部门作出的行政处分（处理，下同）决定持有异议的；\n（二）认为学校或学校有关行政部门不执行学校相关规章制度致使其合法权益受\n到侵害，要求学校处理的；\n（三）申诉处理委员会认为应当受理的其他申诉事项。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C014",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十三条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "score": 0.081667,
+            "semantic_score": 0.699051,
+            "lexical_score": 25.9767,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十三条 第十三条 申诉处理委员会在收到申诉书之日起5个工作日内，依据本办法第\n八、九、十、十一条进行审查，区别情况作出如下处理：\n（一）符合申诉条件的，决定复查，同时书面告知申诉人和被申诉人。\n（二）不符合申诉条件的，不予受理或驳回，同时书面告知申诉人。\n（三）对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通\n知申诉人需要补正的全部内容和补正期限。逾期补正视为放弃申诉。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C003",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第二条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              183
+            ],
+            "printed_pages": [
+              178
+            ],
+            "score": 0.076923,
+            "semantic_score": 0.687531,
+            "lexical_score": 23.3817,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二条 第二条 教职工校内申诉制度是《中华人民共和国教师法》赋予教职工享有申诉\n权利在学校内部管理的具体体现，属于非诉讼意义上的行政申诉。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D24-C027",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "前言或附件",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              186
+            ],
+            "printed_pages": [
+              181
+            ],
+            "score": 0.076812,
+            "semantic_score": 0.682365,
+            "lexical_score": 33.1704,
+            "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 前言或附件 附1\n辽宁科技大学教职工校内申诉处理申请表\n申诉事由 |  |  |  |  | \n申诉人姓名 |  | 性别 |  | 年龄 | \n申诉人所在单位 |  | 申诉人联系电话 |  |  | \n申诉人联系地址 |  | 申诉人联系邮箱 |  |  | \n被申诉机关 |  |  |  |  | \n申诉人应提供的材料 | □学校处分（处理）决定□申诉人申诉事项□申诉人申诉理由□申诉人申诉要求□本人合法权益受到侵害的佐证材料□申诉人认为需提供的其它材料 |  |  |  | \n申诉申请人签字：年 月 日 |  |  |  |  |",
+            "related_table_chunks": []
+          }
+        ],
+        "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+      },
+      "seconds": 0.0126,
+      "attempt_number": 3
+    },
+    {
+      "kind": "model",
+      "purpose": "agent",
+      "model": "deepseek-flash",
+      "time": "2026-10-31T07:35:45.048228+00:00",
+      "attempt": 1,
+      "prompt_sha256": "a95162fc6b436afe6bc23d5a37d61f9143aac8384126ce18498f7067921a0145",
+      "real_api": true,
+      "thinking": "disabled",
+      "reasoning_effort": null,
+      "read_timeout_seconds": 40,
+      "response_transport": "json_object",
+      "http_status": 200,
+      "response_id": "c675ba42-a2f4-4a6e-ade3-a3d86f6962a7",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 5207,
+        "completion_tokens": 224,
+        "total_tokens": 5431,
+        "prompt_tokens_details": {
+          "cached_tokens": 3712
+        },
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 1495
+      },
+      "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。\", \"citations\": [{\"chunk_id\": \"D24-C012\", \"quote\": \"第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\\n向申诉处理委员会提出。\"}]}, {\"text\": \"因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉，逾期不再受理。\", \"citations\": [{\"chunk_id\": \"D24-C012\", \"quote\": \"因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。\"}]}], \"gaps\": []}, \"reason\": \"已读取第十一条原文，完整覆盖两个子问；检索未见其他申诉期限版本\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.000369786,
+      "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+      "seconds": 1.6575
+    },
+    {
+      "kind": "decision",
+      "step": 5,
+      "action": "finish",
+      "arguments": {},
+      "reason": "已读取第十一条原文，完整覆盖两个子问；检索未见其他申诉期限版本"
+    }
+  ],
+  "read_ids": [
+    "D24-C012"
+  ],
+  "first_hits": [
+    "D24-C012",
+    "D24-C014",
+    "D24-C003",
+    "D24-C024",
+    "D24-C009"
+  ],
+  "seconds": 10.0052,
+  "model_calls": 5,
+  "tool_calls": 3,
+  "real_model": true,
+  "fault": {}
+}
