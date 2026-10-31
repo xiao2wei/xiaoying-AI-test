@@ -1,0 +1,116 @@
+{
+  "key": "agent--TEST29--1",
+  "mode": "agent",
+  "id": "TEST29",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "2811a2d0759dccc0d86f8e85d08c8ac56b2a4450e38e936d29ba7324efb8d959",
+  "run_sha256": "750ff68259fbdde1e44bbc11789202312d02e8f814ef0dd5359a3438e5a68d46",
+  "created_at": "2026-10-31T05:11:37.888582+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "均应履行不低于8年的服务期",
+          "reason": "实际回答中明确写明公开招聘入职教师应履行不低于8年服务期"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "自来校报到上岗之日起计算",
+          "reason": "实际回答写明服务期自来校报到上岗之日起计算，且排除了特殊协议的情况"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "该规定适用于学校新入校工作的教师。",
+          "answer_span": "该规定适用于学校新入校工作的教师。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文明确说明适用范围包括新入校工作的教师，且已读原文包含该内容"
+        },
+        {
+          "text": "凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。",
+          "answer_span": "凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文明确包含该规定，已读原文支持"
+        },
+        {
+          "text": "基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。",
+          "answer_span": "基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文明确起算点和协议例外，已读原文支持，推断合理"
+        },
+        {
+          "text": "服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。",
+          "answer_span": "服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "两个引用分别支持相应部分，已读原文包含这些规定"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "回答准确引用了规定，正确说明了最低服务期不低于8年且起算点为来校报到上岗之日，引用支持充分，无错误或遗漏。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:11:02.963575+00:00",
+        "attempt": 1,
+        "prompt_sha256": "9cf77d502f23d09db67366bb119b0c89641986c2fa090f9fdb6d1edac1869f28",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "9b563852-f912-4924-a791-24cae8f21505",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 4516,
+          "completion_tokens": 3723,
+          "total_tokens": 8239,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 3076
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 3492
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"均应履行不低于8年的服务期\",\n      \"reason\": \"实际回答中明确写明公开招聘入职教师应履行不低于8年服务期\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际回答写明服务期自来校报到上岗之日起计算，且排除了特殊协议的情况\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"该规定适用于学校新入校工作的教师。\",\n      \"answer_span\": \"该规定适用于学校新入校工作的教师。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确说明适用范围包括新入校工作的教师，且已读原文包含该内容\"\n    },\n    {\n      \"text\": \"凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。\",\n      \"answer_span\": \"凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含该规定，已读原文支持\"\n    },\n    {\n      \"text\": \"基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。\",\n      \"answer_span\": \"基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确起算点和协议例外，已读原文支持，推断合理\"\n    },\n    {\n      \"text\": \"服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。\",\n      \"answer_span\": \"服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"两个引用分别支持相应部分，已读原文包含这些规定\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了规定，正确说明了最低服务期不低于8年且起算点为来校报到上岗之日，引用支持充分，无错误或遗漏。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.009698788,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 34.9228
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

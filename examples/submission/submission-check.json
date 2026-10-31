@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "required_files",
+      "passed": true,
+      "detail": [
+        "README.md",
+        ".env.example",
+        "requirements.txt",
+        "pyproject.toml",
+        "constraints-tested.txt",
+        "docs/01-requirements.md",
+        "docs/02-solution.md",
+        "docs/03-evaluation.md",
+        "docs/04-ai-usage.md",
+        "docs/05-retrospective.md",
+        "docs/SUBMISSION.md",
+        "scripts/demo_offline.py"
+      ]
+    },
+    {
+      "check": "frozen_controlled_files",
+      "passed": true,
+      "detail": {
+        "checked": 65,
+        "changed": [],
+        "excluded_generated_packaging_metadata": [
+          "src/xiaoying_policy_agent.egg-info/dependency_links.txt",
+          "src/xiaoying_policy_agent.egg-info/entry_points.txt",
+          "src/xiaoying_policy_agent.egg-info/requires.txt",
+          "src/xiaoying_policy_agent.egg-info/SOURCES.txt",
+          "src/xiaoying_policy_agent.egg-info/top_level.txt"
+        ],
+        "reason": "egg-info为安装生成文件，原冻结清单保留；不作为跨目录可移植的源码承诺"
+      }
+    },
+    {
+      "check": "six_acceptance_categories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_actual_scores_present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_user_confirmation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metric_acceptance_keeps_failures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean_environment_reproduction",
+      "passed": true,
+      "detail": [
+        {
+          "step": "01-create-venv",
+          "command": [
+            "F:\\Python\\py313\\python.exe",
+            "-m",
+            "venv",
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1"
+          ],
+          "exit_code": 0,
+          "seconds": 2.627
+        },
+        {
+          "step": "02-install",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "install",
+            "-c",
+            "constraints-tested.txt",
+            "-r",
+            "requirements.txt"
+          ],
+          "exit_code": 0,
+          "seconds": 217.213
+        },
+        {
+          "step": "03-pip-check",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.349
+        },
+        {
+          "step": "10-rebuild-index",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "policy_agent.cli",
+            "build-index"
+          ],
+          "exit_code": 0,
+          "seconds": 32.945
+        },
+        {
+          "step": "11-program-tests",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "scripts/run_tests.py",
+            "work/reproduced-tests.json"
+          ],
+          "exit_code": 0,
+          "seconds": 1.249
+        },
+        {
+          "step": "12-offline-demo",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "scripts/demo_offline.py",
+            "--out",
+            "work/reproduced-mock"
+          ],
+          "exit_code": 0,
+          "seconds": 0.687
+        },
+        {
+          "step": "13-cli-help",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "policy_agent.cli",
+            "--help"
+          ],
+          "exit_code": 0,
+          "seconds": 0.612
+        },
+        {
+          "step": "14-retrieval-smoke",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-c",
+            "import json; from policy_agent.retrieval import Retriever; r=Retriever(); q=r.search('人才科研建设专项经费项目最长执行多久'); assert q['ok'] and len(q['hits'])==5; ids=[x['chunk_id'] for x in q['hits']]; assert 'D03-C008' in ids; a=r.read('D03-C008'); assert a['ok']; print(json.dumps({'hits':ids,'read':a['chunk']['chunk_id']},ensure_ascii=False))"
+          ],
+          "exit_code": 0,
+          "seconds": 1.011
+        }
+      ]
+    },
+    {
+      "check": "offline_mock_separated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_document_view_change",
+      "passed": true,
+      "detail": {
+        "both_real_models": true,
+        "single_has_evidence": true,
+        "both_reads_conflict": true,
+        "output_changed": true
+      }
+    },
+    {
+      "check": "personal_time_honest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "private_and_generated_files_excluded",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_detected_live_secrets",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_internal_reasoning_body",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "file_size_limits",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "candidate_file_count": 2507,
+  "candidate_size_bytes": 50472648,
+  "new_model_requests": 0,
+  "note": "程序交付检查不证明全部模型答案正确；人工确认和已知质量失败单独保留。"
+}

@@ -1,0 +1,110 @@
+{
+  "key": "agent--TEST33--0",
+  "mode": "agent",
+  "id": "TEST33",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "c63a5b2cc654f28facc0a18d6f02030b8f59345da3a69adce659742794c3f9ad",
+  "run_sha256": "b504214a0da38046a44815996c3d93261e123503594f88aaf2a79e28621ea3ed",
+  "created_at": "2026-10-31T05:12:32.206659+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "首聘期为4年，工作服务期为8年",
+          "reason": "明确表达了首聘期为4年、工作服务期为8年，符合要点要求。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+          "answer_span": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文包含该内容，且实际已读文档支持。"
+        },
+        {
+          "text": "首聘期为4年",
+          "answer_span": "首聘期为4年",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文包含‘首聘期为4年’，且实际已读文档支持。"
+        },
+        {
+          "text": "工作服务期为8年",
+          "answer_span": "工作服务期为8年",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文包含‘工作服务期为8年’，且实际已读文档支持。"
+        },
+        {
+          "text": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+          "answer_span": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用原文包含该内容，且实际已读文档支持。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了首聘期和服务期，引用可靠且与已读资料一致，无严重错误，行动决策合理。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:12:08.042170+00:00",
+        "attempt": 1,
+        "prompt_sha256": "3897120f9c5a85dd1da04c65d068ab7acb7fdb5c9817aedfcbcc9ced27e1e499",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "c3235ec1-ea66-448b-bbf0-a3b9760e74a9",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 1873,
+          "completion_tokens": 2856,
+          "total_tokens": 4729,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2387
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 849
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"首聘期为4年，工作服务期为8年\",\n      \"reason\": \"明确表达了首聘期为4年、工作服务期为8年，符合要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"answer_span\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含该内容，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"首聘期为4年\",\n      \"answer_span\": \"首聘期为4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含‘首聘期为4年’，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"工作服务期为8年\",\n      \"answer_span\": \"工作服务期为8年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含‘工作服务期为8年’，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇\",\n      \"answer_span\": \"首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含该内容，且实际已读文档支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了首聘期和服务期，引用可靠且与已读资料一致，无严重错误，行动决策合理。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.006237748,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 24.1571
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

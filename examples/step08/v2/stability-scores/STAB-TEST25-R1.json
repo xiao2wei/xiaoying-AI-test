@@ -1,0 +1,218 @@
+{
+  "id": "STAB-TEST25-R1",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "取得博士学历学位后1个月内，持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件，到人事处办理备案",
+            "reason": "答案明确表达了取得博士学历学位后1个月内到人事处备案。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得博士学历学位后1个月内办理备案",
+            "answer_span": "取得博士学历学位后1个月内",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确体现时间要求。"
+          },
+          {
+            "text": "备案到人事处",
+            "answer_span": "到人事处办理备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确体现备案地点。"
+          },
+          {
+            "text": "需持所在单位出具的回校工作证明",
+            "answer_span": "持所在单位出具的回校工作证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确列出该材料。"
+          },
+          {
+            "text": "需持学历学位证书",
+            "answer_span": "学历学位证书",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确列出该材料。"
+          },
+          {
+            "text": "国外毕业的需出具留学回国人员证明、留学生学历认证",
+            "answer_span": "国外毕业的需出具留学回国人员证明、留学生学历认证",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确列出该条件。"
+          },
+          {
+            "text": "需持学籍档案等材料原件",
+            "answer_span": "学籍档案等材料原件",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容明确列出该材料。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了问题，提供了正确的时间和地点，并引用原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:31:03.699710+00:00",
+          "attempt": 1,
+          "prompt_sha256": "98974f292180ca92e2f9694ac7952b2ca2febe767cad25caf6d8bd12cc91938c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "96883e7f-1260-4b49-a3e6-ac2e3ccdc696",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1773,
+            "completion_tokens": 4342,
+            "total_tokens": 6115,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3767
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 749
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"取得博士学历学位后1个月内，持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件，到人事处办理备案\",\n      \"reason\": \"答案明确表达了取得博士学历学位后1个月内到人事处备案。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得博士学历学位后1个月内办理备案\",\n      \"answer_span\": \"取得博士学历学位后1个月内\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确体现时间要求。\"\n    },\n    {\n      \"text\": \"备案到人事处\",\n      \"answer_span\": \"到人事处办理备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确体现备案地点。\"\n    },\n    {\n      \"text\": \"需持所在单位出具的回校工作证明\",\n      \"answer_span\": \"持所在单位出具的回校工作证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确列出该材料。\"\n    },\n    {\n      \"text\": \"需持学历学位证书\",\n      \"answer_span\": \"学历学位证书\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确列出该材料。\"\n    },\n    {\n      \"text\": \"国外毕业的需出具留学回国人员证明、留学生学历认证\",\n      \"answer_span\": \"国外毕业的需出具留学回国人员证明、留学生学历认证\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确列出该条件。\"\n    },\n    {\n      \"text\": \"需持学籍档案等材料原件\",\n      \"answer_span\": \"学籍档案等材料原件\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确列出该材料。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，提供了正确的时间和地点，并引用原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01953468,
+          "seconds": 37.3335
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "取得博士学历学位后应在1个月内到人事处办理备案",
+            "reason": "答案明确表达了取得博士学历学位后1个月内到人事处备案的时限和部门要求，语义等价。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": false,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "取得博士学历学位后应在1个月内到人事处办理备案（返校登记）",
+            "answer_span": "取得博士学历学位后应在1个月内到人事处办理备案（返校登记）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第九条原文明确包含1个月内在人事处办理备案，实际读取的该chunk支持该事实。"
+          },
+          {
+            "text": "办理备案需持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。",
+            "answer_span": "办理备案需持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第九条原文列出了相同材料，实际读取的该chunk支持该事实。"
+          },
+          {
+            "text": "该办法的适用对象为经学校批准的教师",
+            "answer_span": "该办法的适用对象为经学校批准的教师",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第七条原文有“经学校批准的教师”表述，实际读取的该chunk支持该事实。"
+          },
+          {
+            "text": "录取时须持录取通知书到人事处签订《教师在职攻读博士学位协议》",
+            "answer_span": "录取时须持录取通知书到人事处签订《教师在职攻读博士学位协议》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第七条原文明确提到持录取通知书到人事处签订协议，实际读取的该chunk支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答给出了要求点，但状态为needs_confirmation并请求确认身份，而用户问题已有足够证据直接适用第九条，无需确认，故未满足expected_status，任务未完成。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:32:34.986089+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8562a3e996602938775a8292dfccf9fd977049db823123ca1fdb88d81c2e263d",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "974cf370-abb9-4da0-98b5-1933b09d88e7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2468,
+            "completion_tokens": 3696,
+            "total_tokens": 6164,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3095
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1444
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"取得博士学历学位后应在1个月内到人事处办理备案\",\n      \"reason\": \"答案明确表达了取得博士学历学位后1个月内到人事处备案的时限和部门要求，语义等价。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"取得博士学历学位后应在1个月内到人事处办理备案（返校登记）\",\n      \"answer_span\": \"取得博士学历学位后应在1个月内到人事处办理备案（返校登记）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第九条原文明确包含1个月内在人事处办理备案，实际读取的该chunk支持该事实。\"\n    },\n    {\n      \"text\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\",\n      \"answer_span\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第九条原文列出了相同材料，实际读取的该chunk支持该事实。\"\n    },\n    {\n      \"text\": \"该办法的适用对象为经学校批准的教师\",\n      \"answer_span\": \"该办法的适用对象为经学校批准的教师\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第七条原文有“经学校批准的教师”表述，实际读取的该chunk支持该事实。\"\n    },\n    {\n      \"text\": \"录取时须持录取通知书到人事处签订《教师在职攻读博士学位协议》\",\n      \"answer_span\": \"录取时须持录取通知书到人事处签订《教师在职攻读博士学位协议》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第七条原文明确提到持录取通知书到人事处签订协议，实际读取的该chunk支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答给出了要求点，但状态为needs_confirmation并请求确认身份，而用户问题已有足够证据直接适用第九条，无需确认，故未满足expected_status，任务未完成。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.017893919999999997,
+          "seconds": 34.9022
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "993793bfedd42419f041d23993e3bf48e9f64071901919f10cb9f3499758460b"
+}

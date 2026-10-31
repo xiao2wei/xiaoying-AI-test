@@ -1,0 +1,109 @@
+{
+  "id": "TEST03",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "30个工作日内",
+            "reason": "实际答案明确说出申诉应在知道或者应当知道权利受侵害之日起30个工作日内提出。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "障碍消除后10个工作日内",
+            "reason": "实际答案明确说出障碍消除后10个工作日内可以提起申诉。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期不再受理",
+            "reason": "实际答案明确说出逾期不再受理。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出",
+            "answer_span": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与原文一致，且该chunk已被实际读取，支持该事实。"
+          },
+          {
+            "text": "障碍消除后10个工作日内可以向申诉处理委员会提起申诉",
+            "answer_span": "障碍消除后10个工作日内可以向申诉处理委员会提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，且该chunk已被实际读取，支持该事实。"
+          },
+          {
+            "text": "逾期不再受理",
+            "answer_span": "逾期不再受理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，且该chunk已被实际读取，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案针对教职工校内申诉给出了准确的三个要点，并附有有效引用，同时说明未检索到学生申诉规定并请求确认身份，处理合理。无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:24:47.520767+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cc1d391992dca7c7552f0f3a1aa3df7066eae1e7e40a3c3c67986fb1de532700",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "78f2cf80-a87a-44db-b4a6-256f08f559d1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2037,
+            "completion_tokens": 2595,
+            "total_tokens": 4632,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2095
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1013
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"30个工作日内\",\n      \"reason\": \"实际答案明确说出申诉应在知道或者应当知道权利受侵害之日起30个工作日内提出。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"障碍消除后10个工作日内\",\n      \"reason\": \"实际答案明确说出障碍消除后10个工作日内可以提起申诉。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"逾期不再受理\",\n      \"reason\": \"实际答案明确说出逾期不再受理。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出\",\n      \"answer_span\": \"申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与原文一致，且该chunk已被实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"障碍消除后10个工作日内可以向申诉处理委员会提起申诉\",\n      \"answer_span\": \"障碍消除后10个工作日内可以向申诉处理委员会提起申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，且该chunk已被实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"逾期不再受理\",\n      \"answer_span\": \"逾期不再受理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，且该chunk已被实际读取，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案针对教职工校内申诉给出了准确的三个要点，并附有有效引用，同时说明未检索到学生申诉规定并请求确认身份，处理合理。无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01296504,
+          "seconds": 25.914
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a8a851fd9c7e1831f380e82b1a718bc1d11347f68b524794813ea8d6b0d455cc"
+}

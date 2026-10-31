@@ -1,0 +1,111 @@
+{
+  "id": "STAB-TEST01-R3",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师工科学科恰好4年取得学历学位，属于“≤4”档：补贴10万元，科研建设经费5万元。",
+            "reason": "答案明确表达了工科4年补贴10万元、科研经费5万元，与标准一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "其他学科恰好5年取得学历学位，属于“＞4，≤5”档：补贴9万元，科研建设经费2.7万元。",
+            "reason": "答案明确表达了其他学科5年补贴9万元、科研经费2.7万元，与标准一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "工科学科恰好4年补贴10万元",
+            "answer_span": "教师工科学科恰好4年取得学历学位，属于“≤4”档：补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第1行≤4档，补贴10万元，工科条件满足，实际读取内容一致。"
+          },
+          {
+            "text": "工科学科恰好4年科研建设经费5万元",
+            "answer_span": "科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第1行≤4档，工科科研经费5万元，实际读取内容一致。"
+          },
+          {
+            "text": "其他学科恰好5年补贴9万元",
+            "answer_span": "其他学科恰好5年取得学历学位，属于“＞4，≤5”档：补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第2行＞4且≤5档，补贴9万元，其他学科条件满足，实际读取内容一致。"
+          },
+          {
+            "text": "其他学科恰好5年科研建设经费2.7万元",
+            "answer_span": "科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第2行＞4且≤5档，其他学科科研经费2.7万元，实际读取内容一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确提取了2023年办法第十条待遇表中的对应数字，两个要点均明确表达且引用原文支持，动作合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:25:13.463182+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f4a398e055e6c1e3c72ada87ef52c94f588ac8c7b9a6bb528e9afa3301de7ef3",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "164d395e-9ffd-4b61-b01a-94922a7828ab",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2566,
+            "completion_tokens": 5804,
+            "total_tokens": 8370,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5179
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1030
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师工科学科恰好4年取得学历学位，属于“≤4”档：补贴10万元，科研建设经费5万元。\",\n      \"reason\": \"答案明确表达了工科4年补贴10万元、科研经费5万元，与标准一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"其他学科恰好5年取得学历学位，属于“＞4，≤5”档：补贴9万元，科研建设经费2.7万元。\",\n      \"reason\": \"答案明确表达了其他学科5年补贴9万元、科研经费2.7万元，与标准一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"工科学科恰好4年补贴10万元\",\n      \"answer_span\": \"教师工科学科恰好4年取得学历学位，属于“≤4”档：补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行≤4档，补贴10万元，工科条件满足，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"工科学科恰好4年科研建设经费5万元\",\n      \"answer_span\": \"科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行≤4档，工科科研经费5万元，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年补贴9万元\",\n      \"answer_span\": \"其他学科恰好5年取得学历学位，属于“＞4，≤5”档：补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行＞4且≤5档，补贴9万元，其他学科条件满足，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年科研建设经费2.7万元\",\n      \"answer_span\": \"科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行＞4且≤5档，其他学科科研经费2.7万元，实际读取内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确提取了2023年办法第十条待遇表中的对应数字，两个要点均明确表达且引用原文支持，动作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02637096,
+          "seconds": 53.8768
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "13a4cbaf25e9ccc26e64d6421301b1fbb586b77c8728dbc92fbe0960a41521fa"
+}

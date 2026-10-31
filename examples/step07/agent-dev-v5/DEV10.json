@@ -1,0 +1,96 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.303316+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5d4483267c392c5f952ad9f002be69371330cf6a2b87b22aa9f9b2a929ce1979",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4029
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4198,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那新入职专职辅导员通常工作满几年才能调整岗位？",
+      "history": [
+        {
+          "role": "user",
+          "content": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"model_error\", \"claims\": [], \"gaps\": [\"HTTP_402\"], \"answer\": \"HTTP_402\"}"
+        }
+      ],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.722987+00:00",
+          "attempt": 1,
+          "prompt_sha256": "90c477ebced309a08939255e1e27db7a4133d5014f8766f3b2a19de4341fedc7",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.3883
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4054,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.8256,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:39.113115+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才专项经费项目年度考核什么时候填报进展报告？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.846301+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ee354dfbee7e71611ef0aacb43b9db66677e71296226bbbaebbe8f5841cb26f4",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4239
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4416,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 0.442,
+  "model_calls": 1,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:39.273069+00:00"
+}

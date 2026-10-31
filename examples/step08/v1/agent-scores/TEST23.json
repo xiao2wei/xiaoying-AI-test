@@ -1,0 +1,64 @@
+{
+  "id": "TEST23",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:14.142788+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1b724cb1333cde331a864b4efb60f6be55b6ec9833ef64f7283f8209c0859de5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e1de86dd-9e61-4657-9dd6-6f7eecc801d4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4761,
+            "completion_tokens": 10000,
+            "total_tokens": 14761,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 10000
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3865
+          },
+          "content": "",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.045884520000000005,
+          "error": "JSONDecodeError",
+          "seconds": 102.7186
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:56.861659+00:00",
+          "attempt": 2,
+          "prompt_sha256": "1b724cb1333cde331a864b4efb60f6be55b6ec9833ef64f7283f8209c0859de5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.16
+        }
+      ],
+      "judge_error": "ModelError:HTTP_429",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "f61df8d4e36b62e7ac2fe5bbc54d60c2165d2ba34cc9a51852ffe25d4bb41098"
+}

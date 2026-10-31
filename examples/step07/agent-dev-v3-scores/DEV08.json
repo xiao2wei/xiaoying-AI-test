@@ -1,0 +1,180 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "reason": "实际答案明确表述了细则适用于学校本科以及研究生兼职辅导员，覆盖了本科生及研究生两类范围，满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员。",
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用了D08-C003，引用内容与该事实一致；实际读取的D08-C003原文也包含该规定，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确，未将适用范围错误限定为仅本科生辅导员，并准确引用已读取的细则第二条，说明适用范围包括本科及研究生兼职辅导员。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:06:28.391337+00:00",
+          "attempt": 1,
+          "prompt_sha256": "91c16a2eae73ee601204c8748b6c3002f742e1f23892793b9ebc03fb35cc492d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "57b240a2-8fcb-4320-83be-62178c3ccdee",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1601,
+            "completion_tokens": 2097,
+            "total_tokens": 3698,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1836
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 705
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"reason\": \"实际答案明确表述了细则适用于学校本科以及研究生兼职辅导员，覆盖了本科生及研究生两类范围，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员。\",\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用了D08-C003，引用内容与该事实一致；实际读取的D08-C003原文也包含该规定，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确，未将适用范围错误限定为仅本科生辅导员，并准确引用已读取的细则第二条，说明适用范围包括本科及研究生兼职辅导员。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01041744,
+          "seconds": 22.3513
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。",
+            "reason": "回答明确引用第二条并说明研究生兼职辅导员属于适用范围，语义等价满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员",
+            "answer_span": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D08-C003第二条原文与该事实完全一致，引用直接支持。"
+          },
+          {
+            "text": "研究生兼职辅导员属于该细则的适用范围",
+            "answer_span": "研究生兼职辅导员属于该细则的适用范围",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "由第二条适用于本科和研究生兼职辅导员可直接推出，引用充分支持。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核不直接按该细则第十四条执行",
+            "answer_span": "研究生兼任辅导员的管理与考核不直接按该细则第十四条执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D08-C015第十四条显示研究生兼任辅导员另行依据三助一辅办法，支持其不按该条普通考评路径执行。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核依据学校研究生“三助一辅”管理办法执行",
+            "answer_span": "依据学校研究生“三助一辅”管理办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该表述直接来自已读D08-C015第十四条，引用原文支持。"
+          },
+          {
+            "text": "该细则由党委学生工作部、党委研究生工作部、人事处负责解释",
+            "answer_span": "该细则由党委学生工作部、党委研究生工作部、人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D08-C017第十六条原文直接支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用第二条，确认研究生兼职辅导员属于细则适用范围，同时说明其管理与考核依据三助一辅办法并提示需要另行查阅的资料，要点齐全、引用与已读原文一致，处置合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:06:50.750974+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7213a1898585aea3328c454e001feaee6a2d770ec5b1e8cd1e5146a30ed79094",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "12a82510-92d0-4bf4-be90-d92feb91b04e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2154,
+            "completion_tokens": 6612,
+            "total_tokens": 8766,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5975
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1258
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。\",\n      \"reason\": \"回答明确引用第二条并说明研究生兼职辅导员属于适用范围，语义等价满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员\",\n      \"answer_span\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D08-C003第二条原文与该事实完全一致，引用直接支持。\"\n    },\n    {\n      \"text\": \"研究生兼职辅导员属于该细则的适用范围\",\n      \"answer_span\": \"研究生兼职辅导员属于该细则的适用范围\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"由第二条适用于本科和研究生兼职辅导员可直接推出，引用充分支持。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核不直接按该细则第十四条执行\",\n      \"answer_span\": \"研究生兼任辅导员的管理与考核不直接按该细则第十四条执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D08-C015第十四条显示研究生兼任辅导员另行依据三助一辅办法，支持其不按该条普通考评路径执行。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核依据学校研究生“三助一辅”管理办法执行\",\n      \"answer_span\": \"依据学校研究生“三助一辅”管理办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该表述直接来自已读D08-C015第十四条，引用原文支持。\"\n    },\n    {\n      \"text\": \"该细则由党委学生工作部、党委研究生工作部、人事处负责解释\",\n      \"answer_span\": \"该细则由党委学生工作部、党委研究生工作部、人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D08-C017第十六条原文直接支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用第二条，确认研究生兼职辅导员属于细则适用范围，同时说明其管理与考核依据三助一辅办法并提示需要另行查阅的资料，要点齐全、引用与已读原文一致，处置合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0290268,
+          "seconds": 63.6433
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "412df08169a72dcd5f9c3211c304e583fdecbcb98a3bc010905da3be08c66878"
+}

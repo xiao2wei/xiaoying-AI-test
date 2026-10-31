@@ -1,0 +1,114 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确写出《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送《考勤情况统计表》。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确写出《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送《考勤情况统计表》。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答分别引用了D19-C015和D20-C006，并列出两方来源。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第十四条规定，各单位于每月26日向学校人事处报送本单位《考勤情况统计表》。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D19-C015，引用内容与已读取原文一致，支持26日报送。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》第十四条规定，各单位于每月26日向学校人事处报送本单位《考勤情况统计表》。"
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定，各单位每月25日向人事处报送本单位《考勤情况统计表》。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C006，引用内容与已读取原文一致，支持25日报送。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定，各单位每月25日向人事处报送本单位《考勤情况统计表》。"
+          },
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第二十二条规定，直属单位每月26日向人事处报送临时用工人员考勤表，该表用于核发临时用工人员工资。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D23-C023，引用内容与已读取原文一致，支持临时用工人员考勤表26日报送。",
+            "answer_span": "《辽宁科技大学临时用工管理办法》第二十二条规定，直属单位每月26日向人事处报送临时用工人员考勤表，该表用于核发临时用工人员工资。"
+          },
+          {
+            "text": "两份规定对教职工《考勤情况统计表》报送日期存在冲突：D19第十四条为每月26日，D20第五条为每月25日；现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实是对已读取的D19-C015和D20-C006内容的总结，未单独引用，但已读取原文支持冲突存在及未明确优先关系。",
+            "answer_span": "两份规定对教职工《考勤情况统计表》报送日期存在冲突：D19第十四条为每月26日，D20第五条为每月25日；现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。"
+          },
+          {
+            "text": "D23第二十二条的26日针对临时用工人员考勤表，与教职工《考勤情况统计表》适用对象不同，不能直接用于解决上述冲突。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实是对已读取的D23-C023内容的分析，未单独引用，但已读取原文支持其适用对象不同。",
+            "answer_span": "D23第二十二条的26日针对临时用工人员考勤表，与教职工《考勤情况统计表》适用对象不同，不能直接用于解决上述冲突。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确列出了2020规定26日和2023补充规定25日，并分别引用来源；同时指出两份规定冲突且现有原文未明确优先关系，需确认现行有效版本，符合needs_confirmation状态。工具操作正常，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:52.784828+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7333d2931c60e840cdcd5e64d562f5855751ab2b2a5a8e80303329c693e997a5",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "e112fb3d-2877-4ae9-bfb8-02d047b26c3f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3345,
+            "completion_tokens": 1091,
+            "total_tokens": 4436,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 2705
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送《考勤情况统计表》。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送《考勤情况统计表》。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答分别引用了D19-C015和D20-C006，并列出两方来源。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理规定》第十四条规定，各单位于每月26日向学校人事处报送本单位《考勤情况统计表》。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D19-C015，引用内容与已读取原文一致，支持26日报送。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》第十四条规定，各单位于每月26日向学校人事处报送本单位《考勤情况统计表》。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定，各单位每月25日向人事处报送本单位《考勤情况统计表》。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C006，引用内容与已读取原文一致，支持25日报送。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定，各单位每月25日向人事处报送本单位《考勤情况统计表》。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学临时用工管理办法》第二十二条规定，直属单位每月26日向人事处报送临时用工人员考勤表，该表用于核发临时用工人员工资。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D23-C023，引用内容与已读取原文一致，支持临时用工人员考勤表26日报送。\",\n      \"answer_span\": \"《辽宁科技大学临时用工管理办法》第二十二条规定，直属单位每月26日向人事处报送临时用工人员考勤表，该表用于核发临时用工人员工资。\"\n    },\n    {\n      \"text\": \"两份规定对教职工《考勤情况统计表》报送日期存在冲突：D19第十四条为每月26日，D20第五条为每月25日；现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实是对已读取的D19-C015和D20-C006内容的总结，未单独引用，但已读取原文支持冲突存在及未明确优先关系。\",\n      \"answer_span\": \"两份规定对教职工《考勤情况统计表》报送日期存在冲突：D19第十四条为每月26日，D20第五条为每月25日；现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本。\"\n    },\n    {\n      \"text\": \"D23第二十二条的26日针对临时用工人员考勤表，与教职工《考勤情况统计表》适用对象不同，不能直接用于解决上述冲突。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实是对已读取的D23-C023内容的分析，未单独引用，但已读取原文支持其适用对象不同。\",\n      \"answer_span\": \"D23第二十二条的26日针对临时用工人员考勤表，与教职工《考勤情况统计表》适用对象不同，不能直接用于解决上述冲突。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确列出了2020规定26日和2023补充规定25日，并分别引用来源；同时指出两份规定冲突且现有原文未明确优先关系，需确认现行有效版本，符合needs_confirmation状态。工具操作正常，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00873576,
+          "seconds": 9.8966
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "e353b7d3f5233335705109d809b034c230fdd9c4c32232a74659538511704cac"
+}

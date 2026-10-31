@@ -1,0 +1,280 @@
+{
+  "id": "TEST38",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "教师在职读博期间费用由谁承担？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "读取原文工具连续返回 PERSISTENT_UNAVAILABLE（显式测试故障注入），无法读取并逐字核对候选条款原文，因此本次不能给出费用承担结论。",
+          "待工具恢复后需读取并核对《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条（候选 chunk_id：D01-C017）原文，以确认费用承担主体及学校发放工资、绩效、保险、公积金等是否属于进修培训资助费用的表述。"
+        ],
+        "answer": "读取原文工具连续返回 PERSISTENT_UNAVAILABLE（显式测试故障注入），无法读取并逐字核对候选条款原文，因此本次不能给出费用承担结论。\n待工具恢复后需读取并核对《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条（候选 chunk_id：D01-C017）原文，以确认费用承担主体及学校发放工资、绩效、保险、公积金等是否属于进修培训资助费用的表述。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "读取原文工具连续返回 PERSISTENT_UNAVAILABLE（显式测试故障注入），无法读取并逐字核对候选条款原文，因此本次不能给出费用承担结论。",
+          "待工具恢复后需读取并核对《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条（候选 chunk_id：D01-C017）原文，以确认费用承担主体及学校发放工资、绩效、保险、公积金等是否属于进修培训资助费用的表述。"
+        ],
+        "answer": "读取原文工具连续返回 PERSISTENT_UNAVAILABLE（显式测试故障注入），无法读取并逐字核对候选条款原文，因此本次不能给出费用承担结论。\n待工具恢复后需读取并核对《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条（候选 chunk_id：D01-C017）原文，以确认费用承担主体及学校发放工资、绩效、保险、公积金等是否属于进修培训资助费用的表述。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教师在职读博期间费用由谁承担？"
+          },
+          "result": {
+            "ok": true,
+            "query": "教师在职读博期间费用由谁承担？",
+            "hits": [
+              {
+                "chunk_id": "D01-C017",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.767025,
+                "lexical_score": 59.9632,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十六条 第十六条 教师在职读博期间发生的费用由本人自行承担。在职读博期间学校\n为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属\n于学校为促进个人可持续发展为其提供的进修培训资助费用。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C011",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.646822,
+                "lexical_score": 35.6975,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十条 第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C013",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十二条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7,
+                  8
+                ],
+                "printed_pages": [
+                  2,
+                  3
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.611865,
+                "lexical_score": 29.7965,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十二条 第十二条 在职读博人员在学习期间的管理及考核由所在单位负责。脱产学习\n的在职读博人员应每学期向所在单位书面报告学习情况，所在单位根据学习情况确\n定岗位考核结果，如未定期报告学习情况或脱产逾期未归，所在单位应及时向人事处\n报告，并根据具体情况确定其年度考核结果。不脱产学习的在职读博人员正常参加\n岗位考核。\n第五章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C003",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第二条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.61283,
+                "lexical_score": 24.5626,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第二条 第二条 专任教师及从事实验课教学的实验技术人员（以下简称教师）在职读博\n遵循“自愿申请、专业对口、学以致用”原则，要立足岗位需求，提升人才培养质量，服\n务学校高质量发展。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C010",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.075499,
+                "semantic_score": 0.608174,
+                "lexical_score": 25.4549,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第九条 第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0088,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C017"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C011"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C013"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C003"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C010"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:55.847791+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c3b17593538fc40c213c284115e3368b8f12030389ba833713b513130ce125e4",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "32563c6e-b325-449f-b683-fa0a2fd77582",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2040,
+            "completion_tokens": 112,
+            "total_tokens": 2152,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 1528
+          },
+          "content": "{\"status\":\"tool_error\",\"claims\":[],\"gaps\":[\"读取原文工具连续返回 PERSISTENT_UNAVAILABLE（显式测试故障注入），无法读取并逐字核对候选条款原文，因此本次不能给出费用承担结论。\",\"待工具恢复后需读取并核对《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条（候选 chunk_id：D01-C017）原文，以确认费用承担主体及学校发放工资、绩效、保险、公积金等是否属于进修培训资助费用的表述。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007463999999999999,
+          "seconds": 1.3481
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [
+        "D01-C017",
+        "D01-C011",
+        "D01-C013",
+        "D01-C003",
+        "D01-C010"
+      ],
+      "seconds": 1.3674,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 1.3674,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-31T02:11:57.196826+00:00"
+}

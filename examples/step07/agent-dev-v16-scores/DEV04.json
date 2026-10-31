@@ -1,0 +1,135 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止",
+            "reason": "实际答案明确引用2022版第二十二条的废止条款，指出原2021年27号办法同时废止。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "据此，2021年27号旧办法在2022年版施行后不再同时有效",
+            "reason": "答案依据废止条款得出结论，而非仅凭日期判断。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止",
+            "answer_span": "原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该废止语句，且actually_read中已读取该条款。"
+          },
+          {
+            "text": "2021年27号旧办法在2022年版施行后不再同时有效",
+            "answer_span": "2021年27号旧办法在2022年版施行后不再同时有效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由废止条款直接推导，引用支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用废止条款并正确判断旧办法失效，依据充分，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:01:04.203148+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cb4deadff524e34ac2353342eb6de085c75e93937976f102723dcc8713a364f0",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "2236fbd2-ac26-45d5-99af-467b81e670d2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1760,
+            "completion_tokens": 1480,
+            "total_tokens": 3240,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1051
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 608
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\n      \"reason\": \"实际答案明确引用了2022版第二十二条的废止条款，指出原2021年27号办法同时废止。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"据此，2021年27号旧办法在2022年版施行后不再同时有效\",\n      \"reason\": \"答案依据废止条款得出结论，而非仅凭日期判断。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\n      \"answer_span\": \"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该废止语句，且actually_read中已读取该条款。\"\n    },\n    {\n      \"text\": \"2021年27号旧办法在2022年版施行后不再同时有效\",\n      \"answer_span\": \"2021年27号旧办法在2022年版施行后不再同时有效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由废止条款直接推导，引用支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用废止条款并正确判断旧办法失效，依据充分，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0033570240000000006,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 13.9922
+        },
+        {
+          "kind": "judge_validation_error",
+          "error": "ValueError:通过的要点缺少实际答案定位"
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:01:18.232482+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2ad1c3fd27444f7f5654368eebc8e067554836aaad2bc29e72f123272f8c2dc6",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "5ae3422d-b1d3-47bd-8aa2-e7c53ffae966",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2199,
+            "completion_tokens": 2208,
+            "total_tokens": 4407,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1868
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 535
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\"reason\":\"实际答案明确引用2022版第二十二条的废止条款，指出原2021年27号办法同时废止。\"},{\"index\":1,\"met\":true,\"answer_span\":\"据此，2021年27号旧办法在2022年版施行后不再同时有效\",\"reason\":\"答案依据废止条款得出结论，而非仅凭日期判断。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\"answer_span\":\"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用quote包含该废止语句，且actually_read中已读取该条款。\"},{\"text\":\"2021年27号旧办法在2022年版施行后不再同时有效\",\"answer_span\":\"2021年27号旧办法在2022年版施行后不再同时有效\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"该结论由废止条款直接推导，引用支持。\"}],\"serious_errors\":[],\"reason\":\"答案准确引用废止条款并正确判断旧办法失效，依据充分，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004761548,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 20.0686
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": true,
+  "run_sha256": "7a2b32430b63218ee9bd0109a3442394244bf2afeea8c29481b7dffcaf41bbf1"
+}

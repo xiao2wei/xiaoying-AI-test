@@ -1,0 +1,240 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:28.984840+00:00",
+          "attempt": 1,
+          "prompt_sha256": "32f9377f5ed877501c6c97ebeaf97d49dc4ff7514c54e6cca3dbe13412862711",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "a0efe647-6181-43da-b291-eb0708de1857",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2725,
+            "completion_tokens": 97,
+            "total_tokens": 2822,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 293
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000218892,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_Xd3NFOdi7ZlzANAp6D6x2059",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"辅导员岗前培训 校级培训学时 新选聘辅导员上岗\", \"doc_ids\": []}, \"reason\": \"检索辅导员培训制度中岗前培训与学时要求\"}, \"reason\": \"检索辅导员培训制度中岗前培训与学时要求\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.0014
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:29.986498+00:00",
+          "attempt": 2,
+          "prompt_sha256": "32f9377f5ed877501c6c97ebeaf97d49dc4ff7514c54e6cca3dbe13412862711",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "023e9489-e08d-443d-bc59-c0a6d62dabaa",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2725,
+            "completion_tokens": 96,
+            "total_tokens": 2821,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 165
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00018006,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_X8BP1TyEjAIpEahPszNT4522",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"辅导员岗前培训 校级培训学时 新选聘辅导员\", \"doc_ids\": []}, \"reason\": \"查找辅导员培训制度中岗前培训与学时要求\"}, \"reason\": \"查找辅导员培训制度中岗前培训与学时要求\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.2031
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.2394,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那新入职专职辅导员通常工作满几年才能调整岗位？",
+      "history": [
+        {
+          "role": "user",
+          "content": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"model_error\", \"claims\": [], \"gaps\": [\"JSONDecodeError\"], \"answer\": \"JSONDecodeError\"}"
+        }
+      ],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:31.228169+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3689f6ee1e09ea42053cd82419829e27c7e50501a93c8e095e714254a3a65e53",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "e1c69c09-0f5b-479a-9a17-7b4cad89d0d0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2772,
+            "completion_tokens": 84,
+            "total_tokens": 2856,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 340
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000217392,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_vGBfOFvBZLgGsQMj7CCQ3925",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"新入职专职辅导员 工作满 年 调整岗位\", \"doc_ids\": []}, \"reason\": \"查找辅导员岗位调整年限规定\"}, \"reason\": \"检索辅导员岗位调整年限\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.9995
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:32.227881+00:00",
+          "attempt": 2,
+          "prompt_sha256": "3689f6ee1e09ea42053cd82419829e27c7e50501a93c8e095e714254a3a65e53",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "0780f96d-a608-4012-94ff-2e4d61dacb6e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2772,
+            "completion_tokens": 116,
+            "total_tokens": 2888,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 212
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00021815999999999996,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_GAG5rwN5QiiALEsL1AiP5199",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"辅导员 岗前培训 学时 校级培训\", \"doc_ids\": []}, \"reason\": \"先查辅导员培训与上岗要求\"}, {\"action\": \"search\", \"arguments\": {\"query\": \"专职辅导员 工作满 年 调整岗位 转岗\", \"doc_ids\": []}, \"reason\": \"查辅导员岗位调整年限\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.9416
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.9798,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 4.2197,
+  "model_calls": 4,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T03:55:33.170903+00:00"
+}

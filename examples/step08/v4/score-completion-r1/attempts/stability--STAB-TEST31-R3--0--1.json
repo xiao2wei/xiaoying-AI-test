@@ -1,0 +1,118 @@
+{
+  "key": "stability--STAB-TEST31-R3--0",
+  "mode": "stability",
+  "id": "STAB-TEST31-R3",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "38cc7b9cf31d1c273fecab9400d6b32e1d501c003607b1d61b25239528a8a4ef",
+  "run_sha256": "abf604c697a71e7bb0dc8bef999f9594ef12ec6cdea7bab4a9589e6a49abf544",
+  "created_at": "2026-10-31T05:16:21.944072+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "临时用工是学校在事业编制之外、聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式",
+          "reason": "实际回答完整复述了临时用工的定义，包含了事业编制之外、聘用社会人员、完成临时性/阶段性/辅助性/特殊性工作、短期合同制等所有合取条件，并明确说明不属于事业编制内用工。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "临时用工是学校在事业编制之外",
+          "answer_span": "临时用工是学校在事业编制之外",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。"
+        },
+        {
+          "text": "聘用社会人员（含已退休人员）",
+          "answer_span": "聘用社会人员（含已退休人员）",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。"
+        },
+        {
+          "text": "完成临时性、阶段性、辅助性或特殊性工作任务",
+          "answer_span": "完成临时性、阶段性、辅助性或特殊性工作任务",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。"
+        },
+        {
+          "text": "短期合同制用工形式",
+          "answer_span": "短期合同制用工形式",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。"
+        },
+        {
+          "text": "临时用工不属于事业编制内用工",
+          "answer_span": "临时用工不属于事业编制内用工",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该结论由回答中所引定义直接推导，且定义原文明确临时用工在事业编制之外，支持该结论。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "回答准确引用了辽宁科技大学临时用工管理办法第二条，完整解释了临时用工定义并明确其不属于事业编制内用工，证据充分，无严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:15:58.889474+00:00",
+        "attempt": 1,
+        "prompt_sha256": "214ea847cd0af30000837aebcb021686d94ad3d0f793b60c3d89d3217e5e6d6a",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "1e70069e-55ed-4b65-b9ab-93089208c2b8",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 1695,
+          "completion_tokens": 2402,
+          "total_tokens": 4097,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1764
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 543
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工是学校在事业编制之外、聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式\",\n      \"reason\": \"实际回答完整复述了临时用工的定义，包含了事业编制之外、聘用社会人员、完成临时性/阶段性/辅助性/特殊性工作、短期合同制等所有合取条件，并明确说明不属于事业编制内用工。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工是学校在事业编制之外\",\n      \"answer_span\": \"临时用工是学校在事业编制之外\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"聘用社会人员（含已退休人员）\",\n      \"answer_span\": \"聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"answer_span\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"短期合同制用工形式\",\n      \"answer_span\": \"短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在回答中明确表述，引用内容包含对应原文，且系统已实际读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"临时用工不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由回答中所引定义直接推导，且定义原文明确临时用工在事业编制之外，支持该结论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了辽宁科技大学临时用工管理办法第二条，完整解释了临时用工定义并明确其不属于事业编制内用工，证据充分，无严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.005139684,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 23.0526
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

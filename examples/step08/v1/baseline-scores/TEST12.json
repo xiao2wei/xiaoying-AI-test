@@ -1,0 +1,106 @@
+{
+  "id": "TEST12",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "reason": "明确表达安家费10万元及以上在首聘期协议签订后和中期考核合格后分两次发放，与要点一致"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "购房补贴在鞍山市购买住房时先一次性发放50%",
+            "reason": "明确表达购房补贴在鞍山市购房时先一次性发放50%，与要点一致"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "剩余部分在服务期内按月发放",
+            "reason": "明确表达余款在服务期内按月发放，与要点一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "answer_span": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D02-C022第二十一条明确包含该安家费分两次发放的时间和条件，已读原文也一致"
+          },
+          {
+            "text": "购房补贴在鞍山市购买住房时先一次性发放50%",
+            "answer_span": "购房补贴在鞍山市购买住房时先一次性发放50%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D02-C022第二十一条明确包含购房补贴先一次性发放50%，已读原文一致"
+          },
+          {
+            "text": "剩余部分在服务期内按月发放",
+            "answer_span": "剩余部分在服务期内按月发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D02-C022第二十一条明确包含剩余部分按月发放，已读原文一致"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确覆盖全部要点，引用与已读原文匹配，状态和决策合理，无严重错误",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:03.771581+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cf34164f0567845dd43ef3a845621bac4c7d23e493d24849fe653d6fac75202a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5827c083-0329-46a5-881f-316a3997ff96",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4172,
+            "completion_tokens": 3000,
+            "total_tokens": 7172,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2539
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3276
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\"reason\":\"明确表达安家费10万元及以上在首聘期协议签订后和中期考核合格后分两次发放，与要点一致\"},{\"index\":1,\"met\":true,\"answer_span\":\"购房补贴在鞍山市购买住房时先一次性发放50%\",\"reason\":\"明确表达购房补贴在鞍山市购房时先一次性发放50%，与要点一致\"},{\"index\":2,\"met\":true,\"answer_span\":\"剩余部分在服务期内按月发放\",\"reason\":\"明确表达余款在服务期内按月发放，与要点一致\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\"answer_span\":\"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用的D02-C022第二十一条明确包含该安家费分两次发放的时间和条件，已读原文也一致\"},{\"text\":\"购房补贴在鞍山市购买住房时先一次性发放50%\",\"answer_span\":\"购房补贴在鞍山市购买住房时先一次性发放50%\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用的D02-C022第二十一条明确包含购房补贴先一次性发放50%，已读原文一致\"},{\"text\":\"剩余部分在服务期内按月发放\",\"answer_span\":\"剩余部分在服务期内按月发放\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用的D02-C022第二十一条明确包含剩余部分按月发放，已读原文一致\"}],\"serious_errors\":[],\"reason\":\"答案准确覆盖全部要点，引用与已读原文匹配，状态和决策合理，无严重错误\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01738704,
+          "seconds": 27.9701
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "d1ec71f42ba45e7adcbb2e8635ad8a19126275bd367c9ffd1248edc25be7ea10"
+}

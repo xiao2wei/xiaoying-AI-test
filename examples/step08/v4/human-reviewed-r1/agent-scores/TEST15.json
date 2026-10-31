@@ -1,0 +1,177 @@
+{
+  "id": "TEST15",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "即“以上”不含本级",
+            "reason": "答案明确表述2020年规定中“以上”不包括本级。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "即“以上”含本级",
+            "reason": "答案明确表述2023年补充规定中“以上”包括本级。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份规定对“以上”是否包含本级的解释不一致",
+            "reason": "答案明确指出两份规定解释不一致。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请提供人事处就两份规定适用关系（尤其“以上”含义）出具的正式解释、衔接说明或执行通知，并明确所涉事项应适用哪份规定及版本",
+            "reason": "答案请求用户提供适用关系解释并确认适用版本，未擅自统一套用。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020规定第二十二条中“以内”“不超过”均包括本级",
+            "answer_span": "“以内”“不超过”均包括本级",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。"
+          },
+          {
+            "text": "2020规定第二十二条中“以上”“超过”均不包括本级",
+            "answer_span": "“以上”“超过”均不包括本级",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。"
+          },
+          {
+            "text": "2023补充规定第十九条中“以内”“不超过”“以上”均包括本级",
+            "answer_span": "“以内”“不超过”“以上”均包括本级",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。"
+          },
+          {
+            "text": "2023补充规定第十九条中“超过”不包括本级",
+            "answer_span": "“超过”不包括本级",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。"
+          },
+          {
+            "text": "两份规定对“以上”是否包含本级的解释不一致",
+            "answer_span": "两份规定对“以上”是否包含本级的解释不一致",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由两个已读条款直接对比得出，引用的quote分别展示了不同含义，支持该不一致判断。"
+          },
+          {
+            "text": "2020规定第二十三条由人事处负责解释",
+            "answer_span": "2020年规定第二十三条规定由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C024的quote直接支持，且已读原文一致。"
+          },
+          {
+            "text": "2023补充规定第十八条未尽事宜按国家、辽宁省有关规定执行",
+            "answer_span": "2023年补充规定第十八条规定未尽事宜按国家、辽宁省有关规定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019的quote直接支持，且已读原文一致。"
+          },
+          {
+            "text": "2023补充规定第十八条由人事处负责解释",
+            "answer_span": "由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019的quote直接支持，且已读原文一致。"
+          },
+          {
+            "text": "2023补充规定第十八条自发布之日起执行",
+            "answer_span": "自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019的quote直接支持，且已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确呈现两份规定对“以上”包含本级的差异，明确提示解释不一致，并正确请求用户确认适用版本，未擅自统一结论。所有制度事实均有可靠引用且与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处正式解释",
+            "衔接说明",
+            "执行通知",
+            "适用版本"
+          ],
+          "reason": "答案明确要求用户提供人事处就冲突条款出具的正式解释、衔接说明或执行通知，并确认适用版本，属于可操作的缺口说明。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:11:33.446059+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8d4e47650cc4b914c2102762d47efe18e149be55ac76ae296c437eb98ad93326",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "edd3166b-6ce1-4021-be9a-2330b0a66007",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3157,
+            "completion_tokens": 7003,
+            "total_tokens": 10160,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5800
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1877
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"即“以上”不含本级\",\n      \"reason\": \"答案明确表述2020年规定中“以上”不包括本级。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"即“以上”含本级\",\n      \"reason\": \"答案明确表述2023年补充规定中“以上”包括本级。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份规定对“以上”是否包含本级的解释不一致\",\n      \"reason\": \"答案明确指出两份规定解释不一致。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请提供人事处就两份规定适用关系（尤其“以上”含义）出具的正式解释、衔接说明或执行通知，并明确所涉事项应适用哪份规定及版本\",\n      \"reason\": \"答案请求用户提供适用关系解释并确认适用版本，未擅自统一套用。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定第二十二条中“以内”“不超过”均包括本级\",\n      \"answer_span\": \"“以内”“不超过”均包括本级\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。\"\n    },\n    {\n      \"text\": \"2020规定第二十二条中“以上”“超过”均不包括本级\",\n      \"answer_span\": \"“以上”“超过”均不包括本级\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。\"\n    },\n    {\n      \"text\": \"2023补充规定第十九条中“以内”“不超过”“以上”均包括本级\",\n      \"answer_span\": \"“以内”“不超过”“以上”均包括本级\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。\"\n    },\n    {\n      \"text\": \"2023补充规定第十九条中“超过”不包括本级\",\n      \"answer_span\": \"“超过”不包括本级\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。\"\n    },\n    {\n      \"text\": \"两份规定对“以上”是否包含本级的解释不一致\",\n      \"answer_span\": \"两份规定对“以上”是否包含本级的解释不一致\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由两个已读条款直接对比得出，引用的quote分别展示了不同含义，支持该不一致判断。\"\n    },\n    {\n      \"text\": \"2020规定第二十三条由人事处负责解释\",\n      \"answer_span\": \"2020年规定第二十三条规定由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C024的quote直接支持，且已读原文一致。\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条未尽事宜按国家、辽宁省有关规定执行\",\n      \"answer_span\": \"2023年补充规定第十八条规定未尽事宜按国家、辽宁省有关规定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019的quote直接支持，且已读原文一致。\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条由人事处负责解释\",\n      \"answer_span\": \"由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019的quote直接支持，且已读原文一致。\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条自发布之日起执行\",\n      \"answer_span\": \"自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019的quote直接支持，且已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确呈现两份规定对“以上”包含本级的差异，明确提示解释不一致，并正确请求用户确认适用版本，未擅自统一结论。所有制度事实均有可靠引用且与已读原文一致，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处正式解释\",\n      \"衔接说明\",\n      \"执行通知\",\n      \"适用版本\"\n    ],\n    \"reason\": \"答案明确要求用户提供人事处就冲突条款出具的正式解释、衔接说明或执行通知，并确认适用版本，属于可操作的缺口说明。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01513292,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 59.3627
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案准确呈现两份规定对“以上”包含本级的差异，明确提示解释不一致，并正确请求用户确认适用版本，未擅自统一结论。所有制度事实均有可靠引用且与已读原文一致，无严重错误。",
+        "source_score_sha256": "6c276f3e4f1acce143b0c56981d94d50999fca1523b8d2b998670eb3fc054b70"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "dbda46422770fa8d8dcd59b9728d1e3fe7ad5d5b5351160c0adbddd90810ad52"
+}

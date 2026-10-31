@@ -1,0 +1,97 @@
+{
+  "mode": "agent",
+  "question": "工具持续失败时停止",
+  "history": [],
+  "output": {
+    "status": "limit_reached",
+    "claims": [],
+    "gaps": [
+      "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+    ],
+    "answer": "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+  },
+  "raw_final": null,
+  "validation_errors": [],
+  "trace": [
+    {
+      "kind": "mock_model",
+      "purpose": "agent",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 1,
+      "action": "search",
+      "arguments": {
+        "query": "科研经费"
+      },
+      "reason": ""
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "科研经费"
+      },
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "TEMPORARY_UNAVAILABLE",
+          "retryable": true,
+          "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+        },
+        "fault_injected": true
+      },
+      "seconds": 0.0,
+      "attempt_number": 1
+    },
+    {
+      "kind": "mock_model",
+      "purpose": "agent",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 2,
+      "action": "search",
+      "arguments": {
+        "query": "科研经费"
+      },
+      "reason": ""
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "科研经费"
+      },
+      "result": {
+        "ok": false,
+        "error": {
+          "code": "TEMPORARY_UNAVAILABLE",
+          "retryable": true,
+          "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+        },
+        "fault_injected": true
+      },
+      "seconds": 0.0,
+      "attempt_number": 2
+    }
+  ],
+  "read_ids": [],
+  "first_hits": [],
+  "seconds": 0.0001,
+  "model_calls": 0,
+  "tool_calls": 2,
+  "real_model": false,
+  "fault": {
+    "tool": "search",
+    "mode": "always",
+    "code": "TEMPORARY_UNAVAILABLE"
+  },
+  "mock": true,
+  "quality_evidence": false,
+  "warning": "OFFLINE MOCK：预设模型动作及检索候选；工具读取、校验和上限真实执行，不证明真实模型决策效果。"
+}

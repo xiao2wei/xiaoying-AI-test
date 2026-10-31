@@ -1,0 +1,194 @@
+{
+  "id": "TEST39",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校临时用工岗位设置需经过哪些审批？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节；请稍后重试或提供《辽宁科技大学制度汇编》中临时用工管理相关制度（含标题、版本日期和适用对象）以便核对。"
+        ],
+        "answer": "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节；请稍后重试或提供《辽宁科技大学制度汇编》中临时用工管理相关制度（含标题、版本日期和适用对象）以便核对。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节；请稍后重试或提供《辽宁科技大学制度汇编》中临时用工管理相关制度（含标题、版本日期和适用对象）以便核对。"
+        ],
+        "answer": "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节；请稍后重试或提供《辽宁科技大学制度汇编》中临时用工管理相关制度（含标题、版本日期和适用对象）以便核对。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:17.593469+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aafb11f71986d29799f74f24e60605f1d3b0d900e8fec4b4ca2a1530f29ce106",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "a38bde5a-f16c-44a8-ae1b-cde27b1672d0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1723,
+            "completion_tokens": 30,
+            "total_tokens": 1753,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 187
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"临时用工 岗位设置 审批\"},\"reason\":\"检索临时用工岗位设置审批相关制度条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005528999999999999,
+          "seconds": 0.6769
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批"
+          },
+          "reason": "检索临时用工岗位设置审批相关制度条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:18.296259+00:00",
+          "attempt": 1,
+          "prompt_sha256": "84dbb519413519bc0abb5f1ed5d496a4c74294cd44106c7d8e6e9bcd1fbdaa7c",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "de4475b6-d2d1-4925-ae62-58f7b4c9482a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1862,
+            "completion_tokens": 40,
+            "total_tokens": 1902,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 198
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"临时用工 岗位设置 审批 程序\"}, \"reason\": \"首次检索工具持续不可用，换关键词再试一次\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006066,
+          "seconds": 1.1725
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批 程序"
+          },
+          "reason": "首次检索工具持续不可用，换关键词再试一次"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批 程序"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:19.493041+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a80766be1e9083f756e3ffbc80841fbed3ad47143b687ca44e3b4e4e4fd3ed1f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e74635d6-9fac-45e8-8d00-3e5c56d6c06e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2006,
+            "completion_tokens": 102,
+            "total_tokens": 2108,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 214
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"tool_error\", \"claims\": [], \"gaps\": [\"检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节；请稍后重试或提供《辽宁科技大学制度汇编》中临时用工管理相关制度（含标题、版本日期和适用对象）以便核对。\"]}, \"reason\": \"工具持续不可用，无法取得原文证据\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007241999999999999,
+          "seconds": 1.2289
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "工具持续不可用，无法取得原文证据"
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 3.1536,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 3.1538,
+  "model_calls": 3,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T03:22:20.723151+00:00"
+}

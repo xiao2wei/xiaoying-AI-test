@@ -1,0 +1,103 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "该细则适用于学校本科以及研究生兼职辅导员",
+            "reason": "实际回答明确表述细则适用范围包括本科及研究生，与要点语义等价。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "该细则适用于学校本科以及研究生兼职辅导员",
+            "answer_span": "该细则适用于学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答准确引用第二条，且实际已读原文支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确否定只适用于本科生辅导员，并准确说明细则适用于学校本科及研究生兼职辅导员，引用和已读记录均支持，工具行动合理。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:20:56.864867+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c758c42453b8304a62deee21b7ef43ee6875aad0bce4689de402b544effddc65",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "05242669-e854-4525-8c8c-81ba1d612006",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1254,
+            "completion_tokens": 1177,
+            "total_tokens": 2431,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1007
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 486
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"该细则适用于学校本科以及研究生兼职辅导员\",\"reason\":\"实际回答明确表述细则适用范围包括本科及研究生，与要点语义等价。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"该细则适用于学校本科以及研究生兼职辅导员\",\"answer_span\":\"该细则适用于学校本科以及研究生兼职辅导员\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"回答准确引用第二条，且实际已读原文支持该事实。\"}],\"serious_errors\":[],\"reason\":\"回答正确否定只适用于本科生辅导员，并准确说明细则适用于学校本科及研究生兼职辅导员，引用和已读记录均支持，工具行动合理。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0063162,
+          "seconds": 15.1185
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:21:11.991426+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d92545f1f93cb28b4818289d0382ae22be26675ed731eb1c8b5fa7111ff905e0",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1417
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:21:52.133381+00:00",
+          "attempt": 2,
+          "prompt_sha256": "d92545f1f93cb28b4818289d0382ae22be26675ed731eb1c8b5fa7111ff905e0",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1734
+        }
+      ],
+      "judge_error": "ModelError:ConnectionError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "53af1cd5ebf713359f11a00d66f152d72d7244bada562103827b699b13d754a2"
+}

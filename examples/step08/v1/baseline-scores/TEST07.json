@@ -1,0 +1,108 @@
+{
+  "id": "TEST07",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "reason": "明确表达了一般的男性不超过63周岁、女性不超过60周岁的上限。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。",
+            "reason": "明确表达了首次聘用需经指定级别医疗单位体检合格且达到岗位健康标准。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "男性临时用工人员年龄一般不得超过63周岁",
+            "answer_span": "男63周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（二）项明确支持男63周岁上限，实际已读该条款。"
+          },
+          {
+            "text": "女性临时用工人员年龄一般不得超过60周岁",
+            "answer_span": "女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（二）项明确支持女60周岁上限，实际已读该条款。"
+          },
+          {
+            "text": "首次聘用时需经学校指定级别的医疗单位体检合格",
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（三）项明确支持首次聘用体检合格要求，实际已读该条款。"
+          },
+          {
+            "text": "首次聘用时需达到岗位要求的健康标准",
+            "answer_span": "达到岗位要求的健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（三）项明确支持首次聘用达到岗位健康标准，实际已读该条款。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案完整准确，引用了正确的第九条，所有必需要点均已清晰表达，引用支持且实际已读，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:27.369083+00:00",
+          "attempt": 1,
+          "prompt_sha256": "531d1bddbbf58faa3dacf75b3fc75a629984ca551c49dbf25d5f983facc1f573",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "be8eba9c-13ad-44cb-8a32-fb32eb47fa48",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2461,
+            "completion_tokens": 4994,
+            "total_tokens": 7455,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4434
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1565
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁。\",\n      \"reason\": \"明确表达了一般的男性不超过63周岁、女性不超过60周岁的上限。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。\",\n      \"reason\": \"明确表达了首次聘用需经指定级别医疗单位体检合格且达到岗位健康标准。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"男性临时用工人员年龄一般不得超过63周岁\",\n      \"answer_span\": \"男63周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（二）项明确支持男63周岁上限，实际已读该条款。\"\n    },\n    {\n      \"text\": \"女性临时用工人员年龄一般不得超过60周岁\",\n      \"answer_span\": \"女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（二）项明确支持女60周岁上限，实际已读该条款。\"\n    },\n    {\n      \"text\": \"首次聘用时需经学校指定级别的医疗单位体检合格\",\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（三）项明确支持首次聘用体检合格要求，实际已读该条款。\"\n    },\n    {\n      \"text\": \"首次聘用时需达到岗位要求的健康标准\",\n      \"answer_span\": \"达到岗位要求的健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（三）项明确支持首次聘用达到岗位健康标准，实际已读该条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案完整准确，引用了正确的第九条，所有必需要点均已清晰表达，引用支持且实际已读，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.023024760000000002,
+          "seconds": 41.9645
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "67c3e05095e37b70d0ec6f1461f8b1d91751c3b0fa456db8424b81c815c45565"
+}

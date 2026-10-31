@@ -1,0 +1,156 @@
+{
+  "id": "TEST40",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "作风问题处理决定形成后多久告知当事人？",
+      "history": [],
+      "output": {
+        "status": "limit_reached",
+        "claims": [],
+        "gaps": [
+          "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+        ],
+        "answer": "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:24.254155+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3f3811602ff347eb0aa6c06fb6e055d3d1015ed575efe47a7f58bf9b2638ac73",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "11f4ccbb-d8ab-4e5f-9bde-b61c6659145a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2087,
+            "completion_tokens": 32,
+            "total_tokens": 2119,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 295
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"作风问题处理决定 告知当事人 期限\"},\"reason\":\"检索作风问题处理决定告知当事人的时限规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 6.8826e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.7801
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "reason": "检索作风问题处理决定告知当事人的时限规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:25.076235+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ebc72677a40e966858794dcbcf4f4d96caebf89e187a90b84fd30ee6ed3b58a4",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "09d6965d-3f2c-4afa-a931-450b4d039fe0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2226,
+            "completion_tokens": 37,
+            "total_tokens": 2263,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 178
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"作风问题处理决定 告知当事人 期限\"}, \"reason\": \"上次检索临时故障，重试同一检索\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 5.5044e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.7785
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "reason": "上次检索临时故障，重试同一检索"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.6432,
+      "model_calls": 2,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "TEMPORARY_UNAVAILABLE",
+        "max_tools": 2
+      }
+    }
+  ],
+  "seconds": 1.6435,
+  "model_calls": 2,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T04:05:25.856158+00:00"
+}

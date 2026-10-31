@@ -1,0 +1,32 @@
+{
+  "id": "DEV05",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:27:39.741273+00:00",
+          "attempt": 1,
+          "prompt_sha256": "521da81fb9915970281b4b7ccf436742e0b0bb72243c246f4cbc5b263dfce29a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4534
+        }
+      ],
+      "judge_error": "ModelError:HTTP_402",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "94aeec89f8622db449b88171504861b76391c6ebd9c5f1b5dc8cf60d899948b8"
+}

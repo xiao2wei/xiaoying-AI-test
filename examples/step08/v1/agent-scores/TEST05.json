@@ -1,0 +1,138 @@
+{
+  "id": "TEST05",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "收到申诉书之日起5个工作日内",
+            "reason": "实际回答明确表述收到申诉书之日起5个工作日内审查，与标准要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "reason": "实际回答明确一次性书面通知全部补正内容和补正期限，与标准要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期补正视为放弃申诉",
+            "reason": "实际回答明确逾期补正视为放弃，与标准要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会在收到申诉书之日起5个工作日内进行审查",
+            "answer_span": "在收到申诉书之日起5个工作日内",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条开头，实际已读该条款，支持时限要求。"
+          },
+          {
+            "text": "依据该办法第八、九、十、十一条进行审查",
+            "answer_span": "依据该办法第八、九、十、十一条进行审查",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条开头，实际已读该条款，支持依据条款。"
+          },
+          {
+            "text": "区别情况作出处理",
+            "answer_span": "区别情况处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条开头，实际已读该条款，支持区别处理。"
+          },
+          {
+            "text": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "answer_span": "应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条第（三）项，实际已读该条款，支持补正通知要求。"
+          },
+          {
+            "text": "逾期补正视为放弃申诉",
+            "answer_span": "逾期补正视为放弃申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条第（三）项，实际已读该条款，支持逾期视为放弃。"
+          },
+          {
+            "text": "上述规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》",
+            "answer_span": "上述规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "无显式引用，但实际已读文档标题与版本日期支持该出处。"
+          },
+          {
+            "text": "适用于教职工校内申诉",
+            "answer_span": "适用于教职工校内申诉",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "无显式引用，但实际已读文档标题表明适用范围为教职工。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了制度规定，完整覆盖标准的三个审查要点，引用内容与实际读取记录一致，未发现无依据事实或错误引用。gaps中的出处和适用范围虽无直接引用，但已读文档元数据支持，不影响主要回答的正确性。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.360776+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bb125dd4c393c935223bfa54ef9f0139b1e5de652b4aadd7167ad6ebf681f8b5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "80457632-4ece-4063-882e-85e8eb9b0942",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1971,
+            "completion_tokens": 7845,
+            "total_tokens": 9816,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6977
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1075
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"收到申诉书之日起5个工作日内\",\n      \"reason\": \"实际回答明确表述收到申诉书之日起5个工作日内审查，与标准要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"reason\": \"实际回答明确一次性书面通知全部补正内容和补正期限，与标准要点一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"逾期补正视为放弃申诉\",\n      \"reason\": \"实际回答明确逾期补正视为放弃，与标准要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会在收到申诉书之日起5个工作日内进行审查\",\n      \"answer_span\": \"在收到申诉书之日起5个工作日内\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条开头，实际已读该条款，支持时限要求。\"\n    },\n    {\n      \"text\": \"依据该办法第八、九、十、十一条进行审查\",\n      \"answer_span\": \"依据该办法第八、九、十、十一条进行审查\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条开头，实际已读该条款，支持依据条款。\"\n    },\n    {\n      \"text\": \"区别情况作出处理\",\n      \"answer_span\": \"区别情况处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条开头，实际已读该条款，支持区别处理。\"\n    },\n    {\n      \"text\": \"对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"answer_span\": \"应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条第（三）项，实际已读该条款，支持补正通知要求。\"\n    },\n    {\n      \"text\": \"逾期补正视为放弃申诉\",\n      \"answer_span\": \"逾期补正视为放弃申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条第（三）项，实际已读该条款，支持逾期视为放弃。\"\n    },\n    {\n      \"text\": \"上述规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》\",\n      \"answer_span\": \"上述规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"无显式引用，但实际已读文档标题与版本日期支持该出处。\"\n    },\n    {\n      \"text\": \"适用于教职工校内申诉\",\n      \"answer_span\": \"适用于教职工校内申诉\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"无显式引用，但实际已读文档标题表明适用范围为教职工。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了制度规定，完整覆盖标准的三个审查要点，引用内容与实际读取记录一致，未发现无依据事实或错误引用。gaps中的出处和适用范围虽无直接引用，但已读文档元数据支持，不影响主要回答的正确性。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03366792,
+          "seconds": 68.2166
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "c6d14feac8b154d197556d3f4e03be1ef50ab9ccbc0dad8a6d627aaaafcddc26"
+}

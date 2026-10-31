@@ -1,0 +1,74 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际答案仅称“5001元只要项目负责人一个人签字”，未表达项目负责人及所在二级教学科研机构负责人共同签字，且该结论与已读条款不符。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "5001元只要项目负责人一个人签字。",
+        "answer_span": "5001元只要项目负责人一个人签字。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用的是“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”，该条款不适用于5001元；实际已读条款明确5000元以上1万元以下（含1万元）需项目负责人、所在二级教学（科研）机构负责人签字，故该事实不被引用和已读资料支持。"
+      }
+    ],
+    "serious_errors": [
+      "实际回答将5001元适用5000元以下条款，引用不能支持结论；错误地称只需项目负责人签字，遗漏所在二级教学科研机构负责人签字。"
+    ],
+    "reason": "已读资料明确5001元属于5000元以上1万元以下档次，应由项目负责人和所在二级教学（科研）机构负责人签字。实际回答误用5000元以下条款，遗漏必需签字人，要点未满足，回答错误。"
+  },
+  "critical_errors": [
+    "实际回答将5001元适用5000元以下条款，引用不能支持结论；错误地称只需项目负责人签字，遗漏所在二级教学科研机构负责人签字。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:15:40.897512+00:00",
+      "attempt": 1,
+      "prompt_sha256": "62ad310563d6dcaa15f3fe6de52333eb5ad328a3adefe035b40e7e8ea5d93969",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "fe396344-6068-4b4a-b065-6beab42be01c",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2248,
+        "completion_tokens": 1474,
+        "total_tokens": 3722,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1120
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1480
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际答案仅称“5001元只要项目负责人一个人签字”，未表达项目负责人及所在二级教学科研机构负责人共同签字，且该结论与已读条款不符。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"5001元只要项目负责人一个人签字。\",\n      \"answer_span\": \"5001元只要项目负责人一个人签字。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用的是“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”，该条款不适用于5001元；实际已读条款明确5000元以上1万元以下（含1万元）需项目负责人、所在二级教学（科研）机构负责人签字，故该事实不被引用和已读资料支持。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际回答将5001元适用5000元以下条款，引用不能支持结论；错误地称只需项目负责人签字，遗漏所在二级教学科研机构负责人签字。\"\n  ],\n  \"reason\": \"已读资料明确5001元属于5000元以上1万元以下档次，应由项目负责人和所在二级教学（科研）机构负责人签字。实际回答误用5000元以下条款，遗漏必需签字人，要点未满足，回答错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0088044,
+      "seconds": 21.4654
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL10",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

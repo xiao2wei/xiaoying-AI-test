@@ -1,0 +1,390 @@
+{
+  "id": "TEST38",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "教师在职读博期间费用由谁承担？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等原文时工具持续返回PERSISTENT_UNAVAILABLE，未能取得可引用的原文，无法确认费用承担结论。"
+        ],
+        "answer": "读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等原文时工具持续返回PERSISTENT_UNAVAILABLE，未能取得可引用的原文，无法确认费用承担结论。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等原文时工具持续返回PERSISTENT_UNAVAILABLE，未能取得可引用的原文，无法确认费用承担结论。"
+        ],
+        "answer": "读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等原文时工具持续返回PERSISTENT_UNAVAILABLE，未能取得可引用的原文，无法确认费用承担结论。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:14.492188+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3441232cb4e6fec2981d6535d4190b05f751bd48f767d89bd21628dd346f0721",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "8b297b95-166e-40d6-9a51-b18b0de720c0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1723,
+            "completion_tokens": 40,
+            "total_tokens": 1763,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 187
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"教师在职攻读博士学位 费用 承担 培养费 报销\",\"doc_ids\":[]},\"reason\":\"检索教师在职读博费用承担相关规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005649,
+          "seconds": 1.3256
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "教师在职攻读博士学位 费用 承担 培养费 报销",
+            "doc_ids": []
+          },
+          "reason": "检索教师在职读博费用承担相关规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教师在职攻读博士学位 费用 承担 培养费 报销",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "教师在职攻读博士学位 费用 承担 培养费 报销",
+            "hits": [
+              {
+                "chunk_id": "D01-C017",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.786611,
+                "lexical_score": 51.976,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十六条 第十六条 教师在职读博期间发生的费用由本人自行承担。在职读博期间学校\n为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属\n于学校为促进个人可持续发展为其提供的进修培训资助费用。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C014",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十三条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.087619,
+                "semantic_score": 0.69334,
+                "lexical_score": 55.6347,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十三条 第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.703205,
+                "lexical_score": 49.7535,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C011",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.076705,
+                "semantic_score": 0.719838,
+                "lexical_score": 42.4383,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十条 第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C003",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第二条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.072944,
+                "semantic_score": 0.682462,
+                "lexical_score": 44.0476,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第二条 第二条 专任教师及从事实验课教学的实验技术人员（以下简称教师）在职读博\n遵循“自愿申请、专业对口、学以致用”原则，要立足岗位需求，提升人才培养质量，服\n务学校高质量发展。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0092,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:15.854565+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9561e7705fad52e8de433dc06e31b41bb1e3d449912bef9d11af9d8871386dc0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6805e34e-b8f7-4431-9681-be94dc455907",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3007,
+            "completion_tokens": 48,
+            "total_tokens": 3055,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1343
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C017\", \"D01-C014\", \"D01-C008\"]}, \"reason\": \"读取费用承担、待遇限制及协议条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009597000000000001,
+          "seconds": 1.036
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C017",
+              "D01-C014",
+              "D01-C008"
+            ]
+          },
+          "reason": "读取费用承担、待遇限制及协议条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C017"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C014"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C008"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:16.914634+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1ad7165833089be282335e3d4e20c8e5b5ef8c34c745224f920e010547e2a3e1",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "55e497d8-8f92-4a63-ad41-f89d1b916cc1",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3269,
+            "completion_tokens": 33,
+            "total_tokens": 3302,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 325
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C017\"]}, \"reason\": \"重试读取费用承担核心条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010203,
+          "seconds": 0.8672
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C017"
+            ]
+          },
+          "reason": "重试读取费用承担核心条款"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C017"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:17.805622+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d0e9969d9f14d97d920ab39b2565856467a88672b28b1497e9598fce10d82ac7",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "1d2cc1a5-27c1-4c90-b8d1-12cb69bab88f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3406,
+            "completion_tokens": 85,
+            "total_tokens": 3491,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 206
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"tool_error\", \"claims\": [], \"gaps\": [\"读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等原文时工具持续返回PERSISTENT_UNAVAILABLE，未能取得可引用的原文，无法确认费用承担结论。\"]}, \"reason\": \"读取工具持续不可用，无法依据原文作答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0011237999999999999,
+          "seconds": 1.0072
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "读取工具持续不可用，无法依据原文作答"
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [
+        "D01-C017",
+        "D01-C014",
+        "D01-C008",
+        "D01-C011",
+        "D01-C003"
+      ],
+      "seconds": 4.3464,
+      "model_calls": 4,
+      "tool_calls": 5,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 4.3467,
+  "model_calls": 4,
+  "tool_calls": 5,
+  "created_at": "2026-10-31T03:22:18.814514+00:00"
+}

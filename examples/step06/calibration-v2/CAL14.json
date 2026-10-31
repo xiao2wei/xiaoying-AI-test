@@ -1,0 +1,76 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答在gaps中明确说明“缺少您的引进人才层次”，直接表达了缺少人才层次这一要点。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答在gaps中明确说明“缺少您的引进人才层次和已签协议条件”，直接表达了缺少已签协议条件这一要点。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "实际回答在gaps中明确说明“目前不能确定唯一安家费金额”，直接表达了不提供唯一金额这一要点。"
+      },
+      {
+        "index": 3,
+        "met": true,
+        "reason": "实际回答在gaps中明确请求“请提供引进人才层次”，直接表达了追问人才层次这一要点。"
+      },
+      {
+        "index": 4,
+        "met": true,
+        "reason": "实际回答在gaps中明确请求“以及已签协议中约定的待遇”，直接表达了追问已签协议这一要点。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "回答正确识别信息不足，明确说明缺少人才层次和已签协议条件，不提供唯一金额，并追问所需信息，符合预期状态。工具读取了相关条款，决策合理。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:58:23.698390+00:00",
+      "attempt": 1,
+      "prompt_sha256": "267f6eff8d55d8d39afc2145d50dd023e9b63abb93586391403095c1da48a96a",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "b1246689-7082-493a-99ac-ba34b8e09a21",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 3472,
+        "completion_tokens": 336,
+        "total_tokens": 3808,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 2832
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“缺少您的引进人才层次”，直接表达了缺少人才层次这一要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“缺少您的引进人才层次和已签协议条件”，直接表达了缺少已签协议条件这一要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“目前不能确定唯一安家费金额”，直接表达了不提供唯一金额这一要点。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确请求“请提供引进人才层次”，直接表达了追问人才层次这一要点。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确请求“以及已签协议中约定的待遇”，直接表达了追问已签协议这一要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别信息不足，明确说明缺少人才层次和已签协议条件，不提供唯一金额，并追问所需信息，符合预期状态。工具读取了相关条款，决策合理。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.005913600000000001,
+      "seconds": 4.8542
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL14",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

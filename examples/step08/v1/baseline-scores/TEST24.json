@@ -1,0 +1,242 @@
+{
+  "id": "TEST24",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "缺少您的年龄（是否已达法定退休年龄、拟延至多少周岁）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年聘期及年度考核结果、师德师风与政治素质情况、业绩情况，以及是否符合四项条件之一（人才称号、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博导且博士生在培养期内）",
+            "reason": "答案明确指出缺少年龄、岗位等级、考核、业绩等资格条件，并列出需补充的要素。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法直接判断是否符合",
+            "reason": "答案明确表示无法直接判断，未认定必然符合或不符合。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请补充上述各项具体信息，以便逐项对照延退条件判断。",
+            "reason": "答案明确请求用户补充具体信息。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请高级专家延长退休年龄须身体健康",
+            "answer_span": "身体健康",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "申请高级专家延长退休年龄须长期从事重点学科教学科研工作",
+            "answer_span": "长期从事重点学科教学科研工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "申请高级专家延长退休年龄须具有良好政治素质与师德师风",
+            "answer_span": "具有良好政治素质与师德师风",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "申请高级专家延长退休年龄须教学科研工作业绩突出",
+            "answer_span": "教学科研工作业绩突出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "申请高级专家延长退休年龄须近三年聘期及年度考核均为合格以上",
+            "answer_span": "近三年聘期及年度考核均为合格以上",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "申请高级专家延长退休年龄须在达到法定退休年龄前已聘用在专业技术三级以上岗位",
+            "answer_span": "在达到法定退休年龄前已聘用在专业技术三级以上岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "须符合四项条件之一，包括国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者",
+            "answer_span": "国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "或者主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内",
+            "answer_span": "主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "或者作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替",
+            "answer_span": "作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "或者作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选",
+            "answer_span": "作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "高级专家延退期限一般不超过63周岁",
+            "answer_span": "一般不超过63周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，延退期限一般不超过65周岁",
+            "answer_span": "若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "高级专家延退须由本人提前半年自愿提出",
+            "answer_span": "本人提前半年自愿提出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "高级专家延退须经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理",
+            "answer_span": "经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          },
+          {
+            "text": "学校每年5月和11月研究高级专家延退事项",
+            "answer_span": "学校每年5月和11月研究延退事项",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D22-C001原文，已读原文包含该表述，支持事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确识别关键资格信息缺失，未擅自判断，并能引用已读制度文件说明条件并请求补充，整体合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "年龄（是否已达法定退休年龄、拟延至多少周岁）",
+            "现聘专业技术岗位等级（是否三级以上、是否二级以上）",
+            "是否长期从事重点学科教学科研工作",
+            "近三年聘期及年度考核结果",
+            "师德师风与政治素质情况",
+            "业绩情况",
+            "是否符合四项条件之一（人才称号、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博导且博士生在培养期内）"
+          ],
+          "reason": "答案明确列出缺少的具体个人资格信息，并要求用户提供，而非仅说无法回答或让用户自行查资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:54.671028+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9961816878dd7754ba2465500fa188abe5332515c962d808274903eba010d84b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ef2abc51-6963-4069-85ac-5891942492a7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 6650,
+            "completion_tokens": 10004,
+            "total_tokens": 16654,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8772
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 5754
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"缺少您的年龄（是否已达法定退休年龄、拟延至多少周岁）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年聘期及年度考核结果、师德师风与政治素质情况、业绩情况\",\n      \"reason\": \"明确说明缺少年龄、岗位等级、考核、业绩等关键资格条件\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法直接判断是否符合\",\n      \"reason\": \"未给出符合或不符合的结论\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请补充上述各项具体信息，以便逐项对照延退条件判断\",\n      \"reason\": \"明确请求用户补充所需信息\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请高级专家延长退休年龄须身体健康\",\n      \"answer_span\": \"身体健康\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须长期从事重点学科教学科研工作\",\n      \"answer_span\": \"长期从事重点学科教学科研工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须具有良好政治素质与师德师风\",\n      \"answer_span\": \"具有良好政治素质与师德师风\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须教学科研工作业绩突出\",\n      \"answer_span\": \"教学科研工作业绩突出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须近三年聘期及年度考核均为合格以上\",\n      \"answer_span\": \"近三年聘期及年度考核均为合格以上\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"answer_span\": \"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001延退条件原文，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"延退条件之一：国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"answer_span\": \"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001四项条件之一，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"延退条件之一：主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\n      \"answer_span\": \"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001四项条件之一，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"延退条件之一：作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"answer_span\": \"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001四项条件之一，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"延退条件之一：作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"answer_span\": \"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001四项条件之一，实际已读D22-C001且内容一致\"\n    },\n    {\n      \"text\": \"延退期限一般不超过63周岁\",\n      \"answer_span\": \"一般不超过63周岁\",\n      \"",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.048393839999999994,
+          "error": "JSONDecodeError",
+          "seconds": 85.0495
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:19.720990+00:00",
+          "attempt": 2,
+          "prompt_sha256": "9961816878dd7754ba2465500fa188abe5332515c962d808274903eba010d84b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "04a18907-3b94-4520-b5cc-62890106a741",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 6650,
+            "completion_tokens": 9833,
+            "total_tokens": 16483,
+            "prompt_tokens_details": {
+              "cached_tokens": 6528
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7903
+            },
+            "prompt_cache_hit_tokens": 6528,
+            "prompt_cache_miss_tokens": 122
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"缺少您的年龄（是否已达法定退休年龄、拟延至多少周岁）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年聘期及年度考核结果、师德师风与政治素质情况、业绩情况，以及是否符合四项条件之一（人才称号、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博导且博士生在培养期内）\",\n      \"reason\": \"答案明确指出缺少年龄、岗位等级、考核、业绩等资格条件，并列出需补充的要素。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法直接判断是否符合\",\n      \"reason\": \"答案明确表示无法直接判断，未认定必然符合或不符合。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请补充上述各项具体信息，以便逐项对照延退条件判断。\",\n      \"reason\": \"答案明确请求用户补充具体信息。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请高级专家延长退休年龄须身体健康\",\n      \"answer_span\": \"身体健康\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须长期从事重点学科教学科研工作\",\n      \"answer_span\": \"长期从事重点学科教学科研工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须具有良好政治素质与师德师风\",\n      \"answer_span\": \"具有良好政治素质与师德师风\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须教学科研工作业绩突出\",\n      \"answer_span\": \"教学科研工作业绩突出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须近三年聘期及年度考核均为合格以上\",\n      \"answer_span\": \"近三年聘期及年度考核均为合格以上\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"申请高级专家延长退休年龄须在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"answer_span\": \"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"须符合四项条件之一，包括国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"answer_span\": \"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"或者主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\n      \"answer_span\": \"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"或者作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"answer_span\": \"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"或者作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"answer_span\": \"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"高级专家延退期限一般不超过63周岁\",\n      \"answer_span\": \"一般不超过63周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，延退期限一般不超过65周岁\",\n      \"answer_span\": \"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"高级专家延退须由本人提前半年自愿提出\",\n      \"answer_span\": \"本人提前半年自愿提出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"高级专家延退须经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理\",\n      \"answer_span\": \"经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    },\n    {\n      \"text\": \"学校每年5月和11月研究高级专家延退事项\",\n      \"answer_span\": \"学校每年5月和11月研究延退事项\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D22-C001原文，已读原文包含该表述，支持事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别关键资格信息缺失，未擅自判断，并能引用已读制度文件说明条件并请求补充，整体合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"年龄（是否已达法定退休年龄、拟延至多少周岁）\",\n      \"现聘专业技术岗位等级（是否三级以上、是否二级以上）\",\n      \"是否长期从事重点学科教学科研工作\",\n      \"近三年聘期及年度考核结果\",\n      \"师德师风与政治素质情况\",\n      \"业绩情况\",\n      \"是否符合四项条件之一（人才称号、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博导且博士生在培养期内）\"\n    ],\n    \"reason\": \"答案明确列出缺少的具体个人资格信息，并要求用户提供，而非仅说无法回答或让用户自行查资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.04771668,
+          "seconds": 85.12
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "08cbe565629383bbd4fb49943406889f57b1693e670ae1b170a40d4c58eb28ff"
+}

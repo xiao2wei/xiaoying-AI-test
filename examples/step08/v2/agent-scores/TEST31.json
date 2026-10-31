@@ -1,0 +1,167 @@
+{
+  "id": "TEST31",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "reason": "实际回答未表达“完成临时阶段辅助特殊工作”这一要点，仅提到“短期合同制用工形式”，缺失“临时性、阶段性、辅助性或特殊性工作任务”的表述。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "辽宁科技大学临时用工管理办法第二条规定临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式",
+            "answer_span": "临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的chunk D23-C003内容与事实陈述一致，已读原文支持。"
+          },
+          {
+            "text": "临时用工不属于事业编制内用工",
+            "answer_span": "因此不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "由“事业编制之外”可直接推出，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答引用了正确的管理办法第二条，并得出不属于事业编制内用工的结论，工具使用和状态正常。但遗漏了要点中“完成临时阶段辅助特殊工作”的表述，导致要点未完全满足，因此answer_correct为false。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:29.285658+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7d2c65ed82ed138d52aa074a1d6aaa30bf222ecb987e26e413fb237887f4a78c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ff60a929-041f-4e24-8093-51b4af487dac",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1669,
+            "completion_tokens": 1448,
+            "total_tokens": 3117,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1087
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 517
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答未表达“完成临时阶段辅助特殊工作”这一要点，仅提到“短期合同制用工形式”，缺失“临时性、阶段性、辅助性或特殊性工作任务”的表述。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学临时用工管理办法第二条规定临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"answer_span\": \"临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的chunk D23-C003内容与事实陈述一致，已读原文支持。\"\n    },\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"因此不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"由“事业编制之外”可直接推出，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答引用了正确的管理办法第二条，并得出不属于事业编制内用工的结论，工具使用和状态正常。但遗漏了要点中“完成临时阶段辅助特殊工作”的表述，导致要点未完全满足，因此answer_correct为false。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00793716,
+          "seconds": 14.5583
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "因此不能受聘该校临时用工岗位",
+            "reason": "实际回答明确表达17岁的人不能受聘临时用工岗位，与要点“不可以”语义等价。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "reason": "实际回答明确引用并陈述了禁止聘用未满18周岁未成年人的规定，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "禁止聘用未满十八周岁的未成年人",
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案明确引用第八条，且引用的quote与实际已读chunk D23-C009原文一致，支持该制度事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用《辽宁科技大学临时用工管理办法》第八条，明确指出禁止聘用未满18周岁未成年人，并据此判定17岁不能受聘临时用工岗位，要点全部满足，无编造或错误引用。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:26.007259+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d304ed859a0cc7050b2b78d71d3ff1eb66b7357240e4f461488e529e2e804911",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ab60bbe4-8138-4701-8c87-67f8576bbeb1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2083,
+            "completion_tokens": 1216,
+            "total_tokens": 3299,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 971
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1059
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"因此不能受聘该校临时用工岗位\",\"reason\":\"实际回答明确表达17岁的人不能受聘临时用工岗位，与要点“不可以”语义等价。\"},{\"index\":1,\"met\":true,\"answer_span\":\"禁止聘用未满十八周岁的未成年人\",\"reason\":\"实际回答明确引用并陈述了禁止聘用未满18周岁未成年人的规定，与要点一致。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"禁止聘用未满十八周岁的未成年人\",\"answer_span\":\"禁止聘用未满十八周岁的未成年人\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际答案明确引用第八条，且引用的quote与实际已读chunk D23-C009原文一致，支持该制度事实。\"}],\"serious_errors\":[],\"reason\":\"答案准确引用《辽宁科技大学临时用工管理办法》第八条，明确指出禁止聘用未满18周岁未成年人，并据此判定17岁不能受聘临时用工岗位，要点全部满足，无编造或错误引用。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00756492,
+          "seconds": 12.4147
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "c9581699729a886816b8455f9b115d2a634f6bdb5e43f120f9032865ca07bb16"
+}

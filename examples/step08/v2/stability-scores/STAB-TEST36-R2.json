@@ -1,0 +1,97 @@
+{
+  "id": "STAB-TEST36-R2",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "从事特种作业的临时用工人员，必须经过专门培训并获得特种作业资格。",
+            "reason": "实际回答明确表述了必须经过专门培训并获得特种作业资格，完全满足要点要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+            "answer_span": "从事特种作业的临时用工人员，必须经过专门培训并获得特种作业资格。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D23-C013第十二条原文直接支持该事实，且该chunk已被实际读取。"
+          },
+          {
+            "text": "签订合同前，临时用工人员须提交规定材料。",
+            "answer_span": "签订合同前，临时用工人员须提交规定材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D23-C016第十五条原文列出签订合同前须提交的材料，总体支持该事实，且该chunk已被实际读取。"
+          },
+          {
+            "text": "有特殊要求的临时用工岗位还须提交职业技术等级或资格证明。",
+            "answer_span": "有特殊要求的临时用工岗位还须提交职业技术等级或资格证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D23-C016第十五条第（四）项明确要求有特殊要求的岗位提交职业技术等级或资格证明，直接支持该事实，且该chunk已被实际读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学临时用工管理办法》第十二条，明确给出特种作业临时用工人员的额外资格要求；同时补充了第十五条的相关提交材料要求，引用与已读原文一致，无错误或遗漏。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:09.967525+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ea0bd602b2bdd68a89f883bf1e08df77f3b50777ed9a0acab648c5594b107c4f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "70fa5f13-8861-460a-8172-2a8f39829442",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2347,
+            "completion_tokens": 2068,
+            "total_tokens": 4415,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1586
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1323
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员，必须经过专门培训并获得特种作业资格。\",\n      \"reason\": \"实际回答明确表述了必须经过专门培训并获得特种作业资格，完全满足要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\n      \"answer_span\": \"从事特种作业的临时用工人员，必须经过专门培训并获得特种作业资格。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D23-C013第十二条原文直接支持该事实，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员须提交规定材料。\",\n      \"answer_span\": \"签订合同前，临时用工人员须提交规定材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D23-C016第十五条原文列出签订合同前须提交的材料，总体支持该事实，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"有特殊要求的临时用工岗位还须提交职业技术等级或资格证明。\",\n      \"answer_span\": \"有特殊要求的临时用工岗位还须提交职业技术等级或资格证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D23-C016第十五条第（四）项明确要求有特殊要求的岗位提交职业技术等级或资格证明，直接支持该事实，且该chunk已被实际读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学临时用工管理办法》第十二条，明确给出特种作业临时用工人员的额外资格要求；同时补充了第十五条的相关提交材料要求，引用与已读原文一致，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01128732,
+          "seconds": 19.2874
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "8066bf3b7c87f0cf5032b2c22dff20bfc5aa69be6abb3eb611337f2e83d0d3d0"
+}

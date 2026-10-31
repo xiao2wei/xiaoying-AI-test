@@ -1,0 +1,120 @@
+{
+  "id": "STAB-TEST16-R1",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "reason": "实际回答明确说明了2023年第十八条废止2020年19号办法。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "因此，2020年19号办法不再继续生效，现行依据为2023年修订办法",
+            "reason": "实际回答依据废止条款解决了版本关系，得出2020年办法不再生效。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023年修订办法第十八条规定该办法自发布之日起施行。",
+            "answer_span": "第十八条规定，该办法自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十八条原文包含此规定，且已读记录支持。"
+          },
+          {
+            "text": "2023年第十八条明确2020年19号办法同时废止。",
+            "answer_span": "并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十八条原文包含废止表述，且已读记录支持。"
+          },
+          {
+            "text": "2020年19号办法不再继续生效。",
+            "answer_span": "2020年19号办法不再继续生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "废止条款足以支持不再生效的结论。"
+          },
+          {
+            "text": "现行依据为2023年修订办法。",
+            "answer_span": "现行依据为2023年修订办法",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该办法自发布之日起施行且废止旧办法，足以支持现行依据。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案明确引用了2023年第十八条废止2020年19号办法，并据此解决版本关系，回答正确，工具使用合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:11:08.567538+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5972f4b06af02c3b1899c6e00402e8ac78fefb612f8f732cc84d7fd7d3a2b4d3",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a0553160-3cbd-46b7-9d81-ea2484df7ade",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2133,
+            "completion_tokens": 2802,
+            "total_tokens": 4935,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2242
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 853
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"reason\": \"实际回答明确说明了2023年第十八条废止2020年19号办法。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"因此，2020年19号办法不再继续生效，现行依据为2023年修订办法\",\n      \"reason\": \"实际回答依据废止条款解决了版本关系，得出2020年办法不再生效。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023年修订办法第十八条规定该办法自发布之日起施行。\",\n      \"answer_span\": \"第十八条规定，该办法自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十八条原文包含此规定，且已读记录支持。\"\n    },\n    {\n      \"text\": \"2023年第十八条明确2020年19号办法同时废止。\",\n      \"answer_span\": \"并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十八条原文包含废止表述，且已读记录支持。\"\n    },\n    {\n      \"text\": \"2020年19号办法不再继续生效。\",\n      \"answer_span\": \"2020年19号办法不再继续生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"废止条款足以支持不再生效的结论。\"\n    },\n    {\n      \"text\": \"现行依据为2023年修订办法。\",\n      \"answer_span\": \"现行依据为2023年修订办法\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该办法自发布之日起施行且废止旧办法，足以支持现行依据。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案明确引用了2023年第十八条废止2020年19号办法，并据此解决版本关系，回答正确，工具使用合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006139100000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 24.8298
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案明确引用了2023年第十八条废止2020年19号办法，并据此解决版本关系，回答正确，工具使用合理，无严重错误。",
+        "source_score_sha256": "b057f66063160885b12690d23d79485c175f4cad92a21b89a6f6c5e8d4dfccdd"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "fd3832b575e2f803be0bd3837f641c24c7decf32f94721406ec1e7453fff3d67"
+}

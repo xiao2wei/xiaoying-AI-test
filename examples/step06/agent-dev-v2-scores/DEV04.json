@@ -1,0 +1,71 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确引用并表述了2022版第二十二条废止原2021年27号办法的内容。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "回答基于明确的废止条款判断，而非仅依据日期。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2022版第二十二条明确原2021年27号办法同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C023的原文，且该原文已实际读取，内容完全支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了已读取的废止条款，并基于该条款得出旧办法不再同时有效的结论，符合要求。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:52:41.093069+00:00",
+          "attempt": 1,
+          "prompt_sha256": "850a8f3c274dc236c27b7969bc33adb297f60e1ab7832df70e9a18cc00a069e3",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "8eeb1ba9-38ba-4008-982b-675dc592933a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1250,
+            "completion_tokens": 236,
+            "total_tokens": 1486,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 738
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确引用并表述了2022版第二十二条废止原2021年27号办法的内容。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"回答基于明确的废止条款判断，而非仅依据日期。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2022版第二十二条明确原2021年27号办法同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C023的原文，且该原文已实际读取，内容完全支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了已读取的废止条款，并基于该条款得出旧办法不再同时有效的结论，符合要求。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00258456,
+          "seconds": 3.3827
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5686d51fff4818ef2a8cdff95c3bc2a7c1d0b46c3a60c2cae24866e5ad671d71"
+}

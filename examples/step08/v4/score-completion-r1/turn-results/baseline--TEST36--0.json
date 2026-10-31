@@ -1,0 +1,77 @@
+{
+  "key": "baseline--TEST36--0",
+  "mode": "baseline",
+  "id": "TEST36",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "3375f269debb73153d0b73ea28106b7fc677add990897a59c822dade55c9f20c",
+  "run_sha256": "76d882c68d4417548246d7c8573d6c6b68a906b2c90872439d6d441cea0fbe98",
+  "created_at": "2026-10-31T05:15:18.297707+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": false,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": false,
+          "answer_span": "",
+          "reason": "实际回答未提及该要点，仅说明无法核实"
+        }
+      ],
+      "status_ok": false,
+      "decision_ok": false,
+      "answer_correct": false,
+      "facts": [],
+      "serious_errors": [],
+      "reason": "工具检索失败后未合理重试，直接请求用户提供资料，未回答问题；无制度事实输出。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:15:09.091283+00:00",
+        "attempt": 1,
+        "prompt_sha256": "e1858045164f8bff0b9bed89736ffd46afa906c10a511bfadbf67a5f5874eeec",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "4504049c-ba3a-4d25-9e31-d142874c4053",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 1437,
+          "completion_tokens": 798,
+          "total_tokens": 2235,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 681
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 285
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答未提及该要点，仅说明无法核实\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"工具检索失败后未合理重试，直接请求用户提供资料，未回答问题；无制度事实输出。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.001793484,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 9.2049
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

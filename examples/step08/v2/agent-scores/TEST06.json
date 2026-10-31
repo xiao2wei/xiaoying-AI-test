@@ -1,0 +1,95 @@
+{
+  "id": "TEST06",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "须有三分之二以上成员参加",
+            "reason": "实际答案明确表达“须有三分之二以上成员参加”，与要点语义等价。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "表决须经出席委员三分之二以上通过方为有效",
+            "reason": "实际答案明确表达表决比例要求，与要点语义等价。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+            "answer_span": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该表述，且实际读取文档中也有相同内容。"
+          },
+          {
+            "text": "表决须经出席委员三分之二以上通过方为有效",
+            "answer_span": "表决须经出席委员三分之二以上通过方为有效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该表述，且实际读取文档中也有相同内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确涵盖两个要点，引用了正确条款，且系统已读取该条款，支持事实。任务完成良好。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:25:09.506502+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d31efc4b4f3096ed080e325e58a75f0430b31f1cc5e57886507da1b8641113b8",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "a622a4a1-2c28-4dbe-9daa-b13a2f159ad3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1893,
+            "completion_tokens": 1854,
+            "total_tokens": 3747,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1489
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 869
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"须有三分之二以上成员参加\",\n      \"reason\": \"实际答案明确表达“须有三分之二以上成员参加”，与要点语义等价。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"表决须经出席委员三分之二以上通过方为有效\",\n      \"reason\": \"实际答案明确表达表决比例要求，与要点语义等价。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会评议申诉案件须有三分之二以上成员参加\",\n      \"answer_span\": \"申诉处理委员会评议申诉案件须有三分之二以上成员参加\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该表述，且实际读取文档中也有相同内容。\"\n    },\n    {\n      \"text\": \"表决须经出席委员三分之二以上通过方为有效\",\n      \"answer_span\": \"表决须经出席委员三分之二以上通过方为有效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该表述，且实际读取文档中也有相同内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确涵盖两个要点，引用了正确条款，且系统已读取该条款，支持事实。任务完成良好。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0098406,
+          "seconds": 17.5214
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "4d96c1b53c7057b967ff6195008b1af9a852416974881fea12a11f4003eb85e5"
+}

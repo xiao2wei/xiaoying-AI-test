@@ -1,0 +1,81 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "项目最长一般不超过4年。",
+        "reason": "实际答案明确表达最长一般不超过4年，与要点语义一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": false,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "项目最长一般不超过4年。",
+        "answer_span": "项目最长一般不超过4年。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "所引用的D08-C016为兼职辅导员申请条款，与人才专项经费项目执行期限无关，不支持该事实；实际已读也仅为此无关文档。"
+      }
+    ],
+    "serious_errors": [
+      "引用了D08-C016兼职辅导员条款作为依据，与人才专项经费项目执行期限结论不符，属于错误引用。"
+    ],
+    "reason": "答案内容正确（最长一般不超过4年），但系统读取了与问题无关的兼职辅导员文档并错误引用，检索动作不合理且事实缺乏支持。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "引用了D08-C016兼职辅导员条款作为依据，与人才专项经费项目执行期限结论不符，属于错误引用。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:34.531001+00:00",
+      "attempt": 1,
+      "prompt_sha256": "a292020a1d1c957c98c0eaad7aa3130562e4561811bfe0f17efd9ee961838496",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "12939988-ae16-4c2a-8e27-0af317f7bdde",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1468,
+        "completion_tokens": 2467,
+        "total_tokens": 3935,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2200
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 572
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"项目最长一般不超过4年。\",\n      \"reason\": \"实际答案明确表达最长一般不超过4年，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": false,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目最长一般不超过4年。\",\n      \"answer_span\": \"项目最长一般不超过4年。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"所引用的D08-C016为兼职辅导员申请条款，与人才专项经费项目执行期限无关，不支持该事实；实际已读也仅为此无关文档。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"引用了D08-C016兼职辅导员条款作为依据，与人才专项经费项目执行期限结论不符，属于错误引用。\"\n  ],\n  \"reason\": \"答案内容正确（最长一般不超过4年），但系统读取了与问题无关的兼职辅导员文档并错误引用，检索动作不合理且事实缺乏支持。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01170708,
+      "seconds": 27.2567
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL08",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

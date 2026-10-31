@@ -1,0 +1,121 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "汇编里教职工考勤统计表到底每月25日还是26日报？请查明不同规定，不能直接认定最新日期自动优先。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:18.048519+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d0ab54e35b56473c15c2235b1b6ee8a61cd2194c59b75dbdfa4e4d8d9b06d939",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "5ae4a217-478f-4c40-9350-93ac20eadfad",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2733,
+            "completion_tokens": 148,
+            "total_tokens": 2881,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 1325
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000583548,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_FAupxE0sSUWF85s9hk9C9876",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"教职工考勤统计表 每月25日 26日 报送\", \"doc_ids\": []}, \"reason\": \"查找考勤统计表报送日期的不同规定\"}, {\"action\": \"search\", \"arguments\": {\"query\": \"考勤统计表 报送 时间 人事处\", \"doc_ids\": []}, \"reason\": \"补充检索考勤报送时间条款\"}, \"reason\": \"检索考勤统计表报送日期的相关条款\"}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.0894
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:19.139378+00:00",
+          "attempt": 2,
+          "prompt_sha256": "d0ab54e35b56473c15c2235b1b6ee8a61cd2194c59b75dbdfa4e4d8d9b06d939",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "623a8ae6-3b42-45b7-9e16-e11cc0e452ea",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2733,
+            "completion_tokens": 123,
+            "total_tokens": 2856,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 173
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00021485999999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_V8HZp2sZu6SbVNFxY5364104",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"教职工考勤统计表 每月25日 26日 报送\", \"doc_ids\": []}, \"reason\": \"查找考勤统计表报送日期的不同规定\"}, {\"action\": \"search\", \"arguments\": {\"query\": \"考勤 统计表 报送 时间 规定\", \"doc_ids\": []}, \"reason\": \"补充检索考勤报送时间条款\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.8174
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.0584,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.0595,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T03:55:19.957745+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述'恰好5000元由项目负责人签字后报销'，与要求要点'项目负责人签字'一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "回答引用了D03-C013中的原文，且该原文已在actually_read中实际读取，支持该事实。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确引用了已读取的制度条款，明确回答了5000元报销需项目负责人签字，符合要求。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:49:44.812178+00:00",
+      "attempt": 1,
+      "prompt_sha256": "fe605a5078908d868a3d9a28c82d9c969739d1b21373fa5ed5e8ddd16e876076",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "46128c1d-e02d-45ad-afdf-83b0ae59fa51",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2032,
+        "completion_tokens": 213,
+        "total_tokens": 2245,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2032
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'恰好5000元由项目负责人签字后报销'，与要求要点'项目负责人签字'一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用了D03-C013中的原文，且该原文已在actually_read中实际读取，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了已读取的制度条款，明确回答了5000元报销需项目负责人签字，符合要求。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0035257200000000004,
+      "seconds": 2.3214
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL02",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

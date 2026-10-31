@@ -1,0 +1,124 @@
+{
+  "id": "TEST30",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "须提前在办公系统办理“教职工非工作日离辽”备案",
+            "reason": "实际回答明确表达了非工作日离辽须提前在办公系统办理教职工非工作日离辽备案，与要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教职工非工作日离开辽宁，须提前在办公系统办理“教职工非工作日离辽”备案。",
+            "answer_span": "教职工非工作日离开辽宁，须提前在办公系统办理“教职工非工作日离辽”备案。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有引用D20-C007，引用原文包含“非工作日离辽须提前在办公系统办理‘教职工非工作日离辽’备案”，且实际已读该条，支持该制度事实。"
+          },
+          {
+            "text": "凡未办理非工作日离辽备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "answer_span": "凡未办理非工作日离辽备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有引用D20-C007，引用原文“凡未备案并造成严重后果的取消当年晋升、评优评奖资格”，结合上下文指非工作日离辽备案；实际已读原文支持这一罚则。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确给出按2023请假补充规定非工作日离辽须提前在办公系统办理教职工非工作日离辽备案，引用与已读原文一致，补充的未备案罚则也有依据；要点、状态、工具动作均合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:19.314778+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3a3916a00dda2a199dbd275584736d91c1fb8fa1a7dd342c89bb34b06bd07156",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "d2dbca9f-1095-4aba-8641-f873d3707bb2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2939,
+            "completion_tokens": 1908,
+            "total_tokens": 4847,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1456
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2043
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"reason\": \"实际回答明确表达了非工作日离辽须提前在办公系统办理教职工非工作日离辽备案，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教职工非工作日离开辽宁，须提前在办公系统办理“教职工非工作日离辽”备案。\",\n      \"answer_span\": \"教职工非工作日离开辽宁，须提前在办公系统办理“教职工非工作日离辽”备案。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用D20-C007，引用原文包含“非工作日离辽须提前在办公系统办理‘教职工非工作日离辽’备案”，且实际已读该条，支持该制度事实。\"\n    },\n    {\n      \"text\": \"凡未办理非工作日离辽备案并造成严重后果的，取消当年晋升、评优评奖资格。\",\n      \"answer_span\": \"凡未办理非工作日离辽备案并造成严重后果的，取消当年晋升、评优评奖资格。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用D20-C007，引用原文“凡未备案并造成严重后果的取消当年晋升、评优评奖资格”，结合上下文指非工作日离辽备案；实际已读原文支持这一罚则。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确给出按2023请假补充规定非工作日离辽须提前在办公系统办理教职工非工作日离辽备案，引用与已读原文一致，补充的未备案罚则也有依据；要点、状态、工具动作均合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01143516,
+          "seconds": 19.5649
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:38.894432+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a8c8b758564b6c9eb0ba5d1ceac1e19cb752a0dd4ea4ce530f17a14a42fa0eb5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1892
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:39.083897+00:00",
+          "attempt": 2,
+          "prompt_sha256": "a8c8b758564b6c9eb0ba5d1ceac1e19cb752a0dd4ea4ce530f17a14a42fa0eb5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.164
+        }
+      ],
+      "judge_error": "ModelError:HTTP_429",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "1065dedc695a75ae01899d9b9d3f96d3c0cb68fef989218f7b9e6ad82177134d"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "TEST19",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编材料未包含学校食堂WiFi密码或校园网络接入账号密码的相关规定",
+            "reason": "答案明确说明资料未提供食堂WiFi密码"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法据此回答",
+            "reason": "未编造任何信息，而是说明无法回答"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "答案正确识别证据不足，未编造，明确请求提供相关材料，要点全部满足。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园网络管理制度",
+            "网络与信息化服务指南",
+            "食堂WiFi使用说明"
+          ],
+          "reason": "答案明确列出需要用户提供的具体材料类型。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:12:28.329439+00:00",
+          "attempt": 1,
+          "prompt_sha256": "39bc8105b5a2ff8cb272837071f7990ef5112991ccfac7a5472ade95f3b013a0",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6253bd2e-a38f-40bb-b5bd-f69c0cf2830f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4914,
+            "completion_tokens": 1439,
+            "total_tokens": 6353,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1205
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 3890
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编材料未包含学校食堂WiFi密码或校园网络接入账号密码的相关规定\",\n      \"reason\": \"答案明确说明资料未提供食堂WiFi密码\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法据此回答\",\n      \"reason\": \"未编造任何信息，而是说明无法回答\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别证据不足，未编造，明确请求提供相关材料，要点全部满足。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\"校园网络管理制度\", \"网络与信息化服务指南\", \"食堂WiFi使用说明\"],\n    \"reason\": \"答案明确列出需要用户提供的具体材料类型。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0054391479999999996,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 12.4483
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "4604bccb545550275a82c1b47caeee988d1f088c7b4f2a357262e43cec9fe6c0"
+}

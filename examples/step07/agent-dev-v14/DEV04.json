@@ -1,0 +1,121 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "2022版高层次人才引进办法发布后，2021年27号旧办法是否仍同时有效？只根据汇编。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:18.009382+00:00",
+          "attempt": 1,
+          "prompt_sha256": "85fdf63d2400686d40fe413194f6edb67dda9b79ad64eca9d30cfcebc6638512",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "6c856f62-c41c-4dd3-a858-7eea8879b15d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2731,
+            "completion_tokens": 95,
+            "total_tokens": 2826,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 1323
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000519348,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_lQQTVxdC52LL9qwOrafO7605",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"高层次人才引进办法 2022 2021 27号 废止 同时有效\", \"doc_ids\": []}, \"reason\": \"查找两版办法及废止衔接条款\"}, \"reason\": \"查找两版办法及废止衔接条款\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.0939
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:19.103610+00:00",
+          "attempt": 2,
+          "prompt_sha256": "85fdf63d2400686d40fe413194f6edb67dda9b79ad64eca9d30cfcebc6638512",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "ea44073e-2118-42f3-9a47-76529c26120f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2731,
+            "completion_tokens": 82,
+            "total_tokens": 2813,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 171
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00016506,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_JmciaFxKPGx1TBQl69KF0169",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"高层次人才引进办法 2022 2021 27号 废止 原办法\", \"doc_ids\": []}, \"reason\": \"查找两版办法及废止衔接条款\"}}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.0659
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.2716,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.2724,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T03:55:20.170664+00:00"
+}

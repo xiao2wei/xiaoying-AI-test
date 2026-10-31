@@ -1,0 +1,192 @@
+{
+  "id": "STAB-TEST17-R1",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉",
+            "reason": "实际回答明确引用第二十一条并逐字表述了正文规定的上一级主管机关。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉",
+            "reason": "实际回答明确引用附件3备注并逐字表述了浙江省教育厅。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "正文与附件3备注对受理书面申诉的机关表述不一致",
+            "reason": "实际回答在gaps中明确指出了两处规定的差异。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "不能仅凭正文或附表位置认定可靠",
+            "reason": "实际回答未擅自确认浙江或改写为辽宁，并明确表示不能仅凭位置认定可靠，保留了疑点。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "请向学校教职工申诉处理委员会或工会取得针对第二十一条与附件3备注的正式解释、更正说明或执行通知",
+            "reason": "实际回答明确请求向工会或申诉处理委员会核实并取得正式解释。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理决定是学校对教职工处分或处理的最终决定",
+            "answer_span": "申诉处理决定是学校对教职工处分或处理的最终决定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用quote完整包含该句，实际已读D24-C022支持。"
+          },
+          {
+            "text": "决定书送达即生效",
+            "answer_span": "决定书送达即生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用quote原文为“决定书一经送达申诉双方当事人，立即生效”，语义支持该简化表述，实际已读D24-C022支持。"
+          },
+          {
+            "text": "教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉",
+            "answer_span": "教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用quote完整包含该句，实际已读D24-C022支持。"
+          },
+          {
+            "text": "教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉",
+            "answer_span": "教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用quote完整包含该句，实际已读D24-C029支持。"
+          },
+          {
+            "text": "本暂行办法由学校教职工申诉处理委员会或工会负责解释",
+            "answer_span": "本暂行办法由学校教职工申诉处理委员会或工会负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用quote完整包含该句，实际已读D24-C025支持。"
+          },
+          {
+            "text": "正文与附件3备注对受理书面申诉的机关表述不一致",
+            "answer_span": "正文与附件3备注对受理书面申诉的机关表述不一致",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该差异判断出现在gaps中，未单独标注引用，但实际已读的两条原文支持该差异。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确呈现了正文与附件的不同表述，明确指出不一致且未擅自确认，并请求有权解释机关核实，符合要求。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "正式解释",
+            "更正说明",
+            "执行通知",
+            "适用对象",
+            "版本日期",
+            "是否适用于教职工申诉"
+          ],
+          "reason": "答案明确说明缺少正式解释、更正说明或执行通知，并要求注明适用对象、版本日期及适用性，属于可操作的补充请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:12:26.547771+00:00",
+          "attempt": 1,
+          "prompt_sha256": "40f3184e5b237ad25f307dfd07421299985aeca51d7a4b98a6b77bd7462a8960",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "36acb9fe-d0e0-4787-8438-97cd3225fa47",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3412,
+            "completion_tokens": 3799,
+            "total_tokens": 7211,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2757
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1876
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际回答明确引用第二十一条并逐字表述了正文规定的上一级主管机关。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"reason\": \"实际回答明确引用附件3备注并逐字表述了浙江省教育厅。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"reason\": \"实际回答在gaps中明确指出了两处规定的差异。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"不能仅凭正文或附表位置认定可靠\",\n      \"reason\": \"实际回答未擅自确认浙江或改写为辽宁，并明确表示不能仅凭位置认定可靠，保留了疑点。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请向学校教职工申诉处理委员会或工会取得针对第二十一条与附件3备注的正式解释、更正说明或执行通知\",\n      \"reason\": \"实际回答明确请求向工会或申诉处理委员会核实并取得正式解释。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"answer_span\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"决定书一经送达申诉双方当事人，立即生效\",\n      \"answer_span\": \"决定书一经送达申诉双方当事人，立即生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"answer_span\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C029支持。\"\n    },\n    {\n      \"text\": \"本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"answer_span\": \"本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C025支持。\"\n    },\n    {\n      \"text\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"answer_span\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该差异判断出现在gaps中，未单独标注引用；但实际已读的两条原文支持该差异。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确呈现了正文与附件的不同表述，明确指出不一致且未擅自确认，并请求有权解释机关核实，符合要求。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"正式解释\",\n      \"更正说明\",\n      \"执行通知\",\n      \"适用对象\",\n      \"版本日期\",\n      \"是否适用于教职工申诉\"\n    ],\n    \"reason\": \"答案明确说明缺少正式解释、更正说明或执行通知，并要求注明适用对象、版本日期及适用性，属于可操作的补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008793972,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 35.0461
+        },
+        {
+          "kind": "judge_validation_error",
+          "error": "ValueError:评分器把未出现在实际回答中的内容计作事实"
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:13:01.639595+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a693e6fefdbcc6313a20768daae793a2c082f0690c716b34a86f109cc488a70b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ff86d677-1e9a-4836-8f80-0240f4c28a0c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4390,
+            "completion_tokens": 3171,
+            "total_tokens": 7561,
+            "prompt_tokens_details": {
+              "cached_tokens": 3328
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2123
+            },
+            "prompt_cache_hit_tokens": 3328,
+            "prompt_cache_miss_tokens": 1062
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际回答明确引用第二十一条并逐字表述了正文规定的上一级主管机关。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"reason\": \"实际回答明确引用附件3备注并逐字表述了浙江省教育厅。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"reason\": \"实际回答在gaps中明确指出了两处规定的差异。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"不能仅凭正文或附表位置认定可靠\",\n      \"reason\": \"实际回答未擅自确认浙江或改写为辽宁，并明确表示不能仅凭位置认定可靠，保留了疑点。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请向学校教职工申诉处理委员会或工会取得针对第二十一条与附件3备注的正式解释、更正说明或执行通知\",\n      \"reason\": \"实际回答明确请求向工会或申诉处理委员会核实并取得正式解释。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"answer_span\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"决定书送达即生效\",\n      \"answer_span\": \"决定书送达即生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote原文为“决定书一经送达申诉双方当事人，立即生效”，语义支持该简化表述，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C022支持。\"\n    },\n    {\n      \"text\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"answer_span\": \"教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C029支持。\"\n    },\n    {\n      \"text\": \"本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"answer_span\": \"本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用quote完整包含该句，实际已读D24-C025支持。\"\n    },\n    {\n      \"text\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"answer_span\": \"正文与附件3备注对受理书面申诉的机关表述不一致\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该差异判断出现在gaps中，未单独标注引用，但实际已读的两条原文支持该差异。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确呈现了正文与附件的不同表述，明确指出不一致且未擅自确认，并请求有权解释机关核实，符合要求。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"正式解释\",\n      \"更正说明\",\n      \"执行通知\",\n      \"适用对象\",\n      \"版本日期\",\n      \"是否适用于教职工申诉\"\n    ],\n    \"reason\": \"答案明确说明缺少正式解释、更正说明或执行通知，并要求注明适用对象、版本日期及适用性，属于可操作的补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0070527160000000005,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 25.8533
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": false,
+  "run_sha256": "c88a9815aef1e42675f41fd630d6dc3d489cfa9cb1e9ba4a2734e44b147b62fa"
+}

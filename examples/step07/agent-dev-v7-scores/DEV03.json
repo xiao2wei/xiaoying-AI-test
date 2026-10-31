@@ -1,0 +1,82 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:02:21.436531+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a6fe553f784839f25b8c6e5aba828b796c05c16cf8dba6bce31d0522fb3917aa",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c6fd850d-f420-44b6-96af-c8a6a86ec696",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3642,
+            "completion_tokens": 9999,
+            "total_tokens": 13641,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9999
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2618
+          },
+          "content": "",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04440348,
+          "error": "JSONDecodeError",
+          "seconds": 96.4909
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:03:57.927661+00:00",
+          "attempt": 2,
+          "prompt_sha256": "a6fe553f784839f25b8c6e5aba828b796c05c16cf8dba6bce31d0522fb3917aa",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "f17ebf5c-37f4-4103-a510-7b0b65b79aaa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3642,
+            "completion_tokens": 10000,
+            "total_tokens": 13642,
+            "prompt_tokens_details": {
+              "cached_tokens": 3584
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 10000
+            },
+            "prompt_cache_hit_tokens": 3584,
+            "prompt_cache_miss_tokens": 58
+          },
+          "content": "",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04440744,
+          "error": "JSONDecodeError",
+          "seconds": 92.1817
+        }
+      ],
+      "judge_error": "ModelError:JSONDecodeError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "bf883688633c8ec45eef2bd949249f3b37ff8bece10642e84436c1fd7bfa1b24"
+}

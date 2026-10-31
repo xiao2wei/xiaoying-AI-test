@@ -1,0 +1,100 @@
+{
+  "key": "stability--STAB-TEST31-R2--1",
+  "mode": "stability",
+  "id": "STAB-TEST31-R2",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "b4fd580149b7976d941de90003ebe47819c7da6be0c65aeb1e874b3c2876d297",
+  "run_sha256": "21a2b7203d229ff9aeca5a5fdfef57eb09724e3f66d29e6180ff11b51085d86e",
+  "created_at": "2026-10-31T05:16:02.021606+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "因此17岁的人不能受聘",
+          "reason": "答案明确表达17岁的人不能受聘，即不可以。"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "禁止聘用未满十八周岁的未成年人",
+          "reason": "答案明确引用并陈述禁止聘用未满十八周岁的未成年人。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "禁止聘用未满十八周岁的未成年人",
+          "answer_span": "禁止聘用未满十八周岁的未成年人",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "答案引用了chunk D23-C009，该引用quote完全支持该禁令，actually_read已读取该chunk。"
+        },
+        {
+          "text": "17岁的人不能受聘该校临时用工岗位",
+          "answer_span": "17岁的人不能受聘",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该结论由引用内容（禁止未满18周岁）结合17岁属于未满18周岁推出，引用支持前提，已读原文支持。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了用户问题，正确引用并解读了第八条，没有误差。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:15:42.961982+00:00",
+        "attempt": 1,
+        "prompt_sha256": "32e7c00262713a310ce9848dee5681196ab096bf3cbd018757f61f8350ae812a",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "248ed7f0-5a44-411c-834d-eb337c8e6bc1",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2092,
+          "completion_tokens": 2000,
+          "total_tokens": 4092,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1643
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 1068
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"因此17岁的人不能受聘\",\n      \"reason\": \"答案明确表达17岁的人不能受聘，即不可以。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"答案明确引用并陈述禁止聘用未满十八周岁的未成年人。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"答案引用了chunk D23-C009，该引用quote完全支持该禁令，actually_read已读取该chunk。\"\n    },\n    {\n      \"text\": \"17岁的人不能受聘该校临时用工岗位\",\n      \"answer_span\": \"17岁的人不能受聘\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由引用内容（禁止未满18周岁）结合17岁属于未满18周岁推出，引用支持前提，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了用户问题，正确引用并解读了第八条，没有误差。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.0046874080000000005,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 19.0574
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

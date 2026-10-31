@@ -1,0 +1,113 @@
+{
+  "id": "TEST36",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "必须经过专门培训并获得特种作业资格",
+            "reason": "实际回答明确表达了从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格，与要点语义等价。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训。",
+            "answer_span": "必须经过专门培训",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C013原文明确支持该条件，且该chunk已实际读取。"
+          },
+          {
+            "text": "从事特种作业的临时用工人员必须获得特种作业资格。",
+            "answer_span": "获得特种作业资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C013原文明确支持该条件，且该chunk已实际读取。"
+          },
+          {
+            "text": "第十五条规定，签订合同前，临时用工人员必须提交材料。",
+            "answer_span": "签订合同前，临时用工人员必须提交材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C016原文明确支持该规定，且该chunk已实际读取。"
+          },
+          {
+            "text": "第十五条提交材料中第（四）项为职业技术等级或资格证明。",
+            "answer_span": "第（四）项为职业技术等级或资格证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C016原文明确列出该项，且该chunk已实际读取。"
+          },
+          {
+            "text": "该项职业技术等级或资格证明要求适用于有特殊要求的临时用工岗位。",
+            "answer_span": "适用于有特殊要求的临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C016原文括号内条件明确支持该限定，且该chunk已实际读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用《辽宁科技大学临时用工管理办法》第十二条回答了问题，并补充了第十五条相关提交材料要求，引用可靠且与已读取内容一致。工具故障后重试成功，决策合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:52.305225+00:00",
+          "attempt": 1,
+          "prompt_sha256": "22f69eec90130c53441d8df9038fc60674a01c707aca961d5f3071a30b41c4ab",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "de521ad6-72f6-49a1-8efa-038f7e9eccb7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2153,
+            "completion_tokens": 2421,
+            "total_tokens": 4574,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1820
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1001
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"实际回答明确表达了从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格，与要点语义等价。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训。\",\n      \"answer_span\": \"必须经过专门培训\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C013原文明确支持该条件，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"从事特种作业的临时用工人员必须获得特种作业资格。\",\n      \"answer_span\": \"获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C013原文明确支持该条件，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第十五条规定，签订合同前，临时用工人员必须提交材料。\",\n      \"answer_span\": \"签订合同前，临时用工人员必须提交材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016原文明确支持该规定，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第十五条提交材料中第（四）项为职业技术等级或资格证明。\",\n      \"answer_span\": \"第（四）项为职业技术等级或资格证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016原文明确列出该项，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"该项职业技术等级或资格证明要求适用于有特殊要求的临时用工岗位。\",\n      \"answer_span\": \"适用于有特殊要求的临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016原文括号内条件明确支持该限定，且该chunk已实际读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用《辽宁科技大学临时用工管理办法》第十二条回答了问题，并补充了第十五条相关提交材料要求，引用可靠且与已读取内容一致。工具故障后重试成功，决策合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012429119999999998,
+          "seconds": 24.4749
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "dd90423b9b2b5d0107fb827a804fa58d44c42efcebe68a9e084827db18474ee2"
+}

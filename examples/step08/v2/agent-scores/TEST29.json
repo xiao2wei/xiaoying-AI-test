@@ -1,0 +1,271 @@
+{
+  "id": "TEST29",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "均应履行不低于8年的服务期",
+            "reason": "实际回答明确写出“均应履行不低于8年的服务期”，语义等价于“不低于8年”。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "自来校报到上岗之日起计算",
+            "reason": "实际回答明确写出“自来校报到上岗之日起计算”，语义等价于“自来校报到上岗之日起算”。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期。",
+            "answer_span": "均应履行不低于8年的服务期",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote包含该规则，已读原文也包含相同表述。"
+          },
+          {
+            "text": "本规定适用于新入校工作的教师。",
+            "answer_span": "该规定适用于新入校工作的教师",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote明确列出适用范围包含新入校工作的教师，已读原文一致。"
+          },
+          {
+            "text": "基本服务期自来校报到上岗之日起计算。",
+            "answer_span": "自来校报到上岗之日起计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote直接说明服务期计算起点，已读原文包含该句。"
+          },
+          {
+            "text": "签订人才引进协议的，按协议约定执行。",
+            "answer_span": "按协议约定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote包含该例外条款，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确给出基本服务期至少8年及起算时间，引用来源正确且已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:33:34.485181+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a1a711d06cb85f5ba546ebd20b7080f0b533c53a78229a6eef09b21811ed4d3c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e2fc6a8e-6e03-495c-b066-e2e545cb04cc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4319,
+            "completion_tokens": 2852,
+            "total_tokens": 7171,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2331
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 3295
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"均应履行不低于8年的服务期\",\n      \"reason\": \"实际回答明确写出“均应履行不低于8年的服务期”，语义等价于“不低于8年”。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际回答明确写出“自来校报到上岗之日起计算”，语义等价于“自来校报到上岗之日起算”。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期。\",\n      \"answer_span\": \"均应履行不低于8年的服务期\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote包含该规则，已读原文也包含相同表述。\"\n    },\n    {\n      \"text\": \"本规定适用于新入校工作的教师。\",\n      \"answer_span\": \"该规定适用于新入校工作的教师\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote明确列出适用范围包含新入校工作的教师，已读原文一致。\"\n    },\n    {\n      \"text\": \"基本服务期自来校报到上岗之日起计算。\",\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote直接说明服务期计算起点，已读原文包含该句。\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行。\",\n      \"answer_span\": \"按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote包含该例外条款，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确给出基本服务期至少8年及起算时间，引用来源正确且已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.016995,
+          "seconds": 25.9233
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应履行不低于8年的基本服务期",
+            "reason": "实际答案明确表述了“不低于8年”，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "自来校报到上岗之日起计算",
+            "reason": "实际答案明确表述了服务期起算点为“自来校报到上岗之日起”。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "规定第（一）项适用于新入校工作的教师",
+            "answer_span": "适用于新入校工作的教师",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“本规定适用于学校以下类型教师：（一）新入校工作的；”，并且已读取原文包含该内容。"
+          },
+          {
+            "text": "通过公开招聘、调入等方式进入学校全职工作的教师应履行不低于8年的基本服务期",
+            "answer_span": "通过公开招聘、调入等方式进入学校全职工作的教师，应履行不低于8年的基本服务期",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“（一）新入校工作教师的基本服务期。凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期。”，且已读取原文支持。"
+          },
+          {
+            "text": "该服务期自来校报到上岗之日起计算",
+            "answer_span": "自来校报到上岗之日起计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“服务期计算：自来校报到上岗之日起计算。”，且已读取原文支持。"
+          },
+          {
+            "text": "签订人才引进协议的，按协议约定执行",
+            "answer_span": "签订人才引进协议的，按协议约定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“签订人才引进协议的，按协议约定执行。”，且已读取原文支持。"
+          },
+          {
+            "text": "没有特殊协议时，起点为报到上岗之日",
+            "answer_span": "没有特殊协议时，起点为报到上岗之日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实是基于引用“服务期计算：自来校报到上岗之日起计算。签订人才引进协议的，按协议约定执行。”的合理推理，且原文支持该结论。"
+          },
+          {
+            "text": "服务期指在校在岗的实际工作时间",
+            "answer_span": "服务期指在校在岗的实际工作时间",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“各类服务期均指在校在岗的实际工作时间”，且已读取原文支持。"
+          },
+          {
+            "text": "服务期不含外出进行继续教育的时间",
+            "answer_span": "不含外出进行继续教育的时间",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自D25-C001中的“（不含外出进行继续教育的时间）”，且已读取原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了用户关于最低服务期和起算点的问题，引用了正确的文件并提供了明确解释，所有要点均已满足，未发现错误或未支持的事实。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:45.965857+00:00",
+          "attempt": 1,
+          "prompt_sha256": "909f296db49361f5abe648867b89e4621a45923ab5019fbadeffa8a852c6c282",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "9ddce92f-e786-4354-84be-54acaeb5afc6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4425,
+            "completion_tokens": 3400,
+            "total_tokens": 7825,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3400
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 3401
+          },
+          "content": "",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.019305,
+          "error": "JSONDecodeError",
+          "seconds": 31.3037
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:17.269782+00:00",
+          "attempt": 2,
+          "prompt_sha256": "909f296db49361f5abe648867b89e4621a45923ab5019fbadeffa8a852c6c282",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c792c717-25f5-4255-805c-9318239095d2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4425,
+            "completion_tokens": 3644,
+            "total_tokens": 8069,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2761
+            },
+            "prompt_cache_hit_tokens": 4352,
+            "prompt_cache_miss_tokens": 73
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应履行不低于8年的基本服务期\",\n      \"reason\": \"实际答案明确表述了“不低于8年”，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际答案明确表述了服务期起算点为“自来校报到上岗之日起”。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"规定第（一）项适用于新入校工作的教师\",\n      \"answer_span\": \"适用于新入校工作的教师\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“本规定适用于学校以下类型教师：（一）新入校工作的；”，并且已读取原文包含该内容。\"\n    },\n    {\n      \"text\": \"通过公开招聘、调入等方式进入学校全职工作的教师应履行不低于8年的基本服务期\",\n      \"answer_span\": \"通过公开招聘、调入等方式进入学校全职工作的教师，应履行不低于8年的基本服务期\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“（一）新入校工作教师的基本服务期。凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期。”，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"该服务期自来校报到上岗之日起计算\",\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“服务期计算：自来校报到上岗之日起计算。”，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行\",\n      \"answer_span\": \"签订人才引进协议的，按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“签订人才引进协议的，按协议约定执行。”，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"没有特殊协议时，起点为报到上岗之日\",\n      \"answer_span\": \"没有特殊协议时，起点为报到上岗之日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实是基于引用“服务期计算：自来校报到上岗之日起计算。签订人才引进协议的，按协议约定执行。”的合理推理，且原文支持该结论。\"\n    },\n    {\n      \"text\": \"服务期指在校在岗的实际工作时间\",\n      \"answer_span\": \"服务期指在校在岗的实际工作时间\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“各类服务期均指在校在岗的实际工作时间”，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"服务期不含外出进行继续教育的时间\",\n      \"answer_span\": \"不含外出进行继续教育的时间\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自D25-C001中的“（不含外出进行继续教育的时间）”，且已读取原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了用户关于最低服务期和起算点的问题，引用了正确的文件并提供了明确解释，所有要点均已满足，未发现错误或未支持的事实。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02027124,
+          "seconds": 35.006
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": true,
+  "run_sha256": "af08917d46b94c6ffb4783a2abfad77dc8f587d56b571c250cbacf7c6c2dcf0e"
+}

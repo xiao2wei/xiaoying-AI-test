@@ -1,0 +1,138 @@
+{
+  "id": "TEST29",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "不低于8年",
+            "reason": "实际回答明确写出基本服务期不低于8年，满足要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "自来校报到上岗之日起计算",
+            "reason": "实际回答写明自来校报到上岗之日起计算，语义等价于要点中的起算点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "无人才引进协议特别约定时，新入校全职教师的基本服务期不低于8年。",
+            "answer_span": "无人才引进协议特别约定时，新入校全职教师的基本服务期不低于8年。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文“凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期”支持基本服务期不低于8年，实际读取材料包含该句。"
+          },
+          {
+            "text": "该基本服务期自来校报到上岗之日起计算。",
+            "answer_span": "该基本服务期自来校报到上岗之日起计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文“服务期计算：自来校报到上岗之日起计算。”支持起算点，读取材料包含。"
+          },
+          {
+            "text": "签订人才引进协议的，按协议约定执行。",
+            "answer_span": "签订人才引进协议的，按协议约定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文直接支持该规则，读取材料包含。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确提供了基本服务期不低于8年及自来校报到上岗之日起计算，均有引用且已读取材料支持，动作合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:24.897772+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7af23562af5c767a1d6aab7d3df62791446be0c4d24e6969192ac478e575fd61",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c042dde7-0353-4436-8a87-c5bb832821a2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3898,
+            "completion_tokens": 3147,
+            "total_tokens": 7045,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2670
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3002
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不低于8年\",\n      \"reason\": \"实际回答明确写出基本服务期不低于8年，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际回答写明自来校报到上岗之日起计算，语义等价于要点中的起算点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"无人才引进协议特别约定时，新入校全职教师的基本服务期不低于8年。\",\n      \"answer_span\": \"无人才引进协议特别约定时，新入校全职教师的基本服务期不低于8年。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文“凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期”支持基本服务期不低于8年，实际读取材料包含该句。\"\n    },\n    {\n      \"text\": \"该基本服务期自来校报到上岗之日起计算。\",\n      \"answer_span\": \"该基本服务期自来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文“服务期计算：自来校报到上岗之日起计算。”支持起算点，读取材料包含。\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行。\",\n      \"answer_span\": \"签订人才引进协议的，按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文直接支持该规则，读取材料包含。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确提供了基本服务期不低于8年及自来校报到上岗之日起计算，均有引用且已读取材料支持，动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01760748,
+          "seconds": 30.378
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:55.290402+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a29c9dfdaf6a40a5171f0f60b29fb17ffd5a757b4ef58d40a0223d6573e9f5f2",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1733
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:55.463852+00:00",
+          "attempt": 2,
+          "prompt_sha256": "a29c9dfdaf6a40a5171f0f60b29fb17ffd5a757b4ef58d40a0223d6573e9f5f2",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1389
+        }
+      ],
+      "judge_error": "ModelError:HTTP_429",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "48ea8f637ec7c120b1c0adff60386291a0e33b7fe7288d55a37938eb314ae5be"
+}

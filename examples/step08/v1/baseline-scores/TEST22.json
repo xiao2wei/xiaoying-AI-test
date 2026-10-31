@@ -1,0 +1,134 @@
+{
+  "id": "TEST22",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "需补充：全年累计事假天数（用于确定适用哪一档）；工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）；日工资/日绩效的折算口径（如月标准÷21.75或其他制度规定）。",
+            "reason": "实际答案明确说明缺少全年累计事假天数、工资构成及折算口径等计算所需条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "2023年补充规定只规定按日扣发相应工资项目，未给出日扣发金额的计算公式或日工资基数，无法直接算出扣款“多少元”。",
+            "reason": "实际答案明确说明无法算出唯一的具体金额。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "需补充：全年累计事假天数（用于确定适用哪一档）；工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）；日工资/日绩效的折算口径（如月标准÷21.75或其他制度规定）。",
+            "reason": "实际答案明确请求用户补充所需信息。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023年补充规定对事假按全年累计请假时间分档处理：＞5日，≤30日的，奖励绩效按请假实际天数扣发。",
+            "answer_span": "2023年补充规定对事假按全年累计请假时间分档处理：＞5日，≤30日的，奖励绩效按请假实际天数扣发。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文，且已读原文包含相同内容，支持该分档待遇。"
+          },
+          {
+            "text": "2023年补充规定：＞30日，≤60日的，按日扣发基础绩效和奖励绩效。",
+            "answer_span": "2023年补充规定：＞30日，≤60日的，按日扣发基础绩效和奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文，已读原文支持该待遇。"
+          },
+          {
+            "text": "2023年补充规定：＞30日，≤60日的，当年年度考核不能评优。",
+            "answer_span": "当年年度考核不能评优",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文包含相同规定，已读原文支持。"
+          },
+          {
+            "text": "2023年补充规定：＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效。",
+            "answer_span": "2023年补充规定：＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文，已读原文支持该待遇。"
+          },
+          {
+            "text": "2023年补充规定：＞60日的，不参加当年年度考核。",
+            "answer_span": "不参加当年年度考核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文包含相同规定，已读原文支持。"
+          },
+          {
+            "text": "2023年补充规定：＞60日的，不计算连续工龄。",
+            "answer_span": "不计算连续工龄",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C008第七条的表格原文包含相同规定，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确说明2023补充规定按全年累计事假天数分档扣发相应工资项目，指出因缺少累计天数、工资构成和折算口径无法算出具体金额，并明确请求补充；所引条文与已读D20-C008一致，未发现严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "全年累计事假天数",
+            "工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）",
+            "日工资/日绩效的折算口径"
+          ],
+          "reason": "答案明确列出了为计算扣款所需但用户尚未提供的具体信息，要求用户补充这些字段，因此通过。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:31.331122+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f8e377aab1d894b7b3e947b82a058792041bcd19d550fce90cc4298b7a53a60d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "16394488-43d8-4bb1-aef7-8d65c22afea4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3620,
+            "completion_tokens": 8664,
+            "total_tokens": 12284,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7542
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2724
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"需补充：全年累计事假天数（用于确定适用哪一档）；工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）；日工资/日绩效的折算口径（如月标准÷21.75或其他制度规定）。\",\n      \"reason\": \"实际答案明确说明缺少全年累计事假天数、工资构成及折算口径等计算所需条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"2023年补充规定只规定按日扣发相应工资项目，未给出日扣发金额的计算公式或日工资基数，无法直接算出扣款“多少元”。\",\n      \"reason\": \"实际答案明确说明无法算出唯一的具体金额。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"需补充：全年累计事假天数（用于确定适用哪一档）；工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）；日工资/日绩效的折算口径（如月标准÷21.75或其他制度规定）。\",\n      \"reason\": \"实际答案明确请求用户补充所需信息。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023年补充规定对事假按全年累计请假时间分档处理：＞5日，≤30日的，奖励绩效按请假实际天数扣发。\",\n      \"answer_span\": \"2023年补充规定对事假按全年累计请假时间分档处理：＞5日，≤30日的，奖励绩效按请假实际天数扣发。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文，且已读原文包含相同内容，支持该分档待遇。\"\n    },\n    {\n      \"text\": \"2023年补充规定：＞30日，≤60日的，按日扣发基础绩效和奖励绩效。\",\n      \"answer_span\": \"2023年补充规定：＞30日，≤60日的，按日扣发基础绩效和奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文，已读原文支持该待遇。\"\n    },\n    {\n      \"text\": \"2023年补充规定：＞30日，≤60日的，当年年度考核不能评优。\",\n      \"answer_span\": \"当年年度考核不能评优\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文包含相同规定，已读原文支持。\"\n    },\n    {\n      \"text\": \"2023年补充规定：＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效。\",\n      \"answer_span\": \"2023年补充规定：＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文，已读原文支持该待遇。\"\n    },\n    {\n      \"text\": \"2023年补充规定：＞60日的，不参加当年年度考核。\",\n      \"answer_span\": \"不参加当年年度考核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文包含相同规定，已读原文支持。\"\n    },\n    {\n      \"text\": \"2023年补充规定：＞60日的，不计算连续工龄。\",\n      \"answer_span\": \"不计算连续工龄\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C008第七条的表格原文包含相同规定，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确说明2023补充规定按全年累计事假天数分档扣发相应工资项目，指出因缺少累计天数、工资构成和折算口径无法算出具体金额，并明确请求补充；所引条文与已读D20-C008一致，未发现严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"全年累计事假天数\",\n      \"工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效的月标准）\",\n      \"日工资/日绩效的折算口径\"\n    ],\n    \"reason\": \"答案明确列出了为计算扣款所需但用户尚未提供的具体信息，要求用户补充这些字段，因此通过。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.039087840000000006,
+          "seconds": 83.4022
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b8092351a8fd6ee954327ee31b6595d0ff4a2ded10f6847796fb7aba2f78483f"
+}

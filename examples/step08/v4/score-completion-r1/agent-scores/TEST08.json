@@ -1,0 +1,125 @@
+{
+  "id": "TEST08",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "reason": "实际答案明确提到合同期限一般为1至3年"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "试用期为1—3个月",
+            "reason": "实际答案明确提到试用期为1至3个月"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "以实际签订时间为准",
+            "reason": "实际答案明确提到以实际签订时间为准"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "合同期满后续签需同时满足“考核合格”和“双方同意”。",
+            "reason": "实际答案明确说明续签需同时满足考核合格和双方同意，与要求一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工合同期限一般为1—3年",
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本明确包含该规定，且已读原文一致"
+          },
+          {
+            "text": "试用期为1—3个月",
+            "answer_span": "试用期为1—3个月",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本明确包含该规定，且已读原文一致"
+          },
+          {
+            "text": "以实际签订时间为准",
+            "answer_span": "以实际签订时间为准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本明确包含该规定，且已读原文一致"
+          },
+          {
+            "text": "合同期满后续签需同时满足“考核合格”和“双方同意”。",
+            "answer_span": "合同期满后续签需同时满足“考核合格”和“双方同意”。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本为“合同期满后，经考核合格以及双方同意后可以续签。”，支持事实中的条件，且已读原文包含"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了《辽宁科技大学临时用工管理办法》第二十条，完整回答了合同期限、试用期、以实际签订时间为准以及续签前提，所有要点均满足，引用正确且已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:07:54.340581+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5e640348c3bcd2eb84d5615e7e845828d371492ff50abb11089c9d22311aa2a3",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6431678b-e4c9-4bce-8e26-976e7640d2f8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1806,
+            "completion_tokens": 4513,
+            "total_tokens": 6319,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3879
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 654
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"reason\": \"实际答案明确提到合同期限一般为1至3年\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"试用期为1—3个月\",\n      \"reason\": \"实际答案明确提到试用期为1至3个月\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"以实际签订时间为准\",\n      \"reason\": \"实际答案明确提到以实际签订时间为准\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"合同期满后续签需同时满足“考核合格”和“双方同意”。\",\n      \"reason\": \"实际答案明确说明续签需同时满足考核合格和双方同意，与要求一致\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工合同期限一般为1—3年\",\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本明确包含该规定，且已读原文一致\"\n    },\n    {\n      \"text\": \"试用期为1—3个月\",\n      \"answer_span\": \"试用期为1—3个月\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本明确包含该规定，且已读原文一致\"\n    },\n    {\n      \"text\": \"以实际签订时间为准\",\n      \"answer_span\": \"以实际签订时间为准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本明确包含该规定，且已读原文一致\"\n    },\n    {\n      \"text\": \"合同期满后续签需同时满足“考核合格”和“双方同意”。\",\n      \"answer_span\": \"合同期满后续签需同时满足“考核合格”和“双方同意”。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本为“合同期满后，经考核合格以及双方同意后可以续签。”，支持事实中的条件，且已读原文包含\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了《辽宁科技大学临时用工管理办法》第二十条，完整回答了合同期限、试用期、以实际签订时间为准以及续签前提，所有要点均满足，引用正确且已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009392724,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 41.6672
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b858b6051f04e3125f21f2646c44e10e82aeb171a54a0237ac03531122e11c79"
+}

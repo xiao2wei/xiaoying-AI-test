@@ -1,0 +1,92 @@
+{
+  "id": "TEST06",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）。",
+            "reason": "实际回答明确表达了出席要求为三分之二以上成员参加。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "表决须经出席委员三分之二以上通过方为有效（表决要求）。",
+            "reason": "实际回答明确表达了表决须经出席委员三分之二以上通过方为有效。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）",
+            "answer_span": "申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C019第十八条同句载明该规则，实际已读记录支持。"
+          },
+          {
+            "text": "表决须经出席委员三分之二以上通过方为有效（表决要求）",
+            "answer_span": "表决须经出席委员三分之二以上通过方为有效（表决要求）。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C019第十八条同句载明该规则，实际已读记录支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确给出出席和表决两个比例要求，均有引用且已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.372714+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e2ce68d4de3bebfcda6a7e55efc418a900cdaf3d1a44c6bdf3b0d10c582372fa",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "47947f6d-df77-473b-8107-ecdb5223088f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1782,
+            "completion_tokens": 4293,
+            "total_tokens": 6075,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3975
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 886
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）。\",\"reason\":\"实际回答明确表达了出席要求为三分之二以上成员参加。\"},{\"index\":1,\"met\":true,\"answer_span\":\"表决须经出席委员三分之二以上通过方为有效（表决要求）。\",\"reason\":\"实际回答明确表达了表决须经出席委员三分之二以上通过方为有效。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）\",\"answer_span\":\"申诉处理委员会评议申诉案件，须有三分之二以上成员参加（出席要求）。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C019第十八条同句载明该规则，实际已读记录支持。\"},{\"text\":\"表决须经出席委员三分之二以上通过方为有效（表决要求）\",\"answer_span\":\"表决须经出席委员三分之二以上通过方为有效（表决要求）。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C019第十八条同句载明该规则，实际已读记录支持。\"}],\"serious_errors\":[],\"reason\":\"答案准确给出出席和表决两个比例要求，均有引用且已读原文支持，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01935252,
+          "seconds": 42.9194
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5e966befa06b27d92032393bc213b826916e196ea3c37d98a57049d1f47d18ac"
+}

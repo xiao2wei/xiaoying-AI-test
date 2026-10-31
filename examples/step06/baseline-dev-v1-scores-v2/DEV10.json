@@ -1,0 +1,143 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述“新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗”，直接满足“岗前培训合格方可上岗”要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确表述“每名辅导员每年参加校级培训不少于16学时”，直接满足“每人每年不少于16学时校级培训”要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016中的原文“岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。”，且该chunk已在actually_read中实际读取，支持该事实。"
+          },
+          {
+            "text": "每名辅导员每年参加校级培训不少于16学时。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016中的原文“职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。”，且该chunk已在actually_read中实际读取，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖两个必需要点，引用与已读取证据一致，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:38.514267+00:00",
+          "attempt": 1,
+          "prompt_sha256": "18410047d8947d07360e03702a29913bf0db1524b95b2344abc77d4c0d48e6c9",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "ec57c585-8ef4-4037-8f59-61482efec978",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3982,
+            "completion_tokens": 386,
+            "total_tokens": 4368,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 3342
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗”，直接满足“岗前培训合格方可上岗”要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“每名辅导员每年参加校级培训不少于16学时”，直接满足“每人每年不少于16学时校级培训”要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C016中的原文“岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。”，且该chunk已在actually_read中实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"每名辅导员每年参加校级培训不少于16学时。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C016中的原文“职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。”，且该chunk已在actually_read中实际读取，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖两个必需要点，引用与已读取证据一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006784800000000001,
+          "seconds": 4.7259
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述“新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整”，与必需要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。"
+          },
+          {
+            "text": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确回答了用户问题，引用了正确的制度条款，且实际读取了相关证据，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:43.245966+00:00",
+          "attempt": 1,
+          "prompt_sha256": "964a8c338734f3f54793c2fb3148901122384efe6656443514a46e6f94fa53f3",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "3822880a-186e-4abe-aff3-b06ee0c47631",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3878,
+            "completion_tokens": 312,
+            "total_tokens": 4190,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 3238
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整”，与必需要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。\"\n    },\n    {\n      \"text\": \"专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了用户问题，引用了正确的制度条款，且实际读取了相关证据，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006354479999999999,
+          "seconds": 4.3735
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e6b20000ee8f6526e9894fbd7f94c6821844a55a705635dacc9de6a56941f0d1"
+}

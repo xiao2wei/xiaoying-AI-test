@@ -1,0 +1,118 @@
+{
+  "key": "baseline--TEST31--0",
+  "mode": "baseline",
+  "id": "TEST31",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "e0c1f6d8ebb52f60db33481cc932f22b1b34c8e4260d35d3074032f9a0936a65",
+  "run_sha256": "66002642c628f7e748fc16622ae998e374d8ba4953c1952d2f0d92ec21e21642",
+  "created_at": "2026-10-31T05:14:32.145972+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式",
+          "reason": "实际回答明确引用了《辽宁科技大学临时用工管理办法》第二条，完整表达了事业编制之外、聘用社会人员、完成临时性阶段性辅助性特殊性工作任务、短期合同制等全部要点。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "临时用工不属于事业编制内用工。",
+          "answer_span": "临时用工不属于事业编制内用工。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用的第二条中有“事业编制之外”，支持该结论；实际已读文本包含相同表述。"
+        },
+        {
+          "text": "临时用工系指学校在事业编制之外。",
+          "answer_span": "临时用工系指学校在事业编制之外",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用的第二条原文明确“事业编制之外”，实际已读文本一致。"
+        },
+        {
+          "text": "临时用工聘用社会人员（含已退休人员）。",
+          "answer_span": "聘用社会人员（含已退休人员）",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用的第二条原文包含此内容，实际已读文本一致。"
+        },
+        {
+          "text": "临时用工完成学校临时性、阶段性、辅助性或特殊性工作任务。",
+          "answer_span": "完成学校临时性、阶段性、辅助性或特殊性工作任务",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用的第二条原文包含此内容，实际已读文本一致。"
+        },
+        {
+          "text": "临时用工是短期合同制用工形式。",
+          "answer_span": "采取的短期合同制用工形式",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用的第二条原文包含“短期合同制用工形式”，实际已读文本一致。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "回答准确、证据充分，直接依据《辽宁科技大学临时用工管理办法》第二条给出明确结论，并完整引用相关制度原文，无错误或遗漏。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:14:13.996441+00:00",
+        "attempt": 1,
+        "prompt_sha256": "465bdd271838f17aa97ac8235c979109bb6af12f306bd473b92562411f4d2905",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "f337ad4f-352e-4d97-84e7-bcf49e4ffa94",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2471,
+          "completion_tokens": 1934,
+          "total_tokens": 4405,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1336
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 1319
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式\",\n      \"reason\": \"实际回答明确引用了《辽宁科技大学临时用工管理办法》第二条，完整表达了事业编制之外、聘用社会人员、完成临时性阶段性辅助性特殊性工作任务、短期合同制等全部要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工不属于事业编制内用工。\",\n      \"answer_span\": \"临时用工不属于事业编制内用工。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条中有“事业编制之外”，支持该结论；实际已读文本包含相同表述。\"\n    },\n    {\n      \"text\": \"临时用工系指学校在事业编制之外。\",\n      \"answer_span\": \"临时用工系指学校在事业编制之外\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条原文明确“事业编制之外”，实际已读文本一致。\"\n    },\n    {\n      \"text\": \"临时用工聘用社会人员（含已退休人员）。\",\n      \"answer_span\": \"聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条原文包含此内容，实际已读文本一致。\"\n    },\n    {\n      \"text\": \"临时用工完成学校临时性、阶段性、辅助性或特殊性工作任务。\",\n      \"answer_span\": \"完成学校临时性、阶段性、辅助性或特殊性工作任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条原文包含此内容，实际已读文本一致。\"\n    },\n    {\n      \"text\": \"临时用工是短期合同制用工形式。\",\n      \"answer_span\": \"采取的短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条原文包含“短期合同制用工形式”，实际已读文本一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确、证据充分，直接依据《辽宁科技大学临时用工管理办法》第二条给出明确结论，并完整引用相关制度原文，无错误或遗漏。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.004725204,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 18.1478
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

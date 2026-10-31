@@ -1,0 +1,121 @@
+{
+  "id": "TEST18",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉处理期间暂缓执行原处理决定。",
+            "reason": "实际答案在 claim 中明确表述《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条的内容，与要求一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉期间原处理决定应予执行。",
+            "reason": "实际答案在 claim 中明确表述《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条的内容，与要求一致。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": null,
+            "reason": "实际答案未明确表达“适用处理类型不同”，仅指出两份文件规定相反并请求确认处理类型，未直接说明两者适用对象不同。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请确认本次处理决定属于哪一类（例如是否为管理服务人员工作作风问题处理决定），以便判断应适用哪一文件",
+            "reason": "实际答案在 gaps 中明确要求确认处理类型及适用办法，并避免一概决定，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定，申诉处理期间暂缓执行原处理决定。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定，申诉处理期间暂缓执行原处理决定。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的 D24-C023 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。"
+          },
+          {
+            "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定，申诉处理一次终局，申诉期间原处理决定应予执行。",
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定，申诉处理一次终局，申诉期间原处理决定应予执行。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的 D26-C018 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。"
+          },
+          {
+            "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十六条规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十六条规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的 D26-C017 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案正确识别两份文件的规定冲突，并明确请求确认处理类型，符合 expected_status=needs_confirmation。所有引用的制度事实均有可靠原文支持，无编造或错误引用。动作合理，已读取必要文件。唯一不足是未明确表述“适用处理类型不同”，但整体任务完成。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "处理决定所属类别（是否为管理服务人员工作作风问题处理决定）",
+            "处理决定所依据的具体条款或处理文书类型",
+            "学校对两份文件冲突的正式解释、衔接说明或执行通知（含适用对象、版本或日期）"
+          ],
+          "reason": "实际答案明确指出了缺少的信息并请求用户提供，包括处理类型、具体依据和官方解释，符合可操作缺口要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:12:13.681536+00:00",
+          "attempt": 1,
+          "prompt_sha256": "523d19cdb2cc38e6f5d1fb1d9f0d0ee07ed68cc37df45f729c14d6907b36db1f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "fb8bbcfa-ffea-4baa-8016-17f301912978",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3336,
+            "completion_tokens": 5353,
+            "total_tokens": 8689,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4435
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 1928
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉处理期间暂缓执行原处理决定。\",\n      \"reason\": \"实际答案在 claim 中明确表述《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条的内容，与要求一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉期间原处理决定应予执行。\",\n      \"reason\": \"实际答案在 claim 中明确表述《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条的内容，与要求一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"answer_span\": null,\n      \"reason\": \"实际答案未明确表达“适用处理类型不同”，仅指出两份文件规定相反并请求确认处理类型，未直接说明两者适用对象不同。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请确认本次处理决定属于哪一类（例如是否为管理服务人员工作作风问题处理决定），以便判断应适用哪一文件\",\n      \"reason\": \"实际答案在 gaps 中明确要求确认处理类型及适用办法，并避免一概决定，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定，申诉处理期间暂缓执行原处理决定。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定，申诉处理期间暂缓执行原处理决定。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的 D24-C023 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定，申诉处理一次终局，申诉期间原处理决定应予执行。\",\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定，申诉处理一次终局，申诉期间原处理决定应予执行。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的 D26-C018 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十六条规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十六条规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的 D26-C017 原文与此事实一致，且 actually_read 中已读取该 chunk，支持充分。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案正确识别两份文件的规定冲突，并明确请求确认处理类型，符合 expected_status=needs_confirmation。所有引用的制度事实均有可靠原文支持，无编造或错误引用。动作合理，已读取必要文件。唯一不足是未明确表述“适用处理类型不同”，但整体任务完成。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"处理决定所属类别（是否为管理服务人员工作作风问题处理决定）\",\n      \"处理决定所依据的具体条款或处理文书类型\",\n      \"学校对两份文件冲突的正式解释、衔接说明或执行通知（含适用对象、版本或日期）\"\n    ],\n    \"reason\": \"实际答案明确指出了缺少的信息并请求用户提供，包括处理类型、具体依据和官方解释，符合可操作缺口要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011902396,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 52.2931
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "b54330c8f0645e8d8e77368096c7316ab6e5a53cf33d46f5414582d464b23919"
+}

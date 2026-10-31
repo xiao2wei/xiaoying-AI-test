@@ -1,0 +1,254 @@
+{
+  "id": "TEST24",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "请提供您的年龄及拟退休时间、现聘专业技术岗位等级（是否三级以上）、是否在达到法定退休年龄前已聘用在该岗位、近三年聘期及年度考核结果、教学科研业绩情况，以及是否符合四项延退条件之一",
+            "reason": "明确列出缺少的资格条件信息"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "以便判断是否符合延退条件及适用63周岁还是65周岁上限",
+            "reason": "答案以请求补充和以便判断表述，未直接认定符合或不符合"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供您的年龄及拟退休时间、现聘专业技术岗位等级（是否三级以上）、是否在达到法定退休年龄前已聘用在该岗位、近三年聘期及年度考核结果、教学科研业绩情况，以及是否符合四项延退条件之一",
+            "reason": "明确请求补充这些信息"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "身体健康",
+            "answer_span": "身体健康",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "长期从事重点学科教学科研工作",
+            "answer_span": "长期从事重点学科教学科研工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "具有良好政治素质与师德师风",
+            "answer_span": "具有良好政治素质与师德师风",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "教学科研工作业绩突出",
+            "answer_span": "教学科研工作业绩突出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "近三年聘期及年度考核均为合格以上",
+            "answer_span": "近三年聘期及年度考核均为合格以上",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "在达到法定退休年龄前已聘用在专业技术三级以上岗位",
+            "answer_span": "在达到法定退休年龄前已聘用在专业技术三级以上岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "符合四项延退条件之一",
+            "answer_span": "符合四项延退条件之一",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者",
+            "answer_span": "国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定的任务期内",
+            "answer_span": "主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定的任务期内",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替",
+            "answer_span": "作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选",
+            "answer_span": "作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此条件，已读该文档"
+          },
+          {
+            "text": "延退期限一般不超过63周岁",
+            "answer_span": "延退期限一般不超过63周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此规则，已读该文档"
+          },
+          {
+            "text": "若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁",
+            "answer_span": "若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此规则，已读该文档"
+          },
+          {
+            "text": "本人提前半年自愿提出",
+            "answer_span": "本人提前半年自愿提出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "所在单位教授委员会审议、党政联席会研究同意后向学校提出延退申请",
+            "answer_span": "所在单位教授委员会审议、党政联席会研究同意后向学校提出延退申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "报送《高级专家延长退休年龄审批表》及相关证明材料",
+            "answer_span": "报送《高级专家延长退休年龄审批表》及相关证明材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "经学校研究同意后办理延退手续",
+            "answer_span": "经学校研究同意后办理延退手续",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "学校在每年5月和11月研究高级专家延退事项",
+            "answer_span": "学校在每年5月和11月研究高级专家延退事项",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "经校长办公会议审议、校党委常委会会议审定后办理相关手续",
+            "answer_span": "经校长办公会议审议、校党委常委会会议审定后办理相关手续",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          },
+          {
+            "text": "报上级主管部门备案",
+            "answer_span": "报上级主管部门备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含此程序，已读该文档"
+          }
+        ],
+        "serious_errors": [],
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "年龄及拟退休时间",
+            "现聘专业技术岗位等级（是否三级以上）",
+            "是否在达到法定退休年龄前已聘用在该岗位",
+            "近三年聘期及年度考核结果",
+            "教学科研业绩情况",
+            "是否符合四项延退条件之一（如人才项目、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博士研究生导师且所指导博士生仍在培养期内等）"
+          ],
+          "reason": "答案明确列出了需要用户提供的关键资格条件信息，以便做出判断"
+        },
+        "reason": "答案正确识别信息不足，未直接判断是否符合，而是陈述制度规则并请求补充具体条件，全部要点满足，引用可靠，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:14:27.490458+00:00",
+          "attempt": 1,
+          "prompt_sha256": "026aaada401c9ea85d8d004f335eeb462c0081ee31fcdb908622b7df3596532f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ff87ba21-05fe-4ff8-92f3-82295b029aaa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 6831,
+            "completion_tokens": 6449,
+            "total_tokens": 13280,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4387
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 5807
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"请提供您的年龄及拟退休时间、现聘专业技术岗位等级（是否三级以上）、是否在达到法定退休年龄前已聘用在该岗位、近三年聘期及年度考核结果、教学科研业绩情况，以及是否符合四项延退条件之一\",\n      \"reason\": \"明确列出缺少的资格条件信息\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"以便判断是否符合延退条件及适用63周岁还是65周岁上限\",\n      \"reason\": \"答案以请求补充和以便判断表述，未直接认定符合或不符合\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供您的年龄及拟退休时间、现聘专业技术岗位等级（是否三级以上）、是否在达到法定退休年龄前已聘用在该岗位、近三年聘期及年度考核结果、教学科研业绩情况，以及是否符合四项延退条件之一\",\n      \"reason\": \"明确请求补充这些信息\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"身体健康\",\n      \"answer_span\": \"身体健康\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"长期从事重点学科教学科研工作\",\n      \"answer_span\": \"长期从事重点学科教学科研工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"具有良好政治素质与师德师风\",\n      \"answer_span\": \"具有良好政治素质与师德师风\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"教学科研工作业绩突出\",\n      \"answer_span\": \"教学科研工作业绩突出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"近三年聘期及年度考核均为合格以上\",\n      \"answer_span\": \"近三年聘期及年度考核均为合格以上\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"answer_span\": \"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"符合四项延退条件之一\",\n      \"answer_span\": \"符合四项延退条件之一\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"answer_span\": \"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定的任务期内\",\n      \"answer_span\": \"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定的任务期内\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"answer_span\": \"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"answer_span\": \"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此条件，已读该文档\"\n    },\n    {\n      \"text\": \"延退期限一般不超过63周岁\",\n      \"answer_span\": \"延退期限一般不超过63周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此规则，已读该文档\"\n    },\n    {\n      \"text\": \"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁\",\n      \"answer_span\": \"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此规则，已读该文档\"\n    },\n    {\n      \"text\": \"本人提前半年自愿提出\",\n      \"answer_span\": \"本人提前半年自愿提出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"所在单位教授委员会审议、党政联席会研究同意后向学校提出延退申请\",\n      \"answer_span\": \"所在单位教授委员会审议、党政联席会研究同意后向学校提出延退申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"报送《高级专家延长退休年龄审批表》及相关证明材料\",\n      \"answer_span\": \"报送《高级专家延长退休年龄审批表》及相关证明材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"经学校研究同意后办理延退手续\",\n      \"answer_span\": \"经学校研究同意后办理延退手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"学校在每年5月和11月研究高级专家延退事项\",\n      \"answer_span\": \"学校在每年5月和11月研究高级专家延退事项\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"经校长办公会议审议、校党委常委会会议审定后办理相关手续\",\n      \"answer_span\": \"经校长办公会议审议、校党委常委会会议审定后办理相关手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    },\n    {\n      \"text\": \"报上级主管部门备案\",\n      \"answer_span\": \"报上级主管部门备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含此程序，已读该文档\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"年龄及拟退休时间\",\n      \"现聘专业技术岗位等级（是否三级以上）\",\n      \"是否在达到法定退休年龄前已聘用在该岗位\",\n      \"近三年聘期及年度考核结果\",\n      \"教学科研业绩情况\",\n      \"是否符合四项延退条件之一（如人才项目、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博士研究生导师且所指导博士生仍在培养期内等）\"\n    ],\n    \"reason\": \"答案明确列出了需要用户提供的关键资格条件信息，以便做出判断\"\n  },\n  \"reason\": \"答案正确识别信息不足，未直接判断是否符合，而是陈述制度规则并请求补充具体条件，全部要点满足，引用可靠，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.016624168,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 53.2245
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5182940ad565164b1cefe84a12bcc872ea282b0ca5b54db83fe37484740efba5"
+}

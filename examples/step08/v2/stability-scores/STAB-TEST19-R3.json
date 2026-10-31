@@ -1,0 +1,85 @@
+{
+  "id": "STAB-TEST19-R3",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编中未检索到食堂WiFi密码或校园无线网络接入密码的规定",
+            "reason": "明确说明资料中未提供该密码"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "现有制度汇编中未检索到食堂WiFi密码或校园无线网络接入密码的规定",
+            "reason": "未编造密码，仅说明未检索到并请求资料"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "答案在未找到相关证据时正确拒绝编造，并明确说明资料缺口及所需补充材料，符合预期状态。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "辽宁科技大学网络与信息化管理相关制度",
+            "校园网或无线网络使用指南",
+            "食堂网络接入通知",
+            "标题",
+            "版本日期",
+            "适用对象"
+          ],
+          "reason": "明确要求提供具体类型的制度文件及必要的元数据，便于后续检索。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:30:14.107300+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7259af70192b0fd42cd6ae9fa4857568da2636b5ea713ccdb5c1909be1802b24",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7e5b0998-4632-4c0c-9a07-771237418234",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1308,
+            "completion_tokens": 1267,
+            "total_tokens": 2575,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 980
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 284
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编中未检索到食堂WiFi密码或校园无线网络接入密码的规定\",\n      \"reason\": \"明确说明资料中未提供该密码\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编中未检索到食堂WiFi密码或校园无线网络接入密码的规定\",\n      \"reason\": \"未编造密码，仅说明未检索到并请求资料\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"答案在未找到相关证据时正确拒绝编造，并明确说明资料缺口及所需补充材料，符合预期状态。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"辽宁科技大学网络与信息化管理相关制度\",\n      \"校园网或无线网络使用指南\",\n      \"食堂网络接入通知\",\n      \"标题\",\n      \"版本日期\",\n      \"适用对象\"\n    ],\n    \"reason\": \"明确要求提供具体类型的制度文件及必要的元数据，便于后续检索。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00674388,
+          "seconds": 12.4102
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "9ee5b7631f6a2705212b60494fd184dca7b4caedf0ec8e9c9bb8f1db0637eb22"
+}

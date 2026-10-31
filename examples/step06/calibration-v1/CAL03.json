@@ -1,0 +1,81 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述2020规定每月26日上报，并引用D19-C015，该引用内容包含'于每月26日向学校人事处报送'，且实际读取记录包含该条款。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答明确表述2023补充规定每月25日上报，并引用D20-C006，该引用内容包含'各单位每月25日向人事处报送'，且实际读取记录包含该条款。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "实际回答在gaps中明确说明'两份规定存在差异，请向人事处确认本次适用口径'，符合请求确认的要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D19-C015的quote明确包含'于每月26日向学校人事处报送'，且该条款在实际读取记录中。"
+      },
+      {
+        "text": "2023补充规定每月25日上报",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D20-C006的quote明确包含'各单位每月25日向人事处报送'，且该条款在实际读取记录中。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确识别了两份规定报送日期的差异，并基于证据请求确认适用口径，符合预期状态。所有必要要点均满足，引用和读取记录支持所述事实。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:49:47.137068+00:00",
+      "attempt": 1,
+      "prompt_sha256": "a5a68ea5790a4adb79b6ab6b90bef3f8257e7570443458614ed9699632d26f19",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "23e7b6c1-ee17-493e-ad4c-9923a5429cdf",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1764,
+        "completion_tokens": 423,
+        "total_tokens": 2187,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1764
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述2020规定每月26日上报，并引用D19-C015，该引用内容包含'于每月26日向学校人事处报送'，且实际读取记录包含该条款。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述2023补充规定每月25日上报，并引用D20-C006，该引用内容包含'各单位每月25日向人事处报送'，且实际读取记录包含该条款。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明'两份规定存在差异，请向人事处确认本次适用口径'，符合请求确认的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定每月26日上报\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C015的quote明确包含'于每月26日向学校人事处报送'，且该条款在实际读取记录中。\"\n    },\n    {\n      \"text\": \"2023补充规定每月25日上报\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C006的quote明确包含'各单位每月25日向人事处报送'，且该条款在实际读取记录中。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确识别了两份规定报送日期的差异，并基于证据请求确认适用口径，符合预期状态。所有必要要点均满足，引用和读取记录支持所述事实。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00400356,
+      "seconds": 4.5386
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

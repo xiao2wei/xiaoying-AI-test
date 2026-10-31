@@ -1,0 +1,207 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "请确认您被认定的人才引进层次（第一至第八层次）",
+            "reason": "答案通过 gaps 明确请求确认人才引进层次，隐含了当前缺少该信息，因此满足要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请确认首聘期协议中约定的安家费具体金额及发放节点",
+            "reason": "答案通过 gaps 明确请求确认首聘期协议的相关信息，隐含了缺少已签协议条件。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "第一层次100万元；第二层次80万元；第三层次60万元；第四层次20万—30万元；第五层次20万元；第六层次10万元；第七层次5万元；第八层次5万元",
+            "reason": "答案列举了多个层次的不同金额范围，并未给出唯一金额，符合行为性禁止要求。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请确认您被认定的人才引进层次（第一至第八层次），以及是否属于“一人一议”协商确定待遇的情形；如尚未认定，请提供拟聘岗位、学历学位、职称、年龄、近三年代表性学术成果及学校人才工作领导小组或考核小组的认定/审批结果。",
+            "reason": "gaps 中明确请求补充人才层次及相关认定信息。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "请确认首聘期协议中约定的安家费具体金额及发放节点；如协议尚未签订，请提供拟签协议或人事处（人才工作办公室）出具的待遇确认材料。",
+            "reason": "gaps 中明确请求补充首聘期协议信息。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "安家费按人才层次确定。",
+            "answer_span": "引进人才安家费按人才层次确定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第一个 citation 的 quote 包含“第六条 引进人才的层次标准及待遇”，实际已读 D02-C007 支持该总体陈述。"
+          },
+          {
+            "text": "第一层次安家费100万元。",
+            "answer_span": "第一层次100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费100万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第二层次安家费80万元。",
+            "answer_span": "第二层次80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费80万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第三层次安家费60万元。",
+            "answer_span": "第三层次60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费60万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第四层次安家费20万—30万元。",
+            "answer_span": "第四层次20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费20万—30万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第五层次安家费20万元。",
+            "answer_span": "第五层次20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费20万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第六层次安家费10万元。",
+            "answer_span": "第六层次10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费10万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第七层次安家费5万元。",
+            "answer_span": "第七层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费5万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "第八层次安家费5万元。",
+            "answer_span": "第八层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "对应引用中明确写出“提供安家费5万元”，且实际已读 D02-C007 包含此内容。"
+          },
+          {
+            "text": "上述待遇不含辽宁省、鞍山市配套待遇。",
+            "answer_span": "上述待遇不含辽宁省、鞍山市配套待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第一个 citation 的 quote 包含“（不含辽宁省、鞍山市配套待遇）”，实际已读 D02-C007 支持。"
+          },
+          {
+            "text": "安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+            "answer_span": "安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用 D02-C022 的 quote 与此句一致，实际已读 D02-C022 支持。"
+          },
+          {
+            "text": "第五层次至第八层次人才需经高层次人才引进工作考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准。",
+            "answer_span": "第五层次至第八层次人才需经高层次人才引进工作考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用 D02-C009 的 quote 与此句一致，实际已读 D02-C009 支持。"
+          },
+          {
+            "text": "第一层次至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。",
+            "answer_span": "第一层次至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用 D02-C010 的 quote 与此句一致，实际已读 D02-C010 支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确列出了各层次安家费金额，未给出唯一金额，符合行为要求；明确指出了缺少人才层次和已签协议等信息，并请求用户补充具体内容；所有制度事实均有可靠引用支持，无编造或错误。因此总体判定通过。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人才引进层次",
+            "是否属于“一人一议”情形",
+            "拟聘岗位、学历学位、职称、年龄、近三年代表性学术成果及学校人才工作领导小组或考核小组的认定/审批结果",
+            "首聘期协议中约定的安家费具体金额及发放节点",
+            "拟签协议或人事处（人才工作办公室）出具的待遇确认材料"
+          ],
+          "reason": "答案明确要求用户提供具体信息字段和文件类型，而非泛泛要求补充信息，符合 actionable gap 要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:15:42.728104+00:00",
+          "attempt": 1,
+          "prompt_sha256": "67684f486764f39727b8cdc1def83fef30ec9d7205d372ce50704837c8acfc03",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7d2c1d60-991b-432e-bccf-a6939286eecd",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 6554,
+            "completion_tokens": 7175,
+            "total_tokens": 13729,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5213
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 5530
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"请确认您被认定的人才引进层次（第一至第八层次）\",\n      \"reason\": \"答案通过 gaps 明确请求确认人才引进层次，隐含了当前缺少该信息，因此满足要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请确认首聘期协议中约定的安家费具体金额及发放节点\",\n      \"reason\": \"答案通过 gaps 明确请求确认首聘期协议的相关信息，隐含了缺少已签协议条件。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"第一层次100万元；第二层次80万元；第三层次60万元；第四层次20万—30万元；第五层次20万元；第六层次10万元；第七层次5万元；第八层次5万元\",\n      \"reason\": \"答案列举了多个层次的不同金额范围，并未给出唯一金额，符合行为性禁止要求。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请确认您被认定的人才引进层次（第一至第八层次），以及是否属于“一人一议”协商确定待遇的情形；如尚未认定，请提供拟聘岗位、学历学位、职称、年龄、近三年代表性学术成果及学校人才工作领导小组或考核小组的认定/审批结果。\",\n      \"reason\": \"gaps 中明确请求补充人才层次及相关认定信息。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请确认首聘期协议中约定的安家费具体金额及发放节点；如协议尚未签订，请提供拟签协议或人事处（人才工作办公室）出具的待遇确认材料。\",\n      \"reason\": \"gaps 中明确请求补充首聘期协议信息。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"安家费按人才层次确定。\",\n      \"answer_span\": \"引进人才安家费按人才层次确定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第一个 citation 的 quote 包含“第六条 引进人才的层次标准及待遇”，实际已读 D02-C007 支持该总体陈述。\"\n    },\n    {\n      \"text\": \"第一层次安家费100万元。\",\n      \"answer_span\": \"第一层次100万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费100万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第二层次安家费80万元。\",\n      \"answer_span\": \"第二层次80万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费80万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第三层次安家费60万元。\",\n      \"answer_span\": \"第三层次60万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费60万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第四层次安家费20万—30万元。\",\n      \"answer_span\": \"第四层次20万—30万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费20万—30万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第五层次安家费20万元。\",\n      \"answer_span\": \"第五层次20万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费20万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第六层次安家费10万元。\",\n      \"answer_span\": \"第六层次10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费10万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第七层次安家费5万元。\",\n      \"answer_span\": \"第七层次5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费5万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"第八层次安家费5万元。\",\n      \"answer_span\": \"第八层次5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"对应引用中明确写出“提供安家费5万元”，且实际已读 D02-C007 包含此内容。\"\n    },\n    {\n      \"text\": \"上述待遇不含辽宁省、鞍山市配套待遇。\",\n      \"answer_span\": \"上述待遇不含辽宁省、鞍山市配套待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第一个 citation 的 quote 包含“（不含辽宁省、鞍山市配套待遇）”，实际已读 D02-C007 支持。\"\n    },\n    {\n      \"text\": \"安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\",\n      \"answer_span\": \"安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用 D02-C022 的 quote 与此句一致，实际已读 D02-C022 支持。\"\n    },\n    {\n      \"text\": \"第五层次至第八层次人才需经高层次人才引进工作考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准。\",\n      \"answer_span\": \"第五层次至第八层次人才需经高层次人才引进工作考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用 D02-C009 的 quote 与此句一致，实际已读 D02-C009 支持。\"\n    },\n    {\n      \"text\": \"第一层次至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。\",\n      \"answer_span\": \"第一层次至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用 D02-C010 的 quote 与此句一致，实际已读 D02-C010 支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确列出了各层次安家费金额，未给出唯一金额，符合行为要求；明确指出了缺少人才层次和已签协议等信息，并请求用户补充具体内容；所有制度事实均有可靠引用支持，无编造或错误。因此总体判定通过。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人才引进层次\",\n      \"是否属于“一人一议”情形\",\n      \"拟聘岗位、学历学位、职称、年龄、近三年代表性学术成果及学校人才工作领导小组或考核小组的认定/审批结果\",\n      \"首聘期协议中约定的安家费具体金额及发放节点\",\n      \"拟签协议或人事处（人才工作办公室）出具的待遇确认材料\"\n    ],\n    \"reason\": \"答案明确要求用户提供具体信息字段和文件类型，而非泛泛要求补充信息，符合 actionable gap 要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03706428,
+          "seconds": 60.6377
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step07\\agent-dev-v9-scores\\DEV06.json",
+      "new_judge_requests": 0
+    }
+  ],
+  "pass": true,
+  "run_sha256": "13cc25d21454d35e06b8e6399272b1533e2781559315786a832ed87f7711d45e"
+}

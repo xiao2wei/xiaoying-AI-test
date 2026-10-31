@@ -1,0 +1,164 @@
+{
+  "id": "TEST28",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "reason": "实际答案明确表达了专职辅导员岗位按不低于1:200的师生比设置，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校按照师生比不低于1:200的比例设置专职辅导员岗位",
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010中第九条内容，与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "依据专兼结合、以专为主的原则足额配备到位",
+            "answer_span": "并依据专兼结合、以专为主的原则足额配备到位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010中第九条内容，与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "辅导员编制按1:200的师生比核定",
+            "answer_span": "辅导员编制按1:200的师生比核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007中的原文，与已读材料一致，支持该事实。"
+          },
+          {
+            "text": "辅导员编制按专业技术岗或管理岗设置编制",
+            "answer_span": "按专业技术岗或管理岗设置编制",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007中的原文，与已读材料一致，支持该事实。"
+          },
+          {
+            "text": "按照专兼结合、以专为主的原则",
+            "answer_span": "按照专兼结合、以专为主的原则",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007中的原文，与已读材料一致，支持该事实。"
+          },
+          {
+            "text": "专职辅导员比例不低于85%",
+            "answer_span": "专职辅导员比例不低于85%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007中的原文，与已读材料一致，支持该事实。"
+          },
+          {
+            "text": "专职辅导员的工作量按师生比1:200核定并进行考核",
+            "answer_span": "专职辅导员的工作量按师生比1:200核定并进行考核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C021中的原文，与已读材料一致，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "总评：答案准确回答了专职辅导员岗位设置师生比不低于1:200，并补充了编制及工作量核定的相关规定。所有事实均有引用且与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:54.750321+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9dbe9f0b1db497fc45acde9d7d7336bad67d03ffb94eea5109feffeb23aafc86",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "94ecfe88-4afd-4322-a478-731df32c81d1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4830,
+            "completion_tokens": 4632,
+            "total_tokens": 9462,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3872
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3934
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"reason\": \"实际答案明确表达了专职辅导员岗位按不低于1:200的师生比设置，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校按照师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010中第九条内容，与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"answer_span\": \"并依据专兼结合、以专为主的原则足额配备到位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010中第九条内容，与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007中的原文，与已读材料一致，支持该事实。\"\n    },\n    {\n      \"text\": \"辅导员编制按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007中的原文，与已读材料一致，支持该事实。\"\n    },\n    {\n      \"text\": \"按照专兼结合、以专为主的原则\",\n      \"answer_span\": \"按照专兼结合、以专为主的原则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007中的原文，与已读材料一致，支持该事实。\"\n    },\n    {\n      \"text\": \"专职辅导员比例不低于85%\",\n      \"answer_span\": \"专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007中的原文，与已读材料一致，支持该事实。\"\n    },\n    {\n      \"text\": \"专职辅导员的工作量按师生比1:200核定并进行考核\",\n      \"answer_span\": \"专职辅导员的工作量按师生比1:200核定并进行考核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C021中的原文，与已读材料一致，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"总评：答案准确回答了专职辅导员岗位设置师生比不低于1:200，并补充了编制及工作量核定的相关规定。所有事实均有引用且与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02471832,
+          "seconds": 39.8996
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:34.665880+00:00",
+          "attempt": 1,
+          "prompt_sha256": "95068ce97f5763569873c6cb012160d317a2074d85020e69bab50d73784c5dd0",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1472
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:34.813326+00:00",
+          "attempt": 2,
+          "prompt_sha256": "95068ce97f5763569873c6cb012160d317a2074d85020e69bab50d73784c5dd0",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.187
+        }
+      ],
+      "judge_error": "ModelError:HTTP_429",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "9dfcc6292bd31a3d0feba0910ca22bfc4d716f596d4246461f1d9dd79cd183c0"
+}

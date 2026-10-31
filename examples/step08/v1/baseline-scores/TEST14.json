@@ -1,0 +1,134 @@
+{
+  "id": "TEST14",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假",
+            "reason": "明确说明2020年规定要求一级以上医院有效病休证明及病历。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教职工因病经三甲级以上医院诊断不能正常上班，可请病假",
+            "reason": "明确说明2023年补充规定要求三甲级以上医院诊断。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份文件对病假证明医院等级规定不一致：D19（2020-10-19）第四条为“一级以上医院”，D20（2023-12-27）第八条为“三甲级以上医院”。",
+            "reason": "直接列明两份文件的医院等级差异。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有材料未显示D20明确废止D19，也未说明二者适用对象或衔接关系，不能仅凭日期认定D20优先",
+            "reason": "明确指出现有材料不能仅凭日期确定适用，并需要进一步确认。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "辽宁科技大学教职工考勤与请假管理规定（2020-10-19）第四条规定一级以上医院有效病休证明及病历，经审批后可休病假。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005原文明确包含一级以上医院病休证明及病历，且该条已读。"
+          },
+          {
+            "text": "辽宁科技大学教职工考勤与请假管理补充规定（2023-12-27）第八条规定教职工因病经三甲级以上医院诊断不能正常上班可请病假。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班，可请病假。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009原文明确包含三甲级以上医院诊断要求，且该条已读。"
+          },
+          {
+            "text": "补充规定第八条要求长期病休人员每半年到三甲级以上医院复查并出具不能工作诊断证明。",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院复查并出具不能工作诊断证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009原文包含该复查要求，且该条已读。"
+          },
+          {
+            "text": "补充规定第八条要求长期病休人员恢复工作需由三甲级以上医院证明康复后办理销假。",
+            "answer_span": "恢复工作需由三甲级以上医院证明已康复后办理销假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009原文包含恢复工作需三甲级以上医院证明的要求，且该条已读。"
+          },
+          {
+            "text": "原规定第五条对长期病休复查/复工的医院表述为学校指定的医院，未限定三甲。",
+            "answer_span": "原规定第五条对长期病休复查/复工的表述是“学校指定的医院”，未限定三甲",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C006原文显示复查和恢复工作均要求学校指定医院，未出现三甲限定，且该条已读。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案列出了2020年和2023年两份文件对病假证明医院等级的不同规定，明确列明差异并指出不能仅凭日期适用、需补充效力关系及适用对象信息；所引条文与已读记录一致，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "D20的发布/施行通知或废止条款",
+            "D19是否仍有效的说明",
+            "人事处关于病假证明医院等级的现行操作口径/适用对象说明",
+            "提问人身份类别（如事业编制教职工、临时用工等）",
+            "本次病假是否属于长期病休复查/复工情形"
+          ],
+          "reason": "答案明确列出了需要用户补充的文件类型、效力关系说明和适用对象信息，属于清晰可行的确认请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:15.004804+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3cb4ed4dcdca88064536a95a30e4ba207298870fa7002a11f2e9451e63c65d16",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "96ba7319-38de-4e79-8240-2fbcea073935",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4431,
+            "completion_tokens": 6920,
+            "total_tokens": 11351,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5757
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3535
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假\",\n      \"reason\": \"明确说明2020年规定要求一级以上医院有效病休证明及病历。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教职工因病经三甲级以上医院诊断不能正常上班，可请病假\",\n      \"reason\": \"明确说明2023年补充规定要求三甲级以上医院诊断。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份文件对病假证明医院等级规定不一致：D19（2020-10-19）第四条为“一级以上医院”，D20（2023-12-27）第八条为“三甲级以上医院”。\",\n      \"reason\": \"直接列明两份文件的医院等级差异。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有材料未显示D20明确废止D19，也未说明二者适用对象或衔接关系，不能仅凭日期认定D20优先\",\n      \"reason\": \"明确指出现有材料不能仅凭日期确定适用，并需要进一步确认。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学教职工考勤与请假管理规定（2020-10-19）第四条规定一级以上医院有效病休证明及病历，经审批后可休病假。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005原文明确包含一级以上医院病休证明及病历，且该条已读。\"\n    },\n    {\n      \"text\": \"辽宁科技大学教职工考勤与请假管理补充规定（2023-12-27）第八条规定教职工因病经三甲级以上医院诊断不能正常上班可请病假。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班，可请病假。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009原文明确包含三甲级以上医院诊断要求，且该条已读。\"\n    },\n    {\n      \"text\": \"补充规定第八条要求长期病休人员每半年到三甲级以上医院复查并出具不能工作诊断证明。\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院复查并出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009原文包含该复查要求，且该条已读。\"\n    },\n    {\n      \"text\": \"补充规定第八条要求长期病休人员恢复工作需由三甲级以上医院证明康复后办理销假。\",\n      \"answer_span\": \"恢复工作需由三甲级以上医院证明已康复后办理销假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009原文包含恢复工作需三甲级以上医院证明的要求，且该条已读。\"\n    },\n    {\n      \"text\": \"原规定第五条对长期病休复查/复工的医院表述为学校指定的医院，未限定三甲。\",\n      \"answer_span\": \"原规定第五条对长期病休复查/复工的表述是“学校指定的医院”，未限定三甲\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C006原文显示复查和恢复工作均要求学校指定医院，未出现三甲限定，且该条已读。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案列出了2020年和2023年两份文件对病假证明医院等级的不同规定，明确列明差异并指出不能仅凭日期适用、需补充效力关系及适用对象信息；所引条文与已读记录一致，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"D20的发布/施行通知或废止条款\",\n      \"D19是否仍有效的说明\",\n      \"人事处关于病假证明医院等级的现行操作口径/适用对象说明\",\n      \"提问人身份类别（如事业编制教职工、临时用工等）\",\n      \"本次病假是否属于长期病休复查/复工情形\"\n    ],\n    \"reason\": \"答案明确列出了需要用户补充的文件类型、效力关系说明和适用对象信息，属于清晰可行的确认请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03325212,
+          "seconds": 64.4124
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "4f35ec9219ba1fd7613d0308b04994d2ba02ffc7821a3b71e4b0b4c82d667bba"
+}

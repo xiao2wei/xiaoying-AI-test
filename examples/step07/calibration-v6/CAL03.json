@@ -1,0 +1,96 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "2020规定每月26日上报。",
+        "reason": "实际回答明确表述2020规定报送日为每月26日，并有对应引用支持。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "2023补充规定每月25日上报。",
+        "reason": "实际回答明确表述2023补充规定报送日为每月25日，并有对应引用支持。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "两份规定存在差异，请向人事处确认本次适用口径。",
+        "reason": "实际回答明确说明两份规定存在差异，并请求向人事处确认适用口径，满足合取要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报。",
+        "answer_span": "2020规定每月26日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "实际已读D19-C015并引用第十四条，原文明确每月26日上报。"
+      },
+      {
+        "text": "2023补充规定每月25日上报。",
+        "answer_span": "2023补充规定每月25日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "实际已读D20-C006并引用第五条，原文明确每月25日上报。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "实际答案准确识别两份规定的月度报送日差异，未擅自选择适用口径，请求人事处确认，符合needs_confirmation状态；两个制度事实均有实际已读原文和引用支持，无严重错误。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:26:22.208945+00:00",
+      "attempt": 1,
+      "prompt_sha256": "624f0318ff880286bb09bb835e8688d347e0fb2e3a35d532db92003ab41dc061",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "65852a36-047d-49ff-8ea5-9cb5a74b44c1",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2352,
+        "completion_tokens": 2603,
+        "total_tokens": 4955,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2256
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 1712
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"2020规定每月26日上报。\",\"reason\":\"实际回答明确表述2020规定报送日为每月26日，并有对应引用支持。\"},{\"index\":1,\"met\":true,\"answer_span\":\"2023补充规定每月25日上报。\",\"reason\":\"实际回答明确表述2023补充规定报送日为每月25日，并有对应引用支持。\"},{\"index\":2,\"met\":true,\"answer_span\":\"两份规定存在差异，请向人事处确认本次适用口径。\",\"reason\":\"实际回答明确说明两份规定存在差异，并请求向人事处确认适用口径，满足合取要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"2020规定每月26日上报。\",\"answer_span\":\"2020规定每月26日上报。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读D19-C015并引用第十四条，原文明确每月26日上报。\"},{\"text\":\"2023补充规定每月25日上报。\",\"answer_span\":\"2023补充规定每月25日上报。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读D20-C006并引用第五条，原文明确每月25日上报。\"}],\"serious_errors\":[],\"reason\":\"实际答案准确识别两份规定的月度报送日差异，未擅自选择适用口径，请求人事处确认，符合needs_confirmation状态；两个制度事实均有实际已读原文和引用支持，无严重错误。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01341252,
+      "seconds": 25.2367
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

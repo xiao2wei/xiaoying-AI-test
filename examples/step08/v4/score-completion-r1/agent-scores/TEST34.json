@@ -1,0 +1,216 @@
+{
+  "id": "TEST34",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "reason": "实际答案明确表达了决定作出前可书面申请撤回"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉一经撤回，申诉复查即行终止，并且原申诉人不得以相同理由再行提起申诉",
+            "reason": "实际答案明确表达了撤回后不得相同理由再提"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文，已读数据支持该事实"
+          },
+          {
+            "text": "申诉一经撤回，申诉复查即行终止",
+            "answer_span": "申诉一经撤回，申诉复查即行终止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文，已读数据支持"
+          },
+          {
+            "text": "原申诉人不得以相同理由再行提起申诉",
+            "answer_span": "原申诉人不得以相同理由再行提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文，已读数据支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用学校申诉办法第十四条，涵盖决定作出前可书面撤回以及撤回后不得相同理由再提两个要点，证据充分，任务完成。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:12:18.662912+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0098216ae57c85d24f26e2d7fff726b54d32fa1180ba13d5b223a5a81ee0d343",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "d7bc33c0-c2e0-4670-993c-0dcfce1aee56",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1876,
+            "completion_tokens": 1760,
+            "total_tokens": 3636,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1311
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 852
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"reason\": \"实际答案明确表达了决定作出前可书面申请撤回\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉一经撤回，申诉复查即行终止，并且原申诉人不得以相同理由再行提起申诉\",\n      \"reason\": \"实际答案明确表达了撤回后不得相同理由再提\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文，已读数据支持该事实\"\n    },\n    {\n      \"text\": \"申诉一经撤回，申诉复查即行终止\",\n      \"answer_span\": \"申诉一经撤回，申诉复查即行终止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文，已读数据支持\"\n    },\n    {\n      \"text\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"answer_span\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文，已读数据支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用学校申诉办法第十四条，涵盖决定作出前可书面撤回以及撤回后不得相同理由再提两个要点，证据充分，任务完成。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004069648,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 16.2574
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST34--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "2baa12243b38efa50cd0387097f21ac4da187876c91feb4e62f62bd79c3eeb7a",
+        "run_sha256": "9a75028104225a722e5ab34988a796fd6bb7c80a5703f4bdedde6b832ca3df25",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "1－2位校内教职工",
+            "reason": "答案明确说明可以委托1－2位校内教职工作为申诉代理人。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "reason": "答案明确指出重要文书须由申诉人本人签名。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人可以委托1－2位校内教职工作为申诉代理人",
+            "answer_span": "申诉人可以委托1－2位校内教职工作为申诉代理人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十二条，已读原文一致，支持该事实。"
+          },
+          {
+            "text": "申诉代理人代为办理申诉事项",
+            "answer_span": "代为办理申诉事项",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用及原文均包含该内容。"
+          },
+          {
+            "text": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用及原文均包含该内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖两个必需要点，提供了正确制度依据和内容，引用来自已读原文且支持结论，操作过程合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:12:32.256332+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8e78ab94725b1bdc0e647af26920d0724ee1c38bc76c254d8c3d5979f9b8e642",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6536d1e2-18d8-4fed-b4dc-3c40d69f08c1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2104,
+            "completion_tokens": 2300,
+            "total_tokens": 4404,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1870
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1080
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"1－2位校内教职工\",\n      \"reason\": \"答案明确说明可以委托1－2位校内教职工作为申诉代理人。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"reason\": \"答案明确指出重要文书须由申诉人本人签名。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉人可以委托1－2位校内教职工作为申诉代理人\",\n      \"answer_span\": \"申诉人可以委托1－2位校内教职工作为申诉代理人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十二条，已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"申诉代理人代为办理申诉事项\",\n      \"answer_span\": \"代为办理申诉事项\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用及原文均包含该内容。\"\n    },\n    {\n      \"text\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用及原文均包含该内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖两个必需要点，提供了正确制度依据和内容，引用来自已读原文且支持结论，操作过程合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.005289328,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 20.2543
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST34--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "2baa12243b38efa50cd0387097f21ac4da187876c91feb4e62f62bd79c3eeb7a",
+        "run_sha256": "9a75028104225a722e5ab34988a796fd6bb7c80a5703f4bdedde6b832ca3df25",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "9a75028104225a722e5ab34988a796fd6bb7c80a5703f4bdedde6b832ca3df25"
+}

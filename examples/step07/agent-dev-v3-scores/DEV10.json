@@ -1,0 +1,202 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "培训合格方可上岗",
+            "reason": "实际回答明确写出培训合格方可上岗，直接回应新选聘辅导员能否直接上岗的要点"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "每名辅导员每年参加校级培训不少于16学时",
+            "reason": "实际回答明确写出每名辅导员每年参加校级培训不少于16学时，与原要点语义一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校对新选聘的专兼职辅导员开展岗前培训",
+            "answer_span": "学校对新选聘的专兼职辅导员开展岗前培训",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016原文包含该表述，且实际已读相同内容"
+          },
+          {
+            "text": "培训合格方可上岗",
+            "answer_span": "培训合格方可上岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016原文包含该表述，且实际已读相同内容"
+          },
+          {
+            "text": "每名辅导员每年参加校级培训不少于16学时",
+            "answer_span": "每名辅导员每年参加校级培训不少于16学时",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016原文包含16学时要求，且实际已读内容一致"
+          },
+          {
+            "text": "兼职辅导员纳入全校辅导员培训体系",
+            "answer_span": "兼职辅导员纳入全校辅导员培训体系",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012原文包含该表述，且实际已读相同内容"
+          },
+          {
+            "text": "学校对被录用的兼职辅导员开展上岗培训",
+            "answer_span": "学校对被录用的兼职辅导员开展上岗培训",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012原文包含该表述，且实际已读相同内容"
+          },
+          {
+            "text": "对培训合格者颁发聘书",
+            "answer_span": "对培训合格者颁发聘书",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012原文包含该表述，且实际已读相同内容"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案完整覆盖两个必需要点，引用的制度原文支持相关事实，实际已读材料一致，无错误或虚构。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:06:53.175214+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f620db198d4e69c22b36db4fe212576f271a6022858b0dcb9248a4b0b2f71fbe",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "2153d05b-0f0f-4b17-aee8-1d70471923df",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2168,
+            "completion_tokens": 2667,
+            "total_tokens": 4835,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2154
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1272
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"培训合格方可上岗\",\"reason\":\"实际回答明确写出培训合格方可上岗，直接回应新选聘辅导员能否直接上岗的要点\"},{\"index\":1,\"met\":true,\"answer_span\":\"每名辅导员每年参加校级培训不少于16学时\",\"reason\":\"实际回答明确写出每名辅导员每年参加校级培训不少于16学时，与原要点语义一致\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"学校对新选聘的专兼职辅导员开展岗前培训\",\"answer_span\":\"学校对新选聘的专兼职辅导员开展岗前培训\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C016原文包含该表述，且实际已读相同内容\"},{\"text\":\"培训合格方可上岗\",\"answer_span\":\"培训合格方可上岗\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C016原文包含该表述，且实际已读相同内容\"},{\"text\":\"每名辅导员每年参加校级培训不少于16学时\",\"answer_span\":\"每名辅导员每年参加校级培训不少于16学时\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C016原文包含16学时要求，且实际已读内容一致\"},{\"text\":\"兼职辅导员纳入全校辅导员培训体系\",\"answer_span\":\"兼职辅导员纳入全校辅导员培训体系\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C012原文包含该表述，且实际已读相同内容\"},{\"text\":\"学校对被录用的兼职辅导员开展上岗培训\",\"answer_span\":\"学校对被录用的兼职辅导员开展上岗培训\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C012原文包含该表述，且实际已读相同内容\"},{\"text\":\"对培训合格者颁发聘书\",\"answer_span\":\"对培训合格者颁发聘书\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C012原文包含该表述，且实际已读相同内容\"}],\"serious_errors\":[],\"reason\":\"答案完整覆盖两个必需要点，引用的制度原文支持相关事实，实际已读材料一致，无错误或虚构。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01342308,
+          "seconds": 25.0348
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "reason": "实际答案明确给出了与要点相同的3年岗位调整限制。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "answer_span": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C019中的句子支持该事实，且实际已读该文档段落包含相同规定。"
+          },
+          {
+            "text": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+            "answer_span": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C019中的句子支持该事实，且实际已读该文档段落包含相同规定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确回答了问题，给出新入职专职辅导员原则上工作满3年后才能岗位调整，并补充了相关审批流程；引用与已读资料一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:07:18.217986+00:00",
+          "attempt": 1,
+          "prompt_sha256": "332174887c6bbce8d8dc26f78e5175a210ff5cf70a08ebd5bddd96d41f1ba0fd",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "9eee386f-9ad0-43e9-8156-29b2f2a69d36",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2174,
+            "completion_tokens": 1420,
+            "total_tokens": 3594,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1093
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1278
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"reason\":\"实际答案明确给出了与要点相同的3年岗位调整限制。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"answer_span\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C019中的句子支持该事实，且实际已读该文档段落包含相同规定。\"},{\"text\":\"专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。\",\"answer_span\":\"专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C019中的句子支持该事实，且实际已读该文档段落包含相同规定。\"}],\"serious_errors\":[],\"reason\":\"实际回答准确回答了问题，给出新入职专职辅导员原则上工作满3年后才能岗位调整，并补充了相关审批流程；引用与已读资料一致，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008492880000000001,
+          "seconds": 13.5508
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "406957378f9b7f3842dd6ad61e2e91960d8d1461c14471ffcf3ec08d88a5a1af"
+}

@@ -1,0 +1,218 @@
+{
+  "id": "STAB-TEST31-R1",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工不属于事业编制内用工：学校临时用工是在事业编制之外，聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。",
+            "reason": "实际答案明确说明临时用工在事业编制之外，聘用社会人员完成临时性、阶段性、辅助性或特殊性工作任务，并采用短期合同制，覆盖要点全部条件。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工不属于事业编制内用工",
+            "answer_span": "临时用工不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实由所引D23-C003条文明确支持，且实际读取记录中包含该条款。"
+          },
+          {
+            "text": "学校临时用工是在事业编制之外",
+            "answer_span": "学校临时用工是在事业编制之外",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确表述“在事业编制之外”，实际读取内容一致。"
+          },
+          {
+            "text": "聘用社会人员（含已退休人员）",
+            "answer_span": "聘用社会人员（含已退休人员）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确包含该表述，实际读取内容一致。"
+          },
+          {
+            "text": "完成临时性、阶段性、辅助性或特殊性工作任务",
+            "answer_span": "完成临时性、阶段性、辅助性或特殊性工作任务",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确列出四类工作任务，实际读取内容一致。"
+          },
+          {
+            "text": "短期合同制用工形式",
+            "answer_span": "短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确“短期合同制用工形式”，实际读取内容一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答直接回应问题，准确引用并复述辽宁科技大学临时用工管理办法第二条关于事业编制之外、短期合同制的定义，要点完全满足，所引证据与已读记录一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:20.739601+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a5da5d896ce679f6a3196df462b7815c475c283d6151c92261d70c8fbc779555",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "45aa5580-b9f4-4eea-bfbc-67d56615dadf",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1553,
+            "completion_tokens": 3301,
+            "total_tokens": 4854,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2707
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 657
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工不属于事业编制内用工：学校临时用工是在事业编制之外，聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。\",\n      \"reason\": \"实际答案明确说明临时用工在事业编制之外，聘用社会人员完成临时性、阶段性、辅助性或特殊性工作任务，并采用短期合同制，覆盖要点全部条件。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"临时用工不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实由所引D23-C003条文明确支持，且实际读取记录中包含该条款。\"\n    },\n    {\n      \"text\": \"学校临时用工是在事业编制之外\",\n      \"answer_span\": \"学校临时用工是在事业编制之外\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确表述“在事业编制之外”，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"聘用社会人员（含已退休人员）\",\n      \"answer_span\": \"聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确包含该表述，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"answer_span\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确列出四类工作任务，实际读取内容一致。\"\n    },\n    {\n      \"text\": \"短期合同制用工形式\",\n      \"answer_span\": \"短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确“短期合同制用工形式”，实际读取内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答直接回应问题，准确引用并复述辽宁科技大学临时用工管理办法第二条关于事业编制之外、短期合同制的定义，要点完全满足，所引证据与已读记录一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.015121919999999999,
+          "seconds": 30.939
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "不可以",
+            "reason": "实际回答明确给出否定结论，与要点“不可以”一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "reason": "实际回答明确引用并表述了禁止聘用未满十八周岁未成年人的规则，与要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "辽宁科技大学临时用工管理办法明确禁止聘用未满十八周岁的未成年人",
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C009第八条原文，实际读取内容包含该禁止性规定。"
+          },
+          {
+            "text": "17岁的人不能受聘临时用工岗位",
+            "answer_span": "17岁的人不能受聘临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "根据禁止聘用未满十八周岁未成年人的条款可直接推出，引用内容支持该结论。"
+          },
+          {
+            "text": "临时用工年龄一般不得超过男63周岁、女60周岁",
+            "answer_span": "年龄一般不得超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（二）项原文，实际读取内容支持该条件。"
+          },
+          {
+            "text": "首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "answer_span": "首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（三）项，实际读取内容支持该条件。"
+          },
+          {
+            "text": "具备岗位要求的工作技能并能坚持正常工作",
+            "answer_span": "具备岗位要求的工作技能并能坚持正常工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010第九条第（四）项，实际读取内容支持该条件。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答直接给出否定结论并引用禁止聘用未成年人的条款，满足全部要点；引用与实际读取一致，附加聘用条件事实有充分支持；状态与决策合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:51.692278+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cf2bce041ec4307a508481c388c2755a70c64afa96056df95ca48e3f2d1e6c7f",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1c50f223-0a62-4806-9022-e02665634faa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2158,
+            "completion_tokens": 3300,
+            "total_tokens": 5458,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2668
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1262
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不可以\",\n      \"reason\": \"实际回答明确给出否定结论，与要点“不可以”一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"实际回答明确引用并表述了禁止聘用未满十八周岁未成年人的规则，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学临时用工管理办法明确禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C009第八条原文，实际读取内容包含该禁止性规定。\"\n    },\n    {\n      \"text\": \"17岁的人不能受聘临时用工岗位\",\n      \"answer_span\": \"17岁的人不能受聘临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"根据禁止聘用未满十八周岁未成年人的条款可直接推出，引用内容支持该结论。\"\n    },\n    {\n      \"text\": \"临时用工年龄一般不得超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不得超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（二）项原文，实际读取内容支持该条件。\"\n    },\n    {\n      \"text\": \"首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"answer_span\": \"首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（三）项，实际读取内容支持该条件。\"\n    },\n    {\n      \"text\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"answer_span\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010第九条第（四）项，实际读取内容支持该条件。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答直接给出否定结论并引用禁止聘用未成年人的条款，满足全部要点；引用与实际读取一致，附加聘用条件事实有充分支持；状态与决策合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01591656,
+          "seconds": 29.5928
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "549ed45259acd83f80a1ca74c8ed278833ca9a880105f2d4011f758ddd5091dc"
+}

@@ -1,0 +1,3203 @@
+{
+  "scope": "formal",
+  "group_count": 40,
+  "metrics": {
+    "M01": {
+      "name": "初次检索Recall@5",
+      "numerator": 34.5,
+      "denominator": 36,
+      "value": 0.9583333333333334,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST01": 1.0,
+        "TEST02": 1.0,
+        "TEST03": 1.0,
+        "TEST04": 1.0,
+        "TEST05": 1.0,
+        "TEST06": 1.0,
+        "TEST07": 1.0,
+        "TEST08": 1.0,
+        "TEST09": 1.0,
+        "TEST10": 1.0,
+        "TEST11": 1.0,
+        "TEST12": 1.0,
+        "TEST13": 1.0,
+        "TEST14": 1.0,
+        "TEST15": 1.0,
+        "TEST16": 1.0,
+        "TEST17": 1.0,
+        "TEST18": 0.5,
+        "TEST21": 1.0,
+        "TEST22": 1.0,
+        "TEST23": 1.0,
+        "TEST24": 1.0,
+        "TEST25": 1.0,
+        "TEST26": 1.0,
+        "TEST27": 1.0,
+        "TEST28": 1.0,
+        "TEST29": 1.0,
+        "TEST30": 1.0,
+        "TEST31": 1.0,
+        "TEST32": 1.0,
+        "TEST33": 1.0,
+        "TEST34": 1.0,
+        "TEST35": 1.0,
+        "TEST36": 0.0,
+        "TEST37": 1.0,
+        "TEST38": 1.0
+      }
+    },
+    "M02": {
+      "name": "最终实际读取证据覆盖率",
+      "numerator": 34.0,
+      "denominator": 35,
+      "value": 0.9714285714285714,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST01": 1.0,
+        "TEST02": 1.0,
+        "TEST03": 1.0,
+        "TEST04": 1.0,
+        "TEST05": 1.0,
+        "TEST06": 1.0,
+        "TEST07": 1.0,
+        "TEST08": 1.0,
+        "TEST09": 1.0,
+        "TEST10": 1.0,
+        "TEST11": 1.0,
+        "TEST12": 1.0,
+        "TEST13": 1.0,
+        "TEST14": 1.0,
+        "TEST15": 1.0,
+        "TEST16": 1.0,
+        "TEST17": 1.0,
+        "TEST18": 1.0,
+        "TEST21": 0.0,
+        "TEST22": 1.0,
+        "TEST23": 1.0,
+        "TEST24": 1.0,
+        "TEST25": 1.0,
+        "TEST26": 1.0,
+        "TEST27": 1.0,
+        "TEST28": 1.0,
+        "TEST29": 1.0,
+        "TEST30": 1.0,
+        "TEST31": 1.0,
+        "TEST32": 1.0,
+        "TEST33": 1.0,
+        "TEST34": 1.0,
+        "TEST35": 1.0,
+        "TEST36": 1.0,
+        "TEST37": 1.0
+      }
+    },
+    "M03": {
+      "name": "任务通过率",
+      "numerator": 36,
+      "denominator": 40,
+      "value": 0.9,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST01": true,
+        "TEST02": true,
+        "TEST03": true,
+        "TEST04": true,
+        "TEST05": true,
+        "TEST06": true,
+        "TEST07": true,
+        "TEST08": true,
+        "TEST09": true,
+        "TEST10": true,
+        "TEST11": false,
+        "TEST12": true,
+        "TEST13": true,
+        "TEST14": true,
+        "TEST15": true,
+        "TEST16": true,
+        "TEST17": true,
+        "TEST18": false,
+        "TEST19": true,
+        "TEST20": true,
+        "TEST21": false,
+        "TEST22": true,
+        "TEST23": true,
+        "TEST24": true,
+        "TEST25": false,
+        "TEST26": true,
+        "TEST27": true,
+        "TEST28": true,
+        "TEST29": true,
+        "TEST30": true,
+        "TEST31": true,
+        "TEST32": true,
+        "TEST33": true,
+        "TEST34": true,
+        "TEST35": true,
+        "TEST36": true,
+        "TEST37": true,
+        "TEST38": true,
+        "TEST39": true,
+        "TEST40": true
+      }
+    },
+    "M04": {
+      "name": "可回答问题正确率",
+      "numerator": 24,
+      "denominator": 26,
+      "value": 0.9230769230769231,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST01": true,
+        "TEST02": true,
+        "TEST03": true,
+        "TEST04": true,
+        "TEST05": true,
+        "TEST06": true,
+        "TEST07": true,
+        "TEST08": true,
+        "TEST09": true,
+        "TEST10": true,
+        "TEST11": false,
+        "TEST12": true,
+        "TEST16": true,
+        "TEST25": false,
+        "TEST26": true,
+        "TEST27": true,
+        "TEST28": true,
+        "TEST29": true,
+        "TEST30": true,
+        "TEST31": true,
+        "TEST32": true,
+        "TEST33": true,
+        "TEST34": true,
+        "TEST35": true,
+        "TEST36": true,
+        "TEST37": true
+      }
+    },
+    "M05": {
+      "name": "可回答问题完整度",
+      "numerator": 26.0,
+      "denominator": 26,
+      "value": 1.0,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST01": 1.0,
+        "TEST02": 1.0,
+        "TEST03": 1.0,
+        "TEST04": 1.0,
+        "TEST05": 1.0,
+        "TEST06": 1.0,
+        "TEST07": 1.0,
+        "TEST08": 1.0,
+        "TEST09": 1.0,
+        "TEST10": 1.0,
+        "TEST11": 1.0,
+        "TEST12": 1.0,
+        "TEST16": 1.0,
+        "TEST25": 1.0,
+        "TEST26": 1.0,
+        "TEST27": 1.0,
+        "TEST28": 1.0,
+        "TEST29": 1.0,
+        "TEST30": 1.0,
+        "TEST31": 1.0,
+        "TEST32": 1.0,
+        "TEST33": 1.0,
+        "TEST34": 1.0,
+        "TEST35": 1.0,
+        "TEST36": 1.0,
+        "TEST37": 1.0
+      }
+    },
+    "M06": {
+      "name": "引用支持率",
+      "numerator": 206,
+      "denominator": 208,
+      "value": 0.9903846153846154,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {}
+    },
+    "M07": {
+      "name": "事实引用覆盖率",
+      "numerator": 208,
+      "denominator": 208,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {}
+    },
+    "M08": {
+      "name": "无依据事实率",
+      "numerator": 1,
+      "denominator": 208,
+      "value": 0.004807692307692308,
+      "target": 0,
+      "direction": "<=",
+      "passed": false,
+      "detail": {}
+    },
+    "M09": {
+      "name": "conflict通过率",
+      "numerator": 5,
+      "denominator": 6,
+      "value": 0.8333333333333334,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "TEST13": true,
+        "TEST14": true,
+        "TEST15": true,
+        "TEST16": true,
+        "TEST17": true,
+        "TEST18": false
+      }
+    },
+    "M10": {
+      "name": "insufficient通过率",
+      "numerator": 5,
+      "denominator": 6,
+      "value": 0.8333333333333334,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "TEST19": true,
+        "TEST20": true,
+        "TEST21": false,
+        "TEST22": true,
+        "TEST23": true,
+        "TEST24": true
+      }
+    },
+    "M11": {
+      "name": "tool_failure通过率",
+      "numerator": 5,
+      "denominator": 5,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST36": true,
+        "TEST37": true,
+        "TEST38": true,
+        "TEST39": true,
+        "TEST40": true
+      }
+    },
+    "M12": {
+      "name": "paraphrase通过率",
+      "numerator": 5,
+      "denominator": 6,
+      "value": 0.8333333333333334,
+      "target": 0.8333333333333334,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST25": false,
+        "TEST26": true,
+        "TEST27": true,
+        "TEST28": true,
+        "TEST29": true,
+        "TEST30": true
+      }
+    },
+    "M13": {
+      "name": "context通过率",
+      "numerator": 5,
+      "denominator": 5,
+      "value": 1.0,
+      "target": 0.8,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST31": true,
+        "TEST32": true,
+        "TEST33": true,
+        "TEST34": true,
+        "TEST35": true
+      }
+    },
+    "M14": {
+      "name": "程序检查",
+      "numerator": 112,
+      "denominator": 112,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "test_passed": 61,
+        "test_run": 61,
+        "provenance_passed": 51,
+        "provenance_run": 51,
+        "test_report_present": true
+      }
+    },
+    "M15": {
+      "name": "关键缺陷场景数",
+      "numerator": 3,
+      "denominator": 70,
+      "value": 3,
+      "target": 0,
+      "direction": "<=",
+      "passed": false,
+      "detail": [
+        {
+          "id": "TEST11",
+          "errors": [
+            "claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。",
+            "存在无依据结论或不支持引用"
+          ]
+        },
+        {
+          "id": "TEST25",
+          "errors": [
+            {
+              "text": "上述备案要求适用于经学校批准在职攻读博士学位的教师",
+              "reason": "该适用范围断言未得到所引用第七条的充分支持，属于不支持的引用/无依据扩张。"
+            },
+            "存在无依据结论或不支持引用"
+          ]
+        },
+        {
+          "id": "TEST17",
+          "repeat": 3,
+          "errors": [
+            "存在无依据结论或不支持引用"
+          ]
+        }
+      ]
+    },
+    "M16": {
+      "name": "稳定性通过率",
+      "numerator": 27,
+      "denominator": 30,
+      "value": 0.9,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "required_observations": 30,
+        "actual": 30
+      }
+    },
+    "M17": {
+      "name": "端到端P95秒",
+      "numerator": 18.5455,
+      "denominator": 40,
+      "value": 18.5455,
+      "target": 120,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "TEST01": 11.666,
+        "TEST02": 9.1295,
+        "TEST03": 8.1836,
+        "TEST04": 6.818,
+        "TEST05": 5.9238,
+        "TEST06": 4.4377,
+        "TEST07": 5.2196,
+        "TEST08": 5.0138,
+        "TEST09": 11.0241,
+        "TEST10": 16.8646,
+        "TEST11": 7.3947,
+        "TEST12": 5.4531,
+        "TEST13": 17.7266,
+        "TEST14": 17.0727,
+        "TEST15": 9.3974,
+        "TEST16": 7.1591,
+        "TEST17": 16.8115,
+        "TEST18": 14.0301,
+        "TEST19": 5.1102,
+        "TEST20": 8.0112,
+        "TEST21": 6.8623,
+        "TEST22": 20.1891,
+        "TEST23": 43.1557,
+        "TEST24": 14.5793,
+        "TEST25": 18.5455,
+        "TEST26": 17.5018,
+        "TEST27": 13.2219,
+        "TEST28": 11.9115,
+        "TEST29": 12.9615,
+        "TEST30": 17.2734,
+        "TEST31": 12.0547,
+        "TEST32": 11.6832,
+        "TEST33": 14.884,
+        "TEST34": 13.0551,
+        "TEST35": 15.388,
+        "TEST36": 8.0498,
+        "TEST37": 5.5178,
+        "TEST38": 3.4435,
+        "TEST39": 2.7078,
+        "TEST40": 1.6435
+      }
+    },
+    "M18": {
+      "name": "平均模型请求次数",
+      "numerator": 231,
+      "denominator": 40,
+      "value": 5.775,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "TEST01": 4,
+        "TEST02": 4,
+        "TEST03": 5,
+        "TEST04": 4,
+        "TEST05": 4,
+        "TEST06": 4,
+        "TEST07": 4,
+        "TEST08": 4,
+        "TEST09": 6,
+        "TEST10": 4,
+        "TEST11": 4,
+        "TEST12": 4,
+        "TEST13": 8,
+        "TEST14": 7,
+        "TEST15": 4,
+        "TEST16": 5,
+        "TEST17": 6,
+        "TEST18": 9,
+        "TEST19": 4,
+        "TEST20": 6,
+        "TEST21": 6,
+        "TEST22": 5,
+        "TEST23": 7,
+        "TEST24": 4,
+        "TEST25": 8,
+        "TEST26": 8,
+        "TEST27": 9,
+        "TEST28": 8,
+        "TEST29": 8,
+        "TEST30": 8,
+        "TEST31": 8,
+        "TEST32": 8,
+        "TEST33": 8,
+        "TEST34": 9,
+        "TEST35": 8,
+        "TEST36": 5,
+        "TEST37": 5,
+        "TEST38": 4,
+        "TEST39": 3,
+        "TEST40": 2
+      }
+    },
+    "M19": {
+      "name": "平均业务工具尝试次数",
+      "numerator": 169,
+      "denominator": 40,
+      "value": 4.225,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "TEST01": 3,
+        "TEST02": 2,
+        "TEST03": 3,
+        "TEST04": 2,
+        "TEST05": 2,
+        "TEST06": 2,
+        "TEST07": 2,
+        "TEST08": 2,
+        "TEST09": 2,
+        "TEST10": 2,
+        "TEST11": 4,
+        "TEST12": 2,
+        "TEST13": 9,
+        "TEST14": 8,
+        "TEST15": 5,
+        "TEST16": 3,
+        "TEST17": 7,
+        "TEST18": 9,
+        "TEST19": 2,
+        "TEST20": 6,
+        "TEST21": 4,
+        "TEST22": 4,
+        "TEST23": 6,
+        "TEST24": 2,
+        "TEST25": 6,
+        "TEST26": 6,
+        "TEST27": 5,
+        "TEST28": 6,
+        "TEST29": 4,
+        "TEST30": 5,
+        "TEST31": 5,
+        "TEST32": 7,
+        "TEST33": 6,
+        "TEST34": 5,
+        "TEST35": 4,
+        "TEST36": 5,
+        "TEST37": 3,
+        "TEST38": 5,
+        "TEST39": 2,
+        "TEST40": 2
+      }
+    },
+    "M20": {
+      "name": "资料缺口说明可执行率",
+      "numerator": 20,
+      "denominator": 20,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "TEST13": true,
+        "TEST14": true,
+        "TEST15": true,
+        "TEST17": true,
+        "TEST18": true,
+        "TEST19": true,
+        "TEST20": true,
+        "TEST21": true,
+        "TEST22": true,
+        "TEST23": true,
+        "TEST24": true,
+        "TEST13-repeat1": true,
+        "TEST13-repeat2": true,
+        "TEST13-repeat3": true,
+        "TEST17-repeat1": true,
+        "TEST17-repeat2": true,
+        "TEST17-repeat3": true,
+        "TEST19-repeat1": true,
+        "TEST19-repeat2": true,
+        "TEST19-repeat3": true
+      }
+    }
+  },
+  "per_group": {
+    "TEST01": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 11.666,
+      "model_calls": 4,
+      "tool_calls": 3
+    },
+    "TEST02": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 9.1295,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST03": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 8.1836,
+      "model_calls": 5,
+      "tool_calls": 3
+    },
+    "TEST04": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 6.818,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST05": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 5.9238,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST06": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 4.4377,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST07": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 5.2196,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST08": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 5.0138,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST09": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 11.0241,
+      "model_calls": 6,
+      "tool_calls": 2
+    },
+    "TEST10": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 16.8646,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST11": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": false,
+      "completeness": 1.0,
+      "critical_errors": [
+        "claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。",
+        "存在无依据结论或不支持引用"
+      ],
+      "seconds": 7.3947,
+      "model_calls": 4,
+      "tool_calls": 4
+    },
+    "TEST12": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 5.4531,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST13": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 17.7266,
+      "model_calls": 8,
+      "tool_calls": 9
+    },
+    "TEST14": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 17.0727,
+      "model_calls": 7,
+      "tool_calls": 8
+    },
+    "TEST15": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 9.3974,
+      "model_calls": 4,
+      "tool_calls": 5
+    },
+    "TEST16": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 7.1591,
+      "model_calls": 5,
+      "tool_calls": 3
+    },
+    "TEST17": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 16.8115,
+      "model_calls": 6,
+      "tool_calls": 7
+    },
+    "TEST18": {
+      "pass": false,
+      "first_recall": 0.5,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 14.0301,
+      "model_calls": 9,
+      "tool_calls": 9
+    },
+    "TEST19": {
+      "pass": true,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 5.1102,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST20": {
+      "pass": true,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 8.0112,
+      "model_calls": 6,
+      "tool_calls": 6
+    },
+    "TEST21": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 0.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 6.8623,
+      "model_calls": 6,
+      "tool_calls": 4
+    },
+    "TEST22": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 20.1891,
+      "model_calls": 5,
+      "tool_calls": 4
+    },
+    "TEST23": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 43.1557,
+      "model_calls": 7,
+      "tool_calls": 6
+    },
+    "TEST24": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 14.5793,
+      "model_calls": 4,
+      "tool_calls": 2
+    },
+    "TEST25": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": false,
+      "completeness": 1.0,
+      "critical_errors": [
+        {
+          "text": "上述备案要求适用于经学校批准在职攻读博士学位的教师",
+          "reason": "该适用范围断言未得到所引用第七条的充分支持，属于不支持的引用/无依据扩张。"
+        },
+        "存在无依据结论或不支持引用"
+      ],
+      "seconds": 18.5455,
+      "model_calls": 8,
+      "tool_calls": 6
+    },
+    "TEST26": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 17.5018,
+      "model_calls": 8,
+      "tool_calls": 6
+    },
+    "TEST27": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 13.2219,
+      "model_calls": 9,
+      "tool_calls": 5
+    },
+    "TEST28": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 11.9115,
+      "model_calls": 8,
+      "tool_calls": 6
+    },
+    "TEST29": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 12.9615,
+      "model_calls": 8,
+      "tool_calls": 4
+    },
+    "TEST30": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 17.2734,
+      "model_calls": 8,
+      "tool_calls": 5
+    },
+    "TEST31": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 12.0547,
+      "model_calls": 8,
+      "tool_calls": 5
+    },
+    "TEST32": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 11.6832,
+      "model_calls": 8,
+      "tool_calls": 7
+    },
+    "TEST33": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 14.884,
+      "model_calls": 8,
+      "tool_calls": 6
+    },
+    "TEST34": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 13.0551,
+      "model_calls": 9,
+      "tool_calls": 5
+    },
+    "TEST35": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 15.388,
+      "model_calls": 8,
+      "tool_calls": 4
+    },
+    "TEST36": {
+      "pass": true,
+      "first_recall": 0.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 8.0498,
+      "model_calls": 5,
+      "tool_calls": 5
+    },
+    "TEST37": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 5.5178,
+      "model_calls": 5,
+      "tool_calls": 3
+    },
+    "TEST38": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 3.4435,
+      "model_calls": 4,
+      "tool_calls": 5
+    },
+    "TEST39": {
+      "pass": true,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 2.7078,
+      "model_calls": 3,
+      "tool_calls": 2
+    },
+    "TEST40": {
+      "pass": true,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 1.6435,
+      "model_calls": 2,
+      "tool_calls": 2
+    }
+  },
+  "atomic_facts": [
+    {
+      "text": "取得学历学位时间≤4年的补贴为10万元",
+      "answer_span": "补贴10万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间≤4年的科研建设经费工科为5万元",
+      "answer_span": "科研建设经费工科5万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间≤4年的科研建设经费其他学科为3万元",
+      "answer_span": "其他学科3万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞4且≤5年的补贴为9万元",
+      "answer_span": "补贴9万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞4且≤5年的科研建设经费工科为4.5万元",
+      "answer_span": "工科4.5万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞4且≤5年的科研建设经费其他学科为2.7万元",
+      "answer_span": "其他学科2.7万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote对应行支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "待遇按教师在职读博取得学历学位时间情况兑现",
+      "answer_span": "上述待遇按教师在职读博取得学历学位时间情况兑现",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+      "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "脱产学习的需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote支持该事实，且已读文档包含该内容",
+      "group": "TEST01",
+      "turn": 0
+    },
+    {
+      "text": "全年累计请假＞6个月且工作年限满10年时，发岗位工资、薪级工资和基础绩效的80%。",
+      "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "所引用的表格原文明确包含该条件及比例，且实际已读取该文档，支持充分。",
+      "group": "TEST02",
+      "turn": 0
+    },
+    {
+      "text": "全年累计请假＞6个月且工作年限不满10年时，发岗位工资、薪级工资和基础绩效的70%。",
+      "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "所引用的表格原文明确包含该条件及比例，且实际已读取该文档，支持充分。",
+      "group": "TEST02",
+      "turn": 0
+    },
+    {
+      "text": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉。",
+      "answer_span": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该句，actually_read原文支持30个工作日和提出对象等条件。",
+      "group": "TEST03",
+      "turn": 0
+    },
+    {
+      "text": "因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉。",
+      "answer_span": "因不可抗力或其他特殊情况而致逾期的，在障碍消除后10个工作日内可以向申诉处理委员会提起申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该句，actually_read原文支持10个工作日和提起申诉等条件。",
+      "group": "TEST03",
+      "turn": 0
+    },
+    {
+      "text": "逾期不再受理。",
+      "answer_span": "逾期不再受理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote结尾包含“逾期不再受理”，actually_read原文支持。",
+      "group": "TEST03",
+      "turn": 0
+    },
+    {
+      "text": "申诉人可以委托1－2位校内教职工作为申诉代理人。",
+      "answer_span": "申诉人可以委托1－2位校内教职工作为申诉代理人",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自D24-C013的quote明确包含该事实，实际已读原文相同。",
+      "group": "TEST04",
+      "turn": 0
+    },
+    {
+      "text": "申诉代理人代为办理申诉事项。",
+      "answer_span": "代为办理申诉事项",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含“代为办理申诉事项”，实际已读原文支持。",
+      "group": "TEST04",
+      "turn": 0
+    },
+    {
+      "text": "申诉代理人不能替申诉人签署申诉申请书。",
+      "answer_span": "申诉代理人不能替申诉人签署申诉申请书",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote为本人签名要求，足以推出不能代签，实际已读原文支持。",
+      "group": "TEST04",
+      "turn": 0
+    },
+    {
+      "text": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。",
+      "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote直接包含该事实，实际已读原文一致。",
+      "group": "TEST04",
+      "turn": 0
+    },
+    {
+      "text": "申诉处理委员会在收到申诉书之日起5个工作日内进行审查。",
+      "answer_span": "申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答明确表述并引用第十三条，已读原文包含相同内容。",
+      "group": "TEST05",
+      "turn": 0
+    },
+    {
+      "text": "依据该办法第八、九、十、十一条进行审查。",
+      "answer_span": "依据该办法第八、九、十、十一条进行审查",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答明确表述并引用该条款，已读原文包含该内容。",
+      "group": "TEST05",
+      "turn": 0
+    },
+    {
+      "text": "区别情况处理。",
+      "answer_span": "并区别情况处理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答表述区别情况处理，已读原文写明区别情况作出处理。",
+      "group": "TEST05",
+      "turn": 0
+    },
+    {
+      "text": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限。",
+      "answer_span": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答明确表述并引用第十三条第三项，已读原文支持。",
+      "group": "TEST05",
+      "turn": 0
+    },
+    {
+      "text": "逾期补正视为放弃申诉。",
+      "answer_span": "逾期补正视为放弃申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答明确表述并引用第十三条，已读原文支持。",
+      "group": "TEST05",
+      "turn": 0
+    },
+    {
+      "text": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+      "answer_span": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条文明确包含“三分之二以上成员参加”，且实际已读取该条文支持该事实。",
+      "group": "TEST06",
+      "turn": 0
+    },
+    {
+      "text": "表决须经出席委员三分之二以上通过方为有效",
+      "answer_span": "表决须经出席委员三分之二以上通过方为有效",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条文明确包含“表决须经出席委员三分之二以上通过方为有效”，且实际已读取该条文支持该事实。",
+      "group": "TEST06",
+      "turn": 0
+    },
+    {
+      "text": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+      "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实来自实际回答 claims[0].text，明确关联引用 D23-C010，引用内容足以支持该年龄上限及“一般”条件，且实际读取的原文包含相同内容。",
+      "group": "TEST07",
+      "turn": 0
+    },
+    {
+      "text": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+      "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实来自实际回答 claims[1].text，明确关联引用 D23-C010，引用内容足以支持体检指定级别、合格及岗位健康标准等关键条件，且实际读取的原文包含相同内容。",
+      "group": "TEST07",
+      "turn": 0
+    },
+    {
+      "text": "临时用工合同期限一般为1—3年",
+      "answer_span": "临时用工合同期限一般为1—3年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本明确包含该规定，且已读原文一致",
+      "group": "TEST08",
+      "turn": 0
+    },
+    {
+      "text": "试用期为1—3个月",
+      "answer_span": "试用期为1—3个月",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本明确包含该规定，且已读原文一致",
+      "group": "TEST08",
+      "turn": 0
+    },
+    {
+      "text": "以实际签订时间为准",
+      "answer_span": "以实际签订时间为准",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本明确包含该规定，且已读原文一致",
+      "group": "TEST08",
+      "turn": 0
+    },
+    {
+      "text": "合同期满后续签需同时满足“考核合格”和“双方同意”。",
+      "answer_span": "合同期满后续签需同时满足“考核合格”和“双方同意”。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本为“合同期满后，经考核合格以及双方同意后可以续签。”，支持事实中的条件，且已读原文包含",
+      "group": "TEST08",
+      "turn": 0
+    },
+    {
+      "text": "依法办理结婚登记的可享受10日婚假",
+      "answer_span": "依法办理结婚登记的可享受10日婚假",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该规定，且已读原文一致。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "一方在外地工作需要到配偶所在地结婚的，另加路程假",
+      "answer_span": "一方在外地工作需要到配偶所在地结婚的，另加路程假",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该规定，且已读原文一致。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）",
+      "answer_span": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该规定，且已读原文一致。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "婚假必须一次性申请使用，不能分次使用",
+      "answer_span": "婚假必须一次性申请使用，不能分次使用",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含“婚假必须一次性申请使用”，已读原文一致，该表述排除分次使用。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "逾期按事假处理",
+      "answer_span": "逾期按事假处理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该规定，且已读原文一致。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "婚假由所在单位审批，报人事处备案",
+      "answer_span": "婚假由所在单位审批，报人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该规定，且已读原文一致。",
+      "group": "TEST09",
+      "turn": 0
+    },
+    {
+      "text": "教职工配偶的父母亡故属于可请丧假的情形",
+      "answer_span": "教职工配偶的父母亡故属于可请丧假的情形",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确包含配偶父母亡故可请丧假，且系统已读取该条款。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "丧假基本天数为3日",
+      "answer_span": "丧假基本天数为3日",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确丧假3日，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "需到外地处理丧事的，可以增加路程假",
+      "answer_span": "需到外地处理丧事的，可以增加路程假",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确可加路程假，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "丧假（含路程假）由所在单位审批",
+      "answer_span": "丧假（含路程假）由所在单位审批",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确由所在单位审批，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "报人事处备案",
+      "answer_span": "报人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确报人事处备案，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "丧假（含路程假）期间工资正常发放",
+      "answer_span": "丧假（含路程假）期间工资正常发放",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确工资正常发放，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "逾期按事假处理",
+      "answer_span": "逾期按事假处理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用条款明确逾期按事假处理，且系统已读取。",
+      "group": "TEST10",
+      "turn": 0
+    },
+    {
+      "text": "教师在入学后的第一年至第四年内可自行选择时间进行脱产学习",
+      "answer_span": "教师在入学后的第一年至第四年内可自行选择时间进行脱产学习",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "入学第五年及之后不得申请脱产学习",
+      "answer_span": "入学第五年及之后不得申请脱产学习",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "首次申请脱产学习一般不超过2年",
+      "answer_span": "首次申请脱产学习一般不超过2年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "再次申请脱产学习须由个人申请、所在单位同意并经学校批准",
+      "answer_span": "再次申请脱产学习须由个人申请、所在单位同意并经学校批准",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "累计脱产时间不能超过4年",
+      "answer_span": "累计脱产时间不能超过4年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "限于入学后的第一年至第四年",
+      "answer_span": "限于入学后的第一年至第四年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第八条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "上述脱产年限规定适用于教师岗位人员",
+      "answer_span": "上述脱产年限规定适用于教师岗位人员",
+      "cited": true,
+      "citation_supported": false,
+      "supported_by_read": true,
+      "reason": "引用第十一条仅说明非教师岗位不脱产，未直接说明教师岗位适用范围；但已读第八条实际支持该事实。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "非教师岗位人员在职攻读博士原则上不脱产",
+      "answer_span": "非教师岗位人员在职攻读博士原则上不脱产",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十一条原文直接支持。",
+      "group": "TEST11",
+      "turn": 0
+    },
+    {
+      "text": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+      "answer_span": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "事实来自第一个 claim，引用的 quote 完整包含该规定，且系统已读取该 chunk。",
+      "group": "TEST12",
+      "turn": 0
+    },
+    {
+      "text": "购房补贴在鞍山市购买住房时先一次性发放50%。",
+      "answer_span": "购房补贴在鞍山市购买住房时先一次性发放50%",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "事实来自第二个 claim，引用的 quote 完整包含该规定，且系统已读取该 chunk。",
+      "group": "TEST12",
+      "turn": 0
+    },
+    {
+      "text": "购房补贴剩余部分在服务期内按月发放。",
+      "answer_span": "剩余部分在服务期内按月发放",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "事实来自第二个 claim，引用的 quote 完整包含该规定，且系统已读取该 chunk。",
+      "group": "TEST12",
+      "turn": 0
+    },
+    {
+      "text": "配偶享有护理假15日",
+      "answer_span": "配偶享有护理假15日",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D19-C010，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "符合法律法规规定生育子女的男教工享有护理假20日",
+      "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "产假、护理假需提供医院生育证明等材料",
+      "answer_span": "产假、护理假需提供医院生育证明等材料",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "自生育之日起按自然日计算",
+      "answer_span": "自生育之日起按自然日计算",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "由所在单位审批",
+      "answer_span": "由所在单位审批",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "报人事处备案",
+      "answer_span": "报人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "逾期根据实际情况按事（病）假处理",
+      "answer_span": "逾期根据实际情况按事（病）假处理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C012，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "本规定未尽事宜，按国家、辽宁省有关规定执行",
+      "answer_span": "本规定未尽事宜，按国家、辽宁省有关规定执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "由人事处负责解释",
+      "answer_span": "由人事处负责解释",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "自发布之日起执行",
+      "answer_span": "自发布之日起执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "第二十四条废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）",
+      "answer_span": "废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D19-C025，quote包含该内容，且actually_read包含该文档",
+      "group": "TEST13",
+      "turn": 0
+    },
+    {
+      "text": "2020版第四条规定一级以上医院有效病休证明及病历",
+      "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D19-C005与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+      "answer_span": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D19-C005与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "无诊断书者视为旷工",
+      "answer_span": "无诊断书者视为旷工",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D19-C005与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第八条要求三甲级以上医院诊断",
+      "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "请假时间≤2个月的由所在单位审批、报人事处备案",
+      "answer_span": "请假时间≤2个月的由所在单位审批、报人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "大于2个月的经所在单位同意后报主管校领导批准、人事处备案",
+      "answer_span": "大于2个月的经所在单位同意后报主管校领导批准、人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "病假连续≥6个月可申请长期病休",
+      "answer_span": "病假连续≥6个月可申请长期病休",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+      "answer_span": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "恢复工作需三甲级以上医院证明已康复后办理销假返岗",
+      "answer_span": "恢复工作需三甲级以上医院证明已康复后办理销假返岗",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C009与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "补充规定第十八条规定其由人事处负责解释，自发布之日起执行",
+      "answer_span": "补充规定第十八条规定其由人事处负责解释，自发布之日起执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C019与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则",
+      "answer_span": "第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用chunk D20-C016与已读原文一致，支持该事实。",
+      "group": "TEST14",
+      "turn": 0
+    },
+    {
+      "text": "2020规定第二十二条中“以内”“不超过”均包括本级",
+      "answer_span": "“以内”“不超过”均包括本级",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2020规定第二十二条中“以上”“超过”均不包括本级",
+      "answer_span": "“以上”“超过”均不包括本级",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D19-C023的quote直接支持该条款，且已读原文包含相同内容。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第十九条中“以内”“不超过”“以上”均包括本级",
+      "answer_span": "“以内”“不超过”“以上”均包括本级",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第十九条中“超过”不包括本级",
+      "answer_span": "“超过”不包括本级",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C020的quote直接支持该条款，且已读原文包含相同内容。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "两份规定对“以上”是否包含本级的解释不一致",
+      "answer_span": "两份规定对“以上”是否包含本级的解释不一致",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该结论由两个已读条款直接对比得出，引用的quote分别展示了不同含义，支持该不一致判断。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2020规定第二十三条由人事处负责解释",
+      "answer_span": "2020年规定第二十三条规定由人事处负责解释",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D19-C024的quote直接支持，且已读原文一致。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第十八条未尽事宜按国家、辽宁省有关规定执行",
+      "answer_span": "2023年补充规定第十八条规定未尽事宜按国家、辽宁省有关规定执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019的quote直接支持，且已读原文一致。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第十八条由人事处负责解释",
+      "answer_span": "由人事处负责解释",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019的quote直接支持，且已读原文一致。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "2023补充规定第十八条自发布之日起执行",
+      "answer_span": "自发布之日起执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D20-C019的quote直接支持，且已读原文一致。",
+      "group": "TEST15",
+      "turn": 0
+    },
+    {
+      "text": "原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+      "answer_span": "原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D01-C019的原文明确包含该废止条款，且实际已读取该文档。",
+      "group": "TEST16",
+      "turn": 0
+    },
+    {
+      "text": "2023年修订办法自发布之日起施行",
+      "answer_span": "2023年修订办法自发布之日起施行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D01-C019的原文包含“自发布之日起施行”，支持该事实。",
+      "group": "TEST16",
+      "turn": 0
+    },
+    {
+      "text": "2023年修订办法由人事处负责解释",
+      "answer_span": "由人事处负责解释",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D01-C019的原文包含“本办法由人事处负责解释”，支持该事实。",
+      "group": "TEST16",
+      "turn": 0
+    },
+    {
+      "text": "申诉处理决定是学校对教职工处分或处理的最终决定",
+      "answer_span": "申诉处理决定是学校对教职工处分或处理的最终决定",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D24-C022，quote包含该句，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "申诉处理决定书一经送达申诉双方当事人，立即生效",
+      "answer_span": "决定书送达即生效",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际答案表述为“决定书送达即生效”，引用D24-C022的quote包含相同意思，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉",
+      "answer_span": "教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D24-C022，quote包含该句，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "附件3备注栏规定教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉",
+      "answer_span": "教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D24-C029，quote包含该句，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "正文第二十一条表述的申诉机关与附表3备注表述的申诉机关不一致",
+      "answer_span": "两者不一致",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "两个引用分别显示不同表述，联合支持不一致；已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释",
+      "answer_span": "第二十四条规定由学校教职工申诉处理委员会或工会负责解释",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D24-C025，quote包含该规定，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "第二十五条规定本暂行办法自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》",
+      "answer_span": "第二十五条明确本办法自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D24-C026，quote包含该规定，已读原文支持",
+      "group": "TEST17",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。",
+      "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与已读资料一致，支持该事实。",
+      "group": "TEST18",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定：申诉处理一次终局，申诉期间原处理决定应予执行。",
+      "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定：申诉处理一次终局，申诉期间原处理决定应予执行。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与已读资料一致，支持该事实。",
+      "group": "TEST18",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十四条规定，该办法由学校教职工申诉处理委员会或工会负责解释。",
+      "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十四条规定，该办法由学校教职工申诉处理委员会或工会负责解释。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与已读资料一致，支持该事实。",
+      "group": "TEST18",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十九条规定，该办法由工作小组办公室负责解释。",
+      "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十九条规定，该办法由工作小组办公室负责解释。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与已读资料一致，支持该事实。",
+      "group": "TEST18",
+      "turn": 0
+    },
+    {
+      "text": "2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。",
+      "answer_span": "2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该档待遇，且actually_read的D20-C008文本包含相同内容，支持事实",
+      "group": "TEST22",
+      "turn": 0
+    },
+    {
+      "text": "全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。",
+      "answer_span": "全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote与事实完全一致，且actually_read的D20-C008文本支持",
+      "group": "TEST22",
+      "turn": 0
+    },
+    {
+      "text": "全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+      "answer_span": "全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote与事实完全一致，且actually_read的D20-C008文本支持",
+      "group": "TEST22",
+      "turn": 0
+    },
+    {
+      "text": "学校根据教师在职读博取得学历学位时间情况兑现待遇",
+      "answer_span": "学校根据教师在职读博取得学历学位时间情况兑现待遇",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十条明确该原则，且已读D01-C011包含该内容",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+      "answer_span": "取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第一行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+      "answer_span": "取得学历学位时间＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第二行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元",
+      "answer_span": "取得学历学位时间＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第三行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元",
+      "answer_span": "取得学历学位时间＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第四行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元",
+      "answer_span": "取得学历学位时间＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第五行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "取得学历学位时间＞8年的，补贴0万元、科研建设经费0万元",
+      "answer_span": "取得学历学位时间＞8年的，补贴0万元、科研建设经费0万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用表格第六行直接支持，且已读D01-C011包含该行",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "由于个人原因造成中途退学或终止学习任务的不享受任何待遇",
+      "answer_span": "由于个人原因造成中途退学或终止学习任务的不享受任何待遇",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十条该句直接支持，且已读D01-C011包含该句",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十条该句直接支持，且已读D01-C011包含该句",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "answer_span": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十条表格第七行直接支持，且已读D01-C011包含该内容",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "教师在职读博期间发生的费用由本人自行承担",
+      "answer_span": "教师在职读博期间发生的费用由本人自行承担",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十六条该句直接支持，且已读D01-C017包含该句",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属于学校为促进个人可持续发展提供的进修培训资助费用",
+      "answer_span": "学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属于学校为促进个人可持续发展提供的进修培训资助费用",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文第十六条该句直接支持，且已读D01-C017包含该句",
+      "group": "TEST23",
+      "turn": 0
+    },
+    {
+      "text": "申请高级专家延长退休须同时满足：身体健康，长期从事重点学科教学科研工作，具有良好政治素质与师德师风，教学科研工作业绩突出，近三年聘期及年度考核均为合格以上，在达到法定退休年龄前已聘用在专业技术三级以上岗位，且符合四项条件之一（国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者；主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内；作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替；作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选）。",
+      "answer_span": "申请高级专家延长退休须同时满足：身体健康，长期从事重点学科教学科研工作，具有良好政治素质与师德师风，教学科研工作业绩突出，近三年聘期及年度考核均为合格以上，在达到法定退休年龄前已聘用在专业技术三级以上岗位，且符合四项条件之一（国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者；主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内；作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替；作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选）。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用包含完整条件原文，且实际读取的文档支持该内容。",
+      "group": "TEST24",
+      "turn": 0
+    },
+    {
+      "text": "延退期限一般不超过63周岁；若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁。",
+      "answer_span": "延退期限一般不超过63周岁；若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与原文档一致，实际读取支持。",
+      "group": "TEST24",
+      "turn": 0
+    },
+    {
+      "text": "延退由本人提前半年自愿提出，所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，并报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理；学校每年5月和11月研究，经校长办公会议审议、校党委常委会会议审定后办理并报上级主管部门备案。",
+      "answer_span": "延退由本人提前半年自愿提出，所在单位教授委员会审议、党政联席会研究同意后向学校提出申请，并报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理；学校每年5月和11月研究，经校长办公会议审议、校党委常委会会议审定后办理并报上级主管部门备案。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用包含程序细节，实际读取支持。",
+      "group": "TEST24",
+      "turn": 0
+    },
+    {
+      "text": "学校每次批准的延退期限为1年；延退期间纳入学院在职教职工日常管理，占所在单位专业技术岗位数，按《辽宁科技大学教职工岗位考核实施办法（2022年版）》进行聘用管理，正常参加平时考核、年度考核和聘期考核，考核不合格学校中止聘用并办理退休手续。",
+      "answer_span": "学校每次批准的延退期限为1年；延退期间纳入学院在职教职工日常管理，占所在单位专业技术岗位数，按《辽宁科技大学教职工岗位考核实施办法（2022年版）》进行聘用管理，正常参加平时考核、年度考核和聘期考核，考核不合格学校中止聘用并办理退休手续。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用与原文档一致，实际读取支持。",
+      "group": "TEST24",
+      "turn": 0
+    },
+    {
+      "text": "省管干部延退按上级文件执行；本办法由人事处负责解释。",
+      "answer_span": "省管干部延退按上级文件执行；本办法由人事处负责解释。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用包含两个独立条款，实际读取支持。",
+      "group": "TEST24",
+      "turn": 0
+    },
+    {
+      "text": "取得博士学历学位后1个月内办理备案",
+      "answer_span": "取得博士学历学位后1个月内",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确体现时间要求。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "备案到人事处",
+      "answer_span": "到人事处办理备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确体现备案地点。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "需持所在单位出具的回校工作证明",
+      "answer_span": "持所在单位出具的回校工作证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确列出该材料。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "需持学历学位证书",
+      "answer_span": "学历学位证书",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确列出该材料。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "国外毕业的需出具留学回国人员证明、留学生学历认证",
+      "answer_span": "国外毕业的需出具留学回国人员证明、留学生学历认证",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确列出该条件。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "需持学籍档案等材料原件",
+      "answer_span": "学籍档案等材料原件",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用内容明确列出该材料。",
+      "group": "TEST25",
+      "turn": 0
+    },
+    {
+      "text": "教师在职读博取得博士学历学位后1个月内到人事处办理备案",
+      "answer_span": "教师在职读博取得博士学历学位后，最迟应在1个月内到人事处办理备案（返校登记）。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持该事实，实际已读D01-C010包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "办理备案时须携带所在单位出具的回校工作证明",
+      "answer_span": "办理备案时须携带所在单位出具的回校工作证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持该材料要求，实际已读包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "办理备案时须携带学历学位证书",
+      "answer_span": "学历学位证书",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持该材料要求，实际已读包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "国外毕业的还需留学回国人员证明",
+      "answer_span": "国外毕业的还需留学回国人员证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持，实际已读包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "国外毕业的还需留学生学历认证",
+      "answer_span": "留学生学历认证",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持，实际已读包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "办理备案时须携带学籍档案等材料原件",
+      "answer_span": "学籍档案等材料原件",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第九条原文支持该材料要求，实际已读包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "上述备案要求适用于经学校批准在职攻读博士学位的教师",
+      "answer_span": "上述备案要求适用于经学校批准在职攻读博士学位的教师",
+      "cited": true,
+      "citation_supported": false,
+      "supported_by_read": false,
+      "reason": "引用第七条仅涉及录取备案和签订协议，未直接支持第九条备案要求的适用范围；实际已读原文也无明确表述。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "录取时须到人事处签订《教师在职攻读博士学位协议》",
+      "answer_span": "录取时须到人事处签订《教师在职攻读博士学位协议》",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第七条原文明确支持，实际已读D01-C008包含该内容。",
+      "group": "TEST25",
+      "turn": 1
+    },
+    {
+      "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+      "answer_span": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十四条原文直接支持该事实。",
+      "group": "TEST26",
+      "turn": 0
+    },
+    {
+      "text": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》。",
+      "answer_span": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（一）支持该事实。",
+      "original_answer_span": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》。",
+      "group": "TEST26",
+      "turn": 0
+    },
+    {
+      "text": "申请人所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示。",
+      "answer_span": "申请人所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（二）支持该事实。",
+      "original_answer_span": "申请人所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示。",
+      "group": "TEST26",
+      "turn": 0
+    },
+    {
+      "text": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+      "answer_span": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（三）支持该事实。",
+      "group": "TEST26",
+      "turn": 0
+    },
+    {
+      "text": "教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序。",
+      "answer_span": "教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十四条原文直接支持该规则，且系统已读取该条款。",
+      "group": "TEST26",
+      "turn": 1
+    },
+    {
+      "text": "符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》。",
+      "answer_span": "符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（一）原文支持该申请程序，且系统已读取。",
+      "group": "TEST26",
+      "turn": 1
+    },
+    {
+      "text": "所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示。",
+      "answer_span": "所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（二）原文支持该审核推荐程序，且系统已读取。",
+      "group": "TEST26",
+      "turn": 1
+    },
+    {
+      "text": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+      "answer_span": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第六条（三）原文支持该审批和签约程序，且系统已读取。",
+      "group": "TEST26",
+      "turn": 1
+    },
+    {
+      "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。",
+      "answer_span": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文直接支持，且实际已读取该条文",
+      "group": "TEST27",
+      "turn": 0
+    },
+    {
+      "text": "应提前一个月以书面形式向人事处提出申请",
+      "answer_span": "应提前一个月以书面形式向人事处提出申请",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确写出“应提前一个月以书面的形式向人事处提出申请”，且实际已读该条款，支持该事实。",
+      "group": "TEST27",
+      "turn": 1
+    },
+    {
+      "text": "经人事处审核同意",
+      "answer_span": "经人事处审核同意",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确包含“经人事处审核同意”，且实际已读该条款，支持该事实。",
+      "group": "TEST27",
+      "turn": 1
+    },
+    {
+      "text": "办理完工作交接手续后方可离岗",
+      "answer_span": "办理完工作交接手续后方可离岗",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确包含“办理完工作交接手续后方可离岗”，且实际已读该条款，支持该事实。",
+      "group": "TEST27",
+      "turn": 1
+    },
+    {
+      "text": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+      "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。",
+      "group": "TEST28",
+      "turn": 0
+    },
+    {
+      "text": "依据专兼结合、以专为主的原则足额配备到位",
+      "answer_span": "依据专兼结合、以专为主的原则足额配备到位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。",
+      "group": "TEST28",
+      "turn": 0
+    },
+    {
+      "text": "辅导员编制按1:200的师生比核定",
+      "answer_span": "辅导员编制按1:200的师生比核定",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。",
+      "group": "TEST28",
+      "turn": 0
+    },
+    {
+      "text": "按专业技术岗或管理岗设置编制",
+      "answer_span": "按专业技术岗或管理岗设置编制",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。",
+      "group": "TEST28",
+      "turn": 0
+    },
+    {
+      "text": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+      "answer_span": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。",
+      "group": "TEST28",
+      "turn": 0
+    },
+    {
+      "text": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+      "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "依据专兼结合、以专为主的原则足额配备到位",
+      "answer_span": "依据专兼结合、以专为主的原则足额配备到位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "每200名学生至少配备1名专职辅导员",
+      "answer_span": "每200名学生至少配备1名专职辅导员",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote中的师生比不低于1：200可以逻辑推导出该解释，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "辅导员编制按1:200的师生比核定",
+      "answer_span": "辅导员编制按1:200的师生比核定",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "按专业技术岗或管理岗设置编制",
+      "answer_span": "按专业技术岗或管理岗设置编制",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "按照专兼结合、以专为主的原则",
+      "answer_span": "按照专兼结合、以专为主的原则",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "专职辅导员比例不低于85%",
+      "answer_span": "专职辅导员比例不低于85%",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote包含该内容，实际读取原文支持。",
+      "group": "TEST28",
+      "turn": 1
+    },
+    {
+      "text": "凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期",
+      "answer_span": "凡通过公开招聘、调入等方式进入我校全职工作的教师，均应履行不低于8年的服务期",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。",
+      "group": "TEST29",
+      "turn": 0
+    },
+    {
+      "text": "基本服务期自来校报到上岗之日起计算",
+      "answer_span": "自来校报到上岗之日起计算",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。",
+      "group": "TEST29",
+      "turn": 0
+    },
+    {
+      "text": "签订人才引进协议的，按协议约定执行",
+      "answer_span": "签订人才引进协议的，按协议约定执行",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。",
+      "group": "TEST29",
+      "turn": 0
+    },
+    {
+      "text": "该规定适用于学校新入校工作的教师。",
+      "answer_span": "该规定适用于学校新入校工作的教师。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确说明适用范围包括新入校工作的教师，且已读原文包含该内容",
+      "group": "TEST29",
+      "turn": 1
+    },
+    {
+      "text": "凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。",
+      "answer_span": "凡通过公开招聘、调入等方式进入学校全职工作的教师，均应履行不低于8年的服务期。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确包含该规定，已读原文支持",
+      "group": "TEST29",
+      "turn": 1
+    },
+    {
+      "text": "基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。",
+      "answer_span": "基本服务期自来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此没有特殊协议时，起算点为来校报到上岗之日。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确起算点和协议例外，已读原文支持，推断合理",
+      "group": "TEST29",
+      "turn": 1
+    },
+    {
+      "text": "服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。",
+      "answer_span": "服务期按在校在岗的实际工作时间计算，不含外出进行继续教育的时间；且教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计算。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "两个引用分别支持相应部分，已读原文包含这些规定",
+      "group": "TEST29",
+      "turn": 1
+    },
+    {
+      "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）",
+      "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自D20-C001，quote包含该规定名称及文号日期，且实际读取了该chunk，支持该事实。",
+      "group": "TEST30",
+      "turn": 0
+    },
+    {
+      "text": "教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案",
+      "answer_span": "教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自D20-C007，quote支持该备案要求，且实际读取了该chunk，支持该事实。",
+      "group": "TEST30",
+      "turn": 0
+    },
+    {
+      "text": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+      "answer_span": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自D20-C007，quote支持该后果，且实际读取了该chunk，支持该事实。",
+      "group": "TEST30",
+      "turn": 0
+    },
+    {
+      "text": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案",
+      "answer_span": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确包含该备案要求，且已读取该chunk支持。",
+      "group": "TEST30",
+      "turn": 1
+    },
+    {
+      "text": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+      "answer_span": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文明确包含该后果规定，且已读取该chunk支持。",
+      "group": "TEST30",
+      "turn": 1
+    },
+    {
+      "text": "临时用工是学校在事业编制之外",
+      "answer_span": "临时用工是学校在事业编制之外",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本明确说明事业编制之外，且已读原文一致。",
+      "group": "TEST31",
+      "turn": 0
+    },
+    {
+      "text": "聘用社会人员（含已退休人员）",
+      "answer_span": "聘用社会人员（含已退休人员）",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本包含该内容，已读原文一致。",
+      "group": "TEST31",
+      "turn": 0
+    },
+    {
+      "text": "完成临时性、阶段性、辅助性或特殊性工作任务",
+      "answer_span": "完成临时性、阶段性、辅助性或特殊性工作任务",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本包含该内容，已读原文一致。",
+      "group": "TEST31",
+      "turn": 0
+    },
+    {
+      "text": "短期合同制用工形式",
+      "answer_span": "短期合同制用工形式",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本包含该内容，已读原文一致。",
+      "group": "TEST31",
+      "turn": 0
+    },
+    {
+      "text": "因此不属于事业编制内用工",
+      "answer_span": "因此不属于事业编制内用工",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用文本中“事业编制之外”支持该结论，已读原文一致。",
+      "group": "TEST31",
+      "turn": 0
+    },
+    {
+      "text": "禁止聘用未满十八周岁的未成年人",
+      "answer_span": "禁止聘用未满十八周岁的未成年人",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C009，quote为第八条原文，实际已读该chunk，支持该事实",
+      "group": "TEST31",
+      "turn": 1
+    },
+    {
+      "text": "坚持四项基本原则，恪守社会公德",
+      "answer_span": "坚持四项基本原则、恪守社会公德",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C010，quote包含第九条第一项，实际已读该chunk，支持该事实",
+      "group": "TEST31",
+      "turn": 1
+    },
+    {
+      "text": "年龄一般不超过男63周岁、女60周岁",
+      "answer_span": "年龄一般不超过男63周岁、女60周岁",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C010，quote包含第九条第二项，实际已读该chunk，支持该事实",
+      "group": "TEST31",
+      "turn": 1
+    },
+    {
+      "text": "首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+      "answer_span": "首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C010，quote包含第九条第三项，实际已读该chunk，支持该事实",
+      "group": "TEST31",
+      "turn": 1
+    },
+    {
+      "text": "具备岗位要求的工作技能并能坚持正常工作",
+      "answer_span": "具备岗位要求的工作技能并能坚持正常工作",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C010，quote包含第九条第四项，实际已读该chunk，支持该事实",
+      "group": "TEST31",
+      "turn": 1
+    },
+    {
+      "text": "兼职辅导员工作量按专职辅导员工作量的三分之一核定",
+      "answer_span": "兼职辅导员工作量按专职辅导员工作量的三分之一核定",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用的《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十三条和《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条均明确按三分之一核定，且相关文档已读取。",
+      "group": "TEST32",
+      "turn": 0
+    },
+    {
+      "text": "兼职辅导员工作量按每班（40人左右）每学年60学时核定并进行考核",
+      "answer_span": "兼职辅导员工作量同时按每班（40人左右）每学年60学时核定并进行考核",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用的《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十三条和《辽宁科技大学辅导员队伍建设实施办法（试行）》第二十条均包含该学时标准，且相关文档已读取。",
+      "group": "TEST32",
+      "turn": 0
+    },
+    {
+      "text": "兼职辅导员原则上所带学生班级不得超过2个",
+      "answer_span": "兼职辅导员原则上所带学生班级不得超过2个",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用的《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十三条和《辽宁科技大学辅导员队伍建设实施办法（试行）》第二十条均明确规定不超过2个班，且相关文档已读取。",
+      "group": "TEST32",
+      "turn": 0
+    },
+    {
+      "text": "兼职辅导员的工作年限至少为1年",
+      "answer_span": "兼职辅导员的工作年限至少为1年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用两个文件，引用句子与事实一致，且实际已读原文包含该规定，支持该事实。",
+      "group": "TEST32",
+      "turn": 1
+    },
+    {
+      "text": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+      "answer_span": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文包含该内容，且实际已读文档支持。",
+      "group": "TEST33",
+      "turn": 0
+    },
+    {
+      "text": "首聘期为4年",
+      "answer_span": "首聘期为4年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文包含‘首聘期为4年’，且实际已读文档支持。",
+      "group": "TEST33",
+      "turn": 0
+    },
+    {
+      "text": "工作服务期为8年",
+      "answer_span": "工作服务期为8年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文包含‘工作服务期为8年’，且实际已读文档支持。",
+      "group": "TEST33",
+      "turn": 0
+    },
+    {
+      "text": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+      "answer_span": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用原文包含该内容，且实际已读文档支持。",
+      "group": "TEST33",
+      "turn": 0
+    },
+    {
+      "text": "在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核",
+      "answer_span": "在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote直接包含该事实，且actually_read包含该chunk",
+      "group": "TEST33",
+      "turn": 1
+    },
+    {
+      "text": "对其工作进行检查和督促",
+      "answer_span": "对其工作进行检查和督促",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote直接包含该事实，且actually_read包含该chunk",
+      "group": "TEST33",
+      "turn": 1
+    },
+    {
+      "text": "引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理",
+      "answer_span": "引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote直接包含该事实，且actually_read包含该chunk",
+      "group": "TEST33",
+      "turn": 1
+    },
+    {
+      "text": "可以降级聘用或终止聘用",
+      "answer_span": "可以降级聘用或终止聘用",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用quote直接包含该事实，且actually_read包含该chunk",
+      "group": "TEST33",
+      "turn": 1
+    },
+    {
+      "text": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+      "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十四条原文，已读数据支持该事实",
+      "group": "TEST34",
+      "turn": 0
+    },
+    {
+      "text": "申诉一经撤回，申诉复查即行终止",
+      "answer_span": "申诉一经撤回，申诉复查即行终止",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十四条原文，已读数据支持",
+      "group": "TEST34",
+      "turn": 0
+    },
+    {
+      "text": "原申诉人不得以相同理由再行提起申诉",
+      "answer_span": "原申诉人不得以相同理由再行提起申诉",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用第十四条原文，已读数据支持",
+      "group": "TEST34",
+      "turn": 0
+    },
+    {
+      "text": "申诉人可以委托1－2位校内教职工作为申诉代理人",
+      "answer_span": "申诉人可以委托1－2位校内教职工作为申诉代理人",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自第十二条，已读原文一致，支持该事实。",
+      "group": "TEST34",
+      "turn": 1
+    },
+    {
+      "text": "申诉代理人代为办理申诉事项",
+      "answer_span": "代为办理申诉事项",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用及原文均包含该内容。",
+      "group": "TEST34",
+      "turn": 1
+    },
+    {
+      "text": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+      "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用及原文均包含该内容。",
+      "group": "TEST34",
+      "turn": 1
+    },
+    {
+      "text": "病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案",
+      "answer_span": "病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实有明确引用，引用内容与此事实一致，且系统已读取的原文支持该事实。",
+      "group": "TEST35",
+      "turn": 0
+    },
+    {
+      "text": "病假连续≥6个月，可申请长期病休手续",
+      "answer_span": "病假连续≥6个月，可申请长期病休手续",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实明确关联引用，引用quote为“病假连续≥6个月，可申请长期病休手续”，实际已读原文包含相同表述。",
+      "group": "TEST35",
+      "turn": 1
+    },
+    {
+      "text": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+      "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。",
+      "group": "TEST35",
+      "turn": 1
+    },
+    {
+      "text": "由医院出具不能工作诊断证明",
+      "answer_span": "由医院出具不能工作诊断证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。",
+      "group": "TEST35",
+      "turn": 1
+    },
+    {
+      "text": "继续办理请假手续",
+      "answer_span": "继续办理请假手续",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。",
+      "group": "TEST35",
+      "turn": 1
+    },
+    {
+      "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+      "answer_span": "必须经过专门培训并获得特种作业资格",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C013的quote包含完全相同的规定，且该chunk已被读取。",
+      "group": "TEST36",
+      "turn": 0
+    },
+    {
+      "text": "签订合同前，临时用工人员须提交职业技术等级或资格证明。",
+      "answer_span": "签订合同前，临时用工人员须提交职业技术等级或资格证明",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C016的quote第十五条第四项明确要求提交职业技术等级或资格证明，且该chunk已被读取。",
+      "group": "TEST36",
+      "turn": 0
+    },
+    {
+      "text": "该项材料要求适用于有特殊要求的临时用工岗位。",
+      "answer_span": "该项材料要求适用于有特殊要求的临时用工岗位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D23-C016的quote中括号注明“有特殊要求的临时用工岗位”，支持该事实，且该chunk已被读取。",
+      "group": "TEST36",
+      "turn": 0
+    },
+    {
+      "text": "工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位",
+      "answer_span": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，原文支持该时限要求，实际已读取该条文。",
+      "group": "TEST37",
+      "turn": 0
+    },
+    {
+      "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见",
+      "answer_span": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用自同一文件第十三条，原文支持该时限要求，实际已读取该条文。",
+      "group": "TEST37",
+      "turn": 0
+    }
+  ],
+  "unresolved": [],
+  "critical": [
+    {
+      "id": "TEST11",
+      "errors": [
+        "claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。",
+        "存在无依据结论或不支持引用"
+      ]
+    },
+    {
+      "id": "TEST25",
+      "errors": [
+        {
+          "text": "上述备案要求适用于经学校批准在职攻读博士学位的教师",
+          "reason": "该适用范围断言未得到所引用第七条的充分支持，属于不支持的引用/无依据扩张。"
+        },
+        "存在无依据结论或不支持引用"
+      ]
+    }
+  ],
+  "category_summary": {
+    "normal": {
+      "passed": 11,
+      "total": 12
+    },
+    "conflict": {
+      "passed": 5,
+      "total": 6
+    },
+    "insufficient": {
+      "passed": 5,
+      "total": 6
+    },
+    "paraphrase": {
+      "passed": 5,
+      "total": 6
+    },
+    "context": {
+      "passed": 5,
+      "total": 5
+    },
+    "tool_failure": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "failure_breakdown": {
+    "recovery": {
+      "passed": 2,
+      "total": 2
+    },
+    "safe_stop": {
+      "passed": 3,
+      "total": 3
+    }
+  },
+  "all_applicable_numeric_targets_passed": false,
+  "formal_numeric_targets_passed": false,
+  "human_review_complete": true,
+  "note": "数值通过不等于阶段完成；人工校准、复核与冻结要求单独检查。N/A不代表通过。",
+  "human_review_coverage": {
+    "agent": {
+      "required_turns": 20,
+      "reviewed_turns": 20,
+      "missing": [],
+      "complete": true
+    },
+    "baseline": {
+      "required_turns": 19,
+      "reviewed_turns": 19,
+      "missing": [],
+      "complete": true
+    },
+    "stability": {
+      "required_turns": 17,
+      "reviewed_turns": 17,
+      "missing": [],
+      "complete": true
+    }
+  },
+  "metric_acceptance_complete": true,
+  "stage8_complete": true,
+  "completion_basis": "用户接受当前指标差距，并对完整56轮复核清单确认；原始数值、失败和阈值均未改变。"
+}

@@ -1,0 +1,464 @@
+{
+  "id": "STAB-TEST36-R1",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "从事特种作业的临时用工人员有什么额外资格要求？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+            "citations": [
+              {
+                "chunk_id": "D23-C013",
+                "quote": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位。",
+            "citations": [
+              {
+                "chunk_id": "D23-C016",
+                "quote": "（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\n签订合同前，临时用工人员必须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+            "citations": [
+              {
+                "chunk_id": "D23-C013",
+                "quote": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位。",
+            "citations": [
+              {
+                "chunk_id": "D23-C016",
+                "quote": "（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\n签订合同前，临时用工人员必须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:57.681499+00:00",
+          "attempt": 1,
+          "prompt_sha256": "44706ee1bc1a4ea4f09414b7435fedba6cfeb1cdc61e964d6ec809fa6ec5916c",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "462cb78d-88d2-4be1-8b4f-380b90a1f0c5",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1143,
+            "completion_tokens": 40,
+            "total_tokens": 1183,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 247
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"特种作业 临时用工人员 资格要求 持证上岗\",\"doc_ids\":[]},\"reason\":\"检索特种作业临时用工人员的资格规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00039089999999999996,
+          "seconds": 0.9599
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求 持证上岗",
+            "doc_ids": []
+          },
+          "reason": "检索特种作业临时用工人员的资格规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求 持证上岗",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:58.652339+00:00",
+          "attempt": 1,
+          "prompt_sha256": "03c1c964dc309b07479717095803771d8bc55c7fad06d630511022057e938379",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6ea0b70f-2e5a-455f-8b69-b20d55151a71",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1291,
+            "completion_tokens": 42,
+            "total_tokens": 1333,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 267
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"特种作业 临时用工人员 资格要求 持证上岗\",\"doc_ids\":[]},\"reason\":\"工具临时故障，按规则重试同一检索\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004377,
+          "seconds": 0.5862
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求 持证上岗",
+            "doc_ids": []
+          },
+          "reason": "工具临时故障，按规则重试同一检索"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求 持证上岗",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "特种作业 临时用工人员 资格要求 持证上岗",
+            "hits": [
+              {
+                "chunk_id": "D23-C013",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.749231,
+                "lexical_score": 61.0891,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十二条 第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。\n第四章 临时用工合同的签订、终止",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C012",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十一条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.618458,
+                "lexical_score": 31.6911,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十一条 第十一条 临时用工人员的聘用过程中要坚持公平、公正的原则，根据岗位需\n要，择优聘用。优先选用有社会保险保障人员。一人不能同时被两个以上岗位聘用。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C016",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.079937,
+                "semantic_score": 0.65497,
+                "lexical_score": 29.5634,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十五条 第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C023",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181,
+                  182
+                ],
+                "printed_pages": [
+                  176,
+                  177
+                ],
+                "score": 0.079193,
+                "semantic_score": 0.609181,
+                "lexical_score": 31.8047,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十二条 第二十二条 学校委托设置临时岗位的直属单位负责临时用工人员的日常管\n理，直属单位要安排专人负责临时用工人员的考勤，每月26日向人事处报送临时用工\n人员考勤表，以此作为核发临时用工人员工资的依据。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C011",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.073232,
+                "semantic_score": 0.582048,
+                "lexical_score": 32.4674,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十条 第十条 学校建立临时用工资格审查制度，对于用工人选进行一定范围内的考\n核，以便于对临时用工人员的身份、来源、社会表现、工作状况等的掌握、跟踪和评价。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0095,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:59.260847+00:00",
+          "attempt": 1,
+          "prompt_sha256": "59cff987cd0ef0c71ac938de2f511618c93d0d319c21bbedf5a752cb7693a3e7",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "3fd32154-2f4e-4786-bb86-77d069cad0df",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2322,
+            "completion_tokens": 43,
+            "total_tokens": 2365,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1042
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D23-C013\", \"D23-C016\"]}, \"reason\": \"读取特种作业资格条款及签订合同前材料要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007482000000000001,
+          "seconds": 0.9244
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D23-C013",
+              "D23-C016"
+            ]
+          },
+          "reason": "读取特种作业资格条款及签订合同前材料要求"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C013"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十二条",
+              "text": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。\n第四章 临时用工合同的签订、终止",
+              "pdf_pages": [
+                180,
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C013",
+              "printed_pages": [
+                175,
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C012",
+              "next_chunk_id": "D23-C014",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十五条",
+              "text": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C016",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C015",
+              "next_chunk_id": "D23-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:13:00.197284+00:00",
+          "attempt": 1,
+          "prompt_sha256": "776cc88f17051e89ab906936bf0c55be8888f91fc7066a9332051bf7b38dca6a",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "dbec4456-1f79-4c67-94d6-231a4ab7126f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2803,
+            "completion_tokens": 178,
+            "total_tokens": 2981,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "prompt_cache_hit_tokens": 2304,
+            "prompt_cache_miss_tokens": 499
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\", \"citations\": [{\"chunk_id\": \"D23-C013\", \"quote\": \"第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\\n资格。\"}]}, {\"text\": \"签订合同前，临时用工人员必须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位。\", \"citations\": [{\"chunk_id\": \"D23-C016\", \"quote\": \"（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\"}]}], \"gaps\": []}, \"reason\": \"已读取原文，足以回答特种作业临时用工的额外资格要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010545,
+          "seconds": 1.2116
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取原文，足以回答特种作业临时用工的额外资格要求"
+        }
+      ],
+      "read_ids": [
+        "D23-C013",
+        "D23-C016"
+      ],
+      "first_hits": [],
+      "seconds": 3.7389,
+      "model_calls": 4,
+      "tool_calls": 4,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 3.739,
+  "model_calls": 4,
+  "tool_calls": 4,
+  "created_at": "2026-10-31T02:13:01.410281+00:00"
+}

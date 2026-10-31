@@ -1,0 +1,136 @@
+{
+  "id": "STAB-TEST17-R2",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "reason": "准确转述正文第二十一条。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "向浙江省教育厅提出书面申诉",
+            "reason": "准确指出附3备注内容。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "与正文“学校的上一级主管机关”不一致，附表表述不可靠",
+            "reason": "明确定位正文与附表差异并指出不可靠。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "建议向制度发布部门核实附表是否为套用模板未修改，并确认以正文第二十一条为准",
+            "reason": "未确认浙江为实际机关，也未改写为辽宁，而是建议核实。"
+          },
+          {
+            "index": 4,
+            "met": false,
+            "reason": "未明确要求工会或申诉委员会核实；仅建议向制度发布部门核实。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "教职工如对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "answer_span": "教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用 D24-C022 与原读记录一致，支持该事实。"
+          },
+          {
+            "text": "附3备注栏写“向浙江省教育厅提出书面申诉”。",
+            "answer_span": "向浙江省教育厅提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用 D24-C029 与原读记录一致，支持该事实。"
+          },
+          {
+            "text": "正文与附3表述不一致，附表表述不可靠。",
+            "answer_span": "与正文“学校的上一级主管机关”不一致，附表表述不可靠",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "两项引用并列足以显示不一致，原文支持该结论。"
+          },
+          {
+            "text": "正文仅表述为“学校的上一级主管机关”，未写明具体机关名称。",
+            "answer_span": "正文仅表述为“学校的上一级主管机关”，未写明具体机关名称",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "出自补充说明，未直接挂引用，但已读原文显示只写上一级主管机关。"
+          },
+          {
+            "text": "附表备注中的“浙江省教育厅”与辽宁科技大学所在地及正文表述明显不符。",
+            "answer_span": "附表备注中的“浙江省教育厅”与辽宁科技大学所在地及正文表述明显不符",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未直接挂引用，但比对已读两个条目可支持该明显不符。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确识别正文与附表差异，并请求核实，证据引用充分；但未明确请工会或申诉委员会核实，遗漏必备要点，因此 answer_correct 为 false。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "该校主管部门或上级主管机关的名称及对应依据",
+            "制度发布部门核实附表是否套用模板未修改并确认以正文第二十一条为准"
+          ],
+          "reason": "答案明确要求提供具体主管机关名称和依据，并建议核实附表的模板问题；不是仅要求自行查资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:10.662805+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ac6238ff33592c0e83c6db325087c27d0a0d7dbcfc569f4ef0dbedc124884cfd",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "659fbad3-87b8-4cf9-aa20-00768431d9f6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2498,
+            "completion_tokens": 9300,
+            "total_tokens": 11798,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8388
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1218
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\n      \"reason\": \"准确转述正文第二十一条。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"向浙江省教育厅提出书面申诉\",\n      \"reason\": \"准确指出附3备注内容。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"与正文“学校的上一级主管机关”不一致，附表表述不可靠\",\n      \"reason\": \"明确定位正文与附表差异并指出不可靠。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"建议向制度发布部门核实附表是否为套用模板未修改，并确认以正文第二十一条为准\",\n      \"reason\": \"未确认浙江为实际机关，也未改写为辽宁，而是建议核实。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"reason\": \"未明确要求工会或申诉委员会核实；仅建议向制度发布部门核实。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"教职工如对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\n      \"answer_span\": \"教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用 D24-C022 与原读记录一致，支持该事实。\"\n    },\n    {\n      \"text\": \"附3备注栏写“向浙江省教育厅提出书面申诉”。\",\n      \"answer_span\": \"向浙江省教育厅提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用 D24-C029 与原读记录一致，支持该事实。\"\n    },\n    {\n      \"text\": \"正文与附3表述不一致，附表表述不可靠。\",\n      \"answer_span\": \"与正文“学校的上一级主管机关”不一致，附表表述不可靠\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"两项引用并列足以显示不一致，原文支持该结论。\"\n    },\n    {\n      \"text\": \"正文仅表述为“学校的上一级主管机关”，未写明具体机关名称。\",\n      \"answer_span\": \"正文仅表述为“学校的上一级主管机关”，未写明具体机关名称\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"出自补充说明，未直接挂引用，但已读原文显示只写上一级主管机关。\"\n    },\n    {\n      \"text\": \"附表备注中的“浙江省教育厅”与辽宁科技大学所在地及正文表述明显不符。\",\n      \"answer_span\": \"附表备注中的“浙江省教育厅”与辽宁科技大学所在地及正文表述明显不符\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未直接挂引用，但比对已读两个条目可支持该明显不符。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确识别正文与附表差异，并请求核实，证据引用充分；但未明确请工会或申诉委员会核实，遗漏必备要点，因此 answer_correct 为 false。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"该校主管部门或上级主管机关的名称及对应依据\",\n      \"制度发布部门核实附表是否套用模板未修改并确认以正文第二十一条为准\"\n    ],\n    \"reason\": \"答案明确要求提供具体主管机关名称和依据，并建议核实附表的模板问题；不是仅要求自行查资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.04012536,
+          "seconds": 91.3559
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "74fd1350b08922f8847a753a2ffd60c5d0b6bf440fabb647c6135a26f9c881d7"
+}

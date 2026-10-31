@@ -1,0 +1,90 @@
+{
+  "id": "TEST17",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:51:41.516018+00:00",
+          "attempt": 1,
+          "prompt_sha256": "51a127c11ff2a857fd4908d8ea3be19602c7e7679fdd053758e977523217ce8a",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ceb706aa-3717-4a1e-9d89-46989f62dc0f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3891,
+            "completion_tokens": 5493,
+            "total_tokens": 9384,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4289
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 2483
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际答案明确引用了第二十一条，并准确表述了正文内容\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"reason\": \"实际答案明确指出附3备注栏写浙江省教育厅\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"与正文第二十一条“学校的上一级主管机关”不一致，且“浙江省教育厅”与辽宁科技大学所在地不符，可靠性存疑\",\n      \"reason\": \"实际答案定位了正文与附表的差异，并指出异常\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"不能仅凭正文或附表径行认定\",\n      \"reason\": \"实际答案明确表示不能径行认定，没有擅自确认浙江或改写为辽宁\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请向学校教职工申诉处理委员会或工会（第二十四条指定的解释部门）取得针对该办法附3‘备注’栏的正式解释或更正说明\",\n      \"reason\": \"实际答案明确请求工会或申诉委员会核实\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"answer_span\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"决定书一经送达申诉双方当事人立即生效\",\n      \"answer_span\": \"决定书一经送达申诉双方当事人立即生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"answer_span\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C029的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"answer_span\": \"第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C025的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"第二十五条明确自发布之日起施行并废止科大工字〔2015〕2号旧办法\",\n      \"answer_span\": \"第二十五条明确自发布之日起施行并废止科大工字〔2015〕2号旧办法\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C026的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"未规定正文与附表冲突时的优先适用规则\",\n      \"answer_span\": \"未规定正文与附表冲突时的优先适用规则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C026的quote为第二十五条全文，未包含优先适用规则，故支持该消极事实\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"所有要点均满足，状态正确，动作合理，无严重错误\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"针对附3备注栏的正式解释或更正说明（含适用对象、版本日期及是否替代附表表述）\",\n      \"申诉人身份（教职工或学生）\"\n    ],\n    \"reason\": \"答案明确要求用户获取解释部门的正式解释或更正说明，并确认申诉人身份，属于明确所需资料\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.025091791999999998,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 50.0822
+        },
+        {
+          "kind": "judge_validation_error",
+          "error": "ValueError:通过的要点缺少实际答案定位"
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:52:31.630938+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cdcbf9301568e9a812969ab2dfea5186b0f2e6fc0a68a165d1183707d097053d",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "94a2112d-681b-4d71-8ee0-abfe0ab58a58",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5020,
+            "completion_tokens": 2531,
+            "total_tokens": 7551,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1327
+            },
+            "prompt_cache_hit_tokens": 3840,
+            "prompt_cache_miss_tokens": 1180
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际答案明确引用了第二十一条，并准确表述了正文内容\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"reason\": \"实际答案明确指出附3备注栏写浙江省教育厅\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"与正文第二十一条“学校的上一级主管机关”不一致，且“浙江省教育厅”与辽宁科技大学所在地不符，可靠性存疑\",\n      \"reason\": \"实际答案定位了正文与附表的差异，并指出异常\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"不能仅凭正文或附表径行认定\",\n      \"reason\": \"实际答案明确表示不能径行认定，没有擅自确认浙江或改写为辽宁\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请向学校教职工申诉处理委员会或工会（第二十四条指定的解释部门）取得针对该办法附3“备注”栏的正式解释或更正说明\",\n      \"reason\": \"实际答案明确请求工会或申诉委员会核实\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"answer_span\": \"申诉处理决定是学校对教职工处分或处理的最终决定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"决定书一经送达申诉双方当事人立即生效\",\n      \"answer_span\": \"决定书一经送达申诉双方当事人立即生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"answer_span\": \"附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写为“教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉”\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C029的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"answer_span\": \"第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C025的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"第二十五条明确自发布之日起施行并废止科大工字〔2015〕2号旧办法\",\n      \"answer_span\": \"第二十五条明确自发布之日起施行并废止科大工字〔2015〕2号旧办法\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C026的quote包含该句，实际读取记录中该chunk原文一致\"\n    },\n    {\n      \"text\": \"未规定正文与附表冲突时的优先适用规则\",\n      \"answer_span\": \"未规定正文与附表冲突时的优先适用规则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C026的quote为第二十五条全文，未包含优先适用规则，故支持该消极事实\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"所有要点均满足，状态正确，动作合理，无严重错误\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"针对附3备注栏的正式解释或更正说明（含适用对象、版本日期及是否替代附表表述）\",\n      \"申诉人身份（教职工或学生）\"\n    ],\n    \"reason\": \"答案明确要求用户获取解释部门的正式解释或更正说明，并确认申诉人身份，属于明确所需资料\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011749319999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 19.3639
+        }
+      ],
+      "judge_error": "ValueError:评分器把未出现在实际回答中的内容计作事实",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "272ddf93a474384b6abc08cfa5ebfbb841d2e1f0eacc5c5bd5f0117bc91848b7"
+}

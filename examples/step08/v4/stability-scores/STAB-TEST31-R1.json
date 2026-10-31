@@ -1,0 +1,131 @@
+{
+  "id": "STAB-TEST31-R1",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答表达了事业编制之外、聘用社会人员（含已退休人员）和短期合同制用工形式，但未提及“完成临时性、阶段性、辅助性或特殊性工作任务”这一关键要素，因此未完整覆盖要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "临时用工系指学校在事业编制之外、聘用社会人员（含已退休人员）的短期合同制用工形式",
+            "answer_span": "临时用工系指学校在事业编制之外、聘用社会人员（含已退休人员）的短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确支持该定义，已读原文包含对应内容。"
+          },
+          {
+            "text": "因此不属于事业编制内用工",
+            "answer_span": "因此不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由引用的“事业编制之外”直接支持，已读原文包含该表述。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答正确回答了问题，工具使用合理，但要点未完整表达临时用工的任务性质，因此回答不完全正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:16:49.375182+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6769da9f6419b8868b03206494588f1f1b4238801cd96f921d2d05f51d8f65f2",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ef329626-7c7e-4f93-8f74-446db4d730f0",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1673,
+            "completion_tokens": 2927,
+            "total_tokens": 4600,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2581
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 521
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答表达了事业编制之外、聘用社会人员（含已退休人员）和短期合同制用工形式，但未提及“完成临时性、阶段性、辅助性或特殊性工作任务”这一关键要素，因此未完整覆盖要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"临时用工系指学校在事业编制之外、聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"answer_span\": \"临时用工系指学校在事业编制之外、聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确支持该定义，已读原文包含对应内容。\"\n    },\n    {\n      \"text\": \"因此不属于事业编制内用工\",\n      \"answer_span\": \"因此不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由引用的“事业编制之外”直接支持，已读原文包含该表述。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答正确回答了问题，工具使用合理，但要点未完整表达临时用工的任务性质，因此回答不完全正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006164663999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 29.7031
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:36.514596+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2a3b9ed0782469557b6c2ac106030d8a1527caf4a13aaa5a6be9f5ea69cfcb83",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 1.8539
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:38.368815+00:00",
+          "attempt": 2,
+          "prompt_sha256": "2a3b9ed0782469557b6c2ac106030d8a1527caf4a13aaa5a6be9f5ea69cfcb83",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 3.6336
+        }
+      ],
+      "judge_error": "ModelError:SSLError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "ac7000540d59fff9d2f96f2806feea61f92bb38f235c225dbb0ecd7b3c384405"
+}

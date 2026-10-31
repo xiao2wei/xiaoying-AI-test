@@ -1,0 +1,836 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "请给出2026年新发布的在职读博补贴标准，不要使用2023版。",
+      "history": [],
+      "output": {
+        "status": "insufficient_evidence",
+        "claims": [],
+        "gaps": [
+          "本次检索到的在职读博补贴标准仅见于2023年12月20日的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件），未发现2026年新发布的对应文件；因您明确排除2023版，现有资料不足以回答2026年标准。",
+          "请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）；若2026年并无新文件，请确认是否改按现行有效版本回答。"
+        ],
+        "answer": "本次检索到的在职读博补贴标准仅见于2023年12月20日的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件），未发现2026年新发布的对应文件；因您明确排除2023版，现有资料不足以回答2026年标准。\n请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）；若2026年并无新文件，请确认是否改按现行有效版本回答。"
+      },
+      "raw_final": {
+        "status": "insufficient_evidence",
+        "claims": [],
+        "gaps": [
+          "本次检索到的在职读博补贴标准仅见于2023年12月20日的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件），未发现2026年新发布的对应文件；因您明确排除2023版，现有资料不足以回答2026年标准。",
+          "请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）；若2026年并无新文件，请确认是否改按现行有效版本回答。"
+        ],
+        "answer": "本次检索到的在职读博补贴标准仅见于2023年12月20日的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件），未发现2026年新发布的对应文件；因您明确排除2023版，现有资料不足以回答2026年标准。\n请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）；若2026年并无新文件，请确认是否改按现行有效版本回答。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:50:40.714610+00:00",
+          "attempt": 1,
+          "prompt_sha256": "af6fb34897353f60f4a9e78b2fa84ddec8ea18b43539bc3de43c4822e7874cb3",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "af2be27e-c04d-4b2e-88bc-44ba78a8031a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1732,
+            "completion_tokens": 48,
+            "total_tokens": 1780,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 196
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"在职读博 补贴标准 2026 新发布\",\"doc_ids\":[]},\"reason\":\"查找2026年新发布的在职读博补贴标准，排除2023版。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000125616,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.0829
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "在职读博 补贴标准 2026 新发布",
+            "doc_ids": []
+          },
+          "reason": "查找2026年新发布的在职读博补贴标准，排除2023版。"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "在职读博 补贴标准 2026 新发布",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "在职读博 补贴标准 2026 新发布",
+            "hits": [
+              {
+                "chunk_id": "D01-C011",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.634056,
+                "lexical_score": 22.9169,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十条 第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C017",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.632166,
+                "lexical_score": 21.2741,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十六条 第十六条 教师在职读博期间发生的费用由本人自行承担。在职读博期间学校\n为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属\n于学校为促进个人可持续发展为其提供的进修培训资助费用。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C013",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十二条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7,
+                  8
+                ],
+                "printed_pages": [
+                  2,
+                  3
+                ],
+                "score": 0.087121,
+                "semantic_score": 0.61163,
+                "lexical_score": 21.862,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十二条 第十二条 在职读博人员在学习期间的管理及考核由所在单位负责。脱产学习\n的在职读博人员应每学期向所在单位书面报告学习情况，所在单位根据学习情况确\n定岗位考核结果，如未定期报告学习情况或脱产逾期未归，所在单位应及时向人事处\n报告，并根据具体情况确定其年度考核结果。不脱产学习的在职读博人员正常参加\n岗位考核。\n第五章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C016",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十五条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.080128,
+                "semantic_score": 0.606951,
+                "lexical_score": 20.4049,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十五条 第十五条 出国（境外）攻读博士研究生的在职读博人员按学校以及上级相关部\n门出国（境）管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C003",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第二条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.08,
+                "semantic_score": 0.607603,
+                "lexical_score": 18.4119,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第二条 第二条 专任教师及从事实验课教学的实验技术人员（以下简称教师）在职读博\n遵循“自愿申请、专业对口、学以致用”原则，要立足岗位需求，提升人才培养质量，服\n务学校高质量发展。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0074,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:50:41.840493+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5d4dffa5d9de11672e6fe1c602a84172a9e53c5bfe7436c66d278c2dc8495877",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "48ff9580-ed54-4713-b00b-38a2b3c4df5d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3014,
+            "completion_tokens": 57,
+            "total_tokens": 3071,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1350
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"2026年 在职攻读博士学位 补贴 待遇 新办法\", \"doc_ids\": []}, \"reason\": \"首轮仅命中2023版，需确认是否存在2026年新发布文件。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00048338399999999995,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.6573
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "2026年 在职攻读博士学位 补贴 待遇 新办法",
+            "doc_ids": []
+          },
+          "reason": "首轮仅命中2023版，需确认是否存在2026年新发布文件。"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "2026年 在职攻读博士学位 补贴 待遇 新办法",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "2026年 在职攻读博士学位 补贴 待遇 新办法",
+            "hits": [
+              {
+                "chunk_id": "D01-C011",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.089286,
+                "semantic_score": 0.688716,
+                "lexical_score": 45.4863,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十条 第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C001",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "前言或附件",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.664246,
+                "lexical_score": 46.9056,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 前言或附件 辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.668062,
+                "lexical_score": 45.0991,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C016",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十五条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.080515,
+                "semantic_score": 0.6702,
+                "lexical_score": 43.1114,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十五条 第十五条 出国（境外）攻读博士研究生的在职读博人员按学校以及上级相关部\n门出国（境）管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C012",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十一条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.078788,
+                "semantic_score": 0.651874,
+                "lexical_score": 46.9249,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十一条 第十一条 非教师岗位人员在职攻读博士原则上不脱产。如脱产，在脱产学习\n期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关\n待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按本办法“第十条”\n兑现相关待遇。教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后\n转到非教师岗位，相关待遇停止发放。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0088,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:50:42.539859+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4b355f91a3f66418601bed01bd7e926e496e9efa63ae9655a81e623adae9b87e",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "0a91dda9-084f-4015-8f8a-e546e71928f0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4309,
+            "completion_tokens": 61,
+            "total_tokens": 4370,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 1365
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C011\", \"D01-C001\", \"D01-C012\"]}, \"reason\": \"读取补贴标准表、文件版本信息及适用对象条款，以核实是否存在2026版及标准前提。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000500364,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.159
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C011",
+              "D01-C001",
+              "D01-C012"
+            ]
+          },
+          "reason": "读取补贴标准表、文件版本信息及适用对象条款，以核实是否存在2026版及标准前提。"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C011"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十条",
+              "text": "第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请，所在单位党政联席会研究同意后，可按学校当年人才引进政策确定其相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。 |  |",
+              "pdf_pages": [
+                7
+              ],
+              "table_ids": [
+                "P007-T01"
+              ],
+              "chunk_id": "D01-C011",
+              "printed_pages": [
+                2
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C010",
+              "next_chunk_id": "D01-C012",
+              "related_table_chunks": []
+            },
+            "tables": [
+              {
+                "table_id": "P007-T01",
+                "pdf_page": 7,
+                "printed_page": 2,
+                "bbox": [
+                  79.3701,
+                  374.15999999999997,
+                  462.0472,
+                  559.8684999999999
+                ],
+                "rows": [
+                  [
+                    "序号",
+                    "取得学历学位时间（年）",
+                    "补贴（万元）",
+                    "科研建设经费（万元）"
+                  ],
+                  [
+                    "1",
+                    "≤4",
+                    "10",
+                    "工科5，其他学科3"
+                  ],
+                  [
+                    "2",
+                    "＞4，≤5",
+                    "9",
+                    "工科4.5，其他学科2.7"
+                  ],
+                  [
+                    "3",
+                    "＞5，≤6",
+                    "7",
+                    "工科3.5，其他学科2.1"
+                  ],
+                  [
+                    "4",
+                    "＞6，≤7",
+                    "5",
+                    "工科2.5，其他学科1.5"
+                  ],
+                  [
+                    "5",
+                    "＞7，≤8",
+                    "3",
+                    "工科1.5，其他学科0.9"
+                  ],
+                  [
+                    "6",
+                    "＞8",
+                    "0",
+                    "0"
+                  ],
+                  [
+                    "7",
+                    "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请，所在单位党政联席会研究同意后，可按学校当年人才引进政策确定其相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+                    null,
+                    null
+                  ]
+                ],
+                "cell_bboxes": [
+                  [
+                    [
+                      79.3701,
+                      374.15999999999997,
+                      108.517,
+                      391.1679
+                    ],
+                    [
+                      108.517,
+                      374.15999999999997,
+                      244.0251,
+                      391.1679
+                    ],
+                    [
+                      244.0251,
+                      374.15999999999997,
+                      325.0899,
+                      391.1679
+                    ],
+                    [
+                      325.0899,
+                      374.15999999999997,
+                      462.0472,
+                      391.1679
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      391.1679,
+                      108.517,
+                      408.1758
+                    ],
+                    [
+                      108.517,
+                      391.1679,
+                      244.0251,
+                      408.1758
+                    ],
+                    [
+                      244.0251,
+                      391.1679,
+                      325.0899,
+                      408.1758
+                    ],
+                    [
+                      325.0899,
+                      391.1679,
+                      462.0472,
+                      408.1758
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      408.1758,
+                      108.517,
+                      425.18359999999996
+                    ],
+                    [
+                      108.517,
+                      408.1758,
+                      244.0251,
+                      425.18359999999996
+                    ],
+                    [
+                      244.0251,
+                      408.1758,
+                      325.0899,
+                      425.18359999999996
+                    ],
+                    [
+                      325.0899,
+                      408.1758,
+                      462.0472,
+                      425.18359999999996
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      425.18359999999996,
+                      108.517,
+                      442.19149999999996
+                    ],
+                    [
+                      108.517,
+                      425.18359999999996,
+                      244.0251,
+                      442.19149999999996
+                    ],
+                    [
+                      244.0251,
+                      425.18359999999996,
+                      325.0899,
+                      442.19149999999996
+                    ],
+                    [
+                      325.0899,
+                      425.18359999999996,
+                      462.0472,
+                      442.19149999999996
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      442.19149999999996,
+                      108.517,
+                      459.19939999999997
+                    ],
+                    [
+                      108.517,
+                      442.19149999999996,
+                      244.0251,
+                      459.19939999999997
+                    ],
+                    [
+                      244.0251,
+                      442.19149999999996,
+                      325.0899,
+                      459.19939999999997
+                    ],
+                    [
+                      325.0899,
+                      442.19149999999996,
+                      462.0472,
+                      459.19939999999997
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      459.19939999999997,
+                      108.517,
+                      476.2073
+                    ],
+                    [
+                      108.517,
+                      459.19939999999997,
+                      244.0251,
+                      476.2073
+                    ],
+                    [
+                      244.0251,
+                      459.19939999999997,
+                      325.0899,
+                      476.2073
+                    ],
+                    [
+                      325.0899,
+                      459.19939999999997,
+                      462.0472,
+                      476.2073
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      476.2073,
+                      108.517,
+                      493.21509999999995
+                    ],
+                    [
+                      108.517,
+                      476.2073,
+                      244.0251,
+                      493.21509999999995
+                    ],
+                    [
+                      244.0251,
+                      476.2073,
+                      325.0899,
+                      493.21509999999995
+                    ],
+                    [
+                      325.0899,
+                      476.2073,
+                      462.0472,
+                      493.21509999999995
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      493.21509999999995,
+                      108.517,
+                      559.8684999999999
+                    ],
+                    [
+                      108.517,
+                      493.21509999999995,
+                      462.0472,
+                      559.8684999999999
+                    ],
+                    null,
+                    null
+                  ]
+                ],
+                "source_char_count": 288,
+                "unassigned_cell_chars": 0
+              }
+            ]
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）\n第一章 总 则",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C001",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D01-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C012"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十一条",
+              "text": "第十一条 非教师岗位人员在职攻读博士原则上不脱产。如脱产，在脱产学习\n期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关\n待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按本办法“第十条”\n兑现相关待遇。教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后\n转到非教师岗位，相关待遇停止发放。",
+              "pdf_pages": [
+                7
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C012",
+              "printed_pages": [
+                2
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C011",
+              "next_chunk_id": "D01-C013",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:50:43.730113+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5dc17593037e061a5596b859254eae9d51283bc7f9bf38c3d08d22463032efd5",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "86824d18-6c54-44a1-915b-41b40502e9bf",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5558,
+            "completion_tokens": 147,
+            "total_tokens": 5705,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "prompt_cache_hit_tokens": 4352,
+            "prompt_cache_miss_tokens": 1206
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"insufficient_evidence\", \"claims\": [], \"gaps\": [\"现有资料中未检索到2026年新发布的在职读博补贴标准文件；唯一命中的是《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日），而用户明确要求不使用2023版。请提供2026年新发布文件的标题、文号或版本日期，或提供该文件原文/附件，以便按新标准回答。\"]}, \"reason\": \"资料中无2026版，用户排除2023版，无法给出所问标准。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000564312,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.3294
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "资料中无2026版，用户排除2023版，无法给出所问标准。"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:50:45.092202+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bc956519ed1339cfe12538943db4f21f68f36776d9e67358c3048b63b6910e6f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "cddc1670-d57a-49f8-be5e-ff70bcad8b40",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5885,
+            "completion_tokens": 735,
+            "total_tokens": 6620,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 538
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 4349
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"insufficient_evidence\", \"claims\": [], \"gaps\": [\"本次检索到的在职读博补贴标准仅见于2023年12月20日的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件），未发现2026年新发布的对应文件；因您明确排除2023版，现有资料不足以回答2026年标准。\", \"请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）；若2026年并无新文件，请确认是否改按现行有效版本回答。\"]}, \"reason\": \"资料中无2026版且用户排除2023版，证据不足并已列明所需补充材料。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002195916,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 5.1011
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "资料中无2026版且用户排除2023版，证据不足并已列明所需补充材料。"
+        }
+      ],
+      "read_ids": [
+        "D01-C011",
+        "D01-C001",
+        "D01-C012"
+      ],
+      "first_hits": [
+        "D01-C011",
+        "D01-C017",
+        "D01-C013",
+        "D01-C016",
+        "D01-C003"
+      ],
+      "seconds": 9.5185,
+      "model_calls": 5,
+      "tool_calls": 5,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 9.5189,
+  "model_calls": 5,
+  "tool_calls": 5,
+  "created_at": "2026-10-31T03:50:50.194377+00:00"
+}

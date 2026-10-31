@@ -1,0 +1,170 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "reason": "实际回答明确表达了原则上不予调整，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请",
+            "reason": "实际回答明确表达了确有特殊情况需要重大调整时由项目负责人提出申请。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "reason": "实际回答明确表达了所在二级教学（科研）机构签署意见的环节。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "提交校人才工作领导小组办公室审批通过后执行",
+            "reason": "实际回答明确表达了提交校人才工作领导小组办公室审批通过后执行。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "人才专项经费预算原则上不予调整",
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条明确载明该原则，且该chunk已实际读取。"
+          },
+          {
+            "text": "确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请",
+            "answer_span": "确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条明确载明特殊情况需重大调整时由项目负责人提出申请。"
+          },
+          {
+            "text": "经所在二级教学（科研）机构签署意见后",
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条明确载明需经所在二级教学（科研）机构签署意见。"
+          },
+          {
+            "text": "提交校人才工作领导小组办公室审批通过后执行",
+            "answer_span": "提交校人才工作领导小组办公室审批通过后执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条明确载明提交校人才工作领导小组办公室审批通过后执行。"
+          },
+          {
+            "text": "不能自行直接重大调整",
+            "answer_span": "不能自行直接重大调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由D03-C016第十五条要求的申请、签署意见和审批通过后执行流程直接支持，且chunk已实际读取。"
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责",
+            "answer_span": "项目负责人及所在二级教学（科研）机构对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条明确载明负责人和二级教学（科研）机构对预算编制、预算调整、经费使用及票据真实性负责。"
+          },
+          {
+            "text": "并须严格按照学校审批同意的预算范围使用、报销科研经费",
+            "answer_span": "并须严格按照学校审批同意的预算范围使用、报销科研经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条支持严格按照学校审批同意的预算范围使用、报销科研经费。"
+          },
+          {
+            "text": "因违规使用造成的责任由二者共同承担",
+            "answer_span": "因违规使用造成的责任由二者共同承担",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条明确载明因违规使用责任由项目负责人和所在二级教学（科研）机构共同承担。"
+          },
+          {
+            "text": "该办法适用于学校预算安排拨付给引进和培养的各类各层次人才开展科研工作的科研建设专项经费",
+            "answer_span": "该办法适用于学校预算安排拨付给引进和培养的各类各层次人才开展科研工作的科研建设专项经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C003第二条明确载明该办法的适用对象，且该chunk已实际读取。"
+          },
+          {
+            "text": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行",
+            "answer_span": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C003第二条明确载明上级人才项目无明确指导性文件要求时经费管理依照本办法执行。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整覆盖全部必答要点，直接回应了能否自行重大调整；制度事实均有实际已读材料的引用支持，未发现无依据或错误引用；工具动作中临时故障已通过重试恢复，整体判定通过。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:04:32.421256+00:00",
+          "attempt": 1,
+          "prompt_sha256": "759c35888fc775522baa99535d967fc23e1ff15a25a3a70ed175dfcdff53ba5e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "6b58e12d-f1e7-499a-aa9e-eddeb4f50433",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2886,
+            "completion_tokens": 5499,
+            "total_tokens": 8385,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4171
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1862
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"reason\": \"实际回答明确表达了原则上不予调整，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请\",\n      \"reason\": \"实际回答明确表达了确有特殊情况需要重大调整时由项目负责人提出申请。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"reason\": \"实际回答明确表达了所在二级教学（科研）机构签署意见的环节。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"reason\": \"实际回答明确表达了提交校人才工作领导小组办公室审批通过后执行。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"人才专项经费预算原则上不予调整\",\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条明确载明该原则，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请\",\n      \"answer_span\": \"确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条明确载明特殊情况需重大调整时由项目负责人提出申请。\"\n    },\n    {\n      \"text\": \"经所在二级教学（科研）机构签署意见后\",\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条明确载明需经所在二级教学（科研）机构签署意见。\"\n    },\n    {\n      \"text\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条明确载明提交校人才工作领导小组办公室审批通过后执行。\"\n    },\n    {\n      \"text\": \"不能自行直接重大调整\",\n      \"answer_span\": \"不能自行直接重大调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由D03-C016第十五条要求的申请、签署意见和审批通过后执行流程直接支持，且chunk已实际读取。\"\n    },\n    {\n      \"text\": \"项目负责人及所在二级教学（科研）机构对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责\",\n      \"answer_span\": \"项目负责人及所在二级教学（科研）机构对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条明确载明负责人和二级教学（科研）机构对预算编制、预算调整、经费使用及票据真实性负责。\"\n    },\n    {\n      \"text\": \"并须严格按照学校审批同意的预算范围使用、报销科研经费\",\n      \"answer_span\": \"并须严格按照学校审批同意的预算范围使用、报销科研经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条支持严格按照学校审批同意的预算范围使用、报销科研经费。\"\n    },\n    {\n      \"text\": \"因违规使用造成的责任由二者共同承担\",\n      \"answer_span\": \"因违规使用造成的责任由二者共同承担\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条明确载明因违规使用责任由项目负责人和所在二级教学（科研）机构共同承担。\"\n    },\n    {\n      \"text\": \"该办法适用于学校预算安排拨付给引进和培养的各类各层次人才开展科研工作的科研建设专项经费\",\n      \"answer_span\": \"该办法适用于学校预算安排拨付给引进和培养的各类各层次人才开展科研工作的科研建设专项经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C003第二条明确载明该办法的适用对象，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行\",\n      \"answer_span\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C003第二条明确载明上级人才项目无明确指导性文件要求时经费管理依照本办法执行。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答完整覆盖全部必答要点，直接回应了能否自行重大调整；制度事实均有实际已读材料的引用支持，未发现无依据或错误引用；工具动作中临时故障已通过重试恢复，整体判定通过。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02558556,
+          "seconds": 49.6529
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "dcc8ff4808076dd068e756cbe40ef79be5a9f619d548c3d0e80a8cfdc4b14bbd"
+}

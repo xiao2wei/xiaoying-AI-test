@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "reason": "实际回答称5001元只需项目负责人签字，未提及所在二级教学科研机构负责人，与要求不符。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "5001元只需项目负责人签字",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用条款为5000元以下（含5000元）由项目负责人签字，5001元不适用该条款；实际读取的原文明确5000元以上1万元以下需项目负责人和所在二级教学科研机构负责人签字，故该事实错误。"
+      }
+    ],
+    "serious_errors": [
+      "无依据事实：声称5001元只需项目负责人签字，与已读取原文的审批权限规定矛盾。"
+    ],
+    "reason": "回答错误，未满足必要要点，且存在与原文矛盾的无依据事实。"
+  },
+  "critical_errors": [
+    "无依据事实：声称5001元只需项目负责人签字，与已读取原文的审批权限规定矛盾。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:50:00.253716+00:00",
+      "attempt": 1,
+      "prompt_sha256": "27c5caafae9559a89d2b5a7ee66318c73c749bb644c7e00996d7efe7fc7ba290",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "06e19070-dec7-4b5a-bc9d-40ccfac9868d",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2035,
+        "completion_tokens": 245,
+        "total_tokens": 2280,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 1523
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答称5001元只需项目负责人签字，未提及所在二级教学科研机构负责人，与要求不符。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"5001元只需项目负责人签字\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用条款为5000元以下（含5000元）由项目负责人签字，5001元不适用该条款；实际读取的原文明确5000元以上1万元以下需项目负责人和所在二级教学科研机构负责人签字，故该事实错误。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"无依据事实：声称5001元只需项目负责人签字，与已读取原文的审批权限规定矛盾。\"\n  ],\n  \"reason\": \"回答错误，未满足必要要点，且存在与原文矛盾的无依据事实。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0036564000000000006,
+      "seconds": 3.7098
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL10",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

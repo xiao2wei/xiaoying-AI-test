@@ -1,0 +1,119 @@
+{
+  "id": "TEST16",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "reason": "实际回答中明确引用了2023修订办法第十八条，并指出该条款废止2020年19号办法，满足要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "因此，2020年19号办法已不再继续生效，现行有效的是2023年修订办法",
+            "reason": "实际回答依据废止条款直接得出2020年办法不再生效、2023年办法现行有效的结论，解决了版本关系。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023修订办法文号为辽科大校发〔2023〕77号附件，日期为2023年12月20日",
+            "answer_span": "辽科大校发〔2023〕77号附件，2023年12月20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用D01-C001，其quote包含文号和日期，且actually_read中该chunk文本相同，完全支持。"
+          },
+          {
+            "text": "2023修订办法第十八条规定该办法自发布之日起施行",
+            "answer_span": "该办法自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“自发布之日起施行”，actually_read中相同，支持该事实。"
+          },
+          {
+            "text": "2023修订办法第十八条规定原2020年19号办法同时废止",
+            "answer_span": "原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote明确包含废止语句，actually_read中相同，支持该事实。"
+          },
+          {
+            "text": "2020年19号办法已不再继续生效",
+            "answer_span": "2020年19号办法已不再继续生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由引用中的废止条款直接支持，废止即意味着不再生效，actually_read中废止条款存在。"
+          },
+          {
+            "text": "现行有效的是2023年修订办法",
+            "answer_span": "现行有效的是2023年修订办法",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用中包含2023办法自发布之日起施行且原办法废止，结合发布日期可以支持该结论，actually_read中信息一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确引用了2023修订办法第十八条，明确废止2020年19号办法，并据此正确解决了版本关系，所有要点均已满足且事实均有可靠引用支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:28:48.879244+00:00",
+          "attempt": 1,
+          "prompt_sha256": "61fe6deb9163d00b9c7c1ff68ccb6d2c969907cf8faae2f0871fab8276b4586b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5dbe5541-dde4-4c1f-92b9-0cbb623f3f39",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2136,
+            "completion_tokens": 2998,
+            "total_tokens": 5134,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2254
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 984
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"reason\": \"实际回答中明确引用了2023修订办法第十八条，并指出该条款废止2020年19号办法，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"因此，2020年19号办法已不再继续生效，现行有效的是2023年修订办法\",\n      \"reason\": \"实际回答依据废止条款直接得出2020年办法不再生效、2023年办法现行有效的结论，解决了版本关系。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023修订办法文号为辽科大校发〔2023〕77号附件，日期为2023年12月20日\",\n      \"answer_span\": \"辽科大校发〔2023〕77号附件，2023年12月20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用D01-C001，其quote包含文号和日期，且actually_read中该chunk文本相同，完全支持。\"\n    },\n    {\n      \"text\": \"2023修订办法第十八条规定该办法自发布之日起施行\",\n      \"answer_span\": \"该办法自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“自发布之日起施行”，actually_read中相同，支持该事实。\"\n    },\n    {\n      \"text\": \"2023修订办法第十八条规定原2020年19号办法同时废止\",\n      \"answer_span\": \"原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote明确包含废止语句，actually_read中相同，支持该事实。\"\n    },\n    {\n      \"text\": \"2020年19号办法已不再继续生效\",\n      \"answer_span\": \"2020年19号办法已不再继续生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由引用中的废止条款直接支持，废止即意味着不再生效，actually_read中废止条款存在。\"\n    },\n    {\n      \"text\": \"现行有效的是2023年修订办法\",\n      \"answer_span\": \"现行有效的是2023年修订办法\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用中包含2023办法自发布之日起施行且原办法废止，结合发布日期可以支持该结论，actually_read中信息一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确引用了2023修订办法第十八条，明确废止2020年19号办法，并据此正确解决了版本关系，所有要点均已满足且事实均有可靠引用支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0146916,
+          "seconds": 27.2715
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "9f52a88a0111185fad240696c4f9bf4d13803293ec7a54d89c02e2d0ce5670dd"
+}

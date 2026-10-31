@@ -1,0 +1,91 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有资料未检索到2026年新发布的在职攻读博士补贴标准文件",
+            "reason": "答案明确说明现有资料未检索到2026年新标准，表明该汇编无法提供所需内容。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供该2026年文件的标题、文号、发布日期及补贴标准条款原文",
+            "reason": "答案明确请求用户补充2026制度的标题、文号、发布日期及条款原文，满足需补充2026制度的要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "现有资料未检索到2026年新发布的在职攻读博士补贴标准文件",
+            "reason": "答案仅说明未检索到2026年标准，未给出任何2023条款或将其冒充为2026规定，行为符合禁止要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "2026年文件的标题",
+            "文号",
+            "发布日期",
+            "补贴标准条款原文"
+          ],
+          "reason": "答案明确说明缺少2026年文件，并具体列出需要用户提供的文件标题、文号、发布日期及补贴标准条款原文，属于明确可操作的信息补充请求。"
+        },
+        "reason": "答案正确识别现有资料中未检索到2026年新标准，未将2023年条款冒充为2026年规定，并明确请求用户提供2026年文件的标题、文号、发布日期及补贴标准条款原文。工具动作包括多次检索和读取，合理且未虚报成功。整体符合预期。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:14:56.172843+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0871f56f3191637f9e038782eda834512c11ed536a93abd709a1d1d0d3fa3e00",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b56b10bc-bb1d-4a50-a8c6-ae4d83dd12a5",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2222,
+            "completion_tokens": 1944,
+            "total_tokens": 4166,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1511
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1198
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有资料未检索到2026年新发布的在职攻读博士补贴标准文件\",\n      \"reason\": \"答案明确说明现有资料未检索到2026年新标准，表明该汇编无法提供所需内容。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供该2026年文件的标题、文号、发布日期及补贴标准条款原文\",\n      \"reason\": \"答案明确请求用户补充2026制度的标题、文号、发布日期及条款原文，满足需补充2026制度的要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"现有资料未检索到2026年新发布的在职攻读博士补贴标准文件\",\n      \"reason\": \"答案仅说明未检索到2026年标准，未给出任何2023条款或将其冒充为2026规定，行为符合禁止要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"2026年文件的标题\",\n      \"文号\",\n      \"发布日期\",\n      \"补贴标准条款原文\"\n    ],\n    \"reason\": \"答案明确说明缺少2026年文件，并具体列出需要用户提供的文件标题、文号、发布日期及补贴标准条款原文，属于明确可操作的信息补充请求。\"\n  },\n  \"reason\": \"答案正确识别现有资料中未检索到2026年新标准，未将2023年条款冒充为2026年规定，并明确请求用户提供2026年文件的标题、文号、发布日期及补贴标准条款原文。工具动作包括多次检索和读取，合理且未虚报成功。整体符合预期。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0046623279999999994,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 17.1017
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e7f4b52ffd38766c1201eb5bf3d6052b27692c1f316c31b3e9373f08a689968e"
+}

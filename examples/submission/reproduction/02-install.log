@@ -1,0 +1,119 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///E:/xiaoying/AItest/work/delivery-repro-r1 (from -r requirements.txt (line 1))
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting requests<3,>=2.32 (from xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl (73 kB)
+Collecting numpy<3,>=2 (from xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b5/cd/9cc4dc876fb065d5c220aae4d5e14826b2715331bb7618ce1fb07a679d99/numpy-2.4.6-cp313-cp313-win_amd64.whl (12.3 MB)
+     ---------------------------------------- 12.3/12.3 MB 334.0 kB/s  0:00:36
+Collecting fastembed==0.9.1 (from xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/25/9f/04650110be2c2554655e8b2c216567e6028cc767a2a0ad26f84972829c60/fastembed-0.9.1-py3-none-any.whl (150 kB)
+Collecting rank-bm25==0.2.2 (from xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/2a/21/f691fb2613100a62b3fa91e9988c991e9ca5b89ea31c0d3152a3210344f9/rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Collecting pdfplumber<0.12,>=0.11 (from xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a2/9a/07d658e1e7fad860f1c541ab941348125dbdab773be3a0afaf32361866c7/pdfplumber-0.11.10-py3-none-any.whl (60 kB)
+Collecting onnxruntime!=1.24.0,!=1.24.1,>1.21.0 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/59/bf/a1d282b4c753ba3e9b31f4c11abd2bc2390513dc5e3792ca3b78e42401c3/onnxruntime-1.31.1-cp313-cp313-win_amd64.whl (14.9 MB)
+Collecting tqdm<5,>=4.66 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/75/1a0392bcc21c44dcdf87b3cf2d137e7829be2c083a1e38d44efca3d57a16/tqdm-4.68.2-py3-none-any.whl (78 kB)
+Collecting tokenizers<1.0,>=0.15 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl (2.7 MB)
+     ---------------------------------------- 2.7/2.7 MB 369.1 kB/s  0:00:07
+Collecting huggingface-hub<2.0,>=0.20 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b2/a5/558da89f66464d8d0229ff497e8b8666977de2d8cf48c28a2862ecf1250f/huggingface_hub-1.19.0-py3-none-any.whl (693 kB)
+     --------------------------------------- 693.4/693.4 kB 472.4 kB/s  0:00:01
+Collecting loguru<0.8,>=0.7.2 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl (61 kB)
+Collecting pillow<14.0,>=11.0.0 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a6/9b/7a58e61d62be561da3a356fe2384d4059a6345fc130e23ef1c36a5b81d24/pillow-12.3.0-cp313-cp313-win_amd64.whl (7.2 MB)
+     ---------------------------------------- 7.2/7.2 MB 351.2 kB/s  0:00:20
+Collecting mmh3<6.0.0,>=4.1.0 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/06/5b/b63154d3d8d3dab42a6713df71da40c2952c4e640973a70ebd897df5508c/mmh3-5.3.1-cp313-cp313-win_amd64.whl (41 kB)
+Collecting py-rust-stemmers<0.2,>=0.1.0 (from fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/c2/a0/dd7c5fc6ade6d2a2a49e49937f06f2d488511454e8ab1b313d277ee8c3b1/py_rust_stemmers-0.1.8-cp313-cp313-win_amd64.whl (212 kB)
+Collecting click>=8.4.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c7/0d/67e5b4109ea4a837e80daa87c2c696711955e40449a97e8926672534def2/click-8.4.1-py3-none-any.whl (116 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/81/8f/b61d427c4f49a8bdadc93f4e7e74df8a6df6f77ee6e26bf0df53d3925363/filelock-3.29.3-py3-none-any.whl (42 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/51/c7/b64cae5dba3a1b138d7123ec36bb5ccd39d39939f18454407e5468f4763f/fsspec-2025.12.0-py3-none-any.whl (201 kB)
+Collecting hf-xet<2.0.0,>=1.5.1 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e9/f8/68b01c5c2edb56ac9a67b3d076ffddcb90867abaee923923eb34e7a14e76/hf_xet-1.5.2-cp38-abi3-win_amd64.whl (4.0 MB)
+     ---------------------------------------- 4.0/4.0 MB 294.7 kB/s  0:00:12
+Collecting httpx<1,>=0.23.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl (73 kB)
+Collecting packaging>=20.9 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl (65 kB)
+Collecting pyyaml>=5.1 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/97/c9/39d5b874e8b28845e4ec2202b5da735d0199dbe5b8fb85f91398814a9a46/pyyaml-6.0.3-cp313-cp313-win_amd64.whl (154 kB)
+Collecting typer<0.26.0,>=0.20.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3f/f9/2b3ff4e56e5fa7debfaf9eb135d0da96f3e9a1d5b27222223c7296336e5f/typer-0.25.1-py3-none-any.whl (58 kB)
+Collecting typing-extensions>=4.1.0 (from huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Collecting anyio (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/da/42/e921fccf5015463e32a3cf6ee7f980a6ed0f395ceeaa45060b61d86486c2/anyio-4.13.0-py3-none-any.whl (114 kB)
+Collecting certifi (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/70/7d/9bc192684cea499815ff478dfcdc13835ddf401365057044fb721ec6bddb/certifi-2025.11.12-py3-none-any.whl (159 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl (78 kB)
+Collecting idna (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl (65 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl (37 kB)
+Collecting colorama>=0.3.4 (from loguru<0.8,>=0.7.2->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting win32-setctime>=1.0.0 (from loguru<0.8,>=0.7.2->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e1/07/c6fe3ad3e685340704d314d765b7912993bcb8dc198f0e7a89382d37974b/win32_setctime-1.2.0-py3-none-any.whl (4.1 kB)
+Collecting pdfminer.six==20260107 (from pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/20/8b/28c4eaec9d6b036a52cb44720408f26b1a143ca9bce76cc19e8f5de00ab4/pdfminer_six-20260107-py3-none-any.whl (6.6 MB)
+     ---------------------------------------- 6.6/6.6 MB 304.2 kB/s  0:00:22
+Collecting pypdfium2>=5.9.0 (from pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/16/1d/c62bd59dd8345cc4b640f942f465633f6b07b859d01ddb648610a7bf5c7c/pypdfium2-5.10.1-py3-none-win_amd64.whl (3.8 MB)
+     ---------------------------------------- 3.8/3.8 MB 350.7 kB/s  0:00:10
+Collecting charset-normalizer>=2.0.0 (from pdfminer.six==20260107->pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5d/78/1b74c5bbb3f99b77a1715c91b3e0b5bdb6fe302d95ace4f5b1bec37b0167/charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl (158 kB)
+Collecting cryptography>=36.0.0 (from pdfminer.six==20260107->pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c5/69/0572c77dbace6fef72f33755bd52ea399c71367250d366237f8691826b9e/cryptography-48.0.1-cp311-abi3-win_amd64.whl (3.8 MB)
+     ---------------------------------------- 3.8/3.8 MB 313.8 kB/s  0:00:11
+Collecting urllib3<3,>=1.26 (from requests<3,>=2.32->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl (131 kB)
+Collecting shellingham>=1.3.0 (from typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Collecting rich>=13.8.0 (from typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl (310 kB)
+Collecting annotated-doc>=0.0.2 (from typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1e/d3/26bf1008eb3d2daa8ef4cacc7f3bfdc11818d111f7e2d0201bc6e3b49d45/annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Collecting cffi>=2.0.0 (from cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/37/18/6519e1ee6f5a1e579e04b9ddb6f1676c17368a7aba48299c3759bbc3c8b3/cffi-2.0.0-cp313-cp313-win_amd64.whl (183 kB)
+Collecting pycparser (from cffi>=2.0.0->cryptography>=36.0.0->pdfminer.six==20260107->pdfplumber<0.12,>=0.11->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl (48 kB)
+Collecting flatbuffers (from onnxruntime!=1.24.0,!=1.24.1,>1.21.0->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Collecting protobuf>=4.25.8 (from onnxruntime!=1.24.0,!=1.24.1,>1.21.0->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/76/5d/683efcd4798e0030c1bab27374fd13a89f7c2515fb1f3123efdfaa5eab57/protobuf-6.33.6-cp310-abi3-win_amd64.whl (437 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl (1.2 MB)
+     ---------------------------------------- 1.2/1.2 MB 156.6 kB/s  0:00:07
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer<0.26.0,>=0.20.0->huggingface-hub<2.0,>=0.20->fastembed==0.9.1->xiaoying-policy-agent==0.1.0->-r requirements.txt (line 1))
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Building wheels for collected packages: xiaoying-policy-agent
+  Building editable for xiaoying-policy-agent (pyproject.toml): started
+  Building editable for xiaoying-policy-agent (pyproject.toml): finished with status 'done'
+  Created wheel for xiaoying-policy-agent: filename=xiaoying_policy_agent-0.1.0-0.editable-py3-none-any.whl size=1725 sha256=e97ad7c05228ee57f87c1d5c6e93407ce3efa22e3aa975bed74c67d2797cc453
+  Stored in directory: C:\Users\Administrator\AppData\Local\Temp\pip-ephem-wheel-cache-7yyesj51\wheels\4f\28\b5\362be4147f958a14108383fc5e58cf678ae55f36ec6b7c7629
+Successfully built xiaoying-policy-agent
+Installing collected packages: flatbuffers, win32-setctime, urllib3, typing-extensions, shellingham, pyyaml, pypdfium2, pygments, pycparser, py-rust-stemmers, protobuf, pillow, packaging, numpy, mmh3, mdurl, idna, hf-xet, h11, fsspec, filelock, colorama, charset-normalizer, certifi, annotated-doc, tqdm, requests, rank-bm25, onnxruntime, markdown-it-py, loguru, httpcore, click, cffi, anyio, rich, httpx, cryptography, typer, pdfminer.six, pdfplumber, huggingface-hub, tokenizers, fastembed, xiaoying-policy-agent
+
+Successfully installed annotated-doc-0.0.4 anyio-4.13.0 certifi-2025.11.12 cffi-2.0.0 charset-normalizer-3.4.7 click-8.4.1 colorama-0.4.6 cryptography-48.0.1 fastembed-0.9.1 filelock-3.29.3 flatbuffers-25.12.19 fsspec-2025.12.0 h11-0.16.0 hf-xet-1.5.2 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-1.19.0 idna-3.18 loguru-0.7.3 markdown-it-py-4.2.0 mdurl-0.1.2 mmh3-5.3.1 numpy-2.4.6 onnxruntime-1.31.1 packaging-24.2 pdfminer.six-20260107 pdfplumber-0.11.10 pillow-12.3.0 protobuf-6.33.6 py-rust-stemmers-0.1.8 pycparser-3.0 pygments-2.20.0 pypdfium2-5.10.1 pyyaml-6.0.3 rank-bm25-0.2.2 requests-2.34.2 rich-15.0.0 shellingham-1.5.4 tokenizers-0.22.2 tqdm-4.68.2 typer-0.25.1 typing-extensions-4.15.0 urllib3-2.7.0 win32-setctime-1.2.0 xiaoying-policy-agent-0.1.0
+
+[notice] A new release of pip is available: 26.0.1 -> 26.2.2
+[notice] To update, run: E:\xiaoying\AItest\work\delivery-venv-r1\Scripts\python.exe -m pip install --upgrade pip

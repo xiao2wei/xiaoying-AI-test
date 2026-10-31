@@ -1,0 +1,160 @@
+{
+  "id": "TEST01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "补贴10万元，科研建设经费工科5万元",
+            "reason": "答案明确表述了工科4年补贴10万元、科研经费5万元"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "reason": "答案明确表述了其他学科5年补贴9万元、科研经费2.7万元"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间≤4年的补贴为10万元",
+            "answer_span": "补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "取得学历学位时间≤4年的科研建设经费工科为5万元",
+            "answer_span": "科研建设经费工科5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "取得学历学位时间≤4年的科研建设经费其他学科为3万元",
+            "answer_span": "其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年的补贴为9万元",
+            "answer_span": "补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年的科研建设经费工科为4.5万元",
+            "answer_span": "工科4.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年的科研建设经费其他学科为2.7万元",
+            "answer_span": "其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote对应行支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "待遇按教师在职读博取得学历学位时间情况兑现",
+            "answer_span": "上述待遇按教师在职读博取得学历学位时间情况兑现",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote支持该事实，且已读文档包含该内容"
+          },
+          {
+            "text": "脱产学习的需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote支持该事实，且已读文档包含该内容"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确、完整回答了问题，引用了正确文档，事实有依据，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:06:16.781669+00:00",
+          "attempt": 1,
+          "prompt_sha256": "19b833bad01c02b472bde9e8ed863f61dbf6eb421f6e145d34455fde4c4fc2f8",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "4d748a1c-e532-4b02-8df4-a82e087612ba",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3126,
+            "completion_tokens": 3974,
+            "total_tokens": 7100,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3006
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1590
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"补贴10万元，科研建设经费工科5万元\",\n      \"reason\": \"答案明确表述了工科4年补贴10万元、科研经费5万元\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"reason\": \"答案明确表述了其他学科5年补贴9万元、科研经费2.7万元\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间≤4年的补贴为10万元\",\n      \"answer_span\": \"补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年的科研建设经费工科为5万元\",\n      \"answer_span\": \"科研建设经费工科5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年的科研建设经费其他学科为3万元\",\n      \"answer_span\": \"其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年的补贴为9万元\",\n      \"answer_span\": \"补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年的科研建设经费工科为4.5万元\",\n      \"answer_span\": \"工科4.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年的科研建设经费其他学科为2.7万元\",\n      \"answer_span\": \"其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote对应行支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"待遇按教师在职读博取得学历学位时间情况兑现\",\n      \"answer_span\": \"上述待遇按教师在职读博取得学历学位时间情况兑现\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote支持该事实，且已读文档包含该内容\"\n    },\n    {\n      \"text\": \"脱产学习的需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote支持该事实，且已读文档包含该内容\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确、完整回答了问题，引用了正确文档，事实有依据，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008951711999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 32.2156
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案正确、完整回答了问题，引用了正确文档，事实有依据，无严重错误。",
+        "source_score_sha256": "81dc4ec7d56a4df9496d18821a6a69e385924bc095d39220b9c4eeb5deac8b31"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "8fb05469fb54631f7ed0c7e1c58a158ac8504bba614d7fc87428423ae504755f"
+}

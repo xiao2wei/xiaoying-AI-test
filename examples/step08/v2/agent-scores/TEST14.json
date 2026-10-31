@@ -1,0 +1,239 @@
+{
+  "id": "TEST14",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "出具一级以上医院有效的病休证明及病历",
+            "reason": "明确表述2020规定要求一级以上医院有效病休证明及病历"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经三甲级以上医院诊断不能正常上班",
+            "reason": "明确表述2023规定要求经三甲级以上医院诊断"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "未明确“三甲级以上”与“一级以上”的衔接关系",
+            "reason": "指出两规定在医院等级上的冲突且未明确衔接，列明差异"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有汇编未提供能裁决该冲突的废止或衔接条款；请提供人事处就该冲突出具的正式解释或衔接说明（含适用对象、生效日期）",
+            "reason": "明确指出不能仅凭日期确定适用并主动请求确认解释"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020规定要求出具一级以上医院有效的病休证明及病历",
+            "answer_span": "出具一级以上医院有效的病休证明及病历",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005第四条原文支持，且该chunk已读，元数据一致"
+          },
+          {
+            "text": "2020规定出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+            "answer_span": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005第四条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2020规定无诊断书视为旷工",
+            "answer_span": "无诊断书视为旷工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005第四条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定要求教职工因病经三甲级以上医院诊断不能正常上班",
+            "answer_span": "经三甲级以上医院诊断不能正常上班",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定每次病假申请时间以医生建议休息天数为准",
+            "answer_span": "每次病假申请时间以医生建议休息天数为准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定请假不超过2个月由所在单位审批并报人事处备案",
+            "answer_span": "请假≤2个月由所在单位审批并报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定请假大于2个月经所在单位同意后报主管校领导批准、人事处备案",
+            "answer_span": "大于2个月经所在单位同意后报主管校领导批准、人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定病假连续≥6个月可申请长期病休",
+            "answer_span": "病假连续≥6个月可申请长期病休",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定恢复工作需三甲级以上医院证明已康复后办理销假",
+            "answer_span": "恢复工作需三甲级以上医院证明已康复后办理销假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009第八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定第十八条明确由人事处负责解释、自发布之日起执行",
+            "answer_span": "明确由人事处负责解释、自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019第十八条原文支持，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定第十八条未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》第四条",
+            "answer_span": "未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》第四条",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019第十八条，该条无废止表述，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定第十八条未明确“三甲级以上”与“一级以上”的衔接关系",
+            "answer_span": "未明确“三甲级以上”与“一级以上”的衔接关系",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019第十八条，该条无衔接表述，且该chunk已读"
+          },
+          {
+            "text": "2023补充规定第十五条允许各单位在本规定基础上结合实际制定本单位教职工考勤管理细则",
+            "answer_span": "允许各单位在本规定基础上结合实际制定本单位教职工考勤管理细则",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C016第十五条原文支持，且该chunk已读"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用2020与2023两个条文，明确列出医院等级差异并指出缺乏废止或衔接条款，未擅自以日期决定适用，而是请求人事处解释或单位细则确认，符合needs_confirmation要求。所有制度事实均有已读原文引用支持。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处就该医院等级冲突出具的正式解释或衔接说明（含适用对象、生效日期）",
+            "所在单位是否依据第十五条制定了要求更高医院等级的考勤管理细则"
+          ],
+          "reason": "答案明确列出所需的官方解释/衔接说明及单位细则确认，而非仅笼统要求补充信息或联系有关部门"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:27:42.921344+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3f4d3e2e556a56f9e281496e5b89473589df8a5cd63b39dfec0077d02b771bd7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "34dab405-f69c-4965-b5e3-9add82abbd8b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4777,
+            "completion_tokens": 5798,
+            "total_tokens": 10575,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5798
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 3753
+          },
+          "content": "",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02926572,
+          "error": "JSONDecodeError",
+          "seconds": 49.996
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:28:32.917686+00:00",
+          "attempt": 2,
+          "prompt_sha256": "3f4d3e2e556a56f9e281496e5b89473589df8a5cd63b39dfec0077d02b771bd7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "91d3a23d-a64b-483c-bbd5-6f0b00b807f2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4777,
+            "completion_tokens": 9201,
+            "total_tokens": 13978,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7415
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 41
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"出具一级以上医院有效的病休证明及病历\",\n      \"reason\": \"明确表述2020规定要求一级以上医院有效病休证明及病历\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"经三甲级以上医院诊断不能正常上班\",\n      \"reason\": \"明确表述2023规定要求经三甲级以上医院诊断\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"未明确“三甲级以上”与“一级以上”的衔接关系\",\n      \"reason\": \"指出两规定在医院等级上的冲突且未明确衔接，列明差异\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有汇编未提供能裁决该冲突的废止或衔接条款；请提供人事处就该冲突出具的正式解释或衔接说明（含适用对象、生效日期）\",\n      \"reason\": \"明确指出不能仅凭日期确定适用并主动请求确认解释\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定要求出具一级以上医院有效的病休证明及病历\",\n      \"answer_span\": \"出具一级以上医院有效的病休证明及病历\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005第四条原文支持，且该chunk已读，元数据一致\"\n    },\n    {\n      \"text\": \"2020规定出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假\",\n      \"answer_span\": \"出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005第四条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2020规定无诊断书视为旷工\",\n      \"answer_span\": \"无诊断书视为旷工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005第四条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定要求教职工因病经三甲级以上医院诊断不能正常上班\",\n      \"answer_span\": \"经三甲级以上医院诊断不能正常上班\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定每次病假申请时间以医生建议休息天数为准\",\n      \"answer_span\": \"每次病假申请时间以医生建议休息天数为准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定请假不超过2个月由所在单位审批并报人事处备案\",\n      \"answer_span\": \"请假≤2个月由所在单位审批并报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定请假大于2个月经所在单位同意后报主管校领导批准、人事处备案\",\n      \"answer_span\": \"大于2个月经所在单位同意后报主管校领导批准、人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定病假连续≥6个月可申请长期病休\",\n      \"answer_span\": \"病假连续≥6个月可申请长期病休\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定恢复工作需三甲级以上医院证明已康复后办理销假\",\n      \"answer_span\": \"恢复工作需三甲级以上医院证明已康复后办理销假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009第八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条明确由人事处负责解释、自发布之日起执行\",\n      \"answer_span\": \"明确由人事处负责解释、自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019第十八条原文支持，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》第四条\",\n      \"answer_span\": \"未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》第四条\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019第十八条，该条无废止表述，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定第十八条未明确“三甲级以上”与“一级以上”的衔接关系\",\n      \"answer_span\": \"未明确“三甲级以上”与“一级以上”的衔接关系\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019第十八条，该条无衔接表述，且该chunk已读\"\n    },\n    {\n      \"text\": \"2023补充规定第十五条允许各单位在本规定基础上结合实际制定本单位教职工考勤管理细则\",\n      \"answer_span\": \"允许各单位在本规定基础上结合实际制定本单位教职工考勤管理细则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C016第十五条原文支持，且该chunk已读\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用2020与2023两个条文，明确列出医院等级差异并指出缺乏废止或衔接条款，未擅自以日期决定适用，而是请求人事处解释或单位细则确认，符合needs_confirmation要求。所有制度事实均有已读原文引用支持。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处就该医院等级冲突出具的正式解释或衔接说明（含适用对象、生效日期）\",\n      \"所在单位是否依据第十五条制定了要求更高医院等级的考勤管理细则\"\n    ],\n    \"reason\": \"答案明确列出所需的官方解释/衔接说明及单位细则确认，而非仅笼统要求补充信息或联系有关部门\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0427416,
+          "seconds": 80.6197
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b2d4c42e500e56add03ca0a789c93da6ffbf42056c1db6b026e01c911eba9732"
+}

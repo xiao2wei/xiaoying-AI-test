@@ -1,0 +1,104 @@
+[
+  {
+    "id": "DEV03",
+    "category": "conflict",
+    "family": "attendance_deadline",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "汇编里教职工考勤统计表到底每月25日还是26日报？请查明不同规定，不能直接认定最新日期自动优先。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "2020规定为26日",
+          "2023补充规定为25日",
+          "列出两方来源",
+          "资料未明示整份替代关系，当前执行口径需人事处确认"
+        ],
+        "evidence_units": [
+          [
+            "D19-C015"
+          ],
+          [
+            "D20-C006"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D19-C015",
+            "doc_id": "D19",
+            "title": "辽宁科技大学教职工考勤与请假管理规定",
+            "article": "第十四条",
+            "version_date": "2020-10-19",
+            "pdf_pages": [
+              170
+            ],
+            "printed_pages": [
+              165
+            ],
+            "text": "第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向\n学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并\n报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。"
+          },
+          {
+            "chunk_id": "D20-C006",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第五条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              172
+            ],
+            "printed_pages": [
+              167
+            ],
+            "text": "第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报\n送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚\n报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n第三章 请假管理"
+          },
+          {
+            "chunk_id": "D20-C019",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              174
+            ],
+            "printed_pages": [
+              169
+            ],
+            "text": "第十八条 本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，\n自发布之日起执行。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "priority_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  }
+]

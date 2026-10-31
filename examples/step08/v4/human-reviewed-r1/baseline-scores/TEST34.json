@@ -1,0 +1,208 @@
+{
+  "id": "TEST34",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "reason": "实际回答明确表达了决定作出前可书面申请撤回，且引用原文支持。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "原申诉人不得以相同理由再行提起申诉",
+            "reason": "实际回答明确表达了撤回后不得以相同理由再提，且引用原文支持。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际claim，引用第十四条原文直接支持，且已读取该条文。"
+          },
+          {
+            "text": "申诉一经撤回，申诉复查即行终止",
+            "answer_span": "申诉一经撤回，申诉复查即行终止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际claim，引用第十四条原文支持，且已读取该条文。"
+          },
+          {
+            "text": "原申诉人不得以相同理由再行提起申诉",
+            "answer_span": "原申诉人不得以相同理由再行提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际claim，引用第十四条原文支持，且已读取该条文。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答直接引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十四条，准确表达了申诉处理决定作出前可书面撤回以及撤回后不得以相同理由再提，引用与已读原文一致，决策和状态均合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:14:43.487902+00:00",
+          "attempt": 1,
+          "prompt_sha256": "76bea65ba69eda74d47234bd1cae04d29e5a78d2bcccdbe3f75c28e77e3ca644",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "8e23d370-6c88-4b21-aa21-7d9fd60466b1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2684,
+            "completion_tokens": 2890,
+            "total_tokens": 5574,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2393
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1532
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"reason\": \"实际回答明确表达了决定作出前可书面申请撤回，且引用原文支持。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"reason\": \"实际回答明确表达了撤回后不得以相同理由再提，且引用原文支持。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际claim，引用第十四条原文直接支持，且已读取该条文。\"\n    },\n    {\n      \"text\": \"申诉一经撤回，申诉复查即行终止\",\n      \"answer_span\": \"申诉一经撤回，申诉复查即行终止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际claim，引用第十四条原文支持，且已读取该条文。\"\n    },\n    {\n      \"text\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"answer_span\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际claim，引用第十四条原文支持，且已读取该条文。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答直接引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十四条，准确表达了申诉处理决定作出前可书面撤回以及撤回后不得以相同理由再提，引用与已读原文一致，决策和状态均合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006758664,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 25.5482
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST34--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "8bc511ed55584a79eefe6551fbe8cc9441930787a2cc0d92cc3b387ac9b8eae5",
+        "run_sha256": "bceac1d682e19da2e083845294be78831d6f426c168aa75df00d5b8bd6a08f46",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "reason": "明确表达可委托1-2位校内教职工代理"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "reason": "明确表达重要文书本人签名"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1-2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D24-C013原文包含该规定，且actually_read已读该chunk，支持事实"
+          },
+          {
+            "text": "委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。",
+            "answer_span": "委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D24-C013原文包含该规定，且actually_read已读该chunk，支持事实"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖了两个必需要点，引用并读取了相应规定，证据充分，未发现错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:14:51.638401+00:00",
+          "attempt": 1,
+          "prompt_sha256": "53618ddc0f61efedfa49b715a417bf5f971b0d3f7c0c8e71aab853c762718c51",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "7f5d46a6-d103-42f5-8d7e-913166be7fe3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3186,
+            "completion_tokens": 1538,
+            "total_tokens": 4724,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1089
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2162
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"reason\": \"明确表达可委托1-2位校内教职工代理\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"reason\": \"明确表达重要文书本人签名\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1-2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D24-C013原文包含该规定，且actually_read已读该chunk，支持事实\"\n    },\n    {\n      \"text\": \"委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。\",\n      \"answer_span\": \"委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D24-C013原文包含该规定，且actually_read已读该chunk，支持事实\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖了两个必需要点，引用并读取了相应规定，证据充分，未发现错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004494688,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 13.6484
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST34--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "8bc511ed55584a79eefe6551fbe8cc9441930787a2cc0d92cc3b387ac9b8eae5",
+        "run_sha256": "bceac1d682e19da2e083845294be78831d6f426c168aa75df00d5b8bd6a08f46",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "bceac1d682e19da2e083845294be78831d6f426c168aa75df00d5b8bd6a08f46"
+}

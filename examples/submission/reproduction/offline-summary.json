@@ -1,0 +1,22 @@
+{
+  "mode": "OFFLINE_MOCK",
+  "real_api_requests": 0,
+  "model_quality_evidence": false,
+  "cases": [
+    {
+      "case": "normal",
+      "status": "answered",
+      "tool_calls": 2
+    },
+    {
+      "case": "insufficient",
+      "status": "insufficient_evidence",
+      "tool_calls": 1
+    },
+    {
+      "case": "tool_failure",
+      "status": "limit_reached",
+      "tool_calls": 2
+    }
+  ]
+}

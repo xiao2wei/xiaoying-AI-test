@@ -1,0 +1,49 @@
+{
+  "id": "TEST17",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:47.147983+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f39e28226b7a468e5b2181a87c2505979ccc965af4098184624c23eb5c539122",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e15d7fca-53a8-4f56-adf4-b09750567158",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2707,
+            "completion_tokens": 8699,
+            "total_tokens": 11406,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7877
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1811
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉。\",\n      \"reason\": \"实际回答引用了正文第二十一条原文，明确写出向学校的上一级主管机关提出书面申诉。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"备注栏却写“可以向浙江省教育厅提出书面申诉”\",\n      \"reason\": \"实际回答引用了附表备注栏原文，明确写出向浙江省教育厅提出书面申诉。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"与正文“学校的上一级主管机关”不一致\",\n      \"reason\": \"实际回答明确指出附表备注与正文表述不一致，并说明浙江省教育厅与辽宁科技大学不符。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答未将附表浙江省教育厅确认为有效机关，也未改写为辽宁省教育厅，而是指出不一致并要求核实，符合该要点。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答仅建议向制度发布部门核实，未明确要求工会或申诉委员会核实，缺少该指定动作。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"正文第二十一条规定教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉。\",\n      \"answer_span\": \"教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该引用来自D24-C022，quote与正文一致，且实际已读原文支持。\"\n    },\n    {\n      \"text\": \"附表备注栏写“可以向浙江省教育厅提出书面申诉”。\",\n      \"answer_span\": \"备注栏却写“可以向浙江省教育厅提出书面申诉”\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该引用来自D24-C029，quote与附表备注一致，且实际已读原文支持。\"\n    },\n    {\n      \"text\": \"正文与附表不一致。\",\n      \"answer_span\": \"正文与附表不一致\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实关联D24-C022与D24-C029两个引用，二者内容不同，且实际已读原文支持不一致判断。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"擅自消解冲突：答案在正文与附表冲突且上级主管机关具体名称未明确的情况下，未经核实即断言应以正文为准、附表为明显文本错误。\"\n  ],\n  \"reason\": \"实际答案识别了正文与附表差异，但未按要求请工会或申诉委员会核实，且在冲突未解决时自行确定以正文为准，属于擅自消解冲突，不符合needs_confirmation状态；工具检索与读取动作合理，但处理结论不当。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"该校主管部门或上级主管机关的具体名称\",\n      \"对应文件依据\"\n    ],\n    \"reason\": \"答案明确要求用户提供主管部门/上级主管机关的具体名称及对应文件依据，属于明确列出所缺信息和文件类型，不是单纯让用户自行查询或仅说无法回答。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03802128,
+          "seconds": 86.6363
+        }
+      ],
+      "judge_error": "ValueError:通过的要点缺少实际答案定位",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "0b17c17679affe90a163b4f38d687b2aa11e3a5e8e4c279b50ef488c10559b84"
+}

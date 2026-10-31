@@ -1,0 +1,167 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "reason": "实际答案明确表述项目起始时间从学校审批立项时间算起，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "reason": "实际答案明确表述最长执行期限一般不超过4年。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "reason": "实际答案明确表述期满后结余由学校统筹管理。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起",
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008条款准确支持，已读原文内容一致。"
+          },
+          {
+            "text": "结束时间可根据研究工作需要自行设定",
+            "answer_span": "结束时间可根据研究工作需要自行设定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008条款包含该内容，已读原文支持。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年",
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008条款准确支持，已读原文一致。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008条款准确支持，已读原文一致。"
+          },
+          {
+            "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次",
+            "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C026条款准确支持，已读原文一致。"
+          },
+          {
+            "text": "期限不超过2年",
+            "answer_span": "期限不超过2年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C026条款包含延期期限不超过2年，已读原文支持。"
+          },
+          {
+            "text": "须在项目原执行期结束前2个月提出申请",
+            "answer_span": "并须在项目原执行期结束前2个月提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C026条款包含该申请时间要求，已读原文支持。"
+          },
+          {
+            "text": "由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "answer_span": "由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C026条款包含该审批程序，已读原文支持。"
+          },
+          {
+            "text": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施",
+            "answer_span": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C024条款准确支持，已读原文一致。"
+          },
+          {
+            "text": "结余经费交由学校统筹管理",
+            "answer_span": "结余经费交由学校统筹管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C024条款包含该处理方式，已读原文支持。"
+          },
+          {
+            "text": "已使用的经费根据具体情况酌情处理",
+            "answer_span": "已使用的经费根据具体情况酌情处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C024条款包含该处理方式，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确覆盖三个必需要点，核心依据D03-C008条款支持；额外补充的延期和负责人变更条款均引自已读文档D03-C026和D03-C024，事实准确、引用充分，无错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:24:52.785297+00:00",
+          "attempt": 1,
+          "prompt_sha256": "de726c72c15098b3622482ff58f8fc314f96fcbf28900610404bdbc13d31fe72",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "3ab37033-5909-4129-b20e-188a44181b70",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2467,
+            "completion_tokens": 6583,
+            "total_tokens": 9050,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5388
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 35
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"reason\": \"实际答案明确表述项目起始时间从学校审批立项时间算起，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"reason\": \"实际答案明确表述最长执行期限一般不超过4年。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"reason\": \"实际答案明确表述期满后结余由学校统筹管理。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008条款准确支持，已读原文内容一致。\"\n    },\n    {\n      \"text\": \"结束时间可根据研究工作需要自行设定\",\n      \"answer_span\": \"结束时间可根据研究工作需要自行设定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008条款包含该内容，已读原文支持。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008条款准确支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008条款准确支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次\",\n      \"answer_span\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C026条款准确支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"期限不超过2年\",\n      \"answer_span\": \"期限不超过2年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C026条款包含延期期限不超过2年，已读原文支持。\"\n    },\n    {\n      \"text\": \"须在项目原执行期结束前2个月提出申请\",\n      \"answer_span\": \"并须在项目原执行期结束前2个月提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C026条款包含该申请时间要求，已读原文支持。\"\n    },\n    {\n      \"text\": \"由所在二级教学（科研）机构签署意见后，报人事处审批\",\n      \"answer_span\": \"由所在二级教学（科研）机构签署意见后，报人事处审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C026条款包含该审批程序，已读原文支持。\"\n    },\n    {\n      \"text\": \"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施\",\n      \"answer_span\": \"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C024条款准确支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"结余经费交由学校统筹管理\",\n      \"answer_span\": \"结余经费交由学校统筹管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C024条款包含该处理方式，已读原文支持。\"\n    },\n    {\n      \"text\": \"已使用的经费根据具体情况酌情处理\",\n      \"answer_span\": \"已使用的经费根据具体情况酌情处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C024条款包含该处理方式，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确覆盖三个必需要点，核心依据D03-C008条款支持；额外补充的延期和负责人变更条款均引自已读文档D03-C026和D03-C024，事实准确、引用充分，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02932512,
+          "seconds": 59.4178
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step06\\agent-scores-v5\\DEV01.json"
+    }
+  ],
+  "pass": true,
+  "run_sha256": "897446bdf26e681c4db1482b84e30884bfc015058eae95208b36f1e3fe59d6f4",
+  "revalidation": "只修正连续跨claim原句定位的程序检查；实际AI判断内容与调用ID不变"
+}

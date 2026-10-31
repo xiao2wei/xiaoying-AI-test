@@ -1,0 +1,82 @@
+{
+  "created_at": "2026-10-31T03:48:15.876772+00:00",
+  "approval": "examples/external-status/reuse-approval-20261031.json",
+  "all_groups": 12,
+  "fresh_groups": 3,
+  "records": [
+    {
+      "id": "DEV01",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV01.json",
+      "sha256": "070e40d0e2d7b1544a9126ff3be3164ae5fbdcccdee33a65f5fc0dd7ce9879b3"
+    },
+    {
+      "id": "DEV02",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV02.json",
+      "sha256": "f11152f423dc683cbe8f5d9e14ecbbb59f1233723661cf9457fe23cf9f6190c2"
+    },
+    {
+      "id": "DEV03",
+      "origin": "fresh_real_api",
+      "source": "examples\\step07\\format-dev-v13\\fresh-runs\\DEV03.json",
+      "sha256": "765b36872a1aa93275ff31446c00a10b3d9a2688b82d2110a2d4d3f246c637b6"
+    },
+    {
+      "id": "DEV04",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV04.json",
+      "sha256": "4b5fc20b9ed534949574d59e65fef74f64635117c8b694f539274eec269e4466"
+    },
+    {
+      "id": "DEV05",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV05.json",
+      "sha256": "f568b3f8dbb8d5718d078d019ae1481f1aa5f45b1d91e805da4f525b00cf5db0"
+    },
+    {
+      "id": "DEV06",
+      "origin": "fresh_real_api",
+      "source": "examples\\step07\\format-dev-v13\\fresh-runs\\DEV06.json",
+      "sha256": "a9aac3b361a1df125521e839dde2cd898766966aa54311853131f3c77659ffa4"
+    },
+    {
+      "id": "DEV07",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV07.json",
+      "sha256": "f261be0fec6e9e65fb6ec9309eed8d807256f98fb7e5fda716a560d1f9e5d9dd"
+    },
+    {
+      "id": "DEV08",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV08.json",
+      "sha256": "9b67da792a921d2f1dede9b18a5d5232be2e08a7ef631af7130a6b709aff1be7"
+    },
+    {
+      "id": "DEV09",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV09.json",
+      "sha256": "fdadd259af82b302545774d5a5f0ed37bb32b567c2700903a1cd5618cfa1213b"
+    },
+    {
+      "id": "DEV10",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV10.json",
+      "sha256": "639b4421f0b29c4d4112baf589105f6ca17616fb93ff9ed57d33aa88cbf12021"
+    },
+    {
+      "id": "DEV11",
+      "origin": "reused_real_record",
+      "source": "examples\\step07\\agent-dev-v9\\DEV11.json",
+      "sha256": "8175600bc1d5794fd267614b745b9470b50f1386a8785abe1c2a4183e6ca70d7"
+    },
+    {
+      "id": "DEV12",
+      "origin": "fresh_real_api",
+      "source": "examples\\step07\\format-dev-v13\\fresh-runs\\DEV12.json",
+      "sha256": "5f9efb27f3e0457b8132cac2c93551bbe19791697ac29f34fdf033e7767252fc"
+    }
+  ],
+  "no_best_of_selection": true,
+  "timing": "复用记录保留原真实耗时，新增记录使用新真实耗时；不是同一时段完整新测"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "TEST03",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "30个工作日内",
+            "reason": "实际答案明确提到30个工作日内提出申诉，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "障碍消除后10个工作日内",
+            "reason": "实际答案明确提到障碍消除后10个工作日内可以提起申诉。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期不再受理",
+            "reason": "实际答案明确提到逾期不再受理。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉",
+            "answer_span": "30个工作日内向申诉处理委员会提出申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用D24-C012，引用内容包含该30个工作日时限；已读原文也包含该句。"
+          },
+          {
+            "text": "因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉",
+            "answer_span": "障碍消除后10个工作日内，可以向申诉处理委员会提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用D24-C012，引用内容包含10个工作日时限；已读原文包含该句。"
+          },
+          {
+            "text": "逾期不再受理",
+            "answer_span": "逾期不再受理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用D24-C012，引用内容末尾包含该表述；已读原文包含该表述。"
+          },
+          {
+            "text": "上述期限规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》，适用于教职工申诉",
+            "answer_span": "上述期限规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》，适用于教职工申诉",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该陈述来自gaps，未明确标注引用，但已读文档标题为教职工校内申诉处理办法，可支持适用对象为教职工。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确完整地回答了问题，三个要点均有明确表达并得到已读来源支持，引用的D24-C012与原文一致，gaps中的适用范围说明合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.178619+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f7c0e795f375b957f77337bad077c9ecdf9f666bf926420ee0c872f7cc6246ed",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "61359218-4a98-433e-a2b0-34760b6055e8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2677,
+            "completion_tokens": 4267,
+            "total_tokens": 6944,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3773
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1781
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"30个工作日内\",\"reason\":\"实际答案明确提到30个工作日内提出申诉，与要点一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"障碍消除后10个工作日内\",\"reason\":\"实际答案明确提到障碍消除后10个工作日内可以提起申诉。\"},{\"index\":2,\"met\":true,\"answer_span\":\"逾期不再受理\",\"reason\":\"实际答案明确提到逾期不再受理。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出申诉\",\"answer_span\":\"30个工作日内向申诉处理委员会提出申诉\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际答案引用D24-C012，引用内容包含该30个工作日时限；已读原文也包含该句。\"},{\"text\":\"因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉\",\"answer_span\":\"障碍消除后10个工作日内，可以向申诉处理委员会提起申诉\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际答案引用D24-C012，引用内容包含10个工作日时限；已读原文包含该句。\"},{\"text\":\"逾期不再受理\",\"answer_span\":\"逾期不再受理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际答案引用D24-C012，引用内容末尾包含该表述；已读原文包含该表述。\"},{\"text\":\"上述期限规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》，适用于教职工申诉\",\"answer_span\":\"上述期限规定出自《辽宁科技大学教职工校内申诉处理暂行办法（修订）》，适用于教职工申诉\",\"cited\":false,\"citation_supported\":false,\"supported_by_read\":true,\"reason\":\"该陈述来自gaps，未明确标注引用，但已读文档标题为教职工校内申诉处理办法，可支持适用对象为教职工。\"}],\"serious_errors\":[],\"reason\":\"实际答案准确完整地回答了问题，三个要点均有明确表达并得到已读来源支持，引用的D24-C012与原文一致，gaps中的适用范围说明合理，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.020430959999999998,
+          "seconds": 39.8323
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "42f62b8ce82087f77b6df726914a4398e38dbfb1726be9019fe3ab6de896f786"
+}

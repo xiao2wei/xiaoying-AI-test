@@ -1,0 +1,135 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "提前一个月向所在学院提出书面申请",
+            "reason": "实际答案明确表达了提前一个月向所在学院提出书面申请，与要点语义一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "实际答案明确表达了做好学生档案资料及相关工作的交接，覆盖要点要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请",
+            "answer_span": "申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实与引用文本一致，且实际读取的 D08-C016 条款支持该内容。"
+          },
+          {
+            "text": "做好学生档案资料及相关工作的交接",
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实与引用文本一致，且实际读取的 D08-C016 条款支持该内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确、完整回答了问题，两个必要要点均已表达并有有效引用和读取记录支持，检索与阅读动作合理，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:19:59.298471+00:00",
+          "attempt": 1,
+          "prompt_sha256": "52630600492b8e678d85ad30684ddf4f3e8c36aea76eac152da8cfe34a4283ea",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "8d46c8e2-6767-462e-9c26-498296dd73c9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1362,
+            "completion_tokens": 1101,
+            "total_tokens": 2463,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 728
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 594
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"提前一个月向所在学院提出书面申请\",\n      \"reason\": \"实际答案明确表达了提前一个月向所在学院提出书面申请，与要点语义一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"实际答案明确表达了做好学生档案资料及相关工作的交接，覆盖要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请\",\n      \"answer_span\": \"申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实与引用文本一致，且实际读取的 D08-C016 条款支持该内容。\"\n    },\n    {\n      \"text\": \"做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实与引用文本一致，且实际读取的 D08-C016 条款支持该内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确、完整回答了问题，两个必要要点均已表达并有有效引用和读取记录支持，检索与阅读动作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006157800000000001,
+          "seconds": 12.6399
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:20:11.944656+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6965d90295d0fa008e82e4ef2e3f8b6088301a5979012c89c305a948f57a75cb",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1724
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:20:52.117435+00:00",
+          "attempt": 2,
+          "prompt_sha256": "6965d90295d0fa008e82e4ef2e3f8b6088301a5979012c89c305a948f57a75cb",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "05853545-3ac5-44b9-bb37-f0a95ed99d2d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1586,
+            "completion_tokens": 2356,
+            "total_tokens": 3942,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1775
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 50
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申请不再担任兼职辅导员，应提前一个月提出。\\n告知对象是所在学院，且必须采用书面申请形式，口头说明不够。\",\n      \"reason\": \"实际答案明确表达了提前一个月、向所在学院、书面申请三要素。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"提出申请的同时还应做好学生档案资料及相关工作的交接。\",\n      \"reason\": \"实际答案明确表达了做好学生档案资料及相关工作交接的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员应提前一个月提出\",\n      \"answer_span\": \"申请不再担任兼职辅导员，应提前一个月提出。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确含此内容，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"告知对象是所在学院\",\n      \"answer_span\": \"告知对象是所在学院\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确要求向所在学院提出，支持该事实。\"\n    },\n    {\n      \"text\": \"必须采用书面申请形式\",\n      \"answer_span\": \"必须采用书面申请形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确为书面申请，支持该事实。\"\n    },\n    {\n      \"text\": \"口头说明不够\",\n      \"answer_span\": \"口头说明不够\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"规则要求书面申请，故口头说明不满足要求，引用可支持。\"\n    },\n    {\n      \"text\": \"提出申请的同时还应做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"提出申请的同时还应做好学生档案资料及相关工作的交接。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确要求做好学生档案资料及相关工作的交接，实际已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答完整覆盖了全部要求要点，引用准确且有已读原文支持，未发现严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011423280000000001,
+          "seconds": 26.3777
+        }
+      ],
+      "judge_error": "ValueError:通过的要点缺少实际答案定位",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "5c97f041ae8a17233d7609370a628af99ab110208075b2a97c1dc501ba2afe28"
+}

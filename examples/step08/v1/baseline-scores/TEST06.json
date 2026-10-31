@@ -1,0 +1,92 @@
+{
+  "id": "TEST06",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "须有三分之二以上成员参加",
+            "reason": "实际答案明确表述了出席要求：申诉处理委员会评议申诉案件须有三分之二以上成员参加，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "须经出席委员三分之二以上通过方为有效",
+            "reason": "实际答案明确表述了表决比例要求：表决须经出席委员三分之二以上通过方为有效，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "辽宁科技大学教职工校内申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+            "answer_span": "辽宁科技大学教职工校内申诉处理委员会评议申诉案件，须有三分之二以上成员参加。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实被引用到D24-C019，引用文本包含'须有三分之二以上成员参加'，且实际已读D24-C019支持该事实。"
+          },
+          {
+            "text": "申诉处理委员会的表决须经出席委员三分之二以上通过方为有效",
+            "answer_span": "申诉处理委员会的表决须经出席委员三分之二以上通过方为有效。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实被引用到D24-C019，引用文本包含'表决须经出席委员三分之二以上通过方为有效'，且实际已读D24-C019支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案完整涵盖两个必需要点，引用准确且实际读取材料支持所述制度事实，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.218860+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d6c8f25ab1a2ab65e56841a6a0179ffe133f169b1c08e0fa1b893eab70469dc3",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e06e80d4-5a1e-4a8c-94f6-0d394885ebbc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2548,
+            "completion_tokens": 2544,
+            "total_tokens": 5092,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2098
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1652
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"须有三分之二以上成员参加\",\n      \"reason\": \"实际答案明确表述了出席要求：申诉处理委员会评议申诉案件须有三分之二以上成员参加，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"须经出席委员三分之二以上通过方为有效\",\n      \"reason\": \"实际答案明确表述了表决比例要求：表决须经出席委员三分之二以上通过方为有效，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学教职工校内申诉处理委员会评议申诉案件须有三分之二以上成员参加\",\n      \"answer_span\": \"辽宁科技大学教职工校内申诉处理委员会评议申诉案件，须有三分之二以上成员参加。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实被引用到D24-C019，引用文本包含'须有三分之二以上成员参加'，且实际已读D24-C019支持该事实。\"\n    },\n    {\n      \"text\": \"申诉处理委员会的表决须经出席委员三分之二以上通过方为有效\",\n      \"answer_span\": \"申诉处理委员会的表决须经出席委员三分之二以上通过方为有效。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实被引用到D24-C019，引用文本包含'表决须经出席委员三分之二以上通过方为有效'，且实际已读D24-C019支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案完整涵盖两个必需要点，引用准确且实际读取材料支持所述制度事实，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.013437600000000001,
+          "seconds": 22.1379
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "669394f714352cb7f6178ff3e607b2c9bee2f54c57165767b6923ba1e5bccfae"
+}

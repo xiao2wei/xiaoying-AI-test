@@ -1,0 +1,113 @@
+{
+  "id": "TEST01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师工科学科取得学历学位时间≤4年，补贴10万元，科研建设经费5万元。",
+            "reason": "答案明确给出了工科学科在≤4年（恰好4年落入此区间）的补贴10万元和科研建设经费5万元，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费2.7万元。",
+            "reason": "答案明确给出了其他学科在＞4年且≤5年（恰好5年落入此区间）的补贴9万元和科研建设经费2.7万元，符合要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师工科学科取得学历学位时间≤4年，补贴10万元",
+            "answer_span": "教师工科学科取得学历学位时间≤4年，补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含表格第一行“≤4 | 10”，实际已读原文D01-C011支持该说法。"
+          },
+          {
+            "text": "教师工科学科取得学历学位时间≤4年，科研建设经费5万元",
+            "answer_span": "科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“工科5”，实际已读原文D01-C011支持工科科研建设经费5万元，且条件≤4与原文一致。"
+          },
+          {
+            "text": "教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元",
+            "answer_span": "教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含表格第二行“＞4，≤5 | 9”，实际已读原文D01-C011支持该说法。"
+          },
+          {
+            "text": "教师其他学科取得学历学位时间＞4年且≤5年，科研建设经费2.7万元",
+            "answer_span": "科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“其他学科2.7”，实际已读原文D01-C011支持其他学科科研建设经费2.7万元，且条件＞4且≤5与原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了问题，两个要点均明确表达，使用了正确的2023年制度版本并提供了可靠的引用，实际已读原文支持所有事实，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:50:29.039167+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4b366340b747067ad34f30e404a7ee0e54a867c6b259e40e65f1c52503b7139e",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b4ed2293-f6f5-4905-b832-12aa770c975c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4245,
+            "completion_tokens": 3649,
+            "total_tokens": 7894,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2952
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2709
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师工科学科取得学历学位时间≤4年，补贴10万元，科研建设经费5万元。\",\n      \"reason\": \"答案明确给出了工科学科在≤4年（恰好4年落入此区间）的补贴10万元和科研建设经费5万元，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费2.7万元。\",\n      \"reason\": \"答案明确给出了其他学科在＞4年且≤5年（恰好5年落入此区间）的补贴9万元和科研建设经费2.7万元，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师工科学科取得学历学位时间≤4年，补贴10万元\",\n      \"answer_span\": \"教师工科学科取得学历学位时间≤4年，补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含表格第一行“≤4 | 10”，实际已读原文D01-C011支持该说法。\"\n    },\n    {\n      \"text\": \"教师工科学科取得学历学位时间≤4年，科研建设经费5万元\",\n      \"answer_span\": \"科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“工科5”，实际已读原文D01-C011支持工科科研建设经费5万元，且条件≤4与原文一致。\"\n    },\n    {\n      \"text\": \"教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元\",\n      \"answer_span\": \"教师其他学科取得学历学位时间＞4年且≤5年，补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含表格第二行“＞4，≤5 | 9”，实际已读原文D01-C011支持该说法。\"\n    },\n    {\n      \"text\": \"教师其他学科取得学历学位时间＞4年且≤5年，科研建设经费2.7万元\",\n      \"answer_span\": \"科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“其他学科2.7”，实际已读原文D01-C011支持其他学科科研建设经费2.7万元，且条件＞4且≤5与原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，两个要点均明确表达，使用了正确的2023年制度版本并提供了可靠的引用，实际已读原文支持所有事实，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.018093504,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 34.7637
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "151b87e5d13d547cceed5a596eae9855aa83966271a929a9cc6eefd697bb6590"
+}

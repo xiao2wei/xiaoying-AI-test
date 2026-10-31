@@ -1,0 +1,220 @@
+{
+  "id": "TEST26",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "reason": "实际回答明确表达了再次报考须重新履行申报程序，与要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "answer_span": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用第十四条，引文与该规则完全一致；系统已读取的D01-C015也包含相同条文，支持充分。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确命中所要求要点，引用与已读资料一致，状态与决策均合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:06.702551+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e2f33250ba9ae7ffd1c014ec10de1fbd9824dc55d2c0d5bb7c9cef617449f7b9",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "f77e9f6e-7402-44e5-9d27-959d20f24841",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2328,
+            "completion_tokens": 1095,
+            "total_tokens": 3423,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 834
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1432
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\n      \"reason\": \"实际回答明确表达了再次报考须重新履行申报程序，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用第十四条，引文与该规则完全一致；系统已读取的D01-C015也包含相同条文，支持充分。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确命中所要求要点，引用与已读资料一致，状态与决策均合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00740916,
+          "seconds": 10.5429
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "再次报考时应重新履行申报程序，因此今年需要重新走审批流程。",
+            "reason": "该句明确表达再次报考须重新履行申报程序，语义与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未被录取，再次报考时应重新履行申报程序",
+            "answer_span": "教师经学校批准报考博士，报考当年未被录取，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C015第十四条，引用文本与事实完全一致；已读原文包含该条款。"
+          },
+          {
+            "text": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "answer_span": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。"
+          },
+          {
+            "text": "所在单位经党政联席会议研究签署意见后报人事处审核并公示",
+            "answer_span": "所在单位经党政联席会议研究签署意见后报人事处审核并公示",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。"
+          },
+          {
+            "text": "人事处审核合格后出具同意报考证明",
+            "answer_span": "人事处审核合格后出具同意报考证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。"
+          },
+          {
+            "text": "申请人与人事处签订《同意报考协议书》后报名参加考试",
+            "answer_span": "申请人与人事处签订《同意报考协议书》后报名参加考试",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。"
+          },
+          {
+            "text": "申请人属于我校事业编制教师",
+            "answer_span": "申请人属于我校事业编制教师",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未提供引用，但已读D01-C005第四条包含该条件。"
+          },
+          {
+            "text": "年龄一般不超过40周岁",
+            "answer_span": "年龄一般不超过40周岁",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未提供引用，但已读D01-C005第四条包含该条件。"
+          },
+          {
+            "text": "近3年年度考核均为合格以上（新入职教师试用期满并考核合格）",
+            "answer_span": "近3年年度考核均为合格以上（新入职教师试用期满并考核合格）",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未提供引用，但已读D01-C005第四条包含该条件。"
+          },
+          {
+            "text": "报考专业满足所在学科建设需要",
+            "answer_span": "报考专业满足所在学科建设需要",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未提供引用，但已读D01-C005第四条包含该条件。"
+          },
+          {
+            "text": "与现从事专业或工作领域高度一致",
+            "answer_span": "与现从事专业或工作领域高度一致",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "未提供引用，但已读D01-C005第四条包含该条件。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用第十四条，明确要求再次报考须重新履行申报程序，并补充了申请流程和条件，所有事实均获已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:17.260844+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fbb184df18bc2d0f80173ecc0e87f3c7c8ae42fe2acb80f7ea8e180c6c109bee",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "415a3302-17d2-41a6-ae50-0a5e929433d1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2815,
+            "completion_tokens": 6452,
+            "total_tokens": 9267,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5405
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1919
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序，因此今年需要重新走审批流程。\",\n      \"reason\": \"该句明确表达再次报考须重新履行申报程序，语义与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，报考当年未被录取，再次报考时应重新履行申报程序\",\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未被录取，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C015第十四条，引用文本与事实完全一致；已读原文包含该条款。\"\n    },\n    {\n      \"text\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"answer_span\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。\"\n    },\n    {\n      \"text\": \"所在单位经党政联席会议研究签署意见后报人事处审核并公示\",\n      \"answer_span\": \"所在单位经党政联席会议研究签署意见后报人事处审核并公示\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。\"\n    },\n    {\n      \"text\": \"人事处审核合格后出具同意报考证明\",\n      \"answer_span\": \"人事处审核合格后出具同意报考证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。\"\n    },\n    {\n      \"text\": \"申请人与人事处签订《同意报考协议书》后报名参加考试\",\n      \"answer_span\": \"申请人与人事处签订《同意报考协议书》后报名参加考试\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条，引用文本包含该步骤；已读原文包含该条款。\"\n    },\n    {\n      \"text\": \"申请人属于我校事业编制教师\",\n      \"answer_span\": \"申请人属于我校事业编制教师\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未提供引用，但已读D01-C005第四条包含该条件。\"\n    },\n    {\n      \"text\": \"年龄一般不超过40周岁\",\n      \"answer_span\": \"年龄一般不超过40周岁\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未提供引用，但已读D01-C005第四条包含该条件。\"\n    },\n    {\n      \"text\": \"近3年年度考核均为合格以上（新入职教师试用期满并考核合格）\",\n      \"answer_span\": \"近3年年度考核均为合格以上（新入职教师试用期满并考核合格）\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未提供引用，但已读D01-C005第四条包含该条件。\"\n    },\n    {\n      \"text\": \"报考专业满足所在学科建设需要\",\n      \"answer_span\": \"报考专业满足所在学科建设需要\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未提供引用，但已读D01-C005第四条包含该条件。\"\n    },\n    {\n      \"text\": \"与现从事专业或工作领域高度一致\",\n      \"answer_span\": \"与现从事专业或工作领域高度一致\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"未提供引用，但已读D01-C005第四条包含该条件。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用第十四条，明确要求再次报考须重新履行申报程序，并补充了申请流程和条件，所有事实均获已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02926572,
+          "seconds": 59.3772
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "dfaeb9101b5c900b2cd223b1b8300ca62d7080d19bed11ec03dd9ebb600c2eb2"
+}

@@ -1,0 +1,192 @@
+{
+  "id": "TEST35",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "经所在单位同意后，报主管校领导批准、人事处备案",
+            "reason": "实际答案明确说明病假大于2个月经所在单位同意后，报主管校领导批准、人事处备案，与要点语义等价。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。",
+            "answer_span": "请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实明确关联引用，引用句子完全支持该事实，实际已读原文也包含相同规定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "总评：实际答案准确回答了2023补充规定下病假超过2个月的批准备案流程，引用和已读原文均支持，要点全部满足，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:47.103320+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e56280b0505dfb8bbbe7b14df0faacf7bea2ab15380010d749c844422acb680b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.153
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:47.256602+00:00",
+          "attempt": 2,
+          "prompt_sha256": "e56280b0505dfb8bbbe7b14df0faacf7bea2ab15380010d749c844422acb680b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c72086b9-89bb-44df-881b-b7e82168508f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2079,
+            "completion_tokens": 2345,
+            "total_tokens": 4424,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2064
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1183
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"经所在单位同意后，报主管校领导批准、人事处备案\",\n      \"reason\": \"实际答案明确说明病假大于2个月经所在单位同意后，报主管校领导批准、人事处备案，与要点语义等价。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。\",\n      \"answer_span\": \"请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用，引用句子完全支持该事实，实际已读原文也包含相同规定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"总评：实际答案准确回答了2023补充规定下病假超过2个月的批准备案流程，引用和已读原文均支持，要点全部满足，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012030480000000001,
+          "seconds": 22.2704
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "病假连续≥6个月，可申请长期病休手续",
+            "reason": "实际回答明确覆盖连续≥6个月可申请长期病休，并引用2023年补充规定第八条。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明",
+            "reason": "实际回答明确说明每半年到三甲级以上医院复查并由医院出具不能工作诊断证明，覆盖复查频率和证明要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "病假连续≥6个月，可申请长期病休手续",
+            "answer_span": "病假连续≥6个月，可申请长期病休手续",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际引用D20-C009中的对应句，实际已读D20第八条完全支持该事实。"
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句包含每半年及三甲级以上医院条件，实际已读D20-C009支持。"
+          },
+          {
+            "text": "由医院出具不能工作诊断证明",
+            "answer_span": "由医院出具不能工作诊断证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际引用句包含该证明要求，已读原文支持。"
+          },
+          {
+            "text": "继续办理请假手续",
+            "answer_span": "继续办理请假手续",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际引用句包含继续办理请假手续，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确覆盖两个必需要点，事实均有D20-C009引用且已读原文支持；工具搜索并读取正确 chunk，决策合理，未发现无依据陈述或严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:19:09.541660+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f372d6c6c39d6126583d3ea72fa815e42258504614159a612df61a30aa28fb05",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c60a5f8d-2f05-4cec-82a8-cd9e52e330ef",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2456,
+            "completion_tokens": 4850,
+            "total_tokens": 7306,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4276
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1560
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"reason\": \"实际回答明确覆盖连续≥6个月可申请长期病休，并引用2023年补充规定第八条。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明\",\n      \"reason\": \"实际回答明确说明每半年到三甲级以上医院复查并由医院出具不能工作诊断证明，覆盖复查频率和证明要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"answer_span\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用D20-C009中的对应句，实际已读D20第八条完全支持该事实。\"\n    },\n    {\n      \"text\": \"长期病休人员需每半年到三甲级以上医院进行一次复查\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句包含每半年及三甲级以上医院条件，实际已读D20-C009支持。\"\n    },\n    {\n      \"text\": \"由医院出具不能工作诊断证明\",\n      \"answer_span\": \"由医院出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用句包含该证明要求，已读原文支持。\"\n    },\n    {\n      \"text\": \"继续办理请假手续\",\n      \"answer_span\": \"继续办理请假手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用句包含继续办理请假手续，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确覆盖两个必需要点，事实均有D20-C009引用且已读原文支持；工具搜索并读取正确 chunk，决策合理，未发现无依据陈述或严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02244792,
+          "seconds": 47.7968
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5562d863256f734237aacec8020581730c2aa6b6aa25903999d47922f0f8edee"
+}

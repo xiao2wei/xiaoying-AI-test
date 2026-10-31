@@ -1,0 +1,166 @@
+[
+  {
+    "id": "DEV01",
+    "status": "answered",
+    "path": [
+      {
+        "action": "search",
+        "args": {
+          "query": "人才科研建设专项经费 项目起算时间 执行期限 结余处理",
+          "k": 5,
+          "doc_ids": []
+        },
+        "reason": "检索人才科研建设专项经费相关制度条款"
+      },
+      {
+        "action": "read",
+        "args": {
+          "chunk_ids": [
+            "D03-C008",
+            "D03-C026",
+            "D03-C024"
+          ]
+        },
+        "reason": "读取起算、期限、延期及结余处理原文"
+      },
+      {
+        "action": "finish",
+        "args": {},
+        "reason": "已读取原文，起算、期限、结余及延期规则均有明确依据"
+      }
+    ],
+    "tools": 4
+  },
+  {
+    "id": "DEV03",
+    "status": "needs_confirmation",
+    "path": [
+      {
+        "action": "search",
+        "args": {
+          "query": "教职工考勤统计表 每月25日 26日 报送",
+          "k": 8,
+          "doc_ids": []
+        },
+        "reason": "查找考勤统计表报送日期的不同规定"
+      },
+      {
+        "action": "search",
+        "args": {
+          "query": "教职工考勤统计表 每月25日 26日 报送",
+          "k": 5,
+          "doc_ids": []
+        },
+        "reason": "参数错误，按固定top_k=5重试检索"
+      },
+      {
+        "action": "read",
+        "args": {
+          "chunk_ids": [
+            "D19-C015",
+            "D20-C006"
+          ]
+        },
+        "reason": "读取两处直接规定报送日期的原文"
+      },
+      {
+        "action": "search",
+        "args": {
+          "query": "辽宁科技大学教职工考勤与请假管理补充规定 废止 原规定 施行 附则",
+          "k": 5,
+          "doc_ids": [
+            "D20"
+          ]
+        },
+        "reason": "需查明补充规定是否明确废止或优先于原规定"
+      },
+      {
+        "action": "read",
+        "args": {
+          "chunk_ids": [
+            "D20-C018",
+            "D20-C019",
+            "D20-C002"
+          ]
+        },
+        "reason": "读取补充规定附则及适用范围，确认是否废止原规定"
+      },
+      {
+        "action": "finish",
+        "args": {},
+        "reason": "已核对两处原文及补充规定附则，存在未解决的版本冲突，需确认"
+      }
+    ],
+    "tools": 8
+  },
+  {
+    "id": "DEV11",
+    "status": "answered",
+    "path": [
+      {
+        "action": "search",
+        "args": {
+          "query": "人才专项经费 预算 调整 重大调整 审批",
+          "k": 5,
+          "doc_ids": []
+        },
+        "reason": "检索人才专项经费预算调整的相关规定"
+      },
+      {
+        "action": "read",
+        "args": {
+          "chunk_ids": [
+            "D03-C016",
+            "D03-C014"
+          ]
+        },
+        "reason": "读取预算调整审批与预算责任条款原文"
+      },
+      {
+        "action": "read",
+        "args": {
+          "chunk_ids": [
+            "D03-C016"
+          ]
+        },
+        "reason": "重试读取第十五条预算调整审批原文"
+      },
+      {
+        "action": "finish",
+        "args": {},
+        "reason": "第十五条明确重大调整须经二级机构签署意见和校人才工作领导小组办公室审批，不能自行调整"
+      }
+    ],
+    "tools": 4
+  },
+  {
+    "id": "DEV12",
+    "status": "tool_error",
+    "path": [
+      {
+        "action": "search",
+        "args": {
+          "query": "人才专项经费项目年度考核 进展报告 填报时间",
+          "k": 5,
+          "doc_ids": []
+        },
+        "reason": "检索人才专项经费年度考核进展报告填报时间规定"
+      },
+      {
+        "action": "search",
+        "args": {
+          "query": "人才专项经费 年度考核 进展报告",
+          "k": 5,
+          "doc_ids": []
+        },
+        "reason": "首次检索工具持续不可用，按规则再尝试一次相同检索"
+      },
+      {
+        "action": "finish",
+        "args": {},
+        "reason": "工具持续不可用，无法查证"
+      }
+    ],
+    "tools": 2
+  }
+]

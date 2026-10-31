@@ -1,0 +1,190 @@
+{
+  "id": "TEST34",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "reason": "实际回答明确表达决定前可书面申请撤回"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "原申诉人不得以相同理由再行提起申诉",
+            "reason": "实际回答明确表达撤回后不得相同理由再提"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉。",
+            "answer_span": "申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文支持该规则，且已读记录包含相同内容。"
+          },
+          {
+            "text": "申诉一经撤回，申诉复查即行终止。",
+            "answer_span": "申诉一经撤回，申诉复查即行终止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文支持该后果，且已读记录包含相同内容。"
+          },
+          {
+            "text": "原申诉人不得以相同理由再行提起申诉。",
+            "answer_span": "原申诉人不得以相同理由再行提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条原文支持该禁止性后果，且已读记录包含相同内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整涵盖两个必需要点，引用准确且已读原文支持，状态和决策均合理，无无依据陈述。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:11.609110+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4138a3d55ae6298e35023f97b58f84ee702350a72297bcc920529f71d975f21b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ef2477d7-42d4-4a48-9978-e8b704f88da4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1873,
+            "completion_tokens": 2168,
+            "total_tokens": 4041,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1712
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 849
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"reason\": \"实际回答明确表达决定前可书面申请撤回\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"reason\": \"实际回答明确表达撤回后不得相同理由再提\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉。\",\n      \"answer_span\": \"申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文支持该规则，且已读记录包含相同内容。\"\n    },\n    {\n      \"text\": \"申诉一经撤回，申诉复查即行终止。\",\n      \"answer_span\": \"申诉一经撤回，申诉复查即行终止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文支持该后果，且已读记录包含相同内容。\"\n    },\n    {\n      \"text\": \"原申诉人不得以相同理由再行提起申诉。\",\n      \"answer_span\": \"原申诉人不得以相同理由再行提起申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文支持该禁止性后果，且已读记录包含相同内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答完整涵盖两个必需要点，引用准确且已读原文支持，状态和决策均合理，无无依据陈述。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01105764,
+          "seconds": 20.7945
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉人可以委托1－2位校内教职工作为其申诉代理人",
+            "reason": "实际回答明确说明可委托1至2位校内教职工作为申诉代理人，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "reason": "实际回答明确说明重要文书须由申诉人本人签名，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "answer_span": "申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际已读chunk D24-C013包含该规定，引用quote支持该事实。"
+          },
+          {
+            "text": "委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。",
+            "answer_span": "委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际已读chunk D24-C013包含“但申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名”，引用quote支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条，完整覆盖两个必需要点，引用与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:49.155484+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d5f30866ed156221da79aabe4ca514e8205a118e1ed684f0d86fa8ff67facc78",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "b4d77685-2ee5-46b9-b8f6-3567bb852bdc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2191,
+            "completion_tokens": 924,
+            "total_tokens": 3115,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 563
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1167
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"申诉人可以委托1－2位校内教职工作为其申诉代理人\",\"reason\":\"实际回答明确说明可委托1至2位校内教职工作为申诉代理人，与要点一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\"reason\":\"实际回答明确说明重要文书须由申诉人本人签名，与要点一致。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\"answer_span\":\"申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读chunk D24-C013包含该规定，引用quote支持该事实。\"},{\"text\":\"委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。\",\"answer_span\":\"委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读chunk D24-C013包含“但申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名”，引用quote支持该事实。\"}],\"serious_errors\":[],\"reason\":\"回答准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条，完整覆盖两个必需要点，引用与已读原文一致，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0065511599999999994,
+          "seconds": 9.2321
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "95657657fb4ce8ba4e02b6e721125ec8f6cf7f66dff41b13ee4e1c1a25f3bbb2"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确写出“单笔报销经费恰好5000元，属于‘5000元以下（含5000元）’档，由项目负责人签字后报销。”"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确写出“单笔报销经费恰好1万元，属于‘5000元以上1万元以下（含1万元）’档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。”"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "reason": "实际回答未提及报销须符合经费预算及使用范围这一前提条件。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了该条款，且已读取原文包含相同内容。"
+          },
+          {
+            "text": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了该条款，且已读取原文包含相同内容。"
+          },
+          {
+            "text": "办理报销的经费须符合经费预算及本办法规定的使用范围。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "实际回答未提及该前提条件，但已读取原文包含该内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确给出了5000元和1万元两档的签字要求，但遗漏了报销须符合预算及使用范围这一必要前提，导致第三个必需要点未满足。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:01:17.627413+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3ba5275a76198c22d2631749217abe417471790b2be2784891f0699fdc5c1881",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "88ae6c97-500e-474b-974b-ec00d98ea561",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2406,
+            "completion_tokens": 488,
+            "total_tokens": 2894,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1766
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“单笔报销经费恰好5000元，属于‘5000元以下（含5000元）’档，由项目负责人签字后报销。”\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“单笔报销经费恰好1万元，属于‘5000元以上1万元以下（含1万元）’档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。”\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未提及报销须符合经费预算及使用范围这一前提条件。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了该条款，且已读取原文包含相同内容。\"\n    },\n    {\n      \"text\": \"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了该条款，且已读取原文包含相同内容。\"\n    },\n    {\n      \"text\": \"办理报销的经费须符合经费预算及本办法规定的使用范围。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答未提及该前提条件，但已读取原文包含该内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确给出了5000元和1万元两档的签字要求，但遗漏了报销须符合预算及使用范围这一必要前提，导致第三个必需要点未满足。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0051084,
+          "seconds": 8.6676
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "8e82cd0654ed3d7a5eac40d235b7781bb5bb1fc5e088a24eb2c4280a14e35da5"
+}

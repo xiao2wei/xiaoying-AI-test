@@ -1,0 +1,180 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "reason": "实际答案明确引述第二条，表达适用范围为本科及研究生兼职辅导员，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "本细则适用于学校本科以及研究生兼职辅导员",
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用第二条，引用文字与已读原文一致，充分支持该制度事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答直接依据已读原文第二条规定，准确说明细则适用于本科及研究生兼职辅导员，结论正确，引用和读取记录均支持。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:22:45.262612+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a381d8a6f581cdb745a2e62daff281edd6a81a21661af8a009de238a135d9338",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "87370eef-1645-4b5f-b078-b19e8a7eb9aa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1427,
+            "completion_tokens": 3171,
+            "total_tokens": 4598,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 531
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"reason\": \"实际答案明确引述第二条，表达适用范围为本科及研究生兼职辅导员，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用第二条，引用文字与已读原文一致，充分支持该制度事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答直接依据已读原文第二条规定，准确说明细则适用于本科及研究生兼职辅导员，结论正确，引用和读取记录均支持。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.014440799999999998,
+          "seconds": 32.5362
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "reason": "答案明确转述第二条适用范围，语义与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "本细则适用于学校本科以及研究生兼职辅导员",
+            "answer_span": "本细则适用于学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C003第二条原文，且实际已读该条。"
+          },
+          {
+            "text": "研究生兼职辅导员属于该细则的适用范围",
+            "answer_span": "研究生兼职辅导员属于该细则的适用范围",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "由第二条适用范围直接得出，引用及已读原文支持。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核不按该细则第十四条第一款的考核办法执行",
+            "answer_span": "研究生兼任辅导员的管理与考核不按该细则第十四条第一款的考核办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条先规定一般考评，再对研究生兼任辅导员另行规定，可支持该区分。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核依据学校研究生“三助一辅”管理办法执行",
+            "answer_span": "而是依据学校研究生“三助一辅”管理办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条后句原文直接支持，且实际已读该条。"
+          },
+          {
+            "text": "该细则在管理与考核环节对研究生兼任辅导员作了特别衔接",
+            "answer_span": "该细则在管理与考核环节对研究生兼任辅导员作了特别衔接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "由第十四条一般规定与特别规定的衔接关系概括，引用及已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答直接引用第二条确认研究生兼职辅导员在适用范围之内，并补充第十四条关于管理与考核的特别衔接，引用准确、与已读原文一致；检索与阅读动作合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:23:17.816293+00:00",
+          "attempt": 1,
+          "prompt_sha256": "33e9d02d60448973d7ab8690de0b43c14a5c43e8683d99e7f4dd0b8c78e9847b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7cd24a0e-0e17-48e4-928d-8c093c51cc4c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1855,
+            "completion_tokens": 5464,
+            "total_tokens": 7319,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4878
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 959
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"reason\": \"答案明确转述第二条适用范围，语义与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"answer_span\": \"本细则适用于学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C003第二条原文，且实际已读该条。\"\n    },\n    {\n      \"text\": \"研究生兼职辅导员属于该细则的适用范围\",\n      \"answer_span\": \"研究生兼职辅导员属于该细则的适用范围\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"由第二条适用范围直接得出，引用及已读原文支持。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核不按该细则第十四条第一款的考核办法执行\",\n      \"answer_span\": \"研究生兼任辅导员的管理与考核不按该细则第十四条第一款的考核办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条先规定一般考评，再对研究生兼任辅导员另行规定，可支持该区分。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核依据学校研究生“三助一辅”管理办法执行\",\n      \"answer_span\": \"而是依据学校研究生“三助一辅”管理办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条后句原文直接支持，且实际已读该条。\"\n    },\n    {\n      \"text\": \"该细则在管理与考核环节对研究生兼任辅导员作了特别衔接\",\n      \"answer_span\": \"该细则在管理与考核环节对研究生兼任辅导员作了特别衔接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"由第十四条一般规定与特别规定的衔接关系概括，引用及已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答直接引用第二条确认研究生兼职辅导员在适用范围之内，并补充第十四条关于管理与考核的特别衔接，引用准确、与已读原文一致；检索与阅读动作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.024086039999999996,
+          "seconds": 54.1912
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e0ee2bac0ec8760229f5c817ff41819de55284ec437d430fef3169228c1e0dfa"
+}

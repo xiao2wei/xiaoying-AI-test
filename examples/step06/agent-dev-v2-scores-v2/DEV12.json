@@ -1,0 +1,63 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确说明“检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认……”，明确表达了未完成及工具失败。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答仅说明无法确认，未给出任何原文结论或猜测，符合不得猜测原文结论的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "回答如实报告检索工具持续故障且未读取原文，未猜测结论，符合预期状态和必需要点。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:02.691505+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a27a25133460138dbf66c1f755e37a9dd265de8864dcc5eeddae0145044a3fe5",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "4a15d646-ba9b-4980-8515-44437c5664e9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1149,
+            "completion_tokens": 184,
+            "total_tokens": 1333,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 509
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确说明“检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认……”，明确表达了未完成及工具失败。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答仅说明无法确认，未给出任何原文结论或猜测，符合不得猜测原文结论的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答如实报告检索工具持续故障且未读取原文，未猜测结论，符合预期状态和必需要点。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0022453200000000003,
+          "seconds": 3.167
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a4d64f47568c4757f53bafa69ecd6243b60610872ae2d3968aba6973333c6ad5"
+}

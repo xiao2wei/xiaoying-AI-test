@@ -1,0 +1,99 @@
+{
+  "id": "STAB-TEST36-R2",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "reason": "实际回答明确表达了须经过专门培训并获得特种作业资格，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用为D23-C013第十二条原文，且实际已读该条，完全支持该事实。"
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交职业技术等级或资格证明",
+            "answer_span": "签订合同前，临时用工人员必须提交职业技术等级或资格证明",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "实际已读D23-C016第十五条包含‘签订合同前，临时用工人员必须提交下列材料’，可支持；但引用quote仅为‘（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。’，未包含‘签订合同前必须提交’这一关键前提，不能单独支撑该完整事实。"
+          },
+          {
+            "text": "该要求适用于有特殊要求的临时用工岗位",
+            "answer_span": "该要求适用于有特殊要求的临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含‘（有特殊要求的临时用工岗位）’，且实际已读第十五条原文支持该适用范围。"
+          }
+        ],
+        "serious_errors": [
+          "对‘签订合同前，临时用工人员必须提交职业技术等级或资格证明’这一事实的引用只引用了第十五条第（四）项，未包含‘签订合同前必须提交’的关键前提，引用不足以独立支持该结论。"
+        ],
+        "reason": "核心要点已满足；工具经历一次可重试的临时故障后成功恢复并读取了相关条文。额外补充的合同签订前提交资格证明虽在完整条文中可得到支持，但所附quote仅截取材料清单单项，存在引用不完整的问题。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "对‘签订合同前，临时用工人员必须提交职业技术等级或资格证明’这一事实的引用只引用了第十五条第（四）项，未包含‘签订合同前必须提交’的关键前提，引用不足以独立支持该结论。",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:21.299620+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1667a33caf8e531378cbb28b5b75f36accfba4f2d6f4fe202f4dca71e180da80",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "bbcb4af0-832c-4ab8-adea-2f66b5dc1a0c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1911,
+            "completion_tokens": 6898,
+            "total_tokens": 8809,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6339
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 119
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"实际回答明确表达了须经过专门培训并获得特种作业资格，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用为D23-C013第十二条原文，且实际已读该条，完全支持该事实。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员必须提交职业技术等级或资格证明\",\n      \"answer_span\": \"签订合同前，临时用工人员必须提交职业技术等级或资格证明\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"实际已读D23-C016第十五条包含‘签订合同前，临时用工人员必须提交下列材料’，可支持；但引用quote仅为‘（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。’，未包含‘签订合同前必须提交’这一关键前提，不能单独支撑该完整事实。\"\n    },\n    {\n      \"text\": \"该要求适用于有特殊要求的临时用工岗位\",\n      \"answer_span\": \"该要求适用于有特殊要求的临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含‘（有特殊要求的临时用工岗位）’，且实际已读第十五条原文支持该适用范围。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"对‘签订合同前，临时用工人员必须提交职业技术等级或资格证明’这一事实的引用只引用了第十五条第（四）项，未包含‘签订合同前必须提交’的关键前提，引用不足以独立支持该结论。\"\n  ],\n  \"reason\": \"核心要点已满足；工具经历一次可重试的临时故障后成功恢复并读取了相关条文。额外补充的合同签订前提交资格证明虽在完整条文中可得到支持，但所附quote仅截取材料清单单项，存在引用不完整的问题。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0298386,
+          "seconds": 70.8403
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "63e03a3ff3639900320fb26eb2cde763b7b98a8b6afca7ce0511a0a57274e369"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "项目起始时间从学校审批立项时间算起。",
+            "reason": "实际回答明确给出学校审批立项时间起算，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "项目执行期限最长一般不得超过4年。",
+            "reason": "实际回答明确给出最长一般不超过4年，语义等价。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理。",
+            "reason": "实际回答明确给出期满结余由学校统筹管理，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起。",
+            "answer_span": "项目起始时间从学校审批立项时间算起。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年。",
+            "answer_span": "项目执行期限最长一般不得超过4年。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理。",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整且准确地回答了项目起始时间、最长执行期限和期满结余处理三个问题，所有引用均来自已读文档D03-C008并正确支持相应事实，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:24:52.773877+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5e85c20316c41f847793b2578536afecd7ef7a68ed8c4251adaf7649173805ab",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "2c6f1a41-5f2a-436e-b159-ce051b25469b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2443,
+            "completion_tokens": 2236,
+            "total_tokens": 4679,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1705
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1675
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起。\",\n      \"reason\": \"实际回答明确给出学校审批立项时间起算，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"项目执行期限最长一般不得超过4年。\",\n      \"reason\": \"实际回答明确给出最长一般不超过4年，语义等价。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理。\",\n      \"reason\": \"实际回答明确给出期满结余由学校统筹管理，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起。\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年。\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理。\",\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C008中包含该句，且实际上已读取该文档，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答完整且准确地回答了项目起始时间、最长执行期限和期满结余处理三个问题，所有引用均来自已读文档D03-C008并正确支持相应事实，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01207932,
+          "seconds": 21.0823
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step06\\baseline-scores-v5\\DEV01.json"
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e3bb342b05d93d2e2b6504489c7aca9860d6e93659473f26e5309a0b0e36ebad",
+  "revalidation": "只修正连续跨claim原句定位的程序检查；实际AI判断内容与调用ID不变"
+}

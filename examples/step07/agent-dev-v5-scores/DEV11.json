@@ -1,0 +1,32 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:27:40.692915+00:00",
+          "attempt": 1,
+          "prompt_sha256": "533e83e1beeecf14fe27bb4abc8fb4fa27bb11a0f371acbc7aa39663c1ce082a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4253
+        }
+      ],
+      "judge_error": "ModelError:HTTP_402",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "29c0d53d178948e72bd81afd386c75d235055b536af063ef9008bd3c88063639"
+}

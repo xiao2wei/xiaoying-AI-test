@@ -1,0 +1,98 @@
+{
+  "id": "TEST02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "实际回答明确给出病假累计超过6个月且工作年限满10年时，按80%发放岗位工资、薪级工资和基础绩效，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "实际回答明确给出病假累计超过6个月且工作年限不满10年时，按70%发放岗位工资、薪级工资和基础绩效，与要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效",
+            "reason": "实际回答将比例限定于岗位工资、薪级工资和基础绩效，未泛化为全部工资或所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "answer_span": "全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确含该比例和适用项目，且系统已读原文支持该事实。"
+          },
+          {
+            "text": "全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "answer_span": "全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确含该比例和适用项目，且系统已读原文支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整、准确地按2023年规定给出两个工作年限区间的病假待遇比例，且比例限定于岗位工资、薪级工资和基础绩效；引用与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.261376+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fa97789945641382f6d18fde0057f75c81c5c1f651b30cfeff8686034c81ea0e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "577cc307-a983-4a42-912c-27bd9f169dcc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2337,
+            "completion_tokens": 2504,
+            "total_tokens": 4841,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2024
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1441
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\"reason\":\"实际回答明确给出病假累计超过6个月且工作年限满10年时，按80%发放岗位工资、薪级工资和基础绩效，与要点一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\"reason\":\"实际回答明确给出病假累计超过6个月且工作年限不满10年时，按70%发放岗位工资、薪级工资和基础绩效，与要点一致。\"},{\"index\":2,\"met\":true,\"answer_span\":\"岗位工资、薪级工资和基础绩效\",\"reason\":\"实际回答将比例限定于岗位工资、薪级工资和基础绩效，未泛化为全部工资或所有收入。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\"answer_span\":\"全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文明确含该比例和适用项目，且系统已读原文支持该事实。\"},{\"text\":\"全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\"answer_span\":\"全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文明确含该比例和适用项目，且系统已读原文支持该事实。\"}],\"serious_errors\":[],\"reason\":\"实际回答完整、准确地按2023年规定给出两个工作年限区间的病假待遇比例，且比例限定于岗位工资、薪级工资和基础绩效；引用与已读原文一致，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01300068,
+          "seconds": 21.8346
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f4ef08baa7dbec1c3fdecd53f57ba4cb024511f80786212c38b44d2a323a965a"
+}

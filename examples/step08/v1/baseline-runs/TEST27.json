@@ -1,0 +1,811 @@
+{
+  "id": "TEST27",
+  "category": "paraphrase",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "临时用工人员要提前解除合同应如何办理？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "提前解除合同须经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\n提前解除合同须经人事处审核同意，并办理完工作交接手续后方可离岗。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "提前解除合同须经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\n提前解除合同须经人事处审核同意，并办理完工作交接手续后方可离岗。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工人员要提前解除合同应如何办理？"
+          },
+          "result": {
+            "ok": true,
+            "query": "临时用工人员要提前解除合同应如何办理？",
+            "hits": [
+              {
+                "chunk_id": "D23-C020",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.820659,
+                "lexical_score": 72.7161,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十九条 第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C019",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十八条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.721566,
+                "lexical_score": 59.1554,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十八条 第十八条 由于临时用工人员未能履行合同规定的义务需要解除合同的，由直\n接使用临时用工人员的学校直属单位以书面形式写明解除合同的原因报人事处，经\n人事处审核后通知临时用工人员办理解除合同手续。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C029",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十八条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  182
+                ],
+                "printed_pages": [
+                  177
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.688647,
+                "lexical_score": 46.9024,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十八条 第二十八条 人事处对学校直属单位使用的临时用工人员有监督、检查的权利，\n有对违法违纪或不适合岗位要求的临时用工人员予以解除合同的权利。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C018",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十七条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.685132,
+                "lexical_score": 45.7897,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十七条 第十七条 在合同期内,双方必须全面履行合同所规定的权利与义务。临时用\n工人员应完成合同所规定的劳动任务,提高劳动技能，执行劳动安全卫生规程，遵守\n劳动纪律和职业道德。临时用工人员因违法违纪受到处理的，学校应立即与其解除\n合同。学校直属各单位应建立和完善规章制度，保障临时用工人员享有权利和履行\n义务。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C016",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.689157,
+                "lexical_score": 28.4147,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十五条 第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0105,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C020"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十九条",
+              "text": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C020",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C019",
+              "next_chunk_id": "D23-C021",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C019"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十八条",
+              "text": "第十八条 由于临时用工人员未能履行合同规定的义务需要解除合同的，由直\n接使用临时用工人员的学校直属单位以书面形式写明解除合同的原因报人事处，经\n人事处审核后通知临时用工人员办理解除合同手续。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C019",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C018",
+              "next_chunk_id": "D23-C020",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C029"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第二十八条",
+              "text": "第二十八条 人事处对学校直属单位使用的临时用工人员有监督、检查的权利，\n有对违法违纪或不适合岗位要求的临时用工人员予以解除合同的权利。",
+              "pdf_pages": [
+                182
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C029",
+              "printed_pages": [
+                177
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C028",
+              "next_chunk_id": "D23-C030",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C018"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十七条",
+              "text": "第十七条 在合同期内,双方必须全面履行合同所规定的权利与义务。临时用\n工人员应完成合同所规定的劳动任务,提高劳动技能，执行劳动安全卫生规程，遵守\n劳动纪律和职业道德。临时用工人员因违法违纪受到处理的，学校应立即与其解除\n合同。学校直属各单位应建立和完善规章制度，保障临时用工人员享有权利和履行\n义务。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C018",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C017",
+              "next_chunk_id": "D23-C019",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十五条",
+              "text": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C016",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C015",
+              "next_chunk_id": "D23-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:49.592079+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7930958ffcfde454cc0d6e18e12eb10e4bd2ad8ca8ea8ef7c19deec3a2dc164d",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "f84bc5e2-db94-4058-9cec-49cfe30d5a5a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2446,
+            "completion_tokens": 177,
+            "total_tokens": 2623,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 2062
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\",\"citations\":[{\"chunk_id\":\"D23-C020\",\"quote\":\"第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。\"}]},{\"text\":\"提前解除合同须经人事处审核同意，并办理完工作交接手续后方可离岗。\",\"citations\":[{\"chunk_id\":\"D23-C020\",\"quote\":\"第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。\"}]}],\"gaps\":[]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009461999999999999,
+          "seconds": 1.0827
+        }
+      ],
+      "read_ids": [
+        "D23-C020",
+        "D23-C019",
+        "D23-C029",
+        "D23-C018",
+        "D23-C016"
+      ],
+      "first_hits": [
+        "D23-C020",
+        "D23-C019",
+        "D23-C029",
+        "D23-C018",
+        "D23-C016"
+      ],
+      "seconds": 1.1016,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "baseline",
+      "question": "临时聘用合同没到期，我想提前离岗，什么时候向谁书面申请，交接怎么办？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "现有原文只规定“办理完工作交接手续后方可离岗”，未明确交接的具体内容、交接对象或交接清单，需向人事处确认交接流程。"
+        ],
+        "answer": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\n提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。\n现有原文只规定“办理完工作交接手续后方可离岗”，未明确交接的具体内容、交接对象或交接清单，需向人事处确认交接流程。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "citations": [
+              {
+                "chunk_id": "D23-C020",
+                "quote": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "现有原文只规定“办理完工作交接手续后方可离岗”，未明确交接的具体内容、交接对象或交接清单，需向人事处确认交接流程。"
+        ],
+        "answer": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\n提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。\n现有原文只规定“办理完工作交接手续后方可离岗”，未明确交接的具体内容、交接对象或交接清单，需向人事处确认交接流程。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时聘用合同没到期，我想提前离岗，什么时候向谁书面申请，交接怎么办？"
+          },
+          "result": {
+            "ok": true,
+            "query": "临时聘用合同没到期，我想提前离岗，什么时候向谁书面申请，交接怎么办？",
+            "hits": [
+              {
+                "chunk_id": "D23-C020",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.764128,
+                "lexical_score": 48.7529,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十九条 第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C016",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.631371,
+                "lexical_score": 22.0166,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十五条 第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D15-C018",
+                "doc_id": "D15",
+                "title": "辽宁科技大学教职工岗位考核实施办法（2022年版）",
+                "article": "第十七条",
+                "version_date": "2022-09-21",
+                "pdf_pages": [
+                  131
+                ],
+                "printed_pages": [
+                  126
+                ],
+                "score": 0.071795,
+                "semantic_score": 0.616562,
+                "lexical_score": 24.5746,
+                "excerpt": "辽宁科技大学教职工岗位考核实施办法（2022年版） 第十七条 第十七条 聘用合同到期所进行的聘期考核按照合同约定进行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C017",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十六条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.069264,
+                "semantic_score": 0.642067,
+                "lexical_score": 14.0468,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十六条 第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C014",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十三条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.068571,
+                "semantic_score": 0.60297,
+                "lexical_score": 27.4628,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十三条 第十三条 临时用工合同是明确学校与临时用工人员双方权利和义务的协议。\n被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或\n劳务合同）。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0142,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C020"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十九条",
+              "text": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C020",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C019",
+              "next_chunk_id": "D23-C021",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十五条",
+              "text": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C016",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C015",
+              "next_chunk_id": "D23-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D15-C018"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D15",
+              "article": "第十七条",
+              "text": "第十七条 聘用合同到期所进行的聘期考核按照合同约定进行。",
+              "pdf_pages": [
+                131
+              ],
+              "table_ids": [],
+              "chunk_id": "D15-C018",
+              "printed_pages": [
+                126
+              ],
+              "title": "辽宁科技大学教职工岗位考核实施办法（2022年版）",
+              "version_date": "2022-09-21",
+              "previous_chunk_id": "D15-C017",
+              "next_chunk_id": "D15-C019",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C017"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十六条",
+              "text": "第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C017",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C016",
+              "next_chunk_id": "D23-C018",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十三条",
+              "text": "第十三条 临时用工合同是明确学校与临时用工人员双方权利和义务的协议。\n被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或\n劳务合同）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C014",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C013",
+              "next_chunk_id": "D23-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:50.699186+00:00",
+          "attempt": 1,
+          "prompt_sha256": "29cf38b264e0a93e22ebe5fc970e4f4b3371638568fe7a2baea83098fc27e6e1",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e31ac606-8b73-4be0-9d9e-96790dc4f954",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2336,
+            "completion_tokens": 213,
+            "total_tokens": 2549,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 1952
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请。\",\"citations\":[{\"chunk_id\":\"D23-C020\",\"quote\":\"第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。\"}]},{\"text\":\"提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。\",\"citations\":[{\"chunk_id\":\"D23-C020\",\"quote\":\"第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。\"}]}],\"gaps\":[\"现有原文只规定“办理完工作交接手续后方可离岗”，未明确交接的具体内容、交接对象或交接清单，需向人事处确认交接流程。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009563999999999999,
+          "seconds": 1.4439
+        }
+      ],
+      "read_ids": [
+        "D23-C020",
+        "D23-C016",
+        "D15-C018",
+        "D23-C017",
+        "D23-C014"
+      ],
+      "first_hits": [
+        "D23-C020",
+        "D23-C016",
+        "D15-C018",
+        "D23-C017",
+        "D23-C014"
+      ],
+      "seconds": 1.4683,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.57,
+  "model_calls": 2,
+  "tool_calls": 12,
+  "created_at": "2026-10-31T02:11:52.144171+00:00"
+}

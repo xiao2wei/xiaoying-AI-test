@@ -1,0 +1,139 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "reason": "实际回答明确作出“原则上不予调整”的表述，与第十五条一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定，须由项目负责人提出申请",
+            "reason": "实际回答同时覆盖“确有特殊情况需要重大调整”和“负责人提出申请”两个要件，语义等价于要点要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "reason": "实际回答明确包含所在二级教学（科研）机构签署意见环节。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "提交校人才工作领导小组办公室审批通过后执行",
+            "reason": "实际回答明确包含提交校人才工作领导小组办公室审批通过后执行。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "人才专项经费预算原则上不予调整",
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十五条原文包含“经费预算原则上不予调整”，且该条文已在读取记录中。"
+          },
+          {
+            "text": "确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定",
+            "answer_span": "确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十五条规定须负责人申请、经二级机构签署意见并报人才办审批后执行，可支持不能自行决定的表述。"
+          },
+          {
+            "text": "须由项目负责人提出申请",
+            "answer_span": "须由项目负责人提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十五条原文明确包含“项目负责人应当及时提出申请”。"
+          },
+          {
+            "text": "经所在二级教学（科研）机构签署意见",
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十五条原文明确包含该程序要求。"
+          },
+          {
+            "text": "提交校人才工作领导小组办公室审批通过后执行",
+            "answer_span": "提交校人才工作领导小组办公室审批通过后执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十五条原文明确包含该审批执行要求。"
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责",
+            "answer_span": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十三条原文明确包含对预算调整真实性负责，且该条文已读取。"
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构须严格按照学校审批同意的预算范围使用、报销科研经费",
+            "answer_span": "并须严格按照学校审批同意的预算范围使用、报销科研经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "第十三条原文包含严格按学校审批同意的预算范围使用、报销科研经费，支持该简化表述。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答完整覆盖四个必备要点，表述与第十五条实质一致；补充的第十三条预算调整真实性责任及使用报销要求有已读原文支持。工具读取中虽有一次临时可恢复故障，但随后成功重试，未影响最终检索结果，动作合理。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:46.435672+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4e3d98ef22ab9e4a481d0d1d3374a84ed8e92b85a14b1e67727122a34eac314c",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "87fc681a-0840-4ac3-9dd2-a185949a7b3c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2012,
+            "completion_tokens": 7125,
+            "total_tokens": 9137,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6152
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1244
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"reason\": \"实际回答明确作出“原则上不予调整”的表述，与第十五条一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定，须由项目负责人提出申请\",\n      \"reason\": \"实际回答同时覆盖“确有特殊情况需要重大调整”和“负责人提出申请”两个要件，语义等价于要点要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"reason\": \"实际回答明确包含所在二级教学（科研）机构签署意见环节。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"reason\": \"实际回答明确包含提交校人才工作领导小组办公室审批通过后执行。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"人才专项经费预算原则上不予调整\",\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十五条原文包含“经费预算原则上不予调整”，且该条文已在读取记录中。\"\n    },\n    {\n      \"text\": \"确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定\",\n      \"answer_span\": \"确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十五条规定须负责人申请、经二级机构签署意见并报人才办审批后执行，可支持不能自行决定的表述。\"\n    },\n    {\n      \"text\": \"须由项目负责人提出申请\",\n      \"answer_span\": \"须由项目负责人提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十五条原文明确包含“项目负责人应当及时提出申请”。\"\n    },\n    {\n      \"text\": \"经所在二级教学（科研）机构签署意见\",\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十五条原文明确包含该程序要求。\"\n    },\n    {\n      \"text\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十五条原文明确包含该审批执行要求。\"\n    },\n    {\n      \"text\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责\",\n      \"answer_span\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十三条原文明确包含对预算调整真实性负责，且该条文已读取。\"\n    },\n    {\n      \"text\": \"项目负责人及所在二级教学（科研）机构须严格按照学校审批同意的预算范围使用、报销科研经费\",\n      \"answer_span\": \"并须严格按照学校审批同意的预算范围使用、报销科研经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"第十三条原文包含严格按学校审批同意的预算范围使用、报销科研经费，支持该简化表述。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答完整覆盖四个必备要点，表述与第十五条实质一致；补充的第十三条预算调整真实性责任及使用报销要求有已读原文支持。工具读取中虽有一次临时可恢复故障，但随后成功重试，未影响最终检索结果，动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03087084,
+          "seconds": 69.353
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c6414abbcb459405f42cd8b93fceed0dbf51522af80feb2cac0ff9740f418026"
+}

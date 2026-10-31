@@ -1,0 +1,88 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，并引用第二十二条，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答基于第二十二条的明确废止条款得出“2021年27号旧办法不再同时有效”，而非仅依据日期判断。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2022年版《辽宁科技大学高层次人才引进工作实施办法》自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C023第二十二条，原文明确“本办法自发布之日起施行”，实际读取内容一致。",
+            "answer_span": "2022年版《辽宁科技大学高层次人才引进工作实施办法》自发布之日起施行"
+          },
+          {
+            "text": "原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C023第二十二条，原文明确“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，实际读取内容一致。",
+            "answer_span": "原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止"
+          },
+          {
+            "text": "2021年27号旧办法不再同时有效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由明确废止条款直接推出，引用支持，实际读取内容一致。",
+            "answer_span": "2021年27号旧办法不再同时有效"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用第二十二条废止条款，明确判断旧办法不再同时有效，符合所有必需要点，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:14.078333+00:00",
+          "attempt": 1,
+          "prompt_sha256": "52195d2f3940819815cf74d9d1f94fd466c5a27f41ceab7467690df093f538ac",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "fbfd69c5-91c5-4f37-93db-7195089181f0",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1413,
+            "completion_tokens": 518,
+            "total_tokens": 1931,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 773
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，并引用第二十二条，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答基于第二十二条的明确废止条款得出“2021年27号旧办法不再同时有效”，而非仅依据日期判断。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2022年版《辽宁科技大学高层次人才引进工作实施办法》自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C023第二十二条，原文明确“本办法自发布之日起施行”，实际读取内容一致。\",\n      \"answer_span\": \"2022年版《辽宁科技大学高层次人才引进工作实施办法》自发布之日起施行\"\n    },\n    {\n      \"text\": \"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C023第二十二条，原文明确“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，实际读取内容一致。\",\n      \"answer_span\": \"原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止\"\n    },\n    {\n      \"text\": \"2021年27号旧办法不再同时有效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由明确废止条款直接推出，引用支持，实际读取内容一致。\",\n      \"answer_span\": \"2021年27号旧办法不再同时有效\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用第二十二条废止条款，明确判断旧办法不再同时有效，符合所有必需要点，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00391644,
+          "seconds": 7.0961
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5686d51fff4818ef2a8cdff95c3bc2a7c1d0b46c3a60c2cae24866e5ad671d71"
+}

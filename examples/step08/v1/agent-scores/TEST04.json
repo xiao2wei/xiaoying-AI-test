@@ -1,0 +1,108 @@
+{
+  "id": "TEST04",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工校内申诉可以委托1－2位校内教职工作为申诉代理人，代为办理申诉事项。",
+            "reason": "明确说明可委托1至2位校内教职工作为申诉代理人，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答仅说明“申诉申请书等重要文书须由申诉人本人签名”，未明确提及“处理决定书”亦须本人签名，未完整满足要点要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "教职工校内申诉可以委托1－2位校内教职工作为申诉代理人",
+            "answer_span": "教职工校内申诉可以委托1－2位校内教职工作为申诉代理人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读资料明确载明申诉人可以委托1－2位校内教职工作为申诉代理人。"
+          },
+          {
+            "text": "可代为办理申诉事项",
+            "answer_span": "代为办理申诉事项",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "同一句说明委托代理人可代为办理申诉事项，已读资料支持。"
+          },
+          {
+            "text": "申诉申请书等重要文书须由申诉人本人签名",
+            "answer_span": "申诉申请书等重要文书须由申诉人本人签名",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读资料规定申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。"
+          },
+          {
+            "text": "代理人不能替本人签署申诉申请书",
+            "answer_span": "代理人不能替本人签署申诉申请书",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "由“须由申诉人本人签名”可直接推断代理人不能代签，已读资料支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确援引并回答了委托人数及申请书签字问题，所引制度事实均有依据；但未在陈述中明确提及申诉处理决定书亦须本人签名，导致第二要点未完整满足，因此判定答案未能覆盖全部必要要点。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.348985+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b81553b8135289f1a43ad78b152513974d2c2b4631f7836f269c23a276441a5b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "faae0773-1dd9-4aa9-b022-9a7fa1daf9e9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1632,
+            "completion_tokens": 9868,
+            "total_tokens": 11500,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9408
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 736
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"教职工校内申诉可以委托1－2位校内教职工作为申诉代理人，代为办理申诉事项。\",\"reason\":\"明确说明可委托1至2位校内教职工作为申诉代理人，符合要点。\"},{\"index\":1,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答仅说明“申诉申请书等重要文书须由申诉人本人签名”，未明确提及“处理决定书”亦须本人签名，未完整满足要点要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":false,\"facts\":[{\"text\":\"教职工校内申诉可以委托1－2位校内教职工作为申诉代理人\",\"answer_span\":\"教职工校内申诉可以委托1－2位校内教职工作为申诉代理人\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"已读资料明确载明申诉人可以委托1－2位校内教职工作为申诉代理人。\"},{\"text\":\"可代为办理申诉事项\",\"answer_span\":\"代为办理申诉事项\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"同一句说明委托代理人可代为办理申诉事项，已读资料支持。\"},{\"text\":\"申诉申请书等重要文书须由申诉人本人签名\",\"answer_span\":\"申诉申请书等重要文书须由申诉人本人签名\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"已读资料规定申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。\"},{\"text\":\"代理人不能替本人签署申诉申请书\",\"answer_span\":\"代理人不能替本人签署申诉申请书\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"由“须由申诉人本人签名”可直接推断代理人不能代签，已读资料支持。\"}],\"serious_errors\":[],\"reason\":\"实际回答准确援引并回答了委托人数及申请书签字问题，所引制度事实均有依据；但未在陈述中明确提及申诉处理决定书亦须本人签名，导致第二要点未完整满足，因此判定答案未能覆盖全部必要要点。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.041231519999999994,
+          "seconds": 101.7853
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "2e0a1aa101c19cbf6bceebb444c0a12abc8533242c3af88405318d644349ae0a"
+}

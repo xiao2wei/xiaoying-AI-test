@@ -1,0 +1,106 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答未提及26日规定，未展示25日和26日的差异"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答直接按日期选择25日并声称旧规则自动作废，未表示不能仅凭日期选取"
+      },
+      {
+        "index": 2,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答未请求确认适用口径，而是直接给出结论"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "当前肯定只能每月25日报送",
+        "answer_span": "当前肯定只能每月25日报送",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用D20只支持每月25日报送，但无证据支持“只能”的排他性，因为D19规定26日且未说明废止"
+      },
+      {
+        "text": "旧规则自动作废",
+        "answer_span": "旧规则自动作废",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用未提及旧规则作废或版本废止关系，实际已读文档也没有任何废止条款"
+      }
+    ],
+    "serious_errors": [
+      "擅自消解冲突：无依据断言“旧规则自动作废”并仅按25日报送，未展示26日差异或请求确认",
+      "引用不支持“只能”的排他性和“自动作废”，误用D20证据得出结论"
+    ],
+    "reason": "回答未完成必需要点：未展示25日与26日差异、未遵守不能仅凭日期选取、未请求确认，反而直接选择25日并虚构旧规则作废，违反行为要求，status_ok、decision_ok和answer_correct均为false。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "擅自消解冲突：无依据断言“旧规则自动作废”并仅按25日报送，未展示26日差异或请求确认",
+    "引用不支持“只能”的排他性和“自动作废”，误用D20证据得出结论",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:29.302190+00:00",
+      "attempt": 1,
+      "prompt_sha256": "7b3d1a0b754dff3e9a0da34122c0c5cd83637d7ff0480072f85a8899031316a4",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "1a2c30e7-ce94-4ce0-a5d1-c4adea51fad9",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2111,
+        "completion_tokens": 1825,
+        "total_tokens": 3936,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1446
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 1087
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未提及26日规定，未展示25日和26日的差异\"},{\"index\":1,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答直接按日期选择25日并声称旧规则自动作废，未表示不能仅凭日期选取\"},{\"index\":2,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未请求确认适用口径，而是直接给出结论\"}],\"status_ok\":false,\"decision_ok\":false,\"answer_correct\":false,\"facts\":[{\"text\":\"当前肯定只能每月25日报送\",\"answer_span\":\"当前肯定只能每月25日报送\",\"cited\":true,\"citation_supported\":false,\"supported_by_read\":false,\"reason\":\"引用D20只支持每月25日报送，但无证据支持“只能”的排他性，因为D19规定26日且未说明废止\"},{\"text\":\"旧规则自动作废\",\"answer_span\":\"旧规则自动作废\",\"cited\":true,\"citation_supported\":false,\"supported_by_read\":false,\"reason\":\"引用未提及旧规则作废或版本废止关系，实际已读文档也没有任何废止条款\"}],\"serious_errors\":[\"擅自消解冲突：无依据断言“旧规则自动作废”并仅按25日报送，未展示26日差异或请求确认\",\"引用不支持“只能”的排他性和“自动作废”，误用D20证据得出结论\"],\"reason\":\"回答未完成必需要点：未展示25日与26日差异、未遵守不能仅凭日期选取、未请求确认，反而直接选择25日并虚构旧规则作废，违反行为要求，status_ok、decision_ok和answer_correct均为false。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01001352,
+      "seconds": 19.5034
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": false,
+  "new_judge_requests": 1,
+  "id": "CAL09",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

@@ -1,0 +1,178 @@
+{
+  "id": "TEST31",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答仅说明临时用工不属于事业编制内用工、在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式，未明确表述要点中“完成临时性、阶段性、辅助性或特殊性工作任务”这一条件，语义不完整。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工不属于事业编制内用工",
+            "answer_span": "临时用工不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第二条明确在事业编制之外，支持该否定判断；实际已读D23-C003包含相同内容。"
+          },
+          {
+            "text": "在事业编制之外聘用社会人员（含已退休人员）",
+            "answer_span": "在事业编制之外聘用社会人员（含已退休人员）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第二条直接包含“事业编制之外、聘用社会人员（含已退休人员）”。"
+          },
+          {
+            "text": "短期合同制用工形式",
+            "answer_span": "短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第二条直接包含“短期合同制用工形式”。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确判断临时用工不属于事业编制内用工，且引用和已读原文均支持该判断及主要定义要素；但未完整覆盖要点中的“完成临时性、阶段性、辅助性或特殊性工作任务”表述，因此要点判定为未完全满足。工具动作合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:31.438089+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c0d2bba0db3eb02b9633d7dc8dc31049a1017a99a5a78aad28114b2d9e6ddd03",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "789959b5-cbbf-431d-8b3a-35758811e1db",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2291,
+            "completion_tokens": 3637,
+            "total_tokens": 5928,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3189
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1267
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答仅说明临时用工不属于事业编制内用工、在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式，未明确表述要点中“完成临时性、阶段性、辅助性或特殊性工作任务”这一条件，语义不完整。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"临时用工不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第二条明确在事业编制之外，支持该否定判断；实际已读D23-C003包含相同内容。\"\n    },\n    {\n      \"text\": \"在事业编制之外聘用社会人员（含已退休人员）\",\n      \"answer_span\": \"在事业编制之外聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第二条直接包含“事业编制之外、聘用社会人员（含已退休人员）”。\"\n    },\n    {\n      \"text\": \"短期合同制用工形式\",\n      \"answer_span\": \"短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第二条直接包含“短期合同制用工形式”。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确判断临时用工不属于事业编制内用工，且引用和已读原文均支持该判断及主要定义要素；但未完整覆盖要点中的“完成临时性、阶段性、辅助性或特殊性工作任务”表述，因此要点判定为未完全满足。工具动作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01742664,
+          "seconds": 36.5506
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "不可以",
+            "reason": "答案首句明确回答“不可以”，符合要点要求"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "学校临时用工禁止聘用未满十八周岁的未成年人",
+            "reason": "答案明确引用并表述禁止聘用未满十八周岁未成年人，语义等价于“禁止聘用未满18周岁的未成年人”"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校临时用工禁止聘用未满十八周岁的未成年人",
+            "answer_span": "学校临时用工禁止聘用未满十八周岁的未成年人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "答案引用第八条原文，且实际读取记录包含该条款，支持该制度事实"
+          },
+          {
+            "text": "17岁不能受聘临时用工岗位",
+            "answer_span": "不能受聘临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条文禁止未满十八周岁，结合17岁未满十八周岁的说明，支持该结论"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确回答了问题，明确引用相关条款，所有必需要点均已满足，没有无依据陈述或错误引用。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:19:08.003661+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7d612e2564902151bc219a91980c2e31a13ae27e14addf54635ce911d2a65523",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "b1689363-a4f8-4a8e-9acc-6142dedbf282",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2483,
+            "completion_tokens": 3516,
+            "total_tokens": 5999,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3158
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1587
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不可以\",\n      \"reason\": \"答案首句明确回答“不可以”，符合要点要求\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"学校临时用工禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"答案明确引用并表述禁止聘用未满十八周岁未成年人，语义等价于“禁止聘用未满18周岁的未成年人”\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校临时用工禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"学校临时用工禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"答案引用第八条原文，且实际读取记录包含该条款，支持该制度事实\"\n    },\n    {\n      \"text\": \"17岁不能受聘临时用工岗位\",\n      \"answer_span\": \"不能受聘临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条文禁止未满十八周岁，结合17岁未满十八周岁的说明，支持该结论\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确回答了问题，明确引用相关条款，所有必需要点均已满足，没有无依据陈述或错误引用。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01720092,
+          "seconds": 35.0673
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "68394b91dac1b10396e9516ff92e41372ebbf561229d7b2555b448c16773629d"
+}

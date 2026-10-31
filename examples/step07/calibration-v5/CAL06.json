@@ -1,0 +1,76 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "细则覆盖学校本科以及研究生兼职辅导员",
+        "reason": "实际回答明确表达细则覆盖本科及研究生兼职辅导员，与要点语义等价。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "细则适用于学校本科以及研究生兼职辅导员",
+        "answer_span": "细则覆盖学校本科以及研究生兼职辅导员",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "实际回答引用了D08-C003，引用内容为“第二条 本细则适用于学校本科以及研究生兼职辅导员。”，足以支持该事实；已读记录包含同一chunk，原文支持该事实。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "实际回答直接回答适用，并准确引用D08-C003第二条，已读记录包含该条款，支持结论。要点、状态、动作和事实均通过，无严重错误。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:22.062096+00:00",
+      "attempt": 1,
+      "prompt_sha256": "8e5bfcf0b29dd75d7e3f852241bf50c0f149f9b454447d138d67deea695e0baa",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "d05e1ea7-921e-4ba8-8e61-c6cde6deddb7",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1373,
+        "completion_tokens": 1666,
+        "total_tokens": 3039,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1410
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 477
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"细则覆盖学校本科以及研究生兼职辅导员\",\n      \"reason\": \"实际回答明确表达细则覆盖本科及研究生兼职辅导员，与要点语义等价。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"细则适用于学校本科以及研究生兼职辅导员\",\n      \"answer_span\": \"细则覆盖学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D08-C003，引用内容为“第二条 本细则适用于学校本科以及研究生兼职辅导员。”，足以支持该事实；已读记录包含同一chunk，原文支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答直接回答适用，并准确引用D08-C003第二条，已读记录包含该条款，支持结论。要点、状态、动作和事实均通过，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.008409719999999999,
+      "seconds": 17.9778
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL06",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

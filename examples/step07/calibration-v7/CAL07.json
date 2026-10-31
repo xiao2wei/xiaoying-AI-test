@@ -1,0 +1,87 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "项目最长一般可以执行99年。",
+        "reason": "答案为99年，不符合“最长一般不超过4年”的标准要点，且与所引用原文矛盾。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "项目最长一般可以执行99年。",
+        "answer_span": "项目最长一般可以执行99年。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "实际答案声称99年，引用的原文明确为“不得超过4年”，引用不支持该事实，已读原文也不支持。"
+      }
+    ],
+    "serious_errors": [
+      "实际回答错误称项目最长可执行99年，与引用原文及已读原文矛盾，引用不支持结论。"
+    ],
+    "reason": "实际答案未满足最长一般不超过4年的必备要点，且给出了与依据相悖的99年结论，属于事实错误，因此answer_correct=false。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "实际回答错误称项目最长可执行99年，与引用原文及已读原文矛盾，引用不支持结论。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:26:38.243456+00:00",
+      "attempt": 1,
+      "prompt_sha256": "413ce953bc4d9fa6f77ee10bdfe1fff358fc353824e0e7a22fd5b984a21b3342",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "fde2a639-0aff-459f-a4c7-9381d911b02e",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1668,
+        "completion_tokens": 1797,
+        "total_tokens": 3465,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1530
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 644
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"项目最长一般可以执行99年。\",\n      \"reason\": \"答案为99年，不符合“最长一般不超过4年”的标准要点，且与所引用原文矛盾。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"项目最长一般可以执行99年。\",\n      \"answer_span\": \"项目最长一般可以执行99年。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"实际答案声称99年，引用的原文明确为“不得超过4年”，引用不支持该事实，已读原文也不支持。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际回答错误称项目最长可执行99年，与引用原文及已读原文矛盾，引用不支持结论。\"\n  ],\n  \"reason\": \"实际答案未满足最长一般不超过4年的必备要点，且给出了与依据相悖的99年结论，属于事实错误，因此answer_correct=false。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00931788,
+      "seconds": 18.7633
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": true,
+  "cache_source": {
+    "path": "E:\\xiaoying\\AItest\\examples\\step07\\calibration-v6\\CAL07.json",
+    "sha256": "4846b51901ed9097296ca27133485d518b6cab6c8457208e3160a01224ca8ac3"
+  },
+  "new_judge_requests": 0,
+  "id": "CAL07",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

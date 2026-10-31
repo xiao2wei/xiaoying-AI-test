@@ -1,0 +1,73 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程",
+        "reason": "明确说明了资料中未提供VPN密码重置流程。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。",
+        "reason": "答案仅说明资料缺失并要求补充操作说明，没有编造任何操作步骤。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际答案正确匹配预期状态，明确说明资料未提供流程且未编造操作步骤，工具动作基本合理，无严重错误。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:22.043867+00:00",
+      "attempt": 1,
+      "prompt_sha256": "28582b8610301a703b300d65923a37e55d6075fa750934e62b46ec6db14bf971",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "4b236aef-0247-4bab-a695-4f6ad1f5070c",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1070,
+        "completion_tokens": 1963,
+        "total_tokens": 3033,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1808
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 174
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"这份人事制度汇编未提供VPN密码重置流程\",\"reason\":\"明确说明了资料中未提供VPN密码重置流程。\"},{\"index\":1,\"met\":true,\"answer_span\":\"这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。\",\"reason\":\"答案仅说明资料缺失并要求补充操作说明，没有编造任何操作步骤。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[],\"serious_errors\":[],\"reason\":\"实际答案正确匹配预期状态，明确说明资料未提供流程且未编造操作步骤，工具动作基本合理，无严重错误。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.009185879999999999,
+      "seconds": 23.3954
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL05",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

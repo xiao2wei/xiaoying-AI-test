@@ -1,0 +1,441 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "2022版高层次人才引进办法发布后，2021年27号旧办法是否仍同时有效？只根据汇编。",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版施行后不再与2022年版同时有效。",
+            "citations": [
+              {
+                "chunk_id": "D02-C023",
+                "quote": "第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第二十二条",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              },
+              {
+                "chunk_id": "D02-C001",
+                "quote": "辽宁科技大学高层次人才引进工作实施办法（2022 年版）（辽科大校发〔2022〕44号附件·2022年10月11日）",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  9
+                ],
+                "printed_pages": [
+                  4
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版施行后不再与2022年版同时有效。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版施行后不再与2022年版同时有效。",
+            "citations": [
+              {
+                "chunk_id": "D02-C023",
+                "quote": "第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第二十二条",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              },
+              {
+                "chunk_id": "D02-C001",
+                "quote": "辽宁科技大学高层次人才引进工作实施办法（2022 年版）（辽科大校发〔2022〕44号附件·2022年10月11日）",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  9
+                ],
+                "printed_pages": [
+                  4
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版施行后不再与2022年版同时有效。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:44.025213+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e516e0390533bb718bd131444715da7c8b755b8e8e0366cec975fa575389a7f2",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "26366c89-5766-4d03-bd9f-0f89f58120e6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1739,
+            "completion_tokens": 43,
+            "total_tokens": 1782,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 203
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"高层次人才引进办法 2022版 2021年27号 废止 施行 附则\"},\"reason\":\"查找两版办法及废止衔接条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005733,
+          "seconds": 0.9755
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "高层次人才引进办法 2022版 2021年27号 废止 施行 附则"
+          },
+          "reason": "查找两版办法及废止衔接条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "高层次人才引进办法 2022版 2021年27号 废止 施行 附则"
+          },
+          "result": {
+            "ok": true,
+            "query": "高层次人才引进办法 2022版 2021年27号 废止 施行 附则",
+            "hits": [
+              {
+                "chunk_id": "D02-C023",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第二十二条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.733365,
+                "lexical_score": 62.8471,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第二十二条 第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作\n实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C001",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  9
+                ],
+                "printed_pages": [
+                  4
+                ],
+                "score": 0.086957,
+                "semantic_score": 0.713172,
+                "lexical_score": 34.1315,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 前言或附件 辽宁科技大学高层次人才引进工作实施办法\n（2022 年版）\n（辽科大校发〔2022〕44号附件·2022年10月11日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C007",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第六条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  9,
+                  10,
+                  11
+                ],
+                "printed_pages": [
+                  4,
+                  5,
+                  6
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.684749,
+                "lexical_score": 32.7282,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第六条 层次人才的层次及待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C008",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第七条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  11
+                ],
+                "printed_pages": [
+                  6
+                ],
+                "score": 0.082492,
+                "semantic_score": 0.713741,
+                "lexical_score": 30.5625,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第七条 序及考核",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C017",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第十六条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "score": 0.077713,
+                "semantic_score": 0.654083,
+                "lexical_score": 34.5901,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第十六条 第十六条 学校设立人才专用岗位。各单位引进的第六层次以上人才，首聘期\n使用人才专用岗位，不占用学院专业技术岗位指标。\n第六章 附 则",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0105,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:45.031188+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5760cb0ff17b216857374f6d5154263c9c13f45b381715a99ceaf89e90b53a6d",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "cdaa6d92-bebc-4125-8295-4ed012ec9963",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2704,
+            "completion_tokens": 44,
+            "total_tokens": 2748,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1040
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D02-C023\", \"D02-C001\"]}, \"reason\": \"读取2022版附则废止条款及文件标识原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008639999999999999,
+          "seconds": 0.7437
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D02-C023",
+              "D02-C001"
+            ]
+          },
+          "reason": "读取2022版附则废止条款及文件标识原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D02-C023"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D02",
+              "article": "第二十二条",
+              "text": "第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作\n实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。",
+              "pdf_pages": [
+                12
+              ],
+              "table_ids": [],
+              "chunk_id": "D02-C023",
+              "printed_pages": [
+                7
+              ],
+              "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+              "version_date": "2022-10-11",
+              "previous_chunk_id": "D02-C022",
+              "next_chunk_id": "D02-C024",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D02-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D02",
+              "article": "前言或附件",
+              "text": "辽宁科技大学高层次人才引进工作实施办法\n（2022 年版）\n（辽科大校发〔2022〕44号附件·2022年10月11日）\n第一章 总 则",
+              "pdf_pages": [
+                9
+              ],
+              "table_ids": [],
+              "chunk_id": "D02-C001",
+              "printed_pages": [
+                4
+              ],
+              "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+              "version_date": "2022-10-11",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D02-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:45.795045+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c3569da820b61f5f20bd86e057a939874e53a32b99831ce7e78897c4141f3fe0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "63dc1c67-bc57-477a-8dd0-9eb35718e152",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3142,
+            "completion_tokens": 261,
+            "total_tokens": 3403,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 454
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版发布施行后不再同时有效。\", \"citations\": [{\"chunk_id\": \"D02-C023\", \"quote\": \"第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作\\n实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。\"}, {\"chunk_id\": \"D02-C001\", \"quote\": \"辽宁科技大学高层次人才引进工作实施办法\\n（2022 年版）\\n（辽科大校发〔2022〕44号附件·2022年10月11日）\"}]}], \"gaps\": []}, \"reason\": \"2022版附则明确废止2021年27号旧办法，冲突已由原文解决\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0012558,
+          "seconds": 1.5079
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "2022版附则明确废止2021年27号旧办法，冲突已由原文解决"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:47.323347+00:00",
+          "attempt": 1,
+          "prompt_sha256": "385d7ff747670e1cd8f2489d6bebd982107ac661a81d4828c00ed31b188f6fd7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "aaa68060-3de3-4268-b4b2-f465f1e88175",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3577,
+            "completion_tokens": 1079,
+            "total_tokens": 4656,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 835
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2041
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学高层次人才引进工作实施办法（2022年版）》（辽科大校发〔2022〕44号附件，2022年10月11日）第二十二条规定，本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。因此，2021年27号旧办法在2022年版施行后不再与2022年版同时有效。\",\"citations\":[{\"chunk_id\":\"D02-C023\",\"quote\":\"第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。\"},{\"chunk_id\":\"D02-C001\",\"quote\":\"辽宁科技大学高层次人才引进工作实施办法（2022 年版）（辽科大校发〔2022〕44号附件·2022年10月11日）\"}]}],\"gaps\":[]},\"reason\":\"2022年版附则已明确废止2021年27号旧办法，版本冲突由原文直接解决\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0023678999999999996,
+          "seconds": 6.228
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "2022年版附则已明确废止2021年27号旧办法，版本冲突由原文直接解决"
+        }
+      ],
+      "read_ids": [
+        "D02-C023",
+        "D02-C001"
+      ],
+      "first_hits": [
+        "D02-C023",
+        "D02-C001",
+        "D02-C007",
+        "D02-C008",
+        "D02-C017"
+      ],
+      "seconds": 9.569,
+      "model_calls": 4,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 9.57,
+  "model_calls": 4,
+  "tool_calls": 3,
+  "created_at": "2026-10-31T03:14:53.552327+00:00"
+}

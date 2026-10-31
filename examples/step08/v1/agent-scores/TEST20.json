@@ -1,0 +1,84 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有资料中未检索到2026年新发布的在职读博补贴标准文件",
+            "reason": "明确表示现有资料无法提供2026年新标准，符合该要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供2026年新发布文件的标题、文号或版本日期，或提供该文件原文/相关条款",
+            "reason": "明确要求补充2026年发布的制度文件或其关键信息，符合需补充2026制度的要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "仅命中《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日），而用户明确要求不使用2023版",
+            "reason": "明确指出命中版本为2023年且用户要求不用2023版，回答未将2023条款作为2026规定呈现，符合不得冒充的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "回答准确识别了资料缺失，没有用2023版冒充2026版，并明确请求补充2026年制度文件及可核对的标题、文号、版本日期或原文条款，状态和动作合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "2026年新发布文件的标题、文号或版本日期",
+            "该文件原文/相关条款"
+          ],
+          "reason": "回答明确说明缺少2026年新发布文件，并要求用户提供具体可核对的标题、文号或版本日期，或文件原文/相关条款，补充信息指向明确。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:44.897721+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ef6c9e9a35574a9d125e8bfc5ce50a1648b772ceeca90479d132cf86357222b5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c41be5dc-51a9-44fc-a036-6212b4dad40b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1330,
+            "completion_tokens": 3031,
+            "total_tokens": 4361,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2670
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 434
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"现有资料中未检索到2026年新发布的在职读博补贴标准文件\",\"reason\":\"明确表示现有资料无法提供2026年新标准，符合该要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"请提供2026年新发布文件的标题、文号或版本日期，或提供该文件原文/相关条款\",\"reason\":\"明确要求补充2026年发布的制度文件或其关键信息，符合需补充2026制度的要点。\"},{\"index\":2,\"met\":true,\"answer_span\":\"仅命中《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日），而用户明确要求不使用2023版\",\"reason\":\"明确指出命中版本为2023年且用户要求不用2023版，回答未将2023条款作为2026规定呈现，符合不得冒充的要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[],\"serious_errors\":[],\"reason\":\"回答准确识别了资料缺失，没有用2023版冒充2026版，并明确请求补充2026年制度文件及可核对的标题、文号、版本日期或原文条款，状态和动作合理。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"2026年新发布文件的标题、文号或版本日期\",\"该文件原文/相关条款\"],\"reason\":\"回答明确说明缺少2026年新发布文件，并要求用户提供具体可核对的标题、文号或版本日期，或文件原文/相关条款，补充信息指向明确。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01375836,
+          "seconds": 29.2305
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c80cb69ddc1d3fce337e584c53a4e8e0079b601a9e913b7e92e70f579608aafe"
+}

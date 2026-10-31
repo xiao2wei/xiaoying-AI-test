@@ -1,0 +1,158 @@
+{
+  "id": "STAB-TEST13-R3",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "实际答案明确引用2020年规定第九条并说明配偶享有护理假15日。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "实际答案明确引用2023年补充规定第十一条并说明男教工护理假20日。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\n《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "实际答案分别展示了2020年和2023年两份依据。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有材料缺少明确废止或优先适用的衔接依据，尚不能唯一判断男教工护理假应直接执行哪一天数。",
+            "reason": "实际答案明确说明缺少衔接依据，需确认适用口径，未仅凭日期断言。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "配偶享有护理假15日",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010的quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的第一个quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "护理假需提供医院生育证明等材料",
+            "answer_span": "护理假需提供医院生育证明等材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的第二个quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "自生育之日起按自然日计算",
+            "answer_span": "自生育之日起按自然日计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的第二个quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "由所在单位审批",
+            "answer_span": "由所在单位审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的第二个quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "报人事处备案",
+            "answer_span": "报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的第二个quote包含该句，且已读原文支持。"
+          },
+          {
+            "text": "上述两份文件的解释部门均为人事处",
+            "answer_span": "上述两份文件的解释部门均为人事处",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019和D19-C024的quote分别支持两个文件由人事处解释，且已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确展示了两份文件中男教工护理假的不同天数，并明确指出缺乏衔接依据需要人事处确认，没有擅自消解冲突或凭日期断言，引用支持充分，处理合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处关于2023年补充规定与2020年规定适用关系的正式解释、衔接说明或执行通知"
+          ],
+          "reason": "答案明确要求提供人事处的正式解释或衔接说明等文件，并指出需要明确天数及适用对象，符合要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:10:21.782443+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b636764c5b3148eea1f1cbb1581f6da56739a79ec318346fba1323ae0a4d1ef9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "db244204-48f4-4cca-8772-242fcf5f20ae",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4307,
+            "completion_tokens": 5665,
+            "total_tokens": 9972,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4616
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2387
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"实际答案明确引用2020年规定第九条并说明配偶享有护理假15日。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"实际答案明确引用2023年补充规定第十一条并说明男教工护理假20日。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\\n《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"实际答案分别展示了2020年和2023年两份依据。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有材料缺少明确废止或优先适用的衔接依据，尚不能唯一判断男教工护理假应直接执行哪一天数。\",\n      \"reason\": \"实际答案明确说明缺少衔接依据，需确认适用口径，未仅凭日期断言。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"配偶享有护理假15日\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010的quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的第一个quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"护理假需提供医院生育证明等材料\",\n      \"answer_span\": \"护理假需提供医院生育证明等材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的第二个quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"自生育之日起按自然日计算\",\n      \"answer_span\": \"自生育之日起按自然日计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的第二个quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"由所在单位审批\",\n      \"answer_span\": \"由所在单位审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的第二个quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"报人事处备案\",\n      \"answer_span\": \"报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的第二个quote包含该句，且已读原文支持。\"\n    },\n    {\n      \"text\": \"上述两份文件的解释部门均为人事处\",\n      \"answer_span\": \"上述两份文件的解释部门均为人事处\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019和D19-C024的quote分别支持两个文件由人事处解释，且已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确展示了两份文件中男教工护理假的不同天数，并明确指出缺乏衔接依据需要人事处确认，没有擅自消解冲突或凭日期断言，引用支持充分，处理合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处关于2023年补充规定与2020年规定适用关系的正式解释、衔接说明或执行通知\"\n    ],\n    \"reason\": \"答案明确要求提供人事处的正式解释或衔接说明等文件，并指出需要明确天数及适用对象，符合要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012834360000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 46.7372
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案准确展示了两份文件中男教工护理假的不同天数，并明确指出缺乏衔接依据需要人事处确认，没有擅自消解冲突或凭日期断言，引用支持充分，处理合理。",
+        "source_score_sha256": "657c4f099d71f5c52b21512c46aca56383eb7343049dd393c017e0ba44a5ecb1"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "6e865cdaf2360d6128749a6776a2c423c8c41762b1278c995d223095ae58b1a8"
+}

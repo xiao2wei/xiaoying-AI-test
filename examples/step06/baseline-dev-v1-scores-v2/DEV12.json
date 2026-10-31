@@ -1,0 +1,63 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确说明检索工具持续不可用（PERSISTENT_UNAVAILABLE），未能读取任何制度原文，无法核实填报时间，符合'持续检索故障须明确未完成及工具失败'的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答仅说明无法核实，未给出任何猜测性结论，符合'不得猜测原文结论'的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "回答正确报告了工具持续不可用且未读取原文，未猜测结论，符合预期状态和必需要点。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:43.145760+00:00",
+          "attempt": 1,
+          "prompt_sha256": "328d123655fe366096875e5aab6c6c6e18f2542b783e3b5d786d85f19e373656",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "4bfdaac7-cad4-4db4-8ad7-749cf36dedd3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1049,
+            "completion_tokens": 191,
+            "total_tokens": 1240,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 409
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确说明检索工具持续不可用（PERSISTENT_UNAVAILABLE），未能读取任何制度原文，无法核实填报时间，符合'持续检索故障须明确未完成及工具失败'的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答仅说明无法核实，未给出任何猜测性结论，符合'不得猜测原文结论'的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确报告了工具持续不可用且未读取原文，未猜测结论，符合预期状态和必需要点。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00214104,
+          "seconds": 3.4946
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "109a7f9632202f7ba1446a8790ceb9a3c81f375262357683e7691f285683d06f"
+}

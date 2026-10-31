@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-10-31T02:11:35.406Z",
+  "client_date": "2026-10-31",
+  "version": "candidate-v1",
+  "git_commit": "本轮尚未提交Git；使用文件SHA256冻结",
+  "models": {
+    "answer": "deepseek-flash",
+    "answer_thinking": "disabled",
+    "judge": "deepseek-v4-pro",
+    "judge_thinking": "enabled"
+  },
+  "files": {
+    "src/policy_agent/agent.py": "890624054f499f5f9fbf710df1eb674fd6ededfe91f2efeca8aecfd62752b0bc",
+    "src/policy_agent/cli.py": "6519c8087c1aa166745fa5eb8c91a86a4ae2a8fac25e186891358207caec0602",
+    "src/policy_agent/common.py": "0f3d1b42fd87ecfc26a40ed88735d8a47ca5d76b78034d2233ee20317e6acbcb",
+    "src/policy_agent/evaluation.py": "5f188b94682d4df8381f725b3aefb503913bf3f4bcf29ba98a8f9cb6d484f351",
+    "src/policy_agent/metrics.py": "324efec45bf926de64569a6ec91a9e3b5dcafbf71375720e494f3a7f305956c3",
+    "src/policy_agent/model.py": "4af0282bd09f078795fee602e5574e6ce7ecbceae17b4b7570ba9e551d3bce17",
+    "src/policy_agent/prompts/agent.txt": "707dd4406c8fe771cbe96fdbe28206171e3c6f2a37868a6b5c554d48e4a81eea",
+    "src/policy_agent/prompts/answer.txt": "c313a19b431111de001bf5d008b20994b6cf7a7f0e79eff63459e415152eb3df",
+    "src/policy_agent/prompts/judge.txt": "abe42f660e2b91cafe0dfcb965d302a4353ca0320be6c996a337cc037c4a5261",
+    "src/policy_agent/retrieval.py": "8460bdd6b069a32738cd5029b1983dadb926f282d4f68a256b4533a5a7b19fc6",
+    "src/policy_agent/reviews.py": "2fff424925a3141d8bed83061a55e7c20ed61c9bd91559cf961c98b7916fbfdb",
+    "src/policy_agent/runtime.py": "2e3c21bbfc8a30cd97c7b5badeee3b342a86f587e99322ea0e357de37311777e",
+    "src/policy_agent/tools.py": "4300de577e3579e887e8cb1d1b9ea9e29b61cd4df32eedc6cd4fd1c52689ca7a",
+    "src/policy_agent/validation.py": "c74e527467ad356ee1ec195fcc19612a494bf3ab6fcade424db6df6edac9dde2",
+    "src/policy_agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/build_dataset.py": "2512a677755bc82727e884208f8482e3987cb68a6905cffb228cef413e546168",
+    "scripts/check_actionable_gaps.py": "78205945b996dd1e3c174c4690d5fcc398bd10b26e7856c5a88d829f80dd0f98",
+    "scripts/formal_pipeline.py": "1af638f4d6b31a672e4bc059fc3d782bf7627f2a20a4c783b01083f488d7b47b",
+    "scripts/prepare_corpus.py": "840cc1c92ce93d25b9129746fae9f331502354db4f006c53fe596366159d3577",
+    "scripts/recalibrate_step07.py": "34eb059a535c2393c399b74ea1794c18d0236c71a7b4b4fb353fbc6a6732fac7",
+    "scripts/recheck_judgements.py": "0d569f48ba17c5d9bf33697bf32e115e008fd80c0d325584c10faae11c880f66",
+    "scripts/record_human_labels.py": "bc6a385e3c9e3b6f8eea42f29973c8f389cc87086fa810558379be8f946cdd55",
+    "scripts/run_tests.py": "01b9ee914da0bc465c0b6345233b14d63e7b8ae9560cb3dbb30468b18e4a35d9",
+    "scripts/validate_evaluator.py": "a53802d5798bd698722e9c1f783947648c96ebb51567c2c101572a716256fc42",
+    "pyproject.toml": "768d3a53dff4eed8126dab81434492ebc534ef81dedb86f4d2e486dc20a12a46",
+    "requirements.txt": "0cac0e472eba3359aa79e9674ff11a5fd0484b9c465fc1cb774c30938edcc5d7"
+  },
+  "data": {
+    "data/source/personnel-policies.pdf": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+    "data/processed/chunks.json": "8f6d97047933f4fcf9efbe9f0143a196a1a92a96466eaf1f3b0489dcf15ee17f",
+    "data/processed/documents.json": "79eea6788e16b706fb19c9f4c806f5174a966479d097528cec47e21fb3400285",
+    "data/processed/tables.json": "91f42db589e1896e4261c9a76a0580e03199184821de4be04b97c9478972fbd1",
+    "data/cache/index/vectors.npy": "2e18a6acf661982af89b15a542d6083bd10673954e3057145b339c958e33209f",
+    "data/cache/index/manifest.json": "a94be7a3beb29d2b636d8782266a4a0c89832bd66f82ef5d7dd7d000109c0362",
+    "evaluation/dev.json": "f29f8e5682f12928d3c7d0263f35c7fd56c5f3cb16855d28236ddf1c53e55af1",
+    "evaluation/formal.json": "8597df42ea5503dca36b81285d0b9c9feb190aa1a9ab74ca71a58dd485e292e4",
+    "evaluation/manifest.json": "ef92fb1a4d0a59fff85f4eda18bb9a8d5bbd9171d5f856104a39d59ad59b1fee"
+  },
+  "calibration": "examples/step07/calibration-v5/summary.json",
+  "dev_report": "examples/step07/agent-dev-v3-report/metrics.json"
+}

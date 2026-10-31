@@ -1,0 +1,427 @@
+{
+  "id": "TEST37",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\n相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\n相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:21.672347+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cfcdf5f4cfbf4047828dc27957e2e7a74819a33a4d37a84c5f094713ad22775f",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "a170a17f-e6e9-4073-8a47-151a37bfca8e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1148,
+            "completion_tokens": 39,
+            "total_tokens": 1187,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 252
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"管理服务人员作风问题线索移交 初步意见 时限\",\"doc_ids\":[]},\"reason\":\"检索作风问题线索处理时限相关条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00039119999999999997,
+          "seconds": 0.6883
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "管理服务人员作风问题线索移交 初步意见 时限",
+            "doc_ids": []
+          },
+          "reason": "检索作风问题线索处理时限相关条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "管理服务人员作风问题线索移交 初步意见 时限",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "管理服务人员作风问题线索移交 初步意见 时限",
+            "hits": [
+              {
+                "chunk_id": "D26-C014",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.768264,
+                "lexical_score": 77.3568,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十三条 第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C016",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.710829,
+                "lexical_score": 52.222,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十五条 第十五条 相关单位将问题处理材料、问题处理初步意见报工作小组办公室，工\n作小组审议相关单位处理初步意见，形成问题处理决定。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C006",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  191
+                ],
+                "printed_pages": [
+                  186
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.686356,
+                "lexical_score": 40.1641,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第五条 第五条 工作小组对管理服务人员劳动纪律和规章制度执行情况进行不定期检\n查，受理师生员工反映的意见并作出相应的处理意见。党委组织部、人事处根据管理\n服务人员的管理权限并针对其工作作风问题，进行调查并报工作小组讨论会商形成\n处理意见；党政办公室、机关党委根据工作小组办公室建立的个人工作作风问题台\n账，将工作作风问题作为管理服务人员所在单位部门年度绩效考核结果的依据，纳入\n年度考核中；纪委综合监察室、纪委审查调查室对工作作风问题履行监督执纪问责\n职责。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C015",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.694041,
+                "lexical_score": 33.5726,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十四条 第十四条 相关单位在管理服务人员工作作风问题认定过程中，应听取当事人\n的陈述和申辩。相关单位对所反映的问题处理不及时、处置不力、方式不当或者整改\n不彻底等情况，扣减相关单位年度考核分数。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C011",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  192
+                ],
+                "printed_pages": [
+                  187
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.681714,
+                "lexical_score": 33.6275,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十条 第十条 学校直属各单位所辖管理服务人员出现工作作风问题的，扣减单位年\n度绩效考核分数并根据问题严重程度，由工作小组从一岗双责角度对所在单位、部门\n党政负责人进行约谈或追责。\n第四章 处理程序",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0094,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:22.381823+00:00",
+          "attempt": 1,
+          "prompt_sha256": "535d397b5004378116277383db6c24565bc7f17fb422fead7c15e475ccfea372",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "acf06aea-84f6-4378-8fd0-b48e35352833",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2296,
+            "completion_tokens": 37,
+            "total_tokens": 2333,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1272
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D26-C014\"]}, \"reason\": \"读取第十三条原文，核实两个时限及适用前提\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007331999999999999,
+          "seconds": 0.5565
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D26-C014"
+            ]
+          },
+          "reason": "读取第十三条原文，核实两个时限及适用前提"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C014"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:22.950605+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f0c733f90e9affc47ed8713a8f1248fc9dd2ced2c4b0b40e32d87f5253a960ed",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e45b97c5-ddaf-4f48-a684-932efd40c62f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2435,
+            "completion_tokens": 37,
+            "total_tokens": 2472,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 259
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D26-C014\"]}, \"reason\": \"临时故障可重试，再次读取第十三条原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007749,
+          "seconds": 0.8052
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D26-C014"
+            ]
+          },
+          "reason": "临时故障可重试，再次读取第十三条原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第十三条",
+              "text": "第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+              "pdf_pages": [
+                193
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C014",
+              "printed_pages": [
+                188
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C013",
+              "next_chunk_id": "D26-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:12:23.765900+00:00",
+          "attempt": 1,
+          "prompt_sha256": "60782c14bdc8575f5cbd5511556c3ad07b064033014cbea270c19a3e62fcebeb",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "d7558fd8-99ef-4999-b970-9a4bb4796117",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2712,
+            "completion_tokens": 197,
+            "total_tokens": 2909,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 280
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位\"}]}, {\"text\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\"}]}], \"gaps\": []}, \"reason\": \"第十三条原文明确两个时限，证据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00105,
+          "seconds": 1.4864
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十三条原文明确两个时限，证据充分"
+        }
+      ],
+      "read_ids": [
+        "D26-C014"
+      ],
+      "first_hits": [
+        "D26-C014",
+        "D26-C016",
+        "D26-C006",
+        "D26-C015",
+        "D26-C011"
+      ],
+      "seconds": 3.59,
+      "model_calls": 4,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 3.59,
+  "model_calls": 4,
+  "tool_calls": 3,
+  "created_at": "2026-10-31T02:12:25.253364+00:00"
+}

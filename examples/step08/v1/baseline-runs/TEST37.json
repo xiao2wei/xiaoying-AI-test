@@ -1,0 +1,354 @@
+{
+  "id": "TEST37",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？",
+      "history": [],
+      "output": {
+        "status": "validation_failed",
+        "claims": [],
+        "gaps": [
+          "引用或格式校验未通过：unread_citation:D26-C014,unread_citation:D26-C014"
+        ],
+        "answer": "引用或格式校验未通过：unread_citation:D26-C014,unread_citation:D26-C014"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位"
+              }
+            ]
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "第十三条原文的读取结果因工具临时故障未能返回，上述时限依据检索摘要中的原文片段；如需以完整条文核对，可重新读取D26-C014。"
+        ]
+      },
+      "validation_errors": [
+        "unread_citation:D26-C014",
+        "unread_citation:D26-C014"
+      ],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？"
+          },
+          "result": {
+            "ok": true,
+            "query": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？",
+            "hits": [
+              {
+                "chunk_id": "D26-C014",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.75154,
+                "lexical_score": 91.0824,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十三条 第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C016",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.694066,
+                "lexical_score": 59.0615,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十五条 第十五条 相关单位将问题处理材料、问题处理初步意见报工作小组办公室，工\n作小组审议相关单位处理初步意见，形成问题处理决定。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C006",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  191
+                ],
+                "printed_pages": [
+                  186
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.659671,
+                "lexical_score": 44.6858,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第五条 第五条 工作小组对管理服务人员劳动纪律和规章制度执行情况进行不定期检\n查，受理师生员工反映的意见并作出相应的处理意见。党委组织部、人事处根据管理\n服务人员的管理权限并针对其工作作风问题，进行调查并报工作小组讨论会商形成\n处理意见；党政办公室、机关党委根据工作小组办公室建立的个人工作作风问题台\n账，将工作作风问题作为管理服务人员所在单位部门年度绩效考核结果的依据，纳入\n年度考核中；纪委综合监察室、纪委审查调查室对工作作风问题履行监督执纪问责\n职责。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C011",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  192
+                ],
+                "printed_pages": [
+                  187
+                ],
+                "score": 0.080515,
+                "semantic_score": 0.66193,
+                "lexical_score": 35.2546,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十条 第十条 学校直属各单位所辖管理服务人员出现工作作风问题的，扣减单位年\n度绩效考核分数并根据问题严重程度，由工作小组从一岗双责角度对所在单位、部门\n党政负责人进行约谈或追责。\n第四章 处理程序",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C007",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第六条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  191
+                ],
+                "printed_pages": [
+                  186
+                ],
+                "score": 0.080128,
+                "semantic_score": 0.657876,
+                "lexical_score": 37.3014,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第六条 第六条 各分党委（党总支、直属党支部）对所辖部门、单位的管理服务人员工作\n作风问题负主体责任，主要负责人负第一责任人责任。各分党委（党总支、直属党支\n部）结合工作实际，将工作作风问题同管理服务人员的年度绩效考核挂钩，制定切实\n可行的具体工作细则并报工作小组办公室备案。\n第三章 作风问题处理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.016,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C014"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第十五条",
+              "text": "第十五条 相关单位将问题处理材料、问题处理初步意见报工作小组办公室，工\n作小组审议相关单位处理初步意见，形成问题处理决定。",
+              "pdf_pages": [
+                193
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C016",
+              "printed_pages": [
+                188
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C015",
+              "next_chunk_id": "D26-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C006"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第五条",
+              "text": "第五条 工作小组对管理服务人员劳动纪律和规章制度执行情况进行不定期检\n查，受理师生员工反映的意见并作出相应的处理意见。党委组织部、人事处根据管理\n服务人员的管理权限并针对其工作作风问题，进行调查并报工作小组讨论会商形成\n处理意见；党政办公室、机关党委根据工作小组办公室建立的个人工作作风问题台\n账，将工作作风问题作为管理服务人员所在单位部门年度绩效考核结果的依据，纳入\n年度考核中；纪委综合监察室、纪委审查调查室对工作作风问题履行监督执纪问责\n职责。",
+              "pdf_pages": [
+                191
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C006",
+              "printed_pages": [
+                186
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C005",
+              "next_chunk_id": "D26-C007",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C011"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第十条",
+              "text": "第十条 学校直属各单位所辖管理服务人员出现工作作风问题的，扣减单位年\n度绩效考核分数并根据问题严重程度，由工作小组从一岗双责角度对所在单位、部门\n党政负责人进行约谈或追责。\n第四章 处理程序",
+              "pdf_pages": [
+                192
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C011",
+              "printed_pages": [
+                187
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C010",
+              "next_chunk_id": "D26-C012",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C007"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第六条",
+              "text": "第六条 各分党委（党总支、直属党支部）对所辖部门、单位的管理服务人员工作\n作风问题负主体责任，主要负责人负第一责任人责任。各分党委（党总支、直属党支\n部）结合工作实际，将工作作风问题同管理服务人员的年度绩效考核挂钩，制定切实\n可行的具体工作细则并报工作小组办公室备案。\n第三章 作风问题处理",
+              "pdf_pages": [
+                191
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C007",
+              "printed_pages": [
+                186
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C006",
+              "next_chunk_id": "D26-C008",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:55.806596+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0cf5c2ece0f090ce102d7e5603bef53adf12a4275ed25e3d4489e10c3b85ec6c",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "48d7dca7-650a-40de-9687-1277920eb1c2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2517,
+            "completion_tokens": 195,
+            "total_tokens": 2712,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 2005
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位。\",\"citations\":[{\"chunk_id\":\"D26-C014\",\"quote\":\"工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\\n题线索移交相关单位\"}]},{\"text\":\"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\",\"citations\":[{\"chunk_id\":\"D26-C014\",\"quote\":\"相关单位应在收到工作小组转来的管理服务人员工作作风问\\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\"}]}],\"gaps\":[\"第十三条原文的读取结果因工具临时故障未能返回，上述时限依据检索摘要中的原文片段；如需以完整条文核对，可重新读取D26-C014。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009891,
+          "seconds": 1.3633
+        }
+      ],
+      "read_ids": [
+        "D26-C016",
+        "D26-C006",
+        "D26-C011",
+        "D26-C007"
+      ],
+      "first_hits": [
+        "D26-C014",
+        "D26-C016",
+        "D26-C006",
+        "D26-C011",
+        "D26-C007"
+      ],
+      "seconds": 1.3899,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 1.3899,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-31T02:11:57.171020+00:00"
+}

@@ -1,0 +1,83 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际答案仅称5001元由项目负责人一人签字，未提及所在二级教学科研机构负责人，且错误适用5000元以下条款，不符合要求。"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "5001元只需项目负责人一人签字",
+        "answer_span": "5001元只要项目负责人一个人签字。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "该事实错误，5001元属于5000元以上1万元以下区间，按原文需项目负责人及所在二级教学科研机构负责人签字；所引用条款仅适用于5000元以下，不支持该结论。"
+      }
+    ],
+    "serious_errors": [
+      "错误适用5000元以下报销审批条款回答5001元只需项目负责人签字，与原文规定不符",
+      "引用不支持其结论的规则条款"
+    ],
+    "reason": "实际答案错误，未满足规定要点，引用的条款适用范围不符，应判定为不正确。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "错误适用5000元以下报销审批条款回答5001元只需项目负责人签字，与原文规定不符",
+    "引用不支持其结论的规则条款",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:40.049493+00:00",
+      "attempt": 1,
+      "prompt_sha256": "d9f15f7811ed583e1cf16485b4883ac227c3bf1340058f987fbbe95c31507af9",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "98bd8774-7fc1-4903-95e4-54d8e8440c25",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2399,
+        "completion_tokens": 2599,
+        "total_tokens": 4998,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2372
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1503
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际答案仅称5001元由项目负责人一人签字，未提及所在二级教学科研机构负责人，且错误适用5000元以下条款，不符合要求。\"}],\"status_ok\":false,\"decision_ok\":false,\"answer_correct\":false,\"facts\":[{\"text\":\"5001元只需项目负责人一人签字\",\"answer_span\":\"5001元只要项目负责人一个人签字。\",\"cited\":true,\"citation_supported\":false,\"supported_by_read\":false,\"reason\":\"该事实错误，5001元属于5000元以上1万元以下区间，按原文需项目负责人及所在二级教学科研机构负责人签字；所引用条款仅适用于5000元以下，不支持该结论。\"}],\"serious_errors\":[\"错误适用5000元以下报销审批条款回答5001元只需项目负责人签字，与原文规定不符\",\"引用不支持其结论的规则条款\"],\"reason\":\"实际答案错误，未满足规定要点，引用的条款适用范围不符，应判定为不正确。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.013458719999999999,
+      "seconds": 25.9461
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL10",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

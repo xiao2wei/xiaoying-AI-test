@@ -1,0 +1,88 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述'从审批立项时间起算'，与要求一致。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答明确表述'最长一般不超过4年'，与要求一致。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "实际回答明确表述'期满结余由学校统筹管理'，与要求一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "项目起始时间从学校审批立项时间算起",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用内容明确包含该事实，且实际读取了该证据。"
+      },
+      {
+        "text": "项目执行期限最长一般不得超过4年",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用内容明确包含该事实，且实际读取了该证据。"
+      },
+      {
+        "text": "项目执行期满后，结余经费由学校统筹管理",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用内容明确包含该事实，且实际读取了该证据。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确覆盖所有要求要点，引用证据充分且已实际读取，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:49:44.810017+00:00",
+      "attempt": 1,
+      "prompt_sha256": "b25bdf699fd97120189d368849846fedf54fdec93b8d6e80e08b27707125b79c",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "9c01ef51-9ff0-40d1-9086-5b1201c5ceb6",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1183,
+        "completion_tokens": 379,
+        "total_tokens": 1562,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1183
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'从审批立项时间起算'，与要求一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'最长一般不超过4年'，与要求一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'期满结余由学校统筹管理'，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确包含该事实，且实际读取了该证据。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确包含该事实，且实际读取了该证据。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容明确包含该事实，且实际读取了该证据。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖所有要求要点，引用证据充分且已实际读取，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0030624000000000003,
+      "seconds": 3.5027
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL01",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

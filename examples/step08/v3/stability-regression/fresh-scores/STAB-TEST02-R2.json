@@ -1,0 +1,103 @@
+{
+  "id": "STAB-TEST02-R2",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放",
+            "reason": "明确回答满10年按80%发放"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放",
+            "reason": "明确回答不满10年按70%发放"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效",
+            "reason": "回答中明确限定为岗位工资、薪级工资和基础绩效，没有泛化所有收入"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "全年累计病假超过6个月时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。",
+            "answer_span": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，全年累计病假超过6个月时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用中明确包含＞6个月时满10年发80%，实际已读原文相同"
+          },
+          {
+            "text": "同一档中，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。",
+            "answer_span": "同一档中，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用中明确包含不满10年发70%，实际已读原文相同"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确给出两个比例并明确针对岗位工资、薪级工资和基础绩效，引用充分，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:52:43.867009+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cc8bf02b280716f9398940838acb5a4d9368547fadce297b30ff8961773fd670",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "aee03a1b-c90b-4f91-9d2b-a54bbac246a0",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2664,
+            "completion_tokens": 2517,
+            "total_tokens": 5181,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2004
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1128
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放\",\n      \"reason\": \"明确回答满10年按80%发放\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放\",\n      \"reason\": \"明确回答不满10年按70%发放\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"岗位工资、薪级工资和基础绩效\",\n      \"reason\": \"回答中明确限定为岗位工资、薪级工资和基础绩效，没有泛化所有收入\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"全年累计病假超过6个月时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。\",\n      \"answer_span\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，全年累计病假超过6个月时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用中明确包含＞6个月时满10年发80%，实际已读原文相同\"\n    },\n    {\n      \"text\": \"同一档中，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。\",\n      \"answer_span\": \"同一档中，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用中明确包含不满10年发70%，实际已读原文相同\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确给出两个比例并明确针对岗位工资、薪级工资和基础绩效，引用充分，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011523864,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 23.4387
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5d25add428470daa253023c399f6fdddc0b58f4ea0e2e0d101e767eb9d26b4a6"
+}

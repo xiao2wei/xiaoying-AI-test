@@ -1,0 +1,95 @@
+{
+  "id": "TEST37",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "reason": "实际回答明确说明了办公室在发现问题及受理后2个工作日内移交问题线索，符合要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "reason": "实际回答明确说明了相关单位收到后10个工作日内认定、处理并形成初步处理意见，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "answer_span": "工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自已读chunk D26-C014中的第十三条规定，原文完全支持。"
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "answer_span": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用自已读chunk D26-C014中的第十三条规定，原文完全支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确涵盖了两个时限要求，引用来源可靠且与已读原文一致，重试读取工具后成功获取信息，整体行为合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:56.305453+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a1e8891ba85794e7f0cbca0fcedb4fca54f8ac55cd2512db7461bf38f609d12a",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "02994dbd-f1ea-480f-b597-6855f6d51b69",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1953,
+            "completion_tokens": 1704,
+            "total_tokens": 3657,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1228
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 929
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\",\n      \"reason\": \"实际回答明确说明了办公室在发现问题及受理后2个工作日内移交问题线索，符合要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。\",\n      \"reason\": \"实际回答明确说明了相关单位收到后10个工作日内认定、处理并形成初步处理意见，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\",\n      \"answer_span\": \"工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自已读chunk D26-C014中的第十三条规定，原文完全支持。\"\n    },\n    {\n      \"text\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。\",\n      \"answer_span\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用自已读chunk D26-C014中的第十三条规定，原文完全支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确涵盖了两个时限要求，引用来源可靠且与已读原文一致，重试读取工具后成功获取信息，整体行为合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009325799999999999,
+          "seconds": 14.8954
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "0e210fe50a0095fb5b6219c2c48ede517bf682a8f516d0707c634285a2c2143c"
+}

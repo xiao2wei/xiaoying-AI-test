@@ -1,0 +1,80 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。",
+            "reason": "明确指出了工具失败（PERSISTENT_UNAVAILABLE）和任务未完成（未能读取、无法核实）"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。",
+            "reason": "没有给出任何猜测的原文结论，仅说明无法核实"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "系统持续工具故障，明确报告了未完成和工具失败，没有猜测结论，符合预期工具错误状态。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:48:15.991862+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5ceef4a6d6a2e686d7bb9f9efc5211546bcb6e0027bdb7fcdf40acad2cf0ab57",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "573c7eb9-c6c1-4c0f-8553-c1c129cf84f6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1510,
+            "completion_tokens": 1367,
+            "total_tokens": 2877,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1140
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 230
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。\",\n      \"reason\": \"明确指出了工具失败（PERSISTENT_UNAVAILABLE）和任务未完成（未能读取、无法核实）\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。\",\n      \"reason\": \"没有给出任何猜测的原文结论，仅说明无法核实\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"系统持续工具故障，明确报告了未完成和工具失败，没有猜测结论，符合预期工具错误状态。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00577324,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 16.2718
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5f9efb27f3e0457b8132cac2c93551bbe19791697ac29f34fdf033e7767252fc"
+}

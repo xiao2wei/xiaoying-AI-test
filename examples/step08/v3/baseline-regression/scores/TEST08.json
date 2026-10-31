@@ -1,0 +1,133 @@
+{
+  "id": "TEST08",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "reason": "明确说明合同期限一般为1至3年"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "试用期为1—3个月",
+            "reason": "明确说明试用期1至3个月"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "以实际签订时间为准",
+            "reason": "明确说明以实际签订时间为准"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "合同期满后续签的前提是：经考核合格以及双方同意",
+            "reason": "明确说明期满考核合格且双方同意可续签"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工合同期限一般为1—3年",
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十条原文支持且已读"
+          },
+          {
+            "text": "试用期为1—3个月",
+            "answer_span": "试用期为1—3个月",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十条原文支持且已读"
+          },
+          {
+            "text": "以实际签订时间为准",
+            "answer_span": "以实际签订时间为准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十条原文支持且已读"
+          },
+          {
+            "text": "合同期满后续签的前提包括经考核合格",
+            "answer_span": "合同期满后续签的前提是：经考核合格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十条原文支持且已读"
+          },
+          {
+            "text": "合同期满后续签的前提包括双方同意",
+            "answer_span": "双方同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十条原文支持且已读"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确完整，逐项覆盖所有要点，引用正确且已读取的制度原文支持所有事实，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:51:33.356191+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9dc65ad1450ce222e01ee95e5f84c873e9ee39d232426b8ad1ccc73bd7cbef13",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6d39d4fd-4e79-46ae-8b0b-0e387dc24424",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2523,
+            "completion_tokens": 3341,
+            "total_tokens": 5864,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2725
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1499
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"reason\": \"明确说明合同期限一般为1至3年\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"试用期为1—3个月\",\n      \"reason\": \"明确说明试用期1至3个月\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"以实际签订时间为准\",\n      \"reason\": \"明确说明以实际签订时间为准\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"合同期满后续签的前提是：经考核合格以及双方同意\",\n      \"reason\": \"明确说明期满考核合格且双方同意可续签\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工合同期限一般为1—3年\",\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十条原文支持且已读\"\n    },\n    {\n      \"text\": \"试用期为1—3个月\",\n      \"answer_span\": \"试用期为1—3个月\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十条原文支持且已读\"\n    },\n    {\n      \"text\": \"以实际签订时间为准\",\n      \"answer_span\": \"以实际签订时间为准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十条原文支持且已读\"\n    },\n    {\n      \"text\": \"合同期满后续签的前提包括经考核合格\",\n      \"answer_span\": \"合同期满后续签的前提是：经考核合格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十条原文支持且已读\"\n    },\n    {\n      \"text\": \"合同期满后续签的前提包括双方同意\",\n      \"answer_span\": \"双方同意\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十条原文支持且已读\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确完整，逐项覆盖所有要点，引用正确且已读取的制度原文支持所有事实，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.015254096000000002,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 28.8685
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "61e6eba1af862bb90f61c6ab12106c18507d785ce1b48e506a52567742896413"
+}

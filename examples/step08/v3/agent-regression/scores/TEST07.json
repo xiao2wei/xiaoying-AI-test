@@ -1,0 +1,95 @@
+{
+  "id": "TEST07",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+            "reason": "实际回答明确表达了年龄上限要求，与要点一致"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "reason": "实际回答明确表达了首次聘用健康条件，与要点一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+            "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容完全支持该事实，且已读原文包含该条款"
+          },
+          {
+            "text": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容完全支持该事实，且已读原文包含该条款"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确引用了《辽宁科技大学临时用工管理办法》第九条，完整覆盖了所有必需要点，引用正确且已读资料支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:26:04.771343+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d6471c61697900868db341a2513efed1abf2cbf1a7c6b2544efe97e25ad0f3df",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "0e86ff26-e076-4360-9466-916e08b525f9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1864,
+            "completion_tokens": 1484,
+            "total_tokens": 3348,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1090
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 840
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁\",\n      \"reason\": \"实际回答明确表达了年龄上限要求，与要点一致\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"reason\": \"实际回答明确表达了首次聘用健康条件，与要点一致\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁\",\n      \"answer_span\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容完全支持该事实，且已读原文包含该条款\"\n    },\n    {\n      \"text\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容完全支持该事实，且已读原文包含该条款\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确引用了《辽宁科技大学临时用工管理办法》第九条，完整覆盖了所有必需要点，引用正确且已读资料支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00833712,
+          "seconds": 14.4477
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a6e77bf81512ea5e7d8d13e756e9173b79ec7b6753f36328da5bf2fe0c254c6d"
+}

@@ -1,0 +1,61 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答在gaps中明确说明“这份人事制度汇编未提供VPN密码重置流程”，表达了资料未提供流程。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答仅说明未提供流程并请求补充操作说明，未编造任何操作步骤。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "回答正确指出资料未提供VPN密码重置流程，未编造步骤，符合预期状态。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:47.041978+00:00",
+      "attempt": 1,
+      "prompt_sha256": "50b1e681a8ff62e2c74c464678d71ddaff9980d0a6c8dbd106cf7b874c7038c0",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "7e50f984-4060-4aae-93be-dda117396176",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 869,
+        "completion_tokens": 164,
+        "total_tokens": 1033,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 229
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“这份人事制度汇编未提供VPN密码重置流程”，表达了资料未提供流程。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答仅说明未提供流程并请求补充操作说明，未编造任何操作步骤。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确指出资料未提供VPN密码重置流程，未编造步骤，符合预期状态。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00179652,
+      "seconds": 2.5048
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL05",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

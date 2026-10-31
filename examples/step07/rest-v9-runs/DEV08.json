@@ -1,0 +1,886 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "兼职辅导员实施细则是否只适用于本科生辅导员？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。",
+            "citations": [
+              {
+                "chunk_id": "D08-C003",
+                "quote": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。",
+            "citations": [
+              {
+                "chunk_id": "D08-C003",
+                "quote": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:53.571255+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aab4be4f95f96519b013976a8cdea845940a5586b5cca079c1d41da9aaffba8b",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "38cfbe29-30c5-49c4-bf8a-901551e328aa",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1722,
+            "completion_tokens": 40,
+            "total_tokens": 1762,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 186
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"兼职辅导员实施细则 适用范围 本科生辅导员\",\"doc_ids\":[]},\"reason\":\"查找兼职辅导员实施细则并核对其适用对象是否限于本科生辅导员\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005646000000000001,
+          "seconds": 0.9027
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "兼职辅导员实施细则 适用范围 本科生辅导员",
+            "doc_ids": []
+          },
+          "reason": "查找兼职辅导员实施细则并核对其适用对象是否限于本科生辅导员"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "兼职辅导员实施细则 适用范围 本科生辅导员",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "兼职辅导员实施细则 适用范围 本科生辅导员",
+            "hits": [
+              {
+                "chunk_id": "D08-C003",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.819731,
+                "lexical_score": 56.2957,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第二条 第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C013",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.779451,
+                "lexical_score": 35.0523,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十二条 第十二条 兼职辅导员统一纳入“辽宁科技大学优秀兼职辅导员”评选序列。\n第五章 管理与考核",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C001",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "前言或附件",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.775826,
+                "lexical_score": 35.1217,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 前言或附件 辽宁科技大学\n兼职辅导员队伍建设实施细则（试行）\n（辽科大委发〔2021〕25号附件1·2021年5月25日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C012",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34,
+                  35
+                ],
+                "printed_pages": [
+                  29,
+                  30
+                ],
+                "score": 0.078462,
+                "semantic_score": 0.7744,
+                "lexical_score": 35.0101,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十一条 第十一条 兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导\n员开展上岗培训，对培训合格者颁发聘书。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C011",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34
+                ],
+                "printed_pages": [
+                  29
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.758104,
+                "lexical_score": 41.8113,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十条 第十条 兼职辅导员实行学校和学院双重管理。学生工作部门牵头负责兼职辅\n导员的培养、培训等工作。学院对兼职辅导员进行直接领导、管理和考核，为兼职辅\n导员的工作创造便利条件，提供必要保障。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0102,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:54.506588+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d270d692f71d78098a5287cb2d21cac6944c4f22a71fd2568b1411ed3680dd26",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2ae6c3e2-d08d-4f7a-926c-12d941fc966e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2668,
+            "completion_tokens": 47,
+            "total_tokens": 2715,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1004
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D08-C003\", \"D08-C001\"]}, \"reason\": \"读取第二条适用范围及文件标题文号，确认是否仅限本科生辅导员\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008567999999999999,
+          "seconds": 1.1593
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D08-C003",
+              "D08-C001"
+            ]
+          },
+          "reason": "读取第二条适用范围及文件标题文号，确认是否仅限本科生辅导员"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C003"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第二条",
+              "text": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+              "pdf_pages": [
+                33
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C003",
+              "printed_pages": [
+                28
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C002",
+              "next_chunk_id": "D08-C004",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "前言或附件",
+              "text": "辽宁科技大学\n兼职辅导员队伍建设实施细则（试行）\n（辽科大委发〔2021〕25号附件1·2021年5月25日）\n第一章 总 则",
+              "pdf_pages": [
+                33
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C001",
+              "printed_pages": [
+                28
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D08-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:55.685137+00:00",
+          "attempt": 1,
+          "prompt_sha256": "403cab2a6085810844a9b86501bcc12a16abd73dd69171f4294aa7c1630b511b",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "98ea9ecd-3740-48a4-a0f8-6d3d912364f6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3074,
+            "completion_tokens": 113,
+            "total_tokens": 3187,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 386
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。\", \"citations\": [{\"chunk_id\": \"D08-C003\", \"quote\": \"第二条 本细则适用于学校本科以及研究生兼职辅导员。\"}]}], \"gaps\": []}, \"reason\": \"第二条原文已明确适用范围包含本科和研究生兼职辅导员，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010578,
+          "seconds": 1.575
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第二条原文已明确适用范围包含本科和研究生兼职辅导员，足以回答"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:57.280593+00:00",
+          "attempt": 1,
+          "prompt_sha256": "94d62dcbcca03b0a0f386fe829ab71eaac4a60f78c840d6f3380de2a7d64ceab",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "7ec5f330-270d-49cc-ab0c-c6cc329e480e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3361,
+            "completion_tokens": 156,
+            "total_tokens": 3517,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 42
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1825
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确其适用范围为学校本科以及研究生兼职辅导员，并非只适用于本科生辅导员。\", \"citations\": [{\"chunk_id\": \"D08-C003\", \"quote\": \"第二条 本细则适用于学校本科以及研究生兼职辅导员。\"}]}], \"gaps\": []}, \"reason\": \"第二条原文已明确适用范围包含本科和研究生兼职辅导员，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0011955,
+          "seconds": 1.4425
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第二条原文已明确适用范围包含本科和研究生兼职辅导员，足以回答"
+        }
+      ],
+      "read_ids": [
+        "D08-C003",
+        "D08-C001"
+      ],
+      "first_hits": [
+        "D08-C003",
+        "D08-C013",
+        "D08-C001",
+        "D08-C012",
+        "D08-C011"
+      ],
+      "seconds": 5.1711,
+      "model_calls": 4,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "研究生的兼职辅导员也归这份实施细则管理吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。",
+            "citations": [
+              {
+                "chunk_id": "D08-C003",
+                "quote": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "该细则第十四条另就“研究生兼任辅导员”的管理与考核作出衔接规定：其管理与考核依据学校研究生“三助一辅”管理办法执行。",
+            "citations": [
+              {
+                "chunk_id": "D08-C015",
+                "quote": "第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十四条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼任辅导员在管理与考核方面的具体规则。"
+        ],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。\n该细则第十四条另就“研究生兼任辅导员”的管理与考核作出衔接规定：其管理与考核依据学校研究生“三助一辅”管理办法执行。\n请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼任辅导员在管理与考核方面的具体规则。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。",
+            "citations": [
+              {
+                "chunk_id": "D08-C003",
+                "quote": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "该细则第十四条另就“研究生兼任辅导员”的管理与考核作出衔接规定：其管理与考核依据学校研究生“三助一辅”管理办法执行。",
+            "citations": [
+              {
+                "chunk_id": "D08-C015",
+                "quote": "第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十四条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼任辅导员在管理与考核方面的具体规则。"
+        ],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。\n该细则第十四条另就“研究生兼任辅导员”的管理与考核作出衔接规定：其管理与考核依据学校研究生“三助一辅”管理办法执行。\n请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼任辅导员在管理与考核方面的具体规则。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:58.742754+00:00",
+          "attempt": 1,
+          "prompt_sha256": "55af48654a2ea208b01dd4353ce4e54f69c457ae89bc7c39157aaeb4f4e01021",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "c9785327-a44d-424f-baa8-e06a3d7b2ef2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1724,
+            "completion_tokens": 34,
+            "total_tokens": 1758,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 188
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"研究生 兼职辅导员 实施细则 管理 适用对象\"},\"reason\":\"查找兼职辅导员相关实施细则及适用对象条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005579999999999999,
+          "seconds": 0.7851
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "研究生 兼职辅导员 实施细则 管理 适用对象"
+          },
+          "reason": "查找兼职辅导员相关实施细则及适用对象条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "研究生 兼职辅导员 实施细则 管理 适用对象"
+          },
+          "result": {
+            "ok": true,
+            "query": "研究生 兼职辅导员 实施细则 管理 适用对象",
+            "hits": [
+              {
+                "chunk_id": "D08-C003",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  33
+                ],
+                "printed_pages": [
+                  28
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.770702,
+                "lexical_score": 50.3552,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第二条 第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C017",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十六条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.085455,
+                "semantic_score": 0.730767,
+                "lexical_score": 30.0735,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十六条 第十六条 本细则由党委学生工作部、党委研究生工作部、人事处负责解释。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C011",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34
+                ],
+                "printed_pages": [
+                  29
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.722231,
+                "lexical_score": 35.7997,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十条 第十条 兼职辅导员实行学校和学院双重管理。学生工作部门牵头负责兼职辅\n导员的培养、培训等工作。学院对兼职辅导员进行直接领导、管理和考核，为兼职辅\n导员的工作创造便利条件，提供必要保障。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C015",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十四条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.079937,
+                "semantic_score": 0.70708,
+                "lexical_score": 38.1472,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十四条 第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的\n德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。\n研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C013",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.077037,
+                "semantic_score": 0.719592,
+                "lexical_score": 29.232,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十二条 第十二条 兼职辅导员统一纳入“辽宁科技大学优秀兼职辅导员”评选序列。\n第五章 管理与考核",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0091,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:14:59.556988+00:00",
+          "attempt": 1,
+          "prompt_sha256": "749fa0f5de54669222031d49ff5ff8b85591680b04b98d2862ccf22f3ddb9b55",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "7f91a4b5-79ba-4200-bcb0-6a5b610477fd",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2666,
+            "completion_tokens": 51,
+            "total_tokens": 2717,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1002
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D08-C003\", \"D08-C015\", \"D08-C017\"]}, \"reason\": \"读取适用范围、研究生兼任辅导员管理与考核条款及解释部门条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000861,
+          "seconds": 0.6496
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D08-C003",
+              "D08-C015",
+              "D08-C017"
+            ]
+          },
+          "reason": "读取适用范围、研究生兼任辅导员管理与考核条款及解释部门条款"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C003"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第二条",
+              "text": "第二条 本细则适用于学校本科以及研究生兼职辅导员。",
+              "pdf_pages": [
+                33
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C003",
+              "printed_pages": [
+                28
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C002",
+              "next_chunk_id": "D08-C004",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C015"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第十四条",
+              "text": "第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的\n德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。\n研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+              "pdf_pages": [
+                35
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C015",
+              "printed_pages": [
+                30
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C014",
+              "next_chunk_id": "D08-C016",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C017"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第十六条",
+              "text": "第十六条 本细则由党委学生工作部、党委研究生工作部、人事处负责解释。",
+              "pdf_pages": [
+                35
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C017",
+              "printed_pages": [
+                30
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C016",
+              "next_chunk_id": "D08-C018",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:15:00.226385+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cce45c80e9cd94937945ed2c793fd5959f6f2b15c143d8dad92560f129691315",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "8d2cf21e-6d84-44e8-8ffd-2d1b8cb6ae3f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3250,
+            "completion_tokens": 361,
+            "total_tokens": 3611,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 562
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条明确，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。\", \"citations\": [{\"chunk_id\": \"D08-C003\", \"quote\": \"第二条 本细则适用于学校本科以及研究生兼职辅导员。\"}]}, {\"text\": \"但第十四条对研究生兼任辅导员的管理与考核另作衔接规定：研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。即其管理与考核具体按该办法执行，而非仅按本细则第十四条第一款的考核安排。\", \"citations\": [{\"chunk_id\": \"D08-C015\", \"quote\": \"第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。\"}]}, {\"text\": \"该细则由党委学生工作部、党委研究生工作部、人事处负责解释。\", \"citations\": [{\"chunk_id\": \"D08-C017\", \"quote\": \"第十六条 本细则由党委学生工作部、党委研究生工作部、人事处负责解释。\"}]}], \"gaps\": [\"请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼职辅导员在管理与考核方面的具体规则。\"]}, \"reason\": \"适用范围条款明确涵盖研究生兼职辅导员，并已读取管理与考核衔接条款及解释部门条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0014082,
+          "seconds": 2.5227
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "适用范围条款明确涵盖研究生兼职辅导员，并已读取管理与考核衔接条款及解释部门条款"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:15:02.768790+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7a8a1fe3631a668f3c50b48ac091a73a71ad3950bf627dcaab14b917c855457f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "245aa3a3-878f-43be-86ad-51799018c4fe",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3791,
+            "completion_tokens": 1675,
+            "total_tokens": 5466,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1393
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2255
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第二条规定，本细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于该细则的适用范围。\", \"citations\": [{\"chunk_id\": \"D08-C003\", \"quote\": \"第二条 本细则适用于学校本科以及研究生兼职辅导员。\"}]}, {\"text\": \"该细则第十四条另就“研究生兼任辅导员”的管理与考核作出衔接规定：其管理与考核依据学校研究生“三助一辅”管理办法执行。\", \"citations\": [{\"chunk_id\": \"D08-C015\", \"quote\": \"第十四条 学院依据《辽宁科技大学辅导员考核办法（试行）》对兼职辅导员的德、能、勤、绩、廉等方面进行全面考评，考核结果分为合格、不合格。研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。\"}]}], \"gaps\": [\"请提供学校研究生“三助一辅”管理办法（含版本日期和适用对象），以便核对研究生兼任辅导员在管理与考核方面的具体规则。\"]}, \"reason\": \"适用范围及管理与考核衔接条款已读取，结论有原文支持；具体研究生“三助一辅”办法未提供，列为缺口\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0031473,
+          "seconds": 10.6856
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "适用范围及管理与考核衔接条款已读取，结论有原文支持；具体研究生“三助一辅”办法未提供，列为缺口"
+        }
+      ],
+      "read_ids": [
+        "D08-C003",
+        "D08-C015",
+        "D08-C017"
+      ],
+      "first_hits": [
+        "D08-C003",
+        "D08-C017",
+        "D08-C011",
+        "D08-C015",
+        "D08-C013"
+      ],
+      "seconds": 14.7311,
+      "model_calls": 4,
+      "tool_calls": 4,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 19.9026,
+  "model_calls": 8,
+  "tool_calls": 7,
+  "created_at": "2026-10-31T03:15:13.455519+00:00"
+}

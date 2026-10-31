@@ -1,0 +1,185 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月向所在学院提出书面申请",
+            "reason": "实际回答明确表达了提前一个月向所在学院提出书面申请，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "实际回答明确表达了做好学生档案资料及相关工作的交接，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "answer_span": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D08-C016，该引用原文包含该表述，且已读记录中D08-C016确有相同内容，支持该事实。"
+          },
+          {
+            "text": "做好学生档案资料及相关工作的交接",
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D08-C016，该引用原文包含该表述，且已读记录中D08-C016确有相同内容，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整包含两个必需要点，依据已读的辽宁科技大学兼职辅导员队伍建设实施细则第十五条准确回答了提前一个月向所在学院书面申请及交接要求；引用与已读记录一致，无错误或遗漏。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:25:45.953171+00:00",
+          "attempt": 1,
+          "prompt_sha256": "be10f32c8f2895cda85f52ca3a595b6950a5f9a338f9a3200c68478507f9cdb6",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "8ffea3b6-b0f7-4278-a354-d1071e76405a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2796,
+            "completion_tokens": 1686,
+            "total_tokens": 4482,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1270
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 2028
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月向所在学院提出书面申请\",\n      \"reason\": \"实际回答明确表达了提前一个月向所在学院提出书面申请，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"实际回答明确表达了做好学生档案资料及相关工作的交接，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"answer_span\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D08-C016，该引用原文包含该表述，且已读记录中D08-C016确有相同内容，支持该事实。\"\n    },\n    {\n      \"text\": \"做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D08-C016，该引用原文包含该表述，且已读记录中D08-C016确有相同内容，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答完整包含两个必需要点，依据已读的辽宁科技大学兼职辅导员队伍建设实施细则第十五条准确回答了提前一个月向所在学院书面申请及交接要求；引用与已读记录一致，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01036728,
+          "seconds": 18.8803
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step06\\baseline-scores-v5\\DEV07.json"
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申请不再担任兼职辅导员，应提前一个月提出申请。\n申请应向所在学院提出，且须采用书面申请形式",
+            "reason": "实际回答明确说明需提前一个月、向所在学院提出且采用书面申请形式，覆盖该要点"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "提出申请的同时还应做好学生档案资料及相关工作的交接。",
+            "reason": "实际回答明确说明需做好学生档案资料及相关工作交接"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员应提前一个月提出申请",
+            "answer_span": "申请不再担任兼职辅导员，应提前一个月提出申请。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C016第十五条，已读文本支持该规定"
+          },
+          {
+            "text": "申请应向所在学院提出",
+            "answer_span": "申请应向所在学院提出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C016第十五条，已读文本包含向所在学院提出"
+          },
+          {
+            "text": "申请须采用书面申请形式，口头说明不够",
+            "answer_span": "且须采用书面申请形式，口头说明不够",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C016第十五条写明书面申请，该已读原文支持书面形式要求"
+          },
+          {
+            "text": "提出申请的同时应做好学生档案资料及相关工作的交接",
+            "answer_span": "提出申请的同时还应做好学生档案资料及相关工作的交接。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C016第十五条，已读文本包含交接义务"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖全部两个必需要点，引用已读取的第十五条原文且证据充分，动作合理，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:04.841704+00:00",
+          "attempt": 1,
+          "prompt_sha256": "70e755d211ef7292eb9deb358b37314efb13a1d182845ba097c86fb99f0c8c57",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "2791b113-9fc8-481b-a524-a146c880d5b3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2512,
+            "completion_tokens": 4320,
+            "total_tokens": 6832,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3902
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1744
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"申请不再担任兼职辅导员，应提前一个月提出申请。\\n申请应向所在学院提出，且须采用书面申请形式\",\"reason\":\"实际回答明确说明需提前一个月、向所在学院提出且采用书面申请形式，覆盖该要点\"},{\"index\":1,\"met\":true,\"answer_span\":\"提出申请的同时还应做好学生档案资料及相关工作的交接。\",\"reason\":\"实际回答明确说明需做好学生档案资料及相关工作交接\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"申请不再担任兼职辅导员应提前一个月提出申请\",\"answer_span\":\"申请不再担任兼职辅导员，应提前一个月提出申请。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C016第十五条，已读文本支持该规定\"},{\"text\":\"申请应向所在学院提出\",\"answer_span\":\"申请应向所在学院提出\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C016第十五条，已读文本包含向所在学院提出\"},{\"text\":\"申请须采用书面申请形式，口头说明不够\",\"answer_span\":\"且须采用书面申请形式，口头说明不够\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C016第十五条写明书面申请，该已读原文支持书面形式要求\"},{\"text\":\"提出申请的同时应做好学生档案资料及相关工作的交接\",\"answer_span\":\"提出申请的同时还应做好学生档案资料及相关工作的交接。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D08-C016第十五条，已读文本包含交接义务\"}],\"serious_errors\":[],\"reason\":\"回答准确覆盖全部两个必需要点，引用已读取的第十五条原文且证据充分，动作合理，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02042304,
+          "seconds": 46.9001
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step06\\baseline-scores-v5\\DEV07.json"
+    }
+  ],
+  "pass": true,
+  "run_sha256": "1dd8fc624edc288aa01492da1f05f04a19ec4b460918c1bfc3d1881b2f21551c",
+  "revalidation": "只修正连续跨claim原句定位的程序检查；实际AI判断内容与调用ID不变"
+}

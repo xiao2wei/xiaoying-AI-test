@@ -1,0 +1,131 @@
+{
+  "id": "TEST14",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "出具一级以上医院有效的病休证明及病历",
+            "reason": "实际回答明确写出2020年规定要求出具一级以上医院有效病休证明及病历。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教职工因病经三甲级以上医院诊断不能正常上班，可请病假",
+            "reason": "实际回答明确写出2023年补充规定要求三甲级以上医院诊断。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "汇编中同时存在“一级以上医院”和“三甲级以上医院”两种病假证明要求",
+            "reason": "实际回答列明了两版规定对病假医院等级要求的差异。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "无法仅凭版本日期确定唯一结论",
+            "reason": "实际回答指出不能仅凭版本日期选取，并请求确认衔接文件或适用口径。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第四条规定，教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效病休证明及病历，并经审批后可休病假。",
+            "answer_span": "教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005原文与该事实一致，实际已读包含该条。"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条规定，教职工因病经三甲级以上医院诊断不能正常上班，可请病假。",
+            "answer_span": "教职工因病经三甲级以上医院诊断不能正常上班，可请病假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009原文与该事实一致，实际已读包含该条。"
+          },
+          {
+            "text": "2023年补充规定第八条还要求长期病休复查、康复销假需三甲级以上医院证明。",
+            "answer_span": "长期病休复查、康复销假也要求三甲级以上医院证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009中包含长期病休复查和康复销假须三甲级以上医院证明的原文，支持该事实。"
+          },
+          {
+            "text": "补充规定第十八条仅规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行，未明确废止2020年规定，也未明确与旧规定冲突时优先适用。",
+            "answer_span": "补充规定第十八条仅规定“本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行”，未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》，也未明确其与旧规定冲突时优先适用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019的第十八条原文，该条确实未提及废止或优先适用旧规定，实际已读支持。"
+          },
+          {
+            "text": "2020年规定第二十四条仅废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未涉及2023年补充规定。",
+            "answer_span": "2020年规定第二十四条仅废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未涉及2023年补充规定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C025原文与该事实一致，实际已读包含该条。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确列出了2020年与2023年规定对病假医院等级要求的差异，指出不能仅凭版本日期确定唯一结论，并请求确认衔接文件或人事处执行口径，符合needs_confirmation状态；所引原文及实际已读内容支持相关事实，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "衔接文件或通知：说明2023年补充规定第八条是否取代2020年规定第四条",
+            "现行执行口径确认：普通病假、长期病休复查、康复销假是否统一按三甲级以上医院执行"
+          ],
+          "reason": "答案明确要求补充衔接文件或通知，并请求确认适用对象和执行口径，属于可操作的具体请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:34.521855+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4f6b773c741e756dca6191d38925ca469968f416db93d07c78c5bbb82f5d9fab",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "195939a2-58fd-41c4-a4b2-46571df81741",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4689,
+            "completion_tokens": 9281,
+            "total_tokens": 13970,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8138
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3793
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"出具一级以上医院有效的病休证明及病历\",\n      \"reason\": \"实际回答明确写出2020年规定要求出具一级以上医院有效病休证明及病历。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教职工因病经三甲级以上医院诊断不能正常上班，可请病假\",\n      \"reason\": \"实际回答明确写出2023年补充规定要求三甲级以上医院诊断。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"汇编中同时存在“一级以上医院”和“三甲级以上医院”两种病假证明要求\",\n      \"reason\": \"实际回答列明了两版规定对病假医院等级要求的差异。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"无法仅凭版本日期确定唯一结论\",\n      \"reason\": \"实际回答指出不能仅凭版本日期选取，并请求确认衔接文件或适用口径。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第四条规定，教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效病休证明及病历，并经审批后可休病假。\",\n      \"answer_span\": \"教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历，并经审批后可休病假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005原文与该事实一致，实际已读包含该条。\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条规定，教职工因病经三甲级以上医院诊断不能正常上班，可请病假。\",\n      \"answer_span\": \"教职工因病经三甲级以上医院诊断不能正常上班，可请病假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009原文与该事实一致，实际已读包含该条。\"\n    },\n    {\n      \"text\": \"2023年补充规定第八条还要求长期病休复查、康复销假需三甲级以上医院证明。\",\n      \"answer_span\": \"长期病休复查、康复销假也要求三甲级以上医院证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009中包含长期病休复查和康复销假须三甲级以上医院证明的原文，支持该事实。\"\n    },\n    {\n      \"text\": \"补充规定第十八条仅规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行，未明确废止2020年规定，也未明确与旧规定冲突时优先适用。\",\n      \"answer_span\": \"补充规定第十八条仅规定“本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行”，未明确废止2020年《辽宁科技大学教职工考勤与请假管理规定》，也未明确其与旧规定冲突时优先适用\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019的第十八条原文，该条确实未提及废止或优先适用旧规定，实际已读支持。\"\n    },\n    {\n      \"text\": \"2020年规定第二十四条仅废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未涉及2023年补充规定。\",\n      \"answer_span\": \"2020年规定第二十四条仅废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未涉及2023年补充规定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C025原文与该事实一致，实际已读包含该条。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确列出了2020年与2023年规定对病假医院等级要求的差异，指出不能仅凭版本日期确定唯一结论，并请求确认衔接文件或人事处执行口径，符合needs_confirmation状态；所引原文及实际已读内容支持相关事实，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"衔接文件或通知：说明2023年补充规定第八条是否取代2020年规定第四条\",\n      \"现行执行口径确认：普通病假、长期病休复查、康复销假是否统一按三甲级以上医院执行\"\n    ],\n    \"reason\": \"答案明确要求补充衔接文件或通知，并请求确认适用对象和执行口径，属于可操作的具体请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.042942240000000007,
+          "seconds": 84.0215
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "60facea38313910b7a70d321eb75dd9fed996d1deaa80df51a8896dd7dabe00d"
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "id": "TEST01",
+    "repeat": 1,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST01",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST01",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST02",
+    "repeat": 1,
+    "pass": false,
+    "critical_errors": [
+      "claim3中“该比例适用于‘全年累计请假时间＞6个月’的病假待遇档”引用了工伤条款，未引用对应的＞6个月表格行，引用不支持该句结论。",
+      "存在无依据结论或不支持引用"
+    ],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST02",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST02",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST13",
+    "repeat": 1,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST13",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST13",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST16",
+    "repeat": 1,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST16",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST16",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST17",
+    "repeat": 1,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": false
+  },
+  {
+    "id": "TEST17",
+    "repeat": 2,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST17",
+    "repeat": 3,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST19",
+    "repeat": 1,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST19",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST19",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": true,
+    "actionable_pass": true
+  },
+  {
+    "id": "TEST25",
+    "repeat": 1,
+    "pass": false,
+    "critical_errors": [
+      "claims[0]中对“经学校批准”的适用对象限制所引用的D01-C010第九条未直接支持该条件，该依据实际来自D01-C008第七条，答案虽在后续引用但该claim的引用本身不充分",
+      "存在无依据结论或不支持引用"
+    ],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST25",
+    "repeat": 2,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST25",
+    "repeat": 3,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST31",
+    "repeat": 1,
+    "pass": true,
+    "critical_errors": [],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST31",
+    "repeat": 2,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [
+      "ValueError:通过的要点缺少实际答案定位"
+    ],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST31",
+    "repeat": 3,
+    "pass": false,
+    "critical_errors": [
+      "回答在claim2中仅引用第五条即断言“这不改变其‘事业编制之外’的用工性质”，所引用的第五条原文未涉及用工性质，属引用不支持结论；该结论虽可由已读第二条推导，但引用不准确。",
+      "存在无依据结论或不支持引用"
+    ],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST36",
+    "repeat": 1,
+    "pass": false,
+    "critical_errors": [
+      "第二项事实的引用仅列出‘（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）’，未包含‘签订合同前’，所引quote不能完整支持该时间条件。",
+      "存在无依据结论或不支持引用"
+    ],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST36",
+    "repeat": 2,
+    "pass": false,
+    "critical_errors": [
+      "对‘签订合同前，临时用工人员必须提交职业技术等级或资格证明’这一事实的引用只引用了第十五条第（四）项，未包含‘签订合同前必须提交’的关键前提，引用不足以独立支持该结论。",
+      "存在无依据结论或不支持引用"
+    ],
+    "judge_errors": [],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST36",
+    "repeat": 3,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [
+      "ModelError:HTTP_429"
+    ],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST38",
+    "repeat": 1,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [
+      "ModelError:HTTP_429"
+    ],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST38",
+    "repeat": 2,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [
+      "ModelError:HTTP_429"
+    ],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  },
+  {
+    "id": "TEST38",
+    "repeat": 3,
+    "pass": false,
+    "critical_errors": [],
+    "judge_errors": [
+      "ModelError:HTTP_429"
+    ],
+    "actionable_applicable": false,
+    "actionable_pass": null
+  }
+]

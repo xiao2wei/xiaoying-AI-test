@@ -1,0 +1,94 @@
+{
+  "key": "stability--STAB-TEST36-R3--0",
+  "mode": "stability",
+  "id": "STAB-TEST36-R3",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "add92cff6770ced961c2684bc359c96aba66ae6af0b06e54901b4daf68d408f3",
+  "run_sha256": "ae4423595c3e209123f0d68c98c1faee88841cebe80d2e55e43997b9071ca7fa",
+  "created_at": "2026-10-31T05:16:38.067694+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+          "reason": "答案明确表达了要求的要点，并引用了第十二条。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+          "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D23-C013的quote直接支持该事实，且该文档已被读取。"
+        },
+        {
+          "text": "签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。",
+          "answer_span": "签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D23-C016的quote包含了该材料要求，且该文档已被读取。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了问题，提供了专门培训并获得特种作业资格的额外要求，并引用了有效的制度依据，没有发现严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:16:21.995806+00:00",
+        "attempt": 1,
+        "prompt_sha256": "ca95f6612c5d42ad5faa047c760037443e45113f373cd08d5ea02d3b787c603f",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "b30baa66-7348-4779-9290-7f188e42faa9",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2361,
+          "completion_tokens": 1841,
+          "total_tokens": 4202,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1479
+          },
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 1081
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"答案明确表达了要求的要点，并引用了第十二条。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C013的quote直接支持该事实，且该文档已被读取。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。\",\n      \"answer_span\": \"签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016的quote包含了该材料要求，且该文档已被读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，提供了专门培训并获得特种作业资格的额外要求，并引用了有效的制度依据，没有发现严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.004386800000000001,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 16.0702
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供食堂Wi-Fi密码",
+        "reason": "实际答案明确说明资料未提供密码。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供食堂Wi-Fi密码；请提供该网络的官方接入说明或管理员发布的接入通知",
+        "reason": "答案没有编造密码，而是说明未提供并请求官方材料，符合行为性禁止要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "答案正确说明资料未提供密码，未编造，状态和动作合理。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:49.033666+00:00",
+      "attempt": 1,
+      "prompt_sha256": "ae5aad2c391e0458791a8031bd28dd632f1c09b0924ad1a33e1d0ecca837e73a",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "3ed12a08-38ba-47c8-a718-2b9b24f4a244",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1185,
+        "completion_tokens": 1431,
+        "total_tokens": 2616,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1236
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 161
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供食堂Wi-Fi密码\",\n      \"reason\": \"实际答案明确说明资料未提供密码。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供食堂Wi-Fi密码；请提供该网络的官方接入说明或管理员发布的接入通知\",\n      \"reason\": \"答案没有编造密码，而是说明未提供并请求官方材料，符合行为性禁止要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确说明资料未提供密码，未编造，状态和动作合理。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00723096,
+      "seconds": 14.2971
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": false,
+  "new_judge_requests": 1,
+  "id": "CAL15",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

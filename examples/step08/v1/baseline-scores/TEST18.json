@@ -1,0 +1,116 @@
+{
+  "id": "TEST18",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。",
+            "reason": "明确写出校内申诉办法暂缓执行。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。",
+            "reason": "明确写出作风问题办法应予执行。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "是管理服务人员工作作风问题处理决定，还是其他教职工处分或处理决定",
+            "reason": "区分了不同处理类型，体现适用类型不同。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请明确原处理决定属于哪类事项：是管理服务人员工作作风问题处理决定，还是其他教职工处分或处理决定；以便判断适用D26还是D24。",
+            "reason": "要求确认处理类型及适用办法，未一概决定。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D24-C023原文第二十二条明确暂缓执行，引用支持。"
+          },
+          {
+            "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。",
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D26-C018原文第十七条明确应予执行，引用支持。"
+          },
+          {
+            "text": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D26-C017原文第十六条明确可提出申诉，引用支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确呈现两办法对申诉期间执行问题的相反规定，说明需区分处理类型并请求用户确认，符合needs_confirmation；所引用制度事实均由已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "原处理决定所属事项类型（工作作风问题处理决定或其他教职工处分/处理决定）",
+            "D26与D24衔接条款、特别规定或文件号",
+            "处理决定类型及依据文件"
+          ],
+          "reason": "答案明确要求用户提供处理决定类型、适用办法及衔接文件等具体信息，以解决冲突，而非仅让用户自行查资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:59.564066+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e4eff7bd119171c80678f0e0cafce860b1f43e720d4c047c3f0655d381499d62",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "29e2c746-315e-41d1-8ec5-169afa7b78f8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3116,
+            "completion_tokens": 5172,
+            "total_tokens": 8288,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4344
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2220
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。\",\n      \"reason\": \"明确写出校内申诉办法暂缓执行。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。\",\n      \"reason\": \"明确写出作风问题办法应予执行。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"是管理服务人员工作作风问题处理决定，还是其他教职工处分或处理决定\",\n      \"reason\": \"区分了不同处理类型，体现适用类型不同。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请明确原处理决定属于哪类事项：是管理服务人员工作作风问题处理决定，还是其他教职工处分或处理决定；以便判断适用D26还是D24。\",\n      \"reason\": \"要求确认处理类型及适用办法，未一概决定。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》规定，申诉处理期间暂缓执行原处理决定。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D24-C023原文第二十二条明确暂缓执行，引用支持。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。\",\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，申诉期间原处理决定应予执行。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D26-C018原文第十七条明确应予执行，引用支持。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》规定，当事人对工作作风问题处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D26-C017原文第十六条明确可提出申诉，引用支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确呈现两办法对申诉期间执行问题的相反规定，说明需区分处理类型并请求用户确认，符合needs_confirmation；所引用制度事实均由已读原文支持，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"原处理决定所属事项类型（工作作风问题处理决定或其他教职工处分/处理决定）\",\n      \"D26与D24衔接条款、特别规定或文件号\",\n      \"处理决定类型及依据文件\"\n    ],\n    \"reason\": \"答案明确要求用户提供处理决定类型、适用办法及衔接文件等具体信息，以解决冲突，而非仅让用户自行查资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.024594239999999996,
+          "seconds": 43.6596
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "7ce79031973bf7310a44d3ad1492ded875f5f6a352700c2076b3d61cb8eac327"
+}

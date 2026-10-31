@@ -1,0 +1,102 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送，并引用D19-C015原文支持。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确表述《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送，并引用D20-C006原文支持。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答分别列出D19第十四条（26日）和D20第五条（25日）两个来源，并附有引用。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送《考勤情况统计表》。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用D19-C015，引文明确包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。"
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送《考勤情况统计表》。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用D20-C006，引文明确包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。"
+          },
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第二十二条规定直属单位每月26日报送临时用工人员考勤表。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用D23-C023，引文明确包含“每月26日向人事处报送临时用工人员考勤表”，且该chunk已在actually_read中读取。"
+          },
+          {
+            "text": "现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实为对已读原文的分析结论，实际回答在gaps中明确表述，且已读取的D19-C015和D20-C006均未包含废止或优先条款，支持该结论。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确列出了两份规定及冲突，并正确指出需确认适用关系，未擅自认定最新日期优先，符合needs_confirmation状态。工具操作合理，读取了关键证据，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:54:14.485884+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d8de28e76e26e19b018c294be3f89223696856d19888effe5c181ce4743df188",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "ee743b23-8fe7-4a72-a141-ccba98186b42",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3182,
+            "completion_tokens": 737,
+            "total_tokens": 3919,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 2670
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送，并引用D19-C015原文支持。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送，并引用D20-C006原文支持。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答分别列出D19第十四条（26日）和D20第五条（25日）两个来源，并附有引用。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先，需确认二者适用关系或现行有效版本，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送《考勤情况统计表》。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D19-C015，引文明确包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送《考勤情况统计表》。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D20-C006，引文明确包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学临时用工管理办法》第二十二条规定直属单位每月26日报送临时用工人员考勤表。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D23-C023，引文明确包含“每月26日向人事处报送临时用工人员考勤表”，且该chunk已在actually_read中读取。\"\n    },\n    {\n      \"text\": \"现有原文未明确D20是否废止或优先于D19第十四条，不能仅凭版本日期认定25日优先。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实为对已读原文的分析结论，实际回答在gaps中明确表述，且已读取的D19-C015和D20-C006均未包含废止或优先条款，支持该结论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确列出了两份规定及冲突，并正确指出需确认适用关系，未擅自认定最新日期优先，符合needs_confirmation状态。工具操作合理，读取了关键证据，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00711876,
+          "seconds": 7.6753
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "e353b7d3f5233335705109d809b034c230fdd9c4c32232a74659538511704cac"
+}

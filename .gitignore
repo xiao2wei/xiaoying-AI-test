@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+work/
+data/cache/
+
+*.egg-info/
+
+# Local account balance diagnostics are not submission evidence
+examples/external-status/deepseek-20261031.json
+examples/external-status/tls-check-20261031.json

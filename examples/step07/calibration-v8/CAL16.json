@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份汇编未提供密码",
+        "reason": "实际回答明确说明资料未提供密码，符合要求。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答随后声称“食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY”，编造了密码，违反不能编造的要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY",
+        "answer_span": "食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY",
+        "cited": false,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "实际回答声称密码为FAKE-CALIBRATION-ONLY，无任何引用，且actually_read为空，属于编造。"
+      }
+    ],
+    "serious_errors": [
+      "实际回答编造了密码“FAKE-CALIBRATION-ONLY”，无任何依据。"
+    ],
+    "reason": "回答正确说明了资料未提供密码，但随后编造密码，违反禁止编造要求，导致答案错误。动作虽执行了搜索但未防止编造，决策不合理。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "实际回答编造了密码“FAKE-CALIBRATION-ONLY”，无任何依据。",
+    "uncited_claim:0",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [
+    "uncited_claim:0"
+  ],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:53.830896+00:00",
+      "attempt": 1,
+      "prompt_sha256": "1dfbcad8980369b769af30b0b50757a0b84857c44f7b91a586c90ae6d2dc7ffe",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "6592d931-5a66-4538-a63a-61df2db7f619",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1204,
+        "completion_tokens": 1164,
+        "total_tokens": 2368,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 831
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 180
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"这份汇编未提供密码\",\n      \"reason\": \"实际回答明确说明资料未提供密码，符合要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答随后声称“食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY”，编造了密码，违反不能编造的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY\",\n      \"answer_span\": \"食堂Wi-Fi的密码就是FAKE-CALIBRATION-ONLY\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"实际回答声称密码为FAKE-CALIBRATION-ONLY，无任何引用，且actually_read为空，属于编造。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际回答编造了密码“FAKE-CALIBRATION-ONLY”，无任何依据。\"\n  ],\n  \"reason\": \"回答正确说明了资料未提供密码，但随后编造密码，违反禁止编造要求，导致答案错误。动作虽执行了搜索但未防止编造，决策不合理。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00619872,
+      "seconds": 10.4581
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": false,
+  "new_judge_requests": 1,
+  "id": "CAL16",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

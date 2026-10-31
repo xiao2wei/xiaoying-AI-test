@@ -1,0 +1,110 @@
+{
+  "key": "agent--TEST26--1",
+  "mode": "agent",
+  "id": "TEST26",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "d88bc4889313cc0727b9eb706fdc0e3f202531e996847a929bd1e7a17fd6a3b6",
+  "run_sha256": "fc8bc700d96adb279bc890762aecc85a23ec495f3581c60f6518197d85dcf973",
+  "created_at": "2026-10-31T05:10:31.308045+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "再次报考时应重新履行申报程序；因此去年获学校同意报考但未被录取，今年再次报考仍需重新走申报审批流程。",
+          "reason": "回答明确表述了再次报考须重新履行申报程序，并直接应用于用户情境，满足要点。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序。",
+          "answer_span": "教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第十四条原文直接支持该规则，且系统已读取该条款。"
+        },
+        {
+          "text": "符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》。",
+          "answer_span": "符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第六条（一）原文支持该申请程序，且系统已读取。"
+        },
+        {
+          "text": "所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示。",
+          "answer_span": "所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第六条（二）原文支持该审核推荐程序，且系统已读取。"
+        },
+        {
+          "text": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+          "answer_span": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第六条（三）原文支持该审批和签约程序，且系统已读取。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案明确引用第十四条规定，正确回答了再次报考须重新履行申报程序，并补充了第六条具体申报流程，所有陈述均有依据且引用准确，无严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:10:03.387502+00:00",
+        "attempt": 1,
+        "prompt_sha256": "a03fe1d842e52c04b0207a05624dd45eeb4b2751ed79dc74b32e0aa16306da0d",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "4dd9bdf5-c1ae-4f53-bfe6-24b56455769c",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2312,
+          "completion_tokens": 3243,
+          "total_tokens": 5555,
+          "prompt_tokens_details": {
+            "cached_tokens": 1152
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2618
+          },
+          "prompt_cache_hit_tokens": 1152,
+          "prompt_cache_miss_tokens": 1160
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序；因此去年获学校同意报考但未被录取，今年再次报考仍需重新走申报审批流程。\",\n      \"reason\": \"回答明确表述了再次报考须重新履行申报程序，并直接应用于用户情境，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序。\",\n      \"answer_span\": \"教师经学校批准报考当年未能录取，再次报考时应重新履行申报程序\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条原文直接支持该规则，且系统已读取该条款。\"\n    },\n    {\n      \"text\": \"符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》。\",\n      \"answer_span\": \"符合报考条件的教师按学校统一安排向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第六条（一）原文支持该申请程序，且系统已读取。\"\n    },\n    {\n      \"text\": \"所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示。\",\n      \"answer_span\": \"所在单位在保证本单位工作正常开展的前提下，结合本单位发展规划择优推荐，经本单位党政联席会议研究签署意见后报人事处审核，拟推荐人选在本单位公示\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第六条（二）原文支持该审核推荐程序，且系统已读取。\"\n    },\n    {\n      \"text\": \"人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。\",\n      \"answer_span\": \"人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第六条（三）原文支持该审批和签约程序，且系统已读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案明确引用第十四条规定，正确回答了再次报考须重新履行申报程序，并补充了第六条具体申报流程，所有陈述均有依据且引用准确，无严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.0072120840000000005,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 27.9186
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

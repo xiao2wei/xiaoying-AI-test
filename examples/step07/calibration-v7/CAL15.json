@@ -1,0 +1,75 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供食堂Wi-Fi密码",
+        "reason": "实际答案明确说明资料未提供密码，满足该要点。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "请提供该网络的官方接入说明或管理员发布的接入通知（含网络名称和适用时间）",
+        "reason": "实际答案未编造密码，而是说明缺口并请求补充官方说明，行为符合不能编造的要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际答案明确说明资料未提供食堂Wi-Fi密码，未编造内容，并请求用户提供官方接入说明；状态与预期证据不足一致，工具搜索后未读取到相关资料，处理合理。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:01:22.417079+00:00",
+      "attempt": 1,
+      "prompt_sha256": "ae5aad2c391e0458791a8031bd28dd632f1c09b0924ad1a33e1d0ecca837e73a",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "fb2e535e-fc59-4639-bf4c-35ba3e099145",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1264,
+        "completion_tokens": 1072,
+        "total_tokens": 2336,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 893
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 240
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"这份人事制度汇编未提供食堂Wi-Fi密码\",\"reason\":\"实际答案明确说明资料未提供密码，满足该要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"请提供该网络的官方接入说明或管理员发布的接入通知（含网络名称和适用时间）\",\"reason\":\"实际答案未编造密码，而是说明缺口并请求补充官方说明，行为符合不能编造的要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[],\"serious_errors\":[],\"reason\":\"实际答案明确说明资料未提供食堂Wi-Fi密码，未编造内容，并请求用户提供官方接入说明；状态与预期证据不足一致，工具搜索后未读取到相关资料，处理合理。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.005913600000000001,
+      "seconds": 12.4928
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": false,
+  "new_judge_requests": 1,
+  "id": "CAL15",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

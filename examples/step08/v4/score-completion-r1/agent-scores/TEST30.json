@@ -1,0 +1,231 @@
+{
+  "id": "TEST30",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案",
+            "reason": "答案明确表达了提前在办公系统办理教职工非工作日离辽备案，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D20-C001，quote包含该规定名称及文号日期，且实际读取了该chunk，支持该事实。"
+          },
+          {
+            "text": "教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案",
+            "answer_span": "教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D20-C007，quote支持该备案要求，且实际读取了该chunk，支持该事实。"
+          },
+          {
+            "text": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+            "answer_span": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D20-C007，quote支持该后果，且实际读取了该chunk，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了2023年补充规定第六条，明确说明非工作日离辽须提前在办公系统办理备案，并补充了未备案后果，所有陈述均有可靠引用支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:11:04.709874+00:00",
+          "attempt": 1,
+          "prompt_sha256": "235830fbb23ec2fa0bd2542c038840b749bdb1203e92775227f8d101043ce9f5",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "f77fc154-7c29-48c2-a3a4-222499ad0108",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2501,
+            "completion_tokens": 1533,
+            "total_tokens": 4034,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1533
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1477
+          },
+          "content": "",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004032688,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "error": "JSONDecodeError",
+          "seconds": 14.8727
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:11:19.582990+00:00",
+          "attempt": 2,
+          "prompt_sha256": "235830fbb23ec2fa0bd2542c038840b749bdb1203e92775227f8d101043ce9f5",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a4156323-b113-467d-b94f-f87a1ee842f5",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2501,
+            "completion_tokens": 3006,
+            "total_tokens": 5507,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2492
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 69
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"reason\": \"答案明确表达了提前在办公系统办理教职工非工作日离辽备案，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D20-C001，quote包含该规定名称及文号日期，且实际读取了该chunk，支持该事实。\"\n    },\n    {\n      \"text\": \"教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"answer_span\": \"教职工非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D20-C007，quote支持该备案要求，且实际读取了该chunk，支持该事实。\"\n    },\n    {\n      \"text\": \"未备案并造成严重后果的，取消当年晋升、评优评奖资格\",\n      \"answer_span\": \"未备案并造成严重后果的，取消当年晋升、评优评奖资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D20-C007，quote支持该后果，且实际读取了该chunk，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了2023年补充规定第六条，明确说明非工作日离辽须提前在办公系统办理备案，并补充了未备案后果，所有陈述均有可靠引用支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006050924,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 25.9298
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2,
+      "completion_provenance": {
+        "key": "agent--TEST30--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "f166fed839045a4993a4fc3031b38e7ae049b37acb22578f6aace1ddfd2f9243",
+        "run_sha256": "42eb33d2bedf27ddebd08c9062327fcd65dd59ee421d843bc8bad0e1c3d4db03",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "提前在办公系统办理“教职工非工作日离辽”备案",
+            "reason": "明确说明须提前在办公系统办理该备案，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案",
+            "answer_span": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含该备案要求，且已读取该chunk支持。"
+          },
+          {
+            "text": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+            "answer_span": "未备案并造成严重后果的，取消当年晋升、评优评奖资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含该后果规定，且已读取该chunk支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确给出了非工作日离辽需在办公系统提前办理的备案名称，并引用制度原文，支持充分，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:11:19.308900+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d42a7aad6f4ce2fc8d9710eeab4eec1f7f71cb6024d7cc1675ff115ee67d4bb7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "2f1445e5-c5ae-4335-9ba7-013a90c5b019",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2064,
+            "completion_tokens": 1222,
+            "total_tokens": 3286,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 884
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1040
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"reason\": \"明确说明须提前在办公系统办理该备案，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"answer_span\": \"教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含该备案要求，且已读取该chunk支持。\"\n    },\n    {\n      \"text\": \"未备案并造成严重后果的，取消当年晋升、评优评奖资格\",\n      \"answer_span\": \"未备案并造成严重后果的，取消当年晋升、评优评奖资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含该后果规定，且已读取该chunk支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确给出了非工作日离辽需在办公系统提前办理的备案名称，并引用制度原文，支持充分，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.003128488,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 11.205
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST30--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "f166fed839045a4993a4fc3031b38e7ae049b37acb22578f6aace1ddfd2f9243",
+        "run_sha256": "42eb33d2bedf27ddebd08c9062327fcd65dd59ee421d843bc8bad0e1c3d4db03",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "42eb33d2bedf27ddebd08c9062327fcd65dd59ee421d843bc8bad0e1c3d4db03"
+}

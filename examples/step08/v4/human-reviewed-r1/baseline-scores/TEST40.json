@@ -1,0 +1,88 @@
+{
+  "id": "TEST40",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答仅说明检索工具返回TEMPORARY_UNAVAILABLE，未能读取原文，无法核实期限，请稍后重试；并未用完工具预算（实际只执行一次search且失败后停止），也没有明确表述达到工具预算上限未完成，因此未满足该要点的合取条件。虽然未假称取得证据，但该条件单独满足不足以使要点通过。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": false,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际回答遇到可重试的临时工具错误后仅尝试一次便停止，未完成应有检索过程，不符合期望的 limit_reached 状态；未提供任何制度结论且未明确说明工具预算耗尽，因此要点不满足，决策不合理，答案不正确。但无编造证据、无错误引用等严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:15:22.385225+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0da91a8bb89be244131db479f00ccb24cfa8bb3bd90ac4e0860f3b7b261f925d",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "278e15cf-956d-48d1-a4f4-06f4fefa9835",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1437,
+            "completion_tokens": 1318,
+            "total_tokens": 2755,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1085
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 413
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答仅说明检索工具返回TEMPORARY_UNAVAILABLE，未能读取原文，无法核实期限，请稍后重试；并未用完工具预算（实际只执行一次search且失败后停止），也没有明确表述达到工具预算上限未完成，因此未满足该要点的合取条件。虽然未假称取得证据，但该条件单独满足不足以使要点通过。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答遇到可重试的临时工具错误后仅尝试一次便停止，未完成应有检索过程，不符合期望的 limit_reached 状态；未提供任何制度结论且未明确说明工具预算耗尽，因此要点不满足，决策不合理，答案不正确。但无编造证据、无错误引用等严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002904748,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 15.4206
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：实际回答遇到可重试的临时工具错误后仅尝试一次便停止，未完成应有检索过程，不符合期望的 limit_reached 状态；未提供任何制度结论且未明确说明工具预算耗尽，因此要点不满足，决策不合理，答案不正确。但无编造证据、无错误引用等严重错误。",
+        "source_score_sha256": "43891a6971317fec1b1b5bc0eebd39bc8dc5bda7952a08533ad8609856da026b"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST40--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "6a13e2d0586ad4bc1826fc7a6fdaed8569438a0dd61f0e5efcc595812ca59dc8",
+        "run_sha256": "8515bb3a2eae98bc6a0bab47ca0cbd32b3086e91ad6b631fde317d8eed79f208",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": false,
+  "run_sha256": "8515bb3a2eae98bc6a0bab47ca0cbd32b3086e91ad6b631fde317d8eed79f208"
+}

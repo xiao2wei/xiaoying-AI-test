@@ -1,0 +1,87 @@
+{
+  "id": "TEST38",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "读取原文工具持续不可用（PERSISTENT_UNAVAILABLE），无法核验候选摘要并取得可逐字引用的原文，因此本次无法回答教师在职读博期间费用由谁承担。",
+            "reason": "实际回答明确说明读取原文工具持续不可用，无法核验并完成回答，符合要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法核验候选摘要并取得可逐字引用的原文，因此本次无法回答教师在职读博期间费用由谁承担。",
+            "reason": "实际回答没有使用检索摘要冒充已读证据，而是明确说明无法核验候选摘要，行为符合禁止性要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际回答正确报告了工具持续不可用状态，未提供任何检索摘要冒充已读证据，工具动作合理（先搜索后读取，读取持续失败后停止），符合tool_error预期，且没有制度事实需要检查。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:15:18.351525+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9f3e0b8a3520b1218dc1c456efa8418aee8a831822c01c876a9ca482939d4eec",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "f3e4eef1-4f30-435a-9f53-ff0967e7efb3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1732,
+            "completion_tokens": 2097,
+            "total_tokens": 3829,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1814
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 580
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"读取原文工具持续不可用（PERSISTENT_UNAVAILABLE），无法核验候选摘要并取得可逐字引用的原文，因此本次无法回答教师在职读博期间费用由谁承担。\",\n      \"reason\": \"实际回答明确说明读取原文工具持续不可用，无法核验并完成回答，符合要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法核验候选摘要并取得可逐字引用的原文，因此本次无法回答教师在职读博期间费用由谁承担。\",\n      \"reason\": \"实际回答没有使用检索摘要冒充已读证据，而是明确说明无法核验候选摘要，行为符合禁止性要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答正确报告了工具持续不可用状态，未提供任何检索摘要冒充已读证据，工具动作合理（先搜索后读取，读取持续失败后停止），符合tool_error预期，且没有制度事实需要检查。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004560204000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 19.7616
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST38--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "d35ab3d20c0dc8b52006daae2277dc3fa03caeefd188d30fb24bc62c121a8de4",
+        "run_sha256": "6d4dc03e3ba1de841cc538aef735133a0af01b4fbaffd0ee0e74d0c1c24883ab",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "6d4dc03e3ba1de841cc538aef735133a0af01b4fbaffd0ee0e74d0c1c24883ab"
+}

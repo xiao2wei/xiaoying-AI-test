@@ -1,0 +1,180 @@
+{
+  "id": "STAB-TEST17-R2",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "可以向学校的上一级主管机关提出书面申诉",
+            "reason": "claim[0]明确写出正文规定为学校上一级主管机关"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "可以向浙江省教育厅提出书面申诉",
+            "reason": "claim[1]明确写出附表备注为浙江省教育厅"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "正文与附表对上级申诉机关的表述不一致：正文写“学校的上一级主管机关”，附表写“浙江省教育厅”",
+            "reason": "claim[2]指出了两处差异"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "原文中未见正文优先、附表无效或其中一处为笔误的说明",
+            "reason": "答案没有擅自确认浙江或辽宁，而是指出无依据"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "请向第二十四条指定的学校教职工申诉处理委员会或工会取得针对附3“备注”栏与第二十一条适用关系的正式解释、更正说明或执行通知",
+            "reason": "gaps中明确请求工会或申诉委员会核实"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "第二十一条规定申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉；条文未写出该上级机关的具体名称。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十一条规定：申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉（条文未写出该上级机关的具体名称）。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "claim[0]引用了第二十一条全文，实际已读支持该规定，且条文未写出具体名称也可从引用中看出"
+          },
+          {
+            "text": "附3备注写明教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。",
+            "answer_span": "同一办法附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写明：教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "claim[1]引用了附3备注，实际已读支持"
+          },
+          {
+            "text": "原文中未见正文优先、附表无效或其中一处为笔误的说明。",
+            "answer_span": "原文中未见正文优先、附表无效或其中一处为笔误的说明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "claim[2]引用两处原文均未包含任何优先、无效或笔误说明，故从已读原文可支持该否定事实"
+          },
+          {
+            "text": "该办法第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释。",
+            "answer_span": "该办法第二十四条规定，本暂行办法由学校教职工申诉处理委员会或工会负责解释。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "claim[3]引用了第二十四条，实际已读支持"
+          },
+          {
+            "text": "该办法第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3。",
+            "answer_span": "该办法第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3；也就是说，正文与附3出自同一现行版本。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "claim[4]引用了第二十五条，实际已读支持该规定，后半句同一版本的结论可作为解释性内容包含在事实中"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确呈现了正文与附表的矛盾，未擅自确认具体机关，并依据解释条款向工会或申诉委员会请求核实；所有要点均已满足，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "正式解释、更正说明或执行通知",
+            "具体受理机关名称及适用对象、版本"
+          ],
+          "reason": "gaps明确要求向工会或申诉委员会取得针对差异的正式解释、更正说明或执行通知，并明确受理机关名称等具体信息。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:12:40.826160+00:00",
+          "attempt": 1,
+          "prompt_sha256": "723dad65dfc63da25b1d0dcdf923de65178072787f6882cc603567c4c65e9e30",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "376a802c-244f-4e43-8e74-64dfd7b74e0e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3996,
+            "completion_tokens": 4927,
+            "total_tokens": 8923,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3917
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2460
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"claim[0]明确写出正文规定为学校上一级主管机关\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"可以向浙江省教育厅提出书面申诉\",\n      \"reason\": \"claim[1]明确写出附表备注为浙江省教育厅\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"正文与附表对上级申诉机关的表述不一致：正文写“学校的上一级主管机关”，附表写“浙江省教育厅”\",\n      \"reason\": \"claim[2]指出了两处差异\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"原文中未见正文优先、附表无效或其中一处为笔误的说明\",\n      \"reason\": \"答案没有擅自确认浙江或辽宁，而是指出无依据\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请向第二十四条指定的学校教职工申诉处理委员会或工会取得针对附3“备注”栏与第二十一条适用关系的正式解释、更正说明或执行通知\",\n      \"reason\": \"gaps中明确请求工会或申诉委员会核实\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"第二十一条规定申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十一条规定：申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉（条文未写出该上级机关的具体名称）。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"claim[0]引用了第二十一条全文，实际已读支持该规定\"\n    },\n    {\n      \"text\": \"附3备注写明教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。\",\n      \"answer_span\": \"同一办法附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写明：教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"claim[1]引用了附3备注，实际已读支持\"\n    },\n    {\n      \"text\": \"第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释。\",\n      \"answer_span\": \"该办法第二十四条规定，本暂行办法由学校教职工申诉处理委员会或工会负责解释。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"claim[3]引用了第二十四条，实际已读支持\"\n    },\n    {\n      \"text\": \"第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3。\",\n      \"answer_span\": \"该办法第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3；也就是说，正文与附3出自同一现行版本。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"claim[4]引用了第二十五条，实际已读支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确呈现了正文与附表的矛盾，未擅自确认具体机关，并依据解释条款向工会或申诉委员会请求核实；所有要点均已满足，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"正式解释、更正说明或执行通知\",\n      \"具体受理机关名称及适用对象、版本\"\n    ],\n    \"reason\": \"gaps明确要求向工会或申诉委员会取得针对差异的正式解释、更正说明或执行通知，并明确受理机关名称等具体信息。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011412852,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 38.7691
+        },
+        {
+          "kind": "judge_validation_error",
+          "error": "ValueError:评分器漏评一整条实际claim"
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:13:19.646133+00:00",
+          "attempt": 1,
+          "prompt_sha256": "050574afae0ec8173898446d47eefb890029e096b04e36548b15df40429797ff",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "9467abab-dd54-4380-b479-d7e846aacafc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4962,
+            "completion_tokens": 2909,
+            "total_tokens": 7871,
+            "prompt_tokens_details": {
+              "cached_tokens": 3968
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1945
+            },
+            "prompt_cache_hit_tokens": 3968,
+            "prompt_cache_miss_tokens": 994
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"可以向学校的上一级主管机关提出书面申诉\",\"reason\":\"claim[0]明确写出正文规定为学校上一级主管机关\"},{\"index\":1,\"met\":true,\"answer_span\":\"可以向浙江省教育厅提出书面申诉\",\"reason\":\"claim[1]明确写出附表备注为浙江省教育厅\"},{\"index\":2,\"met\":true,\"answer_span\":\"正文与附表对上级申诉机关的表述不一致：正文写“学校的上一级主管机关”，附表写“浙江省教育厅”\",\"reason\":\"claim[2]指出了两处差异\"},{\"index\":3,\"met\":true,\"answer_span\":\"原文中未见正文优先、附表无效或其中一处为笔误的说明\",\"reason\":\"答案没有擅自确认浙江或辽宁，而是指出无依据\"},{\"index\":4,\"met\":true,\"answer_span\":\"请向第二十四条指定的学校教职工申诉处理委员会或工会取得针对附3“备注”栏与第二十一条适用关系的正式解释、更正说明或执行通知\",\"reason\":\"gaps中明确请求工会或申诉委员会核实\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"第二十一条规定申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉；条文未写出该上级机关的具体名称。\",\"answer_span\":\"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十一条规定：申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达即生效；教职工如对申诉处理决定仍有异议，可以向学校的上一级主管机关提出书面申诉（条文未写出该上级机关的具体名称）。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"claim[0]引用了第二十一条全文，实际已读支持该规定，且条文未写出具体名称也可从引用中看出\"},{\"text\":\"附3备注写明教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。\",\"answer_span\":\"同一办法附3《辽宁科技大学教职工校内申诉处理决定书》的“备注”栏写明：教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"claim[1]引用了附3备注，实际已读支持\"},{\"text\":\"原文中未见正文优先、附表无效或其中一处为笔误的说明。\",\"answer_span\":\"原文中未见正文优先、附表无效或其中一处为笔误的说明\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"claim[2]引用两处原文均未包含任何优先、无效或笔误说明，故从已读原文可支持该否定事实\"},{\"text\":\"该办法第二十四条规定本暂行办法由学校教职工申诉处理委员会或工会负责解释。\",\"answer_span\":\"该办法第二十四条规定，本暂行办法由学校教职工申诉处理委员会或工会负责解释。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"claim[3]引用了第二十四条，实际已读支持\"},{\"text\":\"该办法第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3。\",\"answer_span\":\"该办法第二十五条规定自发布之日起施行，同时废止科大工字〔2015〕2号《辽宁科技大学教职工校内申诉处理暂行办法》，并将《辽宁科技大学教职工校内申诉处理决定书》列为附3；也就是说，正文与附3出自同一现行版本。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"claim[4]引用了第二十五条，实际已读支持该规定，后半句同一版本的结论可作为解释性内容包含在事实中\"}],\"serious_errors\":[],\"reason\":\"答案准确呈现了正文与附表的矛盾，未擅自确认具体机关，并依据解释条款向工会或申诉委员会请求核实；所有要点均已满足，无严重错误。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"正式解释、更正说明或执行通知\",\"具体受理机关名称及适用对象、版本\"],\"reason\":\"gaps明确要求向工会或申诉委员会取得针对差异的正式解释、更正说明或执行通知，并明确受理机关名称等具体信息。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0065031559999999995,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 27.8742
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": true,
+  "run_sha256": "62fd9a0c6f7f111c5437ea0d7930f95906c2e041833a0fa6b696430133bcfb3c"
+}

@@ -1,0 +1,256 @@
+{
+  "id": "TEST31",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校在事业编制之外、聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式",
+            "reason": "实际回答明确表达了事业编制之外、聘用社会人员、完成临时性、阶段性、辅助性或特殊性工作任务、短期合同制用工形式，符合要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工是学校在事业编制之外",
+            "answer_span": "临时用工是学校在事业编制之外",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本明确说明事业编制之外，且已读原文一致。"
+          },
+          {
+            "text": "聘用社会人员（含已退休人员）",
+            "answer_span": "聘用社会人员（含已退休人员）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本包含该内容，已读原文一致。"
+          },
+          {
+            "text": "完成临时性、阶段性、辅助性或特殊性工作任务",
+            "answer_span": "完成临时性、阶段性、辅助性或特殊性工作任务",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本包含该内容，已读原文一致。"
+          },
+          {
+            "text": "短期合同制用工形式",
+            "answer_span": "短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本包含该内容，已读原文一致。"
+          },
+          {
+            "text": "因此不属于事业编制内用工",
+            "answer_span": "因此不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用文本中“事业编制之外”支持该结论，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学临时用工管理办法》第二条，清晰说明了临时用工的定义，并正确判断其不属于事业编制内用工。检索和阅读工具使用得当，答案正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:11:30.569385+00:00",
+          "attempt": 1,
+          "prompt_sha256": "eb64be3ce2d90274046c3549ace6181a2c5a460019f5a400d009227ec901656a",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "1ad3265d-c8bd-400d-88d8-1db346644c95",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1691,
+            "completion_tokens": 5303,
+            "total_tokens": 6994,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4745
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 539
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校在事业编制之外、聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式\",\n      \"reason\": \"实际回答明确表达了事业编制之外、聘用社会人员、完成临时性、阶段性、辅助性或特殊性工作任务、短期合同制用工形式，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工是学校在事业编制之外\",\n      \"answer_span\": \"临时用工是学校在事业编制之外\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本明确说明事业编制之外，且已读原文一致。\"\n    },\n    {\n      \"text\": \"聘用社会人员（含已退休人员）\",\n      \"answer_span\": \"聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本包含该内容，已读原文一致。\"\n    },\n    {\n      \"text\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"answer_span\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本包含该内容，已读原文一致。\"\n    },\n    {\n      \"text\": \"短期合同制用工形式\",\n      \"answer_span\": \"短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本包含该内容，已读原文一致。\"\n    },\n    {\n      \"text\": \"因此不属于事业编制内用工\",\n      \"answer_span\": \"因此不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本中“事业编制之外”支持该结论，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学临时用工管理办法》第二条，清晰说明了临时用工的定义，并正确判断其不属于事业编制内用工。检索和阅读工具使用得当，答案正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010881024000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 48.043
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：回答准确引用了《辽宁科技大学临时用工管理办法》第二条，清晰说明了临时用工的定义，并正确判断其不属于事业编制内用工。检索和阅读工具使用得当，答案正确。",
+        "source_score_sha256": "95d56407ac5fb9cc89147dbba1be205ddf1e3ef04539b6ebe8a12970e87c933a"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST31--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "48ae2e0f5a51f982cc4f670da2a07bf82595de2ca9c23366e262f382907debdc",
+        "run_sha256": "c1b11e81a74eff319e4f10387792f9021b4f7ba01953781e25f11d25bdd4470a",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "因此不能受聘该校临时用工岗位",
+            "reason": "实际答案明确表述17岁不能受聘，表达‘不可以’"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "reason": "实际答案明确引用第八条禁止聘用未满18周岁"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "禁止聘用未满十八周岁的未成年人",
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C009，quote为第八条原文，实际已读该chunk，支持该事实"
+          },
+          {
+            "text": "坚持四项基本原则，恪守社会公德",
+            "answer_span": "坚持四项基本原则、恪守社会公德",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010，quote包含第九条第一项，实际已读该chunk，支持该事实"
+          },
+          {
+            "text": "年龄一般不超过男63周岁、女60周岁",
+            "answer_span": "年龄一般不超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010，quote包含第九条第二项，实际已读该chunk，支持该事实"
+          },
+          {
+            "text": "首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "answer_span": "首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010，quote包含第九条第三项，实际已读该chunk，支持该事实"
+          },
+          {
+            "text": "具备岗位要求的工作技能并能坚持正常工作",
+            "answer_span": "具备岗位要求的工作技能并能坚持正常工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010，quote包含第九条第四项，实际已读该chunk，支持该事实"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确回答了用户问题，基于第八条禁止聘用未满18周岁，因此17岁不能受聘。同时额外提供了第九条聘用条件，引用均与已读文档一致，无事实错误或不支持的引用。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:11:37.936875+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e1a4478d7f4d970f8c987fd3bfe907da264f65b11489156ca9cd01a4bc492d18",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "38afd3c6-6528-4d93-b10e-43f492999acf",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2378,
+            "completion_tokens": 3601,
+            "total_tokens": 5979,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2950
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1354
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"因此不能受聘该校临时用工岗位\",\n      \"reason\": \"实际答案明确表述17岁不能受聘，表达‘不可以’\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"实际答案明确引用第八条禁止聘用未满18周岁\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C009，quote为第八条原文，实际已读该chunk，支持该事实\"\n    },\n    {\n      \"text\": \"坚持四项基本原则，恪守社会公德\",\n      \"answer_span\": \"坚持四项基本原则、恪守社会公德\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010，quote包含第九条第一项，实际已读该chunk，支持该事实\"\n    },\n    {\n      \"text\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010，quote包含第九条第二项，实际已读该chunk，支持该事实\"\n    },\n    {\n      \"text\": \"首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"answer_span\": \"首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010，quote包含第九条第三项，实际已读该chunk，支持该事实\"\n    },\n    {\n      \"text\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"answer_span\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010，quote包含第九条第四项，实际已读该chunk，支持该事实\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确回答了用户问题，基于第八条禁止聘用未满18周岁，因此17岁不能受聘。同时额外提供了第九条聘用条件，引用均与已读文档一致，无事实错误或不支持的引用。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008046148,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 30.0534
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案正确回答了用户问题，基于第八条禁止聘用未满18周岁，因此17岁不能受聘。同时额外提供了第九条聘用条件，引用均与已读文档一致，无事实错误或不支持的引用。",
+        "source_score_sha256": "95d56407ac5fb9cc89147dbba1be205ddf1e3ef04539b6ebe8a12970e87c933a"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST31--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "48ae2e0f5a51f982cc4f670da2a07bf82595de2ca9c23366e262f382907debdc",
+        "run_sha256": "c1b11e81a74eff319e4f10387792f9021b4f7ba01953781e25f11d25bdd4470a",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c1b11e81a74eff319e4f10387792f9021b4f7ba01953781e25f11d25bdd4470a"
+}

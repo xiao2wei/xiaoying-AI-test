@@ -1,0 +1,111 @@
+{
+  "id": "TEST03",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "30个工作日内",
+            "reason": "实际答案明确表述了30个工作日的申诉期限。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "障碍消除后10个工作日内",
+            "reason": "实际答案明确表述了不可抗力逾期后障碍消除后10个工作日内可提起申诉。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期不再受理",
+            "reason": "实际答案明确表述了逾期不再受理。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出",
+            "answer_span": "申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该完整规则，且实际读取的D24-C012片段与该规则一致。"
+          },
+          {
+            "text": "因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉",
+            "answer_span": "因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该规则，且实际读取的D24-C012片段与该规则一致。"
+          },
+          {
+            "text": "逾期不再受理",
+            "answer_span": "逾期不再受理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该表述，且实际读取的D24-C012片段包含该表述。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条，完整说明了30个工作日、障碍消除后10个工作日及逾期不再受理的规则，所有要点均有明确引用且与实际读取内容一致。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:50:29.076575+00:00",
+          "attempt": 1,
+          "prompt_sha256": "671741e08ad177fbdf7dabcbe0db95192a7bf7899380dfdb745a17bfd4fb741b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3e132827-3e0d-45e2-927f-b820b80db885",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2750,
+            "completion_tokens": 2513,
+            "total_tokens": 5263,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1976
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1726
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"30个工作日内\",\n      \"reason\": \"实际答案明确表述了30个工作日的申诉期限。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"障碍消除后10个工作日内\",\n      \"reason\": \"实际答案明确表述了不可抗力逾期后障碍消除后10个工作日内可提起申诉。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"逾期不再受理\",\n      \"reason\": \"实际答案明确表述了逾期不再受理。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出\",\n      \"answer_span\": \"申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该完整规则，且实际读取的D24-C012片段与该规则一致。\"\n    },\n    {\n      \"text\": \"因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉\",\n      \"answer_span\": \"因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该规则，且实际读取的D24-C012片段与该规则一致。\"\n    },\n    {\n      \"text\": \"逾期不再受理\",\n      \"answer_span\": \"逾期不再受理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该表述，且实际读取的D24-C012片段包含该表述。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条，完整说明了30个工作日、障碍消除后10个工作日及逾期不再受理的规则，所有要点均有明确引用且与实际读取内容一致。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012274855999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 25.1199
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "19143c3b4f82b27a06999115fb9114c8278cd87f769e781e333f7d7d251d1197"
+}

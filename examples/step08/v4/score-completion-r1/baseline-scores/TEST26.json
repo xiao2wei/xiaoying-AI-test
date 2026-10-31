@@ -1,0 +1,182 @@
+{
+  "id": "TEST26",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "再次报考时应重新履行申报程序",
+            "reason": "答案明确表达了再次报考须重新履行申报程序，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "answer_span": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且实际读取了相关条款。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了相关规定，明确表达再次报考须重新履行申报程序，符合要求。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:15:53.415359+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fc9bd2b8995296fcabffb418266c7c4f74b58ad5f87c26c2e2c0f0c503fa49e3",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "dd625686-70d7-416b-b302-6565b48ff368",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2454,
+            "completion_tokens": 709,
+            "total_tokens": 3163,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 481
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1430
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序\",\n      \"reason\": \"答案明确表达了再次报考须重新履行申报程序，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且实际读取了相关条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了相关规定，明确表达再次报考须重新履行申报程序，符合要求。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0023701480000000003,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 7.7088
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "再次报考时应重新履行申报程序，因此今年需要重新走审批流程",
+            "reason": "实际答案明确引用了第十四条并直接回答今年需要重新走审批流程，语义等价且涵盖要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序",
+            "answer_span": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用了D01-C015第十四条，该引用已读取且原文一致，支持该规则。"
+          },
+          {
+            "text": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "answer_span": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用了D01-C007第六条，该引用已读取且文本包含个人申请步骤，支持该事实。"
+          },
+          {
+            "text": "所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选",
+            "answer_span": "所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用了D01-C007第六条，该引用已读取且文本包含单位审核与公示步骤，支持该事实。"
+          },
+          {
+            "text": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试",
+            "answer_span": "人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用了D01-C007第六条，该引用已读取且文本包含学校审批步骤，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确认定再次报考须重新申报，并补充了申报程序，所有事实均有已读证据支持，无违规。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:16:57.051111+00:00",
+          "attempt": 1,
+          "prompt_sha256": "739a683a9d68c5263dbdcd4f4481f83caf563c16fd0cc9510d3ad74d66e247bc",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "934e3495-cf6b-4fe1-9c65-9b4f86c34965",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2843,
+            "completion_tokens": 4073,
+            "total_tokens": 6916,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3479
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1819
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序，因此今年需要重新走审批流程\",\n      \"reason\": \"实际答案明确引用了第十四条并直接回答今年需要重新走审批流程，语义等价且涵盖要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序\",\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用了D01-C015第十四条，该引用已读取且原文一致，支持该规则。\"\n    },\n    {\n      \"text\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"answer_span\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用了D01-C007第六条，该引用已读取且文本包含个人申请步骤，支持该事实。\"\n    },\n    {\n      \"text\": \"所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选\",\n      \"answer_span\": \"所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用了D01-C007第六条，该引用已读取且文本包含单位审核与公示步骤，支持该事实。\"\n    },\n    {\n      \"text\": \"人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试\",\n      \"answer_span\": \"人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用了D01-C007第六条，该引用已读取且文本包含学校审批步骤，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确认定再次报考须重新申报，并补充了申报程序，所有事实均有已读证据支持，无违规。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009287608000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 36.5617
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "7e62b344c411a75ea66ce784408b669d89a31de6b98105f9bc35398567966451"
+}

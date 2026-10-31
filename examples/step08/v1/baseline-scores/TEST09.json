@@ -1,0 +1,170 @@
+{
+  "id": "TEST09",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "可享受10日婚假",
+            "reason": "实际答案明确写出可享受10日婚假。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "可在1年内凭结婚证申请婚假",
+            "reason": "实际答案明确写出教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "婚假必须一次性申请使用",
+            "reason": "实际答案明确写出婚假必须一次性申请使用，不能分次使用。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "依法办理结婚登记的可享受10日婚假。",
+            "answer_span": "依法办理结婚登记的可享受10日婚假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明依法办理结婚登记可享受10日婚假。"
+          },
+          {
+            "text": "一方在外地工作需要到配偶所在地结婚的，另加路程假。",
+            "answer_span": "一方在外地工作需要到配偶所在地结婚的，另加路程假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明异地工作另加路程假。"
+          },
+          {
+            "text": "教职工在校工作期间登记结婚的，可在1年内申请婚假。",
+            "answer_span": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明1年内申请婚假。"
+          },
+          {
+            "text": "申请婚假须凭结婚证。",
+            "answer_span": "凭结婚证申请婚假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明凭结婚证申请。"
+          },
+          {
+            "text": "申请婚假含路程假。",
+            "answer_span": "（含路程假）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明申请婚假（含路程假）。"
+          },
+          {
+            "text": "婚假必须一次性申请使用。",
+            "answer_span": "婚假必须一次性申请使用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明婚假必须一次性申请使用。"
+          },
+          {
+            "text": "不能分次使用。",
+            "answer_span": "不能分次使用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案明确陈述不能分次使用，与一次性申请使用语义一致，D20-C010支持。"
+          },
+          {
+            "text": "婚假（含路程假）期间工资正常发放。",
+            "answer_span": "婚假（含路程假）期间工资正常发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明婚假（含路程假）期间工资正常发放。"
+          },
+          {
+            "text": "逾期按事假处理。",
+            "answer_span": "逾期按事假处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明逾期按事假处理。"
+          },
+          {
+            "text": "婚假由所在单位审批。",
+            "answer_span": "婚假由所在单位审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明婚假由所在单位审批。"
+          },
+          {
+            "text": "报人事处备案。",
+            "answer_span": "报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C010明确载明报人事处备案。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回应了仅按2023请假补充规定的三个问题，引用已读文档D20-C010且内容支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:44.593738+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a7475104a08079bc53766596df5ae76163bffbe498be9d03d8614e445958432e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "b0b46dde-0d54-4111-b98a-b9823f8a1042",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3323,
+            "completion_tokens": 7307,
+            "total_tokens": 10630,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6201
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2427
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"可享受10日婚假\",\n      \"reason\": \"实际答案明确写出可享受10日婚假。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"可在1年内凭结婚证申请婚假\",\n      \"reason\": \"实际答案明确写出教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"婚假必须一次性申请使用\",\n      \"reason\": \"实际答案明确写出婚假必须一次性申请使用，不能分次使用。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"依法办理结婚登记的可享受10日婚假。\",\n      \"answer_span\": \"依法办理结婚登记的可享受10日婚假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明依法办理结婚登记可享受10日婚假。\"\n    },\n    {\n      \"text\": \"一方在外地工作需要到配偶所在地结婚的，另加路程假。\",\n      \"answer_span\": \"一方在外地工作需要到配偶所在地结婚的，另加路程假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明异地工作另加路程假。\"\n    },\n    {\n      \"text\": \"教职工在校工作期间登记结婚的，可在1年内申请婚假。\",\n      \"answer_span\": \"教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明1年内申请婚假。\"\n    },\n    {\n      \"text\": \"申请婚假须凭结婚证。\",\n      \"answer_span\": \"凭结婚证申请婚假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明凭结婚证申请。\"\n    },\n    {\n      \"text\": \"申请婚假含路程假。\",\n      \"answer_span\": \"（含路程假）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明申请婚假（含路程假）。\"\n    },\n    {\n      \"text\": \"婚假必须一次性申请使用。\",\n      \"answer_span\": \"婚假必须一次性申请使用\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明婚假必须一次性申请使用。\"\n    },\n    {\n      \"text\": \"不能分次使用。\",\n      \"answer_span\": \"不能分次使用\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案明确陈述不能分次使用，与一次性申请使用语义一致，D20-C010支持。\"\n    },\n    {\n      \"text\": \"婚假（含路程假）期间工资正常发放。\",\n      \"answer_span\": \"婚假（含路程假）期间工资正常发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明婚假（含路程假）期间工资正常发放。\"\n    },\n    {\n      \"text\": \"逾期按事假处理。\",\n      \"answer_span\": \"逾期按事假处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明逾期按事假处理。\"\n    },\n    {\n      \"text\": \"婚假由所在单位审批。\",\n      \"answer_span\": \"婚假由所在单位审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明婚假由所在单位审批。\"\n    },\n    {\n      \"text\": \"报人事处备案。\",\n      \"answer_span\": \"报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C010明确载明报人事处备案。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回应了仅按2023请假补充规定的三个问题，引用已读文档D20-C010且内容支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.033322080000000004,
+          "seconds": 63.2269
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "52dd42870b690d4e758bad4864419c3524a5ca743b0e78f35f13625c6b21e11d"
+}

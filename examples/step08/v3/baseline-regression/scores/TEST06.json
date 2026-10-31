@@ -1,0 +1,97 @@
+{
+  "id": "TEST06",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "三分之二以上成员参加",
+            "reason": "实际回答明确表述了评议申诉案件须有三分之二以上成员参加，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "出席委员三分之二以上通过方为有效",
+            "reason": "实际回答明确表述了表决须经出席委员三分之二以上通过方为有效，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+            "answer_span": "申诉处理委员会评议申诉案件须有三分之二以上成员参加",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十八条原文，且已读取该文档，支持该事实。"
+          },
+          {
+            "text": "表决须经出席委员三分之二以上通过方为有效",
+            "answer_span": "表决须经出席委员三分之二以上通过方为有效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十八条原文，且已读取该文档，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确表达了两个要点，引用正确，证据充分，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:51:03.837197+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fcecd063b2c2a34f0cdc8aec8c4a1a59db2b3a38727fd09ccdc0647cf00bdb65",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c0bb2cf0-f4d2-446a-9dc3-480ece3476da",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2716,
+            "completion_tokens": 2702,
+            "total_tokens": 5418,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2338
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1692
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"三分之二以上成员参加\",\n      \"reason\": \"实际回答明确表述了评议申诉案件须有三分之二以上成员参加，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"出席委员三分之二以上通过方为有效\",\n      \"reason\": \"实际回答明确表述了表决须经出席委员三分之二以上通过方为有效，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会评议申诉案件须有三分之二以上成员参加\",\n      \"answer_span\": \"申诉处理委员会评议申诉案件须有三分之二以上成员参加\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十八条原文，且已读取该文档，支持该事实。\"\n    },\n    {\n      \"text\": \"表决须经出席委员三分之二以上通过方为有效\",\n      \"answer_span\": \"表决须经出席委员三分之二以上通过方为有效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十八条原文，且已读取该文档，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确表达了两个要点，引用正确，证据充分，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012978416000000001,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 24.971
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "90169202dbb25c429fb57f66ecf2ad144ed467713be5e72f49c0ae0c9c8ae63b"
+}

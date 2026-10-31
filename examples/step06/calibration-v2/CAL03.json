@@ -1,0 +1,81 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答在claims中明确表述“2020规定每月26日上报”，并引用D19-C015。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答在claims中明确表述“2023补充规定每月25日上报”，并引用D20-C006。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "实际回答在gaps中明确表述“两份规定存在差异，请向人事处确认本次适用口径”，符合请求确认要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "实际回答引用D19-C015，引文明确包含“于每月26日向学校人事处报送”，且该chunk在actually_read中已读取。"
+      },
+      {
+        "text": "2023补充规定每月25日上报",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "实际回答引用D20-C006，引文明确包含“各单位每月25日向人事处报送”，且该chunk在actually_read中已读取。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确识别两份规定报送日差异，并请求确认适用口径，符合needs_confirmation状态。所有必要要点均满足，引用与读取记录一致，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:58:02.335937+00:00",
+      "attempt": 1,
+      "prompt_sha256": "861dde8186e7d5448ba9d548c4a49d27ee90e6f269ea55c22c4609c5ab65a16c",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "c56f130b-9948-42c6-a75a-a8ac3ea99260",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1841,
+        "completion_tokens": 394,
+        "total_tokens": 2235,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 1329
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中明确表述“2020规定每月26日上报”，并引用D19-C015。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中明确表述“2023补充规定每月25日上报”，并引用D20-C006。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确表述“两份规定存在差异，请向人事处确认本次适用口径”，符合请求确认要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定每月26日上报\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D19-C015，引文明确包含“于每月26日向学校人事处报送”，且该chunk在actually_read中已读取。\"\n    },\n    {\n      \"text\": \"2023补充规定每月25日上报\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D20-C006，引文明确包含“各单位每月25日向人事处报送”，且该chunk在actually_read中已读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确识别两份规定报送日差异，并请求确认适用口径，符合needs_confirmation状态。所有必要要点均满足，引用与读取记录一致，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00399036,
+      "seconds": 4.6466
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

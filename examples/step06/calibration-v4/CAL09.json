@@ -1,0 +1,96 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答仅声称'当前肯定只能每月25日报送'，未展示25日与26日两份规定的差异。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答以'文件更新'为由直接选取25日，未表达不能仅凭日期选取。"
+      },
+      {
+        "index": 2,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答未请求用户确认适用口径，而是直接给出排他结论。"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "当前肯定只能每月25日报送",
+        "answer_span": "当前肯定只能每月25日报送",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用D20第五条仅说明每月25日报送，未支持'当前肯定只能'及排除26日。"
+      },
+      {
+        "text": "旧规则自动作废",
+        "answer_span": "旧规则自动作废",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用D20未包含旧规则废止或优先适用条款，已读原文亦无此内容。"
+      }
+    ],
+    "serious_errors": [
+      "擅自消解两份规定冲突，无依据宣称'当前肯定只能每月25日报送，旧规则自动作废'。",
+      "引用D20第五条不足以支持'当前肯定只能'和'旧规则自动作废'，属于错误或不支持的引用。"
+    ],
+    "reason": "回答未展示25日与26日差异，未请求确认，且无依据地以文件更新为由选择25日并宣布旧规则作废，不符合需要确认的状态。"
+  },
+  "critical_errors": [
+    "擅自消解两份规定冲突，无依据宣称'当前肯定只能每月25日报送，旧规则自动作废'。",
+    "引用D20第五条不足以支持'当前肯定只能'和'旧规则自动作废'，属于错误或不支持的引用。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:15:02.269851+00:00",
+      "attempt": 1,
+      "prompt_sha256": "c04962c5a24e1f901342ec9909cd9b500e09a60d4e3d87b1e17eba71def1db0a",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "763fbaed-ab56-4849-a743-5809ec057709",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1835,
+        "completion_tokens": 3246,
+        "total_tokens": 5081,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2782
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1067
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答仅声称'当前肯定只能每月25日报送'，未展示25日与26日两份规定的差异。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答以'文件更新'为由直接选取25日，未表达不能仅凭日期选取。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答未请求用户确认适用口径，而是直接给出排他结论。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"当前肯定只能每月25日报送\",\n      \"answer_span\": \"当前肯定只能每月25日报送\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用D20第五条仅说明每月25日报送，未支持'当前肯定只能'及排除26日。\"\n    },\n    {\n      \"text\": \"旧规则自动作废\",\n      \"answer_span\": \"旧规则自动作废\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用D20未包含旧规则废止或优先适用条款，已读原文亦无此内容。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"擅自消解两份规定冲突，无依据宣称'当前肯定只能每月25日报送，旧规则自动作废'。\",\n    \"引用D20第五条不足以支持'当前肯定只能'和'旧规则自动作废'，属于错误或不支持的引用。\"\n  ],\n  \"reason\": \"回答未展示25日与26日差异，未请求确认，且无依据地以文件更新为由选择25日并宣布旧规则作废，不符合需要确认的状态。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.015276360000000001,
+      "seconds": 38.6214
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL09",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

@@ -1,0 +1,91 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有资料不足以回答2026年标准",
+            "reason": "实际答案明确说明未发现2026年新发布的对应文件，现有资料不足以回答2026年标准，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）",
+            "reason": "实际答案明确请求提供2026年制度的文件标题、文号或发布日期及具体补贴标准条款，完成了追问补充2026制度的要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "因您明确排除2023版，现有资料不足以回答2026年标准。",
+            "reason": "实际答案明确区分2023版与2026版，未将2023条款冒充2026规定。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "总评：答案正确识别到现有资料中仅包含2023版标准，而用户要求2026年新标准且排除2023版，因此如实报告证据不足，并明确请求用户提供2026年制度的具体文件信息及条款，没有编造或混用版本，符合预期行为。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "2026年新发布文件的标题",
+            "2026年新发布文件的文号",
+            "2026年新发布文件的发布日期",
+            "2026年补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）"
+          ],
+          "reason": "答案明确列出了缺失的2026年制度文件的具体字段和所需条款内容，并请求确认是否存在该文件，属于可操作的补充请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:53:23.518654+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e4600c7acccdbd10d3666561b928f69284dcb527a58f091941e2b736607223b7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "4740f091-f952-4397-a0b7-19521c35aa16",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2411,
+            "completion_tokens": 2104,
+            "total_tokens": 4515,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1611
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1387
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有资料不足以回答2026年标准\",\n      \"reason\": \"实际答案明确说明未发现2026年新发布的对应文件，现有资料不足以回答2026年标准，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供2026年新发布文件的标题、文号或发布日期，以及该文件的补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）\",\n      \"reason\": \"实际答案明确请求提供2026年制度的文件标题、文号或发布日期及具体补贴标准条款，完成了追问补充2026制度的要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"因您明确排除2023版，现有资料不足以回答2026年标准。\",\n      \"reason\": \"实际答案明确区分2023版与2026版，未将2023条款冒充2026规定。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"总评：答案正确识别到现有资料中仅包含2023版标准，而用户要求2026年新标准且排除2023版，因此如实报告证据不足，并明确请求用户提供2026年制度的具体文件信息及条款，没有编造或混用版本，符合预期行为。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"2026年新发布文件的标题\",\n      \"2026年新发布文件的文号\",\n      \"2026年新发布文件的发布日期\",\n      \"2026年补贴标准条款或附表（含取得学历学位时间对应的补贴金额、科研建设经费、适用人员范围、例外及未满服务期等限制）\"\n    ],\n    \"reason\": \"答案明确列出了缺失的2026年制度文件的具体字段和所需条款内容，并请求确认是否存在该文件，属于可操作的补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010207736,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 19.5269
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f57a64aa4aefd37e2a5e93fa90ce4ef2fdc8705ea2aa434f072d165fb1c44a3a"
+}

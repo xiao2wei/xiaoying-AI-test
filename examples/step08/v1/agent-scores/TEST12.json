@@ -1,0 +1,122 @@
+{
+  "id": "TEST12",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。",
+            "reason": "实际答案明确说明安家费分两次发放，且两次时间点与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "在鞍山市购买住房时先一次性发放50%",
+            "reason": "实际答案明确说明购房补贴在鞍山市购房时先一次性发放50%。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "剩余部分在服务期内按月发放",
+            "reason": "实际答案明确说明剩余部分在服务期内按月发放。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "安家费在10万元及以上的，分两次发放",
+            "answer_span": "安家费在10万元及以上的，分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022第二十一条原文，明确支持该分次发放安排。"
+          },
+          {
+            "text": "首聘期协议签订后发放一次",
+            "answer_span": "首聘期协议签订后发放一次",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022第二十一条原文，明确支持首聘期协议签订后发放。"
+          },
+          {
+            "text": "聘期中期考核合格后再发放一次",
+            "answer_span": "聘期中期考核合格后再发放一次",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022第二十一条原文，明确支持中期考核合格后发放。"
+          },
+          {
+            "text": "购房补贴在鞍山市购买住房时先一次性发放50%",
+            "answer_span": "在鞍山市购买住房时先一次性发放50%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022第二十一条原文，明确支持购房补贴先一次性发放50%。"
+          },
+          {
+            "text": "剩余部分在服务期内按月发放",
+            "answer_span": "剩余部分在服务期内按月发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022第二十一条原文，明确支持剩余部分按月发放。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确引用了《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第二十一条，完整回答了安家费分两次发放和购房补贴发放方式，所有要点均满足，事实全部有据可查。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:21.811711+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ede251faed44457743127da2453e92f55914b5579aad6373eecbc8de32421d5c",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "385d2d8e-cb87-47a5-994d-ed1fe84d8ad5",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1761,
+            "completion_tokens": 2734,
+            "total_tokens": 4495,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2041
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 865
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。\",\n      \"reason\": \"实际答案明确说明安家费分两次发放，且两次时间点与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"在鞍山市购买住房时先一次性发放50%\",\n      \"reason\": \"实际答案明确说明购房补贴在鞍山市购房时先一次性发放50%。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"剩余部分在服务期内按月发放\",\n      \"reason\": \"实际答案明确说明剩余部分在服务期内按月发放。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"安家费在10万元及以上的，分两次发放\",\n      \"answer_span\": \"安家费在10万元及以上的，分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022第二十一条原文，明确支持该分次发放安排。\"\n    },\n    {\n      \"text\": \"首聘期协议签订后发放一次\",\n      \"answer_span\": \"首聘期协议签订后发放一次\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022第二十一条原文，明确支持首聘期协议签订后发放。\"\n    },\n    {\n      \"text\": \"聘期中期考核合格后再发放一次\",\n      \"answer_span\": \"聘期中期考核合格后再发放一次\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022第二十一条原文，明确支持中期考核合格后发放。\"\n    },\n    {\n      \"text\": \"购房补贴在鞍山市购买住房时先一次性发放50%\",\n      \"answer_span\": \"在鞍山市购买住房时先一次性发放50%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022第二十一条原文，明确支持购房补贴先一次性发放50%。\"\n    },\n    {\n      \"text\": \"剩余部分在服务期内按月发放\",\n      \"answer_span\": \"剩余部分在服务期内按月发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022第二十一条原文，明确支持剩余部分按月发放。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确引用了《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第二十一条，完整回答了安家费分两次发放和购房补贴发放方式，所有要点均满足，事实全部有据可查。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01315116,
+          "seconds": 24.3096
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "92cb83f01a063b91759f499caa844aa1811ac915f2063e4b57f2c19b0c727350"
+}

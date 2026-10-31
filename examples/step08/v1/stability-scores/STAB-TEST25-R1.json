@@ -1,0 +1,193 @@
+{
+  "id": "STAB-TEST25-R1",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。",
+            "reason": "明确回答取得博士学历学位后1个月内到人事处办理备案，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。",
+            "answer_span": "教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读原文第九条明确规定该期限和备案部门，引用句子支持该事实。"
+          },
+          {
+            "text": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件。",
+            "answer_span": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确办理备案需持这些材料原件。"
+          },
+          {
+            "text": "国外毕业的还需出具留学回国人员证明、留学生学历认证。",
+            "answer_span": "国外毕业的还需出具留学回国人员证明、留学生学历认证",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确国外毕业的额外材料要求。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确说明取得博士学历学位后1个月内到人事处办理备案，并补充所需材料，引用与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:14.576836+00:00",
+          "attempt": 1,
+          "prompt_sha256": "74b0157b2a4da303ee21c1716a452f8c1ef536b492213601dbadbcedf621ea49",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "10f17ec3-10e6-42df-b48e-65f78c971e07",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1740,
+            "completion_tokens": 3746,
+            "total_tokens": 5486,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3303
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 844
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。\",\n      \"reason\": \"明确回答取得博士学历学位后1个月内到人事处办理备案，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。\",\n      \"answer_span\": \"教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读原文第九条明确规定该期限和备案部门，引用句子支持该事实。\"\n    },\n    {\n      \"text\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件。\",\n      \"answer_span\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确办理备案需持这些材料原件。\"\n    },\n    {\n      \"text\": \"国外毕业的还需出具留学回国人员证明、留学生学历认证。\",\n      \"answer_span\": \"国外毕业的还需出具留学回国人员证明、留学生学历认证\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确国外毕业的额外材料要求。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确说明取得博士学历学位后1个月内到人事处办理备案，并补充所需材料，引用与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01713096,
+          "seconds": 36.4477
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）",
+            "reason": "实际回答明确表述取得博士学历学位后1个月内到人事处办理备案，满足标准要点"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "适用对象为经学校批准、在职攻读博士学位的教师",
+            "answer_span": "适用对象为经学校批准、在职攻读博士学位的教师",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "引用D01-C010第九条未包含“经学校批准”的条件，但实际已读D01-C008第七条可支持该限定"
+          },
+          {
+            "text": "取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）",
+            "answer_span": "取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D01-C010第九条明确载明取得博士学历学位后1个月内到人事处备案"
+          },
+          {
+            "text": "办理备案需携带所在单位出具的回校工作证明、学历学位证书（国外毕业的还需留学回国人员证明、留学生学历认证）、学籍档案等材料原件",
+            "answer_span": "办理备案需携带所在单位出具的回校工作证明、学历学位证书（国外毕业的还需留学回国人员证明、留学生学历认证）、学籍档案等材料原件",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D01-C010第九条逐项列明所需备案材料"
+          },
+          {
+            "text": "该办法以经学校批准并签订《教师在职攻读博士学位协议》为前提",
+            "answer_span": "该办法以经学校批准并签订《教师在职攻读博士学位协议》为前提",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D01-C008第七条明确经学校批准并签订协议"
+          }
+        ],
+        "serious_errors": [
+          "claims[0]中对“经学校批准”的适用对象限制所引用的D01-C010第九条未直接支持该条件，该依据实际来自D01-C008第七条，答案虽在后续引用但该claim的引用本身不充分"
+        ],
+        "reason": "答案直接回答了1个月到人事处备案的核心问题，并补充了所需材料和适用范围；但第一个claim对适用对象限定的引用不够精确，已读第七条可支持，整体答案正确且动作合理",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "claims[0]中对“经学校批准”的适用对象限制所引用的D01-C010第九条未直接支持该条件，该依据实际来自D01-C008第七条，答案虽在后续引用但该claim的引用本身不充分",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:51.038075+00:00",
+          "attempt": 1,
+          "prompt_sha256": "989a5d6142877fdcf57e2a0a94e33310c140fd894d1467b4dfd0f304c742860b",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "fdd3333e-6d46-47f4-b1d8-1e4ab8a6887a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2374,
+            "completion_tokens": 5797,
+            "total_tokens": 8171,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5151
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1350
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）\",\n      \"reason\": \"实际回答明确表述取得博士学历学位后1个月内到人事处办理备案，满足标准要点\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"适用对象为经学校批准、在职攻读博士学位的教师\",\n      \"answer_span\": \"适用对象为经学校批准、在职攻读博士学位的教师\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C010第九条未包含“经学校批准”的条件，但实际已读D01-C008第七条可支持该限定\"\n    },\n    {\n      \"text\": \"取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）\",\n      \"answer_span\": \"取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D01-C010第九条明确载明取得博士学历学位后1个月内到人事处备案\"\n    },\n    {\n      \"text\": \"办理备案需携带所在单位出具的回校工作证明、学历学位证书（国外毕业的还需留学回国人员证明、留学生学历认证）、学籍档案等材料原件\",\n      \"answer_span\": \"办理备案需携带所在单位出具的回校工作证明、学历学位证书（国外毕业的还需留学回国人员证明、留学生学历认证）、学籍档案等材料原件\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D01-C010第九条逐项列明所需备案材料\"\n    },\n    {\n      \"text\": \"该办法以经学校批准并签订《教师在职攻读博士学位协议》为前提\",\n      \"answer_span\": \"该办法以经学校批准并签订《教师在职攻读博士学位协议》为前提\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D01-C008第七条明确经学校批准并签订协议\"\n    }\n  ],\n  \"serious_errors\": [\n    \"claims[0]中对“经学校批准”的适用对象限制所引用的D01-C010第九条未直接支持该条件，该依据实际来自D01-C008第七条，答案虽在后续引用但该claim的引用本身不充分\"\n  ],\n  \"reason\": \"答案直接回答了1个月到人事处备案的核心问题，并补充了所需材料和适用范围；但第一个claim对适用对象限定的引用不够精确，已读第七条可支持，整体答案正确且动作合理\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0260898,
+          "seconds": 59.4015
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "78fdd3854ff71d541be9898b8c3222f5bca9001141026a977c53b87fba2f5c31"
+}

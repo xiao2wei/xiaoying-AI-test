@@ -1,0 +1,98 @@
+{
+  "id": "TEST07",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "一般不得超过男63周岁、女60周岁",
+            "reason": "实际回答明确表述了年龄上限，与要点语义一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "reason": "实际回答明确表述了首次聘用健康条件，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员年龄一般不得超过男63周岁、女60周岁",
+            "answer_span": "一般不得超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用了《辽宁科技大学临时用工管理办法》第九条，引用内容明确支持该事实，且已读原文包含该信息。"
+          },
+          {
+            "text": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "answer_span": "需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用了《辽宁科技大学临时用工管理办法》第九条，引用内容明确支持该事实，且已读原文包含该信息。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学临时用工管理办法》第九条，直接回答了年龄上限和健康条件，要点完全覆盖，引用可靠，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:51:28.844887+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ca3d886e1054d0e436333994346c1150b2ded416a32be705082055215cea3967",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "8591aa93-286f-4f09-9e92-25807db16739",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2621,
+            "completion_tokens": 1365,
+            "total_tokens": 3986,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 960
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1597
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"一般不得超过男63周岁、女60周岁\",\n      \"reason\": \"实际回答明确表述了年龄上限，与要点语义一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"reason\": \"实际回答明确表述了首次聘用健康条件，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁\",\n      \"answer_span\": \"一般不得超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用了《辽宁科技大学临时用工管理办法》第九条，引用内容明确支持该事实，且已读原文包含该信息。\"\n    },\n    {\n      \"text\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"answer_span\": \"需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用了《辽宁科技大学临时用工管理办法》第九条，引用内容明确支持该事实，且已读原文包含该信息。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学临时用工管理办法》第九条，直接回答了年龄上限和健康条件，要点完全覆盖，引用可靠，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.007558496,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 12.6381
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": true,
+      "cache_source": null,
+      "new_judge_requests": 0
+    }
+  ],
+  "pass": true,
+  "run_sha256": "78f0ad36ffc803bba1ede83e9531c81028c3dbb0fc5869f29c824f3d31f144ca"
+}

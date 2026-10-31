@@ -1,0 +1,114 @@
+{
+  "id": "TEST17",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "可以向学校的上一级主管机关提出书面申诉",
+            "reason": "实际答案明确写出正文规定向学校的上一级主管机关提出书面申诉，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉",
+            "reason": "实际答案明确指出附3或附表备注写浙江省教育厅，符合要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "正文与附表说法不一致",
+            "reason": "实际答案明确说明正文与附表说法不一致，并分别引用两处文本，定位了差异。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "需以学校正式发布文本或修订说明确认适用表述",
+            "reason": "实际答案没有确认浙江省教育厅为适用机关，也没有将表述改写为辽宁省教育厅，而是指出需确认适用表述，符合不擅自确认的要求。"
+          },
+          {
+            "index": 4,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际答案未提及请工会或申诉委员会核实，仅提示以学校正式发布文本或修订说明确认，未满足该要点。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": false,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "教职工对校内申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "answer_span": "教职工对校内申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该表述引用D24-C022第二十一条，引用内容直接支持正文规定，且实际已读该条。"
+          },
+          {
+            "text": "附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉。",
+            "answer_span": "附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该表述引用D24-C029附件备注，引用内容直接支持附表规定，且实际已读该附件。"
+          }
+        ],
+        "serious_errors": [
+          "实际答案在gaps中称附表表述疑为模板残留，未经用户或工会核实即倾向性解释冲突，属于擅自消解冲突。"
+        ],
+        "reason": "答案准确引用正文和附表，指出两处表述不一致，且未擅自确认浙江省或改为辽宁，但未按要求请工会或申诉委员会核实，导致缺少必要要点；状态未标记为需要确认，决策未完成确认动作，而且对冲突做了未经核实的倾向性解释，因此整体不合格。",
+        "actionable_gap": {
+          "passed": false,
+          "requested_items": [],
+          "reason": "答案仅提示需以学校正式发布文本或修订说明确认，未明确说明需要用户提供哪些具体文件、版本或由工会/申诉委员会核实，不构成可执行的信息缺口请求。"
+        }
+      },
+      "critical_errors": [
+        "实际答案在gaps中称附表表述疑为模板残留，未经用户或工会核实即倾向性解释冲突，属于擅自消解冲突。"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:47.834202+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ecf5df6ad2ce2d7a683875bc303e27d5a95b9a82f0833ca997d4b13d26690c79",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7d8b7ac5-988c-4c8a-9c6a-a0a11d7d5d38",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3033,
+            "completion_tokens": 7976,
+            "total_tokens": 11009,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7212
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1753
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际答案明确写出正文规定向学校的上一级主管机关提出书面申诉，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉\",\n      \"reason\": \"实际答案明确指出附3或附表备注写浙江省教育厅，符合要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"正文与附表说法不一致\",\n      \"reason\": \"实际答案明确说明正文与附表说法不一致，并分别引用两处文本，定位了差异。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"需以学校正式发布文本或修订说明确认适用表述\",\n      \"reason\": \"实际答案没有确认浙江省教育厅为适用机关，也没有将表述改写为辽宁省教育厅，而是指出需确认适用表述，符合不擅自确认的要求。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际答案未提及请工会或申诉委员会核实，仅提示以学校正式发布文本或修订说明确认，未满足该要点。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"教职工对校内申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\n      \"answer_span\": \"教职工对校内申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该表述引用D24-C022第二十一条，引用内容直接支持正文规定，且实际已读该条。\"\n    },\n    {\n      \"text\": \"附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉。\",\n      \"answer_span\": \"附表《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是向浙江省教育厅提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该表述引用D24-C029附件备注，引用内容直接支持附表规定，且实际已读该附件。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际答案在gaps中称附表表述疑为模板残留，未经用户或工会核实即倾向性解释冲突，属于擅自消解冲突。\"\n  ],\n  \"reason\": \"答案准确引用正文和附表，指出两处表述不一致，且未擅自确认浙江省或改为辽宁，但未按要求请工会或申诉委员会核实，导致缺少必要要点；状态未标记为需要确认，决策未完成确认动作，而且对冲突做了未经核实的倾向性解释，因此整体不合格。\",\n  \"actionable_gap\": {\n    \"passed\": false,\n    \"requested_items\": [],\n    \"reason\": \"答案仅提示需以学校正式发布文本或修订说明确认，未明确说明需要用户提供哪些具体文件、版本或由工会/申诉委员会核实，不构成可执行的信息缺口请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03558852,
+          "seconds": 78.8472
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "6a9d5f946329f1112c6ffdddb98576b96b7bd1852c94ec40e9353431368dc9c4"
+}

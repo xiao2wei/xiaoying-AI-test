@@ -1,0 +1,124 @@
+{
+  "key": "baseline--TEST29--0",
+  "mode": "baseline",
+  "id": "TEST29",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "d9031859d291fdbc27aeb20fd50e358ac60f36ee0609f56946c77074659a6358",
+  "run_sha256": "708a682052d016e7e5bc7bd03a7c2edd31bf7e17d8d1daa9a6c92fe1ced45da9",
+  "created_at": "2026-10-31T05:13:56.684760+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "不低于8年",
+          "reason": "实际答案明确表述新入校全职教师应履行不低于8年的服务期。"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "自来校报到上岗之日起计算",
+          "reason": "实际答案明确表述服务期自来校报到上岗之日起计算。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "新入校全职教师基本服务期不低于8年",
+          "answer_span": "不低于8年",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。"
+        },
+        {
+          "text": "服务期自来校报到上岗之日起计算",
+          "answer_span": "自来校报到上岗之日起计算",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。"
+        },
+        {
+          "text": "签订人才引进协议的，按协议约定执行",
+          "answer_span": "签订人才引进协议的，按协议约定执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。"
+        },
+        {
+          "text": "涉及服务期和服务期经济补偿的，如有协议的，按协议执行",
+          "answer_span": "如有协议的，按协议执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C002的quote明确包含该内容，实际已读D25-C002原文支持。"
+        },
+        {
+          "text": "未签订协议的按照本规定执行",
+          "answer_span": "未签订协议的按照本规定执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C002的quote明确包含该内容，实际已读D25-C002原文支持。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了基本服务期不低于8年及自来校报到上岗之日起计算，引用和已读证据支持充分，无错误或编造。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:13:31.544690+00:00",
+        "attempt": 1,
+        "prompt_sha256": "84df596e3193d558f3166483601dd7a6af0dd7309f207cceec2dd2f2f3b31072",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "cc52b57c-98d6-49c1-891f-17dee4ac8782",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 5202,
+          "completion_tokens": 2757,
+          "total_tokens": 7959,
+          "prompt_tokens_details": {
+            "cached_tokens": 2304
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2149
+          },
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 2898
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不低于8年\",\n      \"reason\": \"实际答案明确表述新入校全职教师应履行不低于8年的服务期。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际答案明确表述服务期自来校报到上岗之日起计算。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"新入校全职教师基本服务期不低于8年\",\n      \"answer_span\": \"不低于8年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。\"\n    },\n    {\n      \"text\": \"服务期自来校报到上岗之日起计算\",\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行\",\n      \"answer_span\": \"签订人才引进协议的，按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确包含该内容，实际已读D25-C001原文支持。\"\n    },\n    {\n      \"text\": \"涉及服务期和服务期经济补偿的，如有协议的，按协议执行\",\n      \"answer_span\": \"如有协议的，按协议执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C002的quote明确包含该内容，实际已读D25-C002原文支持。\"\n    },\n    {\n      \"text\": \"未签订协议的按照本规定执行\",\n      \"answer_span\": \"未签订协议的按照本规定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C002的quote明确包含该内容，实际已读D25-C002原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了基本服务期不低于8年及自来校报到上岗之日起计算，引用和已读证据支持充分，无错误或编造。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.007422228,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 25.1381
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "STAB-TEST19-R1",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编检索结果中未出现食堂WiFi密码或校园无线网络接入账号/密码的规定",
+            "reason": "该句直接说明检索的制度资料中没有食堂WiFi密码，满足资料未提供密码的要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法据此回答密码是多少",
+            "reason": "答案未给出任何密码，并明确因无规定无法回答，没有编造。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际答案明确表示现有检索范围未发现食堂WiFi密码，未编造回答，状态为 insufficient_evidence，符合预期；搜索后未获得证据并请求用户补充具体制度或身份/校区信息，动作合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "辽宁科技大学信息化/网络管理相关制度或通知（含标题、版本日期、适用对象）",
+            "学生、教职工还是访客身份及所在校区、食堂名称"
+          ],
+          "reason": "答案清晰列出了缺少的资料类型和需要用户补充的身份/地点信息，而不是仅要求自行查找或联系部门。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:47.638711+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2c0309b72437048867f3784c20492996591593289a11527253fc38d522c2bf51",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "661f48a3-912c-4ee6-aa35-6ec1bd9f141e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1272,
+            "completion_tokens": 2980,
+            "total_tokens": 4252,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2658
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 376
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编检索结果中未出现食堂WiFi密码或校园无线网络接入账号/密码的规定\",\n      \"reason\": \"该句直接说明检索的制度资料中没有食堂WiFi密码，满足资料未提供密码的要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法据此回答密码是多少\",\n      \"reason\": \"答案未给出任何密码，并明确因无规定无法回答，没有编造。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案明确表示现有检索范围未发现食堂WiFi密码，未编造回答，状态为 insufficient_evidence，符合预期；搜索后未获得证据并请求用户补充具体制度或身份/校区信息，动作合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"辽宁科技大学信息化/网络管理相关制度或通知（含标题、版本日期、适用对象）\",\n      \"学生、教职工还是访客身份及所在校区、食堂名称\"\n    ],\n    \"reason\": \"答案清晰列出了缺少的资料类型和需要用户补充的身份/地点信息，而不是仅要求自行查找或联系部门。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01347984,
+          "seconds": 29.3707
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e25bdd7429290087f84e84368b55656d8a8b77f3ffec76c81f501ff17b37f733"
+}

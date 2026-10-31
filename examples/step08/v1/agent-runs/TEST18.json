@@ -1,0 +1,244 @@
+{
+  "id": "TEST18",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "申诉期间原处理决定应暂缓执行还是继续执行？校内申诉暂行办法与管理服务人员工作作风处理办法怎么写？我尚未说明处理类型。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:52.643531+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aadeaa097e4c629c4c8e2bc5f61b582a19136a9f4686f4890f77144fd6d903b5",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "5fac0b32-a5af-41cc-89d8-f2832f7c877b",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1162,
+            "completion_tokens": 49,
+            "total_tokens": 1211,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 138
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"校内申诉暂行办法 申诉期间 原处理决定 暂缓执行 继续执行\",\"doc_ids\":[]},\"reason\":\"先查校内申诉暂行办法中申诉期间原处理决定执行规则\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004074,
+          "seconds": 0.8797
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "校内申诉暂行办法 申诉期间 原处理决定 暂缓执行 继续执行",
+            "doc_ids": []
+          },
+          "reason": "先查校内申诉暂行办法中申诉期间原处理决定执行规则"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "校内申诉暂行办法 申诉期间 原处理决定 暂缓执行 继续执行",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "校内申诉暂行办法 申诉期间 原处理决定 暂缓执行 继续执行",
+            "hits": [
+              {
+                "chunk_id": "D24-C023",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第二十二条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.823515,
+                "lexical_score": 88.0241,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十二条 第二十二条 申诉处理期间，暂缓执行原处理决定。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C016",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十五条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  184
+                ],
+                "printed_pages": [
+                  179
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.762852,
+                "lexical_score": 57.0687,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十五条 第十五条 申诉处理委员会应当在接到申诉申请后的30个工作日内，按照下列\n规定作出申诉处理决定：\n（一）原处理决定认定事实清楚，依据正确，程序合法、处理适当，维持原处理\n决定；\n（二）原处理决定程序不当，退回原处理机构重新作出决定；\n（三）原处理决定具有下列情形之一的，撤销原处理决定：\n1.主要事实不清、证据不足的；\n2.适用依据错误的；\n3.处理行为明显不当的。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C022",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第二十一条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.750789,
+                "lexical_score": 56.3696,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十一条 第二十一条 申诉处理决定是学校对教职工处分或处理的最终决定。申诉处理\n决定书一经送达申诉双方当事人，立即生效。被申诉人应当执行学校教职工校内申\n诉处理委员会的申诉处理决定；教职工如对申诉处理决定仍有异议的，可以向学校的\n上一级主管机关提出书面申诉。\n申诉处理决定书的送达，依照民事诉讼法关于送达的规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C015",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十四条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  184
+                ],
+                "printed_pages": [
+                  179
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.757389,
+                "lexical_score": 45.4849,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十四条 第十四条 申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回\n申诉。申诉一经撤回，申诉复查即行终止，并且原申诉人不得以相同理由再行提起\n申诉。\n第五章 申诉处理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C021",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第二十条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.070197,
+                "semantic_score": 0.735161,
+                "lexical_score": 47.7949,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十条 第二十条 申诉处理委员会认为需要作出本办法第十五条（三）的申诉处理决定\n时，对申诉事项属于校长办公会议议事范围的，由申诉处理委员会提交校长办公会议\n审议研究后再下达申诉处理决定书。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0143,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:53.547663+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c066e31a331409748eff17b598c12bb6403bf3753a12818b6a8546306d6803ab",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "be94602b-4d1b-416a-b419-f91093aa5b78",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2286,
+            "completion_tokens": 177,
+            "total_tokens": 2463,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1134
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C023\"]}, \"reason\": \"读取申诉期间原处理决定执行规则的原文\"}\n\n{\"action\": \"search\", \"arguments\": {\"query\": \"管理服务人员工作作风处理办法 申诉 期间 原处理决定 执行\", \"doc_ids\": []}, \"reason\": \"查工作作风处理办法中申诉与执行关系\"}\n\n{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C023\"]}, \"reason\": \"读取申诉期间原处理决定执行规则的原文\"}\n\n{\"action\": \"search\", \"arguments\": {\"query\": \"管理服务人员工作作风处理办法 申诉 期间 原处理决定 执行\", \"doc_ids\": []}, \"reason\": \"查工作作风处理办法中申诉与执行关系\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008981999999999999,
+          "error": "JSONDecodeError",
+          "seconds": 1.0744
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:54.622247+00:00",
+          "attempt": 2,
+          "prompt_sha256": "c066e31a331409748eff17b598c12bb6403bf3753a12818b6a8546306d6803ab",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "9c1d9a0b-d593-4afb-9637-6b7cb086048b",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2286,
+            "completion_tokens": 181,
+            "total_tokens": 2467,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 238
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C023\"]}, \"reason\": \"读取申诉期间原处理决定执行规则的原文\"}\n\n{\"action\": \"search\", \"arguments\": {\"query\": \"管理服务人员工作作风处理办法 申诉 期间 原处理决定 暂缓执行\", \"doc_ids\": []}, \"reason\": \"查工作作风处理办法中申诉与执行关系\"}\n\n{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C023\"]}, \"reason\": \"读取申诉期间原处理决定执行规则的原文\"}\n\n{\"action\": \"search\", \"arguments\": {\"query\": \"管理服务人员工作作风处理办法 申诉 期间 原处理决定 暂缓执行\", \"doc_ids\": []}, \"reason\": \"查工作作风处理办法中申诉与执行关系\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000903,
+          "error": "JSONDecodeError",
+          "seconds": 1.3156
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [
+        "D24-C023",
+        "D24-C016",
+        "D24-C022",
+        "D24-C015",
+        "D24-C021"
+      ],
+      "seconds": 3.3034,
+      "model_calls": 3,
+      "tool_calls": 1,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 3.3034,
+  "model_calls": 3,
+  "tool_calls": 1,
+  "created_at": "2026-10-31T02:11:55.939171+00:00"
+}

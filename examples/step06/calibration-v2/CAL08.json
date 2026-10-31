@@ -1,0 +1,69 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述“项目最长一般不超过4年”，与必需要点“最长一般不超过4年”一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "项目最长一般不超过4年。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "回答引用了D08-C016，但该引用内容为兼职辅导员申请条款，与人才专项经费项目执行期限无关，不能支持该事实；实际读取的也是D08-C016，未读取包含正确规定的D03-C008，因此不支持。"
+      }
+    ],
+    "serious_errors": [
+      "引用错误：回答声称“项目最长一般不超过4年”并引用D08-C016，但该引用内容与人才专项经费项目无关，属于错误引用。"
+    ],
+    "reason": "回答内容正确，但引用的证据与实际读取的文档均不相关，无法支持答案，且存在错误引用，因此answer_correct为false。工具操作仅读取了无关文档，未检索到正确证据，决策不合理。"
+  },
+  "critical_errors": [
+    "引用错误：回答声称“项目最长一般不超过4年”并引用D08-C016，但该引用内容与人才专项经费项目无关，属于错误引用。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:58:10.053645+00:00",
+      "attempt": 1,
+      "prompt_sha256": "0c8adc971d836cf33c35f0f0879053a34afd0d7876cb9658cd5b2e961daf2796",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "9b2fcca9-fdbb-46e1-aa10-23732afc764b",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1181,
+        "completion_tokens": 290,
+        "total_tokens": 1471,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 541
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“项目最长一般不超过4年”，与必需要点“最长一般不超过4年”一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"项目最长一般不超过4年。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"回答引用了D08-C016，但该引用内容为兼职辅导员申请条款，与人才专项经费项目执行期限无关，不能支持该事实；实际读取的也是D08-C016，未读取包含正确规定的D03-C008，因此不支持。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"引用错误：回答声称“项目最长一般不超过4年”并引用D08-C016，但该引用内容与人才专项经费项目无关，属于错误引用。\"\n  ],\n  \"reason\": \"回答内容正确，但引用的证据与实际读取的文档均不相关，无法支持答案，且存在错误引用，因此answer_correct为false。工具操作仅读取了无关文档，未检索到正确证据，决策不合理。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00270732,
+      "seconds": 4.7436
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL08",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

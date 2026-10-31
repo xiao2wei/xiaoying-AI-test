@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述“细则覆盖学校本科以及研究生兼职辅导员”，与必需要点“本科及研究生兼职辅导员均适用”一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "适用；细则覆盖学校本科以及研究生兼职辅导员。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实明确关联引用D08-C003，引用内容“第二条 本细则适用于学校本科以及研究生兼职辅导员”足以支持该事实，且该证据已实际读取。",
+        "answer_span": "适用；细则覆盖学校本科以及研究生兼职辅导员。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答正确引用并读取了相关条款，明确说明细则适用于本科及研究生兼职辅导员，满足必需要点，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:47.203780+00:00",
+      "attempt": 1,
+      "prompt_sha256": "fcbc59cd3ba9b61d44741f3186422ea396dc3ebbb775fd3c686984fcbd68e959",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "5eb113c9-f2f2-4e37-8ef9-6c6359aae88c",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1172,
+        "completion_tokens": 239,
+        "total_tokens": 1411,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 532
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“细则覆盖学校本科以及研究生兼职辅导员”，与必需要点“本科及研究生兼职辅导员均适用”一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"适用；细则覆盖学校本科以及研究生兼职辅导员。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用D08-C003，引用内容“第二条 本细则适用于学校本科以及研究生兼职辅导员”足以支持该事实，且该证据已实际读取。\",\n      \"answer_span\": \"适用；细则覆盖学校本科以及研究生兼职辅导员。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确引用并读取了相关条款，明确说明细则适用于本科及研究生兼职辅导员，满足必需要点，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00249348,
+      "seconds": 2.9658
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL06",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

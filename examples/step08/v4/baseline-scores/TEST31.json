@@ -1,0 +1,88 @@
+{
+  "id": "TEST31",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:49.027401+00:00",
+          "attempt": 1,
+          "prompt_sha256": "465bdd271838f17aa97ac8235c979109bb6af12f306bd473b92562411f4d2905",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 3.2802
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:52.307836+00:00",
+          "attempt": 2,
+          "prompt_sha256": "465bdd271838f17aa97ac8235c979109bb6af12f306bd473b92562411f4d2905",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 3.283
+        }
+      ],
+      "judge_error": "ModelError:SSLError",
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:21:08.261992+00:00",
+          "attempt": 1,
+          "prompt_sha256": "dc0c4799596f9e51bb52fd57622f37d22d421a12b9125a8d64268cfb7b6c8230",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 2.967
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:21:11.229366+00:00",
+          "attempt": 2,
+          "prompt_sha256": "dc0c4799596f9e51bb52fd57622f37d22d421a12b9125a8d64268cfb7b6c8230",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 2.7585
+        }
+      ],
+      "judge_error": "ModelError:SSLError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "66002642c628f7e748fc16622ae998e374d8ba4953c1952d2f0d92ec21e21642"
+}

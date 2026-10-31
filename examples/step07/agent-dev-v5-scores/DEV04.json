@@ -1,0 +1,32 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:27:39.337560+00:00",
+          "attempt": 1,
+          "prompt_sha256": "72dd14ef0c08a5bbca9ff178f8d8cfca943776b8f8cd6df61847834d3bc3e64d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4062
+        }
+      ],
+      "judge_error": "ModelError:HTTP_402",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "93fb3e98619ed336ff563b993d3a16f5a4985338d051fb93c379ea26df16355c"
+}

@@ -1,0 +1,72 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "reason": "实际回答声称“项目最长一般可以执行99年”，与必需要点“最长一般不超过4年”相反，未表达该要点。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "项目最长一般可以执行99年。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "该事实与已读取原文“项目执行期限最长一般不得超过4年”直接矛盾，引用不支持，实际读取也不支持。",
+        "answer_span": "项目最长一般可以执行99年。"
+      }
+    ],
+    "serious_errors": [
+      "无依据事实：回答声称最长可执行99年，与已读取证据矛盾。",
+      "错误引用：引用D03-C008中的“项目执行期限最长一般不得超过4年”却得出99年的结论，引用不支持该事实。"
+    ],
+    "reason": "回答状态为answered，符合预期；工具读取成功且决策合理。但答案内容与证据相反，必需要点未满足，且存在无依据事实和错误引用。"
+  },
+  "critical_errors": [
+    "无依据事实：回答声称最长可执行99年，与已读取证据矛盾。",
+    "错误引用：引用D03-C008中的“项目执行期限最长一般不得超过4年”却得出99年的结论，引用不支持该事实。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:49.553998+00:00",
+      "attempt": 1,
+      "prompt_sha256": "b73c75ebd4a6802e965e5f22e21dca9faa4c382389b7aa9fdd9562dfe5bbe3cb",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "2745e2cf-4dbc-4219-8861-1efdc3fa9b38",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1261,
+        "completion_tokens": 289,
+        "total_tokens": 1550,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 621
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答声称“项目最长一般可以执行99年”，与必需要点“最长一般不超过4年”相反，未表达该要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"项目最长一般可以执行99年。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"该事实与已读取原文“项目执行期限最长一般不得超过4年”直接矛盾，引用不支持，实际读取也不支持。\",\n      \"answer_span\": \"项目最长一般可以执行99年。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"无依据事实：回答声称最长可执行99年，与已读取证据矛盾。\",\n    \"错误引用：引用D03-C008中的“项目执行期限最长一般不得超过4年”却得出99年的结论，引用不支持该事实。\"\n  ],\n  \"reason\": \"回答状态为answered，符合预期；工具读取成功且决策合理。但答案内容与证据相反，必需要点未满足，且存在无依据事实和错误引用。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00280896,
+      "seconds": 4.5064
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL07",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

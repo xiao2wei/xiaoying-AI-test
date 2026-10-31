@@ -1,0 +1,53 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才专项经费预算能否直接自行重大调整？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.773916+00:00",
+          "attempt": 1,
+          "prompt_sha256": "64cced55566f083f9334fd5da8143e3f5f6f8d51ac1c8ea93bae616f70be25f3",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.3822
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.3985,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 0.3987,
+  "model_calls": 1,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:39.157424+00:00"
+}

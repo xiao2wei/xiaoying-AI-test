@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述“第二十二条明确2021年27号旧办法同时废止”，直接对应必需要点“明确同时废止”。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "第二十二条明确2021年27号旧办法同时废止。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实引用了D02-C023，引用内容包含“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，且该片段在actually_read中已实际读取，支持该事实。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确引用了已读取的废止条款，明确满足必需要点，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:58:03.674113+00:00",
+      "attempt": 1,
+      "prompt_sha256": "a1235070b63664896b39869097bbecc5d57b618d0643bd2ba4d888e4b4a4e080",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "cde7746b-64dc-44ed-ad0b-b2d616345afe",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1174,
+        "completion_tokens": 231,
+        "total_tokens": 1405,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 534
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“第二十二条明确2021年27号旧办法同时废止”，直接对应必需要点“明确同时废止”。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"第二十二条明确2021年27号旧办法同时废止。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D02-C023，引用内容包含“原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止”，且该片段在actually_read中已实际读取，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了已读取的废止条款，明确满足必需要点，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00246444,
+      "seconds": 2.5929
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL04",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

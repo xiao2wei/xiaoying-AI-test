@@ -1,0 +1,82 @@
+{
+  "id": "STAB-TEST19-R2",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "本次检索的制度汇编未包含食堂WiFi密码或校园无线网络接入凭据",
+            "reason": "明确说明资料未提供食堂WiFi密码"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "本次检索的制度汇编未包含食堂WiFi密码或校园无线网络接入凭据",
+            "reason": "没有编造答案，而是如实说明未找到相关信息"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园网络与信息化管理相关制度或操作指南（含标题、版本日期和适用对象）"
+          ],
+          "reason": "明确说明缺少哪些资料并请求用户提供具体文件类型及字段，不是仅让用户自行查找或联系部门"
+        },
+        "reason": "回答如实说明未找到食堂WiFi密码，未编造，并明确请求用户提供所需制度文件，行动合理，状态与预期一致。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:15:43.746899+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bb510ded6296d6bf0f55710a9b30f154d10e59e4e457892a982c18ba7a6b5b6e",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a6b121a8-f972-499e-b692-d73ca1a661cd",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1307,
+            "completion_tokens": 956,
+            "total_tokens": 2263,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 678
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 283
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"本次检索的制度汇编未包含食堂WiFi密码或校园无线网络接入凭据\",\n      \"reason\": \"明确说明资料未提供食堂WiFi密码\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"本次检索的制度汇编未包含食堂WiFi密码或校园无线网络接入凭据\",\n      \"reason\": \"没有编造答案，而是如实说明未找到相关信息\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"校园网络与信息化管理相关制度或操作指南（含标题、版本日期和适用对象）\"\n    ],\n    \"reason\": \"明确说明缺少哪些资料并请求用户提供具体文件类型及字段，不是仅让用户自行查找或联系部门\"\n  },\n  \"reason\": \"回答如实说明未找到食堂WiFi密码，未编造，并明确请求用户提供所需制度文件，行动合理，状态与预期一致。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002102188,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 9.6221
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "41f65cd676e33d284ce89577cba04688f0e7c3b8c3c076227085ac17390f1514"
+}

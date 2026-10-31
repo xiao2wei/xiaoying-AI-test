@@ -1,0 +1,121 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "我是新引进人才，请直接告诉我能领取多少安家费。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:20.208553+00:00",
+          "attempt": 1,
+          "prompt_sha256": "14f244fc50616f22b74a052a1e1f275c28899dbe052f97e7b5b82932f4be5bf4",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "a16d3429-45d2-4e6e-b5ff-c5b4851cc6dd",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2720,
+            "completion_tokens": 75,
+            "total_tokens": 2795,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 288
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000190992,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_7JMq5OB2eFbQVHBM0FL66437",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"引进人才 安家费 标准 发放\", \"doc_ids\": []}, \"reason\": \"查找人才安家费标准与适用条件\"}}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.8502
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:21.059114+00:00",
+          "attempt": 2,
+          "prompt_sha256": "14f244fc50616f22b74a052a1e1f275c28899dbe052f97e7b5b82932f4be5bf4",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "9aabb36b-d267-4da9-b863-71c8fe2fb1f1",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2720,
+            "completion_tokens": 90,
+            "total_tokens": 2810,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 160
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00017136,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_GJ9gSsmXgz8hZv8XLntM7942",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"引进人才安家费 标准 发放 条件\", \"doc_ids\": []}, \"reason\": \"查找人才安家费标准与适用条件\"}, \"reason\": \"查找人才安家费标准与适用条件\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.7844
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.6696,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 1.6699,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T03:55:21.844493+00:00"
+}

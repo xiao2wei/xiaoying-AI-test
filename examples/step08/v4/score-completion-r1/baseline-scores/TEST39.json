@@ -1,0 +1,87 @@
+{
+  "id": "TEST39",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "检索工具持续不可用（PERSISTENT_UNAVAILABLE），本次未能读取任何制度原文，无法核对临时用工岗位设置的审批流程。",
+            "reason": "实际回答明确说明检索工具持续不可用且未能读取原文，因此无法核对审批流程，符合持续检索失败并明确未完成的要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "检索工具持续不可用（PERSISTENT_UNAVAILABLE），本次未能读取任何制度原文，无法核对临时用工岗位设置的审批流程。",
+            "reason": "实际回答未提供任何审批结果，仅说明无法核对，没有编造内容，符合不得编造审批结果的行为要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "工具持续不可用，助手明确说明未完成且未编造任何审批结果，行为合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:15:21.430671+00:00",
+          "attempt": 1,
+          "prompt_sha256": "934d01b31e2e67d7032a36c8214f1c623a4816ab88e75b86419ef2bffb8ee432",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "1ba08135-1ff5-465a-95d1-0f5238a25f8d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1397,
+            "completion_tokens": 2407,
+            "total_tokens": 3804,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2152
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 245
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"检索工具持续不可用（PERSISTENT_UNAVAILABLE），本次未能读取任何制度原文，无法核对临时用工岗位设置的审批流程。\",\n      \"reason\": \"实际回答明确说明检索工具持续不可用且未能读取原文，因此无法核对审批流程，符合持续检索失败并明确未完成的要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"检索工具持续不可用（PERSISTENT_UNAVAILABLE），本次未能读取任何制度原文，无法核对临时用工岗位设置的审批流程。\",\n      \"reason\": \"实际回答未提供任何审批结果，仅说明无法核对，没有编造内容，符合不得编造审批结果的行为要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"工具持续不可用，助手明确说明未完成且未编造任何审批结果，行为合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004952903999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 21.4702
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST39--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "6de204c5091eb92e46b5fcc57c6a6c88ce010f3f6fed66cd8ff50b96da970dd4",
+        "run_sha256": "f395fc4e67830d02b1b7d625499a571d05fc8b177895a4e4f5e651386b98e038",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f395fc4e67830d02b1b7d625499a571d05fc8b177895a4e4f5e651386b98e038"
+}

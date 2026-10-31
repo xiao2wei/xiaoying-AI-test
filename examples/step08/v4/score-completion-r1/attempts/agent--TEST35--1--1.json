@@ -1,0 +1,116 @@
+{
+  "key": "agent--TEST35--1",
+  "mode": "agent",
+  "id": "TEST35",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "75dff2976fe5468850718f0d99ff79f5fc26d5cbc17d9ba61b530946f7d56bd5",
+  "run_sha256": "1837f700e4c8c640a08876aaea972f0863011681472f33890a7be013afbe98dd",
+  "created_at": "2026-10-31T05:13:12.345118+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "病假连续≥6个月，可申请长期病休手续",
+          "reason": "实际答案明确表达了病假连续≥6个月可申请长期病休手续，与要点一致。"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+          "reason": "实际答案明确包含每半年复查一次、由三甲级以上医院出具不能工作诊断证明，符合要点。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "病假连续≥6个月，可申请长期病休手续",
+          "answer_span": "病假连续≥6个月，可申请长期病休手续",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确关联引用，引用quote为“病假连续≥6个月，可申请长期病休手续”，实际已读原文包含相同表述。"
+        },
+        {
+          "text": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+          "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。"
+        },
+        {
+          "text": "由医院出具不能工作诊断证明",
+          "answer_span": "由医院出具不能工作诊断证明",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。"
+        },
+        {
+          "text": "继续办理请假手续",
+          "answer_span": "继续办理请假手续",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了连续休满6个月可申请长期病休，每半年复查一次并由三甲级以上医院出具不能工作诊断证明，引用正确，动作合理。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:12:43.267221+00:00",
+        "attempt": 1,
+        "prompt_sha256": "dfccaa4ee4c1e78107ed21f12f43420bc28735605defe5b5f176d6e5c8135961",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "ecd50e3f-d3a9-492e-9349-9ba7ac67a1ed",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2641,
+          "completion_tokens": 2992,
+          "total_tokens": 5633,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2403
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 1617
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"reason\": \"实际答案明确表达了病假连续≥6个月可申请长期病休手续，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\",\n      \"reason\": \"实际答案明确包含每半年复查一次、由三甲级以上医院出具不能工作诊断证明，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"answer_span\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用，引用quote为“病假连续≥6个月，可申请长期病休手续”，实际已读原文包含相同表述。\"\n    },\n    {\n      \"text\": \"长期病休人员需每半年到三甲级以上医院进行一次复查\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。\"\n    },\n    {\n      \"text\": \"由医院出具不能工作诊断证明\",\n      \"answer_span\": \"由医院出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。\"\n    },\n    {\n      \"text\": \"继续办理请假手续\",\n      \"answer_span\": \"继续办理请假手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用，引用quote包含此句，实际已读原文包含相同表述。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了连续休满6个月可申请长期病休，每半年复查一次并由三甲级以上医院出具不能工作诊断证明，引用正确，动作合理。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.007013907999999999,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 29.076
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

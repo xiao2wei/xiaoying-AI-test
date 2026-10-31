@@ -1,0 +1,520 @@
+{
+  "scope": "development",
+  "group_count": 12,
+  "metrics": {
+    "M01": {
+      "name": "初次检索Recall@5",
+      "numerator": 0.0,
+      "denominator": 10,
+      "value": 0.0,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 0.0,
+        "DEV02": 0.0,
+        "DEV03": 0.0,
+        "DEV04": 0.0,
+        "DEV06": 0.0,
+        "DEV07": 0.0,
+        "DEV08": 0.0,
+        "DEV09": 0.0,
+        "DEV10": 0.0,
+        "DEV11": 0.0
+      }
+    },
+    "M02": {
+      "name": "最终实际读取证据覆盖率",
+      "numerator": 0.0,
+      "denominator": 10,
+      "value": 0.0,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 0.0,
+        "DEV02": 0.0,
+        "DEV03": 0.0,
+        "DEV04": 0.0,
+        "DEV06": 0.0,
+        "DEV07": 0.0,
+        "DEV08": 0.0,
+        "DEV09": 0.0,
+        "DEV10": 0.0,
+        "DEV11": 0.0
+      }
+    },
+    "M03": {
+      "name": "任务通过率",
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0.0,
+      "target": 1.0,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": false,
+        "DEV02": false,
+        "DEV03": false,
+        "DEV04": false,
+        "DEV05": false,
+        "DEV06": false,
+        "DEV07": false,
+        "DEV08": false,
+        "DEV09": false,
+        "DEV10": false,
+        "DEV11": false,
+        "DEV12": false
+      }
+    },
+    "M04": {
+      "name": "可回答问题正确率",
+      "numerator": 0,
+      "denominator": 8,
+      "value": 0.0,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": false,
+        "DEV02": false,
+        "DEV04": false,
+        "DEV07": false,
+        "DEV08": false,
+        "DEV09": false,
+        "DEV10": false,
+        "DEV11": false
+      }
+    },
+    "M05": {
+      "name": "可回答问题完整度",
+      "numerator": 0.0,
+      "denominator": 8,
+      "value": 0.0,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 0.0,
+        "DEV02": 0.0,
+        "DEV04": 0.0,
+        "DEV07": 0.0,
+        "DEV08": 0.0,
+        "DEV09": 0.0,
+        "DEV10": 0.0,
+        "DEV11": 0.0
+      }
+    },
+    "M06": {
+      "name": "引用支持率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 1,
+      "direction": ">=",
+      "passed": null,
+      "detail": {}
+    },
+    "M07": {
+      "name": "事实引用覆盖率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 1,
+      "direction": ">=",
+      "passed": null,
+      "detail": {}
+    },
+    "M08": {
+      "name": "无依据事实率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 0,
+      "direction": "<=",
+      "passed": null,
+      "detail": {}
+    },
+    "M09": {
+      "name": "conflict通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV03": false,
+        "DEV04": false
+      }
+    },
+    "M10": {
+      "name": "insufficient通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV05": false,
+        "DEV06": false
+      }
+    },
+    "M11": {
+      "name": "tool_failure通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV11": false,
+        "DEV12": false
+      }
+    },
+    "M12": {
+      "name": "paraphrase通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 0.8333333333333334,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV07": false,
+        "DEV08": false
+      }
+    },
+    "M13": {
+      "name": "context通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 0.8,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV09": false,
+        "DEV10": false
+      }
+    },
+    "M14": {
+      "name": "程序检查",
+      "numerator": 56,
+      "denominator": 56,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "test_passed": 40,
+        "test_run": 40,
+        "provenance_passed": 16,
+        "provenance_run": 16,
+        "test_report_present": true
+      }
+    },
+    "M15": {
+      "name": "关键缺陷场景数",
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0,
+      "target": 0,
+      "direction": "<=",
+      "passed": false,
+      "detail": []
+    },
+    "M16": {
+      "name": "稳定性通过率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": null,
+      "detail": {
+        "required_observations": 30,
+        "actual": 0
+      }
+    },
+    "M17": {
+      "name": "端到端P95秒",
+      "numerator": 0.9877,
+      "denominator": 12,
+      "value": 0.9877,
+      "target": 120,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 0.5552,
+        "DEV02": 0.4887,
+        "DEV03": 0.5374,
+        "DEV04": 0.4648,
+        "DEV05": 0.4113,
+        "DEV06": 0.4464,
+        "DEV07": 0.8694,
+        "DEV08": 0.9238,
+        "DEV09": 0.9877,
+        "DEV10": 0.8256,
+        "DEV11": 0.3987,
+        "DEV12": 0.442
+      }
+    },
+    "M18": {
+      "name": "平均模型请求次数",
+      "numerator": 16,
+      "denominator": 12,
+      "value": 1.3333333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV05": 1,
+        "DEV06": 1,
+        "DEV07": 2,
+        "DEV08": 2,
+        "DEV09": 2,
+        "DEV10": 2,
+        "DEV11": 1,
+        "DEV12": 1
+      }
+    },
+    "M19": {
+      "name": "平均业务工具尝试次数",
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0.0,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 0,
+        "DEV02": 0,
+        "DEV03": 0,
+        "DEV04": 0,
+        "DEV05": 0,
+        "DEV06": 0,
+        "DEV07": 0,
+        "DEV08": 0,
+        "DEV09": 0,
+        "DEV10": 0,
+        "DEV11": 0,
+        "DEV12": 0
+      }
+    },
+    "M20": {
+      "name": "资料缺口说明可执行率",
+      "numerator": 0,
+      "denominator": 3,
+      "value": 0.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV03": false,
+        "DEV05": false,
+        "DEV06": false
+      }
+    }
+  },
+  "per_group": {
+    "DEV01": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.5552,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV02": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.4887,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV03": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.5374,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV04": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.4648,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV05": {
+      "pass": false,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.4113,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV06": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.4464,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV07": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.8694,
+      "model_calls": 2,
+      "tool_calls": 0
+    },
+    "DEV08": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.9238,
+      "model_calls": 2,
+      "tool_calls": 0
+    },
+    "DEV09": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.9877,
+      "model_calls": 2,
+      "tool_calls": 0
+    },
+    "DEV10": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.8256,
+      "model_calls": 2,
+      "tool_calls": 0
+    },
+    "DEV11": {
+      "pass": false,
+      "first_recall": 0.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 0.3987,
+      "model_calls": 1,
+      "tool_calls": 0
+    },
+    "DEV12": {
+      "pass": false,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.442,
+      "model_calls": 1,
+      "tool_calls": 0
+    }
+  },
+  "atomic_facts": [],
+  "unresolved": [
+    "DEV01:0",
+    "DEV02:0",
+    "DEV03:0",
+    "DEV04:0",
+    "DEV05:0",
+    "DEV06:0",
+    "DEV07:0",
+    "DEV07:1",
+    "DEV08:0",
+    "DEV08:1",
+    "DEV09:0",
+    "DEV09:1",
+    "DEV10:0",
+    "DEV10:1",
+    "DEV11:0",
+    "DEV12:0"
+  ],
+  "critical": [],
+  "category_summary": {
+    "normal": {
+      "passed": 0,
+      "total": 2
+    },
+    "conflict": {
+      "passed": 0,
+      "total": 2
+    },
+    "insufficient": {
+      "passed": 0,
+      "total": 2
+    },
+    "paraphrase": {
+      "passed": 0,
+      "total": 2
+    },
+    "context": {
+      "passed": 0,
+      "total": 2
+    },
+    "tool_failure": {
+      "passed": 0,
+      "total": 2
+    }
+  },
+  "failure_breakdown": {
+    "recovery": {
+      "passed": 0,
+      "total": 1
+    },
+    "safe_stop": {
+      "passed": 0,
+      "total": 1
+    }
+  },
+  "all_applicable_numeric_targets_passed": false,
+  "formal_numeric_targets_passed": false,
+  "human_review_complete": false,
+  "note": "数值通过不等于阶段完成；人工校准、复核与冻结要求单独检查。N/A不代表通过。"
+}

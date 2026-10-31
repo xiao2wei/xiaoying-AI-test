@@ -1,0 +1,89 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": "",
+        "reason": "要求确认本科及研究生兼职辅导员均适用；实际回答明确称“仅覆盖本科兼职辅导员，不覆盖研究生”，与要求语义相反，未表达覆盖研究生兼职辅导员。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "细则仅覆盖本科兼职辅导员",
+        "answer_span": "仅覆盖本科兼职辅导员",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "所引D08-C003第二条原文为“本细则适用于学校本科以及研究生兼职辅导员”，不能支持“仅覆盖本科兼职辅导员”；已读原文亦包含研究生。"
+      },
+      {
+        "text": "细则不覆盖研究生",
+        "answer_span": "不覆盖研究生",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "所引D08-C003第二条原文明确适用于研究生兼职辅导员，不支持“不覆盖研究生”；已读原文相反。"
+      }
+    ],
+    "serious_errors": [
+      "实际回答错误地称细则仅覆盖本科兼职辅导员且不覆盖研究生，与所引用并已读的D08-C003第二条原文相反，构成无依据的制度事实和不支持的引用。"
+    ],
+    "reason": "答案状态为已答复，且读取了正确条款，但最终结论与原文相反，未满足“本科及研究生兼职辅导员均适用”这一必需要点，因此答案不正确。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "实际回答错误地称细则仅覆盖本科兼职辅导员且不覆盖研究生，与所引用并已读的D08-C003第二条原文相反，构成无依据的制度事实和不支持的引用。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:27:08.087004+00:00",
+      "attempt": 1,
+      "prompt_sha256": "5f64260c1fc863953d91dc0e9a1156fc62959352cd34a868b8c5850ddd0df444",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "afca459a-17b3-402c-a69c-8bc35d44203d",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1575,
+        "completion_tokens": 2725,
+        "total_tokens": 4300,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2422
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 551
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":false,\"answer_span\":\"\",\"reason\":\"要求确认本科及研究生兼职辅导员均适用；实际回答明确称“仅覆盖本科兼职辅导员，不覆盖研究生”，与要求语义相反，未表达覆盖研究生兼职辅导员。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":false,\"facts\":[{\"text\":\"细则仅覆盖本科兼职辅导员\",\"answer_span\":\"仅覆盖本科兼职辅导员\",\"cited\":true,\"citation_supported\":false,\"supported_by_read\":false,\"reason\":\"所引D08-C003第二条原文为“本细则适用于学校本科以及研究生兼职辅导员”，不能支持“仅覆盖本科兼职辅导员”；已读原文亦包含研究生。\"},{\"text\":\"细则不覆盖研究生\",\"answer_span\":\"不覆盖研究生\",\"cited\":true,\"citation_supported\":false,\"supported_by_read\":false,\"reason\":\"所引D08-C003第二条原文明确适用于研究生兼职辅导员，不支持“不覆盖研究生”；已读原文相反。\"}],\"serious_errors\":[\"实际回答错误地称细则仅覆盖本科兼职辅导员且不覆盖研究生，与所引用并已读的D08-C003第二条原文相反，构成无依据的制度事实和不支持的引用。\"],\"reason\":\"答案状态为已答复，且读取了正确条款，但最终结论与原文相反，未满足“本科及研究生兼职辅导员均适用”这一必需要点，因此答案不正确。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01287,
+      "seconds": 28.764
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL12",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

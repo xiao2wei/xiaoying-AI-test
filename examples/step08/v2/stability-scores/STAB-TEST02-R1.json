@@ -1,0 +1,109 @@
+{
+  "id": "STAB-TEST02-R1",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发",
+            "reason": "明确表达了满10年按80%的比例，且限于岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发",
+            "reason": "明确表达了不满10年按70%的比例，且限于岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效按80%计发",
+            "reason": "答案明确指出比例只针对这三种工资项目，没有泛化到所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，以“全年累计请假时间＞6个月”为档：工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发。",
+            "answer_span": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，以“全年累计请假时间＞6个月”为档：工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有引用，引用内容包含对应表格数据，且实际读取记录支持。"
+          },
+          {
+            "text": "同一档“全年累计请假时间＞6个月”下，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发。",
+            "answer_span": "同一档“全年累计请假时间＞6个月”下，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有引用，引用内容包含对应表格数据，且实际读取记录支持。"
+          },
+          {
+            "text": "该表另注明：被认定为工伤、接受工伤医疗期间不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。",
+            "answer_span": "该表另注明：被认定为工伤、接受工伤医疗期间不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有引用，引用内容为该条原文，且实际读取记录支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确回答了病假累计超过6个月时两种工作年限下的比例，并正确限定范围，所有事实均有可靠引用支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:25:37.121326+00:00",
+          "attempt": 1,
+          "prompt_sha256": "297b593053c86b58a95f072a711e07032a35dc458322d080f2bade7e23ab557b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "09af15dd-61f9-4d3e-9410-9390aa2e3ca4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2855,
+            "completion_tokens": 4927,
+            "total_tokens": 7782,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4194
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1319
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发\",\n      \"reason\": \"明确表达了满10年按80%的比例，且限于岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发\",\n      \"reason\": \"明确表达了不满10年按70%的比例，且限于岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"岗位工资、薪级工资和基础绩效按80%计发\",\n      \"reason\": \"答案明确指出比例只针对这三种工资项目，没有泛化到所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，以“全年累计请假时间＞6个月”为档：工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发。\",\n      \"answer_span\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条病假待遇表，以“全年累计请假时间＞6个月”为档：工作年限满10年的，岗位工资、薪级工资和基础绩效按80%计发。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用内容包含对应表格数据，且实际读取记录支持。\"\n    },\n    {\n      \"text\": \"同一档“全年累计请假时间＞6个月”下，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发。\",\n      \"answer_span\": \"同一档“全年累计请假时间＞6个月”下，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%计发。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用内容包含对应表格数据，且实际读取记录支持。\"\n    },\n    {\n      \"text\": \"该表另注明：被认定为工伤、接受工伤医疗期间不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。\",\n      \"answer_span\": \"该表另注明：被认定为工伤、接受工伤医疗期间不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用内容为该条原文，且实际读取记录支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了病假累计超过6个月时两种工作年限下的比例，并正确限定范围，所有事实均有可靠引用支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.023279519999999998,
+          "seconds": 44.02
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e9eba5dbdccf857ba499dc3ff0ab8ea75d06cc274e5e76cb16a9f0f0d978243c"
+}

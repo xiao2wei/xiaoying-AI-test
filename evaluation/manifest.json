@@ -1,0 +1,60 @@
+{
+  "version": "dataset-v1.1",
+  "source_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+  "files": {
+    "dev": "f29f8e5682f12928d3c7d0263f35c7fd56c5f3cb16855d28236ddf1c53e55af1",
+    "formal": "8597df42ea5503dca36b81285d0b9c9feb190aa1a9ab74ca71a58dd485e292e4"
+  },
+  "counts": {
+    "dev": 12,
+    "formal": 40
+  },
+  "formal_execution_started": false,
+  "stability_ids": [
+    "TEST01",
+    "TEST02",
+    "TEST13",
+    "TEST16",
+    "TEST17",
+    "TEST19",
+    "TEST25",
+    "TEST31",
+    "TEST36",
+    "TEST38"
+  ],
+  "split_rule": "同一事实或近似改写不跨开发/正式集合；同一制度的独立条款允许共享，不能声称跨制度泛化",
+  "metrics_rule": "证据单元内多个ID是等价备选；单元之间均需覆盖。持续故障无法读取的题不计M02；无证据题不计M01/M02。名单运行前冻结。",
+  "label_revision": {
+    "id": "EVAL-001",
+    "scope": "DEV06必需要点由复合句拆为5个原子条件，含义不变；正式集不变",
+    "previous": "evaluation/archive/dataset-v1"
+  },
+  "extra_metrics": {
+    "M20": {
+      "target": 1,
+      "rule": "缺口明确可执行",
+      "applicable": {
+        "dev": [
+          "DEV03",
+          "DEV05",
+          "DEV06"
+        ],
+        "formal": [
+          "TEST13",
+          "TEST14",
+          "TEST15",
+          "TEST17",
+          "TEST18",
+          "TEST19",
+          "TEST20",
+          "TEST21",
+          "TEST22",
+          "TEST23",
+          "TEST24"
+        ]
+      },
+      "added_before_formal_run": true,
+      "user_instruction_date": "2026-10-31"
+    }
+  }
+}

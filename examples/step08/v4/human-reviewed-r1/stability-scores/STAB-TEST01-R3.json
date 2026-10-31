@@ -1,0 +1,153 @@
+{
+  "id": "STAB-TEST01-R3",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "补贴10万元，科研建设经费工科5万元",
+            "reason": "实际回答明确列出取得学历学位时间不超过4年的补贴10万元、科研建设经费工科5万元，恰好4年属于该范围。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "reason": "实际回答明确列出取得学历学位时间超过4年且不超过5年的补贴9万元、科研建设经费其他学科2.7万元，恰好5年属于该范围。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间不超过4年的补贴为10万元",
+            "answer_span": "取得学历学位时间不超过4年的：补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“1 | ≤4 | 10 | 工科5，其他学科3”，明确支持补贴10万元，且实际已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间不超过4年的科研建设经费工科为5万元",
+            "answer_span": "科研建设经费工科5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“工科5”，明确支持工科5万元，且实际已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间不超过4年的科研建设经费其他学科为3万元",
+            "answer_span": "其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“其他学科3”，明确支持其他学科3万元，且实际已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间超过4年且不超过5年的补贴为9万元",
+            "answer_span": "取得学历学位时间超过4年且不超过5年的：补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“2 | ＞4，≤5 | 9”，明确支持补贴9万元，且实际已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间超过4年且不超过5年的科研建设经费工科为4.5万元",
+            "answer_span": "科研建设经费工科4.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“工科4.5”，明确支持工科4.5万元，且实际已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间超过4年且不超过5年的科研建设经费其他学科为2.7万元",
+            "answer_span": "其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“其他学科2.7”，明确支持其他学科2.7万元，且实际已读原文一致。"
+          },
+          {
+            "text": "上述待遇根据教师在职读博取得学历学位的时间情况兑现",
+            "answer_span": "上述待遇根据教师在职读博取得学历学位的时间情况兑现",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”，语义一致支持，且实际已读原文一致。"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“由于个人原因造成中途退学或终止学习任务的不享受任何待遇”，语义一致支持，且实际已读原文一致。"
+          },
+          {
+            "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含“脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效”，语义一致支持，且实际已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了问题所要求的两个要点，所有事实均有正确引用支持，未发现无依据或错误内容，整体合格。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:07:10.150561+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1f49b1affe8b0955f04adcd38054d97a53f55b02092a7564328eb84525f50fe6",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "367fe4b1-88b5-4652-9975-6206e6b4adad",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2930,
+            "completion_tokens": 5315,
+            "total_tokens": 8245,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4151
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1394
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"补贴10万元，科研建设经费工科5万元\",\n      \"reason\": \"实际回答明确列出取得学历学位时间不超过4年的补贴10万元、科研建设经费工科5万元，恰好4年属于该范围。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"reason\": \"实际回答明确列出取得学历学位时间超过4年且不超过5年的补贴9万元、科研建设经费其他学科2.7万元，恰好5年属于该范围。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间不超过4年的补贴为10万元\",\n      \"answer_span\": \"取得学历学位时间不超过4年的：补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“1 | ≤4 | 10 | 工科5，其他学科3”，明确支持补贴10万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间不超过4年的科研建设经费工科为5万元\",\n      \"answer_span\": \"科研建设经费工科5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“工科5”，明确支持工科5万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间不超过4年的科研建设经费其他学科为3万元\",\n      \"answer_span\": \"其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“其他学科3”，明确支持其他学科3万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间超过4年且不超过5年的补贴为9万元\",\n      \"answer_span\": \"取得学历学位时间超过4年且不超过5年的：补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“2 | ＞4，≤5 | 9”，明确支持补贴9万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间超过4年且不超过5年的科研建设经费工科为4.5万元\",\n      \"answer_span\": \"科研建设经费工科4.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“工科4.5”，明确支持工科4.5万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间超过4年且不超过5年的科研建设经费其他学科为2.7万元\",\n      \"answer_span\": \"其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“其他学科2.7”，明确支持其他学科2.7万元，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"上述待遇根据教师在职读博取得学历学位的时间情况兑现\",\n      \"answer_span\": \"上述待遇根据教师在职读博取得学历学位的时间情况兑现\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”，语义一致支持，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“由于个人原因造成中途退学或终止学习任务的不享受任何待遇”，语义一致支持，且实际已读原文一致。\"\n    },\n    {\n      \"text\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含“脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效”，语义一致支持，且实际已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题所要求的两个要点，所有事实均有正确引用支持，未发现无依据或错误内容，整体合格。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011477532,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 43.5545
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "8a28a400b1b89ec81d9e0a7e7b280e01f285db9d21bbe1ebc6caa7113e3e7282"
+}

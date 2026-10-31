@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "reason": "实际回答未展示25日和26日差异，仅声称当前只能25日报送，未提及26日规定。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "reason": "实际回答直接断言旧规则自动作废，未说明不能仅凭日期选取，反而仅凭日期选取了25日。"
+      },
+      {
+        "index": 2,
+        "met": false,
+        "reason": "实际回答未请求确认，而是直接给出结论。"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "D19规定每月26日报送考勤表。",
+        "cited": false,
+        "citation_supported": false,
+        "supported_by_read": true,
+        "reason": "实际读取了D19-C015，其中明确每月26日报送，但回答未引用该事实。"
+      },
+      {
+        "text": "D20规定每月25日报送考勤表。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "回答引用了D20-C006，引用内容明确每月25日报送，且实际读取了该片段。"
+      },
+      {
+        "text": "D20因文件更新自动废止D19。",
+        "cited": false,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "回答声称旧规则自动作废，但未引用任何废止条款，实际读取的D19和D20均无废止表述，该事实无依据。"
+      }
+    ],
+    "serious_errors": [
+      "无依据事实：声称旧规则自动作废，但未提供废止条款，且实际读取的文档中无废止依据。"
+    ],
+    "reason": "回答未展示两份规定的日期差异，未说明不能仅凭日期选取，也未请求确认，而是直接断言新规则自动废止旧规则，缺乏依据，不符合预期状态。"
+  },
+  "critical_errors": [
+    "无依据事实：声称旧规则自动作废，但未提供废止条款，且实际读取的文档中无废止依据。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:49:57.634603+00:00",
+      "attempt": 1,
+      "prompt_sha256": "32ea202fb5ed26ca281b0a0084c499f5583d64c3d19fef6e3dadc0971d0171ee",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "a9b675c1-77d8-41d5-9fb2-98a127059bdd",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1622,
+        "completion_tokens": 478,
+        "total_tokens": 2100,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 1110
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答未展示25日和26日差异，仅声称当前只能25日报送，未提及26日规定。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"reason\": \"实际回答直接断言旧规则自动作废，未说明不能仅凭日期选取，反而仅凭日期选取了25日。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未请求确认，而是直接给出结论。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"D19规定每月26日报送考勤表。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"实际读取了D19-C015，其中明确每月26日报送，但回答未引用该事实。\"\n    },\n    {\n      \"text\": \"D20规定每月25日报送考勤表。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用了D20-C006，引用内容明确每月25日报送，且实际读取了该片段。\"\n    },\n    {\n      \"text\": \"D20因文件更新自动废止D19。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"回答声称旧规则自动作废，但未引用任何废止条款，实际读取的D19和D20均无废止表述，该事实无依据。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"无依据事实：声称旧规则自动作废，但未提供废止条款，且实际读取的文档中无废止依据。\"\n  ],\n  \"reason\": \"回答未展示两份规定的日期差异，未说明不能仅凭日期选取，也未请求确认，而是直接断言新规则自动废止旧规则，缺乏依据，不符合预期状态。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00403392,
+      "seconds": 6.5438
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL09",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

@@ -1,0 +1,200 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "提前一个月向所在学院提出书面申请",
+            "reason": "实际答案明确表述了提前一个月向所在学院提出书面申请，与要点语义一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "实际答案明确表述了做好学生档案资料及相关工作的交接，与要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "answer_span": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用的第十五条原文包含该制度事实，且实际已读原文也支持该事实。"
+          },
+          {
+            "text": "应做好学生档案资料及相关工作的交接",
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用的第十五条原文包含该制度事实，且实际已读原文也支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了提前一个月向所在学院书面申请，并说明了做好学生档案资料及相关工作交接的要求，与制度原文一致；检索并读取了正确条款，行为合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:22:32.073657+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d92f5ac4b50135ab73ac525f33d423278f731f14a398770d9521d36113fe414d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e9443886-5f6c-40d0-8d12-7828410a7957",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1528,
+            "completion_tokens": 3344,
+            "total_tokens": 4872,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2957
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 632
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"提前一个月向所在学院提出书面申请\",\n      \"reason\": \"实际答案明确表述了提前一个月向所在学院提出书面申请，与要点语义一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"实际答案明确表述了做好学生档案资料及相关工作的交接，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"answer_span\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用的第十五条原文包含该制度事实，且实际已读原文也支持该事实。\"\n    },\n    {\n      \"text\": \"应做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用的第十五条原文包含该制度事实，且实际已读原文也支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了提前一个月向所在学院书面申请，并说明了做好学生档案资料及相关工作交接的要求，与制度原文一致；检索并读取了正确条款，行为合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0152592,
+          "seconds": 32.0299
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月向所在学院提出书面申请",
+            "reason": "实际答案明确表述了提前一个月、向所在学院、书面申请三个要件，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "实际答案明确表述了做好学生档案资料及相关工作的交接，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "提前期限为一个月",
+            "answer_span": "提前期限为一个月",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确要求提前一个月，且已读取原文一致。"
+          },
+          {
+            "text": "告知对象为所在学院",
+            "answer_span": "告知对象为所在学院",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确要求向所在学院提出申请，且已读取原文一致。"
+          },
+          {
+            "text": "须提交书面申请",
+            "answer_span": "提交书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确要求书面申请，且已读取原文一致。"
+          },
+          {
+            "text": "做好学生档案资料及相关工作的交接",
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文明确要求做好学生档案资料及相关工作的交接，且已读取原文一致。"
+          },
+          {
+            "text": "仅口头告知不够",
+            "answer_span": "仅口头告知不够",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引条文要求书面申请，可推出仅口头告知不够，且已读取原文支持该推理。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用制度第十五条，完整覆盖提前一个月、书面申请、所在学院以及工作交接要求，并明确口头告知不够。检索并读取了正确文档，依据充分，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:23:04.119705+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8574cc57317c7d8494125e37bdbfd14a464c3b834b3a962c0c7fe7b8bb94013c",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ecf87936-59b0-4ac2-985c-2e43f302a56c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1587,
+            "completion_tokens": 4246,
+            "total_tokens": 5833,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3671
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 691
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月向所在学院提出书面申请\",\n      \"reason\": \"实际答案明确表述了提前一个月、向所在学院、书面申请三个要件，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"实际答案明确表述了做好学生档案资料及相关工作的交接，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"提前期限为一个月\",\n      \"answer_span\": \"提前期限为一个月\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确要求提前一个月，且已读取原文一致。\"\n    },\n    {\n      \"text\": \"告知对象为所在学院\",\n      \"answer_span\": \"告知对象为所在学院\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确要求向所在学院提出申请，且已读取原文一致。\"\n    },\n    {\n      \"text\": \"须提交书面申请\",\n      \"answer_span\": \"提交书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确要求书面申请，且已读取原文一致。\"\n    },\n    {\n      \"text\": \"做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文明确要求做好学生档案资料及相关工作的交接，且已读取原文一致。\"\n    },\n    {\n      \"text\": \"仅口头告知不够\",\n      \"answer_span\": \"仅口头告知不够\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引条文要求书面申请，可推出仅口头告知不够，且已读取原文支持该推理。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用制度第十五条，完整覆盖提前一个月、书面申请、所在学院以及工作交接要求，并明确口头告知不够。检索并读取了正确文档，依据充分，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.018909,
+          "seconds": 42.146
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "dfdeb8ce51a57f7b2278780975a455175217d8ee3d77f7351275e957c2f6a416"
+}

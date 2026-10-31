@@ -1,0 +1,185 @@
+{
+  "id": "TEST23",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "请提供您取得学历学位所需时间（或预计从开始在职读博到取得学历学位的年数），以便对应第十条确定补贴和科研建设经费档次。请确认您的学科属于“工科”还是“其他学科”，因为科研建设经费标准按此区分。",
+            "reason": "实际回答的gaps中明确指出了缺失取得学历学位年限和学科两个适用条件，并请求用户补充。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元；＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元；＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元；＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元；＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元；＞8年的，补贴0元、科研建设经费0元。",
+            "reason": "实际回答展示了根据年限和学科划分的全部分档金额，并未给出唯一金额，符合行为要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供您取得学历学位所需时间（或预计从开始在职读博到取得学历学位的年数），以便对应第十条确定补贴和科研建设经费档次。请确认您的学科属于“工科”还是“其他学科”，因为科研建设经费标准按此区分。请确认您是否属于该办法适用的“教师”在职读博人员；如为其他身份，请提供适用的制度文件。",
+            "reason": "实际回答通过gaps明确请求补充年限、学科和适用身份等关键信息，完成了追问要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "上述待遇以“教师在职读博”为适用对象",
+            "answer_span": "上述待遇以“教师在职读博”为适用对象",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote包含表头“教师在职攻读博士毕业相关待遇”及条款开头“学校根据教师在职读博...”，足以支持适用对象为教师。"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中明确包含该句，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中明确包含该句，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+            "answer_span": "取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第1行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "answer_span": "＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第2行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元",
+            "answer_span": "＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第3行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元",
+            "answer_span": "＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第4行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元",
+            "answer_span": "＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第5行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "＞8年的，补贴0元、科研建设经费0元",
+            "answer_span": "＞8年的，补贴0元、科研建设经费0元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中表格第6行明确包含该数据，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "若在职读博期间取得的成果达到学校引进人才七层次及以上标准，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "answer_span": "若在职读博期间取得的成果达到学校引进人才七层次及以上标准，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C011 quote中第7条完整包含该内容，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "教师在职读博期间发生的费用由本人自行承担",
+            "answer_span": "教师在职读博期间发生的费用由本人自行承担",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C017 quote中第十六条明确包含该句，且actually_read中已读该chunk。"
+          },
+          {
+            "text": "学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分，属于学校为促进个人可持续发展提供的进修培训资助费用",
+            "answer_span": "学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分，属于学校为促进个人可持续发展提供的进修培训资助费用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用C017 quote中第十六条明确包含该句，且actually_read中已读该chunk。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确识别适用条件缺失，展示分档标准而非唯一金额，并明确请求补充所需信息，所有陈述均有引用支持且无误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "取得学历学位所需时间（或预计年数）",
+            "学科类别（工科或其他学科）",
+            "适用的制度文件（如非教师身份）"
+          ],
+          "reason": "答案明确说明缺少取得学历学位年限、学科类别和适用身份等信息，并要求用户提供这些具体内容，符合要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:30:29.571058+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e70008e4b79d5220b8ad60fff13c21056eca67c4f24f1a79faa6f4b1e5281c44",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "dac75096-8bed-41cd-8b00-0a902255b5fe",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4542,
+            "completion_tokens": 7432,
+            "total_tokens": 11974,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5286
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 3518
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"请提供您取得学历学位所需时间（或预计从开始在职读博到取得学历学位的年数），以便对应第十条确定补贴和科研建设经费档次。请确认您的学科属于“工科”还是“其他学科”，因为科研建设经费标准按此区分。\",\n      \"reason\": \"实际回答的gaps中明确指出了缺失取得学历学位年限和学科两个适用条件，并请求用户补充。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元；＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元；＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元；＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元；＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元；＞8年的，补贴0元、科研建设经费0元。\",\n      \"reason\": \"实际回答展示了根据年限和学科划分的全部分档金额，并未给出唯一金额，符合行为要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供您取得学历学位所需时间（或预计从开始在职读博到取得学历学位的年数），以便对应第十条确定补贴和科研建设经费档次。请确认您的学科属于“工科”还是“其他学科”，因为科研建设经费标准按此区分。请确认您是否属于该办法适用的“教师”在职读博人员；如为其他身份，请提供适用的制度文件。\",\n      \"reason\": \"实际回答通过gaps明确请求补充年限、学科和适用身份等关键信息，完成了追问要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"上述待遇以“教师在职读博”为适用对象\",\n      \"answer_span\": \"上述待遇以“教师在职读博”为适用对象\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote包含表头“教师在职攻读博士毕业相关待遇”及条款开头“学校根据教师在职读博...”，足以支持适用对象为教师。\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中明确包含该句，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中明确包含该句，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元\",\n      \"answer_span\": \"取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第1行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"answer_span\": \"＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第2行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元\",\n      \"answer_span\": \"＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第3行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元\",\n      \"answer_span\": \"＞6年且≤7年的，补贴5万元，科研建设经费工科2.5万元、其他学科1.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第4行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元\",\n      \"answer_span\": \"＞7年且≤8年的，补贴3万元，科研建设经费工科1.5万元、其他学科0.9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第5行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"＞8年的，补贴0元、科研建设经费0元\",\n      \"answer_span\": \"＞8年的，补贴0元、科研建设经费0元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中表格第6行明确包含该数据，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"若在职读博期间取得的成果达到学校引进人才七层次及以上标准，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"answer_span\": \"若在职读博期间取得的成果达到学校引进人才七层次及以上标准，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C011 quote中第7条完整包含该内容，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"教师在职读博期间发生的费用由本人自行承担\",\n      \"answer_span\": \"教师在职读博期间发生的费用由本人自行承担\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C017 quote中第十六条明确包含该句，且actually_read中已读该chunk。\"\n    },\n    {\n      \"text\": \"学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分，属于学校为促进个人可持续发展提供的进修培训资助费用\",\n      \"answer_span\": \"学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分，属于学校为促进个人可持续发展提供的进修培训资助费用\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用C017 quote中第十六条明确包含该句，且actually_read中已读该chunk。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别适用条件缺失，展示分档标准而非唯一金额，并明确请求补充所需信息，所有陈述均有引用支持且无误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"取得学历学位所需时间（或预计年数）\",\n      \"学科类别（工科或其他学科）\",\n      \"适用的制度文件（如非教师身份）\"\n    ],\n    \"reason\": \"答案明确说明缺少取得学历学位年限、学科类别和适用身份等信息，并要求用户提供这些具体内容，符合要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.035426160000000005,
+          "seconds": 61.9078
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5913fb34f6ac315ea8a1d56d24b908f5b65f1ad11daa3545e0b76c28344481b0"
+}

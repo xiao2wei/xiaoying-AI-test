@@ -1,0 +1,70 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认人才专项经费项目年度考核进展报告的填报时间",
+            "reason": "明确说明了工具失败（持续返回PERSISTENT_UNAVAILABLE）和未完成（未能读取、无法确认）。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法确认人才专项经费项目年度考核进展报告的填报时间",
+            "reason": "未给出任何制度结论，未猜测原文结论，仅声明无法确认。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际回答在两次检索均遭遇不可重试故障后明确报告未完成及工具失败，未猜测原文结论，符合tool_error预期；未产生制度事实或引用，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:50.617209+00:00",
+          "attempt": 1,
+          "prompt_sha256": "22968491c2b06f0e40bc05132322db933b8dc1788bf5e5cb7bdceedf611d28c6",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c0d26858-dcbe-4136-8528-37c954a00c2a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1285,
+            "completion_tokens": 2002,
+            "total_tokens": 3287,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1757
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 517
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认人才专项经费项目年度考核进展报告的填报时间\",\n      \"reason\": \"明确说明了工具失败（持续返回PERSISTENT_UNAVAILABLE）和未完成（未能读取、无法确认）。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法确认人才专项经费项目年度考核进展报告的填报时间\",\n      \"reason\": \"未给出任何制度结论，未猜测原文结论，仅声明无法确认。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答在两次检索均遭遇不可重试故障后明确报告未完成及工具失败，未猜测原文结论，符合tool_error预期；未产生制度事实或引用，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009624120000000002,
+          "seconds": 21.0395
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a4d64f47568c4757f53bafa69ecd6243b60610872ae2d3968aba6973333c6ad5"
+}

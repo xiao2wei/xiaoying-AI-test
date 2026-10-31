@@ -1,0 +1,146 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "回答在gaps中明确说明无法直接给出唯一金额，需补充职称、学位、年龄、近三年学术成果及学校认定层次等信息，符合缺少人才层次和已签协议等条件的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "回答没有给出唯一金额，而是列出了各层次安家费范围，并说明第四层次为区间，具体数额需学校认定，符合不能给唯一金额的要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "回答在gaps中明确请求补充层次及协议信息，如'需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息'，符合请求补充层次及协议的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "第一层次安家费100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费100万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第二层次安家费80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费80万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第三层次安家费60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费60万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第四层次安家费20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费20万—30万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第五层次安家费20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费20万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第六层次安家费10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费10万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第七层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费5万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "第八层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'提供安家费5万元'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C022，quote包含'安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "上述金额单位均为人民币",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C018，quote包含'以上涉及金额单位均为人民币'，且actually_read中已读取该chunk，内容一致。"
+          },
+          {
+            "text": "不含辽宁省、鞍山市配套待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D02-C007，quote包含'第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）'，且actually_read中已读取该chunk，内容一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确识别了用户问题缺少人才层次和协议信息，未给出唯一金额，而是列出各层次安家费并请求补充信息，符合预期。所有事实均有引用且与实际读取内容一致，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:54:22.166548+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ba537c6578d361ec0c9a4a1901f8652254822a5f3366a09f31cf995426f6820f",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "58207ce2-1066-4c0b-80fd-28fe019d962b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5591,
+            "completion_tokens": 1181,
+            "total_tokens": 6772,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 5079
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"回答在gaps中明确说明无法直接给出唯一金额，需补充职称、学位、年龄、近三年学术成果及学校认定层次等信息，符合缺少人才层次和已签协议等条件的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"回答没有给出唯一金额，而是列出了各层次安家费范围，并说明第四层次为区间，具体数额需学校认定，符合不能给唯一金额的要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"回答在gaps中明确请求补充层次及协议信息，如'需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息'，符合请求补充层次及协议的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"第一层次安家费100万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费100万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第二层次安家费80万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费80万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第三层次安家费60万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费60万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第四层次安家费20万—30万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费20万—30万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第五层次安家费20万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费20万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第六层次安家费10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费10万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第七层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费5万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"第八层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'提供安家费5万元'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C022，quote包含'安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"上述金额单位均为人民币\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C018，quote包含'以上涉及金额单位均为人民币'，且actually_read中已读取该chunk，内容一致。\"\n    },\n    {\n      \"text\": \"不含辽宁省、鞍山市配套待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D02-C007，quote包含'第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）'，且actually_read中已读取该chunk，内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别了用户问题缺少人才层次和协议信息，未给出唯一金额，而是列出各层次安家费并请求补充信息，符合预期。所有事实均有引用且与实际读取内容一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01205688,
+          "seconds": 9.3371
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "402bc466e4729a4abb83998a2ceefd1efb76e064f95f7b0294f15f3bec71348f"
+}

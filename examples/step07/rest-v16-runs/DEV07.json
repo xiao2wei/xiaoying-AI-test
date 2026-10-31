@@ -1,0 +1,764 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "兼职辅导员不想继续担任，应提前多久向谁提出申请？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。",
+            "citations": [
+              {
+                "chunk_id": "D08-C016",
+                "quote": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。",
+            "citations": [
+              {
+                "chunk_id": "D08-C016",
+                "quote": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:39.221863+00:00",
+          "attempt": 1,
+          "prompt_sha256": "24a38e2aedd60f2d7acad8c50764fa1c5f54fd29c7a641237e2d396fd9aeee12",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "26d45bb9-fcd1-481a-864a-fa4ba4b5c566",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2091,
+            "completion_tokens": 42,
+            "total_tokens": 2133,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 299
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"兼职辅导员 不再担任 提前 申请 解聘 辞去\"},\"reason\":\"检索兼职辅导员退出或解聘的申请时限与受理对象\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.5426e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.9391
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "兼职辅导员 不再担任 提前 申请 解聘 辞去"
+          },
+          "reason": "检索兼职辅导员退出或解聘的申请时限与受理对象"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "兼职辅导员 不再担任 提前 申请 解聘 辞去"
+          },
+          "result": {
+            "ok": true,
+            "query": "兼职辅导员 不再担任 提前 申请 解聘 辞去",
+            "hits": [
+              {
+                "chunk_id": "D08-C016",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.752003,
+                "lexical_score": 45.2034,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十五条 第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D10-C004",
+                "doc_id": "D10",
+                "title": "辽宁科技大学辅导员考核办法",
+                "article": "第三条",
+                "version_date": "2022-05-24",
+                "pdf_pages": [
+                  39
+                ],
+                "printed_pages": [
+                  34
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.632651,
+                "lexical_score": 25.6803,
+                "excerpt": "辽宁科技大学辅导员考核办法 第三条 第三条 本考核办法适用于全校专兼职辅导员。兼职辅导员不进行聘期考核和\n中期考核，年度考核比照专职辅导员，为合格考核。思政课教师担任辅导员的，按照\n《辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法（试行）》\n（委发〔2019〕32号）相关规定进行考核。\n第二章 组织实施",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C012",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  30
+                ],
+                "printed_pages": [
+                  25
+                ],
+                "score": 0.077381,
+                "semantic_score": 0.625689,
+                "lexical_score": 19.7451,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十一条 第十一条 辅导员的选聘工作在领导小组领导下进行。\n专职辅导员选聘：学院提出申请，由党委学生工作部或党委研究生工作部会同人\n事处核定岗位后，按学校有关规定进行公开招聘。校内其他岗位人员转聘专职辅导\n员的，应符合辅导员选聘基本条件，突出政治标准和工作能力，年龄不超过40周岁，采\n用笔试或面试等方式进行选聘。\n兼职辅导员选聘：学院根据缺编情况和辅导员选聘基本条件制定本学院兼职辅导\n员选聘办法，报党委学生工作部或党委研究生工作部、人事处审核通过后，采用笔试或\n面试等方式进行选聘。选聘结果报党委学生工作部或党委研究生工作部、人事处备案。\n思想政治理论课教师担任辅导员的，按照《辽宁科技大学思想政治理论课教师和辅导员\n队伍联动融合发展实施办法（试行）》执行。兼职辅导",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C010",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第九条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34
+                ],
+                "printed_pages": [
+                  29
+                ],
+                "score": 0.076923,
+                "semantic_score": 0.628049,
+                "lexical_score": 19.0686,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第九条 第九条 兼职辅导员的选聘工作在学校党委统一领导下进行。学院根据缺编情\n况和辅导员选聘基本条件制定本学院兼职辅导员选聘办法，报党委学生工作部或党\n委研究生工作部、人事处审核通过后，采用笔试或面试等方式进行选聘。选聘结果报\n党委学生工作部或党委研究生工作部、人事处备案。思想政治理论课教师担任辅导\n员的，按照《辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法\n（试行）》执行。兼职辅导员的工作年限至少为1年。\n第四章 发展与培养",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C023",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第二十二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  31,
+                  32
+                ],
+                "printed_pages": [
+                  26,
+                  27
+                ],
+                "score": 0.068182,
+                "semantic_score": 0.679204,
+                "lexical_score": 14.0266,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第二十二条 第二十二条 辅导员有下列情形之一，不得继续从事辅导员工作，须调离辅导员\n队伍：\n（一）在事关政治原则、政治立场和政治方向问题上不能与党中央保持一致。\n（二）因个人工作失职而直接造成重大事故，产生严重不良后果。\n（三）不能履行辅导员工作职责，专职辅导员连续两年年度考核不合格或聘期考\n核不合格，兼职辅导员年度考核不合格。\n（四）其他不宜从事辅导员工作的情形。\n第六章 附 则",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0081,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:40.208994+00:00",
+          "attempt": 1,
+          "prompt_sha256": "273008f7a8effc56d47b00634f7409eba75b4beab911868cbec62be81d197dac",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b96131d6-b26e-417b-afcc-2d022f0e7501",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3424,
+            "completion_tokens": 34,
+            "total_tokens": 3458,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 1376
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D08-C016\"]}, \"reason\": \"读取兼职辅导员退出申请的直接条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000232944,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.7977
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D08-C016"
+            ]
+          },
+          "reason": "读取兼职辅导员退出申请的直接条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第十五条",
+              "text": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则",
+              "pdf_pages": [
+                35
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C016",
+              "printed_pages": [
+                30
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C015",
+              "next_chunk_id": "D08-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:41.044183+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3bc95757acf60946e626fd7de94c0aaa70c01006cbeba8a5961cdf115aa455ee",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "80f3003f-2c3c-4997-8a99-11d191340c16",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3675,
+            "completion_tokens": 144,
+            "total_tokens": 3819,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "prompt_cache_hit_tokens": 3456,
+            "prompt_cache_miss_tokens": 219
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。\", \"citations\": [{\"chunk_id\": \"D08-C016\", \"quote\": \"第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\\n请，并做好学生档案资料及相关工作的交接。\"}]}], \"gaps\": []}, \"reason\": \"已读取直接条款，明确提前一个月向所在学院书面申请并交接\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000129618,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.0153
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取直接条款，明确提前一个月向所在学院书面申请并交接"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:42.097829+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7c6a36adcec772ab4527f8fc0145bcde4ae28439cd5634ffc9898aa92dc8a5da",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "df17674d-0277-4087-a935-7b00566b162e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4054,
+            "completion_tokens": 257,
+            "total_tokens": 4311,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 112
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2134
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。\", \"citations\": [{\"chunk_id\": \"D08-C016\", \"quote\": \"第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\\n请，并做好学生档案资料及相关工作的交接。\"}]}], \"gaps\": []}, \"reason\": \"已读取直接条款，明确提前一个月向所在学院书面申请并交接\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004800599999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.8657
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取直接条款，明确提前一个月向所在学院书面申请并交接"
+        }
+      ],
+      "read_ids": [
+        "D08-C016"
+      ],
+      "first_hits": [
+        "D08-C016",
+        "D10-C004",
+        "D07-C012",
+        "D08-C010",
+        "D07-C023"
+      ],
+      "seconds": 4.7802,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "我想卸下兼职辅导员工作，提前多长时间告知哪个单位，口头说一下够吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，卸下兼职辅导员工作应提前一个月告知所在学院，且须提交书面申请，仅口头说明不够；同时应完成学生档案资料及相关工作交接。",
+            "citations": [
+              {
+                "chunk_id": "D08-C016",
+                "quote": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，卸下兼职辅导员工作应提前一个月告知所在学院，且须提交书面申请，仅口头说明不够；同时应完成学生档案资料及相关工作交接。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，卸下兼职辅导员工作应提前一个月告知所在学院，且须提交书面申请，仅口头说明不够；同时应完成学生档案资料及相关工作交接。",
+            "citations": [
+              {
+                "chunk_id": "D08-C016",
+                "quote": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，卸下兼职辅导员工作应提前一个月告知所在学院，且须提交书面申请，仅口头说明不够；同时应完成学生档案资料及相关工作交接。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:44.003796+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7ccbd73a65b3ee785098174ce4bb772867d52b1d51c28bc55b0cb07ac73459b2",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "9dd53ef7-3fe3-4a27-92ee-89882c567cbc",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2095,
+            "completion_tokens": 43,
+            "total_tokens": 2138,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 303
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"兼职辅导员 卸任 提前告知 书面申请 解聘\"},\"reason\":\"检索兼职辅导员退出/解聘的告知期限、受理单位和形式要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.6626e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.9116
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "兼职辅导员 卸任 提前告知 书面申请 解聘"
+          },
+          "reason": "检索兼职辅导员退出/解聘的告知期限、受理单位和形式要求"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "兼职辅导员 卸任 提前告知 书面申请 解聘"
+          },
+          "result": {
+            "ok": true,
+            "query": "兼职辅导员 卸任 提前告知 书面申请 解聘",
+            "hits": [
+              {
+                "chunk_id": "D08-C016",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十五条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  35
+                ],
+                "printed_pages": [
+                  30
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.720617,
+                "lexical_score": 38.3392,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十五条 第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C012",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34,
+                  35
+                ],
+                "printed_pages": [
+                  29,
+                  30
+                ],
+                "score": 0.078462,
+                "semantic_score": 0.631331,
+                "lexical_score": 18.1269,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十一条 第十一条 兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导\n员开展上岗培训，对培训合格者颁发聘书。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C012",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  30
+                ],
+                "printed_pages": [
+                  25
+                ],
+                "score": 0.077037,
+                "semantic_score": 0.632521,
+                "lexical_score": 17.8945,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十一条 第十一条 辅导员的选聘工作在领导小组领导下进行。\n专职辅导员选聘：学院提出申请，由党委学生工作部或党委研究生工作部会同人\n事处核定岗位后，按学校有关规定进行公开招聘。校内其他岗位人员转聘专职辅导\n员的，应符合辅导员选聘基本条件，突出政治标准和工作能力，年龄不超过40周岁，采\n用笔试或面试等方式进行选聘。\n兼职辅导员选聘：学院根据缺编情况和辅导员选聘基本条件制定本学院兼职辅导\n员选聘办法，报党委学生工作部或党委研究生工作部、人事处审核通过后，采用笔试或\n面试等方式进行选聘。选聘结果报党委学生工作部或党委研究生工作部、人事处备案。\n思想政治理论课教师担任辅导员的，按照《辽宁科技大学思想政治理论课教师和辅导员\n队伍联动融合发展实施办法（试行）》执行。兼职辅导",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C010",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第九条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34
+                ],
+                "printed_pages": [
+                  29
+                ],
+                "score": 0.075,
+                "semantic_score": 0.634411,
+                "lexical_score": 16.8296,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第九条 第九条 兼职辅导员的选聘工作在学校党委统一领导下进行。学院根据缺编情\n况和辅导员选聘基本条件制定本学院兼职辅导员选聘办法，报党委学生工作部或党\n委研究生工作部、人事处审核通过后，采用笔试或面试等方式进行选聘。选聘结果报\n党委学生工作部或党委研究生工作部、人事处备案。思想政治理论课教师担任辅导\n员的，按照《辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法\n（试行）》执行。兼职辅导员的工作年限至少为1年。\n第四章 发展与培养",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C020",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.069048,
+                "semantic_score": 0.619198,
+                "lexical_score": 17.0799,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十九条 第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0086,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:44.966249+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ada1068da55da578347cca5653491ca4f35486be06ac3a652f4ac1540dc61af9",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "0d1961db-da08-4ed7-a771-54b6758f0edc",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3310,
+            "completion_tokens": 40,
+            "total_tokens": 3350,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 1262
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D08-C016\"]}, \"reason\": \"读取兼职辅导员退出条款原文，核对期限、受理单位和书面形式\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00021944399999999998,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.7149
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D08-C016"
+            ]
+          },
+          "reason": "读取兼职辅导员退出条款原文，核对期限、受理单位和书面形式"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第十五条",
+              "text": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则",
+              "pdf_pages": [
+                35
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C016",
+              "printed_pages": [
+                30
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C015",
+              "next_chunk_id": "D08-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:45.719390+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e1079ec6a3963c16af8227a785c4c693797bec2ecd4f50fef7a367e53a6e7847",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "69cd74ca-771c-43ba-89fd-21c19f8ea572",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3567,
+            "completion_tokens": 166,
+            "total_tokens": 3733,
+            "prompt_tokens_details": {
+              "cached_tokens": 3328
+            },
+            "prompt_cache_hit_tokens": 3328,
+            "prompt_cache_miss_tokens": 239
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，提前告知期限为一个月，受理单位为所在学院，且必须采用书面申请，仅口头说明不够。\", \"citations\": [{\"chunk_id\": \"D08-C016\", \"quote\": \"第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\\n请，并做好学生档案资料及相关工作的交接。\"}]}], \"gaps\": []}, \"reason\": \"第十五条已明确期限、受理单位和书面形式，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000145434,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.4316
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十五条已明确期限、受理单位和书面形式，足以回答"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:00:47.195328+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bdf423a7eb366d795397a75907738d1adc5fb9efaf9d7e51ac78ddfe779815ce",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "0ac96c4d-753f-4046-be01-b4be026a3195",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3968,
+            "completion_tokens": 282,
+            "total_tokens": 4250,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 111
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2048
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条规定：申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。因此，卸下兼职辅导员工作应提前一个月告知所在学院，且须提交书面申请，仅口头说明不够；同时应完成学生档案资料及相关工作交接。\",\"citations\":[{\"chunk_id\":\"D08-C016\",\"quote\":\"第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\\n请，并做好学生档案资料及相关工作的交接。\"}]}],\"gaps\":[]},\"reason\":\"已读取直接适用条款，期限、受理单位、书面形式及交接要求均有原文支持\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00048216,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "format_repairs": [
+            "redundant_closing_braces"
+          ],
+          "seconds": 2.5328
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取直接适用条款，期限、受理单位、书面形式及交接要求均有原文支持"
+        }
+      ],
+      "read_ids": [
+        "D08-C016"
+      ],
+      "first_hits": [
+        "D08-C016",
+        "D08-C012",
+        "D07-C012",
+        "D08-C010",
+        "D23-C020"
+      ],
+      "seconds": 5.7635,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 10.5442,
+  "model_calls": 8,
+  "tool_calls": 4,
+  "created_at": "2026-10-31T04:00:49.729159+00:00"
+}

@@ -1,0 +1,1124 @@
+{
+  "id": "TEST25",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "教师在职读博取得学历学位后多久向哪里办理备案？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。\n办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。\n办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:17.897745+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7d886ad009eb0661e41733911bb89d9b0dd742627839b2d9e51b51ee6e438c22",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "3b269932-f8e8-4ee0-8b54-ab04d9869145",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1727,
+            "completion_tokens": 47,
+            "total_tokens": 1774,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 191
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"教师在职攻读博士 取得学历学位 备案 时间 部门\",\"doc_ids\":[]},\"reason\":\"检索教师在职读博取得学历学位后的备案时限与办理部门\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005745,
+          "seconds": 0.9808
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "教师在职攻读博士 取得学历学位 备案 时间 部门",
+            "doc_ids": []
+          },
+          "reason": "检索教师在职读博取得学历学位后的备案时限与办理部门"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教师在职攻读博士 取得学历学位 备案 时间 部门",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "教师在职攻读博士 取得学历学位 备案 时间 部门",
+            "hits": [
+              {
+                "chunk_id": "D01-C010",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.762055,
+                "lexical_score": 63.5827,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第九条 第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.084656,
+                "semantic_score": 0.781602,
+                "lexical_score": 45.2771,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C011",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.080952,
+                "semantic_score": 0.713651,
+                "lexical_score": 66.1662,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十条 第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C007",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.074866,
+                "semantic_score": 0.768305,
+                "lexical_score": 35.8424,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第六条 第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C016",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十五条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.733715,
+                "lexical_score": 44.3238,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十五条 第十五条 出国（境外）攻读博士研究生的在职读博人员按学校以及上级相关部\n门出国（境）管理有关规定执行。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0092,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:18.913338+00:00",
+          "attempt": 1,
+          "prompt_sha256": "397a172c1cc61bc8272e8b3b5b6f09aa4166fa56054d57fd1bab8a94b94ed35f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "813165ef-32b2-42b9-a3eb-24ca3d56ae41",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3055,
+            "completion_tokens": 40,
+            "total_tokens": 3095,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1391
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C010\"]}, \"reason\": \"读取第九条原文，核实备案时限、办理部门及所需材料\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009645,
+          "seconds": 0.6851
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C010"
+            ]
+          },
+          "reason": "读取第九条原文，核实备案时限、办理部门及所需材料"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C010"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第九条",
+              "text": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+              "pdf_pages": [
+                7
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C010",
+              "printed_pages": [
+                2
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C009",
+              "next_chunk_id": "D01-C011",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:19.623164+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e975a1c2172eee7c4a0a0511cd4cf8a6b0cacb9f50e0a1e231eef8fe19be6331",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "ccb47290-cb80-4861-9b7c-bdf53a1e60be",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3331,
+            "completion_tokens": 276,
+            "total_tokens": 3607,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 387
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}, {\"text\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}], \"gaps\": []}, \"reason\": \"第九条已明确备案时限、办理部门及所需材料，证据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0013305,
+          "seconds": 1.7987
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第九条已明确备案时限、办理部门及所需材料，证据充分"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:21.445569+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a1cec4fd5bfe97429d889d743e4e1e68a11fe44a69309c4d2ddc00a7d8aff65c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "0f484a63-8d19-4d4c-af10-94e246360be7",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3775,
+            "completion_tokens": 605,
+            "total_tokens": 4380,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 349
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2239
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后1个月内，到人事处办理备案。\",\"citations\":[{\"chunk_id\":\"D01-C010\",\"quote\":\"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]},{\"text\":\"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的还需出具留学回国人员证明、留学生学历认证。\",\"citations\":[{\"chunk_id\":\"D01-C010\",\"quote\":\"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}],\"gaps\":[]},\"reason\":\"第九条已明确备案时限、办理部门及所需材料，证据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0018585,
+          "seconds": 3.7937
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第九条已明确备案时限、办理部门及所需材料，证据充分"
+        }
+      ],
+      "read_ids": [
+        "D01-C010"
+      ],
+      "first_hits": [
+        "D01-C010",
+        "D01-C008",
+        "D01-C011",
+        "D01-C007",
+        "D01-C016"
+      ],
+      "seconds": 7.3645,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "博士双证拿到了，返校登记最迟多久办，找哪个部门？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。",
+            "citations": [
+              {
+                "chunk_id": "D01-C018",
+                "quote": "第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十七条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。"
+        ],
+        "answer": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。\n办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\n该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。\n上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。",
+            "citations": [
+              {
+                "chunk_id": "D01-C010",
+                "quote": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。",
+            "citations": [
+              {
+                "chunk_id": "D01-C018",
+                "quote": "第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十七条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。"
+        ],
+        "answer": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。\n办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\n该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。\n上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:25.262727+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9c6b2f413bf9e870872ab437cd24b0e64c9d19986cf71aaf947acdd80d07932a",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "75c1edad-396e-441e-8d70-616bf1a81590",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1729,
+            "completion_tokens": 40,
+            "total_tokens": 1769,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 193
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"博士 双证 返校登记 报到 期限 部门\"},\"reason\":\"检索博士取得双证后返校登记时限及受理部门的规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005667,
+          "seconds": 0.7465
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "博士 双证 返校登记 报到 期限 部门"
+          },
+          "reason": "检索博士取得双证后返校登记时限及受理部门的规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "博士 双证 返校登记 报到 期限 部门"
+          },
+          "result": {
+            "ok": true,
+            "query": "博士 双证 返校登记 报到 期限 部门",
+            "hits": [
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.087619,
+                "semantic_score": 0.606158,
+                "lexical_score": 10.7269,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D21-C001",
+                "doc_id": "D21",
+                "title": "辽宁科技大学退休返聘人员管理办法（试行）",
+                "article": "前言或附件",
+                "version_date": "2018-12-26",
+                "pdf_pages": [
+                  175,
+                  176,
+                  177
+                ],
+                "printed_pages": [
+                  170,
+                  171,
+                  172
+                ],
+                "score": 0.080128,
+                "semantic_score": 0.606463,
+                "lexical_score": 8.7246,
+                "excerpt": "辽宁科技大学退休返聘人员管理办法（试行） 前言或附件   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n申请返聘期限（1年）：从 年 月 日至 年 月 日 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+                "related_table_chunks": [
+                  "D21-C002"
+                ]
+              },
+              {
+                "chunk_id": "D01-C010",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.070346,
+                "semantic_score": 0.638433,
+                "lexical_score": 5.1065,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第九条 第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C018",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.066449,
+                "semantic_score": 0.571042,
+                "lexical_score": 8.2443,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十七条 第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1\n个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情\n况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，\n相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发\n〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D22-C001",
+                "doc_id": "D22",
+                "title": "辽宁科技大学高级专家延长退休年龄实施办法（修订）",
+                "article": "前言或附件",
+                "version_date": "2023-12-13",
+                "pdf_pages": [
+                  178,
+                  179
+                ],
+                "printed_pages": [
+                  173,
+                  174
+                ],
+                "score": 0.066239,
+                "semantic_score": 0.605764,
+                "lexical_score": 6.6017,
+                "excerpt": "辽宁科技大学高级专家延长退休年龄实施办法（修订） 前言或附件 所在单位教授委员会审议、党政联\n席会研究同意后向学校提出延退申请，并报送《高级专家延长退休年龄审批表》及相\n关证明材料，经学校研究同意后办理延退手续。\n（二）学校在每年5月和11月研究高级专家延退事项，经校长办公会议审议、校党\n委常委会会议审定后办理相关手续，报上级主管部门备案。\n三、其他\n（一）学校每次批准的延退期限为1年。高级专家延退期间纳入学院在职教职工\n日常管理，占所在单位专业技术岗位数，按照《辽宁科技大学教职工岗位考核实施办\n法（2022年版）》进行聘用管理，正常参加平时考核、年度考核和聘期考核，考核不合格\n学校中止聘用，办理退休手续。\n（二）高级专家延退期满后因工作需要有必要继续工作的，可采取返聘的方式，返\n聘手续按学校有关规定办理。\n（三",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0092,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:26.042206+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5b5dab16800f7f2c616123c0a108b5dab023241f2f1e23eda27ffc33a29ec6c3",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e0507023-16fa-4db1-a79b-2ffe2b68686d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3098,
+            "completion_tokens": 56,
+            "total_tokens": 3154,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1434
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C010\", \"D01-C008\", \"D01-C018\"]}, \"reason\": \"读取博士取得双证后返校备案的时限、材料、部门及逾期后果条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009966,
+          "seconds": 1.0741
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C010",
+              "D01-C008",
+              "D01-C018"
+            ]
+          },
+          "reason": "读取博士取得双证后返校备案的时限、材料、部门及逾期后果条款"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C010"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第九条",
+              "text": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+              "pdf_pages": [
+                7
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C010",
+              "printed_pages": [
+                2
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C009",
+              "next_chunk_id": "D01-C011",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C008"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第七条",
+              "text": "第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+              "pdf_pages": [
+                6,
+                7
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C008",
+              "printed_pages": [
+                1,
+                2
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C007",
+              "next_chunk_id": "D01-C009",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C018"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十七条",
+              "text": "第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1\n个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情\n况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，\n相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发\n〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C018",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C017",
+              "next_chunk_id": "D01-C019",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:27.139092+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9ee5c3fdf58130e8583f4acf54de93355d2c956756dac7d078cbf98a9800783f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6f221cd6-4204-4417-9b1c-da4a32377ed4",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3847,
+            "completion_tokens": 577,
+            "total_tokens": 4424,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "prompt_cache_hit_tokens": 3072,
+            "prompt_cache_miss_tokens": 775
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}, {\"text\": \"办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}, {\"text\": \"该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。\", \"citations\": [{\"chunk_id\": \"D01-C018\", \"quote\": \"第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。\"}]}], \"gaps\": [\"上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。\"]}, \"reason\": \"已读取原文，明确备案时限为1个月内、受理部门为人事处及所需材料，并说明适用前提\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0018465,
+          "seconds": 3.2456
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取原文，明确备案时限为1个月内、受理部门为人事处及所需材料，并说明适用前提"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:30.406960+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ff2d37e3578111e09340fa6e133d476c499e91947e26c740fc6acd27873833dd",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "c20f1974-2a20-4b1b-8cef-b2c1a1579646",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4604,
+            "completion_tokens": 641,
+            "total_tokens": 5245,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 589
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 3068
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"教师考取博士 毕业后回校工作 报到 备案 期限 服务期\"},\"reason\":\"补查是否存在其他关于博士毕业后回校报到期限的规定，避免遗漏或版本冲突\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0021504000000000002,
+          "error": "JSONDecodeError",
+          "seconds": 4.6563
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:35.063486+00:00",
+          "attempt": 2,
+          "prompt_sha256": "0da5f9607319e275b94bfe3aa88ad6f81d22434e1ecb50d7a12aad52dfcd57d6",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e9d327d8-a0a2-4780-ac19-90cfc0f1eb7d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4703,
+            "completion_tokens": 119,
+            "total_tokens": 4822,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 72
+            },
+            "prompt_cache_hit_tokens": 4480,
+            "prompt_cache_miss_tokens": 223
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"博士毕业后 回校工作 报到 备案 1个月 人事处 服务期\"},\"reason\":\"补查是否有其他博士毕业后返校报到期限规定或版本差异\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0015536999999999999,
+          "seconds": 1.6176
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "search",
+          "arguments": {
+            "query": "博士毕业后 回校工作 报到 备案 1个月 人事处 服务期"
+          },
+          "reason": "补查是否有其他博士毕业后返校报到期限规定或版本差异"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "博士毕业后 回校工作 报到 备案 1个月 人事处 服务期"
+          },
+          "result": {
+            "ok": true,
+            "query": "博士毕业后 回校工作 报到 备案 1个月 人事处 服务期",
+            "hits": [
+              {
+                "chunk_id": "D01-C010",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第九条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  7
+                ],
+                "printed_pages": [
+                  2
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.660734,
+                "lexical_score": 42.519,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第九条 第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D25-C001",
+                "doc_id": "D25",
+                "title": "辽宁科技大学教师服务期及违约补偿暂行规定",
+                "article": "前言或附件",
+                "version_date": "2021-11-02",
+                "pdf_pages": [
+                  189,
+                  190
+                ],
+                "printed_pages": [
+                  184,
+                  185
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.592459,
+                "lexical_score": 29.5591,
+                "excerpt": "辽宁科技大学教师服务期及违约补偿暂行规定 前言或附件 校上岗工作之日起计算。到国（境）外参加继\n续教育的，在上述服务期标准上增加不低于2年的服务期。\n5.入选各级各类人才支持计划教师的服务期。教师在校期间通过学校推荐并成\n功入选各级各类人才支持计划后应履行不低于5年的服务期（有经费支持的，要扣除\n经费支持期）。\n以上服务期类型中每一类服务期单独计算，累计执行。如教师配偶属于学校照\n顾性安置的，教师本人服务期应在学校规定的服务期上增加4年，教师本人调离我校\n时，照顾性配偶须同时调离我校。\n三、未履行服务期的处理\n教师未履行或未完全履行服务期的，原则上不得提出辞职或调离要求。如未履\n行或未完全履行服务期申请辞职或调离的教师，经学校批准同意辞职或调离的，应向\n学校缴纳经济补偿后再按程序办理相关手续。\n经济补偿计",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.071256,
+                "semantic_score": 0.606723,
+                "lexical_score": 14.0487,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C018",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.071096,
+                "semantic_score": 0.560549,
+                "lexical_score": 42.284,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十七条 第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1\n个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情\n况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，\n相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发\n〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C006",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第五条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  168,
+                  169
+                ],
+                "printed_pages": [
+                  163,
+                  164
+                ],
+                "score": 0.069295,
+                "semantic_score": 0.576256,
+                "lexical_score": 18.2782,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第五条 第五条 病假的审批及管理\n（一）全年病休在2个月以内的，由所在单位主要负责人审批，报人事处审核备案。\n（二）全年病休在2个月以上的，由所在单位签署意见，报主管校领导批准并报人\n事处审核备案。\n（三）病休连续超过6个月的，由所在单位签署意见，报主管校领导批准并报人事\n处审核备案，经学校审批后办理长期病休手续。\n（四）患病需休息治疗者，必须先履行请假审批手续。因患急性病未先办理请假\n审批手续者，应及时履行补假手续。请假手续应由患者本人办理，确因特殊原因本人\n不能亲自办理者，可委托他人代为办理。\n（五）已办理长期病休的人员，若要求恢复工作，需由学校指定的医院出具可恢复\n工作证明，经批准后办理恢复工作手续；若需继续病休者，每半年到学校指定的医院\n进行一次复查，",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0103,
+          "attempt_number": 5
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:36.715115+00:00",
+          "attempt": 1,
+          "prompt_sha256": "35da514643e124b544b7ba0c971bad297986972c666e7ebe814ea998e4eb6a24",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "74bbe143-f2f8-4808-bf3f-5f3c49a60da9",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 6092,
+            "completion_tokens": 577,
+            "total_tokens": 6669,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "prompt_cache_hit_tokens": 4352,
+            "prompt_cache_miss_tokens": 1740
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条规定：教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}, {\"text\": \"办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。\", \"citations\": [{\"chunk_id\": \"D01-C010\", \"quote\": \"第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件到人事处办理备案。\"}]}, {\"text\": \"该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果；该条针对的是脱产学习期限届满未回校工作，并非直接规定取得双证后备案逾期的后果。\", \"citations\": [{\"chunk_id\": \"D01-C018\", \"quote\": \"第十七条 教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系，相关违约补偿按照《辽宁科技大学教师服务期及违约补偿暂行规定》（辽科大校发〔2021〕49号）执行，缴纳经济补偿费后按程序办理离校手续。\"}]}], \"gaps\": [\"上述1个月备案期限和人事处受理的规定出自《辽宁科技大学教师在职攻读博士学位管理办法（修订）》，适用于经学校批准在职攻读博士学位的教师；请确认您是否属于该类人员（是否已与人事处签订《教师在职攻读博士学位协议》），若为其他身份（如非在职培养、新入职等），需另行核对对应制度。\"]}, \"reason\": \"已读取原文，明确备案时限为1个月内、受理部门为人事处及所需材料，并说明适用前提\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00252,
+          "seconds": 2.5431
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取原文，明确备案时限为1个月内、受理部门为人事处及所需材料，并说明适用前提"
+        }
+      ],
+      "read_ids": [
+        "D01-C010",
+        "D01-C008",
+        "D01-C018"
+      ],
+      "first_hits": [
+        "D01-C008",
+        "D21-C001",
+        "D01-C010",
+        "D01-C018",
+        "D22-C001"
+      ],
+      "seconds": 14.0191,
+      "model_calls": 6,
+      "tool_calls": 5,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 21.3842,
+  "model_calls": 10,
+  "tool_calls": 7,
+  "created_at": "2026-10-31T03:21:39.259927+00:00"
+}

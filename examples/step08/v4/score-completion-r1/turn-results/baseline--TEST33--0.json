@@ -1,0 +1,102 @@
+{
+  "key": "baseline--TEST33--0",
+  "mode": "baseline",
+  "id": "TEST33",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "168c536f18dc1aaf84d39883002deef2e0446977beed76729567bd2aeb9c9f74",
+  "run_sha256": "cab69f52344ec877e153e6771fd7da1d64c29577badf17e2de51434a6d340764",
+  "created_at": "2026-10-31T05:14:51.585375+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "首聘期为4年，工作服务期为8年",
+          "reason": "答案明确给出了首聘期为4年、工作服务期为8年，与要点一致。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+          "answer_span": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。"
+        },
+        {
+          "text": "首聘期为4年",
+          "answer_span": "首聘期为4年",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。"
+        },
+        {
+          "text": "工作服务期为8年",
+          "answer_span": "工作服务期为8年",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了首聘期和服务期年限，引用正确，无严重错误，整体表现良好。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:14:32.200957+00:00",
+        "attempt": 1,
+        "prompt_sha256": "93a25b647b34529fab40b1bdecca4753f5c66eef082f5ef363c197c930c68850",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "a40b9e2b-7adf-42aa-8549-3e1a94319998",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2617,
+          "completion_tokens": 2083,
+          "total_tokens": 4700,
+          "prompt_tokens_details": {
+            "cached_tokens": 1664
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1691
+          },
+          "prompt_cache_hit_tokens": 1664,
+          "prompt_cache_miss_tokens": 953
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"首聘期为4年，工作服务期为8年\",\n      \"reason\": \"答案明确给出了首聘期为4年、工作服务期为8年，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"answer_span\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。\"\n    },\n    {\n      \"text\": \"首聘期为4年\",\n      \"answer_span\": \"首聘期为4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。\"\n    },\n    {\n      \"text\": \"工作服务期为8年\",\n      \"answer_span\": \"工作服务期为8年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在答案中明确陈述，所引用条款包含相同表述，且实际读取的原文也支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了首聘期和服务期年限，引用正确，无严重错误，整体表现良好。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.004789928,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 19.3815
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

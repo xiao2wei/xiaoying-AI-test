@@ -1,0 +1,120 @@
+{
+  "id": "STAB-TEST16-R3",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "其第十八条规定本办法自发布之日起施行，并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "reason": "回答明确表述了2023年第十八条同时废止2020年19号办法，符合要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "因此2020年19号办法不再继续生效，应执行2023年修订办法",
+            "reason": "回答依据废止条款给出了版本关系的明确结论，解决了生效问题。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》为辽科大校发〔2023〕77号附件，2023年12月20日发布",
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》为辽科大校发〔2023〕77号附件，2023年12月20日发布",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C001的quote包含文件标题、文号和发布日期，且actually_read中包含该chunk，支持该事实。"
+          },
+          {
+            "text": "第十八条规定本办法自发布之日起施行",
+            "answer_span": "其第十八条规定本办法自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“自发布之日起施行”，且actually_read中包含该chunk，支持该事实。"
+          },
+          {
+            "text": "明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "answer_span": "并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“综发〔2020〕19号同时废止”，且actually_read中包含该chunk，支持该事实。"
+          },
+          {
+            "text": "2020年19号办法不再继续生效，应执行2023年修订办法",
+            "answer_span": "因此2020年19号办法不再继续生效，应执行2023年修订办法",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论直接由废止条款支持，引用D01-C019的quote足以支撑，且已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了2023年修订办法第十八条的废止条款，并据此明确版本关系，结论正确且证据充分，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:12:09.849773+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a36eadf1684cc4bb849ae204576b811fb4bc6e2a654e62705c3e498d59e8dc90",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b92eb87e-b434-4d64-a102-721e5107e2f8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2112,
+            "completion_tokens": 2181,
+            "total_tokens": 4293,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1499
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 960
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"其第十八条规定本办法自发布之日起施行，并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"reason\": \"回答明确表述了2023年第十八条同时废止2020年19号办法，符合要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"因此2020年19号办法不再继续生效，应执行2023年修订办法\",\n      \"reason\": \"回答依据废止条款给出了版本关系的明确结论，解决了生效问题。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》为辽科大校发〔2023〕77号附件，2023年12月20日发布\",\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》为辽科大校发〔2023〕77号附件，2023年12月20日发布\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C001的quote包含文件标题、文号和发布日期，且actually_read中包含该chunk，支持该事实。\"\n    },\n    {\n      \"text\": \"第十八条规定本办法自发布之日起施行\",\n      \"answer_span\": \"其第十八条规定本办法自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“自发布之日起施行”，且actually_read中包含该chunk，支持该事实。\"\n    },\n    {\n      \"text\": \"明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"answer_span\": \"并明确《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“综发〔2020〕19号同时废止”，且actually_read中包含该chunk，支持该事实。\"\n    },\n    {\n      \"text\": \"2020年19号办法不再继续生效，应执行2023年修订办法\",\n      \"answer_span\": \"因此2020年19号办法不再继续生效，应执行2023年修订办法\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论直接由废止条款支持，引用D01-C019的quote足以支撑，且已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了2023年修订办法第十八条的废止条款，并据此明确版本关系，结论正确且证据充分，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004977324000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 18.4315
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：回答准确引用了2023年修订办法第十八条的废止条款，并据此明确版本关系，结论正确且证据充分，无严重错误。",
+        "source_score_sha256": "3b5657ca86011214564659a0befab0c07dcc05667d8359c2f6c6fe36a1253a04"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "eb1e66ece03a659ccd9242efd4ad3d9467e45c0b4fa6b137decfb9ad7d3156d9"
+}

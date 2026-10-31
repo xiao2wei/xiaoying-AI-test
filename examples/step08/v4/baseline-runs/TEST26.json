@@ -1,0 +1,791 @@
+{
+  "id": "TEST26",
+  "category": "paraphrase",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "教师经批准报考博士当年未录取，再次报考要重新申报吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "citations": [
+              {
+                "chunk_id": "D01-C015",
+                "quote": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。",
+            "citations": [
+              {
+                "chunk_id": "D01-C015",
+                "quote": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教师经批准报考博士当年未录取，再次报考要重新申报吗？"
+          },
+          "result": {
+            "ok": true,
+            "query": "教师经批准报考博士当年未录取，再次报考要重新申报吗？",
+            "hits": [
+              {
+                "chunk_id": "D01-C015",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.784334,
+                "lexical_score": 105.8567,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十四条 第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C004",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第三条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.645213,
+                "lexical_score": 26.8722,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第三条 第三条 教师原则上应报考定向（委托培养）博士研究生，人事档案关系不转出\n学校。如报考非定向博士研究生须与学校解除聘用关系，人事档案关系应转到在读\n学校。\n第二章 申报条件",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C005",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第四条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.085455,
+                "semantic_score": 0.615568,
+                "lexical_score": 27.5566,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第四条 第四条 申请人为我校事业编制教师，年龄一般不超过40周岁，近3年年度考核\n均为合格以上（新入职教师应试用期满并考核合格）。申请人报考博士专业应满足所\n在学科建设需要，且与本人现从事专业或工作领域高度一致。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C007",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.61768,
+                "lexical_score": 22.3876,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第六条 第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C014",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十三条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.61592,
+                "lexical_score": 23.27,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十三条 第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0116,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C015"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十四条",
+              "text": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C015",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C014",
+              "next_chunk_id": "D01-C016",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C004"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第三条",
+              "text": "第三条 教师原则上应报考定向（委托培养）博士研究生，人事档案关系不转出\n学校。如报考非定向博士研究生须与学校解除聘用关系，人事档案关系应转到在读\n学校。\n第二章 申报条件",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C004",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C003",
+              "next_chunk_id": "D01-C005",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C005"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第四条",
+              "text": "第四条 申请人为我校事业编制教师，年龄一般不超过40周岁，近3年年度考核\n均为合格以上（新入职教师应试用期满并考核合格）。申请人报考博士专业应满足所\n在学科建设需要，且与本人现从事专业或工作领域高度一致。",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C005",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C004",
+              "next_chunk_id": "D01-C006",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C007"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第六条",
+              "text": "第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C007",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C006",
+              "next_chunk_id": "D01-C008",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十三条",
+              "text": "第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C014",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C013",
+              "next_chunk_id": "D01-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:42.250277+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a81be67ad9de99868137433109f6a8053360714cdd735f7bb1c94e3afcde032c",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b6184d63-a14d-4475-b941-a4dfc3a51c40",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3056,
+            "completion_tokens": 79,
+            "total_tokens": 3135,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 240
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。\",\"citations\":[{\"chunk_id\":\"D01-C015\",\"quote\":\"第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\\n程序。\"}]}],\"gaps\":[]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 9.1848e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.8152
+        }
+      ],
+      "read_ids": [
+        "D01-C015",
+        "D01-C004",
+        "D01-C005",
+        "D01-C007",
+        "D01-C014"
+      ],
+      "first_hits": [
+        "D01-C015",
+        "D01-C004",
+        "D01-C005",
+        "D01-C007",
+        "D01-C014"
+      ],
+      "seconds": 0.8847,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "baseline",
+      "question": "去年获学校同意考博却没考上，今年还要重新走审批流程吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。",
+            "citations": [
+              {
+                "chunk_id": "D01-C015",
+                "quote": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+            "citations": [
+              {
+                "chunk_id": "D01-C007",
+                "quote": "第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第六条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。\n重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。",
+            "citations": [
+              {
+                "chunk_id": "D01-C015",
+                "quote": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          },
+          {
+            "text": "重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。",
+            "citations": [
+              {
+                "chunk_id": "D01-C007",
+                "quote": "第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第六条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。\n重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "去年获学校同意考博却没考上，今年还要重新走审批流程吗？"
+          },
+          "result": {
+            "ok": true,
+            "query": "去年获学校同意考博却没考上，今年还要重新走审批流程吗？",
+            "hits": [
+              {
+                "chunk_id": "D01-C014",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十三条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.087121,
+                "semantic_score": 0.608523,
+                "lexical_score": 12.3532,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十三条 第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C007",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第六条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.61615,
+                "lexical_score": 10.0166,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第六条 第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C015",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十四条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.073935,
+                "semantic_score": 0.686857,
+                "lexical_score": 6.6203,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十四条 第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C020",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十九条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.069412,
+                "semantic_score": 0.607185,
+                "lexical_score": 7.1351,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十九条 第十九条 项目结题验收结果分为通过和不通过两种，验收不通过的，项目负责\n人及所在二级教学（科研）机构应在接到通知1个月内提出整改措施，在半年内完成整\n改并重新接受验收。重新验收仍不通过的，4年内学校不再予以校内各类科研项目经\n费支持。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C005",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第四条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.067816,
+                "semantic_score": 0.581629,
+                "lexical_score": 8.2784,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第四条 第四条 申请人为我校事业编制教师，年龄一般不超过40周岁，近3年年度考核\n均为合格以上（新入职教师应试用期满并考核合格）。申请人报考博士专业应满足所\n在学科建设需要，且与本人现从事专业或工作领域高度一致。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0121,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十三条",
+              "text": "第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C014",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C013",
+              "next_chunk_id": "D01-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C007"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第六条",
+              "text": "第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C007",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C006",
+              "next_chunk_id": "D01-C008",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C015"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十四条",
+              "text": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C015",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C014",
+              "next_chunk_id": "D01-C016",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C020"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第十九条",
+              "text": "第十九条 项目结题验收结果分为通过和不通过两种，验收不通过的，项目负责\n人及所在二级教学（科研）机构应在接到通知1个月内提出整改措施，在半年内完成整\n改并重新接受验收。重新验收仍不通过的，4年内学校不再予以校内各类科研项目经\n费支持。",
+              "pdf_pages": [
+                16
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C020",
+              "printed_pages": [
+                11
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C019",
+              "next_chunk_id": "D03-C021",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C005"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第四条",
+              "text": "第四条 申请人为我校事业编制教师，年龄一般不超过40周岁，近3年年度考核\n均为合格以上（新入职教师应试用期满并考核合格）。申请人报考博士专业应满足所\n在学科建设需要，且与本人现从事专业或工作领域高度一致。",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C005",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C004",
+              "next_chunk_id": "D01-C006",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:43.116722+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8c6548300d713c15c63314fcd8410c5d4b5b51f2aa9168a6c03374b3ca131fc2",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6a196fd4-e990-490e-a56b-3ff8f67ec2e2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3108,
+            "completion_tokens": 301,
+            "total_tokens": 3409,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 164
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。\",\"citations\":[{\"chunk_id\":\"D01-C015\",\"quote\":\"第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\\n程序。\"}]},{\"text\":\"重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。\",\"citations\":[{\"chunk_id\":\"D01-C007\",\"quote\":\"第六条 申请、审核与审批\\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\\n面申请，填写《教师在职攻读博士学位申请表》。\\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\\n处审核，拟推荐人选在本单位公示。\\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\\n《同意报考协议书》后报名参加考试。\"}]}],\"gaps\":[]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00021403199999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.5458
+        }
+      ],
+      "read_ids": [
+        "D01-C014",
+        "D01-C007",
+        "D01-C015",
+        "D03-C020",
+        "D01-C005"
+      ],
+      "first_hits": [
+        "D01-C014",
+        "D01-C007",
+        "D01-C015",
+        "D03-C020",
+        "D01-C005"
+      ],
+      "seconds": 1.5974,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.4822,
+  "model_calls": 2,
+  "tool_calls": 12,
+  "created_at": "2026-10-31T04:03:44.664081+00:00"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "TEST19",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "均未涉及学校食堂WiFi密码或校园网络接入信息",
+            "reason": "实际答案明确说明现有制度汇编检索结果未涉及食堂WiFi密码，符合资料未提供的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供校园网络管理制度、信息化服务指南或网络与信息中心发布的上网说明（含文件名称或版本日期）",
+            "reason": "答案未虚构密码，而是请求提供特定制度资料，体现未编造。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "用户询问食堂WiFi密码，制度汇编中无相关证据，答案以证据不足回复并请求补充网络管理资料，未编造，符合要求；工具检索与阅读行为合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园网络管理制度",
+            "信息化服务指南",
+            "网络与信息中心发布的上网说明",
+            "文件名称或版本日期"
+          ],
+          "reason": "答案明确说明缺少网络接入相关制度资料，并要求用户提供上述文件类型及版本信息，是可操作的具体补充请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:19.437627+00:00",
+          "attempt": 1,
+          "prompt_sha256": "59990447a927997d32dd6901819c9d4a75451efcea82ca5bde091f5b2221104c",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c0a54604-4c02-4e35-bd2c-7af80d42e170",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4864,
+            "completion_tokens": 3576,
+            "total_tokens": 8440,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3255
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3968
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"均未涉及学校食堂WiFi密码或校园网络接入信息\",\n      \"reason\": \"实际答案明确说明现有制度汇编检索结果未涉及食堂WiFi密码，符合资料未提供的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供校园网络管理制度、信息化服务指南或网络与信息中心发布的上网说明（含文件名称或版本日期）\",\n      \"reason\": \"答案未虚构密码，而是请求提供特定制度资料，体现未编造。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"用户询问食堂WiFi密码，制度汇编中无相关证据，答案以证据不足回复并请求补充网络管理资料，未编造，符合要求；工具检索与阅读行为合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"校园网络管理制度\",\n      \"信息化服务指南\",\n      \"网络与信息中心发布的上网说明\",\n      \"文件名称或版本日期\"\n    ],\n    \"reason\": \"答案明确说明缺少网络接入相关制度资料，并要求用户提供上述文件类型及版本信息，是可操作的具体补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02058144,
+          "seconds": 35.218
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f022a2cf5c376b0ad320408296345ad69dfe7103985c323da8c2ad56a32d818d"
+}

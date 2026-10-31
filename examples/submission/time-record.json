@@ -1,0 +1,32 @@
+{
+  "personal_time": "未计时",
+  "personal_time_source": "用户在当前对话中的明确回复",
+  "implementation_dates": "2026-10-30至2026-10-31",
+  "current_round_runtime": {
+    "agent": {
+      "groups": 40,
+      "turns": 51,
+      "sum_group_seconds": 457.0767,
+      "first_recorded_completion": "2026-10-31T04:03:38.273572+00:00",
+      "last_recorded_completion": "2026-10-31T04:05:26.366441+00:00",
+      "model_requests": 231
+    },
+    "baseline": {
+      "groups": 40,
+      "turns": 51,
+      "sum_group_seconds": 79.9192,
+      "first_recorded_completion": "2026-10-31T04:03:32.798467+00:00",
+      "last_recorded_completion": "2026-10-31T04:03:51.821271+00:00",
+      "model_requests": 51
+    },
+    "stability": {
+      "groups": 30,
+      "turns": 36,
+      "sum_group_seconds": 302.9488,
+      "first_recorded_completion": "2026-10-31T04:05:35.041555+00:00",
+      "last_recorded_completion": "2026-10-31T04:06:43.532320+00:00",
+      "model_requests": 166
+    }
+  },
+  "note": "sum_group_seconds是各组耗时之和，包含并发，不能视为墙钟开发时间或人工工时。历史返修用量见model-usage.jsonl，未把累计模型时间包装成个人工时。"
+}

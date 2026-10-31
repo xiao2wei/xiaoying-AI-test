@@ -1,0 +1,124 @@
+{
+  "key": "stability--STAB-TEST31-R1--1",
+  "mode": "stability",
+  "id": "STAB-TEST31-R1",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "8fce1c51284a6a72302db78543d113e9d0212162f300cd54d8a729a74c3e68d6",
+  "run_sha256": "ac7000540d59fff9d2f96f2806feea61f92bb38f235c225dbb0ecd7b3c384405",
+  "created_at": "2026-10-31T05:16:03.146637+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "17岁的人不能受聘该校临时用工岗位",
+          "reason": "明确表达不可以受聘"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "禁止聘用未满十八周岁的未成年人",
+          "reason": "明确引用禁止聘用未成年人的规定"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "禁止聘用未满十八周岁的未成年人",
+          "answer_span": "禁止聘用未满十八周岁的未成年人",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第八条原文，且实际已读支持"
+        },
+        {
+          "text": "坚持四项基本原则，恪守社会公德",
+          "answer_span": "坚持四项基本原则，恪守社会公德",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第九条条件一，且实际已读支持"
+        },
+        {
+          "text": "年龄一般不得超过男63周岁、女60周岁",
+          "answer_span": "年龄一般不得超过男63周岁、女60周岁",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第九条条件二，且实际已读支持"
+        },
+        {
+          "text": "首次聘用时需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准",
+          "answer_span": "首次聘用时需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第九条条件三，且实际已读支持"
+        },
+        {
+          "text": "具备岗位要求的工作技能，并能坚持正常工作",
+          "answer_span": "具备岗位要求的工作技能，并能坚持正常工作",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用第九条条件四，且实际已读支持"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "回答正确引用办法第八条，明确17岁不能受聘，并补充第九条聘用条件，引用准确，工具操作合理，无严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:15:38.171891+00:00",
+        "attempt": 1,
+        "prompt_sha256": "2a3b9ed0782469557b6c2ac106030d8a1527caf4a13aaa5a6be9f5ea69cfcb83",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "5e7d48ef-26e9-4c0e-9a80-61442d1e6f47",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2358,
+          "completion_tokens": 2471,
+          "total_tokens": 4829,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1900
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 1334
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"17岁的人不能受聘该校临时用工岗位\",\n      \"reason\": \"明确表达不可以受聘\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"明确引用禁止聘用未成年人的规定\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文，且实际已读支持\"\n    },\n    {\n      \"text\": \"坚持四项基本原则，恪守社会公德\",\n      \"answer_span\": \"坚持四项基本原则，恪守社会公德\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条条件一，且实际已读支持\"\n    },\n    {\n      \"text\": \"年龄一般不得超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不得超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条条件二，且实际已读支持\"\n    },\n    {\n      \"text\": \"首次聘用时需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准\",\n      \"answer_span\": \"首次聘用时需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条条件三，且实际已读支持\"\n    },\n    {\n      \"text\": \"具备岗位要求的工作技能，并能坚持正常工作\",\n      \"answer_span\": \"具备岗位要求的工作技能，并能坚持正常工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条条件四，且实际已读支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确引用办法第八条，明确17岁不能受聘，并补充第九条聘用条件，引用准确，工具操作合理，无严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.005795548,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 24.973
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

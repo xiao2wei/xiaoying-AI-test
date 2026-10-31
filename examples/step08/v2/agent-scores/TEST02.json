@@ -1,0 +1,101 @@
+{
+  "id": "TEST02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放",
+            "reason": "答案明确表述满10年按80%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放",
+            "reason": "答案明确表述不满10年按70%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效按80%发放",
+            "reason": "答案将比例限定于岗位工资、薪级工资和基础绩效，未泛化为所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "全年累计请假时间＞6个月且工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。",
+            "answer_span": "全年累计请假时间“＞6个月”时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D20-C009原文包含该待遇表行，且实际已读该部分，支持该事实。"
+          },
+          {
+            "text": "全年累计请假时间＞6个月且工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。",
+            "answer_span": "同一“＞6个月”档，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自同一原文行，实际已读支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了两个比例并限定适用范围，引用和读取均支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:24:24.094891+00:00",
+          "attempt": 1,
+          "prompt_sha256": "92ade5dc1d6fada5f9fe67bebee3d8737113efe662ff0a715b859f1a1649b20e",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "2392b0aa-0eca-48a8-bcf7-c16c8feacb9f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2491,
+            "completion_tokens": 2670,
+            "total_tokens": 5161,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2151
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1467
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放\",\n      \"reason\": \"答案明确表述满10年按80%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放\",\n      \"reason\": \"答案明确表述不满10年按70%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"岗位工资、薪级工资和基础绩效按80%发放\",\n      \"reason\": \"答案将比例限定于岗位工资、薪级工资和基础绩效，未泛化为所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"全年累计请假时间＞6个月且工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放。\",\n      \"answer_span\": \"全年累计请假时间“＞6个月”时，工作年限满10年的，岗位工资、薪级工资和基础绩效按80%发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D20-C009原文包含该待遇表行，且实际已读该部分，支持该事实。\"\n    },\n    {\n      \"text\": \"全年累计请假时间＞6个月且工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放。\",\n      \"answer_span\": \"同一“＞6个月”档，工作年限不满10年的，岗位工资、薪级工资和基础绩效按70%发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自同一原文行，实际已读支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了两个比例并限定适用范围，引用和读取均支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.013861320000000002,
+          "seconds": 23.3987
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5445a607b90f7465bdf44b2bae5ed5ca24ad41a908a9720f8756fa00ceb73aae"
+}

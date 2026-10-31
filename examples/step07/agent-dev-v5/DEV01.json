@@ -1,0 +1,49 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才科研建设专项经费项目从什么时候起算？最长执行多久？期满结余如何处理？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:37.369627+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4abab7d9cb89e1f0eceb9d69e730acdd64d048a65b125560200e363fbe9d5107",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.5348
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.5546,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.5552,
+  "model_calls": 1,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:37.905904+00:00"
+}

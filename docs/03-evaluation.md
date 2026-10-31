@@ -1,0 +1,39 @@
+# 评测方法与当前状态
+
+最新v4已完成40组基准、40组Agent和30次稳定性真实问答，并按用户要求补完56轮未决评分，现为138/138轮有效评分、未决0。Agent36/40、稳定性27/30，原20项门槛14项通过。当前数值见steps/08-v4-completed-results.md；用户已接受本轮指标差距，并对51组56轮复核清单回复“通过”；已记录同意现有判定，原分不变。当前复核结果见examples/step08/v4/human-reviewed-r1/，交付入口见SUBMISSION.md。
+
+## 三层评测
+
+程序只证明结构、来源和运行边界；独立DeepSeek-v4-pro逐项检查答案、证据支持和决策；真人确认校准标签并复核后续重要案例。不能将AI核对写成人工复核。
+
+评分输入包含实际问题与历史、标准要点、原文金标、实际已读资料、最终回答和工具动作摘要；不提供预期总分。输出保留原子事实及每项理由。
+
+## 指标口径
+
+M01在每个预先列出的需检索轮次计算前5候选对必需证据单元的覆盖，先轮次、再场景平均；首个失败或参数错误的检索记0，不挑选后一次成功结果。M02只用实际读取ID，冲突双方分别覆盖。证据单元内是等价ID，多个单元都需要。
+
+M03按整组任务计算，改写组和上下文组全部轮次通过才通过。M04、M05仅用题库事先标为answerable的轮次，先按组汇总；错误拒答记0。M06—08拆分最终回答中原子制度事实，不把同一事实重复计算；错误引用和已读资料无依据分别记录。M09—13按类别独立统计。所有零分母记N/A。
+
+M14结合实际程序测试和逐轮引用检查，任何失败不通过。M15关键缺陷按受影响场景计数并保留具体错误列表。M16固定10场景×3重复，检查ID、重复序号和总数，不能用额外运行替换。M17为全部场景耗时排序的nearest-rank P95，40组取第38项；含重试和工具等待，排除建库与评审。M18/19按整组计算所有实际请求/工具尝试，批量读取每个ID分别计数。
+
+## 早期验证记录（历史状态，非当前验收结论）
+
+- 数据：evaluation/dev.json（12组）与formal.json（40组）；版本及SHA256见manifest.json。
+- 基础RAG：examples/step04/baseline-dev-v1/。
+- Agent首版及修复版：examples/step05/agent-dev-v1/、agent-dev-v2/。
+- 初始AI评分：examples/step06/agent-dev-v2-scores/；其DEV06存在已记录评分误判，不作最终成绩。
+- 修正后评分器：examples/step06/calibration-v2/；人工标签仍未齐备。
+- 计算验证：examples/step06/program-tests.json。
+- 返修依据：docs/defects/EVAL-001.md。
+
+所有正式阈值沿用docs/01-stage-gates.md，不因观测结果改变。没有完整40组对照、30次稳定性和实际人工复核前，不宣称正式达标。
+
+## 人工复核与修订入口
+
+校准标签通过scripts/record_human_labels.py导入，实际回答评分通过policy_agent.reviews导入。模板为evaluation/human-labels.example.json与human-review.example.json，空审核信息会拒绝导入。复核需要真实姓名或用户标识、时间、确认来源、逐题理由和原评分SHA256。
+
+agree只记录确认；correct要求完整修订判据。程序另建结果目录，保留original_ai_judge及原模型调用，原始分数不覆盖，再运行metrics重算；没有人工信息时不能把数值通过标成阶段完成。
+
+## 早期历史结果（非当前有效结论）
+
+最终本步有效结果为examples/step06/agent-report-v6与baseline-report-v6；逐题评分为agent-scores-v6与baseline-scores-v6。评分器校准为calibration-v4（14/14建议标签一致，人工确认未完成）。v5保留真实AI响应；v6对全部结果统一修复连续跨claim的定位程序后复算，AI内容未变。早期分数不用于宣称最终结果。程序检查34/34，未决AI评分0。开发Agent10/12、基准7/12，召回目标等仍未达标，待步骤七返修。

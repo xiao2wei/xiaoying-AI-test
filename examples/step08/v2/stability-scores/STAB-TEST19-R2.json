@@ -1,0 +1,84 @@
+{
+  "id": "STAB-TEST19-R2",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编检索结果未包含食堂WiFi密码或校园无线网络接入账号、密码的规定。",
+            "reason": "实际答案明确声明资料中未包含食堂WiFi密码，满足要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "若仅需当场连接密码，请向食堂管理方或学校网络信息中心确认。",
+            "reason": "答案未编造密码，而是说明证据不足并给出确认途径，符合不能编造的行为要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "答案如实说明资料未包含所需信息，未编造密码，并明确请求用户提供具体文件类型及元数据字段以便进一步核对，状态与决策均合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园网络服务管理办法",
+            "网络接入操作指南",
+            "标题",
+            "版本日期",
+            "适用对象"
+          ],
+          "reason": "明确要求用户提供相关文件类型及元数据字段，可据此进一步核对；未将无依据结论当作答案。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:29:53.567859+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cd5a0ef7081d1326dc8e2bbc7e1e95ee26ed91160003a0fb506bd087f32f2732",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "84aa46b4-c657-47b5-891f-e301e3be34c3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1343,
+            "completion_tokens": 2155,
+            "total_tokens": 3498,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1909
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 319
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"现有制度汇编检索结果未包含食堂WiFi密码或校园无线网络接入账号、密码的规定。\",\"reason\":\"实际答案明确声明资料中未包含食堂WiFi密码，满足要点要求。\"},{\"index\":1,\"met\":true,\"answer_span\":\"若仅需当场连接密码，请向食堂管理方或学校网络信息中心确认。\",\"reason\":\"答案未编造密码，而是说明证据不足并给出确认途径，符合不能编造的行为要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[],\"serious_errors\":[],\"reason\":\"答案如实说明资料未包含所需信息，未编造密码，并明确请求用户提供具体文件类型及元数据字段以便进一步核对，状态与决策均合理。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"校园网络服务管理办法\",\"网络接入操作指南\",\"标题\",\"版本日期\",\"适用对象\"],\"reason\":\"明确要求用户提供相关文件类型及元数据字段，可据此进一步核对；未将无依据结论当作答案。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01030656,
+          "seconds": 20.5115
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "719de2a2e072ee89fedaf4e72647e70d6fcf686e01fa53f127e44ba9a0d0bfb9"
+}

@@ -1,0 +1,102 @@
+{
+  "key": "stability--STAB-TEST36-R2--0",
+  "mode": "stability",
+  "id": "STAB-TEST36-R2",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "61795d05d9088ada0f2e395fcd1797e6889a28768adb9e91f9726fdfe6942260",
+  "run_sha256": "45c97f14d54ccab2d3383b466b633e57919af1ea724ace0e3b3dc2b3ecf17bbd",
+  "created_at": "2026-10-31T05:16:35.891326+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "必须经过专门培训并获得特种作业资格",
+          "reason": "实际答案明确引用了第十二条，并表达了“须经过专门培训并获得特种作业资格”的要求。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+          "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D23-C013的quote直接包含该要求，实际已读记录中存在该条款且内容一致。"
+        },
+        {
+          "text": "签订合同前，临时用工人员须提交职业技术等级或资格证明",
+          "answer_span": "签订合同前，临时用工人员须提交职业技术等级或资格证明",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D23-C016的quote包含第十五条第（四）项，支持该提交义务。"
+        },
+        {
+          "text": "该要求适用于有特殊要求的临时用工岗位",
+          "answer_span": "该项适用于有特殊要求的临时用工岗位",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D23-C016的quote中的“（有特殊要求的临时用工岗位）”表明适用范围。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了问题，引用正确且实际读取记录支持，无严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:16:15.457826+00:00",
+        "attempt": 1,
+        "prompt_sha256": "f0478f4485a92f84b18d155481987e6bbd40be8f13e9fd4f0ed78c417736a202",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "b07a15b2-206a-4912-b387-edb1a615ef9e",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2319,
+          "completion_tokens": 2082,
+          "total_tokens": 4401,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1673
+          },
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 1039
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"实际答案明确引用了第十二条，并表达了“须经过专门培训并获得特种作业资格”的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C013的quote直接包含该要求，实际已读记录中存在该条款且内容一致。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员须提交职业技术等级或资格证明\",\n      \"answer_span\": \"签订合同前，临时用工人员须提交职业技术等级或资格证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016的quote包含第十五条第（四）项，支持该提交义务。\"\n    },\n    {\n      \"text\": \"该要求适用于有特殊要求的临时用工岗位\",\n      \"answer_span\": \"该项适用于有特殊要求的临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016的quote中的“（有特殊要求的临时用工岗位）”表明适用范围。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，引用正确且实际读取记录支持，无严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.004836259999999999,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 20.4316
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

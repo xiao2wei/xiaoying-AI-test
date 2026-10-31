@@ -1,0 +1,101 @@
+{
+  "id": "STAB-TEST02-R2",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "实际答案明确表述满10年按80%发放。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "实际答案明确表述不满10年按70%发放。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "实际答案将比例明确限定于岗位工资、薪级工资和基础绩效，未泛化到所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含该比例及适用条件，且系统已读取该文档。"
+          },
+          {
+            "text": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含该比例及适用条件，且系统已读取该文档。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确回答了2023年请假补充规定中病假累计超过6个月时不同工作年限的发放比例，且明确限定于岗位工资、薪级工资和基础绩效，无错误或遗漏。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:25:27.057738+00:00",
+          "attempt": 1,
+          "prompt_sha256": "04979fa606349cb1a12f33e242f24b745a85f6c3a3ab577ca40aae1fd3968533",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "af4ca670-5b55-4ae7-8b5d-a28e4b4243b8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2482,
+            "completion_tokens": 3984,
+            "total_tokens": 6466,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3491
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1458
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"实际答案明确表述满10年按80%发放。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"reason\": \"实际答案明确表述不满10年按70%发放。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"实际答案将比例明确限定于岗位工资、薪级工资和基础绩效，未泛化到所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含该比例及适用条件，且系统已读取该文档。\"\n    },\n    {\n      \"text\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含该比例及适用条件，且系统已读取该文档。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确回答了2023年请假补充规定中病假累计超过6个月时不同工作年限的发放比例，且明确限定于岗位工资、薪级工资和基础绩效，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01905288,
+          "seconds": 37.6851
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e73a254911e0294f80443838919de1464241d473de2ac41f592b32d86b553164"
+}

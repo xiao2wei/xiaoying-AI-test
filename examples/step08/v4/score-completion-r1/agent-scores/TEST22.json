@@ -1,0 +1,115 @@
+{
+  "id": "TEST22",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "无法直接算出扣款金额：请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径；",
+            "reason": "答案明确说明无法直接算出扣款金额，并请求提供全年累计事假天数和工资构成，表达了缺少这些条件"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法直接算出扣款金额",
+            "reason": "答案明确指出无法直接算出扣款金额，即不能算出唯一金额"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径；若累计≤5日，请提供该档待遇的适用依据。",
+            "reason": "答案明确请求用户补充全年累计事假天数、工资构成等相关信息"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。",
+            "answer_span": "2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该档待遇，且actually_read的D20-C008文本包含相同内容，支持事实"
+          },
+          {
+            "text": "全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。",
+            "answer_span": "全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与事实完全一致，且actually_read的D20-C008文本支持"
+          },
+          {
+            "text": "全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+            "answer_span": "全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与事实完全一致，且actually_read的D20-C008文本支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确识别了无法计算唯一金额的原因，并正确请求补充所需信息，引用的制度条款与原始文档一致，未发现错误或无依据陈述。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "全年累计事假天数",
+            "工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径",
+            "累计≤5日时的待遇适用依据"
+          ],
+          "reason": "答案明确指出了缺少全年累计天数和工资构成等具体信息，并请求用户提供这些字段或依据"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:15:57.944852+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e85baa82939bee8c4f32c6573ecb03fb54dd8f51546acfd09c5cdd0e09bb9228",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "f37990b0-fa9f-4795-8436-653924d5a93d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2958,
+            "completion_tokens": 4225,
+            "total_tokens": 7183,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3400
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1678
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"无法直接算出扣款金额：请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径；\",\n      \"reason\": \"答案明确说明无法直接算出扣款金额，并请求提供全年累计事假天数和工资构成，表达了缺少这些条件\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法直接算出扣款金额\",\n      \"reason\": \"答案明确指出无法直接算出扣款金额，即不能算出唯一金额\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径；若累计≤5日，请提供该档待遇的适用依据。\",\n      \"reason\": \"答案明确请求用户补充全年累计事假天数、工资构成等相关信息\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。\",\n      \"answer_span\": \"2023年补充规定第七条按全年累计事假天数分档确定待遇：全年累计＞5日、≤30日的，奖励绩效按请假实际天数扣发。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该档待遇，且actually_read的D20-C008文本包含相同内容，支持事实\"\n    },\n    {\n      \"text\": \"全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\",\n      \"answer_span\": \"全年累计＞30日、≤60日的，按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与事实完全一致，且actually_read的D20-C008文本支持\"\n    },\n    {\n      \"text\": \"全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。\",\n      \"answer_span\": \"全年累计＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与事实完全一致，且actually_read的D20-C008文本支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确识别了无法计算唯一金额的原因，并正确请求补充所需信息，引用的制度条款与原始文档一致，未发现错误或无依据陈述。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"全年累计事假天数\",\n      \"工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算口径\",\n      \"累计≤5日时的待遇适用依据\"\n    ],\n    \"reason\": \"答案明确指出了缺少全年累计天数和工资构成等具体信息，并请求用户提供这些字段或依据\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00950114,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 36.0605
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a0754afbea9d3a68c7e0dc1845e7ba8b3030be9b345c16e80a4af9b935b84ba2"
+}

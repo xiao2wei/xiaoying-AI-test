@@ -1,0 +1,93 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答中明确表述“项目起始时间从学校审批立项时间算起。”"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答中明确表述“项目执行期限最长一般不得超过4年。”"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答中明确表述“项目执行期满后，结余经费由学校统筹管理。”"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote与原文一致，且该原文已被实际读取。",
+            "answer_span": "项目起始时间从学校审批立项时间算起。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote与原文一致，且该原文已被实际读取。",
+            "answer_span": "项目执行期限最长一般不得超过4年。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote与原文一致，且该原文已被实际读取。",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖了所有必需要点，且每个要点均有正确引用并得到实际读取原文的支持。工具操作合理，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:48.376962+00:00",
+          "attempt": 1,
+          "prompt_sha256": "387251f31c5c6a8dfa2aca73eca1a6a72feff07ae8f19e3b44d7d6b6225b8f11",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "3a59c06d-7244-4be2-aaad-1c4396244dab",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2393,
+            "completion_tokens": 450,
+            "total_tokens": 2843,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1753
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目起始时间从学校审批立项时间算起。”\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目执行期限最长一般不得超过4年。”\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目执行期满后，结余经费由学校统筹管理。”\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote与原文一致，且该原文已被实际读取。\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote与原文一致，且该原文已被实际读取。\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote与原文一致，且该原文已被实际读取。\",\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖了所有必需要点，且每个要点均有正确引用并得到实际读取原文的支持。工具操作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004940760000000001,
+          "seconds": 4.401
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e3bb342b05d93d2e2b6504489c7aca9860d6e93659473f26e5309a0b0e36ebad"
+}

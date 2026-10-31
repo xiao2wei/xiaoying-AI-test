@@ -1,0 +1,42 @@
+# 第三题交付与验收对照
+
+题号：**3，企业知识问答Agent**。仓库：https://github.com/xiao2wei/xiaoying-AI-test 。分支main；最终提交SHA用git rev-parse HEAD查询，并在提交说明中提供。
+
+本项目已具备完整提交材料，六类验收能力均有真实通过案例。正式结果保留已知失败和关键缺陷标记；覆盖验收点不等于所有输入都正确，也不保证评审评分。用户已接受本轮指标差距并确认正式复核清单，原始数值与判定没有更改。
+
+## 交付清单
+
+|考核要求|本项目交付|证据入口|
+|---|---|---|
+|用户、范围、成功标准|教职工人事制度查询；唯一PDF|[需求](01-requirements.md)|
+|可运行CLI与配置|克隆、虚拟环境、依赖、建索引、问答、多轮批处理命令|[README](../README.md)、[配置](../.env.example)|
+|代码与工具|原生Python；search、read；真实DeepSeek动作|[Agent](../src/policy_agent/agent.py)、[工具](../src/policy_agent/tools.py)|
+|回答、ID、原文、缺口、状态|claims/citations、gaps、status、answer，引用附双页码|[正常实际结果](../examples/submission/TEST02.json)|
+|动态循环与至少两条路径|直接回答、发现冲突后补查、无资料改写查询、工具错误后重试|[六类路径](../examples/submission/README.md)|
+|执行上限|12轮决策、10次工具尝试，失败和每次批量读取均计数|[真实限额退出](../examples/step08/v4/agent-runs/TEST40.json)|
+|六个必验收点|TEST02、13、19、26、31、36，均有输入/输出/Trace|[示例目录](../examples/submission/README.md)|
+|替换资料后的行为|同一问题切换唯一PDF中的可见制度范围，真实模型输出改变|[扰动结果](../examples/submission/evidence-change/summary.json)|
+|可执行测试|61/61，含检索、引用、预算、模型故障、评测公式等|[新环境测试](../examples/submission/reproduction/program-tests.json)|
+|离线Mock边界|单独演示三条预设流程；不计入任何模型质量分数|[入口](../scripts/demo_offline.py)、[离线结果](../examples/submission/offline-mock/summary.json)|
+|资料与版本日期|原PDF、29份制度、562片段、61表；日期未知则明示|[数据说明](../data/README.md)|
+|方案、效果、失败和学习|五份要求文档及每步记录|[方案](02-solution.md)、[评估](03-evaluation.md)、[AI使用](04-ai-usage.md)、[复盘](05-retrospective.md)|
+|真实AI评测与人工记录|16标签校准；138轮有效评分；51组56轮用户批量确认|[人工覆盖](../examples/step08/v4/human-reviewed-r1/human-review-coverage.json)|
+|实际用时|用户个人工时“未计时”；机器运行时长另列|[用时记录](../examples/submission/time-record.json)|
+|凭据与隐私|.env、模型缓存和账户余额响应排除；提交文件密钥扫描|[交付检查](../examples/submission/submission-check.json)|
+|GitHub可读性|公开仓库，无需另加评审账号；提供最终SHA|[仓库](https://github.com/xiao2wei/xiaoying-AI-test)|
+
+## 质量结果与保留限制
+
+- Agent36/40，基础RAG34/40，稳定性27/30。Recall@5为95.83%，最终证据覆盖97.14%；P95为18.55秒。
+- 正式未通过TEST11、TEST18、TEST21、TEST25；稳定性另有3次失败。引用支持99.04%、无依据事实0.48%，3个关键缺陷场景标记保留。
+- 原20项门槛14项通过；项目负责人明确接受当前差距，未把未达标数值改成达标。完整数值见[本轮结果](steps/08-v4-completed-results.md)。
+- 正式题库已用于返修，当前成绩是回归结果。未验证任意新PDF整套自动切分；资料变化测试只改变同一PDF内可见制度。
+- 使用用户提供的真实制度汇编而非合成制度；合成测试问题与故障配置清楚标识。不将大学制度当作当前普遍有效政策。
+
+## 可复现性与新增验证
+
+在无项目.env的隔离副本、全新Python虚拟环境中安装实际版本依赖，pip check通过；重新构建向量索引，61项测试通过，CLI、离线Mock和真实检索成功。为避免重新下载相同嵌入模型，复用了已有模型文件并记录SHA-256；未复用向量索引。这个验证不声称测试了首次模型下载的网络可靠性。
+
+首次复现发现原README在构建索引前运行集成测试，已修正安装顺序；失败尝试和修复记录保留。正式问答算法与原候选受控文件未更改，交付仅增加演示、核验脚本、依赖约束和文档。新证据变化测试共2次真实Agent任务、12个模型请求，单独统计；其余交付核验没有新增DeepSeek请求。
+
+不需要界面、线上部署、多Agent或生产Runtime，这些未实现且不作为本题缺失交付项。提交历史、材料与日志位于同一仓库；最终提交SHA由Git提供，避免在提交内容中写入其自身SHA。

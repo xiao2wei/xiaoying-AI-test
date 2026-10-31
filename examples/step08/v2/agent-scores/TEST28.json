@@ -1,0 +1,218 @@
+{
+  "id": "TEST28",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "reason": "实际回答明确表述了不低于1:200的师生比设置专职辅导员岗位，符合要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010的quote包含该事实，且实际读取的原文支持。"
+          },
+          {
+            "text": "依据专兼结合、以专为主的原则足额配备到位",
+            "answer_span": "依据专兼结合、以专为主的原则足额配备到位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010的quote包含该事实，且实际读取的原文支持。"
+          },
+          {
+            "text": "辅导员编制按1:200的师生比核定",
+            "answer_span": "辅导员编制按1:200的师生比核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote包含该事实，且实际读取的原文支持。"
+          },
+          {
+            "text": "按专业技术岗或管理岗设置编制",
+            "answer_span": "按专业技术岗或管理岗设置编制",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote包含该事实，且实际读取的原文支持。"
+          },
+          {
+            "text": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "answer_span": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote包含该事实，且实际读取的原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了专职辅导员岗位的师生比设置要求，引用了两个相关制度文件，内容一致且均有原文支持。要点完全满足，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:32:21.288919+00:00",
+          "attempt": 1,
+          "prompt_sha256": "24a4545c0e0b38989bf67e9877168766e19d989bb4ebfd26e7525ad48fa9d8c7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "d5e73734-bd6c-4f2a-8560-a2ff9740ccd8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3479,
+            "completion_tokens": 2411,
+            "total_tokens": 5890,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1818
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2455
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"reason\": \"实际回答明确表述了不低于1:200的师生比设置专职辅导员岗位，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010的quote包含该事实，且实际读取的原文支持。\"\n    },\n    {\n      \"text\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"answer_span\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010的quote包含该事实，且实际读取的原文支持。\"\n    },\n    {\n      \"text\": \"辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote包含该事实，且实际读取的原文支持。\"\n    },\n    {\n      \"text\": \"按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote包含该事实，且实际读取的原文支持。\"\n    },\n    {\n      \"text\": \"按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"answer_span\": \"按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote包含该事实，且实际读取的原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了专职辅导员岗位的师生比设置要求，引用了两个相关制度文件，内容一致且均有原文支持。要点完全满足，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01413984,
+          "seconds": 23.0136
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校按照师生比不低于1:200的比例设置专职辅导员岗位",
+            "reason": "实际回答明确表述了按师生比不低于1:200设置专职辅导员岗位，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "辽宁科技大学辅导员队伍建设实施办法（试行）第九条规定学校按照师生比不低于1:200的比例设置专职辅导员岗位",
+            "answer_span": "学校按照师生比不低于1:200的比例设置专职辅导员岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010的quote明确包含该内容，且actually_read中包含该chunk，支持事实。"
+          },
+          {
+            "text": "辽宁科技大学辅导员队伍建设实施办法（试行）第九条规定依据专兼结合、以专为主的原则足额配备到位",
+            "answer_span": "并依据专兼结合、以专为主的原则足额配备到位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C010的quote包含该原则，且actually_read支持。"
+          },
+          {
+            "text": "辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定辅导员编制按1:200的师生比核定",
+            "answer_span": "辅导员编制按1:200的师生比核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote明确包含该内容，且actually_read支持。"
+          },
+          {
+            "text": "辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定辅导员编制按专业技术岗或管理岗设置编制",
+            "answer_span": "按专业技术岗或管理岗设置编制",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote明确包含该内容，且actually_read支持。"
+          },
+          {
+            "text": "辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "answer_span": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D13-C007的quote明确包含该内容，且actually_read支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了问题，提供了明确的师生比要求，并有可靠引用支持。结果状态为answered，决策合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:33:46.675605+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4ef9f9ac592f43254b9b6d4296c9ccf4e596af52bffdd70109c67c7502286b97",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1b47adb4-f599-4ecb-85d5-5bfaad86bd5b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3538,
+            "completion_tokens": 2780,
+            "total_tokens": 6318,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2124
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2514
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按照师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"reason\": \"实际回答明确表述了按师生比不低于1:200设置专职辅导员岗位，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学辅导员队伍建设实施办法（试行）第九条规定学校按照师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按照师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010的quote明确包含该内容，且actually_read中包含该chunk，支持事实。\"\n    },\n    {\n      \"text\": \"辽宁科技大学辅导员队伍建设实施办法（试行）第九条规定依据专兼结合、以专为主的原则足额配备到位\",\n      \"answer_span\": \"并依据专兼结合、以专为主的原则足额配备到位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010的quote包含该原则，且actually_read支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote明确包含该内容，且actually_read支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定辅导员编制按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote明确包含该内容，且actually_read支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学岗位设置与聘用管理实施办法（2022年版）第六条规定按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"answer_span\": \"按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007的quote明确包含该内容，且actually_read支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，提供了明确的师生比要求，并有可靠引用支持。结果状态为answered，决策合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01567896,
+          "seconds": 24.57
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "6b459a46a65eaa81424782aa9c9264de5cb32faa21c5aa7571ae261d640e0453"
+}

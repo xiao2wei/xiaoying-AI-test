@@ -1,0 +1,125 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "reason": "实际回答明确表述了该要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "reason": "实际回答明确表述了该要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "结余经费由学校统筹管理",
+            "reason": "实际回答明确表述了该要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起",
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用和已读原文均支持该事实。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年",
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用和已读原文均支持该事实。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理",
+            "answer_span": "结余经费由学校统筹管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用和已读原文均支持该事实。"
+          },
+          {
+            "text": "项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。",
+            "answer_span": "项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用和已读原文均支持该事实。"
+          },
+          {
+            "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批；批准延期的项目须按时提交年度进展报告参加年度考核。",
+            "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批；批准延期的项目须按时提交年度进展报告参加年度考核。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用和已读原文均支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了所有要求要点，提供了正确的制度依据和细节，引用支持且已读原文匹配，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:15:25.299048+00:00",
+          "attempt": 1,
+          "prompt_sha256": "94e1c3d8ae920d15c4c54ef903cef7e29c379ded86428dafeb93bdb685af6818",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5407a7b8-858a-4d46-82cb-0d9007eb140a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2902,
+            "completion_tokens": 3255,
+            "total_tokens": 6157,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2453
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1878
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"reason\": \"实际回答明确表述了该要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"reason\": \"实际回答明确表述了该要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"结余经费由学校统筹管理\",\n      \"reason\": \"实际回答明确表述了该要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用和已读原文均支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用和已读原文均支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"answer_span\": \"结余经费由学校统筹管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用和已读原文均支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。\",\n      \"answer_span\": \"项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用和已读原文均支持该事实。\"\n    },\n    {\n      \"text\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批；批准延期的项目须按时提交年度进展报告参加年度考核。\",\n      \"answer_span\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批；批准延期的项目须按时提交年度进展报告参加年度考核。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用和已读原文均支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了所有要求要点，提供了正确的制度依据和细节，引用支持且已读原文匹配，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01672044,
+          "seconds": 25.6227
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step07\\agent-dev-v9-scores\\DEV01.json",
+      "new_judge_requests": 0
+    }
+  ],
+  "pass": true,
+  "run_sha256": "070e40d0e2d7b1544a9126ff3be3164ae5fbdcccdee33a65f5fc0dd7ce9879b3"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "reason": "实际回答明确5000元档由项目负责人签字。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "reason": "实际回答明确1万元档由项目负责人和二级教学科研机构负责人签字。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未提及报销经费须符合经费预算及使用范围这一前提，缺少该必需要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "answer_span": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用D03-C013第十二条第1款，quote明确5000元以下（含5000元）由项目负责人签字报销，已读原文一致。"
+          },
+          {
+            "text": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "answer_span": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用D03-C013第十二条第2款，quote明确1万元属于该档并由项目负责人和二级教学科研机构负责人签字报销，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确给出两个档位签字人，但遗漏了报销须符合经费预算及使用范围这一前提，导致答案不完整；实际给出的两项事实均有引用且与已读原文一致，未发现无依据错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:24:52.779910+00:00",
+          "attempt": 1,
+          "prompt_sha256": "316d2e6d4bc1520691575a282d80f48a7ceacb2e17a9a449a8abd19bf3a4863c",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ee7ef214-661c-4e55-b7ab-2e32b142435e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2542,
+            "completion_tokens": 4423,
+            "total_tokens": 6965,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3808
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 110
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\n      \"reason\": \"实际回答明确5000元档由项目负责人签字。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"reason\": \"实际回答明确1万元档由项目负责人和二级教学科研机构负责人签字。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"实际回答未提及报销经费须符合经费预算及使用范围这一前提，缺少该必需要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\n      \"answer_span\": \"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用D03-C013第十二条第1款，quote明确5000元以下（含5000元）由项目负责人签字报销，已读原文一致。\"\n    },\n    {\n      \"text\": \"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"answer_span\": \"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用D03-C013第十二条第2款，quote明确1万元属于该档并由项目负责人和二级教学科研机构负责人签字报销，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确给出两个档位签字人，但遗漏了报销须符合经费预算及使用范围这一前提，导致答案不完整；实际给出的两项事实均有引用且与已读原文一致，未发现无依据错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.020870519999999997,
+          "seconds": 41.6121
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "8e82cd0654ed3d7a5eac40d235b7781bb5bb1fc5e088a24eb2c4280a14e35da5"
+}

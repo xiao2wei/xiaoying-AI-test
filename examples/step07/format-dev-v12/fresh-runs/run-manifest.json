@@ -1,0 +1,24 @@
+{
+  "dataset_sha256": "f29f8e5682f12928d3c7d0263f35c7fd56c5f3cb16855d28236ddf1c53e55af1",
+  "mode": "agent",
+  "ids": [
+    "DEV03",
+    "DEV06"
+  ],
+  "created_at": "2026-10-31T03:45:11.952062+00:00",
+  "workers": 3,
+  "index": {
+    "corpus_sha256": "8f6d97047933f4fcf9efbe9f0143a196a1a92a96466eaf1f3b0489dcf15ee17f",
+    "model": "BAAI/bge-small-zh-v1.5",
+    "window_count": 1138,
+    "chunk_count": 562,
+    "dimensions": 512,
+    "seconds": 45.1228420999978,
+    "config": {
+      "window_chars": 330,
+      "stride": 260,
+      "fusion": "RRF20 lexical+dense",
+      "top_k": 5
+    }
+  }
+}

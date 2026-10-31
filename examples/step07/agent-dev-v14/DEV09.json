@@ -1,0 +1,589 @@
+{
+  "id": "DEV09",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校全校范围的荣休仪式通常在几月举行？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "ValueError"
+        ],
+        "answer": "ValueError"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工荣休工作办法》（辽科大校发〔2022〕56号附件，2022年10月31日）规定：学校每年12月份组织一次全校范围的退休教职工荣休仪式；仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          },
+          {
+            "text": "二级单位层面则要求“适时”开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式，未规定固定月份。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          }
+        ],
+        "gaps": []
+      },
+      "validation_errors": [
+        "document_number_not_in_cited_quote:〔2022〕56号"
+      ],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:28.945325+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3bb2ad1d48d071ac8d58fd4b6594925418a50860a2b7981b5be4509ffe759671",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "29f9eba3-004a-4ce9-a625-480f10fedf75",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2716,
+            "completion_tokens": 73,
+            "total_tokens": 2789,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 284
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00018739199999999998,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_JEwkof03wgZi1wuC8WVL9659",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"全校范围荣休仪式 举行时间 月份\", \"doc_ids\": []}, \"reason\": \"查找荣休仪式举办时间的规定\"}}"
+              }
+            }
+          ],
+          "seconds": 0.9789
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "全校范围荣休仪式 举行时间 月份",
+            "doc_ids": []
+          },
+          "reason": "查找荣休仪式举办时间的规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "全校范围荣休仪式 举行时间 月份",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "全校范围荣休仪式 举行时间 月份",
+            "hits": [
+              {
+                "chunk_id": "D29-C001",
+                "doc_id": "D29",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "version_date": "2022-10-31",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.698333,
+                "lexical_score": 57.1108,
+                "excerpt": "辽宁科技大学教职工荣休工作办法 前言或附件 辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C010",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第九条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  169
+                ],
+                "printed_pages": [
+                  164
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.536232,
+                "lexical_score": 8.2634,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第九条 第九条 生育假的范围及期限\n（一）产前检查及孕期工间休息假：怀孕女教职工在工作时间内做产前检查，检查\n时间视为工作时间，原则上每月不超过4次；怀孕7个月以上的，每天可以有1小时工\n间休息。\n（二）产假：正常生育者给予产假158日，其中产前可以休假15日。难产者增加产\n假15日；生育多胞胎的，每多生育1个婴儿，增加产假15日。配偶享有护理假15日。\n女教职工怀孕未满4个月流产的，享受15天产假；怀孕满4个月流产的，享受42天\n产假。\n（三）哺乳假：有不满1周岁婴儿的女教职工，每日给予1小时哺乳时间。生育多\n胞胎者，每多哺乳1个婴儿，每次哺乳时间增加1小时。\n（四）其他计划生育相关法律法规规定应享受生育假情况。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D09-C010",
+                "doc_id": "D09",
+                "title": "辽宁科技大学班主任队伍建设实施细则（试行）",
+                "article": "第九条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  37
+                ],
+                "printed_pages": [
+                  32
+                ],
+                "score": 0.071795,
+                "semantic_score": 0.519233,
+                "lexical_score": 6.835,
+                "excerpt": "辽宁科技大学班主任队伍建设实施细则（试行） 第九条 第九条 班主任实行岗位聘任制，每学年聘任一次。班主任的工作量按每年32\n学时核定。各学院应在每年7月份前完成聘任，班主任名单和基本情况由学院于每年\n8月31日前报人事处、党委学生工作部和教务处备案。\n第四章 发展与培训",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C012",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十一条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173,
+                  174
+                ],
+                "printed_pages": [
+                  168,
+                  169
+                ],
+                "score": 0.068765,
+                "semantic_score": 0.528413,
+                "lexical_score": 5.5483,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十一条 第十一条 符合法律法规规定生育子女的女教职工产前检查、产假、哺乳假及男\n教工护理假具体要求及待遇如下：\n（一）孕期女教职工在工作时间做产前检查，所需时间计入工作时间。怀孕不满3\n个月且妊娠反应严重，或怀孕7个月以上的，在每日工作时间内享有不少于1小时的\n休息时间。\n（二）产假共158日，其中产前可休假15日。难产的增加产假15日；生育多胞胎\n的，每多生育1个婴儿，增加产假15日。女教职工怀孕未满4个月流产的，享受15日\n产假；怀孕满4个月流产的，享受42日产假。\n（三）产假期满，可请哺乳假至婴儿满1周岁，哺乳假每日1小时。生育多胞胎的，\n每多哺乳1个，哺乳假每日增1小时。\n（四）女教职工怀孕需保胎休息的，可按本办法第八条规定请病假，其中产前15日\n可计",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D18-C003",
+                "doc_id": "D18",
+                "title": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见",
+                "article": "前言或附件",
+                "version_date": "2021-03-18",
+                "pdf_pages": [
+                  165,
+                  166
+                ],
+                "printed_pages": [
+                  160,
+                  161
+                ],
+                "score": 0.064312,
+                "semantic_score": 0.536478,
+                "lexical_score": 4.9773,
+                "excerpt": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见 前言或附件 园，将尊师重\n教观念渗透进学生的价值体系。做好教师从教30年表奖和荣休工作，礼敬教师，弘扬\n尊师风尚。建立健全教职工代表大会制度，保障教师参与学校决策的民主权利。健\n全家校联系制度，引导家长尊重学校教育安排，尊敬教师创造发挥，配合学校做好学\n生的学习教育。\n17.强化多方联动，营造尊师重教氛围。加强展现新时代教师风貌的作品创作，善\n用微博、微信、微视频等新媒体形式，传递教师正能量。各单位要广泛利用校报校刊、",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0076,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:29.967300+00:00",
+          "attempt": 1,
+          "prompt_sha256": "af5cc280a7f0d8c86a1d41eab628b38ef88db35fac1963beb215e0107972c596",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "0ca9059b-89d8-4a60-bcda-6d7ae9493851",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4330,
+            "completion_tokens": 73,
+            "total_tokens": 4403,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 1642
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000596328,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_68vlu1x6rdrpmJTxPm2l6786",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D29-C001\"]}, \"reason\": \"读取荣休工作办法原文，核实全校荣休仪式时间及组织要求\"}}"
+              }
+            }
+          ],
+          "seconds": 0.9336
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D29-C001"
+            ]
+          },
+          "reason": "读取荣休工作办法原文，核实全校荣休仪式时间及组织要求"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D29-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D29",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转达校党委的深切关怀，肯定教职工的工作成绩，感谢教职工在各自岗位上为学\n校建设与发展做出的长期贡献，引导调整心态，听取意见建议，送上诚挚祝福和美好\n祝愿，让退休教职工感受到关心与温暖。\n制作退休服务手册。离退休工作处应为退休教职工制作《退休教职工服务手\n册》，包含退休教职工工作有关政策、学习活动平台介绍、生活服务平台介绍、看病就\n医指南等内容，为他们退休后的生活提供指导。\n开展辅导讲座培训。离退休工作处要适时组织开展专门辅导，帮助新退休教职\n工更新知识、促进身心健康，鼓励退休教职工根据兴趣爱好体验新角色、享受新生活、\n展示新风采、带动新风气。\n三、发挥退休教职工传帮带作用\n组织引导发挥作用。学校组织的新教师入职、岗前培训、教师节庆祝会和“双代\n会”等活动，可邀请退休教职工代表参加。退休教职工结合自身教学、科研或管理服\n务等岗位的工作经历，分享从事教育事业的经验和感受，对在职教师提出寄语和希\n望，积极参加关心下一代工作委员会工作，力所能及地为党的教育事业继续做贡献。\n离退休工作处要注意发现和培育退休教职工中的先进典型，广泛宣传他们的先\n进事迹，营造全社会尊老敬老爱老的良好氛围。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                229
+              ],
+              "table_ids": [],
+              "chunk_id": "D29-C001",
+              "printed_pages": [
+                224
+              ],
+              "title": "辽宁科技大学教职工荣休工作办法",
+              "version_date": "2022-10-31",
+              "previous_chunk_id": null,
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:30.934509+00:00",
+          "attempt": 1,
+          "prompt_sha256": "56e755db28dbeb1b5cd48eed69b5e8143a0f073e27035631da1f75df03e0a2d7",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "2ecda095-d65b-4b88-87f1-204481793f78",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5181,
+            "completion_tokens": 344,
+            "total_tokens": 5525,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 957
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.0007252439999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_zyGLE7WjMwy9UAh6A5Wr1529",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》（辽科大校发〔2022〕56号附件，2022年10月31日）规定：学校每年12月份组织一次全校范围的退休教职工荣休仪式；仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\"}]}, {\"text\": \"二级单位层面则要求“适时”开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式，未规定固定月份。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式。\"}]}], \"gaps\": []}, \"reason\": \"已读取原文，明确全校荣休仪式为每年12月，并区分二级单位“适时”组织\"}}"
+              }
+            }
+          ],
+          "seconds": 1.9991
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取原文，明确全校荣休仪式为每年12月，并区分二级单位“适时”组织"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:32.967852+00:00",
+          "attempt": 1,
+          "prompt_sha256": "928657978d1aa1bcaf539625da343e01145a70b51cbee4bfc607ae5c78dae467",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "04819887-bfb9-479b-abdd-40d0e83fa9c8",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5641,
+            "completion_tokens": 388,
+            "total_tokens": 6029,
+            "prompt_tokens_details": {
+              "cached_tokens": 5120
+            },
+            "prompt_cache_hit_tokens": 5120,
+            "prompt_cache_miss_tokens": 521
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.0006526199999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_OofrrPk1aKcsDRiNNcbO4656",
+              "type": "function",
+              "function": {
+                "name": "finish",
+                "arguments": "{\"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》（辽科大校发〔2022〕56号附件，2022年10月31日）规定：学校每年12月份组织一次全校范围的退休教职工荣休仪式；仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"（辽科大校发〔2022〕56号附件·2022年10月31日）\"}, {\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\"}]}, {\"text\": \"二级单位层面则要求“适时”开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式，未规定固定月份。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式。\"}]}], \"gaps\": []}, \"reason\": \"已读取原文，明确全校荣休仪式为每年12月，并区分二级单位“适时”组织；文号引用已单独对应原文\"}"
+              }
+            }
+          ],
+          "error": "ValueError",
+          "seconds": 1.9349
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:34.903019+00:00",
+          "attempt": 2,
+          "prompt_sha256": "928657978d1aa1bcaf539625da343e01145a70b51cbee4bfc607ae5c78dae467",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "7397fcd2-2665-4890-a4ea-28f10805cb25",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5641,
+            "completion_tokens": 388,
+            "total_tokens": 6029,
+            "prompt_tokens_details": {
+              "cached_tokens": 5504
+            },
+            "prompt_cache_hit_tokens": 5504,
+            "prompt_cache_miss_tokens": 137
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.0005397239999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_JwGNVPq7i67gOwxTAVyc9814",
+              "type": "function",
+              "function": {
+                "name": "finish",
+                "arguments": "{\"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》（辽科大校发〔2022〕56号附件，2022年10月31日）规定：学校每年12月份组织一次全校范围的退休教职工荣休仪式；仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"（辽科大校发〔2022〕56号附件·2022年10月31日）\"}, {\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\"}]}, {\"text\": \"二级单位层面则要求“适时”开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式，未规定固定月份。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围内组织荣休仪式。\"}]}], \"gaps\": []}, \"reason\": \"已读取原文，明确全校荣休仪式为每年12月，并区分二级单位“适时”组织；文号引用已单独对应原文\"}"
+              }
+            }
+          ],
+          "error": "ValueError",
+          "seconds": 2.0303
+        }
+      ],
+      "read_ids": [
+        "D29-C001"
+      ],
+      "first_hits": [
+        "D29-C001",
+        "D19-C010",
+        "D09-C010",
+        "D20-C012",
+        "D18-C003"
+      ],
+      "seconds": 8.0226,
+      "model_calls": 5,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那人事处要提前多久通知退休时间和程序？",
+      "history": [
+        {
+          "role": "user",
+          "content": "学校全校范围的荣休仪式通常在几月举行？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"model_error\", \"claims\": [], \"gaps\": [\"ValueError\"], \"answer\": \"ValueError\"}"
+        }
+      ],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:36.968698+00:00",
+          "attempt": 1,
+          "prompt_sha256": "085bd8833285dd8c93fd00e580244353a48a2bbea502d1b9263e60b9a4a03171",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool",
+          "http_status": 200,
+          "response_id": "8ca8e51e-f89d-45fd-8538-3411fded45d2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2757,
+            "completion_tokens": 93,
+            "total_tokens": 2850,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 325
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.000223692,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_Qdoaz48GDIc7PvJqAKC35516",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"荣休仪式 退休时间 程序 人事处 提前通知\", \"doc_ids\": []}, \"reason\": \"查找荣休仪式及退休通知程序相关条款\"}, \"reason\": \"检索荣休仪式与退休通知程序\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 0.9162
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:55:37.885106+00:00",
+          "attempt": 2,
+          "prompt_sha256": "085bd8833285dd8c93fd00e580244353a48a2bbea502d1b9263e60b9a4a03171",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "strict_action_tool_retry",
+          "http_status": 200,
+          "response_id": "14b52621-ac85-45e1-a8e4-9a69bd963b02",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2757,
+            "completion_tokens": 96,
+            "total_tokens": 2853,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 197
+          },
+          "content": "",
+          "finish_reason": "tool_calls",
+          "estimated_usd_upper_bound": 0.00018965999999999997,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "structured_tool_calls": [
+            {
+              "index": 0,
+              "id": "call_00_kBDB9hkwvT4zkDugJ90j6024",
+              "type": "function",
+              "function": {
+                "name": "submit_action",
+                "arguments": "{\"decision\": {\"action\": \"search\", \"arguments\": {\"query\": \"荣休仪式 退休 人事处 提前通知 时间 程序\", \"doc_ids\": []}, \"reason\": \"检索荣休仪式及退休通知程序相关条款\"}, \"reason\": \"检索荣休仪式及退休通知程序相关条款\"}}"
+              }
+            }
+          ],
+          "error": "JSONDecodeError",
+          "seconds": 1.0898
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.041,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 10.0641,
+  "model_calls": 7,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T03:55:38.975957+00:00"
+}

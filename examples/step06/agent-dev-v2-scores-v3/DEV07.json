@@ -1,0 +1,152 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确写出“应提前一个月向所在学院提出书面申请”，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确写出“并做好学生档案资料及相关工作的交接”，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实明确引用D08-C016，引用内容与实际读取的第十五条原文一致，支持该事实。",
+            "answer_span": "申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖两个必需要点，引用与读取证据一致，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:23.135881+00:00",
+          "attempt": 1,
+          "prompt_sha256": "be5cfa6d8d6e1a597864d370951e2e30776eefd5481addd7cc7703eedbd0ea13",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "0d79f623-d5af-43d7-b3b1-61e68b7a8eff",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1312,
+            "completion_tokens": 274,
+            "total_tokens": 1586,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 672
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“应提前一个月向所在学院提出书面申请”，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“并做好学生档案资料及相关工作的交接”，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用D08-C016，引用内容与实际读取的第十五条原文一致，支持该事实。\",\n      \"answer_span\": \"申请不再担任兼职辅导员，应提前一个月向所在学院提出书面申请，并做好学生档案资料及相关工作的交接。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖两个必需要点，引用与读取证据一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00281688,
+          "seconds": 2.723
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确写出“应提前一个月提出”且“告知对象是所在学院，且必须采用书面申请形式”，覆盖了提前一个月向所在学院书面申请的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确写出“提出申请的同时还应做好学生档案资料及相关工作的交接”，覆盖了做好学生档案资料及工作交接的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员，应提前一个月提出。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第十五条原文明确包含“提前一个月”，且实际读取了该条款，支持该事实。",
+            "answer_span": "申请不再担任兼职辅导员，应提前一个月提出。"
+          },
+          {
+            "text": "告知对象是所在学院，且必须采用书面申请形式，口头说明不够。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第十五条原文明确包含“向所在学院提出书面申请”，且实际读取了该条款，支持该事实。",
+            "answer_span": "告知对象是所在学院，且必须采用书面申请形式，口头说明不够。"
+          },
+          {
+            "text": "提出申请的同时还应做好学生档案资料及相关工作的交接。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第十五条原文明确包含“做好学生档案资料及相关工作的交接”，且实际读取了该条款，支持该事实。",
+            "answer_span": "提出申请的同时还应做好学生档案资料及相关工作的交接。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖了所有必需要点，引用了正确的条款并实际读取了证据，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:25.864662+00:00",
+          "attempt": 1,
+          "prompt_sha256": "33d325e43345fd6d161b73f18affa93a51cee78d44497835c6ba28ca2a3a5dbe",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "badaf74c-acca-4400-909e-01bc9f0fbfd5",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1536,
+            "completion_tokens": 480,
+            "total_tokens": 2016,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 896
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“应提前一个月提出”且“告知对象是所在学院，且必须采用书面申请形式”，覆盖了提前一个月向所在学院书面申请的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“提出申请的同时还应做好学生档案资料及相关工作的交接”，覆盖了做好学生档案资料及工作交接的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员，应提前一个月提出。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第十五条原文明确包含“提前一个月”，且实际读取了该条款，支持该事实。\",\n      \"answer_span\": \"申请不再担任兼职辅导员，应提前一个月提出。\"\n    },\n    {\n      \"text\": \"告知对象是所在学院，且必须采用书面申请形式，口头说明不够。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第十五条原文明确包含“向所在学院提出书面申请”，且实际读取了该条款，支持该事实。\",\n      \"answer_span\": \"告知对象是所在学院，且必须采用书面申请形式，口头说明不够。\"\n    },\n    {\n      \"text\": \"提出申请的同时还应做好学生档案资料及相关工作的交接。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第十五条原文明确包含“做好学生档案资料及相关工作的交接”，且实际读取了该条款，支持该事实。\",\n      \"answer_span\": \"提出申请的同时还应做好学生档案资料及相关工作的交接。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖了所有必需要点，引用了正确的条款并实际读取了证据，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00392832,
+          "seconds": 5.4407
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "5c97f041ae8a17233d7609370a628af99ab110208075b2a97c1dc501ba2afe28"
+}

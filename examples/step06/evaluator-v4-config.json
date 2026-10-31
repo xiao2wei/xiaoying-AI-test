@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-10-30T15:16:54.916Z",
+  "judge_model": "deepseek-v4-pro",
+  "thinking": "enabled",
+  "max_output_tokens": 10000,
+  "answer_model": "deepseek-flash",
+  "answer_thinking": "disabled",
+  "hashes": {
+    "src/policy_agent/model.py": "35bfcc27937b50398b0582bf5a78fcea70a0469daf8bab631d739f161a97f1c7",
+    "src/policy_agent/evaluation.py": "981a5280a5c2b628c7b2fe3c97b0217d9827e4ab3b4e49465381152693cdce7f",
+    "src/policy_agent/metrics.py": "455b265da66386b37a6866938f0f852104d510b61e1e5904160dad56b92a7eb9",
+    "src/policy_agent/prompts/judge.txt": "a3c6ce1af6e93075def6979853384f175c02f8118dce2be02e6ae69e169dde98",
+    "evaluation/calibration.json": "d71fc9be942f3eb35e7f2c39119d1f77e5ebaa66b8a89c9bb731c116b36317e4",
+    "evaluation/dev.json": "f29f8e5682f12928d3c7d0263f35c7fd56c5f3cb16855d28236ddf1c53e55af1"
+  },
+  "internal_reasoning_saved": false,
+  "scope": "开发与评分器校准；正式集尚未运行"
+}

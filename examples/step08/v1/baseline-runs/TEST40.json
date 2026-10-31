@@ -1,0 +1,93 @@
+{
+  "id": "TEST40",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "作风问题处理决定形成后多久告知当事人？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度文件（如作风建设/问责处理办法）的原文或文号、版本日期，以便据此作答。"
+        ],
+        "answer": "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度文件（如作风建设/问责处理办法）的原文或文号、版本日期，以便据此作答。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度文件（如作风建设/问责处理办法）的原文或文号、版本日期，以便据此作答。"
+        ],
+        "answer": "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度文件（如作风建设/问责处理办法）的原文或文号、版本日期，以便据此作答。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "作风问题处理决定形成后多久告知当事人？"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:56.493095+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c66313caa34588fa45a5e73a37c7eebd4f9928acffe2af005db538056ec10bd0",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "4eb613d4-b44e-4302-bb56-b1e494d412c5",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 614,
+            "completion_tokens": 93,
+            "total_tokens": 707,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 230
+          },
+          "content": "{\"status\":\"tool_error\",\"claims\":[],\"gaps\":[\"检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度文件（如作风建设/问责处理办法）的原文或文号、版本日期，以便据此作答。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0002958,
+          "seconds": 1.365
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.3741,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "TEMPORARY_UNAVAILABLE",
+        "max_tools": 2
+      }
+    }
+  ],
+  "seconds": 1.3741,
+  "model_calls": 1,
+  "tool_calls": 1,
+  "created_at": "2026-10-31T02:11:57.859176+00:00"
+}

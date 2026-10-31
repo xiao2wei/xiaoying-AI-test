@@ -1,0 +1,56 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:27:40.230997+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d46a11d5559f8f3b784949af5c9c492a6edcc977cc398f13c5a1ae135ebe7c0f",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4156
+        }
+      ],
+      "judge_error": "ModelError:HTTP_402",
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:27:40.668298+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c4872cc53e6ca5aba43b050be4f2dc139cf2409db23b4eedcedaefdfba673a2a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4111
+        }
+      ],
+      "judge_error": "ModelError:HTTP_402",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "d52bbad797667dccce8f6f2632fe0565f58c062a89c07c9af8bb3015dff13224"
+}

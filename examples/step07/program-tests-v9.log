@@ -1,0 +1,67 @@
+0 True None
+1 True None
+2 True None
+3 True None
+4 True None
+5 True None
+6 False None
+7 False None
+8 False None
+9 False None
+10 False None
+11 False HTTP_402
+test_missing_metric_cannot_silently_pass (test_actionable_gap.ActionableGapTests.test_missing_metric_cannot_silently_pass) ... ok
+test_original_human_calibration_boundary_is_preserved (test_actionable_gap.ActionableGapTests.test_original_human_calibration_boundary_is_preserved) ... ok
+test_specific_gap_passes (test_actionable_gap.ActionableGapTests.test_specific_gap_passes) ... ok
+test_vague_gap_fails_task_even_if_other_checks_pass (test_actionable_gap.ActionableGapTests.test_vague_gap_fails_task_even_if_other_checks_pass) ... ok
+test_batch_cannot_bypass_tool_limit (test_agent.AgentBoundaryTests.test_batch_cannot_bypass_tool_limit) ... ok
+test_false_citation_not_exposed (test_agent.AgentBoundaryTests.test_false_citation_not_exposed) ... ok
+test_invalid_parameters_counted (test_agent.AgentBoundaryTests.test_invalid_parameters_counted) ... ok
+test_model_exception_not_success (test_agent.AgentBoundaryTests.test_model_exception_not_success) ... ok
+test_model_round_limit (test_agent.AgentBoundaryTests.test_model_round_limit) ... ok
+test_comparison_symbols_and_table_relationships (test_corpus.CorpusTests.test_comparison_symbols_and_table_relationships) ... ok
+test_dates_are_per_document (test_corpus.CorpusTests.test_dates_are_per_document) ... ok
+test_document_ranges_and_chunk_provenance (test_corpus.CorpusTests.test_document_ranges_and_chunk_provenance) ... ok
+test_no_detached_symbols_or_header_pollution (test_corpus.CorpusTests.test_no_detached_symbols_or_header_pollution) ... ok
+test_source_and_page_accounting (test_corpus.CorpusTests.test_source_and_page_accounting) ... ok
+test_document_number_requires_quoted_number (test_cost_repairs.CostRepairTests.test_document_number_requires_quoted_number) ... ok
+test_reasoning_effort_changes_cache_identity (test_cost_repairs.CostRepairTests.test_reasoning_effort_changes_cache_identity) ... ok
+test_truncation_does_not_repeat_same_paid_request (test_cost_repairs.CostRepairTests.test_truncation_does_not_repeat_same_paid_request) ... ok
+test_manifest_hash_and_frozen_stability (test_dataset.DatasetTests.test_manifest_hash_and_frozen_stability) ... ok
+test_sizes_and_coverage (test_dataset.DatasetTests.test_sizes_and_coverage) ... ok
+test_sources_and_fields (test_dataset.DatasetTests.test_sources_and_fields) ... ok
+test_split_and_no_answer_index (test_dataset.DatasetTests.test_split_and_no_answer_index) ... ok
+test_variants_history_faults_conflicts (test_dataset.DatasetTests.test_variants_history_faults_conflicts) ... ok
+test_failed_response_cannot_be_cached (test_evaluation_cache.EvaluationCacheTests.test_failed_response_cannot_be_cached) ... ok
+test_no_judge_request_when_answer_model_unavailable (test_evaluation_cache.EvaluationCacheTests.test_no_judge_request_when_answer_model_unavailable) ... ok
+test_only_exact_request_reuses_real_judgement (test_evaluation_cache.EvaluationCacheTests.test_only_exact_request_reuses_real_judgement) ... ok
+test_failed_judge_is_not_a_correct_negative_label (test_external_gates.ExternalGateTests.test_failed_judge_is_not_a_correct_negative_label) ... ok
+test_final_review_cannot_bypass_round_budget (test_external_gates.ExternalGateTests.test_final_review_cannot_bypass_round_budget) ... ok
+test_insufficient_balance_stops_further_account_requests (test_external_gates.ExternalGateTests.test_insufficient_balance_stops_further_account_requests) ... ok
+test_exact_failed_tool_budget_reports_limit (test_failure_repairs.FailureRepairTests.test_exact_failed_tool_budget_reports_limit) ... ok
+test_invalid_multi_json_is_returned_for_model_correction (test_failure_repairs.FailureRepairTests.test_invalid_multi_json_is_returned_for_model_correction) ... ok
+test_adjacent_claim_span_is_valid (test_judge_guards.CrossClaimSpanTests.test_adjacent_claim_span_is_valid) ... ok
+test_unspoken_point_still_rejected (test_judge_guards.CrossClaimSpanTests.test_unspoken_point_still_rejected) ... ok
+test_no_silent_empty_judgement (test_judge_guards.JudgeGuardTests.test_no_silent_empty_judgement) ... ok
+test_omitted_gold_not_a_spoken_fact (test_judge_guards.JudgeGuardTests.test_omitted_gold_not_a_spoken_fact) ... ok
+test_refusal_can_have_no_facts (test_judge_guards.JudgeGuardTests.test_refusal_can_have_no_facts) ... ok
+test_spoken_facts_only (test_judge_guards.JudgeGuardTests.test_spoken_facts_only) ... ok
+test_duplicate_hits_no_double_count (test_metrics.MetricTests.test_duplicate_hits_no_double_count) ... ok
+test_hand_computable_denominators (test_metrics.MetricTests.test_hand_computable_denominators) ... ok
+test_missing_failure_remains_denominator (test_metrics.MetricTests.test_missing_failure_remains_denominator) ... ok
+test_na_not_perfect (test_metrics.MetricTests.test_na_not_perfect) ... ok
+test_nearest_rank_40 (test_metrics.MetricTests.test_nearest_rank_40) ... ok
+test_program_failure_cannot_average_away (test_metrics.MetricTests.test_program_failure_cannot_average_away) ... ok
+test_stability_all_30_required (test_metrics.MetricTests.test_stability_all_30_required) ... ok
+test_human_correction_cannot_bypass_specific_gap_requirement (test_reviews.ReviewTests.test_human_correction_cannot_bypass_specific_gap_requirement) ... ok
+test_missing_human_identity_rejected (test_reviews.ReviewTests.test_missing_human_identity_rejected) ... ok
+test_review_preserves_original_and_requires_hash (test_reviews.ReviewTests.test_review_preserves_original_and_requires_hash) ... ok
+test_hybrid_search_and_read (test_runtime.RuntimeTests.test_hybrid_search_and_read) ... ok
+test_once_failure_and_budget_counts_attempts (test_runtime.RuntimeTests.test_once_failure_and_budget_counts_attempts) ... ok
+test_persistent_error_and_bad_arguments (test_runtime.RuntimeTests.test_persistent_error_and_bad_arguments) ... ok
+test_provenance_rejects_unread_and_fake_quote (test_runtime.RuntimeTests.test_provenance_rejects_unread_and_fake_quote) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.611s
+
+OK

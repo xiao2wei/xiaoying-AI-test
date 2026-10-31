@@ -1,0 +1,823 @@
+{
+  "scope": "development",
+  "group_count": 12,
+  "metrics": {
+    "M01": {
+      "name": "初次检索Recall@5",
+      "numerator": 9.5,
+      "denominator": 10,
+      "value": 0.95,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1.0,
+        "DEV02": 1.0,
+        "DEV03": 1.0,
+        "DEV04": 1.0,
+        "DEV06": 0.5,
+        "DEV07": 1.0,
+        "DEV08": 1.0,
+        "DEV09": 1.0,
+        "DEV10": 1.0,
+        "DEV11": 1.0
+      }
+    },
+    "M02": {
+      "name": "最终实际读取证据覆盖率",
+      "numerator": 8.5,
+      "denominator": 10,
+      "value": 0.85,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 1.0,
+        "DEV02": 1.0,
+        "DEV03": 1.0,
+        "DEV04": 1.0,
+        "DEV06": 0.5,
+        "DEV07": 1.0,
+        "DEV08": 1.0,
+        "DEV09": 1.0,
+        "DEV10": 1.0,
+        "DEV11": 0.0
+      }
+    },
+    "M03": {
+      "name": "任务通过率",
+      "numerator": 7,
+      "denominator": 12,
+      "value": 0.5833333333333334,
+      "target": 1.0,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV03": false,
+        "DEV04": true,
+        "DEV05": false,
+        "DEV06": false,
+        "DEV07": true,
+        "DEV08": true,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": false,
+        "DEV12": true
+      }
+    },
+    "M04": {
+      "name": "可回答问题正确率",
+      "numerator": 6,
+      "denominator": 8,
+      "value": 0.75,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV04": true,
+        "DEV07": true,
+        "DEV08": true,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": false
+      }
+    },
+    "M05": {
+      "name": "可回答问题完整度",
+      "numerator": 6.666666666666667,
+      "denominator": 8,
+      "value": 0.8333333333333334,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 1.0,
+        "DEV02": 0.6666666666666666,
+        "DEV04": 1.0,
+        "DEV07": 1.0,
+        "DEV08": 1.0,
+        "DEV09": 1.0,
+        "DEV10": 1.0,
+        "DEV11": 0.0
+      }
+    },
+    "M06": {
+      "name": "引用支持率",
+      "numerator": 36,
+      "denominator": 36,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {}
+    },
+    "M07": {
+      "name": "事实引用覆盖率",
+      "numerator": 36,
+      "denominator": 37,
+      "value": 0.972972972972973,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {}
+    },
+    "M08": {
+      "name": "无依据事实率",
+      "numerator": 0,
+      "denominator": 37,
+      "value": 0.0,
+      "target": 0,
+      "direction": "<=",
+      "passed": true,
+      "detail": {}
+    },
+    "M09": {
+      "name": "conflict通过率",
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV03": false,
+        "DEV04": true
+      }
+    },
+    "M10": {
+      "name": "insufficient通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV05": false,
+        "DEV06": false
+      }
+    },
+    "M11": {
+      "name": "tool_failure通过率",
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV11": false,
+        "DEV12": true
+      }
+    },
+    "M12": {
+      "name": "paraphrase通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0,
+      "target": 0.8333333333333334,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV07": true,
+        "DEV08": true
+      }
+    },
+    "M13": {
+      "name": "context通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0,
+      "target": 0.8,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV09": true,
+        "DEV10": true
+      }
+    },
+    "M14": {
+      "name": "程序检查",
+      "numerator": 42,
+      "denominator": 42,
+      "value": 1.0,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "test_passed": 26,
+        "test_run": 26,
+        "provenance_passed": 16,
+        "provenance_run": 16,
+        "test_report_present": true
+      }
+    },
+    "M15": {
+      "name": "关键缺陷场景数",
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0,
+      "target": 0,
+      "direction": "<=",
+      "passed": true,
+      "detail": []
+    },
+    "M16": {
+      "name": "稳定性通过率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": null,
+      "detail": {
+        "required_observations": 30,
+        "actual": 0
+      }
+    },
+    "M17": {
+      "name": "端到端P95秒",
+      "numerator": 3.7677,
+      "denominator": 12,
+      "value": 3.7677,
+      "target": 120,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1.1468,
+        "DEV02": 2.1811,
+        "DEV03": 2.2088,
+        "DEV04": 1.1753,
+        "DEV05": 0.6958,
+        "DEV06": 3.7677,
+        "DEV07": 2.6448,
+        "DEV08": 2.5138,
+        "DEV09": 2.1659,
+        "DEV10": 2.6449,
+        "DEV11": 2.2207,
+        "DEV12": 0.88
+      }
+    },
+    "M18": {
+      "name": "平均模型请求次数",
+      "numerator": 16,
+      "denominator": 12,
+      "value": 1.3333333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV05": 1,
+        "DEV06": 1,
+        "DEV07": 2,
+        "DEV08": 2,
+        "DEV09": 2,
+        "DEV10": 2,
+        "DEV11": 1,
+        "DEV12": 1
+      }
+    },
+    "M19": {
+      "name": "平均业务工具尝试次数",
+      "numerator": 91,
+      "denominator": 12,
+      "value": 7.583333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 6,
+        "DEV02": 6,
+        "DEV03": 6,
+        "DEV04": 6,
+        "DEV05": 6,
+        "DEV06": 6,
+        "DEV07": 12,
+        "DEV08": 12,
+        "DEV09": 12,
+        "DEV10": 12,
+        "DEV11": 6,
+        "DEV12": 1
+      }
+    }
+  },
+  "per_group": {
+    "DEV01": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 1.1468,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV02": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": false,
+      "completeness": 0.6666666666666666,
+      "critical_errors": [],
+      "seconds": 2.1811,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV03": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 2.2088,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV04": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 1.1753,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV05": {
+      "pass": false,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.6958,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV06": {
+      "pass": false,
+      "first_recall": 0.5,
+      "read_coverage": 0.5,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 3.7677,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV07": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 2.6448,
+      "model_calls": 2,
+      "tool_calls": 12
+    },
+    "DEV08": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 2.5138,
+      "model_calls": 2,
+      "tool_calls": 12
+    },
+    "DEV09": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 2.1659,
+      "model_calls": 2,
+      "tool_calls": 12
+    },
+    "DEV10": {
+      "pass": true,
+      "first_recall": 1.0,
+      "read_coverage": 1.0,
+      "correct": true,
+      "completeness": 1.0,
+      "critical_errors": [],
+      "seconds": 2.6449,
+      "model_calls": 2,
+      "tool_calls": 12
+    },
+    "DEV11": {
+      "pass": false,
+      "first_recall": 1.0,
+      "read_coverage": 0.0,
+      "correct": false,
+      "completeness": 0.0,
+      "critical_errors": [],
+      "seconds": 2.2207,
+      "model_calls": 1,
+      "tool_calls": 6
+    },
+    "DEV12": {
+      "pass": true,
+      "first_recall": null,
+      "read_coverage": null,
+      "correct": null,
+      "completeness": null,
+      "critical_errors": [],
+      "seconds": 0.88,
+      "model_calls": 1,
+      "tool_calls": 1
+    }
+  },
+  "atomic_facts": [
+    {
+      "text": "项目起始时间从学校审批立项时间算起",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D03-C008的quote包含该事实，且actually_read中D03-C008原文支持。",
+      "group": "DEV01",
+      "turn": 0
+    },
+    {
+      "text": "项目执行期限最长一般不得超过4年",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D03-C008的quote包含该事实，且actually_read中D03-C008原文支持。",
+      "group": "DEV01",
+      "turn": 0
+    },
+    {
+      "text": "项目执行期满后，结余经费由学校统筹管理",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D03-C008的quote包含该事实，且actually_read中D03-C008原文支持。",
+      "group": "DEV01",
+      "turn": 0
+    },
+    {
+      "text": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D03-C013中的原文，且该原文已在actually_read中读取，内容一致。",
+      "group": "DEV02",
+      "turn": 0
+    },
+    {
+      "text": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D03-C013中的原文，且该原文已在actually_read中读取，内容一致。",
+      "group": "DEV02",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学教职工考勤与请假管理规定》第十四条规定各单位于每月26日向学校人事处报送《考勤情况统计表》。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D19-C015，引用内容与已读取原文一致，明确包含每月26日报送《考勤情况统计表》。",
+      "group": "DEV03",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定各单位每月25日向人事处报送《考勤情况统计表》。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D20-C006，引用内容与已读取原文一致，明确包含每月25日报送《考勤情况统计表》。",
+      "group": "DEV03",
+      "turn": 0
+    },
+    {
+      "text": "《辽宁科技大学临时用工管理办法》第二十二条规定直属单位每月26日向人事处报送临时用工人员考勤表。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D23-C023，引用内容与已读取原文一致，明确包含每月26日报送临时用工人员考勤表。",
+      "group": "DEV03",
+      "turn": 0
+    },
+    {
+      "text": "现有原文未明确D20是否废止或优先于D19第十四条。",
+      "cited": false,
+      "citation_supported": false,
+      "supported_by_read": true,
+      "reason": "实际回答在gaps中说明该情况，已读取的D19和D20相关条款均未包含废止或优先关系，该判断基于已读取原文合理得出。",
+      "group": "DEV03",
+      "turn": 0
+    },
+    {
+      "text": "2022版第二十二条明确原2021年27号办法同时废止",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用D02-C023，引用内容与已读取原文完全一致，明确包含废止条款。",
+      "group": "DEV04",
+      "turn": 0
+    },
+    {
+      "text": "第一层次安家费100万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费100万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第二层次安家费80万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费80万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第三层次安家费60万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费60万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第四层次安家费20万—30万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费20万—30万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第五层次安家费20万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费20万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第六层次安家费10万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费10万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第七层次安家费5万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "第八层次安家费5万元",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C022中的quote，明确包含该内容，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "上述金额单位均为人民币",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C018中的quote，明确包含“以上涉及金额单位均为人民币”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "安家费不含辽宁省、鞍山市配套待遇",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D02-C007中的quote，明确包含“第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）”，且该chunk已被实际读取。",
+      "group": "DEV06",
+      "turn": 0
+    },
+    {
+      "text": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D08-C016，且实际读取了该条款，原文明确包含此内容。",
+      "group": "DEV07",
+      "turn": 0
+    },
+    {
+      "text": "申请不再担任兼职辅导员的，应做好学生档案资料及相关工作的交接。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D08-C016，且实际读取了该条款，原文明确包含此内容。",
+      "group": "DEV07",
+      "turn": 0
+    },
+    {
+      "text": "申请不再担任兼职辅导员，应提前一个月提出申请。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用D08-C016，该chunk已实际读取，原文明确“应提前一个月向所在学院提出书面申请”，支持该事实。",
+      "group": "DEV07",
+      "turn": 1
+    },
+    {
+      "text": "申请应向所在学院提出。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用D08-C016，原文明确“向所在学院提出书面申请”，支持该事实。",
+      "group": "DEV07",
+      "turn": 1
+    },
+    {
+      "text": "申请须采用书面形式，口头说明不够。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用D08-C016，原文明确“书面申请”，可推知口头说明不够，支持该事实。",
+      "group": "DEV07",
+      "turn": 1
+    },
+    {
+      "text": "提出申请的同时还应做好学生档案资料及相关工作的交接。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用D08-C016，原文明确“并做好学生档案资料及相关工作的交接”，支持该事实。",
+      "group": "DEV07",
+      "turn": 1
+    },
+    {
+      "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D08-C003中的'第二条 本细则适用于学校本科以及研究生兼职辅导员。'，且该条款已在actually_read中实际读取，引用内容与事实完全一致。",
+      "group": "DEV08",
+      "turn": 0
+    },
+    {
+      "text": "该细则适用于学校本科以及研究生兼职辅导员。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用D08-C003第二条原文，且该chunk已在actually_read中读取，内容一致。",
+      "group": "DEV08",
+      "turn": 1
+    },
+    {
+      "text": "学校可以从研究生中选聘兼职辅导员。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用D08-C008第七条原文，且该chunk已在actually_read中读取，内容一致。",
+      "group": "DEV08",
+      "turn": 1
+    },
+    {
+      "text": "研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用D08-C015第十四条原文，且该chunk已在actually_read中读取，内容一致。",
+      "group": "DEV08",
+      "turn": 1
+    },
+    {
+      "text": "学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "该事实在回答中明确引用D29-C001，引用内容与原文一致，且该chunk已被实际读取，原文包含相同表述。",
+      "group": "DEV09",
+      "turn": 0
+    },
+    {
+      "text": "人事处应在教职工退休前一月告知办理退休时间和程序。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "实际回答引用了D29-C001，引用内容包含“人事处应在教职工退休前一月告知办理退休时间和程序”，且该内容出现在actually_read的D29-C001原文中，支持该事实。",
+      "group": "DEV09",
+      "turn": 1
+    },
+    {
+      "text": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D07-C016中的原文“岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。”，且该chunk已在actually_read中实际读取，支持该事实。",
+      "group": "DEV10",
+      "turn": 0
+    },
+    {
+      "text": "每名辅导员每年参加校级培训不少于16学时。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "引用D07-C016中的原文“职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。”，且该chunk已在actually_read中实际读取，支持该事实。",
+      "group": "DEV10",
+      "turn": 0
+    },
+    {
+      "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。",
+      "group": "DEV10",
+      "turn": 1
+    },
+    {
+      "text": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+      "cited": true,
+      "citation_supported": true,
+      "supported_by_read": true,
+      "reason": "回答引用了D07-C019，且实际读取的D07-C019文本包含该句，引用内容与原文一致。",
+      "group": "DEV10",
+      "turn": 1
+    }
+  ],
+  "unresolved": [],
+  "critical": [],
+  "category_summary": {
+    "normal": {
+      "passed": 1,
+      "total": 2
+    },
+    "conflict": {
+      "passed": 1,
+      "total": 2
+    },
+    "insufficient": {
+      "passed": 0,
+      "total": 2
+    },
+    "paraphrase": {
+      "passed": 2,
+      "total": 2
+    },
+    "context": {
+      "passed": 2,
+      "total": 2
+    },
+    "tool_failure": {
+      "passed": 1,
+      "total": 2
+    }
+  },
+  "failure_breakdown": {
+    "recovery": {
+      "passed": 0,
+      "total": 1
+    },
+    "safe_stop": {
+      "passed": 1,
+      "total": 1
+    }
+  },
+  "all_applicable_numeric_targets_passed": false,
+  "formal_evaluation_complete": false,
+  "human_review_complete": false,
+  "note": "数值通过不等于阶段完成；人工校准、复核与冻结要求单独检查。N/A不代表通过。"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "reason": "实际回答仅输出“引用或格式校验未通过：unread_citation:D03-C016”，未明确表达“原则上不予调整”。"
+          },
+          {
+            "index": 1,
+            "met": false,
+            "reason": "实际回答未提及“确有特殊情况需要重大调整时负责人申请”。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "reason": "实际回答未提及“所在二级机构签署意见”。"
+          },
+          {
+            "index": 3,
+            "met": false,
+            "reason": "实际回答未提及“提交人才工作领导小组办公室审批后执行”。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "回答未提供任何制度事实，仅报告引用校验失败，未满足任何必需要点，且未完成可回答问题的回答。工具操作中首次读取目标条款失败后未重试，但后续读取了其他条款，未虚报成功，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:38.960091+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b59181387c68c228b0b6173faa45b44cb5a63cc4d744c2ac83cd125b335f01ec",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "dad5d317-8280-4fe9-851d-6c4493d12ca6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1866,
+            "completion_tokens": 268,
+            "total_tokens": 2134,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1226
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答仅输出“引用或格式校验未通过：unread_citation:D03-C016”，未明确表达“原则上不予调整”。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“确有特殊情况需要重大调整时负责人申请”。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“所在二级机构签署意见”。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“提交人才工作领导小组办公室审批后执行”。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答未提供任何制度事实，仅报告引用校验失败，未满足任何必需要点，且未完成可回答问题的回答。工具操作中首次读取目标条款失败后未重试，但后续读取了其他条款，未虚报成功，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0035243999999999996,
+          "seconds": 4.1802
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "fa6cbed174444fa21adbab9c09f8601692e6e19c4e63288823f824410f99993e"
+}

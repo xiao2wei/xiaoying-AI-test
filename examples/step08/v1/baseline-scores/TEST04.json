@@ -1,0 +1,49 @@
+{
+  "id": "TEST04",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.191792+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cdbdf12e32e6b3246d9e9669877aec4b423d29eb37c657859ed5afbb5c92cf62",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "28ba95f1-a610-4bf5-990b-7861f14676ba",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2448,
+            "completion_tokens": 4046,
+            "total_tokens": 6494,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3495
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1552
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉人可以委托1-2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"reason\": \"实际回答明确说明可委托1-2位校内教职工，语义与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"reason\": \"实际回答明确说明重要文书须由本人签名，覆盖要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉人可以委托1-2位校内教职工作为其申诉代理人\",\n      \"answer_span\": \"申诉人可以委托1-2位校内教职工作为其申诉代理人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用的第十二条原文直接支持，已读材料包含该原文。\"\n    },\n    {\n      \"text\": \"代理人代为办理申诉事项\",\n      \"answer_span\": \"代为办理申诉事项\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用的第十二条原文包含此内容，已读材料支持。\"\n    },\n    {\n      \"text\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有引用，引用的原文直接支持，已读材料包含该句。\"\n    },\n    {\n      \"text\": \"代理人不能代为签署申诉申请书\",\n      \"answer_span\": \"代理人不能代为签署申诉申请书\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实由引用条文“须由申诉人本人签名”直接推导，逻辑上支持，已读材料支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖两个必需要点，引用正确，工具使用合理，无事实错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01925352,
+          "seconds": 40.147
+        }
+      ],
+      "judge_error": "ValueError:通过的要点缺少实际答案定位",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "cca6958c35f42ad9e988a582d4b994d07061fafb16624bceb89bc17792975abb"
+}

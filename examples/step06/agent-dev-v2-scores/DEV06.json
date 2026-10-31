@@ -1,0 +1,139 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确说明无法直接确定具体金额，需先确认引进人才层次，且第一至第五层次按“一人一议”确定待遇，体现了缺少人才层次和已签协议等条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答没有给出唯一金额，而是列出了各层次对应的安家费范围，并说明需确认层次。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答在gaps和answer中均请求补充引进层次或由学校人才工作领导小组认定结果，符合请求补充层次及协议的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "第一层次安家费100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费100万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第二层次安家费80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费80万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第三层次安家费60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费60万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第四层次安家费20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费20万—30万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第五层次安家费20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费20万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第六层次安家费10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费10万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第七层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费5万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第八层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中“提供安家费5万元”，且该chunk已实际读取。"
+          },
+          {
+            "text": "第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C010中第九条内容，且该chunk已实际读取。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022中第二十一条内容，且该chunk已实际读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确识别了信息不足，未给出唯一金额，列出了各层次安家费并请求补充层次信息，符合预期。所有事实均有引用且与实际读取内容一致，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:52:47.518089+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8ad6183777bca6a680285d501387535ec39ee0a5b553a8d26d7efd257f958f96",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "057a6bce-185b-47de-aeb4-5c0001016269",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5096,
+            "completion_tokens": 970,
+            "total_tokens": 6066,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 4584
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确说明无法直接确定具体金额，需先确认引进人才层次，且第一至第五层次按“一人一议”确定待遇，体现了缺少人才层次和已签协议等条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答没有给出唯一金额，而是列出了各层次对应的安家费范围，并说明需确认层次。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps和answer中均请求补充引进层次或由学校人才工作领导小组认定结果，符合请求补充层次及协议的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"第一层次安家费100万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费100万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第二层次安家费80万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费80万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第三层次安家费60万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费60万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第四层次安家费20万—30万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费20万—30万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第五层次安家费20万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费20万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第六层次安家费10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费10万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第七层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费5万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第八层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C007中“提供安家费5万元”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C010中第九条内容，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D02-C022中第二十一条内容，且该chunk已实际读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别了信息不足，未给出唯一金额，列出了各层次安家费并请求补充层次信息，符合预期。所有事实均有引用且与实际读取内容一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01056792,
+          "seconds": 8.9299
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "30db2f4c2367edaf4166fb534562bd7a0256ed3fdc77aec7ad3c0fcad571817d"
+}

@@ -1,0 +1,422 @@
+{
+  "id": "TEST07",
+  "category": "normal",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "临时用工人员年龄一般上限男女分别多少？首次聘用健康条件是什么？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。\n首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。\n首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:40.631851+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e39cd446bedb970d259aab650d1186c0e4c599bb06dadcf77664d46ed5ba054a",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "1c718b80-043e-4242-a11c-ce4fd89d3127",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2093,
+            "completion_tokens": 35,
+            "total_tokens": 2128,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 301
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"临时用工人员 年龄上限 首次聘用 健康条件\"},\"reason\":\"检索临时用工年龄与健康条件相关条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.152599999999999e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.9949
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工人员 年龄上限 首次聘用 健康条件"
+          },
+          "reason": "检索临时用工年龄与健康条件相关条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工人员 年龄上限 首次聘用 健康条件"
+          },
+          "result": {
+            "ok": true,
+            "query": "临时用工人员 年龄上限 首次聘用 健康条件",
+            "hits": [
+              {
+                "chunk_id": "D23-C010",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.735418,
+                "lexical_score": 56.7746,
+                "excerpt": "辽宁科技大学临时用工管理办法 第九条 第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C016",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.080128,
+                "semantic_score": 0.6606,
+                "lexical_score": 33.034,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十五条 第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C012",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十一条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.079937,
+                "semantic_score": 0.698534,
+                "lexical_score": 28.8843,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十一条 第十一条 临时用工人员的聘用过程中要坚持公平、公正的原则，根据岗位需\n要，择优聘用。优先选用有社会保险保障人员。一人不能同时被两个以上岗位聘用。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C017",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十六条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.637887,
+                "lexical_score": 33.1472,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十六条 第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C024",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十三条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  182
+                ],
+                "printed_pages": [
+                  177
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.642899,
+                "lexical_score": 30.3035,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十三条 第二十三条 学校直属单位未经学校允许不得私自设置临时用工岗位和聘用未\n与学校签订合同的临时用工人员。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.009,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:41.680488+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4920165b8169b899b566859e0129a7aed015b8a7f3f255d022b005e7494ddbac",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "eb15b7b7-b464-4882-848f-9e4f2d293037",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3126,
+            "completion_tokens": 39,
+            "total_tokens": 3165,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 1078
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D23-C010\"]}, \"reason\": \"读取第九条原文以核对年龄上限与首次聘用健康条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000191244,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.5704
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D23-C010"
+            ]
+          },
+          "reason": "读取第九条原文以核对年龄上限与首次聘用健康条件"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C010"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第九条",
+              "text": "第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+              "pdf_pages": [
+                180
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C010",
+              "printed_pages": [
+                175
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C009",
+              "next_chunk_id": "D23-C011",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:42.301237+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2cebfc16224904b62998c83e3590125ce3115517e3e6d91bdddfa3245e33a8fb",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "9adc8a4a-9772-4b22-9e93-6cbae892fbaa",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3428,
+            "completion_tokens": 186,
+            "total_tokens": 3614,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "prompt_cache_hit_tokens": 3072,
+            "prompt_cache_miss_tokens": 356
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\"}]}, {\"text\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\\n康标准。\"}]}], \"gaps\": []}, \"reason\": \"第九条原文已明确回答年龄上限与首次聘用健康条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00017421600000000001,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.1984
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第九条原文已明确回答年龄上限与首次聘用健康条件"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:43.536890+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aed6a6e72d06c84ddc31f3aa1f3fc9466a4da4fc46aee236d78034484972e139",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ab96ea1b-0edf-4088-b318-7f7293b8129d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3849,
+            "completion_tokens": 251,
+            "total_tokens": 4100,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 61
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 1929
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\"}]}, {\"text\": \"首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\\n康标准。\"}]}], \"gaps\": []}, \"reason\": \"第九条已完整覆盖年龄上限及首次聘用健康条件，引用可直接核对\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00044570999999999993,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 2.2723
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第九条已完整覆盖年龄上限及首次聘用健康条件，引用可直接核对"
+        }
+      ],
+      "read_ids": [
+        "D23-C010"
+      ],
+      "first_hits": [
+        "D23-C010",
+        "D23-C016",
+        "D23-C012",
+        "D23-C017",
+        "D23-C024"
+      ],
+      "seconds": 5.2192,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 5.2196,
+  "model_calls": 4,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T04:03:45.810357+00:00"
+}

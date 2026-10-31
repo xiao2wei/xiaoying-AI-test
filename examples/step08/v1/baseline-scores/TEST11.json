@@ -1,0 +1,135 @@
+{
+  "id": "TEST11",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习",
+            "reason": "明确表述第五年及以后不能申请，并直接回答当前第五年不能再申请。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "首次申请脱产学习一般不超过2年",
+            "reason": "明确给出首次脱产申请的一般年限上限。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "总脱产时间不能超过4年，即限于入学后的第一年至第四年",
+            "reason": "明确给出累计脱产不超过4年且限于入学第一至第四年。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师在职攻读博士，入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习",
+            "answer_span": "入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "首次申请脱产学习一般不超过2年",
+            "answer_span": "首次申请脱产学习一般不超过2年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "再次申请脱产学习须经个人申请、所在单位同意、学校批准",
+            "answer_span": "再次申请脱产学习须经个人申请、所在单位同意、学校批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "总脱产时间不能超过4年，即限于入学后的第一年至第四年",
+            "answer_span": "总脱产时间不能超过4年，即限于入学后的第一年至第四年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "上述脱产时间限制针对教师岗位人员",
+            "answer_span": "上述脱产时间限制针对教师岗位人员",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "所附引用仅说明非教师岗位原则上不脱产，未直接支持教师岗位限制的适用范围；但已读第八条本身支持该结论。"
+          },
+          {
+            "text": "非教师岗位人员在职攻读博士原则上不脱产",
+            "answer_span": "非教师岗位人员在职攻读博士原则上不脱产",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十一条原文直接支持，已读原文一致。"
+          }
+        ],
+        "serious_errors": [
+          "实际答案将“上述脱产时间限制针对教师岗位人员”作为与第十一条引用关联的结论，但该引用仅说明非教师岗位原则上不脱产，不能直接支撑教师岗位脱产时间限制的适用范围。"
+        ],
+        "reason": "答案准确覆盖所有必要要点：第五年及以后不能申请、首次一般不超过2年、累计不超过4年且限第一至第四年；并有第八条原文支持。另补充非教师岗位原则上不脱产，仅有其中适用范围小结的引用不完全支撑，整体回答正确、证据基本充分。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "实际答案将“上述脱产时间限制针对教师岗位人员”作为与第十一条引用关联的结论，但该引用仅说明非教师岗位原则上不脱产，不能直接支撑教师岗位脱产时间限制的适用范围。",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:45.357005+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c28ae70f1f6073df5055a976bebf7d745136d1cd3c8deb50946fb2c113bd9a7e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "f4602606-44fa-461c-be15-22c7204c6ba9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3634,
+            "completion_tokens": 7974,
+            "total_tokens": 11608,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7079
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2738
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习\",\n      \"reason\": \"明确表述第五年及以后不能申请，并直接回答当前第五年不能再申请。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"首次申请脱产学习一般不超过2年\",\n      \"reason\": \"明确给出首次脱产申请的一般年限上限。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"总脱产时间不能超过4年，即限于入学后的第一年至第四年\",\n      \"reason\": \"明确给出累计脱产不超过4年且限于入学第一至第四年。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在职攻读博士，入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习\",\n      \"answer_span\": \"入学后第五年及之后不得申请脱产学习，因此入学第五年不能再申请脱产学习\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"首次申请脱产学习一般不超过2年\",\n      \"answer_span\": \"首次申请脱产学习一般不超过2年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"再次申请脱产学习须经个人申请、所在单位同意、学校批准\",\n      \"answer_span\": \"再次申请脱产学习须经个人申请、所在单位同意、学校批准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"总脱产时间不能超过4年，即限于入学后的第一年至第四年\",\n      \"answer_span\": \"总脱产时间不能超过4年，即限于入学后的第一年至第四年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持，已读原文一致。\"\n    },\n    {\n      \"text\": \"上述脱产时间限制针对教师岗位人员\",\n      \"answer_span\": \"上述脱产时间限制针对教师岗位人员\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"所附引用仅说明非教师岗位原则上不脱产，未直接支持教师岗位限制的适用范围；但已读第八条本身支持该结论。\"\n    },\n    {\n      \"text\": \"非教师岗位人员在职攻读博士原则上不脱产\",\n      \"answer_span\": \"非教师岗位人员在职攻读博士原则上不脱产\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十一条原文直接支持，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际答案将“上述脱产时间限制针对教师岗位人员”作为与第十一条引用关联的结论，但该引用仅说明非教师岗位原则上不脱产，不能直接支撑教师岗位脱产时间限制的适用范围。\"\n  ],\n  \"reason\": \"答案准确覆盖所有必要要点：第五年及以后不能申请、首次一般不超过2年、累计不超过4年且限第一至第四年；并有第八条原文支持。另补充非教师岗位原则上不脱产，仅有其中适用范围小结的引用不完全支撑，整体回答正确、证据基本充分。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03637392,
+          "seconds": 74.1929
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "0cee462a2295ee88a864a4cc921eee5dc52c53c1913dc18c784ea11cb6208cae"
+}

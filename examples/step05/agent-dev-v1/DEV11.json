@@ -1,0 +1,454 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才专项经费预算能否直接自行重大调整？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "人才专项经费预算原则上不予调整；确因研究内容或研究计划特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接重大调整。",
+            "citations": [
+              {
+                "chunk_id": "D03-C016",
+                "quote": "第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费。",
+            "citations": [
+              {
+                "chunk_id": "D03-C014",
+                "quote": "第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "人才专项经费预算原则上不予调整；确因研究内容或研究计划特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接重大调整。\n项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "人才专项经费预算原则上不予调整；确因研究内容或研究计划特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接重大调整。",
+            "citations": [
+              {
+                "chunk_id": "D03-C016",
+                "quote": "第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费。",
+            "citations": [
+              {
+                "chunk_id": "D03-C014",
+                "quote": "第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "人才专项经费预算原则上不予调整；确因研究内容或研究计划特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接重大调整。\n项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:38.442680+00:00",
+          "attempt": 1,
+          "prompt_sha256": "88658e15e357a0aaa34a8928a47429959a35e19eb4f75db312216292d8d5d398",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "cc028fe8-94f9-478c-ad17-d336afe935f8",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 801,
+            "completion_tokens": 44,
+            "total_tokens": 845,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 289
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"人才专项经费 预算 调整 重大调整 审批\",\"k\":5,\"doc_ids\":[]},\"reason\":\"检索人才专项经费预算调整的相关制度条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00029309999999999997,
+          "seconds": 0.7957
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "人才专项经费 预算 调整 重大调整 审批",
+            "k": 5,
+            "doc_ids": []
+          },
+          "reason": "检索人才专项经费预算调整的相关制度条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人才专项经费 预算 调整 重大调整 审批",
+            "k": 5,
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "人才专项经费 预算 调整 重大调整 审批",
+            "hits": [
+              {
+                "chunk_id": "D03-C016",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十五条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.774203,
+                "lexical_score": 61.0572,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十五条 第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。\n第四章 人才专项经费考核与验收",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C014",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.085455,
+                "semantic_score": 0.654724,
+                "lexical_score": 41.4409,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十三条 第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\n因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C027",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十六条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.072258,
+                "semantic_score": 0.637291,
+                "lexical_score": 34.2532,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十六条 第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，\n不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，\n不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C015",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.070505,
+                "semantic_score": 0.659484,
+                "lexical_score": 18.2375,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十四条 第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C018",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十七条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.067873,
+                "semantic_score": 0.645816,
+                "lexical_score": 21.1349,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十七条 第十七条 年度考核结果分为合格、基本合格、不合格3个等次。考核结果为合\n格的，给予继续支持。考核结果为基本合格的，暂停经费资助，项目负责人及所在二\n级教学（科研）机构应及时整改，半年内申请复核，复核合格后继续支持，复核不合格\n的认定为考核不合格。考核结果为不合格的终止经费资助，并视情节追回全部或部\n分人才专项经费。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0109,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:39.252842+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2c6e20b3b0d5de8a8debdc01a0e93596e14d83f0fc500719c91bd82be48cb76c",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "3b78c3d5-462a-47c0-8bc3-b90fb029e6b7",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1980,
+            "completion_tokens": 41,
+            "total_tokens": 2021,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1212
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D03-C016\", \"D03-C014\"]}, \"reason\": \"读取预算调整审批与预算责任条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006432,
+          "seconds": 0.7829
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D03-C016",
+              "D03-C014"
+            ]
+          },
+          "reason": "读取预算调整审批与预算责任条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C016"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第十三条",
+              "text": "第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\n因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担。",
+              "pdf_pages": [
+                16
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C014",
+              "printed_pages": [
+                11
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C013",
+              "next_chunk_id": "D03-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:40.038438+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f0c1f9880bc67273eed9fc1e0c57d49d02addbe9d670852838717f58b3446ae7",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "dc192c34-c883-41ce-925c-b1de89d9409f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2338,
+            "completion_tokens": 37,
+            "total_tokens": 2375,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 418
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D03-C016\"]}, \"reason\": \"上次临时失败，重试读取预算调整审批条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007457999999999999,
+          "seconds": 0.8648
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D03-C016"
+            ]
+          },
+          "reason": "上次临时失败，重试读取预算调整审批条款"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第十五条",
+              "text": "第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。\n第四章 人才专项经费考核与验收",
+              "pdf_pages": [
+                16
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C016",
+              "printed_pages": [
+                11
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C015",
+              "next_chunk_id": "D03-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:40.906460+00:00",
+          "attempt": 1,
+          "prompt_sha256": "64641cac38a945b72e35d8896a36abb31e0b3038aa675d32dc90ed55c4bf97b3",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "53dbff2b-6e71-4a6c-8635-e68a1820332c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2634,
+            "completion_tokens": 311,
+            "total_tokens": 2945,
+            "prompt_tokens_details": {
+              "cached_tokens": 2304
+            },
+            "prompt_cache_hit_tokens": 2304,
+            "prompt_cache_miss_tokens": 330
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"人才专项经费预算原则上不予调整；确因研究内容或研究计划特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接重大调整。\", \"citations\": [{\"chunk_id\": \"D03-C016\", \"quote\": \"第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\\n后执行。\"}]}, {\"text\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费。\", \"citations\": [{\"chunk_id\": \"D03-C014\", \"quote\": \"第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\"}]}], \"gaps\": []}, \"reason\": \"已读取第十五条和第十三条原文，足以回答预算重大调整的审批要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0011633999999999998,
+          "seconds": 2.1984
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取第十五条和第十三条原文，足以回答预算重大调整的审批要求"
+        }
+      ],
+      "read_ids": [
+        "D03-C014",
+        "D03-C016"
+      ],
+      "first_hits": [
+        "D03-C016",
+        "D03-C014",
+        "D03-C027",
+        "D03-C015",
+        "D03-C018"
+      ],
+      "seconds": 4.6663,
+      "model_calls": 4,
+      "tool_calls": 4,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 4.6663,
+  "model_calls": 4,
+  "tool_calls": 4,
+  "created_at": "2026-10-30T14:40:43.107378+00:00"
+}

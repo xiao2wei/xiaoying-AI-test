@@ -1,0 +1,157 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "项目起始时间从学校审批立项时间算起",
+        "reason": "实际回答明确表述项目起始时间从学校审批立项时间算起，与要点一致。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "项目执行期限最长一般不得超过4年",
+        "reason": "实际回答明确表述项目执行期限最长一般不得超过4年。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+        "reason": "实际回答明确表述期满结余由学校统筹管理。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "项目起始时间从学校审批立项时间算起。",
+        "answer_span": "项目起始时间从学校审批立项时间算起",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用的D03-C008条款完整支持起算时间的事实，且实际已读该条款。"
+      },
+      {
+        "text": "结束时间可根据研究工作需要自行设定。",
+        "answer_span": "结束时间可根据研究工作需要自行设定",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C008引用原文支持自行设定结束时间。"
+      },
+      {
+        "text": "项目执行期限最长一般不得超过4年。",
+        "answer_span": "项目执行期限最长一般不得超过4年",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C008引用支持4年上限。"
+      },
+      {
+        "text": "项目执行期满后，结余经费由学校统筹管理。",
+        "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C008引用支持期满结余由学校统筹管理。"
+      },
+      {
+        "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次。",
+        "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C026引用支持一般允许延期一次。"
+      },
+      {
+        "text": "延长期限不超过2年。",
+        "answer_span": "期限不超过2年",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C026引用支持延期不超过2年。"
+      },
+      {
+        "text": "须在项目原执行期结束前2个月提出申请。",
+        "answer_span": "并须在项目原执行期结束前2个月提出申请",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C026引用支持提前2个月申请。"
+      },
+      {
+        "text": "由所在二级教学（科研）机构签署意见后，报人事处审批。",
+        "answer_span": "由所在二级教学（科研）机构签署意见后，报人事处审批",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C026引用支持二级机构签署意见后人事处审批。"
+      },
+      {
+        "text": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施。",
+        "answer_span": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C024引用支持负责人变动时冻结经费并终止项目实施。"
+      },
+      {
+        "text": "结余经费交由学校统筹管理。",
+        "answer_span": "结余经费交由学校统筹管理",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C024引用支持负责人变动情形下结余由学校统筹管理。"
+      },
+      {
+        "text": "已使用的经费根据具体情况酌情处理。",
+        "answer_span": "已使用的经费根据具体情况酌情处理",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "D03-C024引用支持已使用经费酌情处理。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "实际回答完整覆盖三个必要要点，并额外说明延期和负责人变动情形；所有关键制度事实均有对应引用且引用原文支持，已读资料与引用一致；检索和阅读动作合理，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:23:12.995180+00:00",
+      "attempt": 1,
+      "prompt_sha256": "de726c72c15098b3622482ff58f8fc314f96fcbf28900610404bdbc13d31fe72",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "d19f704f-2647-4a39-9cd3-4df22869e859",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2467,
+        "completion_tokens": 4370,
+        "total_tokens": 6837,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3456
+        },
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 35
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"项目起始时间从学校审批立项时间算起\",\"reason\":\"实际回答明确表述项目起始时间从学校审批立项时间算起，与要点一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"项目执行期限最长一般不得超过4年\",\"reason\":\"实际回答明确表述项目执行期限最长一般不得超过4年。\"},{\"index\":2,\"met\":true,\"answer_span\":\"项目执行期满后，结余经费由学校统筹管理\",\"reason\":\"实际回答明确表述期满结余由学校统筹管理。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"项目起始时间从学校审批立项时间算起。\",\"answer_span\":\"项目起始时间从学校审批立项时间算起\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用的D03-C008条款完整支持起算时间的事实，且实际已读该条款。\"},{\"text\":\"结束时间可根据研究工作需要自行设定。\",\"answer_span\":\"结束时间可根据研究工作需要自行设定\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C008引用原文支持自行设定结束时间。\"},{\"text\":\"项目执行期限最长一般不得超过4年。\",\"answer_span\":\"项目执行期限最长一般不得超过4年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C008引用支持4年上限。\"},{\"text\":\"项目执行期满后，结余经费由学校统筹管理。\",\"answer_span\":\"项目执行期满后，结余经费由学校统筹管理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C008引用支持期满结余由学校统筹管理。\"},{\"text\":\"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次。\",\"answer_span\":\"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C026引用支持一般允许延期一次。\"},{\"text\":\"延长期限不超过2年。\",\"answer_span\":\"期限不超过2年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C026引用支持延期不超过2年。\"},{\"text\":\"须在项目原执行期结束前2个月提出申请。\",\"answer_span\":\"并须在项目原执行期结束前2个月提出申请\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C026引用支持提前2个月申请。\"},{\"text\":\"由所在二级教学（科研）机构签署意见后，报人事处审批。\",\"answer_span\":\"由所在二级教学（科研）机构签署意见后，报人事处审批\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C026引用支持二级机构签署意见后人事处审批。\"},{\"text\":\"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施。\",\"answer_span\":\"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C024引用支持负责人变动时冻结经费并终止项目实施。\"},{\"text\":\"结余经费交由学校统筹管理。\",\"answer_span\":\"结余经费交由学校统筹管理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C024引用支持负责人变动情形下结余由学校统筹管理。\"},{\"text\":\"已使用的经费根据具体情况酌情处理。\",\"answer_span\":\"已使用的经费根据具体情况酌情处理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"D03-C024引用支持已使用经费酌情处理。\"}],\"serious_errors\":[],\"reason\":\"实际回答完整覆盖三个必要要点，并额外说明延期和负责人变动情形；所有关键制度事实均有对应引用且引用原文支持，已读资料与引用一致；检索和阅读动作合理，无严重错误。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.02056164,
+      "seconds": 43.2064
+    }
+  ],
+  "judge_error": null,
+  "human_review": null
+}

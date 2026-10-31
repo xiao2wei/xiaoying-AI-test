@@ -1,0 +1,176 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "reason": "明确表达了原则上不予调整，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "只有在项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整时，项目负责人应及时提出申请",
+            "reason": "明确表达了确有特殊情况需要重大调整时由负责人申请。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "reason": "明确表达了所在二级机构签署意见。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "reason": "明确表达了提交人才工作领导小组办公室审批后执行。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "人才专项经费预算原则上不予调整",
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条原文包含“经费预算原则上不予调整”，且该chunk已实际读取。"
+          },
+          {
+            "text": "项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整",
+            "answer_span": "项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条原文包含研究内容或研究计划有特殊情况确实需要重大调整的条件，且该chunk已实际读取。"
+          },
+          {
+            "text": "项目负责人应及时提出申请",
+            "answer_span": "项目负责人应及时提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条原文包含“项目负责人应当及时提出申请”，且该chunk已实际读取。"
+          },
+          {
+            "text": "经所在二级教学（科研）机构签署意见后",
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条原文包含“经所在二级教学（科研）机构签署意见后”，且该chunk已实际读取。"
+          },
+          {
+            "text": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "answer_span": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C016第十五条原文包含“提交校人才工作领导小组办公室审批通过后执行”，且该chunk已实际读取。"
+          },
+          {
+            "text": "不能由项目负责人自行直接重大调整",
+            "answer_span": "因此不能由项目负责人自行直接重大调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由第十五条规定的申请、签署意见和审批程序推出，引用内容足以支持。"
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责",
+            "answer_span": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条原文包含对预算调整真实性负责的内容，且该chunk已实际读取。"
+          },
+          {
+            "text": "须严格按照学校审批同意的预算范围及相关经费管理办法使用、报销科研经费",
+            "answer_span": "须严格按照学校审批同意的预算范围及相关经费管理办法使用、报销科研经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条原文包含“严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费”，且该chunk已实际读取。"
+          },
+          {
+            "text": "因违规使用造成的责任由项目负责人和所在二级教学（科研）机构共同承担",
+            "answer_span": "因违规使用造成的责任由项目负责人和所在二级教学（科研）机构共同承担",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C014第十三条原文包含“因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担”，且该chunk已实际读取。"
+          },
+          {
+            "text": "该办法适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费",
+            "answer_span": "该办法适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C003第二条原文包含适用范围，且该chunk已实际读取。"
+          },
+          {
+            "text": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行",
+            "answer_span": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D03-C003第二条原文包含该适用规则，且该chunk已实际读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案完整覆盖全部4个要求要点，引用与已读原文一致；对临时读取故障进行了合理恢复，最终成功读取D03-C016并给出有据回答，未发现无依据制度事实或严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:24:12.026662+00:00",
+          "attempt": 1,
+          "prompt_sha256": "699ec4702d858058229539353f1c12f3b3b6eb4d99201859b74fb6a4bff331c2",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "872122ed-4f67-49ac-837d-c3c1f9c6cb49",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2662,
+            "completion_tokens": 5011,
+            "total_tokens": 7673,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3588
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1766
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"reason\": \"明确表达了原则上不予调整，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"只有在项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整时，项目负责人应及时提出申请\",\n      \"reason\": \"明确表达了确有特殊情况需要重大调整时由负责人申请。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"reason\": \"明确表达了所在二级机构签署意见。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"reason\": \"明确表达了提交人才工作领导小组办公室审批后执行。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"人才专项经费预算原则上不予调整\",\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条原文包含“经费预算原则上不予调整”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整\",\n      \"answer_span\": \"项目实施过程中研究内容或研究计划有特殊情况、确实需要作出重大调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条原文包含研究内容或研究计划有特殊情况确实需要重大调整的条件，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"项目负责人应及时提出申请\",\n      \"answer_span\": \"项目负责人应及时提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条原文包含“项目负责人应当及时提出申请”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"经所在二级教学（科研）机构签署意见后\",\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条原文包含“经所在二级教学（科研）机构签署意见后”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C016第十五条原文包含“提交校人才工作领导小组办公室审批通过后执行”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"不能由项目负责人自行直接重大调整\",\n      \"answer_span\": \"因此不能由项目负责人自行直接重大调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由第十五条规定的申请、签署意见和审批程序推出，引用内容足以支持。\"\n    },\n    {\n      \"text\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责\",\n      \"answer_span\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条原文包含对预算调整真实性负责的内容，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"须严格按照学校审批同意的预算范围及相关经费管理办法使用、报销科研经费\",\n      \"answer_span\": \"须严格按照学校审批同意的预算范围及相关经费管理办法使用、报销科研经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条原文包含“严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"因违规使用造成的责任由项目负责人和所在二级教学（科研）机构共同承担\",\n      \"answer_span\": \"因违规使用造成的责任由项目负责人和所在二级教学（科研）机构共同承担\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C014第十三条原文包含“因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担”，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"该办法适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费\",\n      \"answer_span\": \"该办法适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C003第二条原文包含适用范围，且该chunk已实际读取。\"\n    },\n    {\n      \"text\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行\",\n      \"answer_span\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照本办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C003第二条原文包含该适用规则，且该chunk已实际读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案完整覆盖全部4个要求要点，引用与已读原文一致；对临时读取故障进行了合理恢复，最终成功读取D03-C016并给出有据回答，未发现无依据制度事实或严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0233574,
+          "seconds": 43.8497
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "0f48ce7e117461a58ca93b5658a7f75f079a0323d6aae6b8ef64023abacc4f14"
+}

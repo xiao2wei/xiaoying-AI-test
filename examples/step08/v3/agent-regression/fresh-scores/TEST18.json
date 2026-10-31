@@ -1,0 +1,137 @@
+{
+  "id": "TEST18",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。",
+            "reason": "明确陈述校内申诉办法规定暂缓执行。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定：申诉处理一次终局，申诉期间原处理决定应予执行",
+            "reason": "明确陈述作风问题办法规定应予执行。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": "",
+            "reason": "答案仅分别列出两办法规定，未明确说明两者适用处理类型不同。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "尚缺本次处理决定的类型及其所依据的制度名称、条款；请提供该处理决定书或告知书中的处理事项、依据条款和适用对象。",
+            "reason": "明确请求确认处理类型及适用办法，未一概决定。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "辽宁科技大学教职工校内申诉处理暂行办法（修订）第二十二条规定申诉处理期间暂缓执行原处理决定。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C023原文完全一致，已读文本支持。"
+          },
+          {
+            "text": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）第十七条规定申诉处理一次终局，申诉期间原处理决定应予执行。",
+            "answer_span": "申诉处理一次终局，申诉期间原处理决定应予执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D26-C018原文包含该表达，已读文本支持。"
+          },
+          {
+            "text": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）第十七条同时规定申诉处理委员会维持处理决定或要求撤销原处理决定并作出新处理决定的两种申诉意见。",
+            "answer_span": "该条同时规定申诉处理委员会维持处理决定或要求撤销原处理决定并作出新处理决定的两种申诉意见",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D26-C018原文包含两种申诉意见的描述，已读文本支持。"
+          },
+          {
+            "text": "工作作风问题处理决定形成后当事人不服的可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "answer_span": "工作作风问题处理决定形成后，当事人不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D26-C017原文包含该规定，已读文本支持。"
+          },
+          {
+            "text": "辽宁科技大学教职工校内申诉处理暂行办法（修订）由学校教职工申诉处理委员会或工会负责解释。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》由学校教职工申诉处理委员会或工会负责解释。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C025原文一致，已读文本支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了两项制度中关于申诉期间执行的不同规定，并请求用户补充处理类型和衔接解释，符合需确认状态。但未明确说明两种办法适用处理类型不同，遗漏要点，故answer_correct为false。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "处理决定书或告知书中的处理事项",
+            "处理决定书或告知书中的依据条款",
+            "处理决定书或告知书中的适用对象"
+          ],
+          "reason": "答案明确要求用户提供处理决定书/告知书中的具体字段，属于可操作的信息补充请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:53:11.655159+00:00",
+          "attempt": 1,
+          "prompt_sha256": "79347f30695836c19b2b51fb0e997e2c6b40ff4a982c99918951af6e7d25f44e",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "fea62872-ddcf-4776-89ab-57dbf287a28e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3575,
+            "completion_tokens": 3651,
+            "total_tokens": 7226,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2652
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2551
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。\",\n      \"reason\": \"明确陈述校内申诉办法规定暂缓执行。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十七条规定：申诉处理一次终局，申诉期间原处理决定应予执行\",\n      \"reason\": \"明确陈述作风问题办法规定应予执行。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"答案仅分别列出两办法规定，未明确说明两者适用处理类型不同。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"尚缺本次处理决定的类型及其所依据的制度名称、条款；请提供该处理决定书或告知书中的处理事项、依据条款和适用对象。\",\n      \"reason\": \"明确请求确认处理类型及适用办法，未一概决定。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学教职工校内申诉处理暂行办法（修订）第二十二条规定申诉处理期间暂缓执行原处理决定。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第二十二条规定：申诉处理期间，暂缓执行原处理决定。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C023原文完全一致，已读文本支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学管理服务人员工作作风问题处理办法（试行）第十七条规定申诉处理一次终局，申诉期间原处理决定应予执行。\",\n      \"answer_span\": \"申诉处理一次终局，申诉期间原处理决定应予执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D26-C018原文包含该表达，已读文本支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学管理服务人员工作作风问题处理办法（试行）第十七条同时规定申诉处理委员会维持处理决定或要求撤销原处理决定并作出新处理决定的两种申诉意见。\",\n      \"answer_span\": \"该条同时规定申诉处理委员会维持处理决定或要求撤销原处理决定并作出新处理决定的两种申诉意见\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D26-C018原文包含两种申诉意见的描述，已读文本支持。\"\n    },\n    {\n      \"text\": \"工作作风问题处理决定形成后当事人不服的可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"answer_span\": \"工作作风问题处理决定形成后，当事人不服的，可以向辽宁科技大学教职工校内申诉处理委员会提出申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D26-C017原文包含该规定，已读文本支持。\"\n    },\n    {\n      \"text\": \"辽宁科技大学教职工校内申诉处理暂行办法（修订）由学校教职工申诉处理委员会或工会负责解释。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》由学校教职工申诉处理委员会或工会负责解释。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C025原文一致，已读文本支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了两项制度中关于申诉期间执行的不同规定，并请求用户补充处理类型和衔接解释，符合需确认状态。但未明确说明两种办法适用处理类型不同，遗漏要点，故answer_correct为false。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"处理决定书或告知书中的处理事项\",\n      \"处理决定书或告知书中的依据条款\",\n      \"处理决定书或告知书中的适用对象\"\n    ],\n    \"reason\": \"答案明确要求用户提供处理决定书/告知书中的具体字段，属于可操作的信息补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.017870336,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 33.3045
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "25a94a480ad6f667006c66b03170469d1126486508579d68f11d210576dfc12a"
+}

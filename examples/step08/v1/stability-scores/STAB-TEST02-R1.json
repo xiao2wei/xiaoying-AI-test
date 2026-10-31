@@ -1,0 +1,119 @@
+{
+  "id": "STAB-TEST02-R1",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "答案明确给出满10年发80%，且限定为岗位工资、薪级工资和基础绩效，符合规定。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "答案明确给出不满10年发70%，且限定为岗位工资、薪级工资和基础绩效，符合规定。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "答案表述为发岗位工资、薪级工资和基础绩效，未泛化为所有收入；70%比例同样限定于该三项。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "answer_span": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格行明确载明＞6个月且工作年限满10年发岗位工资、薪级工资和基础绩效的80%，实际读取原文一致。"
+          },
+          {
+            "text": "按同一规定，全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "answer_span": "按同一规定，全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格行明确载明＞6个月且工作年限不满10年发岗位工资、薪级工资和基础绩效的70%，实际读取原文一致。"
+          },
+          {
+            "text": "该比例适用于“全年累计请假时间＞6个月”的病假待遇档。",
+            "answer_span": "该比例适用于“全年累计请假时间＞6个月”的病假待遇档",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "所引用的句子仅为工伤条款，未包含＞6个月比例表内容；但实际读取原文中的表格行支持该适用范围。"
+          },
+          {
+            "text": "被认定为工伤并接受工伤医疗期间不作病假处理，按《工伤保险条例》等国家相关文件执行。",
+            "answer_span": "被认定为工伤并接受工伤医疗期间不作病假处理，按《工伤保险条例》等国家相关文件执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的工伤句直接支持该事实，且实际读取原文一致。"
+          }
+        ],
+        "serious_errors": [
+          "claim3中“该比例适用于‘全年累计请假时间＞6个月’的病假待遇档”引用了工伤条款，未引用对应的＞6个月表格行，引用不支持该句结论。"
+        ],
+        "reason": "答案准确给出了满10年发80%、不满10年发70%，并明确限定为岗位工资、薪级工资和基础绩效，关键比例信息有原文支持；仅有一处重复句的引用不够精确，但不影响答案整体正确性。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "claim3中“该比例适用于‘全年累计请假时间＞6个月’的病假待遇档”引用了工伤条款，未引用对应的＞6个月表格行，引用不支持该句结论。",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.298546+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9ee3b05a93bdc9f20fca1a9b6f04b9c3ddac56e671cb90096a5d6188c670c960",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7bb80d6d-9987-4478-b17b-436f694f3431",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2515,
+            "completion_tokens": 9609,
+            "total_tokens": 12124,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8707
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1619
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"答案明确给出满10年发80%，且限定为岗位工资、薪级工资和基础绩效，符合规定。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"reason\": \"答案明确给出不满10年发70%，且限定为岗位工资、薪级工资和基础绩效，符合规定。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"答案表述为发岗位工资、薪级工资和基础绩效，未泛化为所有收入；70%比例同样限定于该三项。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"answer_span\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格行明确载明＞6个月且工作年限满10年发岗位工资、薪级工资和基础绩效的80%，实际读取原文一致。\"\n    },\n    {\n      \"text\": \"按同一规定，全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"answer_span\": \"按同一规定，全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格行明确载明＞6个月且工作年限不满10年发岗位工资、薪级工资和基础绩效的70%，实际读取原文一致。\"\n    },\n    {\n      \"text\": \"该比例适用于“全年累计请假时间＞6个月”的病假待遇档。\",\n      \"answer_span\": \"该比例适用于“全年累计请假时间＞6个月”的病假待遇档\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用的句子仅为工伤条款，未包含＞6个月比例表内容；但实际读取原文中的表格行支持该适用范围。\"\n    },\n    {\n      \"text\": \"被认定为工伤并接受工伤医疗期间不作病假处理，按《工伤保险条例》等国家相关文件执行。\",\n      \"answer_span\": \"被认定为工伤并接受工伤医疗期间不作病假处理，按《工伤保险条例》等国家相关文件执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的工伤句直接支持该事实，且实际读取原文一致。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"claim3中“该比例适用于‘全年累计请假时间＞6个月’的病假待遇档”引用了工伤条款，未引用对应的＞6个月表格行，引用不支持该句结论。\"\n  ],\n  \"reason\": \"答案准确给出了满10年发80%、不满10年发70%，并明确限定为岗位工资、薪级工资和基础绩效，关键比例信息有原文支持；仅有一处重复句的引用不够精确，但不影响答案整体正确性。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.04137144,
+          "seconds": 93.4936
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "af51fe7356512cbb8591c4ddca7ff4807bd7ad534eb9c22c34eada4554323ea8"
+}

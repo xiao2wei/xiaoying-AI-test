@@ -1,0 +1,728 @@
+{
+  "id": "TEST21",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "出差乘高铁一等座能否报销？请给出本校精确金额上限。",
+      "history": [],
+      "output": {
+        "status": "insufficient_evidence",
+        "claims": [
+          {
+            "text": "在《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条中，办理该专项经费报销时，差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行；现有资料未载明高铁一等座能否报销及金额上限。",
+            "citations": [
+              {
+                "chunk_id": "D03-C013",
+                "quote": "4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座及报销金额上限。请提供该办法中“城市间交通费”条款及所附席别标准表（含版本日期、文号）；如该办法按职务职级区分席别，请同时说明本人职务职级和本次出差经费来源。"
+        ],
+        "answer": "在《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条中，办理该专项经费报销时，差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行；现有资料未载明高铁一等座能否报销及金额上限。\n现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座及报销金额上限。请提供该办法中“城市间交通费”条款及所附席别标准表（含版本日期、文号）；如该办法按职务职级区分席别，请同时说明本人职务职级和本次出差经费来源。"
+      },
+      "raw_final": {
+        "status": "insufficient_evidence",
+        "claims": [
+          {
+            "text": "在《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条中，办理该专项经费报销时，差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行；现有资料未载明高铁一等座能否报销及金额上限。",
+            "citations": [
+              {
+                "chunk_id": "D03-C013",
+                "quote": "4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座及报销金额上限。请提供该办法中“城市间交通费”条款及所附席别标准表（含版本日期、文号）；如该办法按职务职级区分席别，请同时说明本人职务职级和本次出差经费来源。"
+        ],
+        "answer": "在《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条中，办理该专项经费报销时，差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行；现有资料未载明高铁一等座能否报销及金额上限。\n现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座及报销金额上限。请提供该办法中“城市间交通费”条款及所附席别标准表（含版本日期、文号）；如该办法按职务职级区分席别，请同时说明本人职务职级和本次出差经费来源。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:01.676071+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5b9867f8fa7541a8edc89efbcb2f3ca80192cac35e1841a331e3decb49f2c7bc",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2edd1dad-064e-4b15-b466-15eaa139b73c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1728,
+            "completion_tokens": 44,
+            "total_tokens": 1772,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 192
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"出差 乘坐 高铁 一等座 报销 标准 差旅费\"},\"reason\":\"查找差旅费管理办法中关于高铁席别与报销标准的规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005711999999999999,
+          "seconds": 1.2518
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "出差 乘坐 高铁 一等座 报销 标准 差旅费"
+          },
+          "reason": "查找差旅费管理办法中关于高铁席别与报销标准的规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "出差 乘坐 高铁 一等座 报销 标准 差旅费"
+          },
+          "result": {
+            "ok": true,
+            "query": "出差 乘坐 高铁 一等座 报销 标准 差旅费",
+            "hits": [
+              {
+                "chunk_id": "D03-C013",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.599029,
+                "lexical_score": 25.2799,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十二条 原文及录用通知、出版物样稿及出版合同等\n相关证明材料（所在二级教学（科研）机构负责人签署意见），经人事处审核批准后方\n可办理报销。\n4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。报销开展学\n术、项目等调研活动费用的还须项目负责人填写《开展学术、项目调研活动报告》（附\n3），经人事处审核批准后方可办理报销。\n5.报销劳务费，无论金额大小均须提供相关证明材料，说明项目聘用人员自然情\n况、聘用理由、实际参与程度、劳务费发放标准、依据等，并且由项目负责人、所在二级\n教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C015",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.567322,
+                "lexical_score": 28.855,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十四条 第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C009",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第八条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13,
+                  14,
+                  15
+                ],
+                "printed_pages": [
+                  8,
+                  9,
+                  10
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.566368,
+                "lexical_score": 16.4418,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第八条 及注意事项：\n会议费、差旅费和国际合作与交流费相关计算依据《辽宁科技大学差旅费管理办\n法（修订）》等有关文件要求，不要超过国家以及学校规定的标准。\n（七）劳务费：项目研究过程中支付给聘用参与项目研究的研究人员、科研辅助人\n员等的劳务费用。\n解释及注意事项：\n1.劳务费的预算与列支应以实际参与的程度为依据，标准不宜过高。\n2.聘用人员的每年工作时间不要填写12个月，一般不超过10个月。\n3.不能给在职人员发放津贴，原则上不能给在校未毕业的本科生、研究生支付劳\n务费。\n（八）专家咨询费：项目研究过程中支付给临时聘请的咨询专家的费用。\n解释及注意事项：\n专家咨询费的标准按照学校及《中央财政科研项目专家咨询费管理办法》（财科\n教〔2017〕128号）文件标准执",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C013",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第十二条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "score": 0.080515,
+                "semantic_score": 0.454294,
+                "lexical_score": 19.3443,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第十二条 第十二条 探亲假的管理\n工作满1年的固定教职工按照国家、省相关规定可给予探亲假，探亲假应利用寒\n暑假、公休假日进行，特殊情况不能在寒暑假、公休假日进行的，按照事假有关规定履\n行审批程序。\n（一）探配偶、未婚教职工探父母：与配偶或未婚教职工与父母不住在一起又不能\n在公休假日团聚的，每年可给予1次探亲假，车船费报销，报销标准按有关规定执行。\n（二）已婚教职工探父母：已婚教职工与父母不住在一起又不能在公休假日团聚\n的，每4年可给予1次探亲假，车船费在本人基本工资30%以内的自理，超过部分报\n销，报销标准按有关规定执行。\n第七章 考勤管理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C013",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十二条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.455036,
+                "lexical_score": 7.608,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十二条 第十二条 教职工探亲假（含独生子女陪护父母假）具体要求及待遇如下：\n教职工可在公休日和寒暑期间探望父母或配偶，学校不在工作日设探亲假。确\n需在工作日进行的，按事假处理。\n与配偶、父母不住同一城市，又不能在公休假日团聚的，可享受以下探亲待遇：未\n婚教职工探望父母，每年报销一次往返路费；已婚教职工与配偶异地居住的，探望配\n偶，每年报销一次往返路费；已婚教职工探望父母，每4年报销一次往返路费中超出个\n人基本工资30%的部分。教职工探望父母或配偶，均以定居地（即户口所在地）为准。\n第四章 旷工认定及相关处理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0081,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:02.958201+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ed3fb31d673e1ba529ee11a833f03c95b45276e2ef455cedf29d23f1e4bde413",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "c058e0e3-6356-4a86-b743-2344d76de774",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3315,
+            "completion_tokens": 60,
+            "total_tokens": 3375,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1651
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"辽宁科技大学差旅费管理办法 修订 城市间交通费 乘坐 火车 高铁 一等座 报销\"}, \"reason\": \"首轮未命中差旅费办法本体，换关键词定位席别标准条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010665,
+          "seconds": 0.9586
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "辽宁科技大学差旅费管理办法 修订 城市间交通费 乘坐 火车 高铁 一等座 报销"
+          },
+          "reason": "首轮未命中差旅费办法本体，换关键词定位席别标准条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "辽宁科技大学差旅费管理办法 修订 城市间交通费 乘坐 火车 高铁 一等座 报销"
+          },
+          "result": {
+            "ok": true,
+            "query": "辽宁科技大学差旅费管理办法 修订 城市间交通费 乘坐 火车 高铁 一等座 报销",
+            "hits": [
+              {
+                "chunk_id": "D03-C013",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.8094,
+                "lexical_score": 47.4719,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十二条 原文及录用通知、出版物样稿及出版合同等\n相关证明材料（所在二级教学（科研）机构负责人签署意见），经人事处审核批准后方\n可办理报销。\n4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。报销开展学\n术、项目等调研活动费用的还须项目负责人填写《开展学术、项目调研活动报告》（附\n3），经人事处审核批准后方可办理报销。\n5.报销劳务费，无论金额大小均须提供相关证明材料，说明项目聘用人员自然情\n况、聘用理由、实际参与程度、劳务费发放标准、依据等，并且由项目负责人、所在二级\n教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C009",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第八条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13,
+                  14,
+                  15
+                ],
+                "printed_pages": [
+                  8,
+                  9,
+                  10
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.747246,
+                "lexical_score": 50.319,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第八条 ：项目研究过程中，需要支付的出版费、\n资料费、专用软件购买费、文献检索费、专业通信费、专利申请及其他知识产权事务等\n费用。\n解释及注意事项：\n不能列支通用的操作系统、办公软件、手机和办公固定电话的通讯费和电话充值\n卡费用。\n（六）会议费/差旅费/国际合作与交流费：项目研究过程中开展科学实验（试验）、\n科学考察、业务调研、学术交流等所发生的外埠差旅费、市内交通费用；为了组织开展\n学术研讨、咨询以及协调项目研究工作等活动而发生的会议费用；以及项目研究人员\n出国及赴港澳台、外国专家来华及港澳台专家来内地工作的费用。\n解释及注意事项：\n会议费、差旅费和国际合作与交流费相关计算依据《辽宁科技大学差旅费管理办\n法（修订）》等有关文件要求，不要超过国家以及学校规定的",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C015",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.773478,
+                "lexical_score": 35.8677,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十四条 第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C001",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "前言或附件",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "score": 0.080128,
+                "semantic_score": 0.662085,
+                "lexical_score": 24.8935,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 前言或附件 辽宁科技大学高层次人才\n科研建设专项经费管理办法（试行）\n（校发〔2019〕8号附件·2019年7月15日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C014",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.073333,
+                "semantic_score": 0.654031,
+                "lexical_score": 23.5521,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十三条 第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\n因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.014,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:03.952631+00:00",
+          "attempt": 1,
+          "prompt_sha256": "be8c869c6ecc9a9ced615ed0cfafd117fa875eb383141c7eb37033810dc5cb8b",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "febd6ad0-6777-42e5-a132-0ea5bb44827d",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4714,
+            "completion_tokens": 61,
+            "total_tokens": 4775,
+            "prompt_tokens_details": {
+              "cached_tokens": 3328
+            },
+            "prompt_cache_hit_tokens": 3328,
+            "prompt_cache_miss_tokens": 1386
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"差旅费 城市间交通费 火车 轮船 飞机 席别 标准 凭据报销\"}, \"reason\": \"两轮均未检索到差旅费办法本体，改用通用条款术语再试一次\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0014874,
+          "seconds": 0.9939
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "search",
+          "arguments": {
+            "query": "差旅费 城市间交通费 火车 轮船 飞机 席别 标准 凭据报销"
+          },
+          "reason": "两轮均未检索到差旅费办法本体，改用通用条款术语再试一次"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "差旅费 城市间交通费 火车 轮船 飞机 席别 标准 凭据报销"
+          },
+          "result": {
+            "ok": true,
+            "query": "差旅费 城市间交通费 火车 轮船 飞机 席别 标准 凭据报销",
+            "hits": [
+              {
+                "chunk_id": "D03-C013",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.594884,
+                "lexical_score": 25.2799,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十二条 原文及录用通知、出版物样稿及出版合同等\n相关证明材料（所在二级教学（科研）机构负责人签署意见），经人事处审核批准后方\n可办理报销。\n4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。报销开展学\n术、项目等调研活动费用的还须项目负责人填写《开展学术、项目调研活动报告》（附\n3），经人事处审核批准后方可办理报销。\n5.报销劳务费，无论金额大小均须提供相关证明材料，说明项目聘用人员自然情\n况、聘用理由、实际参与程度、劳务费发放标准、依据等，并且由项目负责人、所在二级\n教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C009",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第八条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13,
+                  14,
+                  15
+                ],
+                "printed_pages": [
+                  8,
+                  9,
+                  10
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.572718,
+                "lexical_score": 27.1302,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第八条 及注意事项：\n会议费、差旅费和国际合作与交流费相关计算依据《辽宁科技大学差旅费管理办\n法（修订）》等有关文件要求，不要超过国家以及学校规定的标准。\n（七）劳务费：项目研究过程中支付给聘用参与项目研究的研究人员、科研辅助人\n员等的劳务费用。\n解释及注意事项：\n1.劳务费的预算与列支应以实际参与的程度为依据，标准不宜过高。\n2.聘用人员的每年工作时间不要填写12个月，一般不超过10个月。\n3.不能给在职人员发放津贴，原则上不能给在校未毕业的本科生、研究生支付劳\n务费。\n（八）专家咨询费：项目研究过程中支付给临时聘请的咨询专家的费用。\n解释及注意事项：\n专家咨询费的标准按照学校及《中央财政科研项目专家咨询费管理办法》（财科\n教〔2017〕128号）文件标准执",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C015",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.57965,
+                "lexical_score": 21.2346,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十四条 第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C013",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第十二条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.463742,
+                "lexical_score": 11.2406,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第十二条 第十二条 探亲假的管理\n工作满1年的固定教职工按照国家、省相关规定可给予探亲假，探亲假应利用寒\n暑假、公休假日进行，特殊情况不能在寒暑假、公休假日进行的，按照事假有关规定履\n行审批程序。\n（一）探配偶、未婚教职工探父母：与配偶或未婚教职工与父母不住在一起又不能\n在公休假日团聚的，每年可给予1次探亲假，车船费报销，报销标准按有关规定执行。\n（二）已婚教职工探父母：已婚教职工与父母不住在一起又不能在公休假日团聚\n的，每4年可给予1次探亲假，车船费在本人基本工资30%以内的自理，超过部分报\n销，报销标准按有关规定执行。\n第七章 考勤管理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C013",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十二条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.075,
+                "semantic_score": 0.427517,
+                "lexical_score": 13.7243,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十二条 第十二条 教职工探亲假（含独生子女陪护父母假）具体要求及待遇如下：\n教职工可在公休日和寒暑期间探望父母或配偶，学校不在工作日设探亲假。确\n需在工作日进行的，按事假处理。\n与配偶、父母不住同一城市，又不能在公休假日团聚的，可享受以下探亲待遇：未\n婚教职工探望父母，每年报销一次往返路费；已婚教职工与配偶异地居住的，探望配\n偶，每年报销一次往返路费；已婚教职工探望父母，每4年报销一次往返路费中超出个\n人基本工资30%的部分。教职工探望父母或配偶，均以定居地（即户口所在地）为准。\n第四章 旷工认定及相关处理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.01,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:04.978211+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d8228504d7be14975382ff74f2c83dfd3ee9859608f2fa0db45567cca4fbe27a",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "3f214860-fcae-42f7-9ce1-69873ccce575",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 6321,
+            "completion_tokens": 215,
+            "total_tokens": 6536,
+            "prompt_tokens_details": {
+              "cached_tokens": 4736
+            },
+            "prompt_cache_hit_tokens": 4736,
+            "prompt_cache_miss_tokens": 1585
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"insufficient_evidence\", \"claims\": [{\"text\": \"现有资料仅表明差旅费报销须按《辽宁科技大学差旅费管理办法（修订）》的标准执行，未载明高铁一等座能否报销及具体金额上限。\", \"citations\": [{\"chunk_id\": \"D03-C013\", \"quote\": \"4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。\"}]}], \"gaps\": [\"现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座以及报销金额上限。请提供该办法（含版本日期、文号）中“城市间交通费”条款及所附席别标准表，或提供现行差旅费报销标准通知。\"]}, \"reason\": \"三轮检索仅命中引用差旅费办法的其他制度，未取得席别标准原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0021543,
+          "seconds": 1.9169
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "三轮检索仅命中引用差旅费办法的其他制度，未取得席别标准原文"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:06.918745+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3cf1e2bc2a0a6daae9d8909f4f2cfe2fedc7ac07b561c1abc5c5cbbea580bee0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "41e36905-5dbd-4720-ade6-8e19dbe5f22f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 6671,
+            "completion_tokens": 39,
+            "total_tokens": 6710,
+            "prompt_tokens_details": {
+              "cached_tokens": 6528
+            },
+            "prompt_cache_hit_tokens": 6528,
+            "prompt_cache_miss_tokens": 143
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D03-C013\"]}, \"reason\": \"引用校验提示未读取，先读取该片段原文再作答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0020480999999999997,
+          "seconds": 0.8444
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D03-C013"
+            ]
+          },
+          "reason": "引用校验提示未读取，先读取该片段原文再作答"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C013"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第十二条",
+              "text": "第十二条 办理报销的经费须符合经费预算及本办法规定的使用范围，审批权\n限及注意事项如下：\n（一）审批权限\n1.单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\n2.单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二\n级教学（科研）机构负责人签字后报销。\n3.单笔报销经费在1万元以上10万元以下（含10万元）的，由项目负责人、所在二\n级教学（科研）机构、人事处负责人签字后报销。\n4.单笔报销经费在10万元以上的，还须学校主管领导审批。\n（二）注意事项\n1.购置科研用仪器设备及大宗材料须按学校有关文件要求执行，并履行审计手\n续。购置科研仪器设备还须填写《辽宁科技大学仪器设备购置可行性论证报告》（附\n2），经相关部门审批后方可按学校规定流程购买和报销。\n2.因教学科研工作需要，需从设备费中列支办公室、实验室的维修改造费的，或从\n材料费中列支通用的办公材料、办公用品，比如笔、本、纸、硒鼓、墨盒、色带等以及鼠\n标、键盘、内存条、移动硬盘等相关计算机配件的，须项目负责人提供情况说明（所在\n二级教学（科研）机构负责人签署意见），经人事处审批后方可办理报销。\n3.报销出版费须项目负责人提供论文原文及录用通知、出版物样稿及出版合同等\n相关证明材料（所在二级教学（科研）机构负责人签署意见），经人事处审核批准后方\n可办理报销。\n4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。报销开展学\n术、项目等调研活动费用的还须项目负责人填写《开展学术、项目调研活动报告》（附\n3），经人事处审核批准后方可办理报销。\n5.报销劳务费，无论金额大小均须提供相关证明材料，说明项目聘用人员自然情\n况、聘用理由、实际参与程度、劳务费发放标准、依据等，并且由项目负责人、所在二级\n教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+              "pdf_pages": [
+                15,
+                16
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C013",
+              "printed_pages": [
+                10,
+                11
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C012",
+              "next_chunk_id": "D03-C014",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:07.785609+00:00",
+          "attempt": 1,
+          "prompt_sha256": "934fec7ff5ef46243184e65121620ee06e853bcd16590152d9b49e6475466991",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "91205c76-5062-4fc1-9388-d15104940a37",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 7402,
+            "completion_tokens": 212,
+            "total_tokens": 7614,
+            "prompt_tokens_details": {
+              "cached_tokens": 6656
+            },
+            "prompt_cache_hit_tokens": 6656,
+            "prompt_cache_miss_tokens": 746
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"insufficient_evidence\", \"claims\": [{\"text\": \"现有资料仅表明差旅费报销须按《辽宁科技大学差旅费管理办法（修订）》的标准执行，未载明高铁一等座能否报销及具体金额上限。\", \"citations\": [{\"chunk_id\": \"D03-C013\", \"quote\": \"4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。\"}]}], \"gaps\": [\"现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座以及报销金额上限。请提供该办法（含版本日期、文号）中“城市间交通费”条款及所附席别标准表，或提供现行差旅费报销标准通知。\"]}, \"reason\": \"已读取唯一相关片段，仍无席别标准原文，证据不足\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002475,
+          "seconds": 1.4311
+        },
+        {
+          "kind": "decision",
+          "step": 6,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取唯一相关片段，仍无席别标准原文，证据不足"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:09.239294+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b60b5ea16ad677d695cbe6397180427d87a33fac8f0696d2e9959375e03a6bf9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "ff402ab2-b580-443c-b203-486365521926",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 7782,
+            "completion_tokens": 1277,
+            "total_tokens": 9059,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1043
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 6246
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"insufficient_evidence\",\"claims\":[{\"text\":\"在《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条中，办理该专项经费报销时，差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行；现有资料未载明高铁一等座能否报销及金额上限。\",\"citations\":[{\"chunk_id\":\"D03-C013\",\"quote\":\"4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。\"}]}],\"gaps\":[\"现有资料未包含《辽宁科技大学差旅费管理办法（修订）》正文，无法确认城市间交通费中火车/高铁席别的乘坐等级、是否允许一等座及报销金额上限。请提供该办法中“城市间交通费”条款及所附席别标准表（含版本日期、文号）；如该办法按职务职级区分席别，请同时说明本人职务职级和本次出差经费来源。\"]},\"reason\":\"已读取唯一相关片段，仍缺席别标准原文，无法给出精确金额上限\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.003867,
+          "seconds": 8.6332
+        },
+        {
+          "kind": "decision",
+          "step": 7,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取唯一相关片段，仍缺席别标准原文，无法给出精确金额上限"
+        }
+      ],
+      "read_ids": [
+        "D03-C013"
+      ],
+      "first_hits": [
+        "D03-C013",
+        "D03-C015",
+        "D03-C009",
+        "D19-C013",
+        "D20-C013"
+      ],
+      "seconds": 16.2198,
+      "model_calls": 7,
+      "tool_calls": 4,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 16.2202,
+  "model_calls": 7,
+  "tool_calls": 4,
+  "created_at": "2026-10-31T03:21:17.874649+00:00"
+}

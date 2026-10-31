@@ -1,0 +1,128 @@
+{
+  "id": "TEST08",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "reason": "答案明确给出合同期限一般为1—3年"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "试用期为1—3个月",
+            "reason": "答案明确给出试用期为1—3个月"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "以实际签订时间为准",
+            "reason": "答案明确说明以实际签订时间为准"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "合同期满后续签的前提是：经考核合格以及双方同意。",
+            "reason": "答案说明续签前提为考核合格且双方同意，语义等价于要点"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工合同期限一般为1—3年",
+            "answer_span": "临时用工合同期限一般为1—3年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D23-C021第二十条明确载明该期限，引用支持"
+          },
+          {
+            "text": "试用期为1—3个月",
+            "answer_span": "试用期为1—3个月",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D23-C021第二十条明确载明试用期，引用支持"
+          },
+          {
+            "text": "以实际签订时间为准",
+            "answer_span": "以实际签订时间为准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D23-C021第二十条明确载明以实际签订时间为准，引用支持"
+          },
+          {
+            "text": "经考核合格是续签前提",
+            "answer_span": "经考核合格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D23-C021第二十条包含“经考核合格”，作为续签条件之一，引用支持"
+          },
+          {
+            "text": "双方同意是续签前提",
+            "answer_span": "双方同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D23-C021第二十条包含“双方同意”，作为续签条件之一，引用支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "所有必需要点均被准确回答并引用已读来源，无制度事实错误或遗漏，动作合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:36.869337+00:00",
+          "attempt": 1,
+          "prompt_sha256": "dc2dc5e0c1835be576cf205136223f56332c1af09b18b3af89aadf6ed375d6a8",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "9cb15706-49ed-459a-ad50-a62122027f39",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2385,
+            "completion_tokens": 4477,
+            "total_tokens": 6862,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3815
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1489
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"reason\": \"答案明确给出合同期限一般为1—3年\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"试用期为1—3个月\",\n      \"reason\": \"答案明确给出试用期为1—3个月\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"以实际签订时间为准\",\n      \"reason\": \"答案明确说明以实际签订时间为准\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"合同期满后续签的前提是：经考核合格以及双方同意。\",\n      \"reason\": \"答案说明续签前提为考核合格且双方同意，语义等价于要点\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工合同期限一般为1—3年\",\n      \"answer_span\": \"临时用工合同期限一般为1—3年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D23-C021第二十条明确载明该期限，引用支持\"\n    },\n    {\n      \"text\": \"试用期为1—3个月\",\n      \"answer_span\": \"试用期为1—3个月\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D23-C021第二十条明确载明试用期，引用支持\"\n    },\n    {\n      \"text\": \"以实际签订时间为准\",\n      \"answer_span\": \"以实际签订时间为准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D23-C021第二十条明确载明以实际签订时间为准，引用支持\"\n    },\n    {\n      \"text\": \"经考核合格是续签前提\",\n      \"answer_span\": \"经考核合格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D23-C021第二十条包含“经考核合格”，作为续签条件之一，引用支持\"\n    },\n    {\n      \"text\": \"双方同意是续签前提\",\n      \"answer_span\": \"双方同意\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D23-C021第二十条包含“双方同意”，作为续签条件之一，引用支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"所有必需要点均被准确回答并引用已读来源，无制度事实错误或遗漏，动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02087712,
+          "seconds": 38.1207
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "440bb894851bdf0ae56b16cb044098271af8db4132d5bda952f67d710c0c8a49"
+}

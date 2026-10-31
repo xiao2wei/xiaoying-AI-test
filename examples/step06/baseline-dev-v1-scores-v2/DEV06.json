@@ -1,0 +1,156 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明“无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，指出了缺少人才层次条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答在claims中引用了第二十一条，说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，并在gaps中提及需补充认定层次等信息，但未明确提及“已签协议”作为缺失条件；然而，回答中引用的第二十一条内容隐含了协议签订是发放条件之一，且gaps中“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”未直接包含“已签协议”。严格按要点要求，回答未明确表达“缺少已签协议等条件”，因此该要点不满足。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明“无法直接给出唯一金额”，并给出了各层次安家费范围，没有给出唯一金额。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答在gaps中明确请求补充人才层次：“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”。"
+          },
+          {
+            "index": 4,
+            "met": false,
+            "reason": "实际回答未明确请求补充“已签协议”这一条件。虽然引用了第二十一条提及协议签订后发放，但未将其作为缺失条件向用户请求补充。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "第一层次安家费100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费100万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第二层次安家费80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费80万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第三层次安家费60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费60万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第四层次安家费20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费20万—30万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第五层次安家费20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费20万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第六层次安家费10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费10万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第七层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "第八层次安家费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C022中的quote，明确包含该内容，且该chunk已被实际读取。"
+          },
+          {
+            "text": "上述金额单位均为人民币",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C018中的quote，明确包含“以上涉及金额单位均为人民币”，且该chunk已被实际读取。"
+          },
+          {
+            "text": "安家费不含辽宁省、鞍山市配套待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D02-C007中的quote，明确包含“第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）”，且该chunk已被实际读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确识别了需要确认人才层次和协议条件，给出了各层次安家费范围，并请求补充必要信息，但未明确请求补充“已签协议”条件，导致一个必需要点未满足。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:19.642899+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9764af1563bc1d8eb12fc6a70fc1f8f6a714c6ccc10e4d2bd3eb700438e57169",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "3e2a9520-ae9d-4ed6-b635-8cc392738a40",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5677,
+            "completion_tokens": 1349,
+            "total_tokens": 7026,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 5037
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，指出了缺少人才层次条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中引用了第二十一条，说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，并在gaps中提及需补充认定层次等信息，但未明确提及“已签协议”作为缺失条件；然而，回答中引用的第二十一条内容隐含了协议签订是发放条件之一，且gaps中“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”未直接包含“已签协议”。严格按要点要求，回答未明确表达“缺少已签协议等条件”，因此该要点不满足。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“无法直接给出唯一金额”，并给出了各层次安家费范围，没有给出唯一金额。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确请求补充人才层次：“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"reason\": \"实际回答未明确请求补充“已签协议”这一条件。虽然引用了第二十一条提及协议签订后发放，但未将其作为缺失条件向用户请求补充。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"第一层次安家费100万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费100万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第二层次安家费80万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费80万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第三层次安家费60万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费60万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第四层次安家费20万—30万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费20万—30万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第五层次安家费20万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费20万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第六层次安家费10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费10万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第七层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"第八层次安家费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“提供安家费5万元”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C022中的quote，明确包含该内容，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"上述金额单位均为人民币\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C018中的quote，明确包含“以上涉及金额单位均为人民币”，且该chunk已被实际读取。\"\n    },\n    {\n      \"text\": \"安家费不含辽宁省、鞍山市配套待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D02-C007中的quote，明确包含“第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）”，且该chunk已被实际读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别了需要确认人才层次和协议条件，给出了各层次安家费范围，并请求补充必要信息，但未明确请求补充“已签协议”条件，导致一个必需要点未满足。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01283568,
+          "seconds": 11.7684
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "402bc466e4729a4abb83998a2ceefd1efb76e064f95f7b0294f15f3bec71348f"
+}

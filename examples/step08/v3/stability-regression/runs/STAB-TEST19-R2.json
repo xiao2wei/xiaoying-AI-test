@@ -1,0 +1,445 @@
+{
+  "id": "STAB-TEST19-R2",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校食堂WiFi的密码是多少？",
+      "history": [],
+      "output": {
+        "status": "insufficient_evidence",
+        "claims": [],
+        "gaps": [
+          "本次提供的制度汇编中未检索到食堂WiFi密码或校园无线网络接入账号、密码的规定；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。"
+        ],
+        "answer": "本次提供的制度汇编中未检索到食堂WiFi密码或校园无线网络接入账号、密码的规定；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。"
+      },
+      "raw_final": {
+        "status": "insufficient_evidence",
+        "claims": [],
+        "gaps": [
+          "本次提供的制度汇编中未检索到食堂WiFi密码或校园无线网络接入账号、密码的规定；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。"
+        ],
+        "answer": "本次提供的制度汇编中未检索到食堂WiFi密码或校园无线网络接入账号、密码的规定；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:02.520111+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1aaf1bd39ca51f01620d9d8613dbf85a0b3f22434af12360dae946b7744468c0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c5408483-2e04-4cc2-a0f6-2ad13f60b6ac",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1721,
+            "completion_tokens": 37,
+            "total_tokens": 1758,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 185
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"食堂 WiFi 密码 网络 无线网络\"},\"reason\":\"查询制度汇编中是否有食堂WiFi密码或校园网络接入规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00010911600000000002,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.8709
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "食堂 WiFi 密码 网络 无线网络"
+          },
+          "reason": "查询制度汇编中是否有食堂WiFi密码或校园网络接入规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "食堂 WiFi 密码 网络 无线网络"
+          },
+          "result": {
+            "ok": true,
+            "query": "食堂 WiFi 密码 网络 无线网络",
+            "hits": [
+              {
+                "chunk_id": "D07-C007",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第六条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  28,
+                  29
+                ],
+                "printed_pages": [
+                  23,
+                  24
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.358555,
+                "lexical_score": 14.2876,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第六条 康教育机构开展心理健康教\n育，对学生心理问题进行初步排查和疏导，组织开展心理健康知识普及宣传活动，培\n育学生理性平和、乐观向上的健康心态。\n（六）网络思想政治教育。运用新媒体新技术，推动思想政治工作传统优势与信\n息技术高度融合。构建网络思想政治教育重要阵地，积极传播先进文化。加强学生\n网络素养教育，积极培养校园好网民，引导学生创作网络文化作品，弘扬主旋律，传播\n正能量。创新工作路径，加强与学生的网上互动交流，运用网络新媒体对学生开展思\n想引领、学习指导、生活辅导、心理咨询等。\n（七）校园危机事件应对。组织开展基本安全教育。参与学校、学院危机事件工\n作预案制定和执行。对校园危机事件进行初步处理，稳定局面控制事态发展，及时掌\n握危机事件信息并按程序上报。参",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C007",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第六条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  33,
+                  34
+                ],
+                "printed_pages": [
+                  28,
+                  29
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.356559,
+                "lexical_score": 14.2674,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第六条 康教育机构开展心理健康教\n育，对学生心理问题进行初步排查和疏导，组织开展心理健康知识普及宣传活动，培\n育学生理性平和、乐观向上的健康心态。\n（六）网络思想政治教育。运用新媒体新技术，推动思想政治工作传统优势与信\n息技术高度融合。构建网络思想政治教育重要阵地，积极传播先进文化。加强学生\n网络素养教育，积极培养校园好网民，引导学生创作网络文化作品，弘扬主旋律，传播\n正能量。创新工作路径，加强与学生的网上互动交流，运用网络新媒体对学生开展思\n想引领、学习指导、生活辅导、心理咨询等。\n（七）校园危机事件应对。组织开展基本安全教育。参与学校、学院危机事件工\n作预案制定和执行。对校园危机事件进行初步处理，稳定局面控制事态发展，及时掌\n握危机事件信息并按程序上报。参",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D27-C005",
+                "doc_id": "D27",
+                "title": "辽宁科技大学研究成果分类分级认定办法（2022年版）",
+                "article": "前言或附件",
+                "version_date": "2022-09-20",
+                "pdf_pages": [
+                  201,
+                  202
+                ],
+                "printed_pages": [
+                  196,
+                  197
+                ],
+                "score": 0.060105,
+                "semantic_score": 0.317912,
+                "lexical_score": 8.1345,
+                "excerpt": "辽宁科技大学研究成果分类分级认定办法（2022年版） 前言或附件 在具有“CN”或“ISSN”刊号的学术刊物上（含在线发表），不包括仅有录用证明的情况；\n第一作者和通讯作者同为我校教师的论文只限唯一一名在职教师使用且只认定1次，\n并需签署同意书；共同第一（通讯）作者论文只限唯一一名在职教师使用且只认定1\n次，并需其他共同第一（通讯）作者签署同意书；第一作者为我校学生，指导教师须为\n第一通讯作者。\n4.因在职读博士以我校为非第一单位且本人为第一作者或通讯作者发表的论文\n最多计1篇。\n5.同一篇文章在不同类别，按就高原则，只计1次。\n6.以下情形，不计入发表论文数量\n（1）清样、动态、讲座、评论、短篇报道、简报、文摘、译文、史志、科普文章、科技新\n闻、考试大纲、复习资料、习题集（库）；\n（2）已被国家依法取缔的非法期（报",
+                "related_table_chunks": [
+                  "D27-C004"
+                ]
+              },
+              {
+                "chunk_id": "D13-C007",
+                "doc_id": "D13",
+                "title": "辽宁科技大学岗位设置与聘用管理实施办法（2022年版）",
+                "article": "第六条",
+                "version_date": "2022-09-20",
+                "pdf_pages": [
+                  63,
+                  64
+                ],
+                "printed_pages": [
+                  58,
+                  59
+                ],
+                "score": 0.052525,
+                "semantic_score": 0.311327,
+                "lexical_score": 6.7922,
+                "excerpt": "辽宁科技大学岗位设置与聘用管理实施办法（2022年版） 第六条 比核定）。K为设置系数，取值为0.6。T为本单位承担全\n校师生公共管理、服务和研究生管理等工作情况的调节编制，根据具体承担的工作情\n况取值为0—3个。\n2.学校直属党政管理部门人员编制设置根据上级部门的编制核定标准、学校任命\n的领导职数和工作任务及学校实际综合确定。编制设置主要依据部门职责并综合考\n虑服务群体规模与业务工作量，向师生管理服务的一线管理岗位倾斜。因工作职能\n变动，增加或减少领导职数的，学校结合实际情况适当增减普通管理岗（科员）编制。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D11-C001",
+                "doc_id": "D11",
+                "title": "辽宁科技大学辅导员“双线晋升”实施办法（试行）",
+                "article": "前言或附件",
+                "version_date": null,
+                "pdf_pages": [
+                  52,
+                  53,
+                  54
+                ],
+                "printed_pages": [
+                  47,
+                  48,
+                  49
+                ],
+                "score": 0.052521,
+                "semantic_score": 0.400698,
+                "lexical_score": 0.0,
+                "excerpt": "辽宁科技大学辅导员“双线晋升”实施办法（试行） 前言或附件 月 日 |  |  |  |  |  |  |  |  |  | \n学生处意见 | 负责人签字：（盖 章）年 月 日 |  |  |  |  |  |  |  |  | \n人事处意见 | 负责人签字：（盖 章）年 月 日 |  |  |  |  |  |  |  |  | \n组织部意见 | 负责人签字：（盖 章）年 月 日 |  |  |  |  |  |  |  |  | \n学校意见：（盖 章）年 月 日 |  |  |  |  |  |  |  |  |  |",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0071,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:03.431026+00:00",
+          "attempt": 1,
+          "prompt_sha256": "32313c05c257dd0d5b3776c963a9ff1e8553a3ebd28803644745402ea0eeb595",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "f95c401c-cc0a-4a77-a5ae-d66f2d43a614",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3430,
+            "completion_tokens": 53,
+            "total_tokens": 3483,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1766
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"校园网 无线网络 接入 账号 密码 信息化 网络服务\"}, \"reason\": \"首轮结果与WiFi密码无关，换用校园网络接入服务关键词再查\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000603384,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.8451
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "校园网 无线网络 接入 账号 密码 信息化 网络服务"
+          },
+          "reason": "首轮结果与WiFi密码无关，换用校园网络接入服务关键词再查"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "校园网 无线网络 接入 账号 密码 信息化 网络服务"
+          },
+          "result": {
+            "ok": true,
+            "query": "校园网 无线网络 接入 账号 密码 信息化 网络服务",
+            "hits": [
+              {
+                "chunk_id": "D07-C007",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第六条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  28,
+                  29
+                ],
+                "printed_pages": [
+                  23,
+                  24
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.471704,
+                "lexical_score": 24.1832,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第六条 康教育机构开展心理健康教\n育，对学生心理问题进行初步排查和疏导，组织开展心理健康知识普及宣传活动，培\n育学生理性平和、乐观向上的健康心态。\n（六）网络思想政治教育。运用新媒体新技术，推动思想政治工作传统优势与信\n息技术高度融合。构建网络思想政治教育重要阵地，积极传播先进文化。加强学生\n网络素养教育，积极培养校园好网民，引导学生创作网络文化作品，弘扬主旋律，传播\n正能量。创新工作路径，加强与学生的网上互动交流，运用网络新媒体对学生开展思\n想引领、学习指导、生活辅导、心理咨询等。\n（七）校园危机事件应对。组织开展基本安全教育。参与学校、学院危机事件工\n作预案制定和执行。对校园危机事件进行初步处理，稳定局面控制事态发展，及时掌\n握危机事件信息并按程序上报。参",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C007",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第六条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  33,
+                  34
+                ],
+                "printed_pages": [
+                  28,
+                  29
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.476501,
+                "lexical_score": 24.1415,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第六条 康教育机构开展心理健康教\n育，对学生心理问题进行初步排查和疏导，组织开展心理健康知识普及宣传活动，培\n育学生理性平和、乐观向上的健康心态。\n（六）网络思想政治教育。运用新媒体新技术，推动思想政治工作传统优势与信\n息技术高度融合。构建网络思想政治教育重要阵地，积极传播先进文化。加强学生\n网络素养教育，积极培养校园好网民，引导学生创作网络文化作品，弘扬主旋律，传播\n正能量。创新工作路径，加强与学生的网上互动交流，运用网络新媒体对学生开展思\n想引领、学习指导、生活辅导、心理咨询等。\n（七）校园危机事件应对。组织开展基本安全教育。参与学校、学院危机事件工\n作预案制定和执行。对校园危机事件进行初步处理，稳定局面控制事态发展，及时掌\n握危机事件信息并按程序上报。参",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D18-C003",
+                "doc_id": "D18",
+                "title": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见",
+                "article": "前言或附件",
+                "version_date": "2021-03-18",
+                "pdf_pages": [
+                  165,
+                  166
+                ],
+                "printed_pages": [
+                  160,
+                  161
+                ],
+                "score": 0.065733,
+                "semantic_score": 0.433502,
+                "lexical_score": 11.1364,
+                "excerpt": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见 前言或附件 园，将尊师重\n教观念渗透进学生的价值体系。做好教师从教30年表奖和荣休工作，礼敬教师，弘扬\n尊师风尚。建立健全教职工代表大会制度，保障教师参与学校决策的民主权利。健\n全家校联系制度，引导家长尊重学校教育安排，尊敬教师创造发挥，配合学校做好学\n生的学习教育。\n17.强化多方联动，营造尊师重教氛围。加强展现新时代教师风貌的作品创作，善\n用微博、微信、微视频等新媒体形式，传递教师正能量。各单位要广泛利用校报校刊、",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D14-C042",
+                "doc_id": "D14",
+                "title": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "version_date": "2022-09-21",
+                "pdf_pages": [
+                  103,
+                  104
+                ],
+                "printed_pages": [
+                  98,
+                  99
+                ],
+                "score": 0.059524,
+                "semantic_score": 0.406561,
+                "lexical_score": 15.137,
+                "excerpt": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版） 前言或附件 成与学生工作相关的教学研究成果：市级以上1项并结题验收通过。\n⑤主持并完成与学生工作相关的科研课题：市级以上1项并结题验收通过。\n⑥作为主持人获得与学生工作相关的教学科研成果奖：市级以上1项。\n⑦作为主要成员（前2名）获得与学生工作相关的教学科研成果奖励：市级以上\n1项。\n⑧在微博、微信公众号、网站等新媒体平台上发表网络思想政治教育方面原创署\n名文章或制作的网络精品课程、新媒体视频等优秀网络文化成果，具有网络影响力和\n育人效果。\n（三）对外交流与公共服务\n任现职以来，申报人需积极参加辅导员相关进修、培训、会议等，并完成国家、省、\n学校所规定的培训、进修及其他继续教育任务，达到规定要求，在对外交流合作、承担\n校内外公共服务工作方面取得以下代表性业绩2项以",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D10-C023",
+                "doc_id": "D10",
+                "title": "辽宁科技大学辅导员考核办法",
+                "article": "前言或附件",
+                "version_date": "2022-05-24",
+                "pdf_pages": [
+                  50,
+                  51
+                ],
+                "printed_pages": [
+                  45,
+                  46
+                ],
+                "score": 0.059259,
+                "semantic_score": 0.442932,
+                "lexical_score": 5.606,
+                "excerpt": "辽宁科技大学辅导员考核办法 前言或附件 |  | 所带班级 |  |  |  |  |  |  |  |  |  |  | \n学生数 |  |  |  |  |  |  |  |  |  |  |  |  | \n（一）“99722”量化任务完成情况（30分） |  |  |  |  |  |  |  |  |  |  |  |  | \n建立台账（9类） | 类别 |  |  | 是否建立 | 类别 |  |  |  | 是否建立 | 其他台账 |  |  | \n | 1—1全体学生 |  |  |  | 1—6校外勤工助学 |  |  |  |  | 1—0其他 |  |  | \n | 1—2学生骨干 |  |  |  | 1—7家庭贫困 |  |  |  |  |  |  |  | \n |",
+                "related_table_chunks": [
+                  "D10-C024"
+                ]
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0097,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:04.342428+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ac5b5365a371de7a71852efd206a6a7c77fa7ccb0cbd25b28eb9438fc64c5ceb",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "0dee5eb6-3f0b-4646-b232-ffbbf16d95d6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5167,
+            "completion_tokens": 97,
+            "total_tokens": 5264,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "prompt_cache_hit_tokens": 3456,
+            "prompt_cache_miss_tokens": 1711
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"insufficient_evidence\", \"claims\": [], \"gaps\": [\"现有制度汇编检索结果未包含食堂WiFi密码或校园无线网络接入账号、密码的条款；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。\"]}, \"reason\": \"两轮检索均无相关制度依据，无法回答具体WiFi密码\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006504359999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.114
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "两轮检索均无相关制度依据，无法回答具体WiFi密码"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:05.547102+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7b9426c06f8bd49e8bc8edfd4e637e1f2f76987d48cd6a09c7665598a2943f6b",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c36a1bc8-52f0-4a10-837b-5a4f6fcfdfdd",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5427,
+            "completion_tokens": 187,
+            "total_tokens": 5614,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 97
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 3891
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"insufficient_evidence\",\"claims\":[],\"gaps\":[\"本次提供的制度汇编中未检索到食堂WiFi密码或校园无线网络接入账号、密码的规定；请提供校园网络服务管理办法、信息化服务指南或食堂网络使用说明（含标题、版本日期和适用对象）。\"]},\"reason\":\"现有资料未包含所问WiFi密码，无法据此回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0014009159999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.7467
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "现有资料未包含所问WiFi密码，无法据此回答"
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [
+        "D07-C007",
+        "D08-C007",
+        "D27-C005",
+        "D13-C007",
+        "D11-C001"
+      ],
+      "seconds": 4.8068,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 4.8071,
+  "model_calls": 4,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T03:51:07.294841+00:00"
+}

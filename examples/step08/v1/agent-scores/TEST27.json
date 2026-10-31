@@ -1,0 +1,220 @@
+{
+  "id": "TEST27",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "reason": "实际回答明确包含提前一个月、书面、人事处申请，与要点一致"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经人事处审核同意",
+            "reason": "实际回答明确包含审核同意，与要点一致"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "并办理完工作交接手续后方可离岗",
+            "reason": "实际回答明确包含办完交接后方可离岗，与要点一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请",
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C020第十九条原文包含该表述，实际已读同块支持"
+          },
+          {
+            "text": "经人事处审核同意",
+            "answer_span": "经人事处审核同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C020第十九条原文包含审核同意，实际已读同块支持"
+          },
+          {
+            "text": "并办理完工作交接手续后方可离岗",
+            "answer_span": "并办理完工作交接手续后方可离岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C020第十九条原文包含工作交接后方可离岗，实际已读同块支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答完整复述了提前解除合同的三个办理要点，所引用条款与已读原文一致，依据充分，回答正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:18.802536+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e3040b986f2e46d200be7f4bc529ec784b4267239605a742218ac00d0b77a150",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "28146b10-ae8f-4dbe-a6c9-01dc884295eb",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1727,
+            "completion_tokens": 1486,
+            "total_tokens": 3213,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1102
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 831
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"应提前一个月以书面形式向人事处提出申请\",\"reason\":\"实际回答明确包含提前一个月、书面、人事处申请，与要点一致\"},{\"index\":1,\"met\":true,\"answer_span\":\"经人事处审核同意\",\"reason\":\"实际回答明确包含审核同意，与要点一致\"},{\"index\":2,\"met\":true,\"answer_span\":\"并办理完工作交接手续后方可离岗\",\"reason\":\"实际回答明确包含办完交接后方可离岗，与要点一致\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请\",\"answer_span\":\"应提前一个月以书面形式向人事处提出申请\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D23-C020第十九条原文包含该表述，实际已读同块支持\"},{\"text\":\"经人事处审核同意\",\"answer_span\":\"经人事处审核同意\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D23-C020第十九条原文包含审核同意，实际已读同块支持\"},{\"text\":\"并办理完工作交接手续后方可离岗\",\"answer_span\":\"并办理完工作交接手续后方可离岗\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D23-C020第十九条原文包含工作交接后方可离岗，实际已读同块支持\"}],\"serious_errors\":[],\"reason\":\"实际回答完整复述了提前解除合同的三个办理要点，所引用条款与已读原文一致，依据充分，回答正确。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0081642,
+          "seconds": 13.8479
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "reason": "实际回答明确写到提前一个月以书面形式向人事处提出申请，满足要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申请须经人事处审核同意",
+            "reason": "实际回答明确写到经人事处审核同意，满足要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "办理完工作交接手续后方可离岗",
+            "reason": "实际回答明确写到办理完工作交接手续后方可离岗，满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请",
+            "answer_span": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案引用D23-C020第十九条原文，已读记录包含该条，引用支持这一制度事实。"
+          },
+          {
+            "text": "申请须经人事处审核同意",
+            "answer_span": "申请须经人事处审核同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C020第十九条中“经人事处审核同意”支持，实际已读该条。"
+          },
+          {
+            "text": "办理完工作交接手续后方可离岗",
+            "answer_span": "办理完工作交接手续后方可离岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C020第十九条中“办理完工作交接手续后方可离岗”支持，实际已读该条。"
+          },
+          {
+            "text": "临时用工合同是明确学校与临时用工人员双方权利和义务的协议",
+            "answer_span": "临时用工合同是明确学校与临时用工人员双方权利和义务的协议",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C014第十三条原文支持，实际已读该条。"
+          },
+          {
+            "text": "被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或劳务合同）",
+            "answer_span": "被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或劳务合同）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C014第十三条原文支持，实际已读该条。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答覆盖三个必需要点，引用与已读记录一致；额外提供合同签订规则有据可查，未发现严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:32.666131+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d1a0c5a11bb6b1c5ce5a81b297afe1ff6616dce98447c826345d299a311d4705",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1a5600a1-74ad-4cdc-8472-999c663c9315",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2115,
+            "completion_tokens": 3192,
+            "total_tokens": 5307,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2459
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1219
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"reason\": \"实际回答明确写到提前一个月以书面形式向人事处提出申请，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申请须经人事处审核同意\",\n      \"reason\": \"实际回答明确写到经人事处审核同意，满足要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"办理完工作交接手续后方可离岗\",\n      \"reason\": \"实际回答明确写到办理完工作交接手续后方可离岗，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请\",\n      \"answer_span\": \"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案引用D23-C020第十九条原文，已读记录包含该条，引用支持这一制度事实。\"\n    },\n    {\n      \"text\": \"申请须经人事处审核同意\",\n      \"answer_span\": \"申请须经人事处审核同意\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C020第十九条中“经人事处审核同意”支持，实际已读该条。\"\n    },\n    {\n      \"text\": \"办理完工作交接手续后方可离岗\",\n      \"answer_span\": \"办理完工作交接手续后方可离岗\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C020第十九条中“办理完工作交接手续后方可离岗”支持，实际已读该条。\"\n    },\n    {\n      \"text\": \"临时用工合同是明确学校与临时用工人员双方权利和义务的协议\",\n      \"answer_span\": \"临时用工合同是明确学校与临时用工人员双方权利和义务的协议\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C014第十三条原文支持，实际已读该条。\"\n    },\n    {\n      \"text\": \"被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或劳务合同）\",\n      \"answer_span\": \"被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或劳务合同）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C014第十三条原文支持，实际已读该条。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答覆盖三个必需要点，引用与已读记录一致；额外提供合同签订规则有据可查，未发现严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.015432119999999999,
+          "seconds": 27.4568
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "7c7b2f88b047c1ae18d6bd6a5a2e4c88c6f2043965a90a61b81499f57a27ee83"
+}

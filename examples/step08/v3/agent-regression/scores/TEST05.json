@@ -1,0 +1,101 @@
+{
+  "id": "TEST05",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "收到申诉书之日起5个工作日内",
+            "reason": "实际回答明确表述“在收到申诉书之日起5个工作日内”，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "reason": "实际回答明确表述“一次书面通知申诉人需要补正的全部内容和补正期限”，与要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期补正视为放弃申诉",
+            "reason": "实际回答明确表述“逾期补正视为放弃申诉”，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查，并区别情况作出处理。",
+            "answer_span": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条规定，申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查，并区别情况作出处理。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D24-C014，quote内容与事实一致，且该chunk已在actually_read中，包含该条款。"
+          },
+          {
+            "text": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限；逾期补正视为放弃申诉。",
+            "answer_span": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限；逾期补正视为放弃申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自D24-C014，quote内容与事实一致，且该chunk已在actually_read中，包含该条款。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条，完整回答了审查期限、补正通知方式及逾期后果，所有要点均明确表达且引用支持充分。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:25:02.807821+00:00",
+          "attempt": 1,
+          "prompt_sha256": "524bba73e8cb7ef779b31c0fc4143d2ac06ee6933e735abae9c9e531750264e5",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "be8ac241-f8eb-4c78-9e16-b8ba29d6f95c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2120,
+            "completion_tokens": 664,
+            "total_tokens": 2784,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 93
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1096
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"收到申诉书之日起5个工作日内\",\n      \"reason\": \"实际回答明确表述“在收到申诉书之日起5个工作日内”，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"reason\": \"实际回答明确表述“一次书面通知申诉人需要补正的全部内容和补正期限”，与要点一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"逾期补正视为放弃申诉\",\n      \"reason\": \"实际回答明确表述“逾期补正视为放弃申诉”，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查，并区别情况作出处理。\",\n      \"answer_span\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条规定，申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查，并区别情况作出处理。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D24-C014，quote内容与事实一致，且该chunk已在actually_read中，包含该条款。\"\n    },\n    {\n      \"text\": \"对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限；逾期补正视为放弃申诉。\",\n      \"answer_span\": \"对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限；逾期补正视为放弃申诉。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自D24-C014，quote内容与事实一致，且该chunk已在actually_read中，包含该条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条，完整回答了审查期限、补正通知方式及逾期后果，所有要点均明确表达且引用支持充分。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00542784,
+          "seconds": 6.6715
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "560d09fc1fd1a897f84c17ef0c15aa8669347a832b3435d442307fa75c465cde"
+}

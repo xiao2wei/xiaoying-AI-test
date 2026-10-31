@@ -1,0 +1,26 @@
+{
+  "samples": 16,
+  "valid_judgements": 12,
+  "agreement_with_proposed": 12,
+  "judge_errors": [
+    {
+      "id": "CAL13",
+      "error": "ModelError:HTTP_402"
+    },
+    {
+      "id": "CAL14",
+      "error": "ModelError:HTTP_402"
+    },
+    {
+      "id": "CAL15",
+      "error": "ModelError:HTTP_402"
+    },
+    {
+      "id": "CAL16",
+      "error": "ModelError:HTTP_402"
+    }
+  ],
+  "human_labels_complete": false,
+  "calibration_gate_passed": false,
+  "note": "EVAL-006修正摘要：调用失败恰好等于负标签不算一致；原summary与原始评分保留。"
+}

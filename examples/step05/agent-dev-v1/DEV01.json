@@ -1,0 +1,396 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才科研建设专项经费项目从什么时候起算？最长执行多久？期满结余如何处理？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "项目执行期限最长一般不得超过4年。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "项目执行期满后，结余经费由学\n校统筹管理。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "项目起始时间从学校审批立项时间算起。\n项目执行期限最长一般不得超过4年。\n项目执行期满后，结余经费由学校统筹管理。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "项目执行期限最长一般不得超过4年。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理。",
+            "citations": [
+              {
+                "chunk_id": "D03-C008",
+                "quote": "项目执行期满后，结余经费由学\n校统筹管理。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "项目起始时间从学校审批立项时间算起。\n项目执行期限最长一般不得超过4年。\n项目执行期满后，结余经费由学校统筹管理。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:00.722663+00:00",
+          "attempt": 1,
+          "prompt_sha256": "46946caefddecba69c606a1e4d23c6d5d517501eaa67c9dd401c7b042446f29f",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "4e217e88-185e-4ff3-a21f-4571aa782188",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 811,
+            "completion_tokens": 57,
+            "total_tokens": 868,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            },
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 683
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"人才科研建设专项经费项目 起算时间 执行期限 结余经费\",\"k\":5,\"doc_ids\":[]},\"reason\":\"检索人才科研建设专项经费项目的起算、执行期与结余处理规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0003117,
+          "seconds": 0.964
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "人才科研建设专项经费项目 起算时间 执行期限 结余经费",
+            "k": 5,
+            "doc_ids": []
+          },
+          "reason": "检索人才科研建设专项经费项目的起算、执行期与结余处理规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人才科研建设专项经费项目 起算时间 执行期限 结余经费",
+            "k": 5,
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "人才科研建设专项经费项目 起算时间 执行期限 结余经费",
+            "hits": [
+              {
+                "chunk_id": "D03-C008",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第七条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.808396,
+                "lexical_score": 83.8792,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第七条 第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C019",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十八条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.76193,
+                "lexical_score": 49.7838,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十八条 第十八条 校人才工作领导小组办公室统一组织项目结题验收。项目执行期满\n后10个工作日内，项目负责人须认真总结项目执行情况，及时填写《辽宁科技大学高\n层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构\n审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C022",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十一条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.724585,
+                "lexical_score": 55.3226,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十一条 第二十一条 学校拨付的人才专项经费在5万元及以下的，可不按项目立项管\n理，但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6），人才\n专项经费的执行期、使用范围、拨付及使用按本办法要求执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C024",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十三条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.078462,
+                "semantic_score": 0.724806,
+                "lexical_score": 49.0126,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十三条 第二十三条 项目实施过程中，项目负责人一般不得变更，项目负责人如中止聘\n用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，\n终止项目实施。结余经费交由学校统筹管理，已使用的经费根据具体情况酌情处理。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C017",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十六条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.736282,
+                "lexical_score": 42.7121,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十六条 第十六条 校人才工作领导小组办公室负责组织开展项目实施情况年度考核。\n项目负责人按项目申请书开展研究工作，并做好项目实施情况记录。项目负责人须\n在项目执行每满一年后的当月填报《辽宁科技大学高层次人才科研建设专项经费资\n助项目年度进展报告》（附4）报人事处，人事处会同科技处组成考核小组，对项目的年\n度进展情况、经费使用情况进行年度考核。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0109,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:01.699122+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a492a2760d2451efce4bd3306662c28dbf556655e559db7b8ab36d3c488cd31c",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "ebc7db68-acad-4b07-a4a7-5e3d8df230c7",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1997,
+            "completion_tokens": 43,
+            "total_tokens": 2040,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1229
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D03-C008\"]}, \"reason\": \"读取第七条原文，核实起算时间、最长执行期与期满结余处理\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006507,
+          "seconds": 0.9839
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D03-C008"
+            ]
+          },
+          "reason": "读取第七条原文，核实起算时间、最长执行期与期满结余处理"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C008"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第七条",
+              "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+              "pdf_pages": [
+                13
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C008",
+              "printed_pages": [
+                8
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C007",
+              "next_chunk_id": "D03-C009",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:40:02.685689+00:00",
+          "attempt": 1,
+          "prompt_sha256": "76511a37b8ff2d818ac1615036f1057e181a92dea1bd6b7eac84ae10334be972",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "fd9c78f6-d89f-4cad-add0-49e8773d5294",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2279,
+            "completion_tokens": 211,
+            "total_tokens": 2490,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 359
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"项目起始时间从学校审批立项时间算起。\", \"citations\": [{\"chunk_id\": \"D03-C008\", \"quote\": \"第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\\n要自行设定。\"}]}, {\"text\": \"项目执行期限最长一般不得超过4年。\", \"citations\": [{\"chunk_id\": \"D03-C008\", \"quote\": \"项目执行期限最长一般不得超过4年。\"}]}, {\"text\": \"项目执行期满后，结余经费由学校统筹管理。\", \"citations\": [{\"chunk_id\": \"D03-C008\", \"quote\": \"项目执行期满后，结余经费由学\\n校统筹管理。\"}]}], \"gaps\": []}, \"reason\": \"第七条原文已完整覆盖起算、最长执行期和期满结余处理三个问题\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009368999999999998,
+          "seconds": 1.732
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第七条原文已完整覆盖起算、最长执行期和期满结余处理三个问题"
+        }
+      ],
+      "read_ids": [
+        "D03-C008"
+      ],
+      "first_hits": [
+        "D03-C008",
+        "D03-C019",
+        "D03-C022",
+        "D03-C024",
+        "D03-C017"
+      ],
+      "seconds": 3.6972,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 3.6973,
+  "model_calls": 3,
+  "tool_calls": 2,
+  "created_at": "2026-10-30T14:40:04.419283+00:00"
+}

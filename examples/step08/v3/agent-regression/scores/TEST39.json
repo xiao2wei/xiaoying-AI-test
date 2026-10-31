@@ -1,0 +1,78 @@
+{
+  "id": "TEST39",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节",
+            "reason": "实际回答明确说明检索持续失败且未能核实，符合持续检索失败并明确未完成的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "未能读取任何制度原文，无法核实临时用工岗位设置的审批环节",
+            "reason": "实际回答未编造任何审批结果，并明确表示无法核实，符合不得编造的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "工具持续返回PERSISTENT_UNAVAILABLE，系统明确说明未能读取原文、无法核实审批环节，未编造制度事实。在持续不可恢复故障下停止进一步操作是合理决策，状态与预期一致。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:36:10.628509+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f64142b9860de8a80f1b3af9f11e44d685ecbe3830f4261ee3766a8948adffa9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "8b365854-4346-4491-af3c-22cf933ca44d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1523,
+            "completion_tokens": 550,
+            "total_tokens": 2073,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 304
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 499
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"检索工具持续返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批环节\",\n      \"reason\": \"实际回答明确说明检索持续失败且未能核实，符合持续检索失败并明确未完成的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"未能读取任何制度原文，无法核实临时用工岗位设置的审批环节\",\n      \"reason\": \"实际回答未编造任何审批结果，并明确表示无法核实，符合不得编造的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"工具持续返回PERSISTENT_UNAVAILABLE，系统明确说明未能读取原文、无法核实审批环节，未编造制度事实。在持续不可恢复故障下停止进一步操作是合理决策，状态与预期一致。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00418836,
+          "seconds": 6.0277
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "16ad4590fea39e05133ed9c45d991f5bec99d18aa618737dee5016ac7dbfac98"
+}

@@ -1,0 +1,85 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "gaps中明确说明“缺少您的引进人才层次”，直接表达了缺少人才层次。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "reason": "实际回答未提及已签协议条件，gaps仅提到缺少人才层次，未说明缺少已签协议。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "gaps中明确说明“我无法直接给唯一金额”，符合不提供唯一金额的要求。"
+      },
+      {
+        "index": 3,
+        "met": true,
+        "reason": "gaps中明确要求“请补充层次”，属于追问人才层次。"
+      },
+      {
+        "index": 4,
+        "met": false,
+        "reason": "实际回答未追问已签协议，gaps中无相关内容。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "缺少您的引进人才层次，请补充层次，我无法直接给唯一金额。",
+        "cited": false,
+        "citation_supported": false,
+        "supported_by_read": true,
+        "reason": "该事实来自gaps，未关联引用；但实际读取的第六条和第十九条支持安家费因层次和协议而异，故该说明得到已读原文支持。",
+        "answer_span": "缺少您的引进人才层次，请补充层次，我无法直接给唯一金额。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答正确识别缺少人才层次并追问，但遗漏了已签协议条件这一必要追问，导致两个必需要点未满足，因此answer_correct为false。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:09:02.887408+00:00",
+      "attempt": 1,
+      "prompt_sha256": "24642400c180c8ae216b1758fcbae911f209e0cc0905a58d40ede6b039026aaa",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "98343946-5bf7-4658-871c-063bba75809e",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 3542,
+        "completion_tokens": 412,
+        "total_tokens": 3954,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 2902
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"gaps中明确说明“缺少您的引进人才层次”，直接表达了缺少人才层次。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"reason\": \"实际回答未提及已签协议条件，gaps仅提到缺少人才层次，未说明缺少已签协议。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"gaps中明确说明“我无法直接给唯一金额”，符合不提供唯一金额的要求。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"gaps中明确要求“请补充层次”，属于追问人才层次。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"reason\": \"实际回答未追问已签协议，gaps中无相关内容。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"缺少您的引进人才层次，请补充层次，我无法直接给唯一金额。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实来自gaps，未关联引用；但实际读取的第六条和第十九条支持安家费因层次和协议而异，故该说明得到已读原文支持。\",\n      \"answer_span\": \"缺少您的引进人才层次，请补充层次，我无法直接给唯一金额。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别缺少人才层次并追问，但遗漏了已签协议条件这一必要追问，导致两个必需要点未满足，因此answer_correct为false。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.006306960000000001,
+      "seconds": 4.6091
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL13",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

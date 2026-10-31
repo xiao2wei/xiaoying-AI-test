@@ -1,0 +1,418 @@
+{
+  "id": "TEST08",
+  "category": "normal",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "临时用工合同期限与试用期一般多久？续签有哪些前提？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。",
+            "citations": [
+              {
+                "chunk_id": "D23-C021",
+                "quote": "第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\n时间为准。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "合同期满后续签的前提是：经考核合格以及双方同意。",
+            "citations": [
+              {
+                "chunk_id": "D23-C021",
+                "quote": "合同期满后，经考核合格以及双方同意后可以续签。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。\n合同期满后续签的前提是：经考核合格以及双方同意。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。",
+            "citations": [
+              {
+                "chunk_id": "D23-C021",
+                "quote": "第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\n时间为准。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "合同期满后续签的前提是：经考核合格以及双方同意。",
+            "citations": [
+              {
+                "chunk_id": "D23-C021",
+                "quote": "合同期满后，经考核合格以及双方同意后可以续签。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。\n合同期满后续签的前提是：经考核合格以及双方同意。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工合同期限与试用期一般多久？续签有哪些前提？"
+          },
+          "result": {
+            "ok": true,
+            "query": "临时用工合同期限与试用期一般多久？续签有哪些前提？",
+            "hits": [
+              {
+                "chunk_id": "D23-C021",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.787023,
+                "lexical_score": 73.7878,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十条 第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\n时间为准。合同期满后，经考核合格以及双方同意后可以续签。\n第五章 临时用工的日常管理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C015",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十四条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.66639,
+                "lexical_score": 42.4786,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十四条 第十四条 临时用工合同包括以下主要条款：\n（一）双方当事人名称、姓名及其身份信息。\n（二）合同期限。\n（三）工作内容。\n（四）薪酬待遇。\n（五）劳动纪律。\n（六）合同终止条件。\n（七）违反合同的责任。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C014",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十三条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.629381,
+                "lexical_score": 34.6963,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十三条 第十三条 临时用工合同是明确学校与临时用工人员双方权利和义务的协议。\n被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或\n劳务合同）。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C017",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十六条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.640571,
+                "lexical_score": 32.6006,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十六条 第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C020",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.076705,
+                "semantic_score": 0.679001,
+                "lexical_score": 22.2052,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十九条 第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0109,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C021"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第二十条",
+              "text": "第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\n时间为准。合同期满后，经考核合格以及双方同意后可以续签。\n第五章 临时用工的日常管理",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C021",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C020",
+              "next_chunk_id": "D23-C022",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C015"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十四条",
+              "text": "第十四条 临时用工合同包括以下主要条款：\n（一）双方当事人名称、姓名及其身份信息。\n（二）合同期限。\n（三）工作内容。\n（四）薪酬待遇。\n（五）劳动纪律。\n（六）合同终止条件。\n（七）违反合同的责任。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C015",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C014",
+              "next_chunk_id": "D23-C016",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十三条",
+              "text": "第十三条 临时用工合同是明确学校与临时用工人员双方权利和义务的协议。\n被聘用的临时用工人员必须以书面形式与学校签订临时用工聘用合同（劳动合同或\n劳务合同）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C014",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C013",
+              "next_chunk_id": "D23-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C017"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十六条",
+              "text": "第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C017",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C016",
+              "next_chunk_id": "D23-C018",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C020"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十九条",
+              "text": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C020",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C019",
+              "next_chunk_id": "D23-C021",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:17.374921+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8eb3fa456e352c7dff29c188dc8a4377f0f852650e4286ee7e4e145181d22a55",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "a9a42f66-a209-407a-a188-20dc0cde67e6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2825,
+            "completion_tokens": 133,
+            "total_tokens": 2958,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1929
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。\",\"citations\":[{\"chunk_id\":\"D23-C021\",\"quote\":\"第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\\n时间为准。\"}]},{\"text\":\"合同期满后续签的前提是：经考核合格以及双方同意。\",\"citations\":[{\"chunk_id\":\"D23-C021\",\"quote\":\"合同期满后，经考核合格以及双方同意后可以续签。\"}]}],\"gaps\":[]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010071,
+          "seconds": 1.2646
+        }
+      ],
+      "read_ids": [
+        "D23-C021",
+        "D23-C015",
+        "D23-C014",
+        "D23-C017",
+        "D23-C020"
+      ],
+      "first_hits": [
+        "D23-C021",
+        "D23-C015",
+        "D23-C014",
+        "D23-C017",
+        "D23-C020"
+      ],
+      "seconds": 1.2969,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 1.297,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-31T03:20:18.640534+00:00"
+}

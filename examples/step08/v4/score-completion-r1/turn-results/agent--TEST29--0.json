@@ -1,0 +1,108 @@
+{
+  "key": "agent--TEST29--0",
+  "mode": "agent",
+  "id": "TEST29",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "2811a2d0759dccc0d86f8e85d08c8ac56b2a4450e38e936d29ba7324efb8d959",
+  "run_sha256": "750ff68259fbdde1e44bbc11789202312d02e8f814ef0dd5359a3438e5a68d46",
+  "created_at": "2026-10-31T05:11:19.260252+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "均应履行不低于8年的服务期",
+          "reason": "实际回答明确表述了新入校全职教师应履行不低于8年的服务期。"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "自来校报到上岗之日起计算",
+          "reason": "实际回答明确表述了基本服务期自来校报到上岗之日起算。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期",
+          "answer_span": "凡通过公开招聘、调入等方式进入我校全职工作的教师，均应履行不低于8年的服务期",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。"
+        },
+        {
+          "text": "基本服务期自来校报到上岗之日起计算",
+          "answer_span": "自来校报到上岗之日起计算",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。"
+        },
+        {
+          "text": "签订人才引进协议的，按协议约定执行",
+          "answer_span": "签订人才引进协议的，按协议约定执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案准确回答了问题，给出了正确的最低服务期和起算点，并考虑了人才引进协议的特别约定，引用正确，无严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:10:48.419625+00:00",
+        "attempt": 1,
+        "prompt_sha256": "9044729c0c59c18a77991f7f2c12517b9f3ad7523850f4f27724d2b01f958da1",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "3f682b16-0429-4423-8b0e-379c0dba5761",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 4136,
+          "completion_tokens": 3374,
+          "total_tokens": 7510,
+          "prompt_tokens_details": {
+            "cached_tokens": 2304
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2905
+          },
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 1832
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"均应履行不低于8年的服务期\",\n      \"reason\": \"实际回答明确表述了新入校全职教师应履行不低于8年的服务期。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"reason\": \"实际回答明确表述了基本服务期自来校报到上岗之日起算。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"凡通过公开招聘、调入等方式进入我校全职工作的教师均应履行不低于8年的服务期\",\n      \"answer_span\": \"凡通过公开招聘、调入等方式进入我校全职工作的教师，均应履行不低于8年的服务期\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。\"\n    },\n    {\n      \"text\": \"基本服务期自来校报到上岗之日起计算\",\n      \"answer_span\": \"自来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行\",\n      \"answer_span\": \"签订人才引进协议的，按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实由引用直接支持，引用内容与事实一致，且实际已读取的文档包含该规定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，给出了正确的最低服务期和起算点，并考虑了人才引进协议的特别约定，引用正确，无严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.007940328,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 30.8316
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

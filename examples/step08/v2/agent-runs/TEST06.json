@@ -1,0 +1,562 @@
+{
+  "id": "TEST06",
+  "category": "normal",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "校内申诉委员会评议时，出席和表决比例分别有什么要求？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加。",
+            "citations": [
+              {
+                "chunk_id": "D24-C019",
+                "quote": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D24",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "version_date": "2021-05-30"
+              }
+            ]
+          },
+          {
+            "text": "表决须经出席委员三分之二以上通过方为有效。",
+            "citations": [
+              {
+                "chunk_id": "D24-C019",
+                "quote": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D24",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "version_date": "2021-05-30"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加。\n表决须经出席委员三分之二以上通过方为有效。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加。",
+            "citations": [
+              {
+                "chunk_id": "D24-C019",
+                "quote": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D24",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "version_date": "2021-05-30"
+              }
+            ]
+          },
+          {
+            "text": "表决须经出席委员三分之二以上通过方为有效。",
+            "citations": [
+              {
+                "chunk_id": "D24-C019",
+                "quote": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D24",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "version_date": "2021-05-30"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加。\n表决须经出席委员三分之二以上通过方为有效。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:22.432935+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2b0c39932a7f99922606330e6ba71fa710caa79d6d0b3e1e7de46d4fae5fe725",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "26d54caa-6979-4397-a98d-14628ae0e52f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1727,
+            "completion_tokens": 40,
+            "total_tokens": 1767,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 191
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"校内申诉委员会 评议 出席 表决 比例\",\"doc_ids\":[]},\"reason\":\"检索申诉委员会评议的出席与表决比例规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005661,
+          "seconds": 0.9834
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "校内申诉委员会 评议 出席 表决 比例",
+            "doc_ids": []
+          },
+          "reason": "检索申诉委员会评议的出席与表决比例规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "校内申诉委员会 评议 出席 表决 比例",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "校内申诉委员会 评议 出席 表决 比例",
+            "hits": [
+              {
+                "chunk_id": "D24-C019",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.742652,
+                "lexical_score": 45.4222,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十八条 第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。评议会议由主任主持，主任缺席时由副主\n任主持。评议应当制作笔录，由申诉处理委员会成员签名，评议中的不同意见，必须\n如实记入笔录。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C018",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十七条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.087121,
+                "semantic_score": 0.631655,
+                "lexical_score": 33.6807,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十七条 第十七条 教职工校内申诉处理委员会进行评议时采用不公开方式，委员意见\n应予保密；教职工申诉处理决定书未经送达申诉人前，不得公开表决结果。涉及当事\n人隐私的申诉案件，当事人的基本资料应予保密。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C021",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第二十条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.079937,
+                "semantic_score": 0.682934,
+                "lexical_score": 22.0134,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十条 第二十条 申诉处理委员会认为需要作出本办法第十五条（三）的申诉处理决定\n时，对申诉事项属于校长办公会议议事范围的，由申诉处理委员会提交校长办公会议\n审议研究后再下达申诉处理决定书。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C006",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第五条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  183
+                ],
+                "printed_pages": [
+                  178
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.618848,
+                "lexical_score": 25.9157,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第五条 第五条 学校成立“辽宁科技大学教职工校内申诉处理委员会”（以下简称申诉\n处理委员会）。申诉处理委员会下设办公室，作为申诉处理委员会的常设机构，负责\n受理申诉、送达申诉处理决定书、保管申诉卷宗等日常事务。申诉处理委员会办公室\n设在校工会。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C007",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第六条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  183
+                ],
+                "printed_pages": [
+                  178
+                ],
+                "score": 0.069794,
+                "semantic_score": 0.636198,
+                "lexical_score": 19.7851,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第六条 第六条 申诉处理委员会成员分别由党政办公室、纪委综合监察室、教师工作部\n（人事处）、工会等部门负责人及教职工代表和法律服务人员组成，一般为5至7人，设\n主任1人，副主任1人。\n申诉处理委员会成员中的教职工代表和法律服务人员由学校教代会执委会或校\n工会推荐。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0109,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:23.450456+00:00",
+          "attempt": 1,
+          "prompt_sha256": "411cec91094a2bf467382ab920688edc5840a566ae95f51ad123be2ab4dda4dd",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "cfdf3717-d406-481f-b2d2-859e2f2630c5",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2826,
+            "completion_tokens": 36,
+            "total_tokens": 2862,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1162
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D24-C019\"]}, \"reason\": \"读取第十八条原文以核对出席与表决比例\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000891,
+          "seconds": 0.8172
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D24-C019"
+            ]
+          },
+          "reason": "读取第十八条原文以核对出席与表决比例"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D24-C019"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D24",
+              "article": "第十八条",
+              "text": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。评议会议由主任主持，主任缺席时由副主\n任主持。评议应当制作笔录，由申诉处理委员会成员签名，评议中的不同意见，必须\n如实记入笔录。",
+              "pdf_pages": [
+                185
+              ],
+              "table_ids": [],
+              "chunk_id": "D24-C019",
+              "printed_pages": [
+                180
+              ],
+              "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+              "version_date": "2021-05-30",
+              "previous_chunk_id": "D24-C018",
+              "next_chunk_id": "D24-C020",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:24.298415+00:00",
+          "attempt": 1,
+          "prompt_sha256": "57a6668ded7253fa74c5bcb8beecbadd5d831ddb9673b1db6c4c65760079a001",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "83c48096-33aa-468e-811b-fc074232aaba",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3112,
+            "completion_tokens": 207,
+            "total_tokens": 3319,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 296
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加（出席要求）。\", \"citations\": [{\"chunk_id\": \"D24-C019\", \"quote\": \"第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\\n经出席委员三分之二以上通过方为有效。\"}]}, {\"text\": \"表决须经出席委员三分之二以上通过方为有效（表决要求）。\", \"citations\": [{\"chunk_id\": \"D24-C019\", \"quote\": \"第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\\n经出席委员三分之二以上通过方为有效。\"}]}], \"gaps\": []}, \"reason\": \"第十八条原文已明确出席与表决比例，证据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.001182,
+          "seconds": 1.6569
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十八条原文已明确出席与表决比例，证据充分"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:25.977821+00:00",
+          "attempt": 1,
+          "prompt_sha256": "02a66988b8818f32d43314443c0ebf907b6624ee96cd6f7e34afc113818e1621",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6279349a-f5b3-4046-971a-49099d6019a3",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3487,
+            "completion_tokens": 234,
+            "total_tokens": 3721,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 176
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1951
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"学生校内申诉处理委员会 评议 出席 表决 三分之二\", \"doc_ids\": []}, \"reason\": \"核查是否另有学生申诉评议比例规定，避免对未指定身份的委员会给出唯一结论\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0013268999999999998,
+          "seconds": 2.0354
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "search",
+          "arguments": {
+            "query": "学生校内申诉处理委员会 评议 出席 表决 三分之二",
+            "doc_ids": []
+          },
+          "reason": "核查是否另有学生申诉评议比例规定，避免对未指定身份的委员会给出唯一结论"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "学生校内申诉处理委员会 评议 出席 表决 三分之二",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "学生校内申诉处理委员会 评议 出席 表决 三分之二",
+            "hits": [
+              {
+                "chunk_id": "D24-C019",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十八条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.769348,
+                "lexical_score": 87.7311,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十八条 第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。评议会议由主任主持，主任缺席时由副主\n任主持。评议应当制作笔录，由申诉处理委员会成员签名，评议中的不同意见，必须\n如实记入笔录。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C018",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第十七条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.670133,
+                "lexical_score": 48.3923,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第十七条 第十七条 教职工校内申诉处理委员会进行评议时采用不公开方式，委员意见\n应予保密；教职工申诉处理决定书未经送达申诉人前，不得公开表决结果。涉及当事\n人隐私的申诉案件，当事人的基本资料应予保密。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C021",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第二十条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  185
+                ],
+                "printed_pages": [
+                  180
+                ],
+                "score": 0.081169,
+                "semantic_score": 0.729968,
+                "lexical_score": 39.4854,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第二十条 第二十条 申诉处理委员会认为需要作出本办法第十五条（三）的申诉处理决定\n时，对申诉事项属于校长办公会议议事范围的，由申诉处理委员会提交校长办公会议\n审议研究后再下达申诉处理决定书。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C006",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第五条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  183
+                ],
+                "printed_pages": [
+                  178
+                ],
+                "score": 0.076812,
+                "semantic_score": 0.65997,
+                "lexical_score": 45.1337,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第五条 第五条 学校成立“辽宁科技大学教职工校内申诉处理委员会”（以下简称申诉\n处理委员会）。申诉处理委员会下设办公室，作为申诉处理委员会的常设机构，负责\n受理申诉、送达申诉处理决定书、保管申诉卷宗等日常事务。申诉处理委员会办公室\n设在校工会。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D24-C008",
+                "doc_id": "D24",
+                "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+                "article": "第七条",
+                "version_date": "2021-05-30",
+                "pdf_pages": [
+                  183
+                ],
+                "printed_pages": [
+                  178
+                ],
+                "score": 0.070505,
+                "semantic_score": 0.685439,
+                "lexical_score": 36.2291,
+                "excerpt": "辽宁科技大学教职工校内申诉处理暂行办法（修订） 第七条 第七条 申诉处理委员会的职责是：\n（一）受理申诉人的申诉，履行申诉处理职能；\n（二）对申诉人的申诉请求及事实理由进行审议，提出对申诉人的申诉处理决定；\n（三）向申诉人送达申诉处理决定书。\n第三章 申诉范围",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0108,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:28.046425+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8f5c67b2c0915094065a99e3af3168cf3965d12b7ca75f0e4dcd2d1e1b99aa70",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2c684f5d-8357-48e5-b5cf-298d00444a29",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4572,
+            "completion_tokens": 206,
+            "total_tokens": 4778,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 1372
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十八条规定，申诉处理委员会评议申诉案件须有三分之二以上成员参加。\", \"citations\": [{\"chunk_id\": \"D24-C019\", \"quote\": \"第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\\n经出席委员三分之二以上通过方为有效。\"}]}, {\"text\": \"表决须经出席委员三分之二以上通过方为有效。\", \"citations\": [{\"chunk_id\": \"D24-C019\", \"quote\": \"第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\\n经出席委员三分之二以上通过方为有效。\"}]}], \"gaps\": []}, \"reason\": \"第十八条原文完整覆盖出席与表决比例，未发现其他版本或冲突规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0016187999999999999,
+          "seconds": 1.3771
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十八条原文完整覆盖出席与表决比例，未发现其他版本或冲突规定"
+        }
+      ],
+      "read_ids": [
+        "D24-C019"
+      ],
+      "first_hits": [
+        "D24-C019",
+        "D24-C018",
+        "D24-C021",
+        "D24-C006",
+        "D24-C007"
+      ],
+      "seconds": 7.0156,
+      "model_calls": 5,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 7.016,
+  "model_calls": 5,
+  "tool_calls": 3,
+  "created_at": "2026-10-31T03:20:29.424707+00:00"
+}

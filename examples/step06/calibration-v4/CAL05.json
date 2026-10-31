@@ -1,0 +1,66 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程",
+        "reason": "明确说明资料未提供VPN密码重置流程，满足要点。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。",
+        "reason": "回复未给出任何具体操作步骤，仅说明未提供并请求补充，未编造操作步骤。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际回答正确说明资料未提供VPN密码重置流程，未编造操作步骤，状态与预期一致；搜索动作合理，未产生无依据制度事实。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:13:58.038287+00:00",
+      "attempt": 1,
+      "prompt_sha256": "52ae492bdc1bc65d7fdf9940679d714137b00c58f9f6b17bb456b5c822e1fa5a",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "bf9da717-0599-431c-b382-d7cae7884837",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 919,
+        "completion_tokens": 2442,
+        "total_tokens": 3361,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2230
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 151
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供VPN密码重置流程\",\n      \"reason\": \"明确说明资料未提供VPN密码重置流程，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。\",\n      \"reason\": \"回复未给出任何具体操作步骤，仅说明未提供并请求补充，未编造操作步骤。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答正确说明资料未提供VPN密码重置流程，未编造操作步骤，状态与预期一致；搜索动作合理，未产生无依据制度事实。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0108834,
+      "seconds": 35.6794
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL05",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

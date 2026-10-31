@@ -1,0 +1,654 @@
+{
+  "stage_status": {
+    "2": "complete",
+    "3": "complete",
+    "4": "complete",
+    "5": "complete",
+    "6": "awaiting_actual_human_calibration_labels",
+    "7": "not_started",
+    "8": "not_started",
+    "9": "deferred_by_user"
+  },
+  "real_answer_model": "deepseek-flash",
+  "real_judge_model": "deepseek-v4-pro",
+  "program_tests": {
+    "run": 34,
+    "passed": 34,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "method": "deterministic_program_tests_not_model_performance"
+  },
+  "calibration": {
+    "samples": 14,
+    "agreement_with_proposed": 14,
+    "human_labels_complete": false,
+    "human_agreement": null,
+    "serious_false_passes": 0,
+    "calibration_gate_passed": false,
+    "note": "建议标签一致率不是人工标签一致率；本夹具不算Agent性能"
+  },
+  "agent_metrics": {
+    "M01": {
+      "name": "初次检索Recall@5",
+      "numerator": 8.5,
+      "denominator": 10,
+      "value": 0.85,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 0,
+        "DEV04": 1,
+        "DEV06": 0.5,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 1
+      }
+    },
+    "M02": {
+      "name": "最终实际读取证据覆盖率",
+      "numerator": 9.5,
+      "denominator": 10,
+      "value": 0.95,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV06": 0.5,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 1
+      }
+    },
+    "M03": {
+      "name": "任务通过率",
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV03": true,
+        "DEV04": true,
+        "DEV05": true,
+        "DEV06": false,
+        "DEV07": true,
+        "DEV08": true,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": true,
+        "DEV12": true
+      }
+    },
+    "M04": {
+      "name": "可回答问题正确率",
+      "numerator": 7,
+      "denominator": 8,
+      "value": 0.875,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV04": true,
+        "DEV07": true,
+        "DEV08": true,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": true
+      }
+    },
+    "M05": {
+      "name": "可回答问题完整度",
+      "numerator": 7.666666666666667,
+      "denominator": 8,
+      "value": 0.9583333333333334,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 0.6666666666666666,
+        "DEV04": 1,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 1
+      }
+    },
+    "M06": {
+      "name": "引用支持率",
+      "numerator": 59,
+      "denominator": 59,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {}
+    },
+    "M07": {
+      "name": "事实引用覆盖率",
+      "numerator": 59,
+      "denominator": 59,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {}
+    },
+    "M08": {
+      "name": "无依据事实率",
+      "numerator": 0,
+      "denominator": 59,
+      "value": 0,
+      "target": 0,
+      "direction": "<=",
+      "passed": true,
+      "detail": {}
+    },
+    "M09": {
+      "name": "conflict通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV03": true,
+        "DEV04": true
+      }
+    },
+    "M10": {
+      "name": "insufficient通过率",
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV05": true,
+        "DEV06": false
+      }
+    },
+    "M11": {
+      "name": "tool_failure通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV11": true,
+        "DEV12": true
+      }
+    },
+    "M12": {
+      "name": "paraphrase通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 0.8333333333333334,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV07": true,
+        "DEV08": true
+      }
+    },
+    "M13": {
+      "name": "context通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 0.8,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV09": true,
+        "DEV10": true
+      }
+    },
+    "M14": {
+      "name": "程序检查",
+      "numerator": 50,
+      "denominator": 50,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "test_passed": 34,
+        "test_run": 34,
+        "provenance_passed": 16,
+        "provenance_run": 16,
+        "test_report_present": true
+      }
+    },
+    "M15": {
+      "name": "关键缺陷场景数",
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0,
+      "target": 0,
+      "direction": "<=",
+      "passed": true,
+      "detail": []
+    },
+    "M16": {
+      "name": "稳定性通过率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": null,
+      "detail": {
+        "required_observations": 30,
+        "actual": 0
+      }
+    },
+    "M17": {
+      "name": "端到端P95秒",
+      "numerator": 7.0453,
+      "denominator": 12,
+      "value": 7.0453,
+      "target": 120,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 4.2541,
+        "DEV02": 4.7127,
+        "DEV03": 7.0453,
+        "DEV04": 2.8141,
+        "DEV05": 2.4517,
+        "DEV06": 5.7986,
+        "DEV07": 5.9176,
+        "DEV08": 6.3679,
+        "DEV09": 6.6791,
+        "DEV10": 5.7953,
+        "DEV11": 5.0719,
+        "DEV12": 2.1899
+      }
+    },
+    "M18": {
+      "name": "平均模型请求次数",
+      "numerator": 52,
+      "denominator": 12,
+      "value": 4.333333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 3,
+        "DEV02": 3,
+        "DEV03": 6,
+        "DEV04": 3,
+        "DEV05": 3,
+        "DEV06": 3,
+        "DEV07": 6,
+        "DEV08": 6,
+        "DEV09": 6,
+        "DEV10": 6,
+        "DEV11": 4,
+        "DEV12": 3
+      }
+    },
+    "M19": {
+      "name": "平均业务工具尝试次数",
+      "numerator": 46,
+      "denominator": 12,
+      "value": 3.8333333333333335,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 4,
+        "DEV02": 2,
+        "DEV03": 8,
+        "DEV04": 2,
+        "DEV05": 2,
+        "DEV06": 4,
+        "DEV07": 4,
+        "DEV08": 5,
+        "DEV09": 4,
+        "DEV10": 5,
+        "DEV11": 4,
+        "DEV12": 2
+      }
+    }
+  },
+  "baseline_metrics": {
+    "M01": {
+      "name": "初次检索Recall@5",
+      "numerator": 9.5,
+      "denominator": 10,
+      "value": 0.95,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV06": 0.5,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 1
+      }
+    },
+    "M02": {
+      "name": "最终实际读取证据覆盖率",
+      "numerator": 8.5,
+      "denominator": 10,
+      "value": 0.85,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV06": 0.5,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 0
+      }
+    },
+    "M03": {
+      "name": "任务通过率",
+      "numerator": 7,
+      "denominator": 12,
+      "value": 0.5833333333333334,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV03": true,
+        "DEV04": true,
+        "DEV05": false,
+        "DEV06": false,
+        "DEV07": true,
+        "DEV08": false,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": false,
+        "DEV12": true
+      }
+    },
+    "M04": {
+      "name": "可回答问题正确率",
+      "numerator": 5,
+      "denominator": 8,
+      "value": 0.625,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": true,
+        "DEV02": false,
+        "DEV04": true,
+        "DEV07": true,
+        "DEV08": false,
+        "DEV09": true,
+        "DEV10": true,
+        "DEV11": false
+      }
+    },
+    "M05": {
+      "name": "可回答问题完整度",
+      "numerator": 6.666666666666667,
+      "denominator": 8,
+      "value": 0.8333333333333334,
+      "target": 0.95,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 0.6666666666666666,
+        "DEV04": 1,
+        "DEV07": 1,
+        "DEV08": 1,
+        "DEV09": 1,
+        "DEV10": 1,
+        "DEV11": 0
+      }
+    },
+    "M06": {
+      "name": "引用支持率",
+      "numerator": 45,
+      "denominator": 46,
+      "value": 0.9782608695652174,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {}
+    },
+    "M07": {
+      "name": "事实引用覆盖率",
+      "numerator": 46,
+      "denominator": 46,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {}
+    },
+    "M08": {
+      "name": "无依据事实率",
+      "numerator": 0,
+      "denominator": 46,
+      "value": 0,
+      "target": 0,
+      "direction": "<=",
+      "passed": true,
+      "detail": {}
+    },
+    "M09": {
+      "name": "conflict通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV03": true,
+        "DEV04": true
+      }
+    },
+    "M10": {
+      "name": "insufficient通过率",
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV05": false,
+        "DEV06": false
+      }
+    },
+    "M11": {
+      "name": "tool_failure通过率",
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5,
+      "target": 1,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV11": false,
+        "DEV12": true
+      }
+    },
+    "M12": {
+      "name": "paraphrase通过率",
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5,
+      "target": 0.8333333333333334,
+      "direction": ">=",
+      "passed": false,
+      "detail": {
+        "DEV07": true,
+        "DEV08": false
+      }
+    },
+    "M13": {
+      "name": "context通过率",
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1,
+      "target": 0.8,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "DEV09": true,
+        "DEV10": true
+      }
+    },
+    "M14": {
+      "name": "程序检查",
+      "numerator": 50,
+      "denominator": 50,
+      "value": 1,
+      "target": 1,
+      "direction": ">=",
+      "passed": true,
+      "detail": {
+        "test_passed": 34,
+        "test_run": 34,
+        "provenance_passed": 16,
+        "provenance_run": 16,
+        "test_report_present": true
+      }
+    },
+    "M15": {
+      "name": "关键缺陷场景数",
+      "numerator": 1,
+      "denominator": 12,
+      "value": 1,
+      "target": 0,
+      "direction": "<=",
+      "passed": false,
+      "detail": [
+        {
+          "id": "DEV08",
+          "errors": [
+            "存在无依据结论或不支持引用"
+          ]
+        }
+      ]
+    },
+    "M16": {
+      "name": "稳定性通过率",
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "target": 0.9,
+      "direction": ">=",
+      "passed": null,
+      "detail": {
+        "required_observations": 30,
+        "actual": 0
+      }
+    },
+    "M17": {
+      "name": "端到端P95秒",
+      "numerator": 3.7677,
+      "denominator": 12,
+      "value": 3.7677,
+      "target": 120,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1.1468,
+        "DEV02": 2.1811,
+        "DEV03": 2.2088,
+        "DEV04": 1.1753,
+        "DEV05": 0.6958,
+        "DEV06": 3.7677,
+        "DEV07": 2.6448,
+        "DEV08": 2.5138,
+        "DEV09": 2.1659,
+        "DEV10": 2.6449,
+        "DEV11": 2.2207,
+        "DEV12": 0.88
+      }
+    },
+    "M18": {
+      "name": "平均模型请求次数",
+      "numerator": 16,
+      "denominator": 12,
+      "value": 1.3333333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 1,
+        "DEV02": 1,
+        "DEV03": 1,
+        "DEV04": 1,
+        "DEV05": 1,
+        "DEV06": 1,
+        "DEV07": 2,
+        "DEV08": 2,
+        "DEV09": 2,
+        "DEV10": 2,
+        "DEV11": 1,
+        "DEV12": 1
+      }
+    },
+    "M19": {
+      "name": "平均业务工具尝试次数",
+      "numerator": 91,
+      "denominator": 12,
+      "value": 7.583333333333333,
+      "target": 8,
+      "direction": "<=",
+      "passed": true,
+      "detail": {
+        "DEV01": 6,
+        "DEV02": 6,
+        "DEV03": 6,
+        "DEV04": 6,
+        "DEV05": 6,
+        "DEV06": 6,
+        "DEV07": 12,
+        "DEV08": 12,
+        "DEV09": 12,
+        "DEV10": 12,
+        "DEV11": 6,
+        "DEV12": 1
+      }
+    }
+  }
+}

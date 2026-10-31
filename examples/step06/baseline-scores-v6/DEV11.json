@@ -1,0 +1,84 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际答案仅输出“引用或格式校验未通过：unread_citation:D03-C016”，未表达“原则上不予调整”，不存在明确或语义等价表达。"
+          },
+          {
+            "index": 1,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际答案未提及确有特殊情况需要重大调整时由项目负责人提出申请。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际答案未提及所在二级教学（科研）机构签署意见。"
+          },
+          {
+            "index": 3,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际答案未提及提交校人才工作领导小组办公室审批通过后执行。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": false,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际答案未回答问题，仅因读取故障返回validation_failed；四个必要要点均未表达，status不符合expected_status，且对可恢复的TEMPORARY_UNAVAILABLE未重试即结束，处理不合理，故decision_ok为false。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:51.749087+00:00",
+          "attempt": 1,
+          "prompt_sha256": "429ed0be34aa98d871ec263faec99cb0be833d4b6fba6d5e3ec8f0557a6198af",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "02395fad-acab-4329-9d41-e35d8ad30f27",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2002,
+            "completion_tokens": 1891,
+            "total_tokens": 3893,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1656
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1234
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际答案仅输出“引用或格式校验未通过：unread_citation:D03-C016”，未表达“原则上不予调整”，不存在明确或语义等价表达。\"},{\"index\":1,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际答案未提及确有特殊情况需要重大调整时由项目负责人提出申请。\"},{\"index\":2,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际答案未提及所在二级教学（科研）机构签署意见。\"},{\"index\":3,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际答案未提及提交校人才工作领导小组办公室审批通过后执行。\"}],\"status_ok\":false,\"decision_ok\":false,\"answer_correct\":false,\"facts\":[],\"serious_errors\":[],\"reason\":\"实际答案未回答问题，仅因读取故障返回validation_failed；四个必要要点均未表达，status不符合expected_status，且对可恢复的TEMPORARY_UNAVAILABLE未重试即结束，处理不合理，故decision_ok为false。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010131,
+          "seconds": 23.0276
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "revalidated_from": "E:\\xiaoying\\AItest\\examples\\step06\\baseline-scores-v5\\DEV11.json"
+    }
+  ],
+  "pass": false,
+  "run_sha256": "fa6cbed174444fa21adbab9c09f8601692e6e19c4e63288823f824410f99993e",
+  "revalidation": "只修正连续跨claim原句定位的程序检查；实际AI判断内容与调用ID不变"
+}

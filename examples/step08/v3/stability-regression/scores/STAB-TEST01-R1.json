@@ -1,0 +1,177 @@
+{
+  "id": "STAB-TEST01-R1",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工科学科恰好4年取得学历学位，对应补贴10万元、科研建设经费5万元",
+            "reason": "实际回答明确给出了工科学科恰好4年取得学历学位时的补贴和科研建设经费金额，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "其他学科恰好5年取得学历学位，对应补贴9万元、科研建设经费2.7万元",
+            "reason": "实际回答明确给出了其他学科恰好5年取得学历学位时的补贴和科研建设经费金额，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条规定学校按教师在职读博取得学历学位时间兑现待遇",
+            "answer_span": "2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条规定，学校按教师在职读博取得学历学位的时间兑现待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了该规定并给出了相关条款，所引用的quote支持此事实，且系统已读文档包含该内容。"
+          },
+          {
+            "text": "待遇表第1项为：取得学历学位时间≤4年，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+            "answer_span": "其待遇表第1项为：取得学历学位时间≤4年，补贴10万元，科研建设经费工科5万元、其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了待遇表第1项，所引用的quote完全支持该金额和条件，且系统已读文档包含该内容。"
+          },
+          {
+            "text": "工科学科恰好4年取得学历学位对应补贴10万元、科研建设经费5万元",
+            "answer_span": "工科学科恰好4年取得学历学位，对应补贴10万元、科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由待遇表第1项（≤4年，工科科研经费5万元）支持，4年满足≤4年条件，引用充分。"
+          },
+          {
+            "text": "待遇表第2项为：取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "answer_span": "该待遇表第2项为：取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了待遇表第2项，所引用的quote完全支持该金额和条件，且系统已读文档包含该内容。"
+          },
+          {
+            "text": "其他学科恰好5年取得学历学位对应补贴9万元、科研建设经费2.7万元",
+            "answer_span": "其他学科恰好5年取得学历学位，对应补贴9万元、科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由待遇表第2项（＞4且≤5年，其他学科科研经费2.7万元）支持，5年满足该区间条件，引用充分。"
+          },
+          {
+            "text": "上述待遇的前提是教师在职读博并取得学历学位",
+            "answer_span": "上述待遇的前提是教师在职读博并取得学历学位",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实在答案中被表述，但其引用quote仅涉及中途退学等惩罚条款，未直接说明前提；系统已读文档中包含该前提，所以由已读来源支持，但引用支持不足。"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了原文，所引用的quote明确包含该条款，且系统已读文档中有对应内容。"
+          },
+          {
+            "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了原文，所引用的quote明确包含该条款，且系统已读文档中有对应内容。"
+          },
+          {
+            "text": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制）",
+            "answer_span": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了原文，所引用的quote完整包含该替代安排，且系统已读文档中有对应内容。"
+          },
+          {
+            "text": "须签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务",
+            "answer_span": "须签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了原文，所引用的quote包含该要求，且系统已读文档中有对应内容。"
+          },
+          {
+            "text": "同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了原文，所引用的quote包含该扣除条款，且系统已读文档中有对应内容。"
+          },
+          {
+            "text": "该情形按当年人才引进政策确定，不由上述固定金额直接确定",
+            "answer_span": "该情形按当年人才引进政策确定，不由上述固定金额直接确定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由替代安排的规则推导得出，所引用的quote描述了按当年人才引进政策确定，故支持该推论。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答正确引用了2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条，准确给出了两个要求点的金额，且所引用的原文充分支持关键结论。回答未出现无依据的制度事实、错误引用或其他严重问题。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:24:51.548368+00:00",
+          "attempt": 1,
+          "prompt_sha256": "18445edf36c074895aabffa62824ff0edf0bcd4d3df1c7996729693c96f05d2f",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "22fb74e3-a67f-4659-8364-4fb25b6e3103",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3338,
+            "completion_tokens": 5492,
+            "total_tokens": 8830,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3757
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2314
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工科学科恰好4年取得学历学位，对应补贴10万元、科研建设经费5万元\",\n      \"reason\": \"实际回答明确给出了工科学科恰好4年取得学历学位时的补贴和科研建设经费金额，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"其他学科恰好5年取得学历学位，对应补贴9万元、科研建设经费2.7万元\",\n      \"reason\": \"实际回答明确给出了其他学科恰好5年取得学历学位时的补贴和科研建设经费金额，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条规定学校按教师在职读博取得学历学位时间兑现待遇\",\n      \"answer_span\": \"2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条规定，学校按教师在职读博取得学历学位的时间兑现待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了该规定并给出了相关条款，所引用的quote支持此事实，且系统已读文档包含该内容。\"\n    },\n    {\n      \"text\": \"待遇表第1项为：取得学历学位时间≤4年，补贴10万元，科研建设经费工科5万元、其他学科3万元\",\n      \"answer_span\": \"其待遇表第1项为：取得学历学位时间≤4年，补贴10万元，科研建设经费工科5万元、其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了待遇表第1项，所引用的quote完全支持该金额和条件，且系统已读文档包含该内容。\"\n    },\n    {\n      \"text\": \"工科学科恰好4年取得学历学位对应补贴10万元、科研建设经费5万元\",\n      \"answer_span\": \"工科学科恰好4年取得学历学位，对应补贴10万元、科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由待遇表第1项（≤4年，工科科研经费5万元）支持，4年满足≤4年条件，引用充分。\"\n    },\n    {\n      \"text\": \"待遇表第2项为：取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"answer_span\": \"该待遇表第2项为：取得学历学位时间＞4年且≤5年，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了待遇表第2项，所引用的quote完全支持该金额和条件，且系统已读文档包含该内容。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年取得学历学位对应补贴9万元、科研建设经费2.7万元\",\n      \"answer_span\": \"其他学科恰好5年取得学历学位，对应补贴9万元、科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由待遇表第2项（＞4且≤5年，其他学科科研经费2.7万元）支持，5年满足该区间条件，引用充分。\"\n    },\n    {\n      \"text\": \"上述待遇的前提是教师在职读博并取得学历学位\",\n      \"answer_span\": \"上述待遇的前提是教师在职读博并取得学历学位\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在答案中被表述，但其引用quote仅涉及中途退学等惩罚条款，未直接说明前提；系统已读文档中包含该前提，所以由已读来源支持，但引用支持不足。\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了原文，所引用的quote明确包含该条款，且系统已读文档中有对应内容。\"\n    },\n    {\n      \"text\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了原文，所引用的quote明确包含该条款，且系统已读文档中有对应内容。\"\n    },\n    {\n      \"text\": \"在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制）\",\n      \"answer_span\": \"在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了原文，所引用的quote完整包含该替代安排，且系统已读文档中有对应内容。\"\n    },\n    {\n      \"text\": \"须签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务\",\n      \"answer_span\": \"须签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了原文，所引用的quote包含该要求，且系统已读文档中有对应内容。\"\n    },\n    {\n      \"text\": \"同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了原文，所引用的quote包含该扣除条款，且系统已读文档中有对应内容。\"\n    },\n    {\n      \"text\": \"该情形按当年人才引进政策确定，不由上述固定金额直接确定\",\n      \"answer_span\": \"该情形按当年人才引进政策确定，不由上述固定金额直接确定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由替代安排的规则推导得出，所引用的quote描述了按当年人才引进政策确定，故支持该推论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答正确引用了2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条，准确给出了两个要求点的金额，且所引用的原文充分支持关键结论。回答未出现无依据的制度事实、错误引用或其他严重问题。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02615448,
+          "seconds": 45.5417
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "08937daa33ae81cba1ea671be2d0beb85c7b8c1cdc1fce22437a6fce0527cd90"
+}

@@ -1,0 +1,188 @@
+{
+  "id": "TEST26",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "再次报考时应重新履行申报程序。",
+            "reason": "实际答案明确表达了再次报考需要重新履行申报程序，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，当年未被录取，再次报考时应重新履行申报程序。",
+            "answer_span": "教师经学校批准报考博士，当年未被录取，再次报考时应重新履行申报程序。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实与实际答案中的表述一致，引用的第十四条原文已实际读取，且充分支持该结论。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回应问题，依据充分，引用与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:59.790975+00:00",
+          "attempt": 1,
+          "prompt_sha256": "69dc51a939d15b32636c762ef6f803f9dd566867b73acedc1f5400a2acffe421",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "364dde55-16c4-45ba-9ab3-6912f1a85947",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1458,
+            "completion_tokens": 1550,
+            "total_tokens": 3008,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1314
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 562
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序。\",\n      \"reason\": \"实际答案明确表达了再次报考需要重新履行申报程序，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，当年未被录取，再次报考时应重新履行申报程序。\",\n      \"answer_span\": \"教师经学校批准报考博士，当年未被录取，再次报考时应重新履行申报程序。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实与实际答案中的表述一致，引用的第十四条原文已实际读取，且充分支持该结论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回应问题，依据充分，引用与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00806256,
+          "seconds": 15.4366
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "再次报考时应重新履行申报程序",
+            "reason": "实际答案明确说明教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序，直接回答需要重新走审批流程，语义完全覆盖要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序",
+            "answer_span": "教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C015第十四条，内容与事实完全一致，实际已读包含该条款，支持结论。"
+          },
+          {
+            "text": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "answer_span": "个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条（一），实际已读内容包含该步骤，支持该事实。"
+          },
+          {
+            "text": "所在单位经党政联席会议研究签署意见后报人事处审核",
+            "answer_span": "所在单位经党政联席会议研究签署意见后报人事处审核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条（二），实际已读内容包含该步骤，支持该事实。"
+          },
+          {
+            "text": "拟推荐人选在本单位公示",
+            "answer_span": "公示拟推荐人选",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条（二）包含“拟推荐人选在本单位公示”，实际已读内容支持该事实，答案表述略有简化但语义一致。"
+          },
+          {
+            "text": "人事处审核合格后出具同意报考证明",
+            "answer_span": "人事处审核合格后出具同意报考证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条（三），实际已读内容包含该步骤，支持该事实。"
+          },
+          {
+            "text": "申请人签订《同意报考协议书》后报名参加考试",
+            "answer_span": "申请人签订《同意报考协议书》后报名参加考试",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C007第六条（三），实际已读内容包含该步骤，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答再次报考须重新履行申报程序，并补充了具体流程，引用第十四条和第六条与实际已读资料一致，无错误或无依据内容，整体正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:15.242723+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3ab55362fc62a560c536f5131bf306be9e236bcaee8c54d4590847fb930c3845",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "18d5b57c-e594-4d2e-b1f5-11cfdd1e6585",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2052,
+            "completion_tokens": 2966,
+            "total_tokens": 5018,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2228
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1156
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"再次报考时应重新履行申报程序\",\n      \"reason\": \"实际答案明确说明教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序，直接回答需要重新走审批流程，语义完全覆盖要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序\",\n      \"answer_span\": \"教师经学校批准报考博士，报考当年未被录取的，再次报考时应重新履行申报程序\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C015第十四条，内容与事实完全一致，实际已读包含该条款，支持结论。\"\n    },\n    {\n      \"text\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"answer_span\": \"个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条（一），实际已读内容包含该步骤，支持该事实。\"\n    },\n    {\n      \"text\": \"所在单位经党政联席会议研究签署意见后报人事处审核\",\n      \"answer_span\": \"所在单位经党政联席会议研究签署意见后报人事处审核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条（二），实际已读内容包含该步骤，支持该事实。\"\n    },\n    {\n      \"text\": \"拟推荐人选在本单位公示\",\n      \"answer_span\": \"公示拟推荐人选\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条（二）包含“拟推荐人选在本单位公示”，实际已读内容支持该事实，答案表述略有简化但语义一致。\"\n    },\n    {\n      \"text\": \"人事处审核合格后出具同意报考证明\",\n      \"answer_span\": \"人事处审核合格后出具同意报考证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条（三），实际已读内容包含该步骤，支持该事实。\"\n    },\n    {\n      \"text\": \"申请人签订《同意报考协议书》后报名参加考试\",\n      \"answer_span\": \"申请人签订《同意报考协议书》后报名参加考试\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C007第六条（三），实际已读内容包含该步骤，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答再次报考须重新履行申报程序，并补充了具体流程，引用第十四条和第六条与实际已读资料一致，无错误或无依据内容，整体正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.014454,
+          "seconds": 28.7471
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "d112ee572f5ac40eb114c25ebaf48f88340ed5368daaac003e8793f57745fdc2"
+}

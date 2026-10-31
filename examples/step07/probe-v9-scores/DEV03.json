@@ -1,0 +1,160 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "于每月26日向学校人事处报送本单位《考勤情况统计表》",
+            "reason": "明确表述2020规定为26日报送"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "各单位每月25日向人事处报送本单位《考勤情况统计表》",
+            "reason": "明确表述2023补充规定为25日报送"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》第十四条规定：各单位安排专人负责考勤、签到，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；瞒报、漏报的追究主要领导和相关人员责任。\n《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定：",
+            "reason": "分别列出两个规定的名称、条款及来源"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有资料无法裁决上述报送日期的冲突；请提供人事处就《考勤情况统计表》报送日期作出的正式解释、衔接说明或执行通知，并在其中明确适用对象、版本日期及原相关规定是否废止。",
+            "reason": "明确说明资料未明示替代关系，需要人事处确认执行口径"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求各单位安排专人负责考勤、签到",
+            "answer_span": "各单位安排专人负责考勤、签到",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C015原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求于每月26日报送考勤情况统计表",
+            "answer_span": "于每月26日向学校人事处报送本单位《考勤情况统计表》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C015原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求有病、事假者报送诊断书、请假手续",
+            "answer_span": "有病、事假者应将诊断书、请假手续一并报送",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C015原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条对瞒报、漏报追究主要领导和相关人员责任",
+            "answer_span": "瞒报、漏报的追究主要领导和相关人员责任",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C015原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条要求各单位每月25日报送考勤情况统计表",
+            "answer_span": "各单位每月25日向人事处报送本单位《考勤情况统计表》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C006原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条要求病、事假报送病情诊断证明、请假手续",
+            "answer_span": "病、事假须报送病情诊断证明、请假手续",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C006原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条对虚报、瞒报、漏报、迟报等现象严肃处理并追究责任",
+            "answer_span": "对虚报、瞒报、漏报、迟报等现象严肃处理并追究责任",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C006原文包含该内容，已读记录支持"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十八条规定由人事处负责解释、自发布之日起执行",
+            "answer_span": "由人事处负责解释、自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019原文包含该内容，已读记录支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确列出了两个不同规定中的报送日期（26日与25日），分别给出了来源引用，并明确指出现有资料未规定替代关系，需要人事处确认执行口径，符合needs_confirmation要求。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处正式解释、衔接说明或执行通知",
+            "适用对象",
+            "版本日期",
+            "原相关规定是否废止"
+          ],
+          "reason": "答案明确要求提供人事处的解释/衔接说明/执行通知，并具体列出需包含的适用对象、版本日期及废止关系，属于具体可操作的资料请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:13:51.582774+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2f7de8c88d5dbf21c704269e6aca1327e77d480fb2fb4e0d384250e6013832db",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e2d59a9f-1e9a-49c7-8d44-a8b7af9de521",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3424,
+            "completion_tokens": 5888,
+            "total_tokens": 9312,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4556
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2400
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"于每月26日向学校人事处报送本单位《考勤情况统计表》\",\n      \"reason\": \"明确表述2020规定为26日报送\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"各单位每月25日向人事处报送本单位《考勤情况统计表》\",\n      \"reason\": \"明确表述2023补充规定为25日报送\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》第十四条规定：各单位安排专人负责考勤、签到，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；瞒报、漏报的追究主要领导和相关人员责任。\\n《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定：\",\n      \"reason\": \"分别列出两个规定的名称、条款及来源\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有资料无法裁决上述报送日期的冲突；请提供人事处就《考勤情况统计表》报送日期作出的正式解释、衔接说明或执行通知，并在其中明确适用对象、版本日期及原相关规定是否废止。\",\n      \"reason\": \"明确说明资料未明示替代关系，需要人事处确认执行口径\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求各单位安排专人负责考勤、签到\",\n      \"answer_span\": \"各单位安排专人负责考勤、签到\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C015原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求于每月26日报送考勤情况统计表\",\n      \"answer_span\": \"于每月26日向学校人事处报送本单位《考勤情况统计表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C015原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条要求有病、事假者报送诊断书、请假手续\",\n      \"answer_span\": \"有病、事假者应将诊断书、请假手续一并报送\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C015原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条对瞒报、漏报追究主要领导和相关人员责任\",\n      \"answer_span\": \"瞒报、漏报的追究主要领导和相关人员责任\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C015原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条要求各单位每月25日报送考勤情况统计表\",\n      \"answer_span\": \"各单位每月25日向人事处报送本单位《考勤情况统计表》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C006原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条要求病、事假报送病情诊断证明、请假手续\",\n      \"answer_span\": \"病、事假须报送病情诊断证明、请假手续\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C006原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条对虚报、瞒报、漏报、迟报等现象严肃处理并追究责任\",\n      \"answer_span\": \"对虚报、瞒报、漏报、迟报等现象严肃处理并追究责任\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C006原文包含该内容，已读记录支持\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十八条规定由人事处负责解释、自发布之日起执行\",\n      \"answer_span\": \"由人事处负责解释、自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019原文包含该内容，已读记录支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确列出了两个不同规定中的报送日期（26日与25日），分别给出了来源引用，并明确指出现有资料未规定替代关系，需要人事处确认执行口径，符合needs_confirmation要求。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处正式解释、衔接说明或执行通知\",\n      \"适用对象\",\n      \"版本日期\",\n      \"原相关规定是否废止\"\n    ],\n    \"reason\": \"答案明确要求提供人事处的解释/衔接说明/执行通知，并具体列出需包含的适用对象、版本日期及废止关系，属于具体可操作的资料请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02783616,
+          "seconds": 52.0256
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a467377a0efe320bbde7d9feb84a584264b174cf80d9a8eab7b9b5755e54d9a2"
+}

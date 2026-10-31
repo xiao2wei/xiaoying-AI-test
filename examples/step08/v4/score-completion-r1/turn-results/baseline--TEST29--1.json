@@ -1,0 +1,116 @@
+{
+  "key": "baseline--TEST29--1",
+  "mode": "baseline",
+  "id": "TEST29",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "d9031859d291fdbc27aeb20fd50e358ac60f36ee0609f56946c77074659a6358",
+  "run_sha256": "708a682052d016e7e5bc7bd03a7c2edd31bf7e17d8d1daa9a6c92fe1ced45da9",
+  "created_at": "2026-10-31T05:14:13.945535+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "不低于8年",
+          "reason": "实际回答明确表述'应履行不低于8年的基本服务期'，符合要点"
+        },
+        {
+          "index": 1,
+          "met": true,
+          "answer_span": "自教师来校报到上岗之日起计算",
+          "reason": "实际回答明确表述服务期自教师来校报到上岗之日起计算，符合要点"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "通过公开招聘方式进入学校全职工作的教师，应履行不低于8年的基本服务期",
+          "answer_span": "通过公开招聘方式进入学校全职工作的教师，应履行不低于8年的基本服务期",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确支持该事实，且该chunk已读取"
+        },
+        {
+          "text": "未签订人才引进协议的，按该规定执行",
+          "answer_span": "未签订人才引进协议的，按该规定执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C002的quote明确支持该事实，且该chunk已读取"
+        },
+        {
+          "text": "该基本服务期自教师来校报到上岗之日起计算",
+          "answer_span": "该基本服务期自教师来校报到上岗之日起计算",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确支持该事实，且该chunk已读取"
+        },
+        {
+          "text": "签订人才引进协议的，按协议约定执行",
+          "answer_span": "签订人才引进协议的，按协议约定执行",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D25-C001的quote明确支持该事实，且该chunk已读取"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "实际回答准确回答了问题，两个要点均明确表达且引用支持，没有严重错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:13:56.740331+00:00",
+        "attempt": 1,
+        "prompt_sha256": "7c39d92889a041b6e9d51aa83b5d9e032b2fc6c2e6afc28756ca075226d1ab35",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "76308027-cb8b-4cc5-a5f8-aefabf922754",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 5265,
+          "completion_tokens": 2150,
+          "total_tokens": 7415,
+          "prompt_tokens_details": {
+            "cached_tokens": 2304
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1617
+          },
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 2961
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不低于8年\",\n      \"reason\": \"实际回答明确表述'应履行不低于8年的基本服务期'，符合要点\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"自教师来校报到上岗之日起计算\",\n      \"reason\": \"实际回答明确表述服务期自教师来校报到上岗之日起计算，符合要点\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"通过公开招聘方式进入学校全职工作的教师，应履行不低于8年的基本服务期\",\n      \"answer_span\": \"通过公开招聘方式进入学校全职工作的教师，应履行不低于8年的基本服务期\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确支持该事实，且该chunk已读取\"\n    },\n    {\n      \"text\": \"未签订人才引进协议的，按该规定执行\",\n      \"answer_span\": \"未签订人才引进协议的，按该规定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C002的quote明确支持该事实，且该chunk已读取\"\n    },\n    {\n      \"text\": \"该基本服务期自教师来校报到上岗之日起计算\",\n      \"answer_span\": \"该基本服务期自教师来校报到上岗之日起计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确支持该事实，且该chunk已读取\"\n    },\n    {\n      \"text\": \"签订人才引进协议的，按协议约定执行\",\n      \"answer_span\": \"签订人才引进协议的，按协议约定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D25-C001的quote明确支持该事实，且该chunk已读取\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确回答了问题，两个要点均明确表达且引用支持，没有严重错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.006261948000000001,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 17.2031
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述：'《辽宁科技大学高层次人才引进工作实施办法（2022年版）》自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止'，直接对应2022版第二十二条废止条款。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答基于明确废止条款判断：'原...同时废止，因此2021年27号旧办法不再同时有效'，而非仅依据发布日期。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2022版第二十二条明确原2021年27号办法同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用D02-C023，引用内容与已读取原文完全一致，明确包含废止条款。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用并读取了2022版第二十二条废止条款，明确判断旧办法不再有效，符合必需要点，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:11.364457+00:00",
+          "attempt": 1,
+          "prompt_sha256": "923ae54d1c424d28c45d31707150c85afec3760ec16e487061986fc5062ecb7b",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "5b733f40-7ea7-4ad9-8def-dcc76e3d40f1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3074,
+            "completion_tokens": 299,
+            "total_tokens": 3373,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 2434
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述：'《辽宁科技大学高层次人才引进工作实施办法（2022年版）》自发布之日起施行，原《辽宁科技大学高层次人才引进工作实施办法（修订）》（辽科大校发〔2021〕27号）同时废止'，直接对应2022版第二十二条废止条款。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答基于明确废止条款判断：'原...同时废止，因此2021年27号旧办法不再同时有效'，而非仅依据发布日期。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2022版第二十二条明确原2021年27号办法同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用D02-C023，引用内容与已读取原文完全一致，明确包含废止条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用并读取了2022版第二十二条废止条款，明确判断旧办法不再有效，符合必需要点，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00524172,
+          "seconds": 6.6789
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "0568a3662a978bbdbcbf0c456149d83ef5cf4794b4e4c9cf60cce1c80980f499"
+}

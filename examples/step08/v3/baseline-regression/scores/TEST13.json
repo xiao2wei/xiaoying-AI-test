@@ -1,0 +1,121 @@
+{
+  "id": "TEST13",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "实际答案明确说出2020年《辽宁科技大学教职工考勤与请假管理规定》中配偶护理假15日，且引用对应文档。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "实际答案明确说出2023年补充规定中男教工护理假20日，且引用对应文档。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份现行资料对男教工护理假分别规定为20日（补充规定第十一条）和15日（管理规定第九条）",
+            "reason": "实际答案在同一表述中同时展示了两份依据及各自天数。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有原文未明确废止、优先适用或适用对象关系，无法直接确定应执行哪一个",
+            "reason": "实际答案明确指出冲突需确认，没有仅凭文件日期断言应执行哪一份，并请求人事处解释。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定，符合法律法规规定生育子女的男教工享有护理假20日。",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该制度事实有引用D20-C012，引用原文包含该句，实际已读D20-C012也包含该句，且标题、条款、版本日期与已读元数据一致。"
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第九条规定，配偶享有护理假15日。",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该制度事实有引用D19-C010，引用原文包含该句，实际已读D19-C010也包含该句，且标题、条款、版本日期与已读元数据一致。"
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第十八条规定，本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行。",
+            "answer_span": "本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该制度事实有引用D20-C019，引用原文包含该句，实际已读D20-C019也包含该句，且标题、条款、版本日期与已读元数据一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确展示了两份规定中的不同护理假天数，并指出现有文件未明确适用关系，请求人事处正式解释，处理恰当，没有编造或擅自消解冲突。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处就两份文件衔接适用出具的正式解释",
+            "执行通知",
+            "男教工护理假适用文件及版本"
+          ],
+          "reason": "答案明确指出了冲突，并请求人事处提供正式解释或执行通知，要求明确男教工护理假应适用的文件及版本，属于明确说明所需补充的具体资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:53:46.565379+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ab1f4d6a2bcf4af8389ca595886e8eba05445ec9459ea647f057a7465ec18408",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "4a9503e8-a6c4-438a-ba52-c5b1831831d9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4451,
+            "completion_tokens": 3682,
+            "total_tokens": 8133,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2815
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2531
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"实际答案明确说出2020年《辽宁科技大学教职工考勤与请假管理规定》中配偶护理假15日，且引用对应文档。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"实际答案明确说出2023年补充规定中男教工护理假20日，且引用对应文档。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份现行资料对男教工护理假分别规定为20日（补充规定第十一条）和15日（管理规定第九条）\",\n      \"reason\": \"实际答案在同一表述中同时展示了两份依据及各自天数。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有原文未明确废止、优先适用或适用对象关系，无法直接确定应执行哪一个\",\n      \"reason\": \"实际答案明确指出冲突需确认，没有仅凭文件日期断言应执行哪一份，并请求人事处解释。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定，符合法律法规规定生育子女的男教工享有护理假20日。\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该制度事实有引用D20-C012，引用原文包含该句，实际已读D20-C012也包含该句，且标题、条款、版本日期与已读元数据一致。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理规定》第九条规定，配偶享有护理假15日。\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该制度事实有引用D19-C010，引用原文包含该句，实际已读D19-C010也包含该句，且标题、条款、版本日期与已读元数据一致。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十八条规定，本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行。\",\n      \"answer_span\": \"本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该制度事实有引用D20-C019，引用原文包含该句，实际已读D20-C019也包含该句，且标题、条款、版本日期与已读元数据一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确展示了两份规定中的不同护理假天数，并指出现有文件未明确适用关系，请求人事处正式解释，处理恰当，没有编造或擅自消解冲突。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处就两份文件衔接适用出具的正式解释\",\n      \"执行通知\",\n      \"男教工护理假适用文件及版本\"\n    ],\n    \"reason\": \"答案明确指出了冲突，并请求人事处提供正式解释或执行通知，要求明确男教工护理假应适用的文件及版本，属于明确说明所需补充的具体资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01800612,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 35.2651
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "54815126491124a818e752daa341ddb948592632e96057f0681836b09506a646"
+}

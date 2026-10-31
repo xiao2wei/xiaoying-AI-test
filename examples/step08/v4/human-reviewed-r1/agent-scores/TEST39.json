@@ -1,0 +1,94 @@
+{
+  "id": "TEST39",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程",
+            "reason": "实际答案明确说明检索工具连续失败且未能核实，符合持续检索失败、明确未完成的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法核实临时用工岗位设置的审批流程",
+            "reason": "实际答案未提供任何审批结果，且明确表示无法核实，没有编造审批内容，符合不得编造的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "检索工具持续返回PERSISTENT_UNAVAILABLE，答案如实报告故障并明确无法核实，未编造任何审批结果，符合预期状态和行为要求。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:13:20.745441+00:00",
+          "attempt": 1,
+          "prompt_sha256": "291801eeec467ab6d33dcb2a7c69ec23836c1928e829449d85d482cff6909534",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "44d6e395-84ba-48c8-abf7-acd1d1af2df1",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1529,
+            "completion_tokens": 959,
+            "total_tokens": 2488,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 725
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 505
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程\",\n      \"reason\": \"实际答案明确说明检索工具连续失败且未能核实，符合持续检索失败、明确未完成的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法核实临时用工岗位设置的审批流程\",\n      \"reason\": \"实际答案未提供任何审批结果，且明确表示无法核实，没有编造审批内容，符合不得编造的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"检索工具持续返回PERSISTENT_UNAVAILABLE，答案如实报告故障并明确无法核实，未编造任何审批结果，符合预期状态和行为要求。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002254648,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 10.743
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：检索工具持续返回PERSISTENT_UNAVAILABLE，答案如实报告故障并明确无法核实，未编造任何审批结果，符合预期状态和行为要求。",
+        "source_score_sha256": "a9d8354dc0da2b9a568cbcd24d852d04bafd0890b63261c29a530cd5a4650d60"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST39--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "94817568cd6be1b7c5a0b98f259b106a7be0625bc6a87c6292464fcf152ee6c9",
+        "run_sha256": "01fb7676c8f9a75deccef2b8372240c52d0e875ba654eeb6d463e9e00f3793d3",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "01fb7676c8f9a75deccef2b8372240c52d0e875ba654eeb6d463e9e00f3793d3"
+}

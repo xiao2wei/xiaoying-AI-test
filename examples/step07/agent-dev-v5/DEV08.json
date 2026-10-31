@@ -1,0 +1,87 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "兼职辅导员实施细则是否只适用于本科生辅导员？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:37.922136+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1599294bc9c2c00fdee8c359daf96215aa9363c1190667cf4e0f3cd1028eea55",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4141
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4302,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "研究生的兼职辅导员也归这份实施细则管理吗？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.351858+00:00",
+          "attempt": 1,
+          "prompt_sha256": "30c0cb9158adbd1a6da3a529ab4d63517422466de12b5cc2de5e885387a3c0de",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4773
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.493,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.9238,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:38.830401+00:00"
+}

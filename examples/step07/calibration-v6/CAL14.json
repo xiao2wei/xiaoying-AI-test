@@ -1,0 +1,30 @@
+{
+  "pass": false,
+  "judge": null,
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:27:10.362463+00:00",
+      "attempt": 1,
+      "prompt_sha256": "4ff293650508e2298bff66edd4f548ffffcc6a058bb4477666f9f33ab54ba412",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 402,
+      "error": "HTTP_402",
+      "seconds": 0.4347
+    }
+  ],
+  "judge_error": "ModelError:HTTP_402",
+  "human_review": null,
+  "id": "CAL14",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": false,
+  "agreement_with_human": false
+}

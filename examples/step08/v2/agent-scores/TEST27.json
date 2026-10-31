@@ -1,0 +1,118 @@
+{
+  "id": "TEST27",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "reason": "实际回答明确包含提前一个月书面申请"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经人事处审核同意",
+            "reason": "实际回答明确包含审核同意"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "并办理完工作交接手续后方可离岗",
+            "reason": "实际回答明确包含办完交接方可离岗"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请",
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容完整支持该事实"
+          },
+          {
+            "text": "经人事处审核同意",
+            "answer_span": "经人事处审核同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容完整支持该事实"
+          },
+          {
+            "text": "办理完工作交接手续后方可离岗",
+            "answer_span": "并办理完工作交接手续后方可离岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容完整支持该事实"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了辽宁科技大学临时用工管理办法第十九条，完整覆盖了提前解除合同的办理流程，所有要点均有证据支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:33:28.200356+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c7696cfaad3a4698269d05d6bce4ed092b8626810b5c9c520222b87740046174",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ce59969d-da43-42ce-a8ff-5fc232b3499b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1868,
+            "completion_tokens": 2077,
+            "total_tokens": 3945,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1633
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 844
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"reason\": \"实际回答明确包含提前一个月书面申请\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"经人事处审核同意\",\n      \"reason\": \"实际回答明确包含审核同意\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"并办理完工作交接手续后方可离岗\",\n      \"reason\": \"实际回答明确包含办完交接方可离岗\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请\",\n      \"answer_span\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容完整支持该事实\"\n    },\n    {\n      \"text\": \"经人事处审核同意\",\n      \"answer_span\": \"经人事处审核同意\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容完整支持该事实\"\n    },\n    {\n      \"text\": \"办理完工作交接手续后方可离岗\",\n      \"answer_span\": \"并办理完工作交接手续后方可离岗\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容完整支持该事实\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了辽宁科技大学临时用工管理办法第十九条，完整覆盖了提前解除合同的办理流程，所有要点均有证据支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010690680000000001,
+          "seconds": 18.4464
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [],
+      "judge_error": "ANSWER_MODEL_UNAVAILABLE:未产生答案，不消耗AI评分请求",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "02a83f557791e3f905ea4c92d6b01229222c24348903cf797b952906a1a5e59f"
+}

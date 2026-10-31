@@ -1,0 +1,756 @@
+{
+  "id": "DEV09",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校全校范围的荣休仪式通常在几月举行？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:01:58.909068+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1101fec59da15439b577af7d18ec0748b4fb0499896609ddf272db7b24731c9b",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "53419a49-8b74-42ee-a696-3c41fe03b4bf",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1544,
+            "completion_tokens": 31,
+            "total_tokens": 1575,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 264
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"荣休仪式 举行 时间 全校\"},\"reason\":\"查找荣休仪式举行月份的制度规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005004,
+          "seconds": 0.9942
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "荣休仪式 举行 时间 全校"
+          },
+          "reason": "查找荣休仪式举行月份的制度规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "荣休仪式 举行 时间 全校"
+          },
+          "result": {
+            "ok": true,
+            "query": "荣休仪式 举行 时间 全校",
+            "hits": [
+              {
+                "chunk_id": "D29-C001",
+                "doc_id": "D29",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "version_date": "2022-10-31",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.697989,
+                "lexical_score": 44.7769,
+                "excerpt": "辽宁科技大学教职工荣休工作办法 前言或附件 辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D18-C003",
+                "doc_id": "D18",
+                "title": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见",
+                "article": "前言或附件",
+                "version_date": "2021-03-18",
+                "pdf_pages": [
+                  165,
+                  166
+                ],
+                "printed_pages": [
+                  160,
+                  161
+                ],
+                "score": 0.071096,
+                "semantic_score": 0.545285,
+                "lexical_score": 4.9773,
+                "excerpt": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见 前言或附件 园，将尊师重\n教观念渗透进学生的价值体系。做好教师从教30年表奖和荣休工作，礼敬教师，弘扬\n尊师风尚。建立健全教职工代表大会制度，保障教师参与学校决策的民主权利。健\n全家校联系制度，引导家长尊重学校教育安排，尊敬教师创造发挥，配合学校做好学\n生的学习教育。\n17.强化多方联动，营造尊师重教氛围。加强展现新时代教师风貌的作品创作，善\n用微博、微信、微视频等新媒体形式，传递教师正能量。各单位要广泛利用校报校刊、",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D18-C002",
+                "doc_id": "D18",
+                "title": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见",
+                "article": "前言或附件",
+                "version_date": "2021-03-18",
+                "pdf_pages": [
+                  164,
+                  165
+                ],
+                "printed_pages": [
+                  159,
+                  160
+                ],
+                "score": 0.056136,
+                "semantic_score": 0.534252,
+                "lexical_score": 2.6934,
+                "excerpt": "辽宁科技大学关于加强和改进新时代师德师风建设的实施意见 前言或附件 庆日和纪念日，通过校报、校园网、校园广播、微博、微\n信、微电影等媒体，集中宣传优秀教师的感人事迹。把每年9月定为学校“师德建设\n月”，大力宣传新时代广大教师阳光美丽、爱岗敬业、甘于奉献、改革创新的新形象。\n组织师德系列主题教育活动，深入挖掘优秀教师典型，综合运用授予荣誉、事迹报告、\n媒体宣传、创作文艺作品等手段，增强教师的光荣感、自豪感与使命感，充分发挥典型\n引领示范和辐射带动作用。形成院院有典型、榜样在身边、人人可学可做的局面。组\n织教师中的师德标兵、教学名师、优秀教师、最美教师等开展师德宣讲，采取实践反\n思、情景教学等形式，用真人真事诠释师德内涵。\n9.突出规则立德，强化教师的法治和纪律教育。把握正确舆论导向，坚持师德宣\n传制度化、常态化，将师德宣",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C009",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.055598,
+                "semantic_score": 0.497226,
+                "lexical_score": 5.2206,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第八条 第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D14-C055",
+                "doc_id": "D14",
+                "title": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "version_date": "2022-09-21",
+                "pdf_pages": [
+                  120
+                ],
+                "printed_pages": [
+                  115
+                ],
+                "score": 0.052973,
+                "semantic_score": 0.463321,
+                "lexical_score": 6.6208,
+                "excerpt": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版） 前言或附件 案时间、来校报到时间、毕业时间及学位授予时间确定任职时间。\n2.新入职人员，具有大学本科学历或学士学位进校工作1年见习期满并考核合\n格，可确定相应初级职称。\n（三）情况说明\n以上确定的中、初级职称中，对于需要通过相关部门组织的任职资格考试的（如\n会计、卫生技术等），还需结合其资格考试通过时间确定任职时间。组织员系列还需\n具有3年以上党龄。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0067,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:01:59.928737+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a6a7f4c066138ce56c3e4fc04aeb1f43eba62abb70a102623711d1486107c708",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "e3ce507a-2943-437f-b02d-9e861637216c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3200,
+            "completion_tokens": 43,
+            "total_tokens": 3243,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 1664
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D29-C001\"]}, \"reason\": \"读取荣休工作办法原文，核实全校荣休仪式举行月份及组织要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010116,
+          "seconds": 1.0259
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D29-C001"
+            ]
+          },
+          "reason": "读取荣休工作办法原文，核实全校荣休仪式举行月份及组织要求"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D29-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D29",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转达校党委的深切关怀，肯定教职工的工作成绩，感谢教职工在各自岗位上为学\n校建设与发展做出的长期贡献，引导调整心态，听取意见建议，送上诚挚祝福和美好\n祝愿，让退休教职工感受到关心与温暖。\n制作退休服务手册。离退休工作处应为退休教职工制作《退休教职工服务手\n册》，包含退休教职工工作有关政策、学习活动平台介绍、生活服务平台介绍、看病就\n医指南等内容，为他们退休后的生活提供指导。\n开展辅导讲座培训。离退休工作处要适时组织开展专门辅导，帮助新退休教职\n工更新知识、促进身心健康，鼓励退休教职工根据兴趣爱好体验新角色、享受新生活、\n展示新风采、带动新风气。\n三、发挥退休教职工传帮带作用\n组织引导发挥作用。学校组织的新教师入职、岗前培训、教师节庆祝会和“双代\n会”等活动，可邀请退休教职工代表参加。退休教职工结合自身教学、科研或管理服\n务等岗位的工作经历，分享从事教育事业的经验和感受，对在职教师提出寄语和希\n望，积极参加关心下一代工作委员会工作，力所能及地为党的教育事业继续做贡献。\n离退休工作处要注意发现和培育退休教职工中的先进典型，广泛宣传他们的先\n进事迹，营造全社会尊老敬老爱老的良好氛围。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                229
+              ],
+              "table_ids": [],
+              "chunk_id": "D29-C001",
+              "printed_pages": [
+                224
+              ],
+              "title": "辽宁科技大学教职工荣休工作办法",
+              "version_date": "2022-10-31",
+              "previous_chunk_id": null,
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:00.971461+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3ba9b89fd1b2ea18aaa6ee4d1a69c01f71630c1a39f820c66364641e92d1b8c6",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "64301947-b96c-471a-954d-f5dffcbd58c0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4052,
+            "completion_tokens": 219,
+            "total_tokens": 4271,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "prompt_cache_hit_tokens": 3072,
+            "prompt_cache_miss_tokens": 980
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"依据《辽宁科技大学教职工荣休工作办法》（辽科大校发〔2022〕56号附件）第一部分“适时组织教职工荣休仪式”，学校每年12月份组织一次全校范围的退休教职工荣休仪式；该仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。\"}]}], \"gaps\": []}, \"reason\": \"原文明确规定全校范围荣休仪式于每年12月举行，证据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0014784,
+          "seconds": 2.1062
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "原文明确规定全校范围荣休仪式于每年12月举行，证据充分"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:03.095088+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b413c94463f66ec612ccbd86610a6633fe0f76df63b32c6c0945ca45bc8e0fe8",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "80d11b7b-ea13-4790-99ad-4edaf6f96b74",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4439,
+            "completion_tokens": 315,
+            "total_tokens": 4754,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 194
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 3159
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。\"}]}], \"gaps\": []}, \"reason\": \"原文明确规定全校范围荣休仪式于每年12月举行，问题已充分回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0017097,
+          "seconds": 2.8149
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "原文明确规定全校范围荣休仪式于每年12月举行，问题已充分回答"
+        }
+      ],
+      "read_ids": [
+        "D29-C001"
+      ],
+      "first_hits": [
+        "D29-C001",
+        "D18-C003",
+        "D18-C002",
+        "D20-C009",
+        "D14-C055"
+      ],
+      "seconds": 7.0187,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那人事处要提前多久通知退休时间和程序？",
+      "history": [
+        {
+          "role": "user",
+          "content": "学校全校范围的荣休仪式通常在几月举行？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。\", \"title\": \"辽宁科技大学教职工荣休工作办法\", \"article\": \"前言或附件\", \"doc_id\": \"D29\", \"pdf_pages\": [229], \"printed_pages\": [224], \"version_date\": \"2022-10-31\"}]}], \"gaps\": [], \"answer\": \"《辽宁科技大学教职工荣休工作办法》规定，学校每年12月份组织一次全校范围的退休教职工荣休仪式。\"}"
+        }
+      ],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教职工所在二级单位。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。",
+            "citations": [
+              {
+                "chunk_id": "D29-C001",
+                "quote": "做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教职工所在二级单位。",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "doc_id": "D29",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "version_date": "2022-10-31"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:05.929165+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7aae474aa626539d194a736b76fe16831bff7daee86d4d81f793c450212b23f5",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "54eeb3d8-64c6-44db-bf43-b13d8721eb97",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1733,
+            "completion_tokens": 47,
+            "total_tokens": 1780,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 453
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"人事处 提前 通知 退休时间 程序 荣休\",\"doc_ids\":[]},\"reason\":\"查找荣休办法中人事处提前通知退休时间和程序的具体期限\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005763,
+          "seconds": 1.2172
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "人事处 提前 通知 退休时间 程序 荣休",
+            "doc_ids": []
+          },
+          "reason": "查找荣休办法中人事处提前通知退休时间和程序的具体期限"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人事处 提前 通知 退休时间 程序 荣休",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "人事处 提前 通知 退休时间 程序 荣休",
+            "hits": [
+              {
+                "chunk_id": "D29-C001",
+                "doc_id": "D29",
+                "title": "辽宁科技大学教职工荣休工作办法",
+                "article": "前言或附件",
+                "version_date": "2022-10-31",
+                "pdf_pages": [
+                  229
+                ],
+                "printed_pages": [
+                  224
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.672688,
+                "lexical_score": 33.1515,
+                "excerpt": "辽宁科技大学教职工荣休工作办法 前言或附件 退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C020",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.639866,
+                "lexical_score": 25.291,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十九条 第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D21-C001",
+                "doc_id": "D21",
+                "title": "辽宁科技大学退休返聘人员管理办法（试行）",
+                "article": "前言或附件",
+                "version_date": "2018-12-26",
+                "pdf_pages": [
+                  175,
+                  176,
+                  177
+                ],
+                "printed_pages": [
+                  170,
+                  171,
+                  172
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.622187,
+                "lexical_score": 13.176,
+                "excerpt": "辽宁科技大学退休返聘人员管理办法（试行） 前言或附件   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | \n申请返聘期限（1年）：从 年 月 日至 年 月 日 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+                "related_table_chunks": [
+                  "D21-C002"
+                ]
+              },
+              {
+                "chunk_id": "D22-C001",
+                "doc_id": "D22",
+                "title": "辽宁科技大学高级专家延长退休年龄实施办法（修订）",
+                "article": "前言或附件",
+                "version_date": "2023-12-13",
+                "pdf_pages": [
+                  178,
+                  179
+                ],
+                "printed_pages": [
+                  173,
+                  174
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.617591,
+                "lexical_score": 12.6026,
+                "excerpt": "辽宁科技大学高级专家延长退休年龄实施办法（修订） 前言或附件 格\n学校中止聘用，办理退休手续。\n（二）高级专家延退期满后因工作需要有必要继续工作的，可采取返聘的方式，返\n聘手续按学校有关规定办理。\n（三）高级专家在延退期间因个人原因放弃延退的，由本人申请，所在单位审核，\n经学校研究同意后，按有关规定办理退休。\n（四）省管干部延退按上级文件执行。\n（五）本办法自发布之日起施行，原《辽宁科技大学高级专家延长退休年龄办法\n（试行）》（综发〔2020〕40号）同时废止。本办法由人事处负责解释。\n（拟文单位：人事处）",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C008",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第七条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.585629,
+                "lexical_score": 13.331,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第七条 第七条 教职工原则上应利用公休假日、国家法定假日及寒暑假期间处理个人\n事务，确因特殊情况需要在工作时间离开工作岗位的，应请事假，事假具体要求及待\n遇如下：\n请假时间≤3日的由所在单位审批，报人事处备案。＞3日的由所在单位同意后，\n报主管校领导批准、人事处备案。各级领导干部请假程序按学校有关规定执行。事\n假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤30日 | 奖励绩效按请假实际天数扣发\n＞30日，≤60日 | 按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\n＞60日 | 按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0082,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:07.171524+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1e5da894a283c17faeea15a8749ea60dc6abdfcf96b0cc3ad0cfd2e8938749c2",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2efd3f65-f48b-468e-b3bb-98a4047714ad",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3212,
+            "completion_tokens": 41,
+            "total_tokens": 3253,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1548
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D29-C001\"]}, \"reason\": \"读取荣休办法原文，核实人事处提前通知期限及并列要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010128,
+          "seconds": 0.9497
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D29-C001"
+            ]
+          },
+          "reason": "读取荣休办法原文，核实人事处提前通知期限及并列要求"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D29-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D29",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转达校党委的深切关怀，肯定教职工的工作成绩，感谢教职工在各自岗位上为学\n校建设与发展做出的长期贡献，引导调整心态，听取意见建议，送上诚挚祝福和美好\n祝愿，让退休教职工感受到关心与温暖。\n制作退休服务手册。离退休工作处应为退休教职工制作《退休教职工服务手\n册》，包含退休教职工工作有关政策、学习活动平台介绍、生活服务平台介绍、看病就\n医指南等内容，为他们退休后的生活提供指导。\n开展辅导讲座培训。离退休工作处要适时组织开展专门辅导，帮助新退休教职\n工更新知识、促进身心健康，鼓励退休教职工根据兴趣爱好体验新角色、享受新生活、\n展示新风采、带动新风气。\n三、发挥退休教职工传帮带作用\n组织引导发挥作用。学校组织的新教师入职、岗前培训、教师节庆祝会和“双代\n会”等活动，可邀请退休教职工代表参加。退休教职工结合自身教学、科研或管理服\n务等岗位的工作经历，分享从事教育事业的经验和感受，对在职教师提出寄语和希\n望，积极参加关心下一代工作委员会工作，力所能及地为党的教育事业继续做贡献。\n离退休工作处要注意发现和培育退休教职工中的先进典型，广泛宣传他们的先\n进事迹，营造全社会尊老敬老爱老的良好氛围。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                229
+              ],
+              "table_ids": [],
+              "chunk_id": "D29-C001",
+              "printed_pages": [
+                224
+              ],
+              "title": "辽宁科技大学教职工荣休工作办法",
+              "version_date": "2022-10-31",
+              "previous_chunk_id": null,
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:08.137836+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fb648c700ec620841621934a2f3d9a5c3092fdb25865ae26be3a8a169c333435",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "f92f4d70-9e9f-460f-888f-ebfdf4a19ef4",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4062,
+            "completion_tokens": 162,
+            "total_tokens": 4224,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 862
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。\", \"citations\": [{\"chunk_id\": \"D29-C001\", \"quote\": \"做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教职工所在二级单位。\"}]}], \"gaps\": []}, \"reason\": \"原文已明确人事处提前通知的期限及并列要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.001413,
+          "seconds": 1.3413
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "原文已明确人事处提前通知的期限及并列要求"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:02:09.496918+00:00",
+          "attempt": 1,
+          "prompt_sha256": "94465691063f6423677cf4418bcee70722e65a9ef905da82fe19259d886f5c83",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6756ffe1-28e4-4ad8-9b7c-fe85f2161c6c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4392,
+            "completion_tokens": 319,
+            "total_tokens": 4711,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 160
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 3112
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学教职工荣休工作办法》规定，人事处应在教职工退休前一月告知办理退休时间和程序，并介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，同时通知教职工所在二级单位。\",\"citations\":[{\"chunk_id\":\"D29-C001\",\"quote\":\"做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教职工所在二级单位。\"}]}],\"gaps\":[]},\"reason\":\"原文已明确提前期限为退休前一月，并完整覆盖通知对象与并列事项，无缺漏\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0017004,
+          "seconds": 2.4833
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "原文已明确提前期限为退休前一月，并完整覆盖通知对象与并列事项，无缺漏"
+        }
+      ],
+      "read_ids": [
+        "D29-C001"
+      ],
+      "first_hits": [
+        "D29-C001",
+        "D23-C020",
+        "D21-C001",
+        "D22-C001",
+        "D20-C008"
+      ],
+      "seconds": 6.0691,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 13.0887,
+  "model_calls": 8,
+  "tool_calls": 4,
+  "created_at": "2026-10-31T03:02:11.981975+00:00"
+}

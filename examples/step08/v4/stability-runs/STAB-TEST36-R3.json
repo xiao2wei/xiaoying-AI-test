@@ -1,0 +1,554 @@
+{
+  "id": "STAB-TEST36-R3",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "从事特种作业的临时用工人员有什么额外资格要求？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+            "citations": [
+              {
+                "chunk_id": "D23-C013",
+                "quote": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十二条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。",
+            "citations": [
+              {
+                "chunk_id": "D23-C016",
+                "quote": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\n签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+            "citations": [
+              {
+                "chunk_id": "D23-C013",
+                "quote": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十二条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。",
+            "citations": [
+              {
+                "chunk_id": "D23-C016",
+                "quote": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\n签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:06:36.070758+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2bdac87139b55ff8f4d4461e36fc1e18fb685af9c3574b60bc2fa9c493fa47d2",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "d32c6726-48a4-43f2-953c-db4dc3224d8c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2089,
+            "completion_tokens": 31,
+            "total_tokens": 2120,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 169
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"特种作业 临时用工人员 资格要求\"},\"reason\":\"检索特种作业临时用工人员的资格规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 4.971e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.6034
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求"
+          },
+          "reason": "检索特种作业临时用工人员的资格规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:06:36.718575+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d88052dd22cd7903ba79766c31d2c1128856a6a3247d0797f6bbf27c0b60b675",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ee4bb0ca-6db3-4002-8656-9df2ee5347cf",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2227,
+            "completion_tokens": 38,
+            "total_tokens": 2265,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 179
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"特种作业 临时用工人员 资格要求\"}, \"reason\": \"工具临时故障，按规则重试同一检索\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 5.5793999999999995e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.5365
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求"
+          },
+          "reason": "工具临时故障，按规则重试同一检索"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "特种作业 临时用工人员 资格要求"
+          },
+          "result": {
+            "ok": true,
+            "query": "特种作业 临时用工人员 资格要求",
+            "hits": [
+              {
+                "chunk_id": "D23-C013",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180,
+                  181
+                ],
+                "printed_pages": [
+                  175,
+                  176
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.774757,
+                "lexical_score": 61.0891,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十二条 第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。\n第四章 临时用工合同的签订、终止",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C023",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181,
+                  182
+                ],
+                "printed_pages": [
+                  176,
+                  177
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.628409,
+                "lexical_score": 31.8047,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十二条 第二十二条 学校委托设置临时岗位的直属单位负责临时用工人员的日常管\n理，直属单位要安排专人负责临时用工人员的考勤，每月26日向人事处报送临时用工\n人员考勤表，以此作为核发临时用工人员工资的依据。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C011",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.081169,
+                "semantic_score": 0.62353,
+                "lexical_score": 32.4674,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十条 第十条 学校建立临时用工资格审查制度，对于用工人选进行一定范围内的考\n核，以便于对临时用工人员的身份、来源、社会表现、工作状况等的掌握、跟踪和评价。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C016",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.081169,
+                "semantic_score": 0.656895,
+                "lexical_score": 29.5634,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十五条 第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C010",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.641956,
+                "lexical_score": 26.9533,
+                "excerpt": "辽宁科技大学临时用工管理办法 第九条 第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.009,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:06:37.314664+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a7a6df6ca5cd3a1fca531983b3fbd848af5bd4870918311728341de5fda3e37a",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "cc93f4e3-fb77-4ad2-8d60-b2ef33fc2808",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3293,
+            "completion_tokens": 49,
+            "total_tokens": 3342,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "prompt_cache_hit_tokens": 3072,
+            "prompt_cache_miss_tokens": 221
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D23-C013\", \"D23-C016\", \"D23-C010\"]}, \"reason\": \"读取特种作业资格条款及聘用条件、材料要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.176599999999999e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.6594
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D23-C013",
+              "D23-C016",
+              "D23-C010"
+            ]
+          },
+          "reason": "读取特种作业资格条款及聘用条件、材料要求"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C013"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十二条",
+              "text": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。\n第四章 临时用工合同的签订、终止",
+              "pdf_pages": [
+                180,
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C013",
+              "printed_pages": [
+                175,
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C012",
+              "next_chunk_id": "D23-C014",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第十五条",
+              "text": "第十五条 签订合同前，临时用工人员必须提交下列材料：\n（一）本人的身份证和无业或失业证明。\n（二）本人书面申请。\n（三）本人的健康状况证明。\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\n（五）社会保险情况证明。\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\n材料）。",
+              "pdf_pages": [
+                181
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C016",
+              "printed_pages": [
+                176
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C015",
+              "next_chunk_id": "D23-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C010"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第九条",
+              "text": "第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+              "pdf_pages": [
+                180
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C010",
+              "printed_pages": [
+                175
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C009",
+              "next_chunk_id": "D23-C011",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:06:38.016938+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0e460638e2308d9f093e71271c2d431234b1d3321ce8ee91d513512e551a350e",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "693267a3-6f1e-4450-beb6-c16e8cfce430",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3995,
+            "completion_tokens": 463,
+            "total_tokens": 4458,
+            "prompt_tokens_details": {
+              "cached_tokens": 3840
+            },
+            "prompt_cache_hit_tokens": 3840,
+            "prompt_cache_miss_tokens": 155
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\", \"citations\": [{\"chunk_id\": \"D23-C013\", \"quote\": \"第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\\n资格。\"}]}, {\"text\": \"签订合同前，临时用工人员须提交职业技术等级或资格证明（有特殊要求的临时用工岗位），特种作业岗位属于有特殊要求的岗位，应提交相应资格证明。\", \"citations\": [{\"chunk_id\": \"D23-C016\", \"quote\": \"第十五条 签订合同前，临时用工人员必须提交下列材料：\\n（一）本人的身份证和无业或失业证明。\\n（二）本人书面申请。\\n（三）本人的健康状况证明。\\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\\n（五）社会保险情况证明。\\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\\n材料）。\"}]}, {\"text\": \"临时用工聘用还须符合基本条件：坚持四项基本原则、恪守社会公德；年龄一般不超过男63周岁、女60周岁；首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准；具备岗位要求的工作技能并能坚持正常工作。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"第九条 临时用工的聘用必须符合下列条件：\\n（一）坚持四项基本原则，恪守社会公德。\\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\\n康标准。\\n（四）具备岗位要求的工作技能，并能坚持正常工作。\"}]}], \"gaps\": []}, \"reason\": \"已读取第十二条、第十五条、第九条原文，足以回答特种作业临时用工人员的额外资格要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00031256999999999997,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.9254
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取第十二条、第十五条、第九条原文，足以回答特种作业临时用工人员的额外资格要求"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:06:39.984916+00:00",
+          "attempt": 1,
+          "prompt_sha256": "65d91c7a778bf20994d0a703448021196afc2110a95a5b6f4047eb919a516ba9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ee53c58d-54c8-408f-9596-dcdc0ccd59c6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4705,
+            "completion_tokens": 583,
+            "total_tokens": 5288,
+            "prompt_tokens_details": {
+              "cached_tokens": 3968
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 328
+            },
+            "prompt_cache_hit_tokens": 3968,
+            "prompt_cache_miss_tokens": 737
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学临时用工管理办法》第十二条规定，从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\"citations\":[{\"chunk_id\":\"D23-C013\",\"quote\":\"第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\\n资格。\"}]},{\"text\":\"签订合同前，临时用工人员必须提交材料，其中包括“职业技术等级或资格证明（有特殊要求的临时用工岗位）”。\",\"citations\":[{\"chunk_id\":\"D23-C016\",\"quote\":\"第十五条 签订合同前，临时用工人员必须提交下列材料：\\n（一）本人的身份证和无业或失业证明。\\n（二）本人书面申请。\\n（三）本人的健康状况证明。\\n（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）。\\n（五）社会保险情况证明。\\n（六）达到法定退休年龄人员提供正式退休证明（如：退休证、发放养老金证明等\\n材料）。\"}]}],\"gaps\":[]},\"reason\":\"已读取并核对特种作业资格条款及签订合同前材料要求原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000472254,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 3.5458
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取并核对特种作业资格条款及签订合同前材料要求原文"
+        }
+      ],
+      "read_ids": [
+        "D23-C013",
+        "D23-C016",
+        "D23-C010"
+      ],
+      "first_hits": [],
+      "seconds": 7.5064,
+      "model_calls": 5,
+      "tool_calls": 5,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 7.5066,
+  "model_calls": 5,
+  "tool_calls": 5,
+  "created_at": "2026-10-31T04:06:43.532320+00:00"
+}

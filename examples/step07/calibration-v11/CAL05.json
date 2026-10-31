@@ -1,0 +1,77 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。",
+        "reason": "明确说明资料未提供流程。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。",
+        "reason": "未编造操作步骤，而是说明证据不足并请求补充资料。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际答案明确声明资料未提供VPN密码重置流程，未编造操作步骤，状态与预期一致，动作合理。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:16.646314+00:00",
+      "attempt": 1,
+      "prompt_sha256": "5917f50305d0766c1d986b4fe44821f1abe29c9807fe4023524eb86bb85626ca",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "89c70845-135c-4c25-9f60-0fdca91c264d",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1174,
+        "completion_tokens": 1365,
+        "total_tokens": 2539,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1166
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1174
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。\",\n      \"reason\": \"明确说明资料未提供流程。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"这份人事制度汇编未提供VPN密码重置流程，请补充信息化部门操作说明。\",\n      \"reason\": \"未编造操作步骤，而是说明证据不足并请求补充资料。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案明确声明资料未提供VPN密码重置流程，未编造操作步骤，状态与预期一致，动作合理。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00695508,
+      "seconds": 12.5068
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": true,
+  "cache_source": null,
+  "new_judge_requests": 0,
+  "id": "CAL05",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

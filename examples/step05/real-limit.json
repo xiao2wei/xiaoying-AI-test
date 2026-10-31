@@ -1,0 +1,175 @@
+{
+  "mode": "agent",
+  "question": "人才专项经费最长执行多久？",
+  "history": [],
+  "output": {
+    "status": "limit_reached",
+    "claims": [],
+    "gaps": [
+      "达到模型决策轮数上限，任务未完成"
+    ],
+    "answer": "达到模型决策轮数上限，任务未完成"
+  },
+  "raw_final": null,
+  "validation_errors": [],
+  "trace": [
+    {
+      "kind": "model",
+      "purpose": "agent",
+      "model": "deepseek-flash",
+      "time": "2026-10-30T14:44:42.790539+00:00",
+      "attempt": 1,
+      "prompt_sha256": "3192517d8104daa5267ec714d999eb3bff9987c0e64a8584be199609733d496d",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "b6cf318c-3cd4-4885-91c5-9acda48e08d5",
+      "response_model": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 864,
+        "completion_tokens": 40,
+        "total_tokens": 904,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 224
+      },
+      "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"人才专项经费 执行期限 最长\",\"k\":5,\"doc_ids\":[]},\"reason\":\"检索人才专项经费执行期限相关制度原文\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0003072,
+      "seconds": 0.8354
+    },
+    {
+      "kind": "decision",
+      "step": 1,
+      "action": "search",
+      "arguments": {
+        "query": "人才专项经费 执行期限 最长",
+        "k": 5,
+        "doc_ids": []
+      },
+      "reason": "检索人才专项经费执行期限相关制度原文"
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "人才专项经费 执行期限 最长",
+        "k": 5,
+        "doc_ids": []
+      },
+      "result": {
+        "ok": true,
+        "query": "人才专项经费 执行期限 最长",
+        "hits": [
+          {
+            "chunk_id": "D03-C008",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第七条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              8
+            ],
+            "score": 0.095238,
+            "semantic_score": 0.785612,
+            "lexical_score": 56.094,
+            "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第七条 第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D03-C026",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第二十五条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              17
+            ],
+            "printed_pages": [
+              12
+            ],
+            "score": 0.083916,
+            "semantic_score": 0.712176,
+            "lexical_score": 25.9765,
+            "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十五条 第二十五条 因客观原因不能在规定期限内完成研究计划的项目，一般允许延\n期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教\n学（科研）机构签署意见后，报人事处审批。批准延期的项目须按时提交年度进展报\n告参加年度考核。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D03-C022",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第二十一条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              17
+            ],
+            "printed_pages": [
+              12
+            ],
+            "score": 0.082492,
+            "semantic_score": 0.670066,
+            "lexical_score": 37.1195,
+            "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十一条 第二十一条 学校拨付的人才专项经费在5万元及以下的，可不按项目立项管\n理，但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6），人才\n专项经费的执行期、使用范围、拨付及使用按本办法要求执行。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D03-C019",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第十八条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              16
+            ],
+            "printed_pages": [
+              11
+            ],
+            "score": 0.080515,
+            "semantic_score": 0.700319,
+            "lexical_score": 24.9439,
+            "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十八条 第十八条 校人才工作领导小组办公室统一组织项目结题验收。项目执行期满\n后10个工作日内，项目负责人须认真总结项目执行情况，及时填写《辽宁科技大学高\n层次人才科研建设专项经费资助项目结题报告》（附5），经所在二级教学（科研）机构\n审核后提交人事处，人事处会同科技处组成考核小组进行项目验收。",
+            "related_table_chunks": []
+          },
+          {
+            "chunk_id": "D03-C027",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第二十六条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              17
+            ],
+            "printed_pages": [
+              12
+            ],
+            "score": 0.075736,
+            "semantic_score": 0.65107,
+            "lexical_score": 28.7173,
+            "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十六条 第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，\n不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，\n不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。",
+            "related_table_chunks": []
+          }
+        ],
+        "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+      },
+      "seconds": 0.0087,
+      "attempt_number": 1
+    }
+  ],
+  "read_ids": [],
+  "first_hits": [
+    "D03-C008",
+    "D03-C026",
+    "D03-C022",
+    "D03-C019",
+    "D03-C027"
+  ],
+  "seconds": 0.8475,
+  "model_calls": 1,
+  "tool_calls": 1,
+  "real_model": true,
+  "fault": {}
+}

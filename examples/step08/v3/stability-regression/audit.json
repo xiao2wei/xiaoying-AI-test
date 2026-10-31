@@ -1,0 +1,112 @@
+{
+  "dataset_sha256": "ed5378c344f743cf279606c31652f6b9e1c22569942558970eaf2b327b8a12ea",
+  "runs": "E:\\xiaoying\\AItest\\examples\\step08\\v2\\stability-runs",
+  "valid_unchanged": 164,
+  "valid_changed": 0,
+  "affected": [
+    "STAB-TEST02-R1",
+    "STAB-TEST02-R2",
+    "STAB-TEST02-R3",
+    "STAB-TEST16-R1",
+    "STAB-TEST16-R2",
+    "STAB-TEST16-R3",
+    "STAB-TEST17-R1",
+    "STAB-TEST17-R2",
+    "STAB-TEST17-R3",
+    "STAB-TEST19-R1",
+    "STAB-TEST19-R2",
+    "STAB-TEST19-R3",
+    "STAB-TEST25-R1",
+    "STAB-TEST25-R2",
+    "STAB-TEST25-R3"
+  ],
+  "recovered": [
+    {
+      "id": "STAB-TEST19-R1",
+      "turn": 0,
+      "trace_index": 8,
+      "response_id": "5e82afa5-9066-4b5a-8aea-0eb33b24e7b9",
+      "repairs": [
+        "redundant_closing_braces"
+      ]
+    },
+    {
+      "id": "STAB-TEST19-R2",
+      "turn": 0,
+      "trace_index": 8,
+      "response_id": "8e38c148-c80e-4ed4-9ab4-60db7e7596e4",
+      "repairs": [
+        "redundant_closing_braces"
+      ]
+    }
+  ],
+  "still_invalid": [
+    {
+      "id": "STAB-TEST02-R1",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST16-R1",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST16-R2",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST16-R3",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST17-R2",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST17-R3",
+      "turn": 0,
+      "trace_index": 0
+    },
+    {
+      "id": "STAB-TEST25-R2",
+      "turn": 1,
+      "trace_index": 0
+    }
+  ],
+  "source_hashes": {
+    "STAB-TEST01-R1": "08937daa33ae81cba1ea671be2d0beb85c7b8c1cdc1fce22437a6fce0527cd90",
+    "STAB-TEST01-R2": "904c36dd8b924d4efee1acf8d12163ae32b53d72bb588f017acfcc38fd447804",
+    "STAB-TEST01-R3": "13a4cbaf25e9ccc26e64d6421301b1fbb586b77c8728dbc92fbe0960a41521fa",
+    "STAB-TEST02-R1": "e9eba5dbdccf857ba499dc3ff0ab8ea75d06cc274e5e76cb16a9f0f0d978243c",
+    "STAB-TEST02-R2": "e73a254911e0294f80443838919de1464241d473de2ac41f592b32d86b553164",
+    "STAB-TEST02-R3": "aa385eb1a667b76dc4ac4b2c04564ed1cee0b0e365ca5a1dbe3fec6b8731927a",
+    "STAB-TEST13-R1": "62b3042fadbfebf6313822a91d765d201a7d178f221f836be32d92a62d4cad29",
+    "STAB-TEST13-R2": "a3c0cb99371ede86bc4dfd438af98ea577933aae1709f7d962c06ac353e83723",
+    "STAB-TEST13-R3": "aa803a02862e40bb38e9f435755544da34d7ee0b7196f05dab1e79925de6a925",
+    "STAB-TEST16-R1": "4cefb50644b8a99761f98628f48ea342fa138279c2ba6c997caeaa73d74acf9b",
+    "STAB-TEST16-R2": "a630f51e865cd82040fcadd8b9d40fa9e8fbcf8e3b654acfa283bbab5e953d55",
+    "STAB-TEST16-R3": "7124820d9c982401e63e60b2003efa80a09cc180b3a8e0a936e14a069b7376f7",
+    "STAB-TEST17-R1": "a555dfb0f1251dac27e4327c3f1c3cc670255e3366abb2b7b9990292db6faf57",
+    "STAB-TEST17-R2": "aab4290799bf2819d2b9e8088647e9a4ee6a72f0fbac57b6a8dff722472c40bd",
+    "STAB-TEST17-R3": "b52642d3767a1f860fcb44ff19b69ec254611f4740798119f1039e81dce67672",
+    "STAB-TEST19-R1": "5a68aee2d3eb90c7b548c2bd86a1415a148487ac24246bffc6c31f98d323c751",
+    "STAB-TEST19-R2": "719de2a2e072ee89fedaf4e72647e70d6fcf686e01fa53f127e44ba9a0d0bfb9",
+    "STAB-TEST19-R3": "9ee5b7631f6a2705212b60494fd184dca7b4caedf0ec8e9c9bb8f1db0637eb22",
+    "STAB-TEST25-R1": "993793bfedd42419f041d23993e3bf48e9f64071901919f10cb9f3499758460b",
+    "STAB-TEST25-R2": "56579d335c20af8917b1f2bfd41e4828b362124e557c1b3a338b1aedc96e767c",
+    "STAB-TEST25-R3": "1ba580ebe0ae362df656df593d71dd7ac8bb01fe3961a81f25b036a833fe44cf",
+    "STAB-TEST31-R1": "40bd647f36f23e75eca5fdb586984cfb89abc01861ef509b01f8c6ff1127bbce",
+    "STAB-TEST31-R2": "23dda461ed0d8f00331e2fa749b329dd89a81fa9edff40e6fe72521bfd2d510b",
+    "STAB-TEST31-R3": "0a49dad57df6542188123484599b415ed648d7bd3f257dedaff13cc1a2e9b69a",
+    "STAB-TEST36-R1": "15ce211696ace9aaeef7998636f001ef029d12d84cf0508a835e363997c13964",
+    "STAB-TEST36-R2": "8066bf3b7c87f0cf5032b2c22dff20bfc5aa69be6abb3eb611337f2e83d0d3d0",
+    "STAB-TEST36-R3": "3aeea0c6d520ca1a04f27d6e2c5ff5b765b5fdb5a2c4b410b3c1c8a73c1ba241",
+    "STAB-TEST38-R1": "9064dd4bfe84838e4b084a8687f13e7d0553ad428d7357fdf906b5760d496f59",
+    "STAB-TEST38-R2": "a63ffd60e39625b67cdc4044ebaff8e555ae8f5b89cdd3c4b9c6a83796de8c24",
+    "STAB-TEST38-R3": "975fbedfc65cfbb6d3d62e57f0f297e68ddb7401bb9c27575238f7b21c9021a4"
+  }
+}

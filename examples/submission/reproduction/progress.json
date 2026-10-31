@@ -1,0 +1,92 @@
+[
+  {
+    "step": "01-create-venv",
+    "command": [
+      "F:\\Python\\py313\\python.exe",
+      "-m",
+      "venv",
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1"
+    ],
+    "exit_code": 0,
+    "seconds": 2.627
+  },
+  {
+    "step": "02-install",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "-c",
+      "constraints-tested.txt",
+      "-r",
+      "requirements.txt"
+    ],
+    "exit_code": 0,
+    "seconds": 217.213
+  },
+  {
+    "step": "03-pip-check",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.349
+  },
+  {
+    "step": "10-rebuild-index",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "-m",
+      "policy_agent.cli",
+      "build-index"
+    ],
+    "exit_code": 0,
+    "seconds": 32.945
+  },
+  {
+    "step": "11-program-tests",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "scripts/run_tests.py",
+      "work/reproduced-tests.json"
+    ],
+    "exit_code": 0,
+    "seconds": 1.249
+  },
+  {
+    "step": "12-offline-demo",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "scripts/demo_offline.py",
+      "--out",
+      "work/reproduced-mock"
+    ],
+    "exit_code": 0,
+    "seconds": 0.687
+  },
+  {
+    "step": "13-cli-help",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "-m",
+      "policy_agent.cli",
+      "--help"
+    ],
+    "exit_code": 0,
+    "seconds": 0.612
+  },
+  {
+    "step": "14-retrieval-smoke",
+    "command": [
+      "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+      "-c",
+      "import json; from policy_agent.retrieval import Retriever; r=Retriever(); q=r.search('\u4eba\u624d\u79d1\u7814\u5efa\u8bbe\u4e13\u9879\u7ecf\u8d39\u9879\u76ee\u6700\u957f\u6267\u884c\u591a\u4e45'); assert q['ok'] and len(q['hits'])==5; ids=[x['chunk_id'] for x in q['hits']]; assert 'D03-C008' in ids; a=r.read('D03-C008'); assert a['ok']; print(json.dumps({'hits':ids,'read':a['chunk']['chunk_id']},ensure_ascii=False))"
+    ],
+    "exit_code": 0,
+    "seconds": 1.011
+  }
+]

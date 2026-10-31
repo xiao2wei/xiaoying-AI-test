@@ -1,0 +1,129 @@
+{
+  "key": "stability--STAB-TEST36-R1--0",
+  "mode": "stability",
+  "id": "STAB-TEST36-R1",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "346115e60e8ad063977b631833e54c071f8fb50caa770dc74c8c4f0917db325e",
+  "run_sha256": "38e278c2fc145da38c5fe2a87dd267f4e4b9bbc7525825c36a3f11dbd4aef3bc",
+  "created_at": "2026-10-31T05:16:28.757845+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+          "reason": "实际回答明确表达了从事特种作业的临时用工人员须经过专门培训并获得特种作业资格，与要点语义完全一致。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+          "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确引用《辽宁科技大学临时用工管理办法》第十二条，引用quote与原文一致，实际已读取的D23-C013 chunk包含该条款，支持事实。"
+        },
+        {
+          "text": "临时用工人员签订合同前必须提交材料，其中第（四）项为职业技术等级或资格证明（有特殊要求的临时用工岗位）。",
+          "answer_span": "临时用工人员签订合同前必须提交材料，其中第（四）项为职业技术等级或资格证明（有特殊要求的临时用工岗位）。",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "该事实明确引用《辽宁科技大学临时用工管理办法》第十五条，引用quote与原文一致，实际已读取的D23-C016 chunk包含该条款，支持事实。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案直接、准确地回答了问题，核心要点得到明确表达，引用的制度事实均有可靠来源且与实际读取内容一致，无编造或错误引用；工具执行过程中出现的临时故障已合理恢复，决策合理。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:16:03.199063+00:00",
+        "attempt": 1,
+        "prompt_sha256": "4343eba841f243c410b1aa7f9841517129ed7c57adee042a2f231f7c35cbc669",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "704d3327-e50c-48a7-8c56-4e51965a768a",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2367,
+          "completion_tokens": 1444,
+          "total_tokens": 3811,
+          "prompt_tokens_details": {
+            "cached_tokens": 1280
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 1444
+          },
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 1087
+        },
+        "content": "",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.0036046999999999997,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "error": "JSONDecodeError",
+        "seconds": 14.0497
+      },
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:16:17.248968+00:00",
+        "attempt": 2,
+        "prompt_sha256": "4343eba841f243c410b1aa7f9841517129ed7c57adee042a2f231f7c35cbc669",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "d34c0e5e-3a94-418f-ace2-8d1d9242fcf5",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 2367,
+          "completion_tokens": 1119,
+          "total_tokens": 3486,
+          "prompt_tokens_details": {
+            "cached_tokens": 2304
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 689
+          },
+          "prompt_cache_hit_tokens": 2304,
+          "prompt_cache_miss_tokens": 63
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\n      \"reason\": \"实际回答明确表达了从事特种作业的临时用工人员须经过专门培训并获得特种作业资格，与要点语义完全一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用《辽宁科技大学临时用工管理办法》第十二条，引用quote与原文一致，实际已读取的D23-C013 chunk包含该条款，支持事实。\"\n    },\n    {\n      \"text\": \"临时用工人员签订合同前必须提交材料，其中第（四）项为职业技术等级或资格证明（有特殊要求的临时用工岗位）。\",\n      \"answer_span\": \"临时用工人员签订合同前必须提交材料，其中第（四）项为职业技术等级或资格证明（有特殊要求的临时用工岗位）。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用《辽宁科技大学临时用工管理办法》第十五条，引用quote与原文一致，实际已读取的D23-C016 chunk包含该条款，支持事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案直接、准确地回答了问题，核心要点得到明确表达，引用的制度事实均有可靠来源且与实际读取内容一致，无编造或错误引用；工具执行过程中出现的临时故障已合理恢复，决策合理。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.002307888,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 11.506
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 2
+  }
+}

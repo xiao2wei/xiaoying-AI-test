@@ -1,0 +1,87 @@
+{
+  "id": "STAB-TEST38-R3",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "读取原文的工具持续返回 PERSISTENT_UNAVAILABLE（不可重试故障），未能读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等条款原文，因此无法给出可核对的费用承担结论",
+            "reason": "实际回答明确说明工具持续故障、未能读取原文，并因此无法给出结论，符合要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "未能读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等条款原文，因此无法给出可核对的费用承担结论",
+            "reason": "实际回答未使用检索摘要充当已读证据，明确说明未读取原文并拒绝给出无依据结论，未违反行为性禁止要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "工具读取持续返回不可重试故障，答案如实说明工具错误并拒绝基于不可靠信息给出结论，两个必需要点均满足；未输出任何制度事实，无严重错误，整体处理符合预期。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:16:38.116957+00:00",
+          "attempt": 1,
+          "prompt_sha256": "925f1df200ed2af010d8f19d96d58b1b194580985aedc2dde98c7989af1e44d1",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c74b95a0-b335-4973-b810-ed60aabc3a04",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1733,
+            "completion_tokens": 1391,
+            "total_tokens": 3124,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1104
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 581
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"读取原文的工具持续返回 PERSISTENT_UNAVAILABLE（不可重试故障），未能读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等条款原文，因此无法给出可核对的费用承担结论\",\n      \"reason\": \"实际回答明确说明工具持续故障、未能读取原文，并因此无法给出结论，符合要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"未能读取《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十六条等条款原文，因此无法给出可核对的费用承担结论\",\n      \"reason\": \"实际回答未使用检索摘要充当已读证据，明确说明未读取原文并拒绝给出无依据结论，未违反行为性禁止要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"工具读取持续返回不可重试故障，答案如实说明工具错误并拒绝基于不可靠信息给出结论，两个必需要点均满足；未输出任何制度事实，无严重错误，整体处理符合预期。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0031629839999999998,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 13.8326
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "stability--STAB-TEST38-R3--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "19bdb49f063405a11aa06055f4a525f1f762c0af155dde2251a5f3cb97081253",
+        "run_sha256": "6d41fdaed2cfd8cf92a05a296c99780c064a691ee8b5e4ad1fb1d69834d27401",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "6d41fdaed2cfd8cf92a05a296c99780c064a691ee8b5e4ad1fb1d69834d27401"
+}

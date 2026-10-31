@@ -1,0 +1,26 @@
+{
+  "reviewer": "用户",
+  "confirmed_at": "2026-10-31",
+  "confirmation_source": "当前对话对三项评分争议清单回复“同意”",
+  "raw_answer": "同意",
+  "scope": [
+    {
+      "id": "HR01",
+      "decision": "同意清单的通过建议",
+      "source_run": "examples/step08/v2/agent-runs/TEST13.json"
+    },
+    {
+      "id": "HR03",
+      "decision": "同意清单的通过建议",
+      "source_run": "examples/step08/v2/stability-runs/STAB-TEST01-R1.json"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "HR02",
+      "reason": "原问题没有单一推荐，用户未分别给通过/不通过，不据此推定标签"
+    }
+  ],
+  "applies_to_new_v4_answers": false,
+  "note": "确认针对清单中旧版本实际文本，不自动套用不同版本新答案。完整最终复核仍须完成。"
+}

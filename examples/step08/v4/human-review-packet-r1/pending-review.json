@@ -1,0 +1,1044 @@
+{
+  "version": "candidate-v4",
+  "created_at": "2026-10-31T05:32:14.311182+00:00",
+  "source_scores": "examples/step08/v4/score-completion-r1",
+  "human_review_complete": false,
+  "reviewer": null,
+  "confirmed_at": null,
+  "confirmation_source": null,
+  "new_model_requests": 0,
+  "counts": {
+    "agent": {
+      "groups": 18,
+      "turns": 20
+    },
+    "baseline": {
+      "groups": 17,
+      "turns": 19
+    },
+    "stability": {
+      "groups": 16,
+      "turns": 17
+    }
+  },
+  "items": [
+    {
+      "review_id": "A01.1",
+      "group_review_id": "A01",
+      "mode": "agent",
+      "id": "TEST11",
+      "turn": 0,
+      "score_sha256": "d841f7b9bcb4b6a6fc5db66e857e2febe940ce2c41dbe661f9265a1ebfa5c569",
+      "run_sha256": "fc10df5147df1ca65124cc234dddde79728c1d15a14cb86a87463aba346a197b",
+      "ai_pass": false,
+      "selection_reasons": [
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A02.1",
+      "group_review_id": "A02",
+      "mode": "agent",
+      "id": "TEST18",
+      "turn": 0,
+      "score_sha256": "4231133235f339657a6b25d270afcc2841dc09742ef0f2cc5b0eca2c8f3d27b3",
+      "run_sha256": "da4144855054a24267a02bbe82252b8c06162d66a0803c4bb5bed8c5210c1e6b",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部冲突或版本差异场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A03.1",
+      "group_review_id": "A03",
+      "mode": "agent",
+      "id": "TEST21",
+      "turn": 0,
+      "score_sha256": "c71480e738b1a24ba75832ba5a36e3d6110fd5f9f269767477b31b83b0d29fd3",
+      "run_sha256": "a4a5f3d9ea63ee8c9408818b0df89efc9799f4e26073a6b64c1bc8befe55ddfb",
+      "ai_pass": false,
+      "selection_reasons": [
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A04.1",
+      "group_review_id": "A04",
+      "mode": "agent",
+      "id": "TEST25",
+      "turn": 0,
+      "score_sha256": "a70bc0515c66ad5d7402c90e2008b00adb61c0313944e7d8c66f8bdec254b305",
+      "run_sha256": "04e778a604e70330772a264a580d479a35fbe7096f22f7f7e81e49e268f6723c",
+      "ai_pass": true,
+      "selection_reasons": [
+        "AI判定未通过或存在争议",
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A04.2",
+      "group_review_id": "A04",
+      "mode": "agent",
+      "id": "TEST25",
+      "turn": 1,
+      "score_sha256": "a70bc0515c66ad5d7402c90e2008b00adb61c0313944e7d8c66f8bdec254b305",
+      "run_sha256": "04e778a604e70330772a264a580d479a35fbe7096f22f7f7e81e49e268f6723c",
+      "ai_pass": false,
+      "selection_reasons": [
+        "AI判定未通过或存在争议",
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A05.1",
+      "group_review_id": "A05",
+      "mode": "agent",
+      "id": "TEST01",
+      "turn": 0,
+      "score_sha256": "81dc4ec7d56a4df9496d18821a6a69e385924bc095d39220b9c4eeb5deac8b31",
+      "run_sha256": "8fb05469fb54631f7ed0c7e1c58a158ac8504bba614d7fc87428423ae504755f",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A06.1",
+      "group_review_id": "A06",
+      "mode": "agent",
+      "id": "TEST02",
+      "turn": 0,
+      "score_sha256": "30dfbabe8d5571cbc30a2f5ed9ec6d4b31424ea47db799dbc5f33b3e6fefc7f4",
+      "run_sha256": "e256ff96e5f92648670da81612b74872893b4ab15fc741ed0e0822f566f72cf6",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A07.1",
+      "group_review_id": "A07",
+      "mode": "agent",
+      "id": "TEST13",
+      "turn": 0,
+      "score_sha256": "6ca46347309888f783461de08e2d5a87de9da6dfebe42ad44b0b7334d8f21265",
+      "run_sha256": "4a1c56e0685f963cfaf0d1d551b2532cc191829f782e340a12fba6590e8bbc8e",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A08.1",
+      "group_review_id": "A08",
+      "mode": "agent",
+      "id": "TEST14",
+      "turn": 0,
+      "score_sha256": "4cd20e7ed52e8148107af66ae7d1642f7e7bddf5091d1c75e419139695505910",
+      "run_sha256": "22132637311e30a5a9c38c3d94b20a7153c822c785a0946dbbd1b4233faf0e1f",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A09.1",
+      "group_review_id": "A09",
+      "mode": "agent",
+      "id": "TEST15",
+      "turn": 0,
+      "score_sha256": "6c276f3e4f1acce143b0c56981d94d50999fca1523b8d2b998670eb3fc054b70",
+      "run_sha256": "dbda46422770fa8d8dcd59b9728d1e3fe7ad5d5b5351160c0adbddd90810ad52",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A10.1",
+      "group_review_id": "A10",
+      "mode": "agent",
+      "id": "TEST16",
+      "turn": 0,
+      "score_sha256": "a9ef60e353466fcf35a895c58838dc077dc3171900ba1f8e0ba3de888170f118",
+      "run_sha256": "61ccf9e3754e3981cc6d7652edd5f0772f3df843473e8644721ef645db32d78d",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A11.1",
+      "group_review_id": "A11",
+      "mode": "agent",
+      "id": "TEST17",
+      "turn": 0,
+      "score_sha256": "5cdf217ec13145a33bcea6b8a893ea0396055271b6327c931682e9b4f26ff10f",
+      "run_sha256": "5f0fd4df53b894b2aac802a322d2528795c7341e6f25046015fd945108b5efce",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A12.1",
+      "group_review_id": "A12",
+      "mode": "agent",
+      "id": "TEST19",
+      "turn": 0,
+      "score_sha256": "1f6119b6b07fe195362509a7cc47f8585ba36300bb1e91e06d86f4a21d732ba4",
+      "run_sha256": "1198151a5ef5e0edf62acb0f70f37b84095663024c90d7d4c66b7cda714fd774",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A13.1",
+      "group_review_id": "A13",
+      "mode": "agent",
+      "id": "TEST31",
+      "turn": 0,
+      "score_sha256": "95d56407ac5fb9cc89147dbba1be205ddf1e3ef04539b6ebe8a12970e87c933a",
+      "run_sha256": "c1b11e81a74eff319e4f10387792f9021b4f7ba01953781e25f11d25bdd4470a",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A13.2",
+      "group_review_id": "A13",
+      "mode": "agent",
+      "id": "TEST31",
+      "turn": 1,
+      "score_sha256": "95d56407ac5fb9cc89147dbba1be205ddf1e3ef04539b6ebe8a12970e87c933a",
+      "run_sha256": "c1b11e81a74eff319e4f10387792f9021b4f7ba01953781e25f11d25bdd4470a",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A14.1",
+      "group_review_id": "A14",
+      "mode": "agent",
+      "id": "TEST36",
+      "turn": 0,
+      "score_sha256": "09dc124daf96b95c794ea27d69439f153c300b224db2f7f205e3151017bac212",
+      "run_sha256": "5bbc1b1d7eebf4f24df4d22f409a8680beee637b9f0590ed9163b56d112962ee",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A15.1",
+      "group_review_id": "A15",
+      "mode": "agent",
+      "id": "TEST37",
+      "turn": 0,
+      "score_sha256": "73149a8fd538ac5bc706a5febbc1baca80dc49984e8d66332cfa914491cea3b6",
+      "run_sha256": "f2eea0938b17c6831683e31d25374675fb2a6391d5175e6e44217e49ecbebf14",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A16.1",
+      "group_review_id": "A16",
+      "mode": "agent",
+      "id": "TEST38",
+      "turn": 0,
+      "score_sha256": "b17c6d313faccfbca6ae11805fdfba27ba2bbbdf7bb3eb68a84df81234aec004",
+      "run_sha256": "5e410c66f5b5f1aa6247944d10c0fbacb84940d838cb7fee00ceb1ecedc09cb1",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A17.1",
+      "group_review_id": "A17",
+      "mode": "agent",
+      "id": "TEST39",
+      "turn": 0,
+      "score_sha256": "a9d8354dc0da2b9a568cbcd24d852d04bafd0890b63261c29a530cd5a4650d60",
+      "run_sha256": "01fb7676c8f9a75deccef2b8372240c52d0e875ba654eeb6d463e9e00f3793d3",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "A18.1",
+      "group_review_id": "A18",
+      "mode": "agent",
+      "id": "TEST40",
+      "turn": 0,
+      "score_sha256": "d69989689d1484fa09b3d2973eb1cdae59d52e19eca08fd42a7d6fd406bd6531",
+      "run_sha256": "e90e5ce449dbdd8359b15f246f1b0930fe40e4239eca297d617c685c7587b70b",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B01.1",
+      "group_review_id": "B01",
+      "mode": "baseline",
+      "id": "TEST17",
+      "turn": 0,
+      "score_sha256": "ad525b285d242c2021d9ad6136a9791f125a58924f305a0cc2288354bb2e55cd",
+      "run_sha256": "1409ddb76a773dd302cf772d9bd14b546afffe62592903c8ced1004002bcce5a",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部冲突或版本差异场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B02.1",
+      "group_review_id": "B02",
+      "mode": "baseline",
+      "id": "TEST18",
+      "turn": 0,
+      "score_sha256": "8c351a1fc2cf7b813dfcec01565d04eb6b019b2eb1966c2b26c197907eac19e8",
+      "run_sha256": "b54330c8f0645e8d8e77368096c7316ab6e5a53cf33d46f5414582d464b23919",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部冲突或版本差异场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B03.1",
+      "group_review_id": "B03",
+      "mode": "baseline",
+      "id": "TEST21",
+      "turn": 0,
+      "score_sha256": "b9f0d4286a542af8c7bef91807fb02ca2494ca474ba0e0f5560ca36d640edd95",
+      "run_sha256": "867907db25bdaaf20ec4fea29149fe24435ed8ba7cf340213fa38aa108e0161c",
+      "ai_pass": false,
+      "selection_reasons": [
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B04.1",
+      "group_review_id": "B04",
+      "mode": "baseline",
+      "id": "TEST36",
+      "turn": 0,
+      "score_sha256": "d4cd516208c9eb2d2bad5df5bd9ff3a2f7ed85b0c5e8257c871f43006eb56295",
+      "run_sha256": "76d882c68d4417548246d7c8573d6c6b68a906b2c90872439d6d441cea0fbe98",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部工具失败场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B05.1",
+      "group_review_id": "B05",
+      "mode": "baseline",
+      "id": "TEST37",
+      "turn": 0,
+      "score_sha256": "4506f07b4d89ca666834a2a49da90778489fe87eb36b185ee5673418e29b9c1a",
+      "run_sha256": "e4d87649ec4c45b4450431896ac2c0146d282d4d3908637ebd8e0360d956b36b",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部工具失败场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B06.1",
+      "group_review_id": "B06",
+      "mode": "baseline",
+      "id": "TEST40",
+      "turn": 0,
+      "score_sha256": "43891a6971317fec1b1b5bc0eebd39bc8dc5bda7952a08533ad8609856da026b",
+      "run_sha256": "8515bb3a2eae98bc6a0bab47ca0cbd32b3086e91ad6b631fde317d8eed79f208",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部工具失败场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B07.1",
+      "group_review_id": "B07",
+      "mode": "baseline",
+      "id": "TEST01",
+      "turn": 0,
+      "score_sha256": "d74c74ebee0b5c329a9ed4a42ea892674b04ee6a740bf13d21fcaa5b54959b2f",
+      "run_sha256": "d6b7870f05448e6a7ecb1acb5c9a85e10baeb0e611ee808e3bc43f65e15b1db8",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B08.1",
+      "group_review_id": "B08",
+      "mode": "baseline",
+      "id": "TEST02",
+      "turn": 0,
+      "score_sha256": "59ab292585004e353a129240be0f2106ca9b8269474fb62b581c1cf301995d24",
+      "run_sha256": "2cd2b570d1a2930576e2cc6fb870c8571ba85f231e56398615d36a3799fc60db",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B09.1",
+      "group_review_id": "B09",
+      "mode": "baseline",
+      "id": "TEST13",
+      "turn": 0,
+      "score_sha256": "69efb8d58ad7e798be43e1a94b234cf6286ea0ad1d4fd8e96d6ef4c5554188d3",
+      "run_sha256": "ba9e4a34dfb486c739a6d5f11346b64db1fb29677139597e9a14feb2699da834",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B10.1",
+      "group_review_id": "B10",
+      "mode": "baseline",
+      "id": "TEST14",
+      "turn": 0,
+      "score_sha256": "bd36a9bbcc4e95118e1f97bf10255e03f3010b2eddc9d201006cd84028cb03de",
+      "run_sha256": "430dafea725288d09ab8709b5e088368cd7e71edaeb11dd359cf65e8671bb4a5",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B11.1",
+      "group_review_id": "B11",
+      "mode": "baseline",
+      "id": "TEST15",
+      "turn": 0,
+      "score_sha256": "3b1ae6692d6487f4673a8600d4a161c463fc9247a1bc1af3e98afd04a0bb1045",
+      "run_sha256": "a1f4660976067e3909a5cf87a27d4cfb8d8120b21b68bc40be66b822dfe04d38",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B12.1",
+      "group_review_id": "B12",
+      "mode": "baseline",
+      "id": "TEST16",
+      "turn": 0,
+      "score_sha256": "95e570965fec385fba54a4571731054ee937a32256ba2edfbea926e1ab5f09bf",
+      "run_sha256": "4239f12f2b3cdda097d995abe6d6aef8c4a9d029f20e472ce3e0f975417ca80f",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B13.1",
+      "group_review_id": "B13",
+      "mode": "baseline",
+      "id": "TEST19",
+      "turn": 0,
+      "score_sha256": "7495028ffb675ad46fd1cb2cd556ebc83919876ea7363609aed2a3953659be7b",
+      "run_sha256": "4604bccb545550275a82c1b47caeee988d1f088c7b4f2a357262e43cec9fe6c0",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B14.1",
+      "group_review_id": "B14",
+      "mode": "baseline",
+      "id": "TEST25",
+      "turn": 0,
+      "score_sha256": "1b31e8eb307f3a553d10f735314243b4ac0c6daaea6e7ba4a782b26ae5859b37",
+      "run_sha256": "4f8218e3c157e48643516743d2079c3ddfdab4195afdc11fe81a3893a1c739a0",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B14.2",
+      "group_review_id": "B14",
+      "mode": "baseline",
+      "id": "TEST25",
+      "turn": 1,
+      "score_sha256": "1b31e8eb307f3a553d10f735314243b4ac0c6daaea6e7ba4a782b26ae5859b37",
+      "run_sha256": "4f8218e3c157e48643516743d2079c3ddfdab4195afdc11fe81a3893a1c739a0",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B15.1",
+      "group_review_id": "B15",
+      "mode": "baseline",
+      "id": "TEST31",
+      "turn": 0,
+      "score_sha256": "1b25896cc1cc90e9bf1756cfd751b3319919f1a325ac9549f0c09773591293a0",
+      "run_sha256": "66002642c628f7e748fc16622ae998e374d8ba4953c1952d2f0d92ec21e21642",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B15.2",
+      "group_review_id": "B15",
+      "mode": "baseline",
+      "id": "TEST31",
+      "turn": 1,
+      "score_sha256": "1b25896cc1cc90e9bf1756cfd751b3319919f1a325ac9549f0c09773591293a0",
+      "run_sha256": "66002642c628f7e748fc16622ae998e374d8ba4953c1952d2f0d92ec21e21642",
+      "ai_pass": true,
+      "selection_reasons": [
+        "预定抽查场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B16.1",
+      "group_review_id": "B16",
+      "mode": "baseline",
+      "id": "TEST38",
+      "turn": 0,
+      "score_sha256": "7d98bf7b33f61ad88a8416bd27fc5b7f0c718040ca6933fdf8f6b4c21b13240a",
+      "run_sha256": "6d4dc03e3ba1de841cc538aef735133a0af01b4fbaffd0ee0e74d0c1c24883ab",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "B17.1",
+      "group_review_id": "B17",
+      "mode": "baseline",
+      "id": "TEST39",
+      "turn": 0,
+      "score_sha256": "c3f5be93ebf1e11f86358687f17e56e3c79217d6355beaec237d1fc2d644e3d0",
+      "run_sha256": "f395fc4e67830d02b1b7d625499a571d05fc8b177895a4e4f5e651386b98e038",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S01.1",
+      "group_review_id": "S01",
+      "mode": "stability",
+      "id": "STAB-TEST17-R1",
+      "turn": 0,
+      "score_sha256": "441d20b06dfe42bb696df922b11a501dd2720b2319db2d90e919d788d4da7835",
+      "run_sha256": "c88a9815aef1e42675f41fd630d6dc3d489cfa9cb1e9ba4a2734e44b147b62fa",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部冲突或版本差异场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S02.1",
+      "group_review_id": "S02",
+      "mode": "stability",
+      "id": "STAB-TEST17-R3",
+      "turn": 0,
+      "score_sha256": "133c2b95cddc9578dca66bb78b45b949f48acf6e8b34394b8de2f6befbad684b",
+      "run_sha256": "daedd5ae20e7908960a4ecbf472d98417067cc7e60aa67a730d978f02fbe5f08",
+      "ai_pass": false,
+      "selection_reasons": [
+        "全部冲突或版本差异场景",
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S03.1",
+      "group_review_id": "S03",
+      "mode": "stability",
+      "id": "STAB-TEST31-R1",
+      "turn": 0,
+      "score_sha256": "519937be8b31a9b5984b6907b197ab77fef38b9204da8bcdd2322cdde4f6af4b",
+      "run_sha256": "ac7000540d59fff9d2f96f2806feea61f92bb38f235c225dbb0ecd7b3c384405",
+      "ai_pass": false,
+      "selection_reasons": [
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S03.2",
+      "group_review_id": "S03",
+      "mode": "stability",
+      "id": "STAB-TEST31-R1",
+      "turn": 1,
+      "score_sha256": "519937be8b31a9b5984b6907b197ab77fef38b9204da8bcdd2322cdde4f6af4b",
+      "run_sha256": "ac7000540d59fff9d2f96f2806feea61f92bb38f235c225dbb0ecd7b3c384405",
+      "ai_pass": true,
+      "selection_reasons": [
+        "AI判定未通过或存在争议"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S04.1",
+      "group_review_id": "S04",
+      "mode": "stability",
+      "id": "STAB-TEST13-R1",
+      "turn": 0,
+      "score_sha256": "bac6a454df4d8ac9d476d1ba25cb8352eb17f24971ab0dc41448f203fcf1b50e",
+      "run_sha256": "e7ac85d2023bcb76f3c3f3533262c3c36c796d314f908704826a3c2d20666194",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S05.1",
+      "group_review_id": "S05",
+      "mode": "stability",
+      "id": "STAB-TEST13-R2",
+      "turn": 0,
+      "score_sha256": "57beddf69bfc2c1de5d86e45107da7deccbac0a7d4c36b9a7cf9722787ce5ed4",
+      "run_sha256": "533a8d735d4ae47e4905daafe64ad9fc212cdcfe8fd42b8c995475f007552368",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S06.1",
+      "group_review_id": "S06",
+      "mode": "stability",
+      "id": "STAB-TEST13-R3",
+      "turn": 0,
+      "score_sha256": "657c4f099d71f5c52b21512c46aca56383eb7343049dd393c017e0ba44a5ecb1",
+      "run_sha256": "6e865cdaf2360d6128749a6776a2c423c8c41762b1278c995d223095ae58b1a8",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S07.1",
+      "group_review_id": "S07",
+      "mode": "stability",
+      "id": "STAB-TEST16-R1",
+      "turn": 0,
+      "score_sha256": "b057f66063160885b12690d23d79485c175f4cad92a21b89a6f6c5e8d4dfccdd",
+      "run_sha256": "fd3832b575e2f803be0bd3837f641c24c7decf32f94721406ec1e7453fff3d67",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S08.1",
+      "group_review_id": "S08",
+      "mode": "stability",
+      "id": "STAB-TEST16-R2",
+      "turn": 0,
+      "score_sha256": "f1dae9ab642ec660814a44100aa787a8bdd308a01d87411e6ee1241b24e94b01",
+      "run_sha256": "a7d8d35481f71e8c44223f56843f28845ca0e301001b0bc9f23fefa2b46c6c46",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S09.1",
+      "group_review_id": "S09",
+      "mode": "stability",
+      "id": "STAB-TEST16-R3",
+      "turn": 0,
+      "score_sha256": "3b5657ca86011214564659a0befab0c07dcc05667d8359c2f6c6fe36a1253a04",
+      "run_sha256": "eb1e66ece03a659ccd9242efd4ad3d9467e45c0b4fa6b137decfb9ad7d3156d9",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S10.1",
+      "group_review_id": "S10",
+      "mode": "stability",
+      "id": "STAB-TEST17-R2",
+      "turn": 0,
+      "score_sha256": "ea53ccede2e3f726adfd8e1a69ee9c8baabf8b6ab84cb9f15115695a3fe9d140",
+      "run_sha256": "62fd9a0c6f7f111c5437ea0d7930f95906c2e041833a0fa6b696430133bcfb3c",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部冲突或版本差异场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S11.1",
+      "group_review_id": "S11",
+      "mode": "stability",
+      "id": "STAB-TEST36-R1",
+      "turn": 0,
+      "score_sha256": "5ac20359f491eeb9d14e77c2dedf7d65046b1fbac3c1f8b01286338ab1ec3dc6",
+      "run_sha256": "38e278c2fc145da38c5fe2a87dd267f4e4b9bbc7525825c36a3f11dbd4aef3bc",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S12.1",
+      "group_review_id": "S12",
+      "mode": "stability",
+      "id": "STAB-TEST36-R2",
+      "turn": 0,
+      "score_sha256": "576079e08329e619ad9b68252a5a96e68e6119f52bfde513178859aa66ab20bb",
+      "run_sha256": "45c97f14d54ccab2d3383b466b633e57919af1ea724ace0e3b3dc2b3ecf17bbd",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S13.1",
+      "group_review_id": "S13",
+      "mode": "stability",
+      "id": "STAB-TEST36-R3",
+      "turn": 0,
+      "score_sha256": "444af5a35bc4ac1a9bf83a5fe742f98c887a7a7abbefa28091052f44c79313a5",
+      "run_sha256": "ae4423595c3e209123f0d68c98c1faee88841cebe80d2e55e43997b9071ca7fa",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S14.1",
+      "group_review_id": "S14",
+      "mode": "stability",
+      "id": "STAB-TEST38-R1",
+      "turn": 0,
+      "score_sha256": "b4ee1a42b7f1de8fb1e79a0099b47ae03619775473e8bbda336067c969032c7a",
+      "run_sha256": "626ac12e3922fbc7835cd74074c422f21f625cdce69ee9b1da587850a62b032f",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S15.1",
+      "group_review_id": "S15",
+      "mode": "stability",
+      "id": "STAB-TEST38-R2",
+      "turn": 0,
+      "score_sha256": "f6c64db0ca9532811561d8acbdac5a0e09837533fd40e3e885f9b66d55179b7f",
+      "run_sha256": "bf922883d7b37d4587bdc08c5a6ed77d8526169c5c814ffdbc508a60b58fcb35",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    },
+    {
+      "review_id": "S16.1",
+      "group_review_id": "S16",
+      "mode": "stability",
+      "id": "STAB-TEST38-R3",
+      "turn": 0,
+      "score_sha256": "2dc5b59667647f65a3b28407b8a30e13ae9f968daf05d3984463116183d28d96",
+      "run_sha256": "6d41fdaed2cfd8cf92a05a296c99780c064a691ee8b5e4ad1fb1d69834d27401",
+      "ai_pass": true,
+      "selection_reasons": [
+        "全部工具失败场景"
+      ],
+      "decision": null,
+      "reason": null,
+      "reviewer": null,
+      "confirmed_at": null,
+      "confirmation_source": null
+    }
+  ]
+}

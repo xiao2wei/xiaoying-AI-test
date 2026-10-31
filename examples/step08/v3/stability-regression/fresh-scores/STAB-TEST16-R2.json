@@ -1,0 +1,129 @@
+{
+  "id": "STAB-TEST16-R2",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "reason": "实际答案明确引用2023年修订办法第十八条，并指出原2020年19号办法同时废止，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "不是都继续生效。2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "reason": "实际答案以废止条款为依据，直接回答2020年19号办法与2023年修订办法不是都继续生效，解决了版本关系。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2023年修订办法第十八条明确规定原2020年19号办法同时废止",
+            "answer_span": "第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止”，且该文档已在actually_read中读取，支持该事实。"
+          },
+          {
+            "text": "2023年修订办法文号为辽科大校发〔2023〕77号附件，日期为2023年12月20日",
+            "answer_span": "辽科大校发〔2023〕77号附件，2023年12月20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C001的quote包含“（辽科大校发〔2023〕77号附件·2023年12月20日）”，actually_read中的D01-C001也包含相同文号和日期，支持该事实。"
+          },
+          {
+            "text": "原办法为《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）",
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote明确出现该原办法名称及文号，且actually_read中D01-C019包含该表述，支持该事实。"
+          },
+          {
+            "text": "2020年19号办法与2023年修订办法不是都继续生效",
+            "answer_span": "不是都继续生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "虽非逐字引用，但D01-C019的quote载明2020年19号办法同时废止，且文档已读取，足以支持“不是都继续生效”的结论。"
+          },
+          {
+            "text": "2023年修订办法自发布之日起施行",
+            "answer_span": "2023年修订办法自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“自发布之日起施行”，且actually_read中D01-C019包含该内容，支持该事实。"
+          },
+          {
+            "text": "2023年修订办法由人事处负责解释",
+            "answer_span": "并由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019的quote包含“由人事处负责解释”，且actually_read中D01-C019包含该内容，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确引用2023年修订办法第十八条关于2020年19号办法同时废止的规定，明确回答了两者不是都继续生效，并依据废止条款解决了版本关系。所有事实均有相应引用和已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:53:44.996290+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ae26fd4d28c8737b3a147471e163e0aa5a564fe88003cdd601590c601a706638",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "d1bea510-5bc8-444a-92d0-72cd588ff29c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2223,
+            "completion_tokens": 4228,
+            "total_tokens": 6451,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3188
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1071
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"reason\": \"实际答案明确引用2023年修订办法第十八条，并指出原2020年19号办法同时废止，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"不是都继续生效。2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"reason\": \"实际答案以废止条款为依据，直接回答2020年19号办法与2023年修订办法不是都继续生效，解决了版本关系。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2023年修订办法第十八条明确规定原2020年19号办法同时废止\",\n      \"answer_span\": \"第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止”，且该文档已在actually_read中读取，支持该事实。\"\n    },\n    {\n      \"text\": \"2023年修订办法文号为辽科大校发〔2023〕77号附件，日期为2023年12月20日\",\n      \"answer_span\": \"辽科大校发〔2023〕77号附件，2023年12月20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C001的quote包含“（辽科大校发〔2023〕77号附件·2023年12月20日）”，actually_read中的D01-C001也包含相同文号和日期，支持该事实。\"\n    },\n    {\n      \"text\": \"原办法为《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）\",\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote明确出现该原办法名称及文号，且actually_read中D01-C019包含该表述，支持该事实。\"\n    },\n    {\n      \"text\": \"2020年19号办法与2023年修订办法不是都继续生效\",\n      \"answer_span\": \"不是都继续生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"虽非逐字引用，但D01-C019的quote载明2020年19号办法同时废止，且文档已读取，足以支持“不是都继续生效”的结论。\"\n    },\n    {\n      \"text\": \"2023年修订办法自发布之日起施行\",\n      \"answer_span\": \"2023年修订办法自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“自发布之日起施行”，且actually_read中D01-C019包含该内容，支持该事实。\"\n    },\n    {\n      \"text\": \"2023年修订办法由人事处负责解释\",\n      \"answer_span\": \"并由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019的quote包含“由人事处负责解释”，且actually_read中D01-C019包含该内容，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确引用2023年修订办法第十八条关于2020年19号办法同时废止的规定，明确回答了两者不是都继续生效，并依据废止条款解决了版本关系。所有事实均有相应引用和已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.018207288000000002,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 35.7333
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "39dd1d233654b78fd0d9b9ce7d5e767a9c57ae955e932fe6199d2dd6885cbdbe"
+}

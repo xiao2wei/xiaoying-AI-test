@@ -1,0 +1,27 @@
+{
+  "version": "dataset-v1",
+  "source_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+  "files": {
+    "dev": "7fcd79c1cddde6b4ddb39d8fce8a3ad6faadd2297af2030b38470f5eeed521ce",
+    "formal": "8597df42ea5503dca36b81285d0b9c9feb190aa1a9ab74ca71a58dd485e292e4"
+  },
+  "counts": {
+    "dev": 12,
+    "formal": 40
+  },
+  "formal_execution_started": false,
+  "stability_ids": [
+    "TEST01",
+    "TEST02",
+    "TEST13",
+    "TEST16",
+    "TEST17",
+    "TEST19",
+    "TEST25",
+    "TEST31",
+    "TEST36",
+    "TEST38"
+  ],
+  "split_rule": "同一事实或近似改写不跨开发/正式集合；同一制度的独立条款允许共享，不能声称跨制度泛化",
+  "metrics_rule": "证据单元内多个ID是等价备选；单元之间均需覆盖。持续故障无法读取的题不计M02；无证据题不计M01/M02。名单运行前冻结。"
+}

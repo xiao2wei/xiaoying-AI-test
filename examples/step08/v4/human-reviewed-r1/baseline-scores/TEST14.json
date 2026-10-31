@@ -1,0 +1,144 @@
+{
+  "id": "TEST14",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "出具一级以上医院有效的病休证明及病历",
+            "reason": "明确表达了2020年规定要求一级以上医院有效病休证明及病历。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经三甲级以上医院诊断不能正常上班",
+            "reason": "明确表达了2023年补充规定要求三甲级以上医院诊断。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份文件对首次病假证明的医院等级要求不一致：2020年《辽宁科技大学教职工考勤与请假管理规定》第四条为“一级以上医院”，2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条为“三甲级以上医院”",
+            "reason": "直接列出两份文件的具体差异，满足列明差异的要求。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请提供或确认：两份文件的衔接说明、补充规定中关于与原规定关系的条款，或学校对该冲突的正式解释/执行通知（需明确适用对象与版本）。",
+            "reason": "明确请求用户确认或提供衔接依据，不擅自依据日期选取结论，符合需确认的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历并经审批后可休病假。",
+            "answer_span": "教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历并经审批后可休病假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005的quote完整包含该事实，且actually_read已读取原文支持。"
+          },
+          {
+            "text": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假，无诊断书者视为旷工。",
+            "answer_span": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假，无诊断书者视为旷工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C005的quote完整包含该事实，且actually_read已读取原文支持。"
+          },
+          {
+            "text": "教职工因病经三甲级以上医院诊断不能正常上班，可请病假。",
+            "answer_span": "教职工因病经三甲级以上医院诊断不能正常上班，可请病假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。"
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明。",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。"
+          },
+          {
+            "text": "恢复工作需三甲级以上医院证明确已康复后办理销假。",
+            "answer_span": "恢复工作需三甲级以上医院证明确已康复后办理销假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用两份文件的对应条文，明确列明差异并指出缺乏衔接依据，请求进一步确认，动作合理，无违规。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "两份文件的衔接说明",
+            "补充规定中关于与原规定关系的条款",
+            "学校对该冲突的正式解释/执行通知（需明确适用对象与版本）"
+          ],
+          "reason": "答案明确要求用户提供具体的衔接文件或解释，以满足冲突确认需求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:10:06.195206+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fc14e20cf6a41368832701c548253e4cec605d715198e9d5ecba8a67521f1cc0",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b8d9ffa5-7901-48ea-8d19-57201cbb3f6e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4358,
+            "completion_tokens": 5702,
+            "total_tokens": 10060,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4677
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 2694
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"出具一级以上医院有效的病休证明及病历\",\n      \"reason\": \"明确表达了2020年规定要求一级以上医院有效病休证明及病历。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"经三甲级以上医院诊断不能正常上班\",\n      \"reason\": \"明确表达了2023年补充规定要求三甲级以上医院诊断。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份文件对首次病假证明的医院等级要求不一致：2020年《辽宁科技大学教职工考勤与请假管理规定》第四条为“一级以上医院”，2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条为“三甲级以上医院”\",\n      \"reason\": \"直接列出两份文件的具体差异，满足列明差异的要求。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请提供或确认：两份文件的衔接说明、补充规定中关于与原规定关系的条款，或学校对该冲突的正式解释/执行通知（需明确适用对象与版本）。\",\n      \"reason\": \"明确请求用户确认或提供衔接依据，不擅自依据日期选取结论，符合需确认的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历并经审批后可休病假。\",\n      \"answer_span\": \"教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历并经审批后可休病假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005的quote完整包含该事实，且actually_read已读取原文支持。\"\n    },\n    {\n      \"text\": \"出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假，无诊断书者视为旷工。\",\n      \"answer_span\": \"出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假，无诊断书者视为旷工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C005的quote完整包含该事实，且actually_read已读取原文支持。\"\n    },\n    {\n      \"text\": \"教职工因病经三甲级以上医院诊断不能正常上班，可请病假。\",\n      \"answer_span\": \"教职工因病经三甲级以上医院诊断不能正常上班，可请病假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。\"\n    },\n    {\n      \"text\": \"长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明。\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。\"\n    },\n    {\n      \"text\": \"恢复工作需三甲级以上医院证明确已康复后办理销假。\",\n      \"answer_span\": \"恢复工作需三甲级以上医院证明确已康复后办理销假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009的quote完整包含该事实，且actually_read已读取原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用两份文件的对应条文，明确列明差异并指出缺乏衔接依据，请求进一步确认，动作合理，无违规。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"两份文件的衔接说明\",\n      \"补充规定中关于与原规定关系的条款\",\n      \"学校对该冲突的正式解释/执行通知（需明确适用对象与版本）\"\n    ],\n    \"reason\": \"答案明确要求用户提供具体的衔接文件或解释，以满足冲突确认需求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.013104608,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 47.717
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案准确引用两份文件的对应条文，明确列明差异并指出缺乏衔接依据，请求进一步确认，动作合理，无违规。",
+        "source_score_sha256": "bd36a9bbcc4e95118e1f97bf10255e03f3010b2eddc9d201006cd84028cb03de"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "430dafea725288d09ab8709b5e088368cd7e71edaeb11dd359cf65e8671bb4a5"
+}

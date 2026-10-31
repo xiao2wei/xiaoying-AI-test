@@ -1,0 +1,147 @@
+{
+  "id": "STAB-TEST31-R2",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "事业编制之外聘用社会人员（含已退休人员）、完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式",
+            "reason": "实际回答明确表述了临时用工是在事业编制之外聘用社会人员，完成临时性、阶段性、辅助性或特殊性工作任务，且为短期合同制。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工在事业编制之外聘用社会人员（含已退休人员）",
+            "answer_span": "事业编制之外聘用社会人员（含已退休人员）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用了《辽宁科技大学临时用工管理办法》第二条，其quote明确包含“事业编制之外、聘用社会人员（含已退休人员）”，且实际已读取该文档。"
+          },
+          {
+            "text": "临时用工完成临时性、阶段性、辅助性或特殊性工作任务",
+            "answer_span": "完成临时性、阶段性、辅助性或特殊性工作任务",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote明确包含“完成学校临时性、阶段性、辅助性或特殊性工作任务”，且实际已读取该文档。"
+          },
+          {
+            "text": "临时用工是短期合同制用工形式",
+            "answer_span": "短期合同制用工形式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote明确包含“短期合同制用工形式”，且实际已读取该文档。"
+          },
+          {
+            "text": "临时用工不属于事业编制内用工",
+            "answer_span": "不属于事业编制内用工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的quote说明“事业编制之外”，可以合理推出“不属于事业编制内用工”，且实际已读取该文档。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学临时用工管理办法》第二条，正确说明了临时用工的性质，未发现错误或无依据陈述。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:17:33.691820+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9c5e0bac7b188bdabbe793d2a5d43da14a9d5d99e155e9f026cb923794372dda",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a2e6c530-e114-40fb-85d7-b0351c3c7a97",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1687,
+            "completion_tokens": 3332,
+            "total_tokens": 5019,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2795
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 535
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"事业编制之外聘用社会人员（含已退休人员）、完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式\",\n      \"reason\": \"实际回答明确表述了临时用工是在事业编制之外聘用社会人员，完成临时性、阶段性、辅助性或特殊性工作任务，且为短期合同制。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工在事业编制之外聘用社会人员（含已退休人员）\",\n      \"answer_span\": \"事业编制之外聘用社会人员（含已退休人员）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用了《辽宁科技大学临时用工管理办法》第二条，其quote明确包含“事业编制之外、聘用社会人员（含已退休人员）”，且实际已读取该文档。\"\n    },\n    {\n      \"text\": \"临时用工完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"answer_span\": \"完成临时性、阶段性、辅助性或特殊性工作任务\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote明确包含“完成学校临时性、阶段性、辅助性或特殊性工作任务”，且实际已读取该文档。\"\n    },\n    {\n      \"text\": \"临时用工是短期合同制用工形式\",\n      \"answer_span\": \"短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote明确包含“短期合同制用工形式”，且实际已读取该文档。\"\n    },\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的quote说明“事业编制之外”，可以合理推出“不属于事业编制内用工”，且实际已读取该文档。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学临时用工管理办法》第二条，正确说明了临时用工的性质，未发现错误或无依据陈述。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006975804,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 29.5086
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:49.138418+00:00",
+          "attempt": 1,
+          "prompt_sha256": "32e7c00262713a310ce9848dee5681196ab096bf3cbd018757f61f8350ae812a",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 3.1169
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:20:52.255646+00:00",
+          "attempt": 2,
+          "prompt_sha256": "32e7c00262713a310ce9848dee5681196ab096bf3cbd018757f61f8350ae812a",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "error": "SSLError",
+          "seconds": 2.7699
+        }
+      ],
+      "judge_error": "ModelError:SSLError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "21a2b7203d229ff9aeca5a5fdfef57eb09724e3f66d29e6180ff11b51085d86e"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "reason": "实际答案明确说明5000元由项目负责人签字后报销，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "reason": "实际答案明确说明1万元由项目负责人和二级教学（科研）机构负责人签字后报销，与要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "上述签字权限以经费符合预算及本办法规定的使用范围为前提",
+            "reason": "实际答案明确提示须符合预算及使用范围的前提，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "answer_span": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十二条第1项明确支持5000元（含）以下由项目负责人签字，实际已读包含该条文。"
+          },
+          {
+            "text": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "answer_span": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十二条第2项明确支持1万元（含）由项目负责人和二级教学科研机构负责人签字，实际已读包含该条文。"
+          },
+          {
+            "text": "上述签字权限以经费符合预算及本办法规定的使用范围为前提。",
+            "answer_span": "上述签字权限以经费符合预算及本办法规定的使用范围为前提",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十二条开头明确办理报销须符合预算及使用范围，支持该前提。"
+          },
+          {
+            "text": "若报销劳务费，无论金额大小均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字。",
+            "answer_span": "若报销劳务费，无论金额大小均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十二条注意事项第5项明确劳务费签字要求，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确区分了5000元和1万元的签字权限，并说明须符合预算及使用范围的前提；引用与已读的第十二条一致，无严重错误，所有必需要点均满足。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:05:59.853775+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ffc2a5975b635a5448b304770657216770ef6034d45362710bb37086e00bb853",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "dad219b9-3ce5-45c1-a879-206a626fd580",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3195,
+            "completion_tokens": 4111,
+            "total_tokens": 7306,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3422
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 3195
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\"reason\":\"实际答案明确说明5000元由项目负责人签字后报销，与要点一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\"reason\":\"实际答案明确说明1万元由项目负责人和二级教学（科研）机构负责人签字后报销，与要点一致。\"},{\"index\":2,\"met\":true,\"answer_span\":\"上述签字权限以经费符合预算及本办法规定的使用范围为前提\",\"reason\":\"实际答案明确提示须符合预算及使用范围的前提，与要点一致。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\"answer_span\":\"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十二条第1项明确支持5000元（含）以下由项目负责人签字，实际已读包含该条文。\"},{\"text\":\"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\"answer_span\":\"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十二条第2项明确支持1万元（含）由项目负责人和二级教学科研机构负责人签字，实际已读包含该条文。\"},{\"text\":\"上述签字权限以经费符合预算及本办法规定的使用范围为前提。\",\"answer_span\":\"上述签字权限以经费符合预算及本办法规定的使用范围为前提\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十二条开头明确办理报销须符合预算及使用范围，支持该前提。\"},{\"text\":\"若报销劳务费，无论金额大小均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字。\",\"answer_span\":\"若报销劳务费，无论金额大小均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十二条注意事项第5项明确劳务费签字要求，支持该事实。\"}],\"serious_errors\":[],\"reason\":\"实际答案准确区分了5000元和1万元的签字权限，并说明须符合预算及使用范围的前提；引用与已读的第十二条一致，无严重错误，所有必需要点均满足。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.020496959999999998,
+          "seconds": 36.8612
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e33b48ba8c0a531f377c3bc01ae01126bc5aeec6fa4fe4cbdd20e92f7012b026"
+}

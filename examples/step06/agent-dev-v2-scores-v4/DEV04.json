@@ -1,0 +1,40 @@
+{
+  "id": "DEV04",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:18:16.174606+00:00",
+          "attempt": 1,
+          "prompt_sha256": "13b3b5ed63865d2f0c7bd7fead30cb9bc9c11266b2bd7e7ba40b9b251d95cc09",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1584
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:18:56.333482+00:00",
+          "attempt": 2,
+          "prompt_sha256": "13b3b5ed63865d2f0c7bd7fead30cb9bc9c11266b2bd7e7ba40b9b251d95cc09",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1437
+        }
+      ],
+      "judge_error": "ModelError:ConnectionError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "5686d51fff4818ef2a8cdff95c3bc2a7c1d0b46c3a60c2cae24866e5ad671d71"
+}

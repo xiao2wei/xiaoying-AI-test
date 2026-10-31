@@ -1,0 +1,92 @@
+{
+  "id": "TEST36",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "从事特种作业的临时用工人员有什么额外资格要求？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核对特种作业临时用工人员的额外资格要求。请稍后重试检索；若仍失败，请提供涉及临时用工或特种作业资格的制度名称、文件号或版本日期，以便重新查证。"
+        ],
+        "answer": "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核对特种作业临时用工人员的额外资格要求。请稍后重试检索；若仍失败，请提供涉及临时用工或特种作业资格的制度名称、文件号或版本日期，以便重新查证。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核对特种作业临时用工人员的额外资格要求。请稍后重试检索；若仍失败，请提供涉及临时用工或特种作业资格的制度名称、文件号或版本日期，以便重新查证。"
+        ],
+        "answer": "检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核对特种作业临时用工人员的额外资格要求。请稍后重试检索；若仍失败，请提供涉及临时用工或特种作业资格的制度名称、文件号或版本日期，以便重新查证。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "从事特种作业的临时用工人员有什么额外资格要求？"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:55.423823+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6f20022097c5c462cafb8d27867440ac0da8514d859508e28f8b22c616173f5e",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "8cc6f951-37df-4ca5-93e7-cbcad32339c0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 616,
+            "completion_tokens": 88,
+            "total_tokens": 704,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 232
+          },
+          "content": "{\"status\":\"tool_error\",\"claims\":[],\"gaps\":[\"检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用，可重试），本次未能读取任何制度原文，因此无法核对特种作业临时用工人员的额外资格要求。请稍后重试检索；若仍失败，请提供涉及临时用工或特种作业资格的制度名称、文件号或版本日期，以便重新查证。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00029039999999999996,
+          "seconds": 1.0597
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.0691,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 1.0691,
+  "model_calls": 1,
+  "tool_calls": 1,
+  "created_at": "2026-10-31T02:11:56.484557+00:00"
+}

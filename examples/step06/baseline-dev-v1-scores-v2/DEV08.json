@@ -1,0 +1,138 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述'其适用范围包括学校本科以及研究生兼职辅导员'，直接满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用了D08-C003中的'第二条 本细则适用于学校本科以及研究生兼职辅导员。'，且该条款已在actually_read中实际读取，引用内容与事实完全一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确回答了问题，明确说明细则并非只适用于本科生辅导员，而是适用于本科及研究生兼职辅导员，并正确引用了已读取的条款。工具操作正常，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:29.680775+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b3627c6857a90e272e423d9419699034cba3f96e20adb4612be627b5d0f7e4c2",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "22e84def-3f31-4de8-8bef-ec105011659d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1823,
+            "completion_tokens": 232,
+            "total_tokens": 2055,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1183
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'其适用范围包括学校本科以及研究生兼职辅导员'，直接满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》适用于学校本科以及研究生兼职辅导员。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用了D08-C003中的'第二条 本细则适用于学校本科以及研究生兼职辅导员。'，且该条款已在actually_read中实际读取，引用内容与事实完全一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了问题，明确说明细则并非只适用于本科生辅导员，而是适用于本科及研究生兼职辅导员，并正确引用了已读取的条款。工具操作正常，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00332508,
+          "seconds": 3.7712
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述“该细则适用于学校本科以及研究生兼职辅导员”，并引用第二条原文，直接满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "该细则适用于学校本科以及研究生兼职辅导员。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D08-C003第二条原文，且该chunk已在actually_read中读取，内容一致。"
+          },
+          {
+            "text": "学校可以从研究生中选聘兼职辅导员。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D08-C008第七条原文，且该chunk已在actually_read中读取，内容一致。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D08-C015第十四条原文，且该chunk已在actually_read中读取，内容一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用并读取了第二条，明确说明细则适用于本科及研究生兼职辅导员，满足必需要点；补充的选聘和考核依据均有对应已读证据支持，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:02:33.456952+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a83e6d911a10c3de41e3eea5847b1e61aeb7bd85f38901e9e65c98411eb0be74",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "c4c27b7d-b5a0-4551-a02d-160d51048489",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2065,
+            "completion_tokens": 361,
+            "total_tokens": 2426,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1425
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“该细则适用于学校本科以及研究生兼职辅导员”，并引用第二条原文，直接满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"该细则适用于学校本科以及研究生兼职辅导员。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D08-C003第二条原文，且该chunk已在actually_read中读取，内容一致。\"\n    },\n    {\n      \"text\": \"学校可以从研究生中选聘兼职辅导员。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D08-C008第七条原文，且该chunk已在actually_read中读取，内容一致。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D08-C015第十四条原文，且该chunk已在actually_read中读取，内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用并读取了第二条，明确说明细则适用于本科及研究生兼职辅导员，满足必需要点；补充的选聘和考核依据均有对应已读证据支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00415536,
+          "seconds": 5.0511
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "80110d4ed385298355cbcdb95af815f40b1c1cf20cc4bcc2f790276522d3f2cd"
+}

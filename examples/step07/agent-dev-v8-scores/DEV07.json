@@ -1,0 +1,182 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月向所在学院提出书面申请",
+            "reason": "实际答案明确写出提前一个月向所在学院提出书面申请，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "实际答案明确写出并做好学生档案资料及相关工作的交接，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "answer_span": "应提前一个月向所在学院提出书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款与已读原文完全一致，支持该事实。"
+          },
+          {
+            "text": "申请不再担任兼职辅导员的，应做好学生档案资料及相关工作的交接",
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款与已读原文完全一致，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条，完整覆盖两个必需要点，引用可靠，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:10:43.794201+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1aa5505004419d724a79bb947f5c407b2743f1bfc800bfa514ccddf364a6c8a9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "89a2c131-97a6-4a4e-b29e-21dad9bd7f70",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1657,
+            "completion_tokens": 808,
+            "total_tokens": 2465,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 446
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 633
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月向所在学院提出书面申请\",\n      \"reason\": \"实际答案明确写出提前一个月向所在学院提出书面申请，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"实际答案明确写出并做好学生档案资料及相关工作的交接，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"answer_span\": \"应提前一个月向所在学院提出书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款与已读原文完全一致，支持该事实。\"\n    },\n    {\n      \"text\": \"申请不再担任兼职辅导员的，应做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款与已读原文完全一致，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条，完整覆盖两个必需要点，引用可靠，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00538692,
+          "seconds": 8.4737
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "提前一个月向所在学院提出书面申请",
+            "reason": "答案明确陈述了“提前一个月向所在学院提出书面申请”，满足要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "做好学生档案资料及相关工作的交接",
+            "reason": "答案明确陈述了“做好学生档案资料及相关工作的交接”，满足要点要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "answer_span": "申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用的quote为该条原文，且已读文档包含该内容，支持该事实。"
+          },
+          {
+            "text": "并做好学生档案资料及相关工作的交接",
+            "answer_span": "并做好学生档案资料及相关工作的交接",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "所引用的quote包含该内容，且已读文档包含该内容，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确依据《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条回答了问题，要点齐全，引用支持，无错误或不当行为。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:10:52.287723+00:00",
+          "attempt": 1,
+          "prompt_sha256": "305fc90a88fd90b2d87548652935cabbe65b9d40cacabde73207afe064ed0328",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "f53f9502-0144-4f50-ae7f-1f770ac94b31",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1713,
+            "completion_tokens": 3788,
+            "total_tokens": 5501,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3411
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 689
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"提前一个月向所在学院提出书面申请\",\n      \"reason\": \"答案明确陈述了“提前一个月向所在学院提出书面申请”，满足要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"做好学生档案资料及相关工作的交接\",\n      \"reason\": \"答案明确陈述了“做好学生档案资料及相关工作的交接”，满足要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"answer_span\": \"申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用的quote为该条原文，且已读文档包含该内容，支持该事实。\"\n    },\n    {\n      \"text\": \"并做好学生档案资料及相关工作的交接\",\n      \"answer_span\": \"并做好学生档案资料及相关工作的交接\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"所引用的quote包含该内容，且已读文档包含该内容，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确依据《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》第十五条回答了问题，要点齐全，引用支持，无错误或不当行为。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.017261639999999998,
+          "seconds": 37.0189
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b90757083d74d0359906840ede4a4b4b5c6967848e504ba7c1bd1873aa5fafef"
+}

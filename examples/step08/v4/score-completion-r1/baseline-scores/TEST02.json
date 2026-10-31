@@ -1,0 +1,103 @@
+{
+  "id": "TEST02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "reason": "实际答案明确表述满10年按80%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "reason": "实际答案明确表述不满10年按70%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效",
+            "reason": "实际答案明确指出比例适用于岗位工资、薪级工资和基础绩效，没有泛化为所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "工作年限满10年的，全年累计病假超过6个月时，发岗位工资、薪级工资和基础绩效的80%。",
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009的quote明确包含该比例和条件，实际已读原文支持。"
+          },
+          {
+            "text": "工作年限不满10年的，全年累计病假超过6个月时，发岗位工资、薪级工资和基础绩效的70%。",
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C009的quote明确包含该比例和条件，实际已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了2023年补充规定第八条，给出了不同工作年限对应的正确比例，并明确针对岗位工资、薪级工资和基础绩效，无泛化或错误引用。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:06:48.035353+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e40b5e143db5eb3d0a5727859fa8610f273250bea68cd7cccc1ba4aa2e59d7ec",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a5dd584b-9b2a-4953-89f1-6073aff1ed88",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3643,
+            "completion_tokens": 1775,
+            "total_tokens": 5418,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1251
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2107
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"reason\": \"实际答案明确表述满10年按80%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"reason\": \"实际答案明确表述不满10年按70%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"岗位工资、薪级工资和基础绩效\",\n      \"reason\": \"实际答案明确指出比例适用于岗位工资、薪级工资和基础绩效，没有泛化为所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"工作年限满10年的，全年累计病假超过6个月时，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009的quote明确包含该比例和条件，实际已读原文支持。\"\n    },\n    {\n      \"text\": \"工作年限不满10年的，全年累计病假超过6个月时，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C009的quote明确包含该比例和条件，实际已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了2023年补充规定第八条，给出了不同工作年限对应的正确比例，并明确针对岗位工资、薪级工资和基础绩效，无泛化或错误引用。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004938912,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 15.1982
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "2cd2b570d1a2930576e2cc6fb870c8571ba85f231e56398615d36a3799fc60db"
+}

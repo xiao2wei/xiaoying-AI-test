@@ -1,0 +1,40 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:16:55.768629+00:00",
+          "attempt": 1,
+          "prompt_sha256": "316d2e6d4bc1520691575a282d80f48a7ceacb2e17a9a449a8abd19bf3a4863c",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1741
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:17:35.943044+00:00",
+          "attempt": 2,
+          "prompt_sha256": "316d2e6d4bc1520691575a282d80f48a7ceacb2e17a9a449a8abd19bf3a4863c",
+          "real_api": true,
+          "error": "ConnectionError",
+          "seconds": 40.1638
+        }
+      ],
+      "judge_error": "ModelError:ConnectionError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "8e82cd0654ed3d7a5eac40d235b7781bb5bb1fc5e088a24eb2c4280a14e35da5"
+}

@@ -1,0 +1,376 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "人才专项经费预算能否直接自行重大调整？",
+      "history": [],
+      "output": {
+        "status": "validation_failed",
+        "claims": [],
+        "gaps": [
+          "引用或格式校验未通过：unread_citation:D03-C016"
+        ],
+        "answer": "引用或格式校验未通过：unread_citation:D03-C016"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "人才专项经费预算原则上不予调整；确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接调整。",
+            "citations": [
+              {
+                "chunk_id": "D03-C016",
+                "quote": "第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行。"
+              }
+            ]
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构须严格按照学校审批同意的预算范围使用、报销科研经费，并对预算调整的真实性负责。",
+            "citations": [
+              {
+                "chunk_id": "D03-C014",
+                "quote": "第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          },
+          {
+            "text": "人才专项经费须专款专用，严格按照预算金额及有关文件规定支出。",
+            "citations": [
+              {
+                "chunk_id": "D03-C027",
+                "quote": "第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。",
+                "doc_id": "D03",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "version_date": "2019-07-15"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "读取第十五条（D03-C016）原文时工具返回TEMPORARY_UNAVAILABLE故障，该条引用取自检索摘要而非本次成功读取的原文，建议重试读取以核验。"
+        ]
+      },
+      "validation_errors": [
+        "unread_citation:D03-C016"
+      ],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人才专项经费预算能否直接自行重大调整？"
+          },
+          "result": {
+            "ok": true,
+            "query": "人才专项经费预算能否直接自行重大调整？",
+            "hits": [
+              {
+                "chunk_id": "D03-C016",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十五条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.754903,
+                "lexical_score": 51.0365,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十五条 第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。\n第四章 人才专项经费考核与验收",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C008",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第七条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  13
+                ],
+                "printed_pages": [
+                  8
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.672211,
+                "lexical_score": 41.2079,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第七条 第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C027",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十六条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.087121,
+                "semantic_score": 0.681102,
+                "lexical_score": 34.2532,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十六条 第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，\n不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，\n不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C022",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十一条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.656255,
+                "lexical_score": 27.6,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十一条 第二十一条 学校拨付的人才专项经费在5万元及以下的，可不按项目立项管\n理，但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6），人才\n专项经费的执行期、使用范围、拨付及使用按本办法要求执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C014",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  16
+                ],
+                "printed_pages": [
+                  11
+                ],
+                "score": 0.072751,
+                "semantic_score": 0.662255,
+                "lexical_score": 26.0438,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十三条 第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\n因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0109,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C016"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C008"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第七条",
+              "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+              "pdf_pages": [
+                13
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C008",
+              "printed_pages": [
+                8
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C007",
+              "next_chunk_id": "D03-C009",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C027"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第二十六条",
+              "text": "第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，\n不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，\n不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。",
+              "pdf_pages": [
+                17
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C027",
+              "printed_pages": [
+                12
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C026",
+              "next_chunk_id": "D03-C028",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C022"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第二十一条",
+              "text": "第二十一条 学校拨付的人才专项经费在5万元及以下的，可不按项目立项管\n理，但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6），人才\n专项经费的执行期、使用范围、拨付及使用按本办法要求执行。",
+              "pdf_pages": [
+                17
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C022",
+              "printed_pages": [
+                12
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C021",
+              "next_chunk_id": "D03-C023",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D03-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D03",
+              "article": "第十三条",
+              "text": "第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行\n进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格\n按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\n因违规使用造成的责任，由项目负责人和所在二级教学（科研）机构共同承担。",
+              "pdf_pages": [
+                16
+              ],
+              "table_ids": [],
+              "chunk_id": "D03-C014",
+              "printed_pages": [
+                11
+              ],
+              "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+              "version_date": "2019-07-15",
+              "previous_chunk_id": "D03-C013",
+              "next_chunk_id": "D03-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:37:44.436929+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ba49c424622166ebe60a6f3a717510a34d741190259e0b573696540f2f1fb5e9",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "4225494b-0e8c-4caa-97b8-ba90e6686d04",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2263,
+            "completion_tokens": 391,
+            "total_tokens": 2654,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            },
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 2135
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"人才专项经费预算原则上不予调整；确因研究内容或研究计划有特殊情况需要重大调整的，项目负责人应及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行，不能自行直接调整。\",\"citations\":[{\"chunk_id\":\"D03-C016\",\"quote\":\"第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过后执行。\"}]},{\"text\":\"项目负责人及所在二级教学（科研）机构须严格按照学校审批同意的预算范围使用、报销科研经费，并对预算调整的真实性负责。\",\"citations\":[{\"chunk_id\":\"D03-C014\",\"quote\":\"第十三条 项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费。\"}]},{\"text\":\"人才专项经费须专款专用，严格按照预算金额及有关文件规定支出。\",\"citations\":[{\"chunk_id\":\"D03-C027\",\"quote\":\"第二十六条 人才专项经费专款专用，严格按照预算金额及有关文件规定支出，不得弄虚作假骗取人才专项经费，不得在人才专项经费中报销应由个人承担的费用，不得将项目经费挪用于非科研用途及与开展项目研究无关的领域。\"}]}],\"gaps\":[\"读取第十五条（D03-C016）原文时工具返回TEMPORARY_UNAVAILABLE故障，该条引用取自检索摘要而非本次成功读取的原文，建议重试读取以核验。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0011481,
+          "seconds": 2.208
+        }
+      ],
+      "read_ids": [
+        "D03-C008",
+        "D03-C027",
+        "D03-C022",
+        "D03-C014"
+      ],
+      "first_hits": [
+        "D03-C016",
+        "D03-C008",
+        "D03-C027",
+        "D03-C022",
+        "D03-C014"
+      ],
+      "seconds": 2.2207,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 2.2207,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-30T14:37:46.646066+00:00"
+}

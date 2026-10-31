@@ -1,0 +1,165 @@
+{
+  "id": "STAB-TEST31-R2",
+  "category": "context",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:42.037087+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4d2ea840e3dda02e5980ccc582cbc7574fc365e2bc2f63c591faa69ff111f78e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c429083c-66ee-4f35-94dc-52a7d66b88a9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2053,
+            "completion_tokens": 5885,
+            "total_tokens": 7938,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5167
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1157
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。\",\n      \"reason\": \"实际答案明确给出否定结论，并引用了《辽宁科技大学临时用工管理办法》第二条的定义，其中包含“事业编制之外”“聘用社会人员”“完成临时性、阶段性、辅助性或特殊性工作任务”“短期合同制”等全部要点要素。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"answer_span\": \"临时用工是学校在事业编制之外聘用社会人员（含已退休人员）的短期合同制用工形式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用的D23-C003第二条原文明确支持这一表述，且实际已读该文档。\"\n    },\n    {\n      \"text\": \"临时用工不属于事业编制内用工\",\n      \"answer_span\": \"不属于事业编制内用工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该否定结论由引用的第二条定义（事业编制之外）支持，实际已读D23-C003。\"\n    },\n    {\n      \"text\": \"临时用工岗位根据直属单位人员编制、工作性质和任务设置\",\n      \"answer_span\": \"临时用工岗位根据直属单位人员编制、工作性质和任务设置\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用的D23-C006第五条原文明确支持该表述，且实际已读该文档。\"\n    },\n    {\n      \"text\": \"缺编单位或承担特定性、临时性、突击性、阶段性、季节性工作任务的单位可申请设置临时用工岗位\",\n      \"answer_span\": \"缺编单位或承担特定性、临时性、突击性、阶段性、季节性工作任务的单位可申请设置\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际引用的D23-C006第五条原文支持该表述，且实际已读该文档。\"\n    },\n    {\n      \"text\": \"临时用工岗位设置不改变其“事业编制之外”的用工性质\",\n      \"answer_span\": \"但这不改变其“事业编制之外”的用工性质\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论以第二条定义中的“事业编制之外”为依据，实际已读D23-C003，引用足以支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确回答了问题，明确否定临时用工属于事业编制内用工，并引用准确的制度定义作为依据；工具检索和阅读过程合理，所引用的文档均已实际读取，无无依据事实或错误引用。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02601456,
+          "seconds": 61.7734
+        }
+      ],
+      "judge_error": "ValueError:通过的要点缺少实际答案定位",
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "不可以",
+            "reason": "实际答案明确表述“不可以”，并进一步说明17岁不能受聘临时用工岗位。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "reason": "实际答案明确引用第八条禁止聘用未满十八周岁未成年人。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "17岁的人不能受聘临时用工岗位",
+            "answer_span": "因此17岁的人不能受聘临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条禁止聘用未满十八周岁未成年人，17岁属于未满十八周岁，可推出不能受聘。"
+          },
+          {
+            "text": "第八条禁止聘用未满十八周岁的未成年人",
+            "answer_span": "禁止聘用未满十八周岁的未成年人",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第八条原文直接支持该事实。"
+          },
+          {
+            "text": "第九条列出的聘用条件包括年龄一般不超过男63周岁、女60周岁",
+            "answer_span": "年龄一般不超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第九条原文包含“年龄一般不得超过男63周岁、女60周岁”，直接支持。"
+          },
+          {
+            "text": "第九条列出的聘用条件包括体检合格",
+            "answer_span": "体检合格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第九条原文包含“需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准”，直接支持。"
+          },
+          {
+            "text": "第九条列出的聘用条件包括具备岗位技能",
+            "answer_span": "具备岗位技能",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第九条原文包含“具备岗位要求的工作技能，并能坚持正常工作”，直接支持。"
+          },
+          {
+            "text": "年龄下限由第八条禁止性规定确定，即须年满18周岁",
+            "answer_span": "年龄下限由第八条的禁止性规定确定，即须年满18周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条禁止聘用未满十八周岁未成年人，可以推断年龄下限为18周岁，引用支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确回答了问题，明确“不可以”并引用第八条禁止聘用未满十八周岁未成年人，补充第九条聘用条件不影响结论。所有制度事实均有已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:43.825168+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a13d6c8a4eac1248000177eef6898f428064396bb60ef7502d4ea8b48195261f",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c9bbfa6b-1306-46f9-a07c-85bb7540ae87",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2562,
+            "completion_tokens": 4747,
+            "total_tokens": 7309,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4026
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1666
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"不可以\",\n      \"reason\": \"实际答案明确表述“不可以”，并进一步说明17岁不能受聘临时用工岗位。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"reason\": \"实际答案明确引用第八条禁止聘用未满十八周岁未成年人。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"17岁的人不能受聘临时用工岗位\",\n      \"answer_span\": \"因此17岁的人不能受聘临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条禁止聘用未满十八周岁未成年人，17岁属于未满十八周岁，可推出不能受聘。\"\n    },\n    {\n      \"text\": \"第八条禁止聘用未满十八周岁的未成年人\",\n      \"answer_span\": \"禁止聘用未满十八周岁的未成年人\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第八条原文直接支持该事实。\"\n    },\n    {\n      \"text\": \"第九条列出的聘用条件包括年龄一般不超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第九条原文包含“年龄一般不得超过男63周岁、女60周岁”，直接支持。\"\n    },\n    {\n      \"text\": \"第九条列出的聘用条件包括体检合格\",\n      \"answer_span\": \"体检合格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第九条原文包含“需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准”，直接支持。\"\n    },\n    {\n      \"text\": \"第九条列出的聘用条件包括具备岗位技能\",\n      \"answer_span\": \"具备岗位技能\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第九条原文包含“具备岗位要求的工作技能，并能坚持正常工作”，直接支持。\"\n    },\n    {\n      \"text\": \"年龄下限由第八条禁止性规定确定，即须年满18周岁\",\n      \"answer_span\": \"年龄下限由第八条的禁止性规定确定，即须年满18周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条禁止聘用未满十八周岁未成年人，可以推断年龄下限为18周岁，引用支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了问题，明确“不可以”并引用第八条禁止聘用未满十八周岁未成年人，补充第九条聘用条件不影响结论。所有制度事实均有已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02217996,
+          "seconds": 39.9142
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "245f2bc68a5a2be9013026cee17415ba9a134589026f93a5f13ec2a1ba87b2a1"
+}

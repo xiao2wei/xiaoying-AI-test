@@ -1,0 +1,168 @@
+{
+  "id": "TEST01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工科学科恰好4年取得学历学位，补贴10万元、科研建设经费5万元",
+            "reason": "实际答案明确给出工科4年补贴10万元和科研经费5万元。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "其他学科恰好5年取得学历学位，补贴9万元、科研建设经费2.7万元",
+            "reason": "实际答案明确给出其他学科5年补贴9万元和科研经费2.7万元。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间≤4年，补贴为10万元",
+            "answer_span": "取得学历学位时间“≤4年”的，补贴为10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第一行，原文支持。"
+          },
+          {
+            "text": "取得学历学位时间≤4年，工科科研建设经费为5万元",
+            "answer_span": "科研建设经费为工科5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第一行，原文支持。"
+          },
+          {
+            "text": "取得学历学位时间≤4年，其他学科科研建设经费为3万元",
+            "answer_span": "其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第一行，原文支持。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年，补贴为9万元",
+            "answer_span": "取得学历学位时间“＞4，≤5年”的，补贴为9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第二行，原文支持。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年，工科科研建设经费为4.5万元",
+            "answer_span": "科研建设经费为工科4.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第二行，原文支持。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年，其他学科科研建设经费为2.7万元",
+            "answer_span": "其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第二行，原文支持。"
+          },
+          {
+            "text": "工科学科恰好4年取得学历学位，补贴为10万元",
+            "answer_span": "工科学科恰好4年取得学历学位，补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "结论基于表格第一行，原文支持。"
+          },
+          {
+            "text": "工科学科恰好4年取得学历学位，科研建设经费为5万元",
+            "answer_span": "科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "结论基于表格第一行，原文支持。"
+          },
+          {
+            "text": "其他学科恰好5年取得学历学位，补贴为9万元",
+            "answer_span": "其他学科恰好5年取得学历学位，补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "结论基于表格第二行，原文支持。"
+          },
+          {
+            "text": "其他学科恰好5年取得学历学位，科研建设经费为2.7万元",
+            "answer_span": "科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "结论基于表格第二行，原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确，基于2023年办法第十条，正确给出工科4年和其他学科5年的补贴和科研经费，引用原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:06:48.787057+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8ecae10e09a904eaaf61d431c51750396c8749b5e2007d36cf1a3e415dec84e8",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "be8ca302-0048-4187-8d2d-5d3410ccb3ba",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4627,
+            "completion_tokens": 6239,
+            "total_tokens": 10866,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5210
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 3091
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工科学科恰好4年取得学历学位，补贴10万元、科研建设经费5万元\",\n      \"reason\": \"实际答案明确给出工科4年补贴10万元和科研经费5万元。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"其他学科恰好5年取得学历学位，补贴9万元、科研建设经费2.7万元\",\n      \"reason\": \"实际答案明确给出其他学科5年补贴9万元和科研经费2.7万元。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间≤4年，补贴为10万元\",\n      \"answer_span\": \"取得学历学位时间“≤4年”的，补贴为10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第一行，原文支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年，工科科研建设经费为5万元\",\n      \"answer_span\": \"科研建设经费为工科5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第一行，原文支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年，其他学科科研建设经费为3万元\",\n      \"answer_span\": \"其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第一行，原文支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年，补贴为9万元\",\n      \"answer_span\": \"取得学历学位时间“＞4，≤5年”的，补贴为9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第二行，原文支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年，工科科研建设经费为4.5万元\",\n      \"answer_span\": \"科研建设经费为工科4.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第二行，原文支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年，其他学科科研建设经费为2.7万元\",\n      \"answer_span\": \"其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第二行，原文支持。\"\n    },\n    {\n      \"text\": \"工科学科恰好4年取得学历学位，补贴为10万元\",\n      \"answer_span\": \"工科学科恰好4年取得学历学位，补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"结论基于表格第一行，原文支持。\"\n    },\n    {\n      \"text\": \"工科学科恰好4年取得学历学位，科研建设经费为5万元\",\n      \"answer_span\": \"科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"结论基于表格第一行，原文支持。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年取得学历学位，补贴为9万元\",\n      \"answer_span\": \"其他学科恰好5年取得学历学位，补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"结论基于表格第二行，原文支持。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年取得学历学位，科研建设经费为2.7万元\",\n      \"answer_span\": \"科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"结论基于表格第二行，原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确，基于2023年办法第十条，正确给出工科4年和其他学科5年的补贴和科研经费，引用原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.014427072,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 51.6333
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：回答准确，基于2023年办法第十条，正确给出工科4年和其他学科5年的补贴和科研经费，引用原文支持，无严重错误。",
+        "source_score_sha256": "d74c74ebee0b5c329a9ed4a42ea892674b04ee6a740bf13d21fcaa5b54959b2f"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "d6b7870f05448e6a7ecb1acb5c9a85e10baeb0e611ee808e3bc43f65e15b1db8"
+}

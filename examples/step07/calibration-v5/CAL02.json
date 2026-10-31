@@ -1,0 +1,76 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "由项目负责人签字后报销",
+        "reason": "实际回答明确说出“由项目负责人签字后报销”，与要点“项目负责人签字”一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "恰好5000元由项目负责人签字后报销。",
+        "answer_span": "恰好5000元由项目负责人签字后报销",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D03-C013中“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”，5000元含在范围内，支持该事实；且该chunk已实际读取，内容一致。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "答案准确回答了单笔恰好5000元由项目负责人签字，引用正确，工具读取和状态正常。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:22.036507+00:00",
+      "attempt": 1,
+      "prompt_sha256": "2f972551545ae8bab6bca6577cb87d3b7f1f0a5ce33509313bcce4fd65fadf09",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "06fc0ecb-6369-4e45-ae3d-edda7545511f",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2396,
+        "completion_tokens": 1470,
+        "total_tokens": 3866,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1214
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1500
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"由项目负责人签字后报销\",\n      \"reason\": \"实际回答明确说出“由项目负责人签字后报销”，与要点“项目负责人签字”一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"恰好5000元由项目负责人签字后报销。\",\n      \"answer_span\": \"恰好5000元由项目负责人签字后报销\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D03-C013中“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”，5000元含在范围内，支持该事实；且该chunk已实际读取，内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了单笔恰好5000元由项目负责人签字，引用正确，工具读取和状态正常。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00898392,
+      "seconds": 14.1275
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL02",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

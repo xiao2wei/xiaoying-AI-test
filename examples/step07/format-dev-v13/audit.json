@@ -1,0 +1,61 @@
+{
+  "dataset_sha256": "f29f8e5682f12928d3c7d0263f35c7fd56c5f3cb16855d28236ddf1c53e55af1",
+  "runs": "examples/step07/agent-dev-v9",
+  "valid_unchanged": 70,
+  "valid_changed": 0,
+  "affected": [
+    "DEV03",
+    "DEV06",
+    "DEV12"
+  ],
+  "recovered": [
+    {
+      "id": "DEV03",
+      "turn": 0,
+      "trace_index": 0,
+      "response_id": "c37b9f98-ae95-49b5-8f0f-2b1a220bec3f",
+      "repairs": [
+        "redundant_closing_braces"
+      ]
+    },
+    {
+      "id": "DEV06",
+      "turn": 0,
+      "trace_index": 0,
+      "response_id": "c1067b3c-9f9e-4197-a494-059c8be89c03",
+      "repairs": [
+        "redundant_closing_braces"
+      ]
+    },
+    {
+      "id": "DEV06",
+      "turn": 0,
+      "trace_index": 4,
+      "response_id": "cdd8e4de-db69-478e-8939-dee295dc421f",
+      "repairs": [
+        "identical_duplicate_object"
+      ]
+    }
+  ],
+  "still_invalid": [
+    {
+      "id": "DEV12",
+      "turn": 0,
+      "trace_index": 3
+    }
+  ],
+  "source_hashes": {
+    "DEV01": "070e40d0e2d7b1544a9126ff3be3164ae5fbdcccdee33a65f5fc0dd7ce9879b3",
+    "DEV02": "f11152f423dc683cbe8f5d9e14ecbbb59f1233723661cf9457fe23cf9f6190c2",
+    "DEV03": "a467377a0efe320bbde7d9feb84a584264b174cf80d9a8eab7b9b5755e54d9a2",
+    "DEV04": "4b5fc20b9ed534949574d59e65fef74f64635117c8b694f539274eec269e4466",
+    "DEV05": "f568b3f8dbb8d5718d078d019ae1481f1aa5f45b1d91e805da4f525b00cf5db0",
+    "DEV06": "13cc25d21454d35e06b8e6399272b1533e2781559315786a832ed87f7711d45e",
+    "DEV07": "f261be0fec6e9e65fb6ec9309eed8d807256f98fb7e5fda716a560d1f9e5d9dd",
+    "DEV08": "9b67da792a921d2f1dede9b18a5d5232be2e08a7ef631af7130a6b709aff1be7",
+    "DEV09": "fdadd259af82b302545774d5a5f0ed37bb32b567c2700903a1cd5618cfa1213b",
+    "DEV10": "639b4421f0b29c4d4112baf589105f6ca17616fb93ff9ed57d33aa88cbf12021",
+    "DEV11": "8175600bc1d5794fd267614b745b9470b50f1386a8785abe1c2a4183e6ca70d7",
+    "DEV12": "44d690e42a3346493c3a12ac1962c021afa31ad0e86ecf92ef0fffb935aaf355"
+  }
+}

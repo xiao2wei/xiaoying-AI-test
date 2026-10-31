@@ -1,0 +1,140 @@
+{
+  "id": "TEST01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师工科学科恰好4年取得学历学位，补贴10万元、科研建设经费5万元",
+            "reason": "实际答案明确给出工科4年的补贴10万元和科研建设经费5万元，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "其他学科恰好5年取得学历学位，补贴9万元、科研建设经费2.7万元",
+            "reason": "实际答案明确给出其他学科5年的补贴9万元和科研建设经费2.7万元，符合要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间≤4年的，补贴10万元",
+            "answer_span": "取得学历学位时间≤4年的，补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C011待遇表第1行明确支持该补贴金额，且实际读取内容包含该信息。"
+          },
+          {
+            "text": "科研建设经费工科5万元、其他学科3万元",
+            "answer_span": "科研建设经费工科5万元、其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的待遇表第1行明确列出工科5万元、其他学科3万元，实际读取内容支持。"
+          },
+          {
+            "text": "取得学历学位时间＞4年且≤5年的，补贴9万元",
+            "answer_span": "取得学历学位时间＞4年且≤5年的，补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C011待遇表第2行明确支持该补贴金额，且实际读取内容包含该信息。"
+          },
+          {
+            "text": "科研建设经费工科4.5万元、其他学科2.7万元",
+            "answer_span": "科研建设经费工科4.5万元、其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的待遇表第2行明确列出工科4.5万元、其他学科2.7万元，实际读取内容支持。"
+          },
+          {
+            "text": "教师工科学科恰好4年取得学历学位，补贴10万元",
+            "answer_span": "教师工科学科恰好4年取得学历学位，补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论基于≤4年条件适用第1行，引用明确支持，实际读取内容包含该信息。"
+          },
+          {
+            "text": "科研建设经费5万元",
+            "answer_span": "科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "工科恰好4年适用第1行，第1行工科科研建设经费为5万元，引用支持该事实。"
+          },
+          {
+            "text": "其他学科恰好5年取得学历学位，补贴9万元",
+            "answer_span": "其他学科恰好5年取得学历学位，补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "恰好5年满足＞4且≤5条件，适用第2行，引用明确支持，实际读取内容包含该信息。"
+          },
+          {
+            "text": "科研建设经费2.7万元",
+            "answer_span": "科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "其他学科恰好5年适用第2行，第2行其他学科科研建设经费为2.7万元，引用支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条待遇表，给出了工科4年与其他学科5年对应的补贴和科研建设经费，证据充分，回答完整，结论正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.152361+00:00",
+          "attempt": 1,
+          "prompt_sha256": "91ed9a5e76d4f4a30bc8c9663cc0de4266671813c5f549bb4f87d400f7be340e",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "b953faae-c66e-418f-8907-768b8ee0fbeb",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4411,
+            "completion_tokens": 6755,
+            "total_tokens": 11166,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5747
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3515
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师工科学科恰好4年取得学历学位，补贴10万元、科研建设经费5万元\",\n      \"reason\": \"实际答案明确给出工科4年的补贴10万元和科研建设经费5万元，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"其他学科恰好5年取得学历学位，补贴9万元、科研建设经费2.7万元\",\n      \"reason\": \"实际答案明确给出其他学科5年的补贴9万元和科研建设经费2.7万元，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间≤4年的，补贴10万元\",\n      \"answer_span\": \"取得学历学位时间≤4年的，补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C011待遇表第1行明确支持该补贴金额，且实际读取内容包含该信息。\"\n    },\n    {\n      \"text\": \"科研建设经费工科5万元、其他学科3万元\",\n      \"answer_span\": \"科研建设经费工科5万元、其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的待遇表第1行明确列出工科5万元、其他学科3万元，实际读取内容支持。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4年且≤5年的，补贴9万元\",\n      \"answer_span\": \"取得学历学位时间＞4年且≤5年的，补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C011待遇表第2行明确支持该补贴金额，且实际读取内容包含该信息。\"\n    },\n    {\n      \"text\": \"科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"answer_span\": \"科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的待遇表第2行明确列出工科4.5万元、其他学科2.7万元，实际读取内容支持。\"\n    },\n    {\n      \"text\": \"教师工科学科恰好4年取得学历学位，补贴10万元\",\n      \"answer_span\": \"教师工科学科恰好4年取得学历学位，补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论基于≤4年条件适用第1行，引用明确支持，实际读取内容包含该信息。\"\n    },\n    {\n      \"text\": \"科研建设经费5万元\",\n      \"answer_span\": \"科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"工科恰好4年适用第1行，第1行工科科研建设经费为5万元，引用支持该事实。\"\n    },\n    {\n      \"text\": \"其他学科恰好5年取得学历学位，补贴9万元\",\n      \"answer_span\": \"其他学科恰好5年取得学历学位，补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"恰好5年满足＞4且≤5条件，适用第2行，引用明确支持，实际读取内容包含该信息。\"\n    },\n    {\n      \"text\": \"科研建设经费2.7万元\",\n      \"answer_span\": \"科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"其他学科恰好5年适用第2行，第2行其他学科科研建设经费为2.7万元，引用支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用2023年《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第十条待遇表，给出了工科4年与其他学科5年对应的补贴和科研建设经费，证据充分，回答完整，结论正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03257232,
+          "seconds": 58.5996
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "22a074aeda7ac912f015e413088d4fc74c38887f97654c70dc28d1670e8317f1"
+}

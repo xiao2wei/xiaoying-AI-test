@@ -1,0 +1,109 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确表述'人才专项经费预算原则上不予调整'，与要求一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确表述'确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定，须由项目负责人提出申请'，与要求一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答明确表述'经所在二级教学（科研）机构签署意见后'，与要求一致。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答明确表述'提交校人才工作领导小组办公室审批通过后执行'，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "人才专项经费预算原则上不予调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D03-C016，引文包含'经费预算原则上不予调整'，且该chunk已实际读取，支持该事实。"
+          },
+          {
+            "text": "确因研究内容或研究计划特殊情况需要重大调整的，须由项目负责人提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D03-C016，引文包含'研究内容或者研究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请'，且该chunk已实际读取，支持该事实。"
+          },
+          {
+            "text": "经所在二级教学（科研）机构签署意见后",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D03-C016，引文包含'经所在二级教学（科研）机构签署意见后'，且该chunk已实际读取，支持该事实。"
+          },
+          {
+            "text": "提交校人才工作领导小组办公室审批通过后执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D03-C016，引文包含'提交校人才工作领导小组办公室审批通过后执行'，且该chunk已实际读取，支持该事实。"
+          },
+          {
+            "text": "项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用D03-C014，引文包含'项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费'，且该chunk已实际读取，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖所有必要要点，引用证据与已读取原文一致，工具操作中一次可恢复故障后成功重试，决策合理。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:53:02.506880+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f4219c2f5b0343e4666b12962f0324a3eebdcc96d8823498902c1103b63b3bf5",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "a2ffa2f7-9b0b-40a5-8fd2-ebf3fb94353b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1799,
+            "completion_tokens": 764,
+            "total_tokens": 2563,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 1287
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'人才专项经费预算原则上不予调整'，与要求一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'确因研究内容或研究计划特殊情况需要重大调整的，不能由项目负责人自行决定，须由项目负责人提出申请'，与要求一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'经所在二级教学（科研）机构签署意见后'，与要求一致。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'提交校人才工作领导小组办公室审批通过后执行'，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"人才专项经费预算原则上不予调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D03-C016，引文包含'经费预算原则上不予调整'，且该chunk已实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"确因研究内容或研究计划特殊情况需要重大调整的，须由项目负责人提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D03-C016，引文包含'研究内容或者研究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请'，且该chunk已实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"经所在二级教学（科研）机构签署意见后\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D03-C016，引文包含'经所在二级教学（科研）机构签署意见后'，且该chunk已实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"提交校人才工作领导小组办公室审批通过后执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D03-C016，引文包含'提交校人才工作领导小组办公室审批通过后执行'，且该chunk已实际读取，支持该事实。\"\n    },\n    {\n      \"text\": \"项目负责人及所在二级教学（科研）机构对预算调整的真实性负责，并须严格按照学校审批同意的预算范围使用、报销科研经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D03-C014，引文包含'项目负责人及所在二级教学（科研）机构应确保项目预算的年度执行进度，并对项目的预算编制、预算调整、经费具体使用及相关票据的真实性负责，严格按照学校审批同意的预算范围及相关经费管理办法文件规定使用、报销科研经费'，且该chunk已实际读取，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖所有必要要点，引用证据与已读取原文一致，工具操作中一次可恢复故障后成功重试，决策合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0054001200000000004,
+          "seconds": 6.9697
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c6414abbcb459405f42cd8b93fceed0dbf51522af80feb2cac0ff9740f418026"
+}

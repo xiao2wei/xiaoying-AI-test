@@ -1,0 +1,175 @@
+{
+  "id": "TEST13",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "实际答案明确陈述了2020规定中的配偶护理假15日，且有引用。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "实际答案明确陈述了2023补充规定中的男教工护理假20日，且有引用。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定，符合法律法规规定生育子女的男教工享有护理假20日。\n《辽宁科技大学教职工考勤与请假管理规定》第九条规定，配偶享有护理假15日。",
+            "reason": "实际答案连续展示了两个不同规定的具体条款，满足展示两份依据。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "不能仅凭日期认定20日优先",
+            "reason": "实际答案在gaps中明确表达当前适用口径需确认，不能仅凭日期断言。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012，quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "配偶享有护理假15日",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D19-C010，quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "护理假需提供医院生育证明等材料",
+            "answer_span": "护理假需提供医院生育证明等材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "自生育之日起按自然日计算",
+            "answer_span": "自生育之日起按自然日计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "由所在单位审批",
+            "answer_span": "由所在单位审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "报人事处备案",
+            "answer_span": "报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "逾期根据实际情况按事（病）假处理",
+            "answer_span": "逾期根据实际情况按事（病）假处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "由人事处负责解释",
+            "answer_span": "由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C019，quote包含该句，且actually_read包含该chunk，支持成立。"
+          },
+          {
+            "text": "自发布之日起执行",
+            "answer_span": "自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D20-C019，quote包含该句，且actually_read包含该chunk，支持成立。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确展示了两份文件中关于男教工护理假的规定，指出差异，并明确表示需确认适用口径，不能仅凭日期判断，符合预期。所有要点均满足，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处就两份规定衔接适用作出的正式解释或执行通知",
+            "适用对象及版本"
+          ],
+          "reason": "答案明确要求提供人事处正式解释或执行通知，并确认适用对象及版本，属于明确说明缺少哪些具体材料并需要用户额外提供。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:09:33.930791+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8fbe2e7af917f43f530d54c3d5a99c1922543651a158514105d80589b109dccb",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a2efa649-15fc-424f-b07e-3e714b0499e7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4648,
+            "completion_tokens": 5337,
+            "total_tokens": 9985,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4099
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2728
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"实际答案明确陈述了2020规定中的配偶护理假15日，且有引用。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"实际答案明确陈述了2023补充规定中的男教工护理假20日，且有引用。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定，符合法律法规规定生育子女的男教工享有护理假20日。\\n《辽宁科技大学教职工考勤与请假管理规定》第九条规定，配偶享有护理假15日。\",\n      \"reason\": \"实际答案连续展示了两个不同规定的具体条款，满足展示两份依据。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"不能仅凭日期认定20日优先\",\n      \"reason\": \"实际答案在gaps中明确表达当前适用口径需确认，不能仅凭日期断言。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012，quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"配偶享有护理假15日\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D19-C010，quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"护理假需提供医院生育证明等材料\",\n      \"answer_span\": \"护理假需提供医院生育证明等材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"自生育之日起按自然日计算\",\n      \"answer_span\": \"自生育之日起按自然日计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"由所在单位审批\",\n      \"answer_span\": \"由所在单位审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"报人事处备案\",\n      \"answer_span\": \"报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"逾期根据实际情况按事（病）假处理\",\n      \"answer_span\": \"逾期根据实际情况按事（病）假处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C012（五），quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"由人事处负责解释\",\n      \"answer_span\": \"由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C019，quote包含该句，且actually_read包含该chunk，支持成立。\"\n    },\n    {\n      \"text\": \"自发布之日起执行\",\n      \"answer_span\": \"自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D20-C019，quote包含该句，且actually_read包含该chunk，支持成立。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确展示了两份文件中关于男教工护理假的规定，指出差异，并明确表示需确认适用口径，不能仅凭日期判断，符合预期。所有要点均满足，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处就两份规定衔接适用作出的正式解释或执行通知\",\n      \"适用对象及版本\"\n    ],\n    \"reason\": \"答案明确要求提供人事处正式解释或执行通知，并确认适用对象及版本，属于明确说明缺少哪些具体材料并需要用户额外提供。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01240998,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 43.6443
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：答案准确展示了两份文件中关于男教工护理假的规定，指出差异，并明确表示需确认适用口径，不能仅凭日期判断，符合预期。所有要点均满足，无严重错误。",
+        "source_score_sha256": "69efb8d58ad7e798be43e1a94b234cf6286ea0ad1d4fd8e96d6ef4c5554188d3"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "ba9e4a34dfb486c739a6d5f11346b64db1fb29677139597e9a14feb2699da834"
+}

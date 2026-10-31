@@ -1,0 +1,84 @@
+{
+  "id": "TEST19",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编材料未包含食堂WiFi密码或校园无线网络接入信息",
+            "reason": "回答明确说明资料未提供食堂WiFi密码，满足了要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供校园无线网络接入说明、食堂现场公示信息，或明确管理单位及认证方式（如网络名称、账号认证要求）",
+            "reason": "回答未编造密码，而是请求用户提供具体资料，符合不编造的行为要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际回答在检索无果后明确说明现有资料未包含WiFi密码，并请求用户提供具体信息，没有编造，与预期状态一致，决策合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园无线网络接入说明",
+            "食堂现场公示信息",
+            "管理单位及认证方式（如网络名称、账号认证要求）"
+          ],
+          "reason": "回答明确要求用户提供具体的资料类型和字段，包括接入说明、现场公示信息和管理单位及认证方式，是可行动的信息补充请求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:13:27.540541+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5e92c01dbb027a29c8b49f80495eaf3f661840567322ccf1aaf7839184304abe",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b104247f-5baa-4b93-bd6e-ccad93610593",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1291,
+            "completion_tokens": 2715,
+            "total_tokens": 4006,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2391
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 267
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编材料未包含食堂WiFi密码或校园无线网络接入信息\",\n      \"reason\": \"回答明确说明资料未提供食堂WiFi密码，满足了要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供校园无线网络接入说明、食堂现场公示信息，或明确管理单位及认证方式（如网络名称、账号认证要求）\",\n      \"reason\": \"回答未编造密码，而是请求用户提供具体资料，符合不编造的行为要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答在检索无果后明确说明现有资料未包含WiFi密码，并请求用户提供具体信息，没有编造，与预期状态一致，决策合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"校园无线网络接入说明\",\n      \"食堂现场公示信息\",\n      \"管理单位及认证方式（如网络名称、账号认证要求）\"\n    ],\n    \"reason\": \"回答明确要求用户提供具体的资料类型和字段，包括接入说明、现场公示信息和管理单位及认证方式，是可行动的信息补充请求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.005574447999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 23.6414
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "1198151a5ef5e0edf62acb0f70f37b84095663024c90d7d4c66b7cda714fd774"
+}

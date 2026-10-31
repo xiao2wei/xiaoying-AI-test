@@ -1,0 +1,224 @@
+{
+  "id": "STAB-TEST13-R3",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "实际回答明确陈述2020年规定配偶护理假15日。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "实际回答明确陈述2023年补充规定男教工护理假20日。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条第（二）项规定：正常生育者产假158日，其中产前可休假15日；难产增加15日；多胞胎每多生育1个婴儿增加15日；配偶享有护理假15日。\n《辽宁科技大学教职工考勤与请假管理补充规定》（2023年12月27日）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日；产假、护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案；产假期内待遇按国家有关规定执行，逾期根据实际情况按事（病）假处理。",
+            "reason": "实际回答同时展示了两份文件及其相关规定。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有原文未明确《辽宁科技大学教职工考勤与请假管理补充规定》与《辽宁科技大学教职工考勤与请假管理规定》之间护理假15日与20日的适用衔接关系，不能仅凭发布日期认定应直接执行20日。",
+            "reason": "实际回答明确指出当前适用口径需确认，且没有仅凭日期断言。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020年规定配偶享有护理假15日",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文明确包含该内容，且已读取。"
+          },
+          {
+            "text": "2023年补充规定符合法律法规规定生育子女的男教工享有护理假20日",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文明确包含该内容，且已读取。"
+          },
+          {
+            "text": "正常生育者产假158日",
+            "answer_span": "正常生育者产假158日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文包含该内容。"
+          },
+          {
+            "text": "产前可休假15日",
+            "answer_span": "产前可休假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文包含该内容。"
+          },
+          {
+            "text": "难产增加产假15日",
+            "answer_span": "难产增加15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文包含该内容。"
+          },
+          {
+            "text": "生育多胞胎每多生育1个婴儿增加产假15日",
+            "answer_span": "多胞胎每多生育1个婴儿增加15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文包含该内容。"
+          },
+          {
+            "text": "产假、护理假需提供医院生育证明等材料",
+            "answer_span": "产假、护理假需提供医院生育证明等材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "自生育之日起按自然日计算",
+            "answer_span": "自生育之日起按自然日计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "由所在单位审批",
+            "answer_span": "由所在单位审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "报人事处备案",
+            "answer_span": "报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "产假期内待遇按国家有关规定执行",
+            "answer_span": "产假期内待遇按国家有关规定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "逾期根据实际情况按事（病）假处理",
+            "answer_span": "逾期根据实际情况按事（病）假处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012原文包含该内容。"
+          },
+          {
+            "text": "补充规定未尽事宜按国家、辽宁省有关规定执行",
+            "answer_span": "本规定未尽事宜，按国家、辽宁省有关规定执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019原文包含该内容。"
+          },
+          {
+            "text": "由人事处负责解释",
+            "answer_span": "由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019原文包含该内容。"
+          },
+          {
+            "text": "自发布之日起执行",
+            "answer_span": "自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019原文包含该内容。"
+          },
+          {
+            "text": "2020年规定第二十四条明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）",
+            "answer_span": "明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C025原文包含该内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "总评：答案准确列出两份文件中的男教工护理假天数（15日和20日），展示了两份依据，并明确指出当前适用口径需要确认，没有仅凭发布日期断言，符合预期状态，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "适用文件名称",
+            "文号",
+            "版本日期",
+            "适用对象"
+          ],
+          "reason": "答案明确要求用户向人事处取得关于男教工护理假适用文件的正式解释或衔接说明，并列出需要明确的字段，属于可操作的需求补充。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:26:54.994929+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3707bf72da0cf388afc9b2f4340599377216eb2bbe6e776fd896e69dd3f7e660",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "96dbbc35-223b-4547-a033-534803e803ad",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4711,
+            "completion_tokens": 7545,
+            "total_tokens": 12256,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5749
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2791
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"实际回答明确陈述2020年规定配偶护理假15日。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"实际回答明确陈述2023年补充规定男教工护理假20日。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条第（二）项规定：正常生育者产假158日，其中产前可休假15日；难产增加15日；多胞胎每多生育1个婴儿增加15日；配偶享有护理假15日。\\n《辽宁科技大学教职工考勤与请假管理补充规定》（2023年12月27日）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日；产假、护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案；产假期内待遇按国家有关规定执行，逾期根据实际情况按事（病）假处理。\",\n      \"reason\": \"实际回答同时展示了两份文件及其相关规定。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有原文未明确《辽宁科技大学教职工考勤与请假管理补充规定》与《辽宁科技大学教职工考勤与请假管理规定》之间护理假15日与20日的适用衔接关系，不能仅凭发布日期认定应直接执行20日。\",\n      \"reason\": \"实际回答明确指出当前适用口径需确认，且没有仅凭日期断言。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年规定配偶享有护理假15日\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文明确包含该内容，且已读取。\"\n    },\n    {\n      \"text\": \"2023年补充规定符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文明确包含该内容，且已读取。\"\n    },\n    {\n      \"text\": \"正常生育者产假158日\",\n      \"answer_span\": \"正常生育者产假158日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文包含该内容。\"\n    },\n    {\n      \"text\": \"产前可休假15日\",\n      \"answer_span\": \"产前可休假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文包含该内容。\"\n    },\n    {\n      \"text\": \"难产增加产假15日\",\n      \"answer_span\": \"难产增加15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文包含该内容。\"\n    },\n    {\n      \"text\": \"生育多胞胎每多生育1个婴儿增加产假15日\",\n      \"answer_span\": \"多胞胎每多生育1个婴儿增加15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文包含该内容。\"\n    },\n    {\n      \"text\": \"产假、护理假需提供医院生育证明等材料\",\n      \"answer_span\": \"产假、护理假需提供医院生育证明等材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"自生育之日起按自然日计算\",\n      \"answer_span\": \"自生育之日起按自然日计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"由所在单位审批\",\n      \"answer_span\": \"由所在单位审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"报人事处备案\",\n      \"answer_span\": \"报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"产假期内待遇按国家有关规定执行\",\n      \"answer_span\": \"产假期内待遇按国家有关规定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"逾期根据实际情况按事（病）假处理\",\n      \"answer_span\": \"逾期根据实际情况按事（病）假处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含该内容。\"\n    },\n    {\n      \"text\": \"补充规定未尽事宜按国家、辽宁省有关规定执行\",\n      \"answer_span\": \"本规定未尽事宜，按国家、辽宁省有关规定执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019原文包含该内容。\"\n    },\n    {\n      \"text\": \"由人事处负责解释\",\n      \"answer_span\": \"由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019原文包含该内容。\"\n    },\n    {\n      \"text\": \"自发布之日起执行\",\n      \"answer_span\": \"自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019原文包含该内容。\"\n    },\n    {\n      \"text\": \"2020年规定第二十四条明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）\",\n      \"answer_span\": \"明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C025原文包含该内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"总评：答案准确列出两份文件中的男教工护理假天数（15日和20日），展示了两份依据，并明确指出当前适用口径需要确认，没有仅凭发布日期断言，符合预期状态，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"适用文件名称\",\n      \"文号\",\n      \"版本日期\",\n      \"适用对象\"\n    ],\n    \"reason\": \"答案明确要求用户向人事处取得关于男教工护理假适用文件的正式解释或衔接说明，并列出需要明确的字段，属于可操作的需求补充。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03609672,
+          "seconds": 65.6874
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "aa803a02862e40bb38e9f435755544da34d7ee0b7196f05dab1e79925de6a925"
+}

@@ -1,0 +1,164 @@
+{
+  "id": "STAB-TEST01-R2",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元",
+            "reason": "明确给出工科4年补贴10万元、科研经费5万元"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元",
+            "reason": "明确给出其他学科5年补贴9万元、科研经费2.7万元"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间≤4年时补贴10万元",
+            "answer_span": "取得学历学位时间≤4年时：补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第1档，原文支持"
+          },
+          {
+            "text": "≤4年档科研建设经费工科5万元",
+            "answer_span": "科研建设经费工科5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第1档，原文支持"
+          },
+          {
+            "text": "≤4年档科研建设经费其他学科3万元",
+            "answer_span": "其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第1档，原文支持"
+          },
+          {
+            "text": "取得学历学位时间＞4年且≤5年时补贴9万元",
+            "answer_span": "取得学历学位时间＞4年且≤5年时：补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第2档，原文支持"
+          },
+          {
+            "text": "＞4年且≤5年档科研建设经费工科4.5万元",
+            "answer_span": "科研建设经费工科4.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第2档，原文支持"
+          },
+          {
+            "text": "＞4年且≤5年档科研建设经费其他学科2.7万元",
+            "answer_span": "其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自第十条待遇表第2档，原文支持"
+          },
+          {
+            "text": "工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元",
+            "answer_span": "工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第1档，结论与原文一致"
+          },
+          {
+            "text": "其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元",
+            "answer_span": "其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第2档，结论与原文一致"
+          },
+          {
+            "text": "上述待遇以学校根据教师在职读博取得学历学位时间情况兑现相关待遇为前提",
+            "answer_span": "上述待遇以“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”为前提",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十条开头，原文支持"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十条，原文支持"
+          },
+          {
+            "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十条，原文支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用2023年办法第十条待遇表，正确给出工科恰好4年补贴10万元、科研经费5万元，其他学科恰好5年补贴9万元、科研经费2.7万元，引用与原文一致，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.248106+00:00",
+          "attempt": 1,
+          "prompt_sha256": "897db4ea6411004ee0c1f888c0d7f5fa1d968c0ae82c282f3e42fecb279186d0",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "fd9c5ba6-cdb3-4af2-9ffc-90bfa9f762f7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3028,
+            "completion_tokens": 4980,
+            "total_tokens": 8008,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3777
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2132
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元\",\n      \"reason\": \"明确给出工科4年补贴10万元、科研经费5万元\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元\",\n      \"reason\": \"明确给出其他学科5年补贴9万元、科研经费2.7万元\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间≤4年时补贴10万元\",\n      \"answer_span\": \"取得学历学位时间≤4年时：补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第1档，原文支持\"\n    },\n    {\n      \"text\": \"≤4年档科研建设经费工科5万元\",\n      \"answer_span\": \"科研建设经费工科5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第1档，原文支持\"\n    },\n    {\n      \"text\": \"≤4年档科研建设经费其他学科3万元\",\n      \"answer_span\": \"其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第1档，原文支持\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4年且≤5年时补贴9万元\",\n      \"answer_span\": \"取得学历学位时间＞4年且≤5年时：补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第2档，原文支持\"\n    },\n    {\n      \"text\": \"＞4年且≤5年档科研建设经费工科4.5万元\",\n      \"answer_span\": \"科研建设经费工科4.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第2档，原文支持\"\n    },\n    {\n      \"text\": \"＞4年且≤5年档科研建设经费其他学科2.7万元\",\n      \"answer_span\": \"其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自第十条待遇表第2档，原文支持\"\n    },\n    {\n      \"text\": \"工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元\",\n      \"answer_span\": \"工科学科恰好4年取得学历学位对应第1档：补贴10万元、科研建设经费5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第1档，结论与原文一致\"\n    },\n    {\n      \"text\": \"其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元\",\n      \"answer_span\": \"其他学科恰好5年取得学历学位对应第2档：补贴9万元、科研建设经费2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第2档，结论与原文一致\"\n    },\n    {\n      \"text\": \"上述待遇以学校根据教师在职读博取得学历学位时间情况兑现相关待遇为前提\",\n      \"answer_span\": \"上述待遇以“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”为前提\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十条开头，原文支持\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十条，原文支持\"\n    },\n    {\n      \"text\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十条，原文支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用2023年办法第十条待遇表，正确给出工科恰好4年补贴10万元、科研经费5万元，其他学科恰好5年补贴9万元、科研经费2.7万元，引用与原文一致，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.023717759999999997,
+          "seconds": 41.0895
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "daa8caf10331f48445d14a93bdd3b7ed089c0b7d596b188a0a17618a5d35bfd1"
+}

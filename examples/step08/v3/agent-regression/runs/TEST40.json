@@ -1,0 +1,152 @@
+{
+  "id": "TEST40",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "作风问题处理决定形成后多久告知当事人？",
+      "history": [],
+      "output": {
+        "status": "limit_reached",
+        "claims": [],
+        "gaps": [
+          "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+        ],
+        "answer": "达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:17.857891+00:00",
+          "attempt": 1,
+          "prompt_sha256": "713540aee05bbd7e49c05aba4d91bd54207f6a21b4a2688034a6a9eda13885ad",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "cd9486c9-4352-4671-97ed-a7f72e975a81",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1723,
+            "completion_tokens": 32,
+            "total_tokens": 1755,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 187
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"作风问题处理决定 告知当事人 期限\"},\"reason\":\"检索作风问题处理决定告知当事人的时限规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005553,
+          "seconds": 0.6852
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "reason": "检索作风问题处理决定告知当事人的时限规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "作风问题处理决定 告知当事人 期限"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:18.566755+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5511731b2f60fb2fe130afa32b755b82025bf1e9a2b0b5b5196ffde0db7f3141",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "155741a3-b959-48b1-8e58-5d0a2c5801b9",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1862,
+            "completion_tokens": 43,
+            "total_tokens": 1905,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 198
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"作风问题 处理决定 告知 当事人 时限\"}, \"reason\": \"上次检索临时故障，重试同一检索以获取相关条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006102000000000001,
+          "seconds": 1.195
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "作风问题 处理决定 告知 当事人 时限"
+          },
+          "reason": "上次检索临时故障，重试同一检索以获取相关条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "作风问题 处理决定 告知 当事人 时限"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.9285,
+      "model_calls": 2,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "TEMPORARY_UNAVAILABLE",
+        "max_tools": 2
+      }
+    }
+  ],
+  "seconds": 1.9288,
+  "model_calls": 2,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T03:22:19.762758+00:00"
+}

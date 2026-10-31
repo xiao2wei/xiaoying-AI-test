@@ -1,0 +1,137 @@
+{
+  "id": "STAB-TEST13-R1",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "答案明确引用了2020年管理规定并给出了配偶护理假15日。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "答案明确引用了2023年补充规定并给出了男教工护理假20日。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》第九条第二项规定：正常生育者给予产假158日，配偶享有护理假15日。\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第十一条第四项规定：符合法律法规规定生育子女的男教工享有护理假20日。",
+            "reason": "答案同时展示了2020和2023两份文件的具体条款内容。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有材料未提供两份文件护理假条款的明确废止、优先适用或衔接依据，无法唯一确定应执行的标准。请提供人事处针对两份文件护理假条款适用关系的正式解释或衔接说明，明确应执行的文件、适用对象及生效时间。",
+            "reason": "答案明确指出适用关系需确认，未仅凭日期断言。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "正常生育者给予产假158日",
+            "answer_span": "正常生育者给予产假158日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010的原文包含该内容，且已读取该文档。"
+          },
+          {
+            "text": "配偶享有护理假15日",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010的原文包含该内容，且已读取该文档。"
+          },
+          {
+            "text": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012的原文包含该内容，且已读取该文档。"
+          },
+          {
+            "text": "本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释",
+            "answer_span": "本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C019的原文包含该内容，且已读取该文档。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确展示了2020和2023两份文件中男教工护理假的不同天数，并明确指出缺乏适用关系依据，请求用户提供衔接说明，符合needs_confirmation状态。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处针对两份文件护理假条款适用关系的正式解释或衔接说明",
+            "应执行的文件",
+            "适用对象",
+            "生效时间"
+          ],
+          "reason": "答案明确指出了缺失的废止、优先适用或衔接依据，并具体列出了需要用户提供的解释内容和关键字段。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:08:53.003014+00:00",
+          "attempt": 1,
+          "prompt_sha256": "028912132d01ddb2bc509772265f62083203810310566a3a1067d31397c851c5",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "5212231f-d8ce-43d8-ad3e-92bda2624455",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4205,
+            "completion_tokens": 4888,
+            "total_tokens": 9093,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4021
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2285
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"答案明确引用了2020年管理规定并给出了配偶护理假15日。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"答案明确引用了2023年补充规定并给出了男教工护理假20日。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》第九条第二项规定：正常生育者给予产假158日，配偶享有护理假15日。\\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第十一条第四项规定：符合法律法规规定生育子女的男教工享有护理假20日。\",\n      \"reason\": \"答案同时展示了2020和2023两份文件的具体条款内容。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有材料未提供两份文件护理假条款的明确废止、优先适用或衔接依据，无法唯一确定应执行的标准。请提供人事处针对两份文件护理假条款适用关系的正式解释或衔接说明，明确应执行的文件、适用对象及生效时间。\",\n      \"reason\": \"答案明确指出适用关系需确认，未仅凭日期断言。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"正常生育者给予产假158日\",\n      \"answer_span\": \"正常生育者给予产假158日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010的原文包含该内容，且已读取该文档。\"\n    },\n    {\n      \"text\": \"配偶享有护理假15日\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010的原文包含该内容，且已读取该文档。\"\n    },\n    {\n      \"text\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012的原文包含该内容，且已读取该文档。\"\n    },\n    {\n      \"text\": \"本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释\",\n      \"answer_span\": \"本规定未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C019的原文包含该内容，且已读取该文档。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确展示了2020和2023两份文件中男教工护理假的不同天数，并明确指出缺乏适用关系依据，请求用户提供衔接说明，符合needs_confirmation状态。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处针对两份文件护理假条款适用关系的正式解释或衔接说明\",\n      \"应执行的文件\",\n      \"适用对象\",\n      \"生效时间\"\n    ],\n    \"reason\": \"答案明确指出了缺失的废止、优先适用或衔接依据，并具体列出了需要用户提供的解释内容和关键字段。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01122858,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 40.874
+        }
+      ],
+      "judge_error": null,
+      "human_review": {
+        "reviewer": "项目负责人（当前对话用户）",
+        "confirmed_at": "2026-10-31T05:37:34.103Z",
+        "confirmation_source": "当前对话：助手展示完整51组56轮复核清单及填写方式后，用户回复“通过”，并授权检查后提交GitHub。",
+        "decision": "agree",
+        "reason": "用户对完整复核清单回复“通过”；按同意现有AI判定记录，不改分。原判分依据：回答准确展示了2020和2023两份文件中男教工护理假的不同天数，并明确指出缺乏适用关系依据，请求用户提供衔接说明，符合needs_confirmation状态。",
+        "source_score_sha256": "bac6a454df4d8ac9d476d1ba25cb8352eb17f24971ab0dc41448f203fcf1b50e"
+      },
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e7ac85d2023bcb76f3c3f3533262c3c36c796d314f908704826a3c2d20666194"
+}

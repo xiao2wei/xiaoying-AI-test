@@ -1,0 +1,148 @@
+{
+  "id": "STAB-TEST01-R1",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "取得学历学位时间≤4年的：补贴10万元；科研建设经费工科5万元、其他学科3万元",
+            "reason": "“≤4年”覆盖恰好4年，且明确给出补贴10万元、工科科研建设经费5万元，满足要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "取得学历学位时间＞4年且≤5年的：补贴9万元；科研建设经费工科4.5万元、其他学科2.7万元",
+            "reason": "“＞4年且≤5年”覆盖恰好5年，且明确给出补贴9万元、其他学科科研建设经费2.7万元，满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "取得学历学位时间≤4年的补贴10万元",
+            "answer_span": "取得学历学位时间≤4年的：补贴10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第1行“≤4 | 10”支持补贴10万元，已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间≤4年工科科研建设经费5万元",
+            "answer_span": "科研建设经费工科5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第1行“工科5”支持工科科研建设经费5万元，已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间≤4年其他学科科研建设经费3万元",
+            "answer_span": "其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第1行“其他学科3”支持其他学科科研建设经费3万元，已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年的补贴9万元",
+            "answer_span": "取得学历学位时间＞4年且≤5年的：补贴9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第2行“＞4，≤5 | 9”支持补贴9万元，已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年工科科研建设经费4.5万元",
+            "answer_span": "科研建设经费工科4.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第2行“工科4.5”支持工科科研建设经费4.5万元，已读原文一致。"
+          },
+          {
+            "text": "取得学历学位时间＞4且≤5年其他学科科研建设经费2.7万元",
+            "answer_span": "其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格第2行“其他学科2.7”支持其他学科科研建设经费2.7万元，已读原文一致。"
+          },
+          {
+            "text": "教师在职读博取得学历学位后按时间情况兑现待遇",
+            "answer_span": "教师在职读博取得学历学位后按时间情况兑现待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十条“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”支持该表述，已读原文一致。"
+          },
+          {
+            "text": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "answer_span": "因个人原因中途退学或终止学习任务的不享受任何待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确载明此规定，已读原文一致。"
+          },
+          {
+            "text": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "answer_span": "脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确载明此返还规定，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确覆盖两个必需要点，引用与已读原文一致，行动合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.235900+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6489c2669431aa8beaa535a28c34485612ba24de6e157a6a153b9e50f2bd4846",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1c25831e-664b-4a3a-a836-9534951e74f6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2554,
+            "completion_tokens": 6454,
+            "total_tokens": 9008,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5335
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1658
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"取得学历学位时间≤4年的：补贴10万元；科研建设经费工科5万元、其他学科3万元\",\n      \"reason\": \"“≤4年”覆盖恰好4年，且明确给出补贴10万元、工科科研建设经费5万元，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"取得学历学位时间＞4年且≤5年的：补贴9万元；科研建设经费工科4.5万元、其他学科2.7万元\",\n      \"reason\": \"“＞4年且≤5年”覆盖恰好5年，且明确给出补贴9万元、其他学科科研建设经费2.7万元，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"取得学历学位时间≤4年的补贴10万元\",\n      \"answer_span\": \"取得学历学位时间≤4年的：补贴10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行“≤4 | 10”支持补贴10万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年工科科研建设经费5万元\",\n      \"answer_span\": \"科研建设经费工科5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行“工科5”支持工科科研建设经费5万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年其他学科科研建设经费3万元\",\n      \"answer_span\": \"其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行“其他学科3”支持其他学科科研建设经费3万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年的补贴9万元\",\n      \"answer_span\": \"取得学历学位时间＞4年且≤5年的：补贴9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行“＞4，≤5 | 9”支持补贴9万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年工科科研建设经费4.5万元\",\n      \"answer_span\": \"科研建设经费工科4.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行“工科4.5”支持工科科研建设经费4.5万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4且≤5年其他学科科研建设经费2.7万元\",\n      \"answer_span\": \"其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行“其他学科2.7”支持其他学科科研建设经费2.7万元，已读原文一致。\"\n    },\n    {\n      \"text\": \"教师在职读博取得学历学位后按时间情况兑现待遇\",\n      \"answer_span\": \"教师在职读博取得学历学位后按时间情况兑现待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十条“学校根据教师在职读博取得学历学位时间情况兑现相关待遇”支持该表述，已读原文一致。\"\n    },\n    {\n      \"text\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"answer_span\": \"因个人原因中途退学或终止学习任务的不享受任何待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确载明此规定，已读原文一致。\"\n    },\n    {\n      \"text\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"answer_span\": \"脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确载明此返还规定，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确覆盖两个必需要点，引用与已读原文一致，行动合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02892912,
+          "seconds": 50.1428
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "07ef45c2e398de78024a8d73e8bda25a438c3e7a74752bc64be0051feaeaf3b7"
+}

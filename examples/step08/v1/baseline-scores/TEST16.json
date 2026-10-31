@@ -1,0 +1,92 @@
+{
+  "id": "TEST16",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。",
+            "reason": "实际回答明确表述2020年19号办法已被2023年修订办法废止，并引用第十八条“同时废止”原文，符合要点要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。",
+            "reason": "该回答以废止条款为依据直接得出2020年办法不再生效的结论，解决了新旧办法版本关系。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）自发布之日起施行。",
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）自发布之日起施行。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C001确认标题和日期，D01-C019确认“自发布之日起施行”，且已读取该条。"
+          },
+          {
+            "text": "《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。",
+            "answer_span": "《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D01-C019“同时废止”原文，已读取该条，足以支持废止及不再生效结论。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确指出2020年办法被2023年修订办法废止、不再生效，并引用第十八条废止原文，证据充分，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:31.755375+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b855fd3b5a0b470ce2e1251136444007f7f72f6af8c5db60733cebf77d9678e7",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ef730fe7-1dcb-404b-9476-2afb99d6169b",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2668,
+            "completion_tokens": 5660,
+            "total_tokens": 8328,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5115
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1516
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。\",\n      \"reason\": \"实际回答明确表述2020年19号办法已被2023年修订办法废止，并引用第十八条“同时废止”原文，符合要点要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。\",\n      \"reason\": \"该回答以废止条款为依据直接得出2020年办法不再生效的结论，解决了新旧办法版本关系。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）自发布之日起施行。\",\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）自发布之日起施行。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C001确认标题和日期，D01-C019确认“自发布之日起施行”，且已读取该条。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。\",\n      \"answer_span\": \"《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D01-C019“同时废止”原文，已读取该条，足以支持废止及不再生效结论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确指出2020年办法被2023年修订办法废止、不再生效，并引用第十八条废止原文，证据充分，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02593536,
+          "seconds": 59.5577
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "ac92445e9b3384dd5bffbc975413cdf294c137f4b418783710041c7b1fd1b560"
+}

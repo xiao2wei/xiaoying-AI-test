@@ -1,0 +1,100 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "2020规定每月26日上报。",
+        "reason": "实际答案明确表述了2020规定为26日。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "2023补充规定每月25日上报。",
+        "reason": "实际答案明确表述了2023补充规定为25日。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "两份规定存在差异，请向人事处确认本次适用口径。",
+        "reason": "实际答案明确指出了差异并请求确认适用口径。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报。",
+        "answer_span": "2020规定每月26日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用原文明确写明每月26日报送，实际已读取该条款。"
+      },
+      {
+        "text": "2023补充规定每月25日上报。",
+        "answer_span": "2023补充规定每月25日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用原文明确写明每月25日报送，实际已读取该条款。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "答案准确列出了两份规定的不同报送日期，明确指出差异并请求确认适用口径，状态与要求一致，工具读取了相关条款，无严重错误。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:07.492326+00:00",
+      "attempt": 1,
+      "prompt_sha256": "624f0318ff880286bb09bb835e8688d347e0fb2e3a35d532db92003ab41dc061",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "bbacf0bf-bfa8-4b1c-bcbe-0d799f107a06",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 1251,
+        "total_tokens": 3524,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 848
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 2273
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"2020规定每月26日上报。\",\n      \"reason\": \"实际答案明确表述了2020规定为26日。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"2023补充规定每月25日上报。\",\n      \"reason\": \"实际答案明确表述了2023补充规定为25日。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份规定存在差异，请向人事处确认本次适用口径。\",\n      \"reason\": \"实际答案明确指出了差异并请求确认适用口径。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定每月26日上报。\",\n      \"answer_span\": \"2020规定每月26日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确写明每月26日报送，实际已读取该条款。\"\n    },\n    {\n      \"text\": \"2023补充规定每月25日上报。\",\n      \"answer_span\": \"2023补充规定每月25日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确写明每月25日报送，实际已读取该条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确列出了两份规定的不同报送日期，明确指出差异并请求确认适用口径，状态与要求一致，工具读取了相关条款，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.007954319999999999,
+      "seconds": 11.6936
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": true,
+  "cache_source": null,
+  "new_judge_requests": 0,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

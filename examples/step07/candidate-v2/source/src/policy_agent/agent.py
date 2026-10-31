@@ -1,0 +1,55 @@
+import json,time
+from .common import ROOT
+from .model import DeepSeek,ModelError
+from .tools import ToolSession
+from .validation import validate,failure,finish
+from .runtime import package,PROMPT
+AGENT_PROMPT=(ROOT/'src/policy_agent/prompts/agent.txt').read_text(encoding='utf-8')
+def view(result):
+ if not result.get('ok') or 'chunk' not in result:return result
+ return {'ok':True,'chunk':result['chunk'],'tables':[{'table_id':t['table_id'],'rows':t['rows']} for t in result.get('tables',[])]}
+def agent(question,retriever,history=None,fault=None,max_tools=10,max_rounds=12,model=None,review_model=None):
+ review_model=review_model or model or DeepSeek(thinking='enabled')
+ start=time.perf_counter();trace=[];session=ToolSession(retriever,trace,fault,max_tools);model=model or DeepSeek();history=history or []
+ messages=[{'role':'system','content':PROMPT.replace('输出JSON对象：','finish.result的对象规范：').replace('不要输出其他字段。','result内不要输出其他字段。')+'\n'+AGENT_PROMPT}]+history+[{'role':'user','content':question}]
+ raw=None;errors=[];out=None;reviewed=False;review_next=False
+ for step in range(max_rounds):
+  messages.append({'role':'user','content':json.dumps({'runtime':{'round':step+1,'remaining_decision_rounds':max_rounds-step,'remaining_tool_attempts':max_tools-session.count,'read_ids':list(session.read)}},ensure_ascii=False)})
+  try:
+   active_model=review_model if review_next else model
+   decision=active_model.call(messages,trace,'agent_review' if review_next else 'agent',max_tokens=6000 if review_next else 2600)
+   review_next=False
+  except ModelError as e:out=failure('model_error',str(e));break
+  trace.append({'kind':'decision','step':step+1,'action':decision.get('action'),'arguments':decision.get('arguments',{}),'reason':str(decision.get('reason',''))[:200]})
+  messages.append({'role':'assistant','content':json.dumps(decision,ensure_ascii=False)})
+  action=decision.get('action');args=decision.get('arguments',{})
+  if action=='finish':
+   raw=decision.get('result',{});errors=validate(raw,session.read) if isinstance(raw,dict) else ['invalid_result']
+   if not errors:
+    if not reviewed and raw.get('status') in ['answered','needs_confirmation','insufficient_evidence']:
+     reviewed=True;review_next=True
+     messages.append({'role':'user','content':'最终核对：对照已经读取的原文及用户的全部子问，检查期限、金额、条件、并列要求、例外、条款编号是否完整；每条引用须支持该结论全部事实，gaps不要混入未引用的制度事实。冲突必须有明确衔接/废止依据才能裁决，否则具体说明需要用户提供的依据。若存在缺漏，修改或继续工具查证；若无问题，重新给出同一完整finish。仍只能选择一个当前动作。'})
+     continue
+    out=finish(raw);break
+   messages.append({'role':'user','content':json.dumps({'validation_error':errors,'instruction':'必须输出完整finish动作，包括result对象，其内必须有status、claims数组、gaps数组。修正引用或明确无法完成。','example':{'action':'finish','result':{'status':'insufficient_evidence','claims':[],'gaps':['说明实际缺口']},'reason':'简要终止原因'}},ensure_ascii=False)});continue
+  if action not in ['search','read'] or not isinstance(args,dict):
+   messages.append({'role':'user','content':'INVALID_ACTION：动作必须是search/read/finish。最终回答必须放在 {action:finish,result:{status:...,claims:[],gaps:[]},reason:...} 中，不能只给status。'});continue
+  if action=='read':
+   ids=args.get('chunk_ids')
+   if not isinstance(ids,list) or not 1<=len(ids)<=5 or any(not isinstance(cid,str) for cid in ids):
+    # A malformed invocation is still one counted business-tool attempt.
+    obs=[session.execute('read',{'chunk_id':None})]
+   else:
+    obs=[]
+    for cid in ids:
+     if session.count>=max_tools:out=failure('limit_reached','达到工具调用上限，任务未完成');break
+     obs.append(session.execute('read',{'chunk_id':cid}))
+  else:
+   if session.count>=max_tools:out=failure('limit_reached','达到工具调用上限，任务未完成');break
+   obs=[session.execute('search',args)]
+  if out:break
+  if session.count>=max_tools and not any(x.get('ok') for x in obs):
+   out=failure('limit_reached','达到工具调用上限，最后一次工具尝试失败，任务未完成；已成功读取的资料已保留。');break
+  messages.append({'role':'user','content':json.dumps({'tool_observations':[view(x) for x in obs]},ensure_ascii=False)})
+ if out is None:out=failure('limit_reached','达到模型决策轮数上限，任务未完成')
+ return package(out,raw,errors,trace,session,start,question,history,'agent')

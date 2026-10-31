@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "clean_virtual_environment": true,
+  "isolated_source_copy": true,
+  "source_env_copied": false,
+  "deepseek_requests": 0,
+  "downloaded_embedding_cache_reused": true,
+  "vector_index_rebuilt": true,
+  "embedding_file_sha256": {
+    "CACHEDIR.TAG": "e8893e2dcb3f4545ef67a0a5b7b769113d38eef1aa61c7c7ba14659b02af955f",
+    "models--Qdrant--bge-small-zh-v1.5\\files_metadata.json": "8d9d1c049a8899162adb49565505f6723c51039a3fa9f77de082e550ec743782",
+    "models--Qdrant--bge-small-zh-v1.5\\blobs\\1294ea4b6331115a353d81f96b85e8c8d7fdcc284453d5b2fab5b016230aad38": "1294ea4b6331115a353d81f96b85e8c8d7fdcc284453d5b2fab5b016230aad38",
+    "models--Qdrant--bge-small-zh-v1.5\\blobs\\3a59388f0fd1bd22dec2ce7902c1be8e1fb84107": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+    "models--Qdrant--bge-small-zh-v1.5\\blobs\\60938626ad1097a0c1a14be4f8340e32c714a056": "9088751d39abbf86ec3d19ffca92ad62ad19075f7e59712e6c71217fa125d1d3",
+    "models--Qdrant--bge-small-zh-v1.5\\blobs\\a8b3208c2884c4efb86e49300fdd3dc877220cdf": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "models--Qdrant--bge-small-zh-v1.5\\blobs\\cdb3043fc938fc918c06e66cf704c2ba58f88747": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "models--Qdrant--bge-small-zh-v1.5\\refs\\main": "d96bbba2e83389b41a9df058631daa5a8b6f3fcb4444a1a8a4acfd063636f3db",
+    "models--Qdrant--bge-small-zh-v1.5\\snapshots\\46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59\\config.json": "9088751d39abbf86ec3d19ffca92ad62ad19075f7e59712e6c71217fa125d1d3",
+    "models--Qdrant--bge-small-zh-v1.5\\snapshots\\46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59\\model_optimized.onnx": "1294ea4b6331115a353d81f96b85e8c8d7fdcc284453d5b2fab5b016230aad38",
+    "models--Qdrant--bge-small-zh-v1.5\\snapshots\\46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59\\special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "models--Qdrant--bge-small-zh-v1.5\\snapshots\\46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59\\tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+    "models--Qdrant--bge-small-zh-v1.5\\snapshots\\46fbe35fd4374a00fee7de77dfddaeb6dd6a2c59\\tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a"
+  },
+  "bootstrap_order_corrected": true,
+  "seconds_of_completed_steps": 256.693,
+  "steps": [
+    {
+      "step": "01-create-venv",
+      "command": [
+        "F:\\Python\\py313\\python.exe",
+        "-m",
+        "venv",
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1"
+      ],
+      "exit_code": 0,
+      "seconds": 2.627
+    },
+    {
+      "step": "02-install",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-c",
+        "constraints-tested.txt",
+        "-r",
+        "requirements.txt"
+      ],
+      "exit_code": 0,
+      "seconds": 217.213
+    },
+    {
+      "step": "03-pip-check",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.349
+    },
+    {
+      "step": "10-rebuild-index",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "-m",
+        "policy_agent.cli",
+        "build-index"
+      ],
+      "exit_code": 0,
+      "seconds": 32.945
+    },
+    {
+      "step": "11-program-tests",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "scripts/run_tests.py",
+        "work/reproduced-tests.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.249
+    },
+    {
+      "step": "12-offline-demo",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "scripts/demo_offline.py",
+        "--out",
+        "work/reproduced-mock"
+      ],
+      "exit_code": 0,
+      "seconds": 0.687
+    },
+    {
+      "step": "13-cli-help",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "-m",
+        "policy_agent.cli",
+        "--help"
+      ],
+      "exit_code": 0,
+      "seconds": 0.612
+    },
+    {
+      "step": "14-retrieval-smoke",
+      "command": [
+        "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+        "-c",
+        "import json; from policy_agent.retrieval import Retriever; r=Retriever(); q=r.search('人才科研建设专项经费项目最长执行多久'); assert q['ok'] and len(q['hits'])==5; ids=[x['chunk_id'] for x in q['hits']]; assert 'D03-C008' in ids; a=r.read('D03-C008'); assert a['ok']; print(json.dumps({'hits':ids,'read':a['chunk']['chunk_id']},ensure_ascii=False))"
+      ],
+      "exit_code": 0,
+      "seconds": 1.011
+    }
+  ]
+}

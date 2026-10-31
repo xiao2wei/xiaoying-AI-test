@@ -1,0 +1,82 @@
+{
+  "id": "TEST23",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:43.240402+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1803f07dbe52f44242d22c49745f6ee1135008fb92170f033c1aa1113959ad39",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1c2f2071-7959-4e5d-a6a9-e97e39f83ff4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5041,
+            "completion_tokens": 10000,
+            "total_tokens": 15041,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9209
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 4145
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"缺少“取得学历学位时间（年）”这一关键条件，无法确定适用哪一档补贴和科研建设经费，请提供从开始在职读博到取得博士学历学位的年数（或起止年月）。\",\n      \"reason\": \"实际回答在gaps中明确提到缺少取得学历学位时间，并在其他gaps中提及缺少学科类别、岗位身份等适用条件，因此指出缺取得学历学位年限和学科等适用条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法确定适用哪一档补贴和科研建设经费\",\n      \"reason\": \"该连续文字表达因缺少条件无法确定具体档次，即不能给出唯一金额，语义等价于不能给唯一金额。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供从开始在职读博到取得博士学历学位的年数（或起止年月）。\",\n      \"reason\": \"该连续文字明确使用“请提供”请求用户补充所缺信息，符合请求补充的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在职攻读博士毕业相关待遇按“取得学历学位时间（年）”分档确定\",\n      \"answer_span\": \"教师在职攻读博士毕业相关待遇按“取得学历学位时间（年）”分档确定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句子明确说明待遇按取得学历学位时间兑现，且实际读取的第十条包含该表述。\"\n    },\n    {\n      \"text\": \"补贴和科研建设经费随年限增加而递减\",\n      \"answer_span\": \"补贴和科研建设经费随年限增加而递减\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本“见下表”指向同一chunk中的表格，表格内容显示随年限增加补贴和经费递减；已读原文支持该事实。\"\n    },\n    {\n      \"text\": \"取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元。\",\n      \"answer_span\": \"取得学历学位时间≤4年的，补贴10万元，科研建设经费工科5万元、其他学科3万元。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第1行完整支持该事实，已读原文包含该行。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元。\",\n      \"answer_span\": \"取得学历学位时间＞4年且≤5年的，补贴9万元，科研建设经费工科4.5万元、其他学科2.7万元。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格第2行完整支持该事实，已读原文包含该行。\"\n    },\n    {\n      \"text\": \"取得学历学位时间＞5年且≤6年的，补贴7万元，科研建设经费工科3.5万元、其他学科2.1万元。\",\n      \"answer_span\":",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04625412,
+          "error": "JSONDecodeError",
+          "seconds": 95.9136
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:19.154269+00:00",
+          "attempt": 2,
+          "prompt_sha256": "1803f07dbe52f44242d22c49745f6ee1135008fb92170f033c1aa1113959ad39",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "0a177127-db66-4820-a4c7-4f60f15e4bab",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5041,
+            "completion_tokens": 10001,
+            "total_tokens": 15042,
+            "prompt_tokens_details": {
+              "cached_tokens": 4992
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 10001
+            },
+            "prompt_cache_hit_tokens": 4992,
+            "prompt_cache_miss_tokens": 49
+          },
+          "content": "",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04625808,
+          "error": "JSONDecodeError",
+          "seconds": 101.8219
+        }
+      ],
+      "judge_error": "ModelError:JSONDecodeError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "13b4c6b303f74321ea12f90c8c638836858cbd43db6a549050dee8e9a440d389"
+}

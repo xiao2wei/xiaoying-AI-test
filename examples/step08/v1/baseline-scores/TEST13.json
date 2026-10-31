@@ -1,0 +1,139 @@
+{
+  "id": "TEST13",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "配偶享有护理假15日",
+            "reason": "明确转述2020年管理规定中配偶护理假15日"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "明确转述2023年补充规定男教工护理假20日"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）规定：符合法律法规规定生育子女的男教工享有护理假20日。\n《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）规定：配偶享有护理假15日。",
+            "reason": "同时展示了两份文件的名称和对应条款"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请补充或确认：本次请假对应的制度适用版本（例如是否按2023年补充规定执行），或提供学校关于两份文件衔接、废止、优先适用的文件号或条款；在未明确前不宜直接按其中一个天数执行。",
+            "reason": "明确指出存在冲突，不能仅凭日期选择，并请求确认适用版本或提供衔接依据"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "answer_span": "符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012中的原句，实际已读该文档包含相同内容"
+          },
+          {
+            "text": "配偶享有护理假15日",
+            "answer_span": "配偶享有护理假15日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010中的原句，实际已读该文档包含相同内容"
+          },
+          {
+            "text": "产假、护理假需提供医院生育证明等材料",
+            "answer_span": "产假、护理假需提供医院生育证明等材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012中的原句，已读文本支持"
+          },
+          {
+            "text": "自生育之日起按自然日计算",
+            "answer_span": "自生育之日起按自然日计算",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012中的原句，已读文本支持"
+          },
+          {
+            "text": "由所在单位审批",
+            "answer_span": "由所在单位审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012中的原句，已读文本支持"
+          },
+          {
+            "text": "报人事处备案",
+            "answer_span": "报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012中的原句，已读文本支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案明确列出两份文件的天数，并展示了依据，同时指出资料差异且未明确衔接关系，要求用户确认适用版本，未擅自断言。所有制度事实均有引用且由已读原文支持，动作合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "本次请假对应的制度适用版本",
+            "学校关于两份文件衔接、废止、优先适用的文件号或条款"
+          ],
+          "reason": "答案明确要求用户确认适用版本或提供衔接文件号/条款，属于明确说明缺少哪些信息，未推诿给用户自行查资料"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:09.346305+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bd9d7b3dbf3a0c94dd0f30cf5a1181b856efc4e2751793304201d7a9b645faed",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "d47db092-cd2b-4141-b136-5779172580be",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4389,
+            "completion_tokens": 8196,
+            "total_tokens": 12585,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7236
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 2597
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"reason\": \"明确转述2020年管理规定中配偶护理假15日\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"明确转述2023年补充规定男教工护理假20日\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）规定：符合法律法规规定生育子女的男教工享有护理假20日。\\n《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）规定：配偶享有护理假15日。\",\n      \"reason\": \"同时展示了两份文件的名称和对应条款\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请补充或确认：本次请假对应的制度适用版本（例如是否按2023年补充规定执行），或提供学校关于两份文件衔接、废止、优先适用的文件号或条款；在未明确前不宜直接按其中一个天数执行。\",\n      \"reason\": \"明确指出存在冲突，不能仅凭日期选择，并请求确认适用版本或提供衔接依据\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012中的原句，实际已读该文档包含相同内容\"\n    },\n    {\n      \"text\": \"配偶享有护理假15日\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010中的原句，实际已读该文档包含相同内容\"\n    },\n    {\n      \"text\": \"产假、护理假需提供医院生育证明等材料\",\n      \"answer_span\": \"产假、护理假需提供医院生育证明等材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012中的原句，已读文本支持\"\n    },\n    {\n      \"text\": \"自生育之日起按自然日计算\",\n      \"answer_span\": \"自生育之日起按自然日计算\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012中的原句，已读文本支持\"\n    },\n    {\n      \"text\": \"由所在单位审批\",\n      \"answer_span\": \"由所在单位审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012中的原句，已读文本支持\"\n    },\n    {\n      \"text\": \"报人事处备案\",\n      \"answer_span\": \"报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012中的原句，已读文本支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案明确列出两份文件的天数，并展示了依据，同时指出资料差异且未明确衔接关系，要求用户确认适用版本，未擅自断言。所有制度事实均有引用且由已读原文支持，动作合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"本次请假对应的制度适用版本\",\n      \"学校关于两份文件衔接、废止、优先适用的文件号或条款\"\n    ],\n    \"reason\": \"答案明确要求用户确认适用版本或提供衔接文件号/条款，属于明确说明缺少哪些信息，未推诿给用户自行查资料\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03824964,
+          "seconds": 73.2122
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c84c087fcb9ead2ef7617c6966cd3b9ef69f3999b45005ab10046d4028a5c2a8"
+}

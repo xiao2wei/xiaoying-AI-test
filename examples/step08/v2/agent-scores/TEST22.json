@@ -1,0 +1,137 @@
+{
+  "id": "TEST22",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "没有给出各工资项目的具体金额或按日扣款的计算公式",
+            "reason": "答案明确表示缺少具体金额和计算公式，并在请求中要求提供全年累计天数和工资构成，表明缺少必要条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法折算成具体扣款元数",
+            "reason": "答案明确说明无法折算成具体扣款元数，即不能算出唯一金额。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供您的全年累计事假天数，以便确定适用2023年补充规定第七条的哪一档（并确认是否属于不超过5日、即该表未列分档的情形）。",
+            "reason": "答案明确请求补充全年累计事假天数，符合请求补充的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "＞5日且≤30日，奖励绩效按请假实际天数扣发",
+            "answer_span": "＞5日且≤30日，奖励绩效按请假实际天数扣发",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格包含该分档，已读原文支持。"
+          },
+          {
+            "text": "＞30日且≤60日，按日扣发基础绩效和奖励绩效，当年年度考核不能评优",
+            "answer_span": "＞30日且≤60日，按日扣发基础绩效和奖励绩效，当年年度考核不能评优",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格包含该分档，已读原文支持。"
+          },
+          {
+            "text": "＞60日，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄",
+            "answer_span": "＞60日，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格包含该分档，已读原文支持。"
+          },
+          {
+            "text": "该表分档从“＞5日”起列明，未列出不超过5日的待遇档",
+            "answer_span": "该表分档从“＞5日”起列明，未列出不超过5日的待遇档",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用表格从“＞5日”开始，未包含不超过5日的行，已读原文支持该推断。"
+          },
+          {
+            "text": "该规定没有给出各工资项目的具体金额或按日扣款的计算公式",
+            "answer_span": "没有给出各工资项目的具体金额或按日扣款的计算公式",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用包含待遇表的chunk，表格中未列出金额或计算公式，已读原文支持。"
+          },
+          {
+            "text": "未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释",
+            "answer_span": "未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十八条原文直接支持，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确识别信息缺失，未编造金额，合理引用规定并请求补充，符合预期状态。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "全年累计事假天数",
+            "岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日标准及计薪天数",
+            "人事处书面解释或计算说明"
+          ],
+          "reason": "答案明确列出需要用户提供的具体信息，包括天数、工资构成和人事处解释，符合可操作缺口的要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:30:26.545495+00:00",
+          "attempt": 1,
+          "prompt_sha256": "39e5edf050b92fd374e215bb961761675906818a86e0c1e753d87877bc8f5fb1",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "176ad2b9-6402-4c0a-9514-01207d612e7d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3370,
+            "completion_tokens": 7755,
+            "total_tokens": 11125,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6756
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2346
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"没有给出各工资项目的具体金额或按日扣款的计算公式\",\n      \"reason\": \"答案明确表示缺少具体金额和计算公式，并在请求中要求提供全年累计天数和工资构成，表明缺少必要条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法折算成具体扣款元数\",\n      \"reason\": \"答案明确说明无法折算成具体扣款元数，即不能算出唯一金额。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供您的全年累计事假天数，以便确定适用2023年补充规定第七条的哪一档（并确认是否属于不超过5日、即该表未列分档的情形）。\",\n      \"reason\": \"答案明确请求补充全年累计事假天数，符合请求补充的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"＞5日且≤30日，奖励绩效按请假实际天数扣发\",\n      \"answer_span\": \"＞5日且≤30日，奖励绩效按请假实际天数扣发\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格包含该分档，已读原文支持。\"\n    },\n    {\n      \"text\": \"＞30日且≤60日，按日扣发基础绩效和奖励绩效，当年年度考核不能评优\",\n      \"answer_span\": \"＞30日且≤60日，按日扣发基础绩效和奖励绩效，当年年度考核不能评优\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格包含该分档，已读原文支持。\"\n    },\n    {\n      \"text\": \"＞60日，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄\",\n      \"answer_span\": \"＞60日，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格包含该分档，已读原文支持。\"\n    },\n    {\n      \"text\": \"该表分档从“＞5日”起列明，未列出不超过5日的待遇档\",\n      \"answer_span\": \"该表分档从“＞5日”起列明，未列出不超过5日的待遇档\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用表格从“＞5日”开始，未包含不超过5日的行，已读原文支持该推断。\"\n    },\n    {\n      \"text\": \"该规定没有给出各工资项目的具体金额或按日扣款的计算公式\",\n      \"answer_span\": \"没有给出各工资项目的具体金额或按日扣款的计算公式\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用包含待遇表的chunk，表格中未列出金额或计算公式，已读原文支持。\"\n    },\n    {\n      \"text\": \"未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释\",\n      \"answer_span\": \"未尽事宜按国家、辽宁省有关规定执行，由人事处负责解释\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十八条原文直接支持，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别信息缺失，未编造金额，合理引用规定并请求补充，符合预期状态。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"全年累计事假天数\",\n      \"岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日标准及计薪天数\",\n      \"人事处书面解释或计算说明\"\n    ],\n    \"reason\": \"答案明确列出需要用户提供的具体信息，包括天数、工资构成和人事处解释，符合可操作缺口的要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.035158199999999994,
+          "seconds": 69.0097
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f73a43d143d38ce7deae059a8129b91c5aa22581cedccf6895df65dbfac85010"
+}

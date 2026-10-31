@@ -1,0 +1,194 @@
+{
+  "id": "TEST25",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师在职读博取得博士学历学位后1个月内，到人事处办理备案",
+            "reason": "实际回答明确表达了取得博士学历学位后1个月内到人事处备案，与要点一致"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师在职读博取得博士学历学位后1个月内到人事处办理备案",
+            "answer_span": "教师在职读博取得博士学历学位后1个月内，到人事处办理备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际答案，引用第九条原文，且已读取该文档，原文支持"
+          },
+          {
+            "text": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件",
+            "answer_span": "办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际答案，引用第九条原文，且已读取该文档，原文支持"
+          },
+          {
+            "text": "国外毕业的还需出具留学回国人员证明、留学生学历认证",
+            "answer_span": "国外毕业的还需出具留学回国人员证明、留学生学历认证",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "事实来自实际答案，引用第九条原文，且已读取该文档，原文支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条，明确给出备案时间和地点，并补充了所需材料，证据充分，动作合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:31:41.061110+00:00",
+          "attempt": 1,
+          "prompt_sha256": "78bc7ee74cd1bb5439514bef012dde362ce0748a2e37706e739baa805ac632dc",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "93012fd7-33a2-4ea3-a8b4-05b68916fb07",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1920,
+            "completion_tokens": 1606,
+            "total_tokens": 3526,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1153
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 768
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师在职读博取得博士学历学位后1个月内，到人事处办理备案\",\n      \"reason\": \"实际回答明确表达了取得博士学历学位后1个月内到人事处备案，与要点一致\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在职读博取得博士学历学位后1个月内到人事处办理备案\",\n      \"answer_span\": \"教师在职读博取得博士学历学位后1个月内，到人事处办理备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际答案，引用第九条原文，且已读取该文档，原文支持\"\n    },\n    {\n      \"text\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件\",\n      \"answer_span\": \"办理备案需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际答案，引用第九条原文，且已读取该文档，原文支持\"\n    },\n    {\n      \"text\": \"国外毕业的还需出具留学回国人员证明、留学生学历认证\",\n      \"answer_span\": \"国外毕业的还需出具留学回国人员证明、留学生学历认证\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"事实来自实际答案，引用第九条原文，且已读取该文档，原文支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了《辽宁科技大学教师在职攻读博士学位管理办法（修订）》第九条，明确给出备案时间和地点，并补充了所需材料，证据充分，动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00889416,
+          "seconds": 12.5707
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）",
+            "reason": "答案明确表述取得博士学历学位后1个月内到人事处备案，符合要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师在职读博取得博士学历学位后1个月内到人事处办理备案。",
+            "answer_span": "教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用第九条原文，已读原文包含相同规定。"
+          },
+          {
+            "text": "办理备案需携带所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的需出具留学回国人员证明、留学生学历认证。",
+            "answer_span": "办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该信息来自第九条引用，已读原文支持材料清单和国外毕业要求。"
+          },
+          {
+            "text": "第十七条规定，教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系。",
+            "answer_span": "该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "回答引用第十七条原文，已读原文包含相同后果。"
+          },
+          {
+            "text": "上述1个月备案期限和人事处受理的规定适用于经学校批准在职攻读博士学位的教师。",
+            "answer_span": "适用于经学校批准在职攻读博士学位的教师",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该范围陈述来自gaps，未附独立引用；但已读第七条明确“经学校批准的教师”，支持适用范围。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了取得博士学历学位后1个月内到人事处备案，并补充了所需材料和制度适用范围，未发现重大错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:32:44.331286+00:00",
+          "attempt": 1,
+          "prompt_sha256": "44fb2d1092ed5b51da153fd5b84a09b37aa1c2995e12c29fffe815bd6a91a1e1",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5302fae0-edd2-41f6-a3aa-2f4ccbb57688",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2941,
+            "completion_tokens": 6262,
+            "total_tokens": 9203,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5595
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1789
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）\",\n      \"reason\": \"答案明确表述取得博士学历学位后1个月内到人事处备案，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在职读博取得博士学历学位后1个月内到人事处办理备案。\",\n      \"answer_span\": \"教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案（返校登记）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用第九条原文，已读原文包含相同规定。\"\n    },\n    {\n      \"text\": \"办理备案需携带所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的需出具留学回国人员证明、留学生学历认证。\",\n      \"answer_span\": \"办理备案需携带的材料：所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该信息来自第九条引用，已读原文支持材料清单和国外毕业要求。\"\n    },\n    {\n      \"text\": \"第十七条规定，教师未经学校批准擅自脱岗攻读博士学历学位、超过脱产学习期限1个月未回校工作以及在职读博期间和毕业后未完成服务期提出调出、辞职、离职等情况，学校将停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇，解除聘用关系。\",\n      \"answer_span\": \"该办法第十七条对“超过脱产学习期限1个月未回校工作”等情形规定了停发岗位工资、薪级工资、基础绩效、奖励绩效及福利待遇并解除聘用关系等后果\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用第十七条原文，已读原文包含相同后果。\"\n    },\n    {\n      \"text\": \"上述1个月备案期限和人事处受理的规定适用于经学校批准在职攻读博士学位的教师。\",\n      \"answer_span\": \"适用于经学校批准在职攻读博士学位的教师\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该范围陈述来自gaps，未附独立引用；但已读第七条明确“经学校批准的教师”，支持适用范围。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了取得博士学历学位后1个月内到人事处备案，并补充了所需材料和制度适用范围，未发现重大错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02867964,
+          "seconds": 56.0557
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "6a158be26436bdeebd546420ea4770c991693e5194979c022d8bdfc0a2bfc609"
+}

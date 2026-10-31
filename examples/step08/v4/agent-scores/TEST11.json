@@ -1,0 +1,156 @@
+{
+  "id": "TEST11",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "入学第五年及之后不得申请脱产学习",
+            "reason": "实际答案明确说明了第五年及之后不得申请脱产学习，满足要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "首次申请脱产学习一般不超过2年",
+            "reason": "实际答案明确表达了首次申请脱产学习一般不超过2年。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "累计脱产时间不能超过4年，限于入学后的第一年至第四年",
+            "reason": "实际答案明确表达了总脱产不超过4年且限于第一至第四年。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教师在入学后的第一年至第四年内可自行选择时间进行脱产学习",
+            "answer_span": "教师在入学后的第一年至第四年内可自行选择时间进行脱产学习",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "入学第五年及之后不得申请脱产学习",
+            "answer_span": "入学第五年及之后不得申请脱产学习",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "首次申请脱产学习一般不超过2年",
+            "answer_span": "首次申请脱产学习一般不超过2年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "再次申请脱产学习须由个人申请、所在单位同意并经学校批准",
+            "answer_span": "再次申请脱产学习须由个人申请、所在单位同意并经学校批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "累计脱产时间不能超过4年",
+            "answer_span": "累计脱产时间不能超过4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "限于入学后的第一年至第四年",
+            "answer_span": "限于入学后的第一年至第四年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文直接支持。"
+          },
+          {
+            "text": "上述脱产年限规定适用于教师岗位人员",
+            "answer_span": "上述脱产年限规定适用于教师岗位人员",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "引用第十一条仅说明非教师岗位不脱产，未直接说明教师岗位适用范围；但已读第八条实际支持该事实。"
+          },
+          {
+            "text": "非教师岗位人员在职攻读博士原则上不脱产",
+            "answer_span": "非教师岗位人员在职攻读博士原则上不脱产",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十一条原文直接支持。"
+          }
+        ],
+        "serious_errors": [
+          "claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。"
+        ],
+        "reason": "答案完整回答了问题，所有必需要点均明确表达，结论正确，动作合理；但存在一处引用支持不足（不影响核心回答）。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:09:27.988971+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f238b6450c3a9b362128ff019bd72a5f8fdc4bab59e16b882e2a858d101e5ffc",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "043e4dbe-f982-4171-9b0a-e3df6805620c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2964,
+            "completion_tokens": 4456,
+            "total_tokens": 7420,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3526
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 1556
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"入学第五年及之后不得申请脱产学习\",\n      \"reason\": \"实际答案明确说明了第五年及之后不得申请脱产学习，满足要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"首次申请脱产学习一般不超过2年\",\n      \"reason\": \"实际答案明确表达了首次申请脱产学习一般不超过2年。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"累计脱产时间不能超过4年，限于入学后的第一年至第四年\",\n      \"reason\": \"实际答案明确表达了总脱产不超过4年且限于第一至第四年。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教师在入学后的第一年至第四年内可自行选择时间进行脱产学习\",\n      \"answer_span\": \"教师在入学后的第一年至第四年内可自行选择时间进行脱产学习\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"入学第五年及之后不得申请脱产学习\",\n      \"answer_span\": \"入学第五年及之后不得申请脱产学习\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"首次申请脱产学习一般不超过2年\",\n      \"answer_span\": \"首次申请脱产学习一般不超过2年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"再次申请脱产学习须由个人申请、所在单位同意并经学校批准\",\n      \"answer_span\": \"再次申请脱产学习须由个人申请、所在单位同意并经学校批准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"累计脱产时间不能超过4年\",\n      \"answer_span\": \"累计脱产时间不能超过4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"限于入学后的第一年至第四年\",\n      \"answer_span\": \"限于入学后的第一年至第四年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文直接支持。\"\n    },\n    {\n      \"text\": \"上述脱产年限规定适用于教师岗位人员\",\n      \"answer_span\": \"上述脱产年限规定适用于教师岗位人员\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十一条仅说明非教师岗位不脱产，未直接说明教师岗位适用范围；但已读第八条实际支持该事实。\"\n    },\n    {\n      \"text\": \"非教师岗位人员在职攻读博士原则上不脱产\",\n      \"answer_span\": \"非教师岗位人员在职攻读博士原则上不脱产\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十一条原文直接支持。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"claims[3]中“上述脱产年限规定适用于教师岗位人员”的引用（D01-C012第十一条）不足以支持该陈述，引用内容仅说明非教师岗位不脱产，未说明教师岗位适用范围。\"\n  ],\n  \"reason\": \"答案完整回答了问题，所有必需要点均明确表达，结论正确，动作合理；但存在一处引用支持不足（不影响核心回答）。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009880815999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 38.1585
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "fc10df5147df1ca65124cc234dddde79728c1d15a14cb86a87463aba346a197b"
+}

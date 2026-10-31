@@ -1,0 +1,130 @@
+{
+  "id": "TEST09",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "依法办理结婚登记的可享受10日婚假",
+            "reason": "实际回答明确给出10日婚假，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）",
+            "reason": "实际回答明确表达登记后1年内凭结婚证申请，语义等价于要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "婚假必须一次性申请使用，不能分次使用",
+            "reason": "实际回答明确表达必须一次性申请使用且不能分次使用，符合要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "依法办理结婚登记的可享受10日婚假",
+            "answer_span": "依法办理结婚登记的可享受10日婚假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C010原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "一方在外地工作需要到配偶所在地结婚的，另加路程假",
+            "answer_span": "一方在外地工作需要到配偶所在地结婚的，另加路程假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C010原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）",
+            "answer_span": "教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C010原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "婚假必须一次性申请使用，不能分次使用",
+            "answer_span": "婚假必须一次性申请使用，不能分次使用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句包含“婚假必须一次性申请使用”，足以支持不能分次使用；已读原文一致。"
+          },
+          {
+            "text": "逾期按事假处理",
+            "answer_span": "逾期按事假处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C010原文直接支持，已读原文一致。"
+          },
+          {
+            "text": "婚假由所在单位审批，报人事处备案",
+            "answer_span": "婚假由所在单位审批，报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C010原文直接支持，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答覆盖全部三个必须要点，引用与已读原文一致，无无依据事实或严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:04.277992+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c5ef05f36da09ee63533d1bfd688600758318f3cb942b2e609ef6252539e4199",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ebcaad61-3642-44b2-8111-892d559d270d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2017,
+            "completion_tokens": 3186,
+            "total_tokens": 5203,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2586
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1121
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"依法办理结婚登记的可享受10日婚假\",\"reason\":\"实际回答明确给出10日婚假，符合要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）\",\"reason\":\"实际回答明确表达登记后1年内凭结婚证申请，语义等价于要点。\"},{\"index\":2,\"met\":true,\"answer_span\":\"婚假必须一次性申请使用，不能分次使用\",\"reason\":\"实际回答明确表达必须一次性申请使用且不能分次使用，符合要点。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"依法办理结婚登记的可享受10日婚假\",\"answer_span\":\"依法办理结婚登记的可享受10日婚假\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D20-C010原文直接支持，已读原文一致。\"},{\"text\":\"一方在外地工作需要到配偶所在地结婚的，另加路程假\",\"answer_span\":\"一方在外地工作需要到配偶所在地结婚的，另加路程假\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D20-C010原文直接支持，已读原文一致。\"},{\"text\":\"教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）\",\"answer_span\":\"教职工在校工作期间登记结婚的，可在1年内凭结婚证申请婚假（含路程假）\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D20-C010原文直接支持，已读原文一致。\"},{\"text\":\"婚假必须一次性申请使用，不能分次使用\",\"answer_span\":\"婚假必须一次性申请使用，不能分次使用\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用句包含“婚假必须一次性申请使用”，足以支持不能分次使用；已读原文一致。\"},{\"text\":\"逾期按事假处理\",\"answer_span\":\"逾期按事假处理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D20-C010原文直接支持，已读原文一致。\"},{\"text\":\"婚假由所在单位审批，报人事处备案\",\"answer_span\":\"婚假由所在单位审批，报人事处备案\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D20-C010原文直接支持，已读原文一致。\"}],\"serious_errors\":[],\"reason\":\"实际回答覆盖全部三个必须要点，引用与已读原文一致，无无依据事实或严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.015279,
+          "seconds": 30.2292
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "ce7cb6a425a955e30f46229cab19e7e1a4a11b8fd9910f660973da7690bf79fc"
+}

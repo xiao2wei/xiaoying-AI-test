@@ -1,0 +1,44 @@
+DEV04 ['answered']
+DEV01 ['answered']
+DEV02 ['answered']
+DEV05 ['insufficient_evidence']
+DEV03 ['needs_confirmation']
+DEV07 ['answered', 'answered']
+DEV08 ['answered', 'answered']
+DEV06 ['needs_confirmation']
+DEV09 ['answered', 'answered']
+DEV12 ['tool_error']
+DEV11 ['answered']
+DEV10 ['answered', 'answered']
+DEV01 True
+DEV04 True
+DEV02 True
+DEV05 True
+DEV03 False
+DEV07 True
+DEV08 True
+DEV09 False
+DEV12 True
+DEV10 True
+DEV11 True
+DEV06 True
+Traceback (most recent call last):
+  File "E:\xiaoying\AItest\work\verify_candidate.py", line 8, in <module>
+    report(ROOT/'evaluation/dev.json',base/'agent-dev-v4',base/'agent-dev-v4-scores',base/'agent-dev-v4-report',base/'program-tests-v3.json')
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\xiaoying\AItest\src\policy_agent\metrics.py", line 77, in report
+    result=aggregate(groups,[load(rd/(g['id']+'.json')) for g in groups if (rd/(g['id']+'.json')).exists()],[load(sd/(g['id']+'.json')) for g in groups if (sd/(g['id']+'.json')).exists()],load(program_path) if program_path else None,load(stability_path) if stability_path else None,all(g['id'].startswith('DEV') for g in groups))
+                                                                                                                                                                                            ~~~~^^^^^^^^^^^^^^
+  File "E:\xiaoying\AItest\src\policy_agent\common.py", line 4, in load
+    def load(path): return json.loads(Path(path).read_text(encoding='utf-8'))
+                                      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "F:\Python\py313\Lib\pathlib\_local.py", line 546, in read_text
+    return PathBase.read_text(self, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python\py313\Lib\pathlib\_abc.py", line 632, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Python\py313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\xiaoying\\AItest\\examples\\step07\\program-tests-v3.json'

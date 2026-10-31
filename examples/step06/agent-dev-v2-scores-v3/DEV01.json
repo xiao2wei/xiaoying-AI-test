@@ -1,0 +1,109 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答中明确表述“项目起始时间从学校审批立项时间算起”，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答中明确表述“项目执行期限最长一般不得超过4年”，与要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答中明确表述“项目执行期满后，结余经费由学校统筹管理”，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需要自行设定。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。",
+            "answer_span": "项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需要自行设定。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。",
+            "answer_span": "项目执行期限最长一般不得超过4年。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理。"
+          },
+          {
+            "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D03-C026，且实际读取的D03-C026原文包含相同表述，支持该事实。",
+            "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批。"
+          },
+          {
+            "text": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施；结余经费交由学校统筹管理，已使用的经费根据具体情况酌情处理。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D03-C024，且实际读取的D03-C024原文包含相同表述，支持该事实。",
+            "answer_span": "项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施；结余经费交由学校统筹管理，已使用的经费根据具体情况酌情处理。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖了所有必需要点，引用的证据与实际读取内容一致，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:07.508184+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c5adc2cb33d121c0d1b48204df013a42dea801b90df699ec3bad1ecbd08d5e2c",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "c716a391-a20e-4b57-9918-1bbca2708ba6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2417,
+            "completion_tokens": 839,
+            "total_tokens": 3256,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1777
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目起始时间从学校审批立项时间算起”，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目执行期限最长一般不得超过4年”，与要点一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答中明确表述“项目执行期满后，结余经费由学校统筹管理”，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需要自行设定。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需要自行设定。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D03-C008，且实际读取的D03-C008原文包含相同表述，支持该事实。\",\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理。\"\n    },\n    {\n      \"text\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D03-C026，且实际读取的D03-C026原文包含相同表述，支持该事实。\",\n      \"answer_span\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批。\"\n    },\n    {\n      \"text\": \"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施；结余经费交由学校统筹管理，已使用的经费根据具体情况酌情处理。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D03-C024，且实际读取的D03-C024原文包含相同表述，支持该事实。\",\n      \"answer_span\": \"项目负责人中止聘用、调离学校或因其他情况不能继续开展研究工作的，学校将先行冻结经费的使用，终止项目实施；结余经费交由学校统筹管理，已使用的经费根据具体情况酌情处理。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖了所有必需要点，引用的证据与实际读取内容一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00651288,
+          "seconds": 6.5626
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "897446bdf26e681c4db1482b84e30884bfc015058eae95208b36f1e3fe59d6f4"
+}

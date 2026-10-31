@@ -1,0 +1,118 @@
+{
+  "key": "baseline--TEST28--1",
+  "mode": "baseline",
+  "id": "TEST28",
+  "turn": 1,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "4c573512aab4bdfe31069412c16768e4a662b7d0b0576e3035c1b1783cac9dd3",
+  "run_sha256": "54812bf3e00cac5651cd18a101e3fe8140cb37030a4d57effe31034b9f33385f",
+  "created_at": "2026-10-31T05:13:58.404029+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "学校按师生比不低于1:200的比例设置专职辅导员岗位",
+          "reason": "明确表达了按师生比不低于1:200设置专职辅导员岗位，符合要求。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [
+        {
+          "text": "学校按师生比不低于1:200的比例设置专职辅导员岗位",
+          "answer_span": "学校按师生比不低于1:200的比例设置专职辅导员岗位",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D07-C010第九条明确说明，且该文档已读取。"
+        },
+        {
+          "text": "辅导员编制按1:200的师生比核定",
+          "answer_span": "辅导员编制按1:200的师生比核定",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D13-C007第六条明确说明，且该文档已读取。"
+        },
+        {
+          "text": "按专业技术岗或管理岗设置编制",
+          "answer_span": "按专业技术岗或管理岗设置编制",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D13-C007第六条明确说明，且该文档已读取。"
+        },
+        {
+          "text": "专职辅导员比例不低于85%",
+          "answer_span": "专职辅导员比例不低于85%",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D13-C007第六条明确说明，且该文档已读取。"
+        },
+        {
+          "text": "专职辅导员的工作量按师生比1:200核定并进行考核",
+          "answer_span": "专职辅导员的工作量按师生比1:200核定并进行考核",
+          "cited": true,
+          "citation_supported": true,
+          "supported_by_read": true,
+          "reason": "引用D07-C021第二十条明确说明，且该文档已读取。"
+        }
+      ],
+      "serious_errors": [],
+      "reason": "答案正确回答了问题，引用了相关制度且引用准确，无错误。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:13:29.925474+00:00",
+        "attempt": 1,
+        "prompt_sha256": "df6e9f790b93723739a1c31c2e8689efe43c78f642d0c0f4ebbccf783f57030e",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "e956f01c-8f70-4fc4-8e05-7381887b06e6",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 4256,
+          "completion_tokens": 3142,
+          "total_tokens": 7398,
+          "prompt_tokens_details": {
+            "cached_tokens": 4224
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2603
+          },
+          "prompt_cache_hit_tokens": 4224,
+          "prompt_cache_miss_tokens": 32
+        },
+        "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"reason\": \"明确表达了按师生比不低于1:200设置专职辅导员岗位，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校按师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按师生比不低于1:200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C010第九条明确说明，且该文档已读取。\"\n    },\n    {\n      \"text\": \"辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007第六条明确说明，且该文档已读取。\"\n    },\n    {\n      \"text\": \"按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007第六条明确说明，且该文档已读取。\"\n    },\n    {\n      \"text\": \"专职辅导员比例不低于85%\",\n      \"answer_span\": \"专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D13-C007第六条明确说明，且该文档已读取。\"\n    },\n    {\n      \"text\": \"专职辅导员的工作量按师生比1:200核定并进行考核\",\n      \"answer_span\": \"专职辅导员的工作量按师生比1:200核定并进行考核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C021第二十条明确说明，且该文档已读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确回答了问题，引用了相关制度且引用准确，无错误。\"\n}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.006335207999999999,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 28.4765
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

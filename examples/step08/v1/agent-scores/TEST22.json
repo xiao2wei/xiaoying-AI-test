@@ -1,0 +1,49 @@
+{
+  "id": "TEST22",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:13.798415+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7a5ba3e75d99a0065fdaf2701d55150fe82b7a6c47bb9100f8a876c2e6a24fe2",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "737b8f3c-1aa1-4156-b46b-1baced86115a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3012,
+            "completion_tokens": 7005,
+            "total_tokens": 10017,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6262
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2116
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"无法计算具体扣款金额：请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算标准。\",\n      \"reason\": \"明确说明缺少全年累计事假天数、工资构成及计算所需条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法计算具体扣款金额\",\n      \"reason\": \"明确表示不能算出唯一金额。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供全年累计事假天数（用于确定适用档位），以及工资构成中岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算标准。\",\n      \"reason\": \"明确请求补充所需信息。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"全年累计事假＞5日且≤30日的，奖励绩效按请假实际天数扣发。\",\n      \"answer_span\": \"＞5日且≤30日的，奖励绩效按请假实际天数扣发\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与原文一致，实际已读D20-C008支持该事实。\"\n    },\n    {\n      \"text\": \"全年累计事假＞30日且≤60日的，按日扣发基础绩效和奖励绩效，且当年年度考核不能评优。\",\n      \"answer_span\": \"全年累计事假＞30日且≤60日的，按日扣发基础绩效和奖励绩效，且当年年度考核不能评优。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与原文一致，实际已读D20-C008支持该事实。\"\n    },\n    {\n      \"text\": \"全年累计事假＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。\",\n      \"answer_span\": \"全年累计事假＞60日的，按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与原文一致，实际已读D20-C008支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确指出缺少全年累计天数、工资构成等信息，无法计算唯一金额，并明确请求补充，符合needs_confirmation；核心制度事实引用与已读原文一致。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"全年累计事假天数\",\n      \"岗位工资、薪级工资、基础绩效、奖励绩效的月标准或日折算标准\"\n    ],\n    \"reason\": \"答案明确要求用户提供具体计算所需字段，而非仅让用户自行查询或联系部门。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.031715639999999996,
+          "seconds": 65.3214
+        }
+      ],
+      "judge_error": "ValueError:评分器漏评一整条实际claim",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "fbe9323efa289f13c2791c224188daa6c5fece0ff9955606728da85d147cc775"
+}

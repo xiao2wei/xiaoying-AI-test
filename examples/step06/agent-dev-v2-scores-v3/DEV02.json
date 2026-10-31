@@ -1,0 +1,85 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确写出“单笔报销经费恰好5000元，属于‘5000元以下（含5000元）’档，由项目负责人签字后报销。”"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确写出“单笔报销经费恰好1万元，属于‘5000元以上1万元以下（含1万元）’档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。”"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "reason": "实际回答未提及报销经费须符合预算及使用范围这一条件。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文“1.单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。”支持该事实，且实际读取内容包含该条款。",
+            "answer_span": "单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。"
+          },
+          {
+            "text": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文“2.单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二\n级教学（科研）机构负责人签字后报销。”支持该事实，且实际读取内容包含该条款。",
+            "answer_span": "单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确给出了5000元和1万元两档的签字要求，但遗漏了“须符合预算及使用范围”这一必要前提，导致必需要点3未满足，因此整体答案不完全正确。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:07.512642+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3f7b9561dbd49630ab4e863f51db633adfe43390947bc90a31c84b9f7a8170d8",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "abfcd917-37a5-453b-ba9a-28f19567aba6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2492,
+            "completion_tokens": 586,
+            "total_tokens": 3078,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 1852
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“单笔报销经费恰好5000元，属于‘5000元以下（含5000元）’档，由项目负责人签字后报销。”\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确写出“单笔报销经费恰好1万元，属于‘5000元以上1万元以下（含1万元）’档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。”\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未提及报销经费须符合预算及使用范围这一条件。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文“1.单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。”支持该事实，且实际读取内容包含该条款。\",\n      \"answer_span\": \"单笔报销经费恰好5000元，属于“5000元以下（含5000元）”档，由项目负责人签字后报销。\"\n    },\n    {\n      \"text\": \"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文“2.单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二\\n级教学（科研）机构负责人签字后报销。”支持该事实，且实际读取内容包含该条款。\",\n      \"answer_span\": \"单笔报销经费恰好1万元，属于“5000元以上1万元以下（含1万元）”档，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确给出了5000元和1万元两档的签字要求，但遗漏了“须符合预算及使用范围”这一必要前提，导致必需要点3未满足，因此整体答案不完全正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00561,
+          "seconds": 4.836
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "8e82cd0654ed3d7a5eac40d235b7781bb5bb1fc5e088a24eb2c4280a14e35da5"
+}

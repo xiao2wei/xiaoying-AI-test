@@ -1,0 +1,77 @@
+{
+  "key": "agent--TEST40--0",
+  "mode": "agent",
+  "id": "TEST40",
+  "turn": 0,
+  "original_error": "ModelError:SSLError",
+  "source_score_sha256": "87927c9fcd8ff6ee95e507cc7c86eea078e4514db621ed61c0510453dfa07fe8",
+  "run_sha256": "e90e5ce449dbdd8359b15f246f1b0930fe40e4239eca297d617c685c7587b70b",
+  "created_at": "2026-10-31T05:13:29.876341+00:00",
+  "attempt": 1,
+  "score": {
+    "pass": true,
+    "judge": {
+      "points": [
+        {
+          "index": 0,
+          "met": true,
+          "answer_span": "达到工具调用上限，最后一次工具尝试失败，任务未完成",
+          "reason": "实际回答明确说明工具预算耗尽、任务未完成，且未假称取得证据，符合要点要求。"
+        }
+      ],
+      "status_ok": true,
+      "decision_ok": true,
+      "answer_correct": true,
+      "facts": [],
+      "serious_errors": [],
+      "reason": "系统因工具故障达到调用上限，如实报告未完成且未编造证据，符合限制状态要求。",
+      "actionable_gap": {
+        "applicable": false,
+        "passed": null,
+        "requested_items": []
+      }
+    },
+    "critical_errors": [],
+    "program_errors": [],
+    "judge_trace": [
+      {
+        "kind": "model",
+        "purpose": "judge",
+        "model": "deepseek-v4-pro",
+        "time": "2026-10-31T05:13:22.076732+00:00",
+        "attempt": 1,
+        "prompt_sha256": "5fb825dc3848f23f326cff12ab300d86f63b6387d396253d0df3ffecd23782b4",
+        "real_api": true,
+        "thinking": "enabled",
+        "reasoning_effort": "low",
+        "read_timeout_seconds": 180,
+        "response_transport": "json_object",
+        "http_status": 200,
+        "response_id": "f6af8af9-4c6d-4c21-b27c-878fbae67e6a",
+        "response_model": "deepseek-v4-pro",
+        "usage": {
+          "prompt_tokens": 1432,
+          "completion_tokens": 675,
+          "total_tokens": 2107,
+          "prompt_tokens_details": {
+            "cached_tokens": 1024
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 562
+          },
+          "prompt_cache_hit_tokens": 1024,
+          "prompt_cache_miss_tokens": 408
+        },
+        "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"达到工具调用上限，最后一次工具尝试失败，任务未完成\",\"reason\":\"实际回答明确说明工具预算耗尽、任务未完成，且未假称取得证据，符合要点要求。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[],\"serious_errors\":[],\"reason\":\"系统因工具故障达到调用上限，如实报告未完成且未编造证据，符合限制状态要求。\"}",
+        "finish_reason": "stop",
+        "estimated_usd_upper_bound": 0.001628308,
+        "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+        "seconds": 7.7966
+      }
+    ],
+    "judge_error": null,
+    "human_review": null,
+    "judge_cache_hit": false,
+    "new_judge_requests": 1
+  }
+}

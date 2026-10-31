@@ -1,0 +1,88 @@
+{
+  "id": "TEST21",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "reason": "实际回答仅说明现有资料未包含《辽宁科技大学差旅费管理办法（修订）》原文，无法确认高铁一等座能否报销及精确金额上限，但未明确表达“资料只引用其他财务报销规定”这一合取条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法确认出差乘坐高铁一等座能否报销及本校精确金额上限",
+            "reason": "实际回答明确表示无法给出精确金额上限，未编造任何数字，符合禁止编造数字的要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供该办法的现行有效版本（含文号、发布日期及具体条款），或提供学校财务部门关于差旅费乘坐等级和报销限额的执行文件。",
+            "reason": "实际回答明确请求补充差旅费相关的具体规定文件，完成了要求提供差旅规定的要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "《辽宁科技大学差旅费管理办法（修订）》的现行有效版本（含文号、发布日期及具体条款）",
+            "学校财务部门关于差旅费乘坐等级和报销限额的执行文件"
+          ],
+          "reason": "实际回答明确指出了所缺少的具体文档及所需字段，并请求用户提供，符合可操作缺口要求。"
+        },
+        "reason": "回答正确识别证据不足，未编造数字，并明确请求提供差旅规定，动作合理。除未明确表述“资料只引用其他财务报销规定”外，其余要点均已满足。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:13:06.023528+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d0da3cc59d37aadcbd09b3905856ce6b50540e627e78a7556fe073ec591409d9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "4d0a41a6-cbf2-4d45-928a-051281dd2e66",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3131,
+            "completion_tokens": 3187,
+            "total_tokens": 6318,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2766
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2107
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答仅说明现有资料未包含《辽宁科技大学差旅费管理办法（修订）》原文，无法确认高铁一等座能否报销及精确金额上限，但未明确表达“资料只引用其他财务报销规定”这一合取条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法确认出差乘坐高铁一等座能否报销及本校精确金额上限\",\n      \"reason\": \"实际回答明确表示无法给出精确金额上限，未编造任何数字，符合禁止编造数字的要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请提供该办法的现行有效版本（含文号、发布日期及具体条款），或提供学校财务部门关于差旅费乘坐等级和报销限额的执行文件。\",\n      \"reason\": \"实际回答明确请求补充差旅费相关的具体规定文件，完成了要求提供差旅规定的要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"《辽宁科技大学差旅费管理办法（修订）》的现行有效版本（含文号、发布日期及具体条款）\",\n      \"学校财务部门关于差旅费乘坐等级和报销限额的执行文件\"\n    ],\n    \"reason\": \"实际回答明确指出了所缺少的具体文档及所需字段，并请求用户提供，符合可操作缺口要求。\"\n  },\n  \"reason\": \"回答正确识别证据不足，未编造数字，并明确请求提供差旅规定，动作合理。除未明确表述“资料只引用其他财务报销规定”外，其余要点均已满足。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.007723408,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 29.459
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": false,
+  "run_sha256": "867907db25bdaaf20ec4fea29149fe24435ed8ba7cf340213fa38aa108e0161c"
+}

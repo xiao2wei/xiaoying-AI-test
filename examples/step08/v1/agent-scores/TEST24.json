@@ -1,0 +1,82 @@
+{
+  "id": "TEST24",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:17:16.025336+00:00",
+          "attempt": 1,
+          "prompt_sha256": "fabecace8bb9d3a7e39249efeedc6bdf10fe6e65ba1b9dbeabcc220b2ecf4c4d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "24156aa4-b423-4afd-bf81-9c7a33132d95",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4372,
+            "completion_tokens": 10000,
+            "total_tokens": 14372,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8328
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 3476
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"尚不能判断您是否符合，需您补充：出生年月及拟退休日期（判断是否已达法定退休年龄及延退期限上限）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年年度考核和聘期考核结果、是否属于国家级人才或“兴辽英才计划”杰出/领军人才、是否主持II类以上科研项目及任务期、是否为重点学科主要带头人、是否为博士生导师及博士生培养期、是否属于省管干部。\",\"reason\":\"实际回答明确列出并请求补充年龄、岗位/职务、业绩、考核等缺失的资格条件，语义等价。\"},{\"index\":1,\"met\":true,\"answer_span\":\"尚不能判断您是否符合\",\"reason\":\"实际回答明确表示因缺少信息而不能判断，未认定必然符合或不符合。\"},{\"index\":2,\"met\":true,\"answer_span\":\"需您补充：出生年月及拟退休日期（判断是否已达法定退休年龄及延退期限上限）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年年度考核和聘期考核结果、是否属于国家级人才或“兴辽英才计划”杰出/领军人才、是否主持II类以上科研项目及任务期、是否为重点学科主要带头人、是否为博士生导师及博士生培养期、是否属于省管干部。\",\"reason\":\"实际回答明确请求补充具体资格信息。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"身体健康\",\"answer_span\":\"身体健康\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"长期从事重点学科教学科研工作\",\"answer_span\":\"长期从事重点学科教学科研工作\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"具有良好政治素质与师德师风\",\"answer_span\":\"具有良好政治素质与师德师风\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"教学科研工作业绩突出\",\"answer_span\":\"教学科研工作业绩突出\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"近三年聘期及年度考核均为合格以上\",\"answer_span\":\"近三年聘期及年度考核均为合格以上\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\"answer_span\":\"在达到法定退休年龄前已聘用在专业技术三级以上岗位\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文同句，实际已读支持。\"},{\"text\":\"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\"answer_span\":\"国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文条件1，实际已读支持。\"},{\"text\":\"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\"answer_span\":\"主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研项目尚未完成且在规定任务期内\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文条件2，实际已读支持。\"},{\"text\":\"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\"answer_span\":\"作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文条件3，实际已读支持。\"},{\"text\":\"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\"answer_span\":\"作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合适接替人选\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文条件4，实际已读支持。\"},{\"text\":\"延退期限一般不超过63周岁\",\"answer_span\":\"延退期限一般不超过63周岁\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文期限条款，实际已读支持。\"},{\"text\":\"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁\",\"answer_span\":\"若满足延退条件1、2之一且已聘用在专业技术二级以上岗位，一般不超过65周岁\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文期限条款，实际已读支持。\"},{\"text\":\"本人提前半年自愿提出\",\"answer_span\":\"本人提前半年自愿提出\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文程序条款，实际已读支持。\"},{\"text\":\"经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请\",\"answer_span\":\"经所在单位教授委员会审议、党政联席会研究同意后向学校提出申请\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文程序条款，实际已读支持。\"},{\"text\":\"报送《高级专家延长退休年龄审批表》及相关证明材料\",\"answer_span\":\"报送《高级专家延长退休年龄审批表》及相关证明材料\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文程序条款，实际已读支持。\"},{\"text\":\"学校每年5月和11月研究\",\"answer_span\":\"学校每年5月和11月研究\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文程序条款，实际已读支持。\"},{\"text\":\"经校长办公会议审议、校党委常委会会议审定后办理并报上级主管部门备案\",\"answer_span\":\"经校长办公会议审议、校党委常委会会议审定后办理并报上级主管部门备案\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文程序条款，实际已读支持。\"},{\"text\":\"学校每次批准的延退期限为1年\",\"answer_span\":\"学校每次批准的延退期限为1年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文其他条款，实际已读支持。\"},{\"text\":\"延退期间纳入学院在职教职工日常管理\",\"answer_span\":\"延退期间纳入学院在职教职工日常管理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文其他条款，实际已读支持。\"},{\"text\":\"占所在单位专业技术岗位数\",\"answer_span\":\"占所在单位专业技术岗位数\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D22-C001原文其他条款，实际已读支持。\"},{\"text\":\"按《辽宁科技大学教职工岗位考核实施办法（2022年版）》进行聘用管理\",\"answer_span\":\"按《辽宁科技大学教职工岗位考核实施办法（2022年版）》进行",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04537104,
+          "error": "JSONDecodeError",
+          "seconds": 95.7805
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:51.806175+00:00",
+          "attempt": 2,
+          "prompt_sha256": "fabecace8bb9d3a7e39249efeedc6bdf10fe6e65ba1b9dbeabcc220b2ecf4c4d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1877c47b-0e77-4750-bd9a-ac79a6b38eed",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4372,
+            "completion_tokens": 10001,
+            "total_tokens": 14373,
+            "prompt_tokens_details": {
+              "cached_tokens": 4352
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9418
+            },
+            "prompt_cache_hit_tokens": 4352,
+            "prompt_cache_miss_tokens": 20
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"出生年月及拟退休日期（判断是否已达法定退休年龄及延退期限上限）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年年度考核和聘期考核结果、是否属于国家级人才或“兴辽英才计划”杰出/领军人才、是否主持II类以上科研项目及任务期、是否为重点学科主要带头人、是否为博士生导师及博士生培养期、是否属于省管干部\",\"reason\":\"答案明确列出用户未提供的年龄、职务、业绩、考核等资格条件，符合该要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"尚不能判断您是否符合\",\"reason\":\"答案明确表示无法判断，未错误认定必然符合或不符合。\"},{\"index\":2,\"met\":true,\"answer_span\":\"需您补充：出生年月及拟退休日期（判断是否已达法定退休年龄及延退期限上限）、现聘专业技术岗位等级（是否三级以上、是否二级以上）、是否长期从事重点学科教学科研工作、近三年年度考核和聘期考核结果、是否属于国家级人才或“兴辽英才计划”杰出/领军人才、是否主持II类以上科研项目及任务期、是否为重点学科主要带头人、是否为博士生导师及博士生培养期、是否属于省管干部。\",\"reason\":\"答案明确请求用户补充具体信息，而非仅建议自行查询或联系部门。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"申请高级专家延长退休须身体健康\",\"answer_span\":\"身体健康\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含“身体健康”，已读原文支持。\"},{\"text\":\"申请高级专家延长退休须长期从事重点学科教学科研工作\",\"answer_span\":\"长期从事重点学科教学科研工作\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含该条件，已读原文支持。\"},{\"text\":\"申请高级专家延长退休须具有良好政治素质与师德师风\",\"answer_span\":\"具有良好政治素质与师德师风\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含该条件，已读原文支持。\"},{\"text\":\"申请高级专家延长退休须教学科研工作业绩突出\",\"answer_span\":\"教学科研工作业绩突出\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含该条件，已读原文支持。\"},{\"text\":\"申请高级专家延长退休须近三年聘期及年度考核均为合格以上\",\"answer_span\":\"近三年聘期及年度考核均为合格",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.045375,
+          "error": "JSONDecodeError",
+          "seconds": 97.1767
+        }
+      ],
+      "judge_error": "ModelError:JSONDecodeError",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "799058fe84f72c1d45294e8120a779873ea7dcda868986d0c119cd7cfd2c2f31"
+}

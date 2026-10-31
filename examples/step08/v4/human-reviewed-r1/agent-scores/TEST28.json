@@ -1,0 +1,252 @@
+{
+  "id": "TEST28",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "reason": "实际答案明确表达了此要点，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。"
+          },
+          {
+            "text": "依据专兼结合、以专为主的原则足额配备到位",
+            "answer_span": "依据专兼结合、以专为主的原则足额配备到位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。"
+          },
+          {
+            "text": "辅导员编制按1:200的师生比核定",
+            "answer_span": "辅导员编制按1:200的师生比核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。"
+          },
+          {
+            "text": "按专业技术岗或管理岗设置编制",
+            "answer_span": "按专业技术岗或管理岗设置编制",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。"
+          },
+          {
+            "text": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "answer_span": "按照专兼结合、以专为主的原则，专职辅导员比例不低于85%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确提供了师生比信息，引用了两个相关制度条款，事实均得到已读原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:10:31.467771+00:00",
+          "attempt": 1,
+          "prompt_sha256": "15d10928cfc898fc7d39538baebf9109fa9d6d10e2bf607680cfac08dca07dd7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "8cfd64bd-2181-4600-b587-5f13a586850d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3483,
+            "completion_tokens": 3568,
+            "total_tokens": 7051,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2970
+            },
+            "prompt_cache_hit_tokens": 3456,
+            "prompt_cache_miss_tokens": 27
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"reason\": \"实际答案明确表达了此要点，与要求一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。\"\n    },\n    {\n      \"text\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"answer_span\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自《辽宁科技大学辅导员队伍建设实施办法（试行）》第九条，原文明确包含该规定。\"\n    },\n    {\n      \"text\": \"辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。\"\n    },\n    {\n      \"text\": \"按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。\"\n    },\n    {\n      \"text\": \"按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"answer_span\": \"按照专兼结合、以专为主的原则，专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用自《辽宁科技大学岗位设置与聘用管理实施办法（2022年版）》第六条，原文明确包含该规定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确提供了师生比信息，引用了两个相关制度条款，事实均得到已读原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.007158492,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 31.4397
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST28--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "37e77b3e3ef4d861a76c1d11a8625945bb7f5ac1059d6ea4c5a732bff9629daf",
+        "run_sha256": "899d0f6112334474811fd6abd177b97709b91a8c6306e7da99f9bc00ff59c290",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "reason": "实际回答明确说明了不低于1：200的比例，满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "answer_span": "学校按照师生比不低于1：200的比例设置专职辅导员岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          },
+          {
+            "text": "依据专兼结合、以专为主的原则足额配备到位",
+            "answer_span": "依据专兼结合、以专为主的原则足额配备到位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          },
+          {
+            "text": "每200名学生至少配备1名专职辅导员",
+            "answer_span": "每200名学生至少配备1名专职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote中的师生比不低于1：200可以逻辑推导出该解释，实际读取原文支持。"
+          },
+          {
+            "text": "辅导员编制按1:200的师生比核定",
+            "answer_span": "辅导员编制按1:200的师生比核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          },
+          {
+            "text": "按专业技术岗或管理岗设置编制",
+            "answer_span": "按专业技术岗或管理岗设置编制",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          },
+          {
+            "text": "按照专兼结合、以专为主的原则",
+            "answer_span": "按照专兼结合、以专为主的原则",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          },
+          {
+            "text": "专职辅导员比例不低于85%",
+            "answer_span": "专职辅导员比例不低于85%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote包含该内容，实际读取原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确提供了专职辅导员师生比不低于1：200的要求，并引用了相关制度，所有说明的事实均有引用且被实际读取的原文支持，没有发现错误或编造。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:10:35.010126+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1317c08543ee465a25e7cdd620d30ab8b001368f2a4af39df33089c848949967",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "26ba2eff-75d1-4ad5-b02e-30de7a9f81bc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3512,
+            "completion_tokens": 3652,
+            "total_tokens": 7164,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2955
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 2104
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"reason\": \"实际回答明确说明了不低于1：200的比例，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"answer_span\": \"学校按照师生比不低于1：200的比例设置专职辅导员岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"answer_span\": \"依据专兼结合、以专为主的原则足额配备到位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"每200名学生至少配备1名专职辅导员\",\n      \"answer_span\": \"每200名学生至少配备1名专职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote中的师生比不低于1：200可以逻辑推导出该解释，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"辅导员编制按1:200的师生比核定\",\n      \"answer_span\": \"辅导员编制按1:200的师生比核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"按专业技术岗或管理岗设置编制\",\n      \"answer_span\": \"按专业技术岗或管理岗设置编制\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"按照专兼结合、以专为主的原则\",\n      \"answer_span\": \"按照专兼结合、以专为主的原则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    },\n    {\n      \"text\": \"专职辅导员比例不低于85%\",\n      \"answer_span\": \"专职辅导员比例不低于85%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote包含该内容，实际读取原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确提供了专职辅导员师生比不低于1：200的要求，并引用了相关制度，所有说明的事实均有引用且被实际读取的原文支持，没有发现错误或编造。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008650576,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 29.649
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST28--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "37e77b3e3ef4d861a76c1d11a8625945bb7f5ac1059d6ea4c5a732bff9629daf",
+        "run_sha256": "899d0f6112334474811fd6abd177b97709b91a8c6306e7da99f9bc00ff59c290",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "899d0f6112334474811fd6abd177b97709b91a8c6306e7da99f9bc00ff59c290"
+}

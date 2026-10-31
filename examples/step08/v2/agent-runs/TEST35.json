@@ -1,0 +1,1024 @@
+{
+  "id": "TEST35",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "只按2023补充规定，病假超过2个月由谁批准备案？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "请假时间大于2个月的经所在单位同意后，报主管校领导批准、人事处备案。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "请假时间大于2个月的经所在单位同意后，报主管校领导批准、人事处备案。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:03.352848+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2f3124bfc458b28978650307a7f28e6470e81f17ef986c40b77114f04d329590",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "4030c049-2dcf-4048-8259-5ff85731d969",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1731,
+            "completion_tokens": 47,
+            "total_tokens": 1778,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 195
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"2023补充规定 病假超过2个月 审批 备案\",\"doc_ids\":[]},\"reason\":\"定位2023补充规定中病假超2个月的审批备案条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005757,
+          "seconds": 0.7014
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "2023补充规定 病假超过2个月 审批 备案",
+            "doc_ids": []
+          },
+          "reason": "定位2023补充规定中病假超2个月的审批备案条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "2023补充规定 病假超过2个月 审批 备案",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "2023补充规定 病假超过2个月 审批 备案",
+            "hits": [
+              {
+                "chunk_id": "D20-C009",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.627024,
+                "lexical_score": 32.922,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第八条 第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C006",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第五条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  168,
+                  169
+                ],
+                "printed_pages": [
+                  163,
+                  164
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.660471,
+                "lexical_score": 28.8131,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第五条 第五条 病假的审批及管理\n（一）全年病休在2个月以内的，由所在单位主要负责人审批，报人事处审核备案。\n（二）全年病休在2个月以上的，由所在单位签署意见，报主管校领导批准并报人\n事处审核备案。\n（三）病休连续超过6个月的，由所在单位签署意见，报主管校领导批准并报人事\n处审核备案，经学校审批后办理长期病休手续。\n（四）患病需休息治疗者，必须先履行请假审批手续。因患急性病未先办理请假\n审批手续者，应及时履行补假手续。请假手续应由患者本人办理，确因特殊原因本人\n不能亲自办理者，可委托他人代为办理。\n（五）已办理长期病休的人员，若要求恢复工作，需由学校指定的医院出具可恢复\n工作证明，经批准后办理恢复工作手续；若需继续病休者，每半年到学校指定的医院\n进行一次复查，",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C026",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十五条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.598347,
+                "lexical_score": 23.3987,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十五条 第二十五条 因客观原因不能在规定期限内完成研究计划的项目，一般允许延\n期一次，期限不超过2年，并须在项目原执行期结束前2个月提出申请，由所在二级教\n学（科研）机构签署意见后，报人事处审批。批准延期的项目须按时提交年度进展报\n告参加年度考核。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C012",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十一条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173,
+                  174
+                ],
+                "printed_pages": [
+                  168,
+                  169
+                ],
+                "score": 0.077037,
+                "semantic_score": 0.578706,
+                "lexical_score": 21.9954,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十一条 1小时。生育多胞胎的，\n每多哺乳1个，哺乳假每日增1小时。\n（四）女教职工怀孕需保胎休息的，可按本办法第八条规定请病假，其中产前15日\n可计入产假。符合法律法规规定生育子女的男教工享有护理假20日。\n（五）产假、护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由\n所在单位审批，报人事处备案。产假期内，待遇按国家有关规定执行，逾期根据实际\n情况按事（病）假处理。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C007",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.571529,
+                "lexical_score": 20.4029,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第六条 奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序办理请假的同时，还须按要求在办公\n系统办理“教职工因私出国（境）”审批。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0103,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:04.087962+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e34b8f64b9c71fd751fb8e2ed29fb5e45e6268078a0b6e50ee41bd642720087b",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "21535e60-e84b-4e88-8303-7f78830ae464",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3259,
+            "completion_tokens": 39,
+            "total_tokens": 3298,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1595
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D20-C009\"]}, \"reason\": \"读取2023补充规定第八条原文以确认审批备案主体\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010245,
+          "seconds": 0.8013
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D20-C009"
+            ]
+          },
+          "reason": "读取2023补充规定第八条原文以确认审批备案主体"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C009"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第八条",
+              "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。",
+              "pdf_pages": [
+                173
+              ],
+              "table_ids": [
+                "P173-T02"
+              ],
+              "chunk_id": "D20-C009",
+              "printed_pages": [
+                168
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C008",
+              "next_chunk_id": "D20-C010",
+              "related_table_chunks": []
+            },
+            "tables": [
+              {
+                "table_id": "P173-T02",
+                "pdf_page": 173,
+                "printed_page": 168,
+                "bbox": [
+                  79.3701,
+                  387.59279999999995,
+                  462.0472,
+                  519.5365999999999
+                ],
+                "rows": [
+                  [
+                    "全年累计请假时间",
+                    "相关待遇"
+                  ],
+                  [
+                    "＞5日，≤60日",
+                    "奖励绩效按请假实际天数扣发"
+                  ],
+                  [
+                    "＞60日，≤6个月",
+                    "工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。"
+                  ],
+                  [
+                    "＞6个月",
+                    "工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。"
+                  ],
+                  [
+                    "被认定为工伤，接受工伤医疗期间",
+                    "不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+                  ]
+                ],
+                "cell_bboxes": [
+                  [
+                    [
+                      79.3701,
+                      387.59279999999995,
+                      176.59555,
+                      405.70269999999994
+                    ],
+                    [
+                      176.59555,
+                      387.59279999999995,
+                      462.0472,
+                      405.70269999999994
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      405.70269999999994,
+                      176.59555,
+                      423.8126
+                    ],
+                    [
+                      176.59555,
+                      405.70269999999994,
+                      462.0472,
+                      423.8126
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      423.8126,
+                      176.59555,
+                      452.2711
+                    ],
+                    [
+                      176.59555,
+                      423.8126,
+                      462.0472,
+                      452.2711
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      452.2711,
+                      176.59555,
+                      491.0782
+                    ],
+                    [
+                      176.59555,
+                      452.2711,
+                      462.0472,
+                      491.0782
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      491.0782,
+                      176.59555,
+                      519.5365999999999
+                    ],
+                    [
+                      176.59555,
+                      491.0782,
+                      462.0472,
+                      519.5365999999999
+                    ]
+                  ]
+                ],
+                "source_char_count": 208,
+                "unassigned_cell_chars": 0
+              }
+            ]
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:04.912993+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a034da2796ce85cf2220c70de8b05ecb341c2a2d416030f7ad2189c4a176d247",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2785531f-b7c9-457b-8072-166bed4abfa8",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3955,
+            "completion_tokens": 140,
+            "total_tokens": 4095,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 755
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，请假时间大于2个月的病假，须经所在单位同意后，报主管校领导批准，并由人事处备案。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"请假时间大于2个月的经所在单位同意后，报主管校领导批准、人事处备案。\"}]}], \"gaps\": []}, \"reason\": \"已读取2023补充规定第八条原文，审批与备案主体明确\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0013545,
+          "seconds": 1.0231
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取2023补充规定第八条原文，审批与备案主体明确"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:05.958922+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bac4c088be1ffc813f2e4cfb501d9890c0e716569376d0c7b62d1880f00d51e0",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "be73856b-e12f-49f1-a204-fe79c4432c34",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4263,
+            "completion_tokens": 297,
+            "total_tokens": 4560,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 168
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2727
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。\",\"citations\":[{\"chunk_id\":\"D20-C009\",\"quote\":\"请假时间大于2个月的经所在单位同意后，报主管校领导批准、人事处备案。\"}]}],\"gaps\":[]},\"reason\":\"已核对2023补充规定第八条原文，审批与备案主体及前置条件完整明确\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0016352999999999997,
+          "seconds": 2.2875
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已核对2023补充规定第八条原文，审批与备案主体及前置条件完整明确"
+        }
+      ],
+      "read_ids": [
+        "D20-C009"
+      ],
+      "first_hits": [
+        "D20-C009",
+        "D19-C006",
+        "D03-C026",
+        "D20-C012",
+        "D20-C007"
+      ],
+      "seconds": 4.9171,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那连续休满6个月能否申请长期病休，之后多久复查一次？",
+      "history": [
+        {
+          "role": "user",
+          "content": "只按2023补充规定，病假超过2个月由谁批准备案？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"answered\", \"claims\": [{\"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"请假时间大于2个月的经所在单位同意后，报主管校领导批准、人事处备案。\", \"title\": \"辽宁科技大学教职工考勤与请假管理补充规定\", \"article\": \"第八条\", \"doc_id\": \"D20\", \"pdf_pages\": [173], \"printed_pages\": [168], \"version_date\": \"2023-12-27\"}]}], \"gaps\": [], \"answer\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。\"}"
+        }
+      ],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "病假连续≥6个月，可申请长期病休手续",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\n长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "病假连续≥6个月，可申请长期病休手续",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+            "citations": [
+              {
+                "chunk_id": "D20-C009",
+                "quote": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\n长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:08.270511+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7b02fcd6379916e763382ebb4ba05dbc2218e141b8eb68f2bc3109f265684a9f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "76b09bde-ea28-4243-8ed6-739a961a0e35",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1966,
+            "completion_tokens": 50,
+            "total_tokens": 2016,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 302
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"长期病休 连续休满6个月 复查 补充规定\",\"doc_ids\":[\"D20\"]},\"reason\":\"查找2023补充规定中长期病休申请条件及复查周期条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006498,
+          "seconds": 0.9674
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "长期病休 连续休满6个月 复查 补充规定",
+            "doc_ids": [
+              "D20"
+            ]
+          },
+          "reason": "查找2023补充规定中长期病休申请条件及复查周期条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "长期病休 连续休满6个月 复查 补充规定",
+            "doc_ids": [
+              "D20"
+            ]
+          },
+          "result": {
+            "ok": true,
+            "query": "长期病休 连续休满6个月 复查 补充规定",
+            "hits": [
+              {
+                "chunk_id": "D20-C009",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.669001,
+                "lexical_score": 52.9793,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第八条 第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C012",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十一条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173,
+                  174
+                ],
+                "printed_pages": [
+                  168,
+                  169
+                ],
+                "score": 0.069712,
+                "semantic_score": 0.56388,
+                "lexical_score": 13.2293,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十一条 1小时。生育多胞胎的，\n每多哺乳1个，哺乳假每日增1小时。\n（四）女教职工怀孕需保胎休息的，可按本办法第八条规定请病假，其中产前15日\n可计入产假。符合法律法规规定生育子女的男教工享有护理假20日。\n（五）产假、护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由\n所在单位审批，报人事处备案。产假期内，待遇按国家有关规定执行，逾期根据实际\n情况按事（病）假处理。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C008",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第七条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.067288,
+                "semantic_score": 0.522065,
+                "lexical_score": 18.249,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第七条 第七条 教职工原则上应利用公休假日、国家法定假日及寒暑假期间处理个人\n事务，确因特殊情况需要在工作时间离开工作岗位的，应请事假，事假具体要求及待\n遇如下：\n请假时间≤3日的由所在单位审批，报人事处备案。＞3日的由所在单位同意后，\n报主管校领导批准、人事处备案。各级领导干部请假程序按学校有关规定执行。事\n假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤30日 | 奖励绩效按请假实际天数扣发\n＞30日，≤60日 | 按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\n＞60日 | 按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C015",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十四条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.061427,
+                "semantic_score": 0.52444,
+                "lexical_score": 15.7311,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十四条 第十四条 教职工旷工期间停发岗位工资、薪级工资、基础绩效、奖励绩效及各项\n福利待遇；连续旷工＞15个工作日，或1年内累计旷工＞30个工作日的，解除聘用关系。\n第五章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C006",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第五条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.054506,
+                "semantic_score": 0.551189,
+                "lexical_score": 10.4393,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第五条 第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报\n送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚\n报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n第三章 请假管理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0094,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:09.273945+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9f55d905322c917f94a6e7c34d3027401fd8db38cba7255760a339f37650e1e8",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "4a1b42a1-81d6-4951-9ff9-82e3cf1fe2ec",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3448,
+            "completion_tokens": 40,
+            "total_tokens": 3488,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 1528
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D20-C009\"]}, \"reason\": \"读取第八条原文，核对长期病休申请条件与复查周期\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010823999999999999,
+          "seconds": 1.1136
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D20-C009"
+            ]
+          },
+          "reason": "读取第八条原文，核对长期病休申请条件与复查周期"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C009"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第八条",
+              "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。",
+              "pdf_pages": [
+                173
+              ],
+              "table_ids": [
+                "P173-T02"
+              ],
+              "chunk_id": "D20-C009",
+              "printed_pages": [
+                168
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C008",
+              "next_chunk_id": "D20-C010",
+              "related_table_chunks": []
+            },
+            "tables": [
+              {
+                "table_id": "P173-T02",
+                "pdf_page": 173,
+                "printed_page": 168,
+                "bbox": [
+                  79.3701,
+                  387.59279999999995,
+                  462.0472,
+                  519.5365999999999
+                ],
+                "rows": [
+                  [
+                    "全年累计请假时间",
+                    "相关待遇"
+                  ],
+                  [
+                    "＞5日，≤60日",
+                    "奖励绩效按请假实际天数扣发"
+                  ],
+                  [
+                    "＞60日，≤6个月",
+                    "工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。"
+                  ],
+                  [
+                    "＞6个月",
+                    "工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。"
+                  ],
+                  [
+                    "被认定为工伤，接受工伤医疗期间",
+                    "不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+                  ]
+                ],
+                "cell_bboxes": [
+                  [
+                    [
+                      79.3701,
+                      387.59279999999995,
+                      176.59555,
+                      405.70269999999994
+                    ],
+                    [
+                      176.59555,
+                      387.59279999999995,
+                      462.0472,
+                      405.70269999999994
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      405.70269999999994,
+                      176.59555,
+                      423.8126
+                    ],
+                    [
+                      176.59555,
+                      405.70269999999994,
+                      462.0472,
+                      423.8126
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      423.8126,
+                      176.59555,
+                      452.2711
+                    ],
+                    [
+                      176.59555,
+                      423.8126,
+                      462.0472,
+                      452.2711
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      452.2711,
+                      176.59555,
+                      491.0782
+                    ],
+                    [
+                      176.59555,
+                      452.2711,
+                      462.0472,
+                      491.0782
+                    ]
+                  ],
+                  [
+                    [
+                      79.3701,
+                      491.0782,
+                      176.59555,
+                      519.5365999999999
+                    ],
+                    [
+                      176.59555,
+                      491.0782,
+                      462.0472,
+                      519.5365999999999
+                    ]
+                  ]
+                ],
+                "source_char_count": 208,
+                "unassigned_cell_chars": 0
+              }
+            ]
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:10.411093+00:00",
+          "attempt": 1,
+          "prompt_sha256": "eb3e9346d11070c894b5f91520dee4e766024f08f44b9b5fd198a6256f9e756e",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "de7a8c35-a9c0-482e-8083-cd18028867c6",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4145,
+            "completion_tokens": 202,
+            "total_tokens": 4347,
+            "prompt_tokens_details": {
+              "cached_tokens": 3456
+            },
+            "prompt_cache_hit_tokens": 3456,
+            "prompt_cache_miss_tokens": 689
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"病假连续≥6个月，可申请长期病休手续\"}]}, {\"text\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\"}]}], \"gaps\": []}, \"reason\": \"第八条原文已明确长期病休申请条件与复查周期\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0014859,
+          "seconds": 1.2316
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第八条原文已明确长期病休申请条件与复查周期"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:11.667141+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6999b54aa985602785535e8ab0c0f3f010ef73bac29da9f268fd6106b6b35d14",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "83f04154-61c6-4676-830b-e4f3bc0cc682",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4515,
+            "completion_tokens": 1508,
+            "total_tokens": 6023,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1304
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2979
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"病假连续≥6个月，可申请长期病休手续\"}]}, {\"text\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\", \"citations\": [{\"chunk_id\": \"D20-C009\", \"quote\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\"}]}], \"gaps\": []}, \"reason\": \"已核对第八条原文，申请条件与复查周期均有直接依据\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0031641,
+          "seconds": 8.8834
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已核对第八条原文，申请条件与复查周期均有直接依据"
+        }
+      ],
+      "read_ids": [
+        "D20-C009"
+      ],
+      "first_hits": [
+        "D20-C009",
+        "D20-C012",
+        "D20-C008",
+        "D20-C015",
+        "D20-C006"
+      ],
+      "seconds": 12.3049,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 17.2226,
+  "model_calls": 8,
+  "tool_calls": 4,
+  "created_at": "2026-10-31T03:22:20.552851+00:00"
+}

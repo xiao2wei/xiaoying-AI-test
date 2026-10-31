@@ -1,0 +1,170 @@
+{
+  "id": "TEST23",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "请确认您取得博士学历学位的时间（年），以便对应补贴和科研建设经费档位。\n请确认您的学科属于工科还是其他学科，以便确定科研建设经费金额。\n请确认您属于教师岗位还是非教师岗位，以及是否脱产学习，以便判断待遇兑现和停发规则。",
+            "reason": "答案明确指出了缺少取得学历学位年限、学科等适用条件，并提出了确认请求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "教师在职攻读博士毕业相关待遇按取得学历学位时间（年）分档：≤4年补贴10万元、科研建设经费工科5万元/其他学科3万元；＞4且≤5年补贴9万元、科研建设经费工科4.5万元/其他学科2.7万元；＞5且≤6年补贴7万元、科研建设经费工科3.5万元/其他学科2.1万元；＞6且≤7年补贴5万元、科研建设经费工科2.5万元/其他学科1.5万元；＞7且≤8年补贴3万元、科研建设经费工科1.5万元/其他学科0.9万元；＞8年补贴0万元、科研建设经费0万元。",
+            "reason": "答案给出了分档表格，并未给出唯一金额，符合要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请确认您取得博士学历学位的时间（年），以便对应补贴和科研建设经费档位。\n请确认您的学科属于工科还是其他学科，以便确定科研建设经费金额。\n请确认您属于教师岗位还是非教师岗位，以及是否脱产学习，以便判断待遇兑现和停发规则。",
+            "reason": "答案明确请求用户补充缺失的适用条件信息。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "≤4年，补贴10万元，科研建设经费工科5万元，其他学科3万元",
+            "answer_span": "≤4年补贴10万元、科研建设经费工科5万元/其他学科3万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "＞4且≤5年，补贴9万元，科研建设经费工科4.5万元，其他学科2.7万元",
+            "answer_span": "＞4且≤5年补贴9万元、科研建设经费工科4.5万元/其他学科2.7万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "＞5且≤6年，补贴7万元，科研建设经费工科3.5万元，其他学科2.1万元",
+            "answer_span": "＞5且≤6年补贴7万元、科研建设经费工科3.5万元/其他学科2.1万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "＞6且≤7年，补贴5万元，科研建设经费工科2.5万元，其他学科1.5万元",
+            "answer_span": "＞6且≤7年补贴5万元、科研建设经费工科2.5万元/其他学科1.5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "＞7且≤8年，补贴3万元，科研建设经费工科1.5万元，其他学科0.9万元",
+            "answer_span": "＞7且≤8年补贴3万元、科研建设经费工科1.5万元/其他学科0.9万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "＞8年，补贴0万元，科研建设经费0万元",
+            "answer_span": "＞8年补贴0万元、科研建设经费0万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "answer_span": "由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "answer_span": "在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          },
+          {
+            "text": "非教师岗位人员在职攻读博士原则上不脱产；如脱产，脱产学习期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按第十条兑现相关待遇；教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后转到非教师岗位，相关待遇停止发放。",
+            "answer_span": "非教师岗位人员在职攻读博士原则上不脱产；如脱产，脱产学习期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按第十条兑现相关待遇；教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后转到非教师岗位，相关待遇停止发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与事实一致，且已读取原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确识别了缺少适用条件，提供了分档表而未给出唯一金额，并明确请求用户补充缺失信息，符合需要确认的情境，引用可靠。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "取得学历学位的时间（年）",
+            "学科（工科/其他）",
+            "岗位性质（教师/非教师）及是否脱产"
+          ],
+          "reason": "答案明确列出了所需补充的具体信息，并请求用户提供，未推诿用户自行查资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:13:25.775880+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bced8d5b4fdd2cc7e0865a7f4ebc05898aca2b62f125c8fe7ff709e076ae148c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "07e70447-2aed-4ab4-8b4a-fffbbc1f0099",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4602,
+            "completion_tokens": 6245,
+            "total_tokens": 10847,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4402
+            },
+            "prompt_cache_hit_tokens": 4480,
+            "prompt_cache_miss_tokens": 122
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"请确认您取得博士学历学位的时间（年），以便对应补贴和科研建设经费档位。\\n请确认您的学科属于工科还是其他学科，以便确定科研建设经费金额。\\n请确认您属于教师岗位还是非教师岗位，以及是否脱产学习，以便判断待遇兑现和停发规则。\",\n      \"reason\": \"答案明确指出了缺少取得学历学位年限、学科等适用条件，并提出了确认请求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"教师在职攻读博士毕业相关待遇按取得学历学位时间（年）分档：≤4年补贴10万元、科研建设经费工科5万元/其他学科3万元；＞4且≤5年补贴9万元、科研建设经费工科4.5万元/其他学科2.7万元；＞5且≤6年补贴7万元、科研建设经费工科3.5万元/其他学科2.1万元；＞6且≤7年补贴5万元、科研建设经费工科2.5万元/其他学科1.5万元；＞7且≤8年补贴3万元、科研建设经费工科1.5万元/其他学科0.9万元；＞8年补贴0万元、科研建设经费0万元。\",\n      \"reason\": \"答案给出了分档表格，并未给出唯一金额，符合要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"请确认您取得博士学历学位的时间（年），以便对应补贴和科研建设经费档位。\\n请确认您的学科属于工科还是其他学科，以便确定科研建设经费金额。\\n请确认您属于教师岗位还是非教师岗位，以及是否脱产学习，以便判断待遇兑现和停发规则。\",\n      \"reason\": \"答案明确请求用户补充缺失的适用条件信息。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"≤4年，补贴10万元，科研建设经费工科5万元，其他学科3万元\",\n      \"answer_span\": \"≤4年补贴10万元、科研建设经费工科5万元/其他学科3万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"＞4且≤5年，补贴9万元，科研建设经费工科4.5万元，其他学科2.7万元\",\n      \"answer_span\": \"＞4且≤5年补贴9万元、科研建设经费工科4.5万元/其他学科2.7万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"＞5且≤6年，补贴7万元，科研建设经费工科3.5万元，其他学科2.1万元\",\n      \"answer_span\": \"＞5且≤6年补贴7万元、科研建设经费工科3.5万元/其他学科2.1万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"＞6且≤7年，补贴5万元，科研建设经费工科2.5万元，其他学科1.5万元\",\n      \"answer_span\": \"＞6且≤7年补贴5万元、科研建设经费工科2.5万元/其他学科1.5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"＞7且≤8年，补贴3万元，科研建设经费工科1.5万元，其他学科0.9万元\",\n      \"answer_span\": \"＞7且≤8年补贴3万元、科研建设经费工科1.5万元/其他学科0.9万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"＞8年，补贴0万元，科研建设经费0万元\",\n      \"answer_span\": \"＞8年补贴0万元、科研建设经费0万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"answer_span\": \"由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"answer_span\": \"在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请、所在单位党政联席会研究同意后，可按学校当年人才引进政策确定相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    },\n    {\n      \"text\": \"非教师岗位人员在职攻读博士原则上不脱产；如脱产，脱产学习期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按第十条兑现相关待遇；教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后转到非教师岗位，相关待遇停止发放。\",\n      \"answer_span\": \"非教师岗位人员在职攻读博士原则上不脱产；如脱产，脱产学习期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按第十条兑现相关待遇；教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后转到非教师岗位，相关待遇停止发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与事实一致，且已读取原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别了缺少适用条件，提供了分档表而未给出唯一金额，并明确请求用户补充缺失信息，符合需要确认的情境，引用可靠。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"取得学历学位的时间（年）\",\n      \"学科（工科/其他）\",\n      \"岗位性质（教师/非教师）及是否脱产\"\n    ],\n    \"reason\": \"答案明确列出了所需补充的具体信息，并请求用户提供，未推诿用户自行查资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01254418,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 48.6936
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "baseline--TEST23--0",
+        "original_error": "ValueError:评分器把未出现在实际回答中的内容计作事实",
+        "source_score_sha256": "f7c5093b5238a7f5149127a92ea7c7feb43d0ce8cf7b97cc22b893dae1fd5e39",
+        "run_sha256": "872db5beef74cc2416a80932e980fcec655526eaed4be4ad3e59e5c958eaa2c9",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "872db5beef74cc2416a80932e980fcec655526eaed4be4ad3e59e5c958eaa2c9"
+}

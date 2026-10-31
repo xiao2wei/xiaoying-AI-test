@@ -1,0 +1,84 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "缺少您的引进人才层次",
+        "reason": "gaps中明确说明缺少人才层次，符合该要点。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": "",
+        "reason": "gaps未提及已签协议条件或缺少协议信息。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "我无法直接给唯一金额",
+        "reason": "明确表示无法给出唯一金额，且未提供具体金额。"
+      },
+      {
+        "index": 3,
+        "met": true,
+        "answer_span": "请补充层次",
+        "reason": "gaps中直接请求用户补充人才层次。"
+      },
+      {
+        "index": 4,
+        "met": false,
+        "answer_span": "",
+        "reason": "gaps未追问已签协议。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际回答将状态设为needs_confirmation，正确说明缺少人才层次并追问层次，且未给出唯一金额；但未说明缺少已签协议条件也未追问协议，遗漏必要要点，因此答案不完全正确。读取动作和确认方向合理，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:16:26.582486+00:00",
+      "attempt": 1,
+      "prompt_sha256": "44ac9b415c3910f05bc53324222f1cc5ad71f7523dca0a71910a414b0360f5bf",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "653ec3f7-1f13-4890-9e40-82b95e965954",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 3592,
+        "completion_tokens": 2289,
+        "total_tokens": 5881,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1955
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 2824
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"缺少您的引进人才层次\",\n      \"reason\": \"gaps中明确说明缺少人才层次，符合该要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"gaps未提及已签协议条件或缺少协议信息。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"我无法直接给唯一金额\",\n      \"reason\": \"明确表示无法给出唯一金额，且未提供具体金额。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请补充层次\",\n      \"reason\": \"gaps中直接请求用户补充人才层次。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"gaps未追问已签协议。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答将状态设为needs_confirmation，正确说明缺少人才层次并追问层次，且未给出唯一金额；但未说明缺少已签协议条件也未追问协议，遗漏必要要点，因此答案不完全正确。读取动作和确认方向合理，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.013805880000000001,
+      "seconds": 29.1698
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL13",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

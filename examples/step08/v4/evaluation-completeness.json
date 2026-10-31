@@ -1,0 +1,31 @@
+{
+  "agent": {
+    "groups": 40,
+    "turns": 51,
+    "validJudgements": 27,
+    "sslErrors": 24,
+    "otherErrors": [],
+    "passedGroups": 21,
+    "fullyJudgedGroups": 25
+  },
+  "baseline": {
+    "groups": 40,
+    "turns": 51,
+    "validJudgements": 30,
+    "sslErrors": 20,
+    "otherErrors": [
+      "ValueError:评分器把未出现在实际回答中的内容计作事实"
+    ],
+    "passedGroups": 23,
+    "fullyJudgedGroups": 26
+  },
+  "stability": {
+    "groups": 30,
+    "turns": 36,
+    "validJudgements": 25,
+    "sslErrors": 11,
+    "otherErrors": [],
+    "passedGroups": 18,
+    "fullyJudgedGroups": 20
+  }
+}

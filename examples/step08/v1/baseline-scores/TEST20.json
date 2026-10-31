@@ -1,0 +1,84 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "未检索到2026年新发布的在职读博补贴标准文件",
+            "reason": "答案明确指出未检索到2026年新发布的在职读博补贴标准文件，说明现有资料无法提供该标准。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供2026年新发布文件的名称、文号或发布日期，或上传该文件原文，以便核对补贴标准",
+            "reason": "答案明确向用户请求补充2026年新发布制度的文件名称、文号、发布日期或原文。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "现有资料中仅检索到《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（版本日期2023-12-20），未检索到2026年新发布的在职读博补贴标准文件",
+            "reason": "答案区分了2023版与2026年标准，仅说明检索到2023版，未将2023年条款当作2026年规定呈现。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "答案在现有资料未检索到2026年标准时如实说明无法提供，要求补充2026年文件，且未将2023版条款冒充2026年规定，符合预期。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "2026年新发布文件名称、文号或发布日期",
+            "2026年新发布文件原文"
+          ],
+          "reason": "答案明确指出现有资料缺少2026年新发布的在职读博补贴标准文件，并要求提供可核对的制度文件名称、文号、发布日期或原文，属于可操作的具体补充要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:22.572369+00:00",
+          "attempt": 1,
+          "prompt_sha256": "07b1aa348c19ddf170816893e394b9eb716a639081312e04d785621c4899487a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5a707302-8ba2-4bcc-8a1c-23232b7fe183",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2538,
+            "completion_tokens": 4174,
+            "total_tokens": 6712,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3730
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1642
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"未检索到2026年新发布的在职读博补贴标准文件\",\n      \"reason\": \"答案明确指出未检索到2026年新发布的在职读博补贴标准文件，说明现有资料无法提供该标准。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供2026年新发布文件的名称、文号或发布日期，或上传该文件原文，以便核对补贴标准\",\n      \"reason\": \"答案明确向用户请求补充2026年新发布制度的文件名称、文号、发布日期或原文。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"现有资料中仅检索到《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（版本日期2023-12-20），未检索到2026年新发布的在职读博补贴标准文件\",\n      \"reason\": \"答案区分了2023版与2026年标准，仅说明检索到2023版，未将2023年条款当作2026年规定呈现。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"答案在现有资料未检索到2026年标准时如实说明无法提供，要求补充2026年文件，且未将2023版条款冒充2026年规定，符合预期。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"2026年新发布文件名称、文号或发布日期\",\n      \"2026年新发布文件原文\"\n    ],\n    \"reason\": \"答案明确指出现有资料缺少2026年新发布的在职读博补贴标准文件，并要求提供可核对的制度文件名称、文号、发布日期或原文，属于可操作的具体补充要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0198792,
+          "seconds": 38.965
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a4adfd55a745e65a60418e7a66495fd4006a99dfd5bc212838d16cfba6358355"
+}

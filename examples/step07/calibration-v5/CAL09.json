@@ -1,0 +1,111 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "answer_span": null,
+        "reason": "实际答案仅表述25日报送并称旧规则作废，未明确展示25日与26日的差异。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": null,
+        "reason": "答案直接依据文件更新选择25日，未说明不能仅凭日期选取，反而作出了确定选择。"
+      },
+      {
+        "index": 2,
+        "met": false,
+        "answer_span": null,
+        "reason": "未请求用户确认适用口径。"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": false,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "文件更新",
+        "answer_span": "文件更新",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用的D20-C006仅显示2023年版本内容，未说明文件更新关系或旧文件已被替代。"
+      },
+      {
+        "text": "当前肯定只能每月25日报送",
+        "answer_span": "当前肯定只能每月25日报送",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "D20条款只规定25日报送，但实际已读材料中D19为26日，且无优先、废止或适用关系依据，不能支持“只能25日”的结论。"
+      },
+      {
+        "text": "旧规则自动作废",
+        "answer_span": "旧规则自动作废",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "引用内容未提及旧规则作废，已读材料也未显示两份规定之间明确的废止或优先关系。"
+      }
+    ],
+    "serious_errors": [
+      "无依据断言“文件更新”“旧规则自动作废”，并据此直接选择25日报送，而未处理两份文件冲突。",
+      "在资料未提供明确废止或优先关系、预期应请求确认的情况下，擅自消解冲突并给出确定结论。"
+    ],
+    "reason": "实际答案未展示25日和26日差异，未说明不能仅凭日期选取，也未请求确认，反而以文件更新为由直接选择25日并称旧规则自动作废。两份文件仅日期不同且无明确优先或废止关系，该结论无依据，引用条款不足以支持“只能25日”或“旧规则作废”。因此所需要点均未满足，状态应为needs_confirmation，决策和答案均不正确。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [
+    "无依据断言“文件更新”“旧规则自动作废”，并据此直接选择25日报送，而未处理两份文件冲突。",
+    "在资料未提供明确废止或优先关系、预期应请求确认的情况下，擅自消解冲突并给出确定结论。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T02:09:36.174710+00:00",
+      "attempt": 1,
+      "prompt_sha256": "7babccd7720fdbb2cde509b255e2e1d1049980514d8d317ce65f131e762fb0f5",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "f39ed0d9-2457-4f6e-a7f8-9baaf124dea5",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1986,
+        "completion_tokens": 3850,
+        "total_tokens": 5836,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3241
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 1090
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": null,\n      \"reason\": \"实际答案仅表述25日报送并称旧规则作废，未明确展示25日与26日的差异。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"answer_span\": null,\n      \"reason\": \"答案直接依据文件更新选择25日，未说明不能仅凭日期选取，反而作出了确定选择。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"answer_span\": null,\n      \"reason\": \"未请求用户确认适用口径。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": false,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"文件更新\",\n      \"answer_span\": \"文件更新\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用的D20-C006仅显示2023年版本内容，未说明文件更新关系或旧文件已被替代。\"\n    },\n    {\n      \"text\": \"当前肯定只能每月25日报送\",\n      \"answer_span\": \"当前肯定只能每月25日报送\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"D20条款只规定25日报送，但实际已读材料中D19为26日，且无优先、废止或适用关系依据，不能支持“只能25日”的结论。\"\n    },\n    {\n      \"text\": \"旧规则自动作废\",\n      \"answer_span\": \"旧规则自动作废\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"引用内容未提及旧规则作废，已读材料也未显示两份规定之间明确的废止或优先关系。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"无依据断言“文件更新”“旧规则自动作废”，并据此直接选择25日报送，而未处理两份文件冲突。\",\n    \"在资料未提供明确废止或优先关系、预期应请求确认的情况下，擅自消解冲突并给出确定结论。\"\n  ],\n  \"reason\": \"实际答案未展示25日和26日差异，未说明不能仅凭日期选取，也未请求确认，反而以文件更新为由直接选择25日并称旧规则自动作废。两份文件仅日期不同且无明确优先或废止关系，该结论无依据，引用条款不足以支持“只能25日”或“旧规则作废”。因此所需要点均未满足，状态应为needs_confirmation，决策和答案均不正确。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01786752,
+      "seconds": 41.3347
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL09",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

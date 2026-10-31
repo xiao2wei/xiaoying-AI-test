@@ -1,0 +1,372 @@
+{
+  "id": "TEST12",
+  "category": "normal",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "高层次人才办法中10万元及以上安家费如何分次发放？购房补贴如何发放？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》所列安家费在10万元及以上的，分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。",
+            "citations": [
+              {
+                "chunk_id": "D02-C022",
+                "quote": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          },
+          {
+            "text": "购房补贴的发放方式为：在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。",
+            "citations": [
+              {
+                "chunk_id": "D02-C022",
+                "quote": "购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》所列安家费在10万元及以上的，分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。\n购房补贴的发放方式为：在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》所列安家费在10万元及以上的，分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。",
+            "citations": [
+              {
+                "chunk_id": "D02-C022",
+                "quote": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          },
+          {
+            "text": "购房补贴的发放方式为：在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。",
+            "citations": [
+              {
+                "chunk_id": "D02-C022",
+                "quote": "购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。",
+                "doc_id": "D02",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "version_date": "2022-10-11"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》所列安家费在10万元及以上的，分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。\n购房补贴的发放方式为：在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:44.930518+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0c6d1020e7533ea5082254c9ba21f2e21c43eb2ef1b458758c0d7732f99e00a7",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "cd3961c0-e309-44b9-9255-3ca1821fd720",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1151,
+            "completion_tokens": 48,
+            "total_tokens": 1199,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 255
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"高层次人才 安家费 10万元 分次发放 购房补贴\",\"doc_ids\":[]},\"reason\":\"检索高层次人才办法中安家费与购房补贴发放条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004029,
+          "seconds": 0.668
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "高层次人才 安家费 10万元 分次发放 购房补贴",
+            "doc_ids": []
+          },
+          "reason": "检索高层次人才办法中安家费与购房补贴发放条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "高层次人才 安家费 10万元 分次发放 购房补贴",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "高层次人才 安家费 10万元 分次发放 购房补贴",
+            "hits": [
+              {
+                "chunk_id": "D02-C022",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第二十一条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  12
+                ],
+                "printed_pages": [
+                  7
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.774695,
+                "lexical_score": 66.1265,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第二十一条 第二十一条 本办法所列的安家费在10万元及以上的，在首聘期协议签订后和\n聘期中期考核合格后分两次发放；购房补贴在鞍山市购买住房时先一次性发放50%，\n剩余部分在服务期内按月发放。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C007",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第六条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  9,
+                  10,
+                  11
+                ],
+                "printed_pages": [
+                  4,
+                  5,
+                  6
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.692555,
+                "lexical_score": 58.655,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第六条 提供公寓住宿，已婚者提供70m2左右周转房1套（购房后交回，免房租\n使用3年）。\n6.根据科研需要，提供专项科研建设经费5万—10万元（哲学社会科学类：3万—5\n万元）。\n第八层次：具有博士学位，学术成果较突出，具有良好的发展潜力。\n1.提供薪酬补贴1000元/月（4年）。\n2.提供安家费5万元。\n3.提供购房补贴10万—20万元。\n4.未婚者提供公寓住宿，已婚者提供70M2左右周转房1套（购房后交回，免房租\n使用3年）。\n5.根据科研需要，提供专项科研建设经费5万元（哲学社会科学类：3万元）。\n第三章 柔性引进高层次人才的层次及待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D02-C008",
+                "doc_id": "D02",
+                "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+                "article": "第七条",
+                "version_date": "2022-10-11",
+                "pdf_pages": [
+                  11
+                ],
+                "printed_pages": [
+                  6
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.570482,
+                "lexical_score": 22.5599,
+                "excerpt": "辽宁科技大学高层次人才引进工作实施办法（2022年版） 第七条 第七条 柔性引进高层次人才的层次标准及待遇：\n1.引进对象\n柔性引进的主要对象是上述第一至四层次的高水平人才以及其他我校学科专业\n建设急需的高层次人才。\n2.聘期内柔性引进人才待遇\n（1）工作酬金：5万—50万元/年（税前），根据实际工作情况确定。\n（2）学校承担来校工作期间发生的差旅费。\n（3）在校工作期间学校提供临时生活住房1套。\n（4）提供独立办公室及办公设备。\n（5）提供必备的科研条件（科研用房、科研设备、科研团队）。\n3.根据工作规划及要求签订协议。未尽事宜，由当事双方协商确定。\n第四章 高层次人才引进程序及考核",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C013",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第十二条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  15,
+                  16
+                ],
+                "printed_pages": [
+                  10,
+                  11
+                ],
+                "score": 0.081667,
+                "semantic_score": 0.542012,
+                "lexical_score": 20.7393,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第十二条 签字后方可办理报销。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D03-C022",
+                "doc_id": "D03",
+                "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+                "article": "第二十一条",
+                "version_date": "2019-07-15",
+                "pdf_pages": [
+                  17
+                ],
+                "printed_pages": [
+                  12
+                ],
+                "score": 0.071795,
+                "semantic_score": 0.527149,
+                "lexical_score": 19.5404,
+                "excerpt": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行） 第二十一条 第二十一条 学校拨付的人才专项经费在5万元及以下的，可不按项目立项管\n理，但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6），人才\n专项经费的执行期、使用范围、拨付及使用按本办法要求执行。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0113,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:45.619191+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a16544c67a94112faaaca424cfa6a3efb7158352c833b70fa2fdd09f34af6853",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "efae0f9c-f79f-4b99-8994-63c7f01f49a3",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2468,
+            "completion_tokens": 36,
+            "total_tokens": 2504,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1316
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D02-C022\"]}, \"reason\": \"读取安家费与购房补贴发放条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007836000000000001,
+          "seconds": 0.6962
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D02-C022"
+            ]
+          },
+          "reason": "读取安家费与购房补贴发放条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D02-C022"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D02",
+              "article": "第二十一条",
+              "text": "第二十一条 本办法所列的安家费在10万元及以上的，在首聘期协议签订后和\n聘期中期考核合格后分两次发放；购房补贴在鞍山市购买住房时先一次性发放50%，\n剩余部分在服务期内按月发放。",
+              "pdf_pages": [
+                12
+              ],
+              "table_ids": [],
+              "chunk_id": "D02-C022",
+              "printed_pages": [
+                7
+              ],
+              "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+              "version_date": "2022-10-11",
+              "previous_chunk_id": "D02-C021",
+              "next_chunk_id": "D02-C023",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:46.323642+00:00",
+          "attempt": 1,
+          "prompt_sha256": "e69810b3baa5c1dcc12f6c1fa400f0079cf181e4bd301028edee44446e83f8a3",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "5a975edd-f053-45b7-a969-9f923aaf95d2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2743,
+            "completion_tokens": 217,
+            "total_tokens": 2960,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 311
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学高层次人才引进工作实施办法（2022年版）》所列安家费在10万元及以上的，分两次发放：首聘期协议签订后发放一次，聘期中期考核合格后再发放一次。\", \"citations\": [{\"chunk_id\": \"D02-C022\", \"quote\": \"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\"}]}, {\"text\": \"购房补贴的发放方式为：在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。\", \"citations\": [{\"chunk_id\": \"D02-C022\", \"quote\": \"购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。\"}]}], \"gaps\": []}, \"reason\": \"第二十一条原文已明确回答两项发放方式\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010833,
+          "seconds": 1.4713
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第二十一条原文已明确回答两项发放方式"
+        }
+      ],
+      "read_ids": [
+        "D02-C022"
+      ],
+      "first_hits": [
+        "D02-C022",
+        "D02-C007",
+        "D02-C008",
+        "D03-C013",
+        "D03-C022"
+      ],
+      "seconds": 2.8725,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.8726,
+  "model_calls": 3,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T02:11:47.796110+00:00"
+}

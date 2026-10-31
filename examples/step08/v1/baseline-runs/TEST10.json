@@ -1,0 +1,477 @@
+{
+  "id": "TEST10",
+  "category": "normal",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "仅按2023请假补充规定，配偶父母亡故可请丧假吗？基本天数、外地路程与审批如何处理？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "丧假基本天数为3日。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "需到外地处理丧事的，可加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "需到外地处理丧事的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "丧假（含路程假）由所在单位审批，报人事处备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "丧假（含路程假）由所在单位审批，报人事处备案。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。\n丧假基本天数为3日。\n需到外地处理丧事的，可加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。\n丧假（含路程假）由所在单位审批，报人事处备案。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "丧假基本天数为3日。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "需到外地处理丧事的，可加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "需到外地处理丧事的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "丧假（含路程假）由所在单位审批，报人事处备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C011",
+                "quote": "丧假（含路程假）由所在单位审批，报人事处备案。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。\n丧假基本天数为3日。\n需到外地处理丧事的，可加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。\n丧假（含路程假）由所在单位审批，报人事处备案。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "仅按2023请假补充规定，配偶父母亡故可请丧假吗？基本天数、外地路程与审批如何处理？"
+          },
+          "result": {
+            "ok": true,
+            "query": "仅按2023请假补充规定，配偶父母亡故可请丧假吗？基本天数、外地路程与审批如何处理？",
+            "hits": [
+              {
+                "chunk_id": "D20-C011",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.739622,
+                "lexical_score": 100.6847,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十条 第十条 教职工丧假具体要求及待遇如下：\n教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。需到外地处理丧事\n的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。丧假（含路\n程假）由所在单位审批，报人事处备案。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C008",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第七条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  169
+                ],
+                "printed_pages": [
+                  164
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.704927,
+                "lexical_score": 43.7031,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第七条 第七条 享受婚、丧假的范围及期限\n（一）教职工结婚给予10日婚假。教职工双方不在一地工作的，婚假期间可根据\n路程远近给予路程假。\n（二）教职工的直系亲属（配偶、子女、父母、公婆、岳父母）死亡，给予3日丧假。若\n在外地的直系亲属死亡，需要教职工本人去料理丧事的，可根据路程远近给予路\n程假。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C013",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十二条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.66265,
+                "lexical_score": 34.3496,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十二条 第十二条 教职工探亲假（含独生子女陪护父母假）具体要求及待遇如下：\n教职工可在公休日和寒暑期间探望父母或配偶，学校不在工作日设探亲假。确\n需在工作日进行的，按事假处理。\n与配偶、父母不住同一城市，又不能在公休假日团聚的，可享受以下探亲待遇：未\n婚教职工探望父母，每年报销一次往返路费；已婚教职工与配偶异地居住的，探望配\n偶，每年报销一次往返路费；已婚教职工探望父母，每4年报销一次往返路费中超出个\n人基本工资30%的部分。教职工探望父母或配偶，均以定居地（即户口所在地）为准。\n第四章 旷工认定及相关处理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C009",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第八条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  169
+                ],
+                "printed_pages": [
+                  164
+                ],
+                "score": 0.078462,
+                "semantic_score": 0.650011,
+                "lexical_score": 29.7592,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第八条 第八条 婚、丧假的审批及待遇\n（一）教职工的婚、丧假由所在单位主要负责人审批，报人事处备案。\n（二）教职工在婚、丧假和路程假期间，享受在岗教职工的同等待遇。逾期不再享\n受上述待遇，按事假处理。\n第四章 生育假管理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C013",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第十二条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "score": 0.077381,
+                "semantic_score": 0.650264,
+                "lexical_score": 25.8312,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第十二条 第十二条 探亲假的管理\n工作满1年的固定教职工按照国家、省相关规定可给予探亲假，探亲假应利用寒\n暑假、公休假日进行，特殊情况不能在寒暑假、公休假日进行的，按照事假有关规定履\n行审批程序。\n（一）探配偶、未婚教职工探父母：与配偶或未婚教职工与父母不住在一起又不能\n在公休假日团聚的，每年可给予1次探亲假，车船费报销，报销标准按有关规定执行。\n（二）已婚教职工探父母：已婚教职工与父母不住在一起又不能在公休假日团聚\n的，每4年可给予1次探亲假，车船费在本人基本工资30%以内的自理，超过部分报\n销，报销标准按有关规定执行。\n第七章 考勤管理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0141,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C011"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第十条",
+              "text": "第十条 教职工丧假具体要求及待遇如下：\n教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。需到外地处理丧事\n的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。丧假（含路\n程假）由所在单位审批，报人事处备案。",
+              "pdf_pages": [
+                173
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C011",
+              "printed_pages": [
+                168
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C010",
+              "next_chunk_id": "D20-C012",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C008"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第七条",
+              "text": "第七条 享受婚、丧假的范围及期限\n（一）教职工结婚给予10日婚假。教职工双方不在一地工作的，婚假期间可根据\n路程远近给予路程假。\n（二）教职工的直系亲属（配偶、子女、父母、公婆、岳父母）死亡，给予3日丧假。若\n在外地的直系亲属死亡，需要教职工本人去料理丧事的，可根据路程远近给予路\n程假。",
+              "pdf_pages": [
+                169
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C008",
+              "printed_pages": [
+                164
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C007",
+              "next_chunk_id": "D19-C009",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C013"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第十二条",
+              "text": "第十二条 教职工探亲假（含独生子女陪护父母假）具体要求及待遇如下：\n教职工可在公休日和寒暑期间探望父母或配偶，学校不在工作日设探亲假。确\n需在工作日进行的，按事假处理。\n与配偶、父母不住同一城市，又不能在公休假日团聚的，可享受以下探亲待遇：未\n婚教职工探望父母，每年报销一次往返路费；已婚教职工与配偶异地居住的，探望配\n偶，每年报销一次往返路费；已婚教职工探望父母，每4年报销一次往返路费中超出个\n人基本工资30%的部分。教职工探望父母或配偶，均以定居地（即户口所在地）为准。\n第四章 旷工认定及相关处理",
+              "pdf_pages": [
+                174
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C013",
+              "printed_pages": [
+                169
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C012",
+              "next_chunk_id": "D20-C014",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C009"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第八条",
+              "text": "第八条 婚、丧假的审批及待遇\n（一）教职工的婚、丧假由所在单位主要负责人审批，报人事处备案。\n（二）教职工在婚、丧假和路程假期间，享受在岗教职工的同等待遇。逾期不再享\n受上述待遇，按事假处理。\n第四章 生育假管理",
+              "pdf_pages": [
+                169
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C009",
+              "printed_pages": [
+                164
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C008",
+              "next_chunk_id": "D19-C010",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C013"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第十二条",
+              "text": "第十二条 探亲假的管理\n工作满1年的固定教职工按照国家、省相关规定可给予探亲假，探亲假应利用寒\n暑假、公休假日进行，特殊情况不能在寒暑假、公休假日进行的，按照事假有关规定履\n行审批程序。\n（一）探配偶、未婚教职工探父母：与配偶或未婚教职工与父母不住在一起又不能\n在公休假日团聚的，每年可给予1次探亲假，车船费报销，报销标准按有关规定执行。\n（二）已婚教职工探父母：已婚教职工与父母不住在一起又不能在公休假日团聚\n的，每4年可给予1次探亲假，车船费在本人基本工资30%以内的自理，超过部分报\n销，报销标准按有关规定执行。\n第七章 考勤管理",
+              "pdf_pages": [
+                170
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C013",
+              "printed_pages": [
+                165
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C012",
+              "next_chunk_id": "D19-C014",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:39.507446+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b1f2c9cad1863014cbdf66b7004b2b28b3aeccdaaa4c9e5402509f7702b1c4dd",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "b19096a5-8e26-414d-b665-f0105c89f873",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3096,
+            "completion_tokens": 267,
+            "total_tokens": 3363,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 2712
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。\",\"citations\":[{\"chunk_id\":\"D20-C011\",\"quote\":\"教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。\"}]},{\"text\":\"丧假基本天数为3日。\",\"citations\":[{\"chunk_id\":\"D20-C011\",\"quote\":\"教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。\"}]},{\"text\":\"需到外地处理丧事的，可加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。\",\"citations\":[{\"chunk_id\":\"D20-C011\",\"quote\":\"需到外地处理丧事的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。\"}]},{\"text\":\"丧假（含路程假）由所在单位审批，报人事处备案。\",\"citations\":[{\"chunk_id\":\"D20-C011\",\"quote\":\"丧假（含路程假）由所在单位审批，报人事处备案。\"}]}],\"gaps\":[]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0012491999999999998,
+          "seconds": 1.5341
+        }
+      ],
+      "read_ids": [
+        "D20-C011",
+        "D19-C008",
+        "D20-C013",
+        "D19-C009",
+        "D19-C013"
+      ],
+      "first_hits": [
+        "D20-C011",
+        "D19-C008",
+        "D20-C013",
+        "D19-C009",
+        "D19-C013"
+      ],
+      "seconds": 1.5567,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 1.5568,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-31T02:11:41.043243+00:00"
+}

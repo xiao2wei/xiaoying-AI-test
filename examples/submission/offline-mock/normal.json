@@ -1,0 +1,184 @@
+{
+  "mode": "agent",
+  "question": "读取科研经费条款",
+  "history": [],
+  "output": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+        "citations": [
+          {
+            "chunk_id": "D03-C008",
+            "quote": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第七条",
+            "doc_id": "D03",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              8
+            ],
+            "version_date": "2019-07-15"
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "answer": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围"
+  },
+  "raw_final": {
+    "status": "answered",
+    "claims": [
+      {
+        "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+        "citations": [
+          {
+            "chunk_id": "D03-C008",
+            "quote": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第七条",
+            "doc_id": "D03",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              8
+            ],
+            "version_date": "2019-07-15"
+          }
+        ]
+      }
+    ],
+    "gaps": [],
+    "answer": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围"
+  },
+  "validation_errors": [],
+  "trace": [
+    {
+      "kind": "mock_model",
+      "purpose": "agent",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 1,
+      "action": "search",
+      "arguments": {
+        "query": "科研经费执行期限"
+      },
+      "reason": ""
+    },
+    {
+      "kind": "tool",
+      "name": "search",
+      "arguments": {
+        "query": "科研经费执行期限"
+      },
+      "result": {
+        "ok": true,
+        "query": "科研经费执行期限",
+        "hits": [
+          {
+            "chunk_id": "D03-C008",
+            "doc_id": "D03",
+            "excerpt": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围"
+          }
+        ],
+        "mock": true
+      },
+      "seconds": 0.0,
+      "attempt_number": 1
+    },
+    {
+      "kind": "mock_model",
+      "purpose": "agent",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 2,
+      "action": "read",
+      "arguments": {
+        "chunk_ids": [
+          "D03-C008"
+        ]
+      },
+      "reason": ""
+    },
+    {
+      "kind": "tool",
+      "name": "read",
+      "arguments": {
+        "chunk_id": "D03-C008"
+      },
+      "result": {
+        "ok": true,
+        "chunk": {
+          "doc_id": "D03",
+          "article": "第七条",
+          "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围",
+          "pdf_pages": [
+            13
+          ],
+          "table_ids": [],
+          "chunk_id": "D03-C008",
+          "printed_pages": [
+            8
+          ],
+          "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+          "version_date": "2019-07-15",
+          "previous_chunk_id": "D03-C007",
+          "next_chunk_id": "D03-C009",
+          "related_table_chunks": []
+        },
+        "tables": []
+      },
+      "seconds": 0.0,
+      "attempt_number": 2
+    },
+    {
+      "kind": "mock_model",
+      "purpose": "agent",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 3,
+      "action": "finish",
+      "arguments": {},
+      "reason": "Mock：返回实际读取片段，仅验证引用流程"
+    },
+    {
+      "kind": "mock_model",
+      "purpose": "agent_review",
+      "real_api": false,
+      "note": "预设动作，只验证流程"
+    },
+    {
+      "kind": "decision",
+      "step": 4,
+      "action": "finish",
+      "arguments": {},
+      "reason": "Mock：返回实际读取片段，仅验证引用流程"
+    }
+  ],
+  "read_ids": [
+    "D03-C008"
+  ],
+  "first_hits": [
+    "D03-C008"
+  ],
+  "seconds": 0.0003,
+  "model_calls": 0,
+  "tool_calls": 2,
+  "real_model": false,
+  "fault": {},
+  "mock": true,
+  "quality_evidence": false,
+  "warning": "OFFLINE MOCK：预设模型动作及检索候选；工具读取、校验和上限真实执行，不证明真实模型决策效果。"
+}

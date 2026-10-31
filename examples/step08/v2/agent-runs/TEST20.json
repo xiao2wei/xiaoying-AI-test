@@ -1,0 +1,95 @@
+{
+  "id": "TEST20",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "请给出2026年新发布的在职读博补贴标准，不要使用2023版。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "JSONDecodeError"
+        ],
+        "answer": "JSONDecodeError"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:20:59.426013+00:00",
+          "attempt": 1,
+          "prompt_sha256": "af6fb34897353f60f4a9e78b2fa84ddec8ea18b43539bc3de43c4822e7874cb3",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "131c9cd7-9715-4302-9ebd-5e070179c326",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1732,
+            "completion_tokens": 46,
+            "total_tokens": 1778,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 196
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"在职读博 补贴标准 2026 新发布\",\"doc_ids\":[]},\"reason\":\"查找2026年在职读博补贴标准，排除2023版\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005748000000000001,
+          "error": "JSONDecodeError",
+          "seconds": 0.7707
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:21:00.197059+00:00",
+          "attempt": 2,
+          "prompt_sha256": "a161b24ae5ddbea5aa3a4cf4a7d82d13c99b83a05f4957284c577873f46507c3",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "9c219127-fd30-4681-909b-91d24f3bcd34",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1826,
+            "completion_tokens": 41,
+            "total_tokens": 1867,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 162
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"在职攻读博士 补贴 标准 2026\",\"doc_ids\":[]},\"reason\":\"检索2026年在职读博补贴标准相关制度\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000597,
+          "error": "JSONDecodeError",
+          "seconds": 1.4535
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.2481,
+      "model_calls": 2,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 2.2486,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T03:21:01.652585+00:00"
+}

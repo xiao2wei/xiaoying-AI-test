@@ -1,0 +1,95 @@
+{
+  "id": "TEST36",
+  "category": "tool_failure",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "从事特种作业的临时用工人员有什么额外资格要求？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。"
+        ],
+        "answer": "制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。"
+        ],
+        "answer": "制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "从事特种作业的临时用工人员有什么额外资格要求？"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:03:49.822780+00:00",
+          "attempt": 1,
+          "prompt_sha256": "576720eda374423b265fa9c66ba9ed720d3642e3b5d1376f4b03c14846e2c3d5",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "6df4a78b-0ad5-4df7-9b7f-94769b3c521a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1115,
+            "completion_tokens": 83,
+            "total_tokens": 1198,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 219
+          },
+          "content": "{\"status\":\"tool_error\",\"claims\":[],\"gaps\":[\"制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 8.533799999999999e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.2001
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 1.2428,
+      "model_calls": 1,
+      "tool_calls": 1,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 1.2429,
+  "model_calls": 1,
+  "tool_calls": 1,
+  "created_at": "2026-10-31T04:03:51.023897+00:00"
+}

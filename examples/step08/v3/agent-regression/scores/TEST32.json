@@ -1,0 +1,190 @@
+{
+  "id": "TEST32",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "兼职辅导员工作量按专职辅导员工作量的三分之一核定",
+            "reason": "实际答案明确表述工作量按专职的三分之一核定，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "按每班（40人左右）每学年60学时核定",
+            "reason": "实际答案明确表述每班约40人每学年60学时，与要点一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "原则上不得超过2个",
+            "reason": "实际答案明确表述原则不超过2班，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "兼职辅导员工作量按专职辅导员工作量的三分之一核定",
+            "answer_span": "兼职辅导员工作量按专职辅导员工作量的三分之一核定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C014和D07-C010均明确包含该表述，且文档已读取。"
+          },
+          {
+            "text": "兼职辅导员工作量按每班40人左右核定",
+            "answer_span": "每班（40人左右）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C014和D07-C021均包含“每班（40人左右）”，支持该事实。"
+          },
+          {
+            "text": "兼职辅导员工作量按每学年60学时核定",
+            "answer_span": "每学年60学时",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C014和D07-C021均包含“每学年60学时”，支持该事实。"
+          },
+          {
+            "text": "兼职辅导员所带学生班级原则上不得超过2个",
+            "answer_span": "兼职辅导员所带学生班级原则上不得超过2个",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C014和D07-C021均包含“原则上所带学生班级不得超过2个”，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确涵盖了全部三个必需要点，且每个要点均有可靠引用支持，回答正确、动作合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:43.872154+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4827221837bcf65b5b3edbc118e33d17bc27bac33620f9ff62d15ef46df42bd7",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "972f51c7-6d70-430e-96c0-56d0da37a53d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2913,
+            "completion_tokens": 4432,
+            "total_tokens": 7345,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3839
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1889
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"兼职辅导员工作量按专职辅导员工作量的三分之一核定\",\n      \"reason\": \"实际答案明确表述工作量按专职的三分之一核定，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"按每班（40人左右）每学年60学时核定\",\n      \"reason\": \"实际答案明确表述每班约40人每学年60学时，与要点一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"原则上不得超过2个\",\n      \"reason\": \"实际答案明确表述原则不超过2班，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"兼职辅导员工作量按专职辅导员工作量的三分之一核定\",\n      \"answer_span\": \"兼职辅导员工作量按专职辅导员工作量的三分之一核定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C014和D07-C010均明确包含该表述，且文档已读取。\"\n    },\n    {\n      \"text\": \"兼职辅导员工作量按每班40人左右核定\",\n      \"answer_span\": \"每班（40人左右）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C014和D07-C021均包含“每班（40人左右）”，支持该事实。\"\n    },\n    {\n      \"text\": \"兼职辅导员工作量按每学年60学时核定\",\n      \"answer_span\": \"每学年60学时\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C014和D07-C021均包含“每学年60学时”，支持该事实。\"\n    },\n    {\n      \"text\": \"兼职辅导员所带学生班级原则上不得超过2个\",\n      \"answer_span\": \"兼职辅导员所带学生班级原则上不得超过2个\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C014和D07-C021均包含“原则上所带学生班级不得超过2个”，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确涵盖了全部三个必需要点，且每个要点均有可靠引用支持，回答正确、动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.021395880000000003,
+          "seconds": 40.393
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "兼职辅导员的工作年限至少为1年",
+            "reason": "实际回答明确表达工作年限至少为1年，满足要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "兼职辅导员的工作年限至少为1年",
+            "answer_span": "兼职辅导员的工作年限至少为1年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该表述，且实际读取了包含该表述的文档。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确，直接给出至少1年，引用了兼职辅导员实施细则和辅导员队伍建设实施办法，且已读取对应文档，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:38.451968+00:00",
+          "attempt": 1,
+          "prompt_sha256": "01fb67baa19446b50ee82fdae4f1a2f516ab4dd79a812a942fe13ef75fac4293",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "9f688418-15f7-4e54-92fd-1b09e1b8d4b7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3251,
+            "completion_tokens": 1092,
+            "total_tokens": 4343,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 877
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2227
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"兼职辅导员的工作年限至少为1年\",\n      \"reason\": \"实际回答明确表达工作年限至少为1年，满足要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"兼职辅导员的工作年限至少为1年\",\n      \"answer_span\": \"兼职辅导员的工作年限至少为1年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该表述，且实际读取了包含该表述的文档。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确，直接给出至少1年，引用了兼职辅导员实施细则和辅导员队伍建设实施办法，且已读取对应文档，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008615639999999999,
+          "seconds": 10.5551
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "719e77860be7b3f71def93be93af143fc07e046fb928b0f049e281d43dea9f0b"
+}

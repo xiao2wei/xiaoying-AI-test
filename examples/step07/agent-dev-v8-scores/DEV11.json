@@ -1,0 +1,147 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "reason": "明确表达了经费预算原则上不予调整。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请",
+            "reason": "明确表达了确有特殊情况需要重大调整时由项目负责人申请。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "经所在二级教学（科研）机构签署意见后",
+            "reason": "明确表达了所在二级机构签署意见。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "reason": "明确表达了提交人才工作领导小组办公室审批后执行。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "不能自行重大调整",
+            "answer_span": "不能自行重大调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该结论由所引第十五条关于原则上不予调整及审批流程的规定支持。"
+          },
+          {
+            "text": "人才专项经费预算原则上不予调整",
+            "answer_span": "人才专项经费预算原则上不予调整",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款明确包含该内容。"
+          },
+          {
+            "text": "只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请",
+            "answer_span": "只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款支持该条件性申请要求。"
+          },
+          {
+            "text": "经所在二级教学（科研）机构签署意见",
+            "answer_span": "经所在二级教学（科研）机构签署意见",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款明确包含该签署要求。"
+          },
+          {
+            "text": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "answer_span": "提交校人才工作领导小组办公室审批通过后方可执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款明确包含该审批要求。"
+          },
+          {
+            "text": "上述规定适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费",
+            "answer_span": "上述规定适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二条支持适用范围。"
+          },
+          {
+            "text": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照该办法执行",
+            "answer_span": "上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照该办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二条支持该执行规定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖所有必需要点，引用的条款与实际读取的原文一致，无错误引用或严重问题。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:11:29.065391+00:00",
+          "attempt": 1,
+          "prompt_sha256": "730364f18a41186abe7aedee0b1fec3940d6aca999831031d7cf8a0d0b9e98a4",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "fb1fd9a6-40c6-4baf-beb2-ab2f9e0deafe",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2365,
+            "completion_tokens": 3802,
+            "total_tokens": 6167,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2919
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1341
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"reason\": \"明确表达了经费预算原则上不予调整。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请\",\n      \"reason\": \"明确表达了确有特殊情况需要重大调整时由项目负责人申请。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见后\",\n      \"reason\": \"明确表达了所在二级机构签署意见。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"reason\": \"明确表达了提交人才工作领导小组办公室审批后执行。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"不能自行重大调整\",\n      \"answer_span\": \"不能自行重大调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该结论由所引第十五条关于原则上不予调整及审批流程的规定支持。\"\n    },\n    {\n      \"text\": \"人才专项经费预算原则上不予调整\",\n      \"answer_span\": \"人才专项经费预算原则上不予调整\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确包含该内容。\"\n    },\n    {\n      \"text\": \"只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请\",\n      \"answer_span\": \"只有项目实施过程中研究内容或研究计划有特殊情况、确实需要重大调整时，才由项目负责人及时提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款支持该条件性申请要求。\"\n    },\n    {\n      \"text\": \"经所在二级教学（科研）机构签署意见\",\n      \"answer_span\": \"经所在二级教学（科研）机构签署意见\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确包含该签署要求。\"\n    },\n    {\n      \"text\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"answer_span\": \"提交校人才工作领导小组办公室审批通过后方可执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用条款明确包含该审批要求。\"\n    },\n    {\n      \"text\": \"上述规定适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费\",\n      \"answer_span\": \"上述规定适用于学校预算安排拨付给引进和培养的各类各层次人才用于开展科研工作的科研建设专项经费\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第二条支持适用范围。\"\n    },\n    {\n      \"text\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照该办法执行\",\n      \"answer_span\": \"上级人力资源管理部门、教育管理部门下达的人才项目，无明确指导性文件要求的，经费管理依照该办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第二条支持该执行规定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖所有必需要点，引用的条款与实际读取的原文一致，无错误引用或严重问题。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01817772,
+          "seconds": 34.9637
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "535b04d886d3ee05c6a9cffc8de7c5c68ce468e0c420f7d659a82b8673e1494c"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "STAB-TEST02-R3",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "答案明确说明满10年发80%"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "答案明确说明不满10年发70%"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "比例明确限定在岗位工资、薪级工资和基础绩效三项，未泛化所有收入"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "工作年限满10年的，病假累计超过6个月，发岗位工资、薪级工资和基础绩效的80%",
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote明确包含此比例，且实际读取原文支持"
+          },
+          {
+            "text": "工作年限不满10年的，病假累计超过6个月，发岗位工资、薪级工资和基础绩效的70%",
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote明确包含此比例，且实际读取原文支持"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了2023年补充规定中病假累计超过6个月时的工资发放比例，引用正确，范围明确，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:28:00.713167+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a84c2cc41bdd39baf836f95489d15d00740b50080da54dde60a0f605f8338cc9",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1c2b2401-3150-4027-a3b0-e296e642245a",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2475,
+            "completion_tokens": 2602,
+            "total_tokens": 5077,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2130
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 939
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"答案明确说明满10年发80%\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"reason\": \"答案明确说明不满10年发70%\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"比例明确限定在岗位工资、薪级工资和基础绩效三项，未泛化所有收入\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"工作年限满10年的，病假累计超过6个月，发岗位工资、薪级工资和基础绩效的80%\",\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote明确包含此比例，且实际读取原文支持\"\n    },\n    {\n      \"text\": \"工作年限不满10年的，病假累计超过6个月，发岗位工资、薪级工资和基础绩效的70%\",\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote明确包含此比例，且实际读取原文支持\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了2023年补充规定中病假累计超过6个月时的工资发放比例，引用正确，范围明确，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01357092,
+          "seconds": 21.436
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "aa385eb1a667b76dc4ac4b2c04564ed1cee0b0e365ca5a1dbe3fec6b8731927a"
+}

@@ -1,0 +1,823 @@
+{
+  "id": "STAB-TEST31-R2",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "临时用工是事业编制内用工吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。",
+            "citations": [
+              {
+                "chunk_id": "D23-C003",
+                "quote": "第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。",
+            "citations": [
+              {
+                "chunk_id": "D23-C003",
+                "quote": "第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:40.545350+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9b257ec4ee0c0def017ccfb79b4439aa33faa6330ad49f770f6b5feaa60a62af",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "6c0360cc-5023-45fa-b0e7-4851969426e9",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1722,
+            "completion_tokens": 33,
+            "total_tokens": 1755,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 186
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"临时用工 事业编制 用工性质 规定\"},\"reason\":\"查找临时用工与事业编制关系的制度原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005562000000000001,
+          "seconds": 0.7228
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 事业编制 用工性质 规定"
+          },
+          "reason": "查找临时用工与事业编制关系的制度原文"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 事业编制 用工性质 规定"
+          },
+          "result": {
+            "ok": true,
+            "query": "临时用工 事业编制 用工性质 规定",
+            "hits": [
+              {
+                "chunk_id": "D23-C003",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.714081,
+                "lexical_score": 48.4998,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二条 第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含\n已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同\n制用工形式。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C022",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十一条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.710491,
+                "lexical_score": 29.3801,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十一条 第二十一条 学校直属各单位在申请设置临时用工岗位时应本着厉行节约的原\n则，精简编制、科学设岗。经人事处审核同意设岗并聘用人员后，要组织好临时用工\n人员的生产劳动，如因工作任务变更需要减少临时用工时，应及时通报人事处，以便\n及时作出调整。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C006",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第五条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.081169,
+                "semantic_score": 0.682105,
+                "lexical_score": 36.2474,
+                "excerpt": "辽宁科技大学临时用工管理办法 第五条 第五条 学校根据直属单位人员编制、工作的性质和任务设置临时用工岗位。\n学校缺编单位或为完成特定性、临时性、突击性、阶段性、季节性工作任务的单位，根\n据工作需要可以申请设置临时用工岗位。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C017",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十六条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181
+                ],
+                "printed_pages": [
+                  176
+                ],
+                "score": 0.07125,
+                "semantic_score": 0.673579,
+                "lexical_score": 27.5365,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十六条 第十六条 经过学校人事处审查合格的临时用工人员可办理聘用手续，填写由\n学校统一印制的《临时用工审批表》，建立临时用工人员档案，签订临时用工合同。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C028",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十七条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  182
+                ],
+                "printed_pages": [
+                  177
+                ],
+                "score": 0.070303,
+                "semantic_score": 0.685964,
+                "lexical_score": 25.7989,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十七条 第二十七条 学校直属单位在设置和使用临时用工过程中要严肃纪律、严格管\n理，严禁虚报冒领和克扣临时用工人员工资等舞弊行为。对违反规定的单位，学校将\n对单位主要领导和直接责任者给予纪律处分，直至追究法律责任。\n第六章 附 则",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0074,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:41.301421+00:00",
+          "attempt": 1,
+          "prompt_sha256": "45020ac1590ac2b1f5b0f3127275598f87faf3046ebc2c13034ae4e32c389c50",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "cb08b716-a052-44c8-98c8-cc4b38f3d260",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2732,
+            "completion_tokens": 39,
+            "total_tokens": 2771,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 172
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D23-C003\"]}, \"reason\": \"读取临时用工定义条款，确认是否属于事业编制内用工\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008664,
+          "seconds": 0.7686
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D23-C003"
+            ]
+          },
+          "reason": "读取临时用工定义条款，确认是否属于事业编制内用工"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C003"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第二条",
+              "text": "第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含\n已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同\n制用工形式。",
+              "pdf_pages": [
+                180
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C003",
+              "printed_pages": [
+                175
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C002",
+              "next_chunk_id": "D23-C004",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:42.095563+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aed17f37aebdfb6b5a190066b864cc3a9e7a4a5cddc8177a19ced4b2ef972418",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "82a80535-b691-45f2-a90b-dedf1d1ab16e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2992,
+            "completion_tokens": 162,
+            "total_tokens": 3154,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 304
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"不是。按《辽宁科技大学临时用工管理办法》第二条，临时用工是学校在事业编制之外、聘用社会人员（含已退休人员）完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。\", \"citations\": [{\"chunk_id\": \"D23-C003\", \"quote\": \"第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。\"}]}], \"gaps\": []}, \"reason\": \"第二条明确临时用工在事业编制之外，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.001092,
+          "seconds": 1.4958
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第二条明确临时用工在事业编制之外，足以回答"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:43.619344+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f69dde15fa7f110bf818232d0ae49f5cf52a51a6abd02b13797cc9415d2d2a2d",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "03474388-c679-42d2-9e08-0c2c619ef3fd",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3322,
+            "completion_tokens": 327,
+            "total_tokens": 3649,
+            "prompt_tokens_details": {
+              "cached_tokens": 2560
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 171
+            },
+            "prompt_cache_hit_tokens": 2560,
+            "prompt_cache_miss_tokens": 762
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。\",\"citations\":[{\"chunk_id\":\"D23-C003\",\"quote\":\"第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。\"}]}],\"gaps\":[]},\"reason\":\"第二条明确临时用工在事业编制之外，已完整回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.001389,
+          "seconds": 2.1583
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第二条明确临时用工在事业编制之外，已完整回答"
+        }
+      ],
+      "read_ids": [
+        "D23-C003"
+      ],
+      "first_hits": [
+        "D23-C003",
+        "D23-C022",
+        "D23-C006",
+        "D23-C017",
+        "D23-C028"
+      ],
+      "seconds": 5.2584,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那17岁的人可以受聘这种岗位吗？",
+      "history": [
+        {
+          "role": "user",
+          "content": "临时用工是事业编制内用工吗？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"answered\", \"claims\": [{\"text\": \"不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。\", \"citations\": [{\"chunk_id\": \"D23-C003\", \"quote\": \"第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。\", \"title\": \"辽宁科技大学临时用工管理办法\", \"article\": \"第二条\", \"doc_id\": \"D23\", \"pdf_pages\": [180], \"printed_pages\": [175], \"version_date\": \"2021-05-20\"}]}], \"gaps\": [], \"answer\": \"不是事业编制内用工。按《辽宁科技大学临时用工管理办法》第二条，本办法所称临时用工，是学校在事业编制之外聘用社会人员（含已退休人员），完成临时性、阶段性、辅助性或特殊性工作任务的短期合同制用工形式。\"}"
+        }
+      ],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "不可以受聘《辽宁科技大学临时用工管理办法》所称的临时用工岗位。该办法第八条规定，禁止聘用未满十八周岁的未成年人；17岁属于未满十八周岁，因此不在可聘用范围。",
+            "citations": [
+              {
+                "chunk_id": "D23-C009",
+                "quote": "第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第八条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "除年龄下限外，该办法第九条还规定临时用工聘用必须同时符合以下条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "第九条 临时用工的聘用必须符合下列条件：（一）坚持四项基本原则，恪守社会公德。（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。（四）具备岗位要求的工作技能，并能坚持正常工作。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "不可以受聘《辽宁科技大学临时用工管理办法》所称的临时用工岗位。该办法第八条规定，禁止聘用未满十八周岁的未成年人；17岁属于未满十八周岁，因此不在可聘用范围。\n除年龄下限外，该办法第九条还规定临时用工聘用必须同时符合以下条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "不可以受聘《辽宁科技大学临时用工管理办法》所称的临时用工岗位。该办法第八条规定，禁止聘用未满十八周岁的未成年人；17岁属于未满十八周岁，因此不在可聘用范围。",
+            "citations": [
+              {
+                "chunk_id": "D23-C009",
+                "quote": "第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第八条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          },
+          {
+            "text": "除年龄下限外，该办法第九条还规定临时用工聘用必须同时符合以下条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。",
+            "citations": [
+              {
+                "chunk_id": "D23-C010",
+                "quote": "第九条 临时用工的聘用必须符合下列条件：（一）坚持四项基本原则，恪守社会公德。（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。（四）具备岗位要求的工作技能，并能坚持正常工作。",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "doc_id": "D23",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "version_date": "2021-05-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "不可以受聘《辽宁科技大学临时用工管理办法》所称的临时用工岗位。该办法第八条规定，禁止聘用未满十八周岁的未成年人；17岁属于未满十八周岁，因此不在可聘用范围。\n除年龄下限外，该办法第九条还规定临时用工聘用必须同时符合以下条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:45.803400+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bfea49083d8de12317c1091f9f5fbd6d39a4fa9487223543a3ac925fccf1705c",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "ad048fbd-e4bc-4f5e-bf2c-ca8a97b49987",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1989,
+            "completion_tokens": 41,
+            "total_tokens": 2030,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 325
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"临时用工 聘用条件 年龄 未成年 18周岁\",\"doc_ids\":[]},\"reason\":\"查找临时用工岗位的年龄与聘用资格条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006458999999999999,
+          "seconds": 0.8018
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 聘用条件 年龄 未成年 18周岁",
+            "doc_ids": []
+          },
+          "reason": "查找临时用工岗位的年龄与聘用资格条件"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 聘用条件 年龄 未成年 18周岁",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "临时用工 聘用条件 年龄 未成年 18周岁",
+            "hits": [
+              {
+                "chunk_id": "D23-C009",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第八条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.746314,
+                "lexical_score": 42.5397,
+                "excerpt": "辽宁科技大学临时用工管理办法 第八条 第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C010",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第九条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.71913,
+                "lexical_score": 34.0181,
+                "excerpt": "辽宁科技大学临时用工管理办法 第九条 第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C007",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第六条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.680261,
+                "lexical_score": 31.4607,
+                "excerpt": "辽宁科技大学临时用工管理办法 第六条 第六条 申请设置临时用工岗位，必须履行下列审批程序：\n（一）学校直属单位提出设岗申请。\n（二）人事处核准同意。\n（三）分管副校长审查同意。\n（四）校长批准。\n第三章 临时用工的聘用条件",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C024",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十三条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  182
+                ],
+                "printed_pages": [
+                  177
+                ],
+                "score": 0.076923,
+                "semantic_score": 0.673837,
+                "lexical_score": 22.3287,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十三条 第二十三条 学校直属单位未经学校允许不得私自设置临时用工岗位和聘用未\n与学校签订合同的临时用工人员。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C012",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第十一条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  180
+                ],
+                "printed_pages": [
+                  175
+                ],
+                "score": 0.076812,
+                "semantic_score": 0.696009,
+                "lexical_score": 20.7984,
+                "excerpt": "辽宁科技大学临时用工管理办法 第十一条 第十一条 临时用工人员的聘用过程中要坚持公平、公正的原则，根据岗位需\n要，择优聘用。优先选用有社会保险保障人员。一人不能同时被两个以上岗位聘用。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0087,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:46.639807+00:00",
+          "attempt": 1,
+          "prompt_sha256": "96e4b591a93ffa6d54f1540723e4b950114b9694128eeb08419ec5079f4b9f54",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "1bf5c243-6a7e-4850-9c70-558cb1e94d18",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2972,
+            "completion_tokens": 43,
+            "total_tokens": 3015,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 1052
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D23-C009\", \"D23-C010\"]}, \"reason\": \"读取禁止聘用未成年人的条款及聘用条件条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009432,
+          "seconds": 0.9152
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D23-C009",
+              "D23-C010"
+            ]
+          },
+          "reason": "读取禁止聘用未成年人的条款及聘用条件条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C009"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第八条",
+              "text": "第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。",
+              "pdf_pages": [
+                180
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C009",
+              "printed_pages": [
+                175
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C008",
+              "next_chunk_id": "D23-C010",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D23-C010"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D23",
+              "article": "第九条",
+              "text": "第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。",
+              "pdf_pages": [
+                180
+              ],
+              "table_ids": [],
+              "chunk_id": "D23-C010",
+              "printed_pages": [
+                175
+              ],
+              "title": "辽宁科技大学临时用工管理办法",
+              "version_date": "2021-05-20",
+              "previous_chunk_id": "D23-C009",
+              "next_chunk_id": "D23-C011",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:47.584781+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a4d34d9b13c4feb63e7c7440119e31c1604536cad29b629d6970f3d7ef4e4032",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "a98ecee9-0be8-4fa0-8edb-85c726c504b2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3426,
+            "completion_tokens": 485,
+            "total_tokens": 3911,
+            "prompt_tokens_details": {
+              "cached_tokens": 2944
+            },
+            "prompt_cache_hit_tokens": 2944,
+            "prompt_cache_miss_tokens": 482
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"不可以。《辽宁科技大学临时用工管理办法》第八条明确禁止聘用未满十八周岁的未成年人，因此17岁人员不能受聘临时用工岗位。\", \"citations\": [{\"chunk_id\": \"D23-C009\", \"quote\": \"第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。\", \"title\": \"辽宁科技大学临时用工管理办法\", \"article\": \"第八条\", \"doc_id\": \"D23\", \"pdf_pages\": [180], \"printed_pages\": [175], \"version_date\": \"2021-05-20\"}]}, {\"text\": \"此外，临时用工聘用还须符合第九条条件：坚持四项基本原则、恪守社会公德；年龄一般不超过男63周岁、女60周岁；首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准；具备岗位要求的工作技能并能坚持正常工作。\", \"citations\": [{\"chunk_id\": \"D23-C010\", \"quote\": \"第九条 临时用工的聘用必须符合下列条件：（一）坚持四项基本原则，恪守社会公德。（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。（四）具备岗位要求的工作技能，并能坚持正常工作。\", \"title\": \"辽宁科技大学临时用工管理办法\", \"article\": \"第九条\", \"doc_id\": \"D23\", \"pdf_pages\": [180], \"printed_pages\": [175], \"version_date\": \"2021-05-20\"}]}], \"gaps\": [], \"answer\": \"不可以。《辽宁科技大学临时用工管理办法》第八条明确禁止聘用未满十八周岁的未成年人，17岁人员不能受聘临时用工岗位。此外，临时用工聘用还须符合第九条条件：坚持四项基本原则、恪守社会公德；年龄一般不超过男63周岁、女60周岁；首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准；具备岗位要求的工作技能并能坚持正常工作。\"}, \"reason\": \"第八条明确禁止聘用未满十八周岁未成年人，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0016098,
+          "seconds": 2.3302
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第八条明确禁止聘用未满十八周岁未成年人，足以回答"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:23:49.941702+00:00",
+          "attempt": 1,
+          "prompt_sha256": "24e917854e056530d55c0aa2273a06baea441434046b3c88df27b94347ff9260",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "f1d8556d-8ec2-462f-a06f-753c33512344",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4085,
+            "completion_tokens": 628,
+            "total_tokens": 4713,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 133
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2549
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"不可以受聘《辽宁科技大学临时用工管理办法》所称的临时用工岗位。该办法第八条规定，禁止聘用未满十八周岁的未成年人；17岁属于未满十八周岁，因此不在可聘用范围。\",\"citations\":[{\"chunk_id\":\"D23-C009\",\"quote\":\"第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。\",\"title\":\"辽宁科技大学临时用工管理办法\",\"article\":\"第八条\",\"doc_id\":\"D23\",\"pdf_pages\":[180],\"printed_pages\":[175],\"version_date\":\"2021-05-20\"}]},{\"text\":\"除年龄下限外，该办法第九条还规定临时用工聘用必须同时符合以下条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。\",\"citations\":[{\"chunk_id\":\"D23-C010\",\"quote\":\"第九条 临时用工的聘用必须符合下列条件：（一）坚持四项基本原则，恪守社会公德。（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。（四）具备岗位要求的工作技能，并能坚持正常工作。\",\"title\":\"辽宁科技大学临时用工管理办法\",\"article\":\"第九条\",\"doc_id\":\"D23\",\"pdf_pages\":[180],\"printed_pages\":[175],\"version_date\":\"2021-05-20\"}]}],\"gaps\":[],\"answer\":\"不可以。按《辽宁科技大学临时用工管理办法》第八条，禁止聘用未满十八周岁的未成年人，17岁人员不能受聘临时用工岗位。此外，临时用工聘用还须符合第九条条件：（一）坚持四项基本原则，恪守社会公德；（二）年龄一般不得超过男63周岁、女60周岁；（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准；（四）具备岗位要求的工作技能，并能坚持正常工作。\"},\"reason\":\"第八条明确禁止聘用未满十八周岁未成年人，足以回答；引用条款编号与并列条件完整\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0019790999999999997,
+          "seconds": 3.8808
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第八条明确禁止聘用未满十八周岁未成年人，足以回答；引用条款编号与并列条件完整"
+        }
+      ],
+      "read_ids": [
+        "D23-C009",
+        "D23-C010"
+      ],
+      "first_hits": [
+        "D23-C009",
+        "D23-C010",
+        "D23-C007",
+        "D23-C024",
+        "D23-C012"
+      ],
+      "seconds": 8.0463,
+      "model_calls": 4,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 13.3052,
+  "model_calls": 8,
+  "tool_calls": 5,
+  "created_at": "2026-10-31T03:23:53.825451+00:00"
+}

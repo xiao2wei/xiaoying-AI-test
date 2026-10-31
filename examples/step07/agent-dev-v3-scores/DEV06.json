@@ -1,0 +1,220 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "需要先确定您被认定的引进层次",
+            "reason": "答案明确说明无法直接确定金额的原因是需要认定引进层次，表明缺少人才层次条件"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "以及学校已向您出具的引进层次认定或拟聘协议中的待遇约定（如有）",
+            "reason": "答案要求提供拟聘协议待遇约定，并说明最终待遇需根据审批/协商结果，体现缺少已签协议等条件"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "无法直接确定您的具体安家费金额",
+            "reason": "答案未给出唯一金额，并明确表示无法直接确定具体金额"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请提供：您的学历学位、职称、年龄、近三年代表性学术成果，以及学校已向您出具的引进层次认定",
+            "reason": "答案明确请求用户提供用于判断引进层次的学历、职称、年龄、成果及层次认定信息"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "拟聘协议中的待遇约定（如有）",
+            "reason": "答案请求用户补充拟聘协议中的待遇约定，可视为请求补充协议条件"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "第一层次提供安家费100万元",
+            "answer_span": "第一层次100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第一层次待遇包含“提供安家费100万元”，且实际已读该条款"
+          },
+          {
+            "text": "第二层次提供安家费80万元",
+            "answer_span": "第二层次80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第二层次待遇包含“提供安家费80万元”，且实际已读该条款"
+          },
+          {
+            "text": "第三层次提供安家费60万元",
+            "answer_span": "第三层次60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第三层次待遇包含“提供安家费60万元”，且实际已读该条款"
+          },
+          {
+            "text": "第四层次提供安家费20万—30万元",
+            "answer_span": "第四层次20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第四层次待遇包含“提供安家费20万—30万元”，且实际已读该条款"
+          },
+          {
+            "text": "第五层次提供安家费20万元",
+            "answer_span": "第五层次20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第五层次待遇包含“提供安家费20万元”，且实际已读该条款"
+          },
+          {
+            "text": "第六层次提供安家费10万元",
+            "answer_span": "第六层次10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第六层次待遇包含“提供安家费10万元”，且实际已读该条款"
+          },
+          {
+            "text": "第七层次提供安家费5万元",
+            "answer_span": "第七层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第七层次待遇包含“提供安家费5万元”，且实际已读该条款"
+          },
+          {
+            "text": "第八层次提供安家费5万元",
+            "answer_span": "第八层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C007中第八层次待遇包含“提供安家费5万元”，且实际已读该条款"
+          },
+          {
+            "text": "安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "answer_span": "安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C022，quote完全支持该发放规则；实际已读该条"
+          },
+          {
+            "text": "第一至第五层次人才的确定及待遇由学校人才工作领导小组按“一人一议”原则确定，报学校党委常委会会议研究审批",
+            "answer_span": "第一至第五层次人才的确定及待遇由学校人才工作领导小组按“一人一议”原则确定，报学校党委常委会会议研究审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C010，quote包含第一至第五层次按“一人一议”确定待遇并报党委常委会审批；实际已读该条"
+          },
+          {
+            "text": "第五至第八层次由考核小组评价、协商确定待遇后报校长办公会议批准",
+            "answer_span": "第五至第八层次由考核小组评价、协商确定待遇后报校长办公会议批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D02-C009，quote包含第五至第八层次经考核小组评价、协商确定待遇后报校长办公会议批准；实际已读该条"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案说明安家费按层次不同并列出各层次金额，未给出唯一金额，明确请求补充认定层次和协议待遇信息，状态为needs_confirmation，符合要求；所引条款与已读文档一致。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "学历学位",
+            "职称",
+            "年龄",
+            "近三年代表性学术成果",
+            "学校已出具的引进层次认定或拟聘协议中的待遇约定"
+          ],
+          "reason": "答案明确列出用户需要补充的具体字段/文件，以便确定人才层次和协商待遇，符合可操作补充要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:05:59.878916+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3734b2140841e30a41342a9bca0d669ffc47e179af70ff33772a2ddf1351acb1",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "e3995396-a062-4fe0-aa38-9b65c51dd0c7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5951,
+            "completion_tokens": 10000,
+            "total_tokens": 15951,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9918
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 5951
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"因为需要先确定您被认定的引进层次\",\n      \"reason\": \"答案明确提出需要先确定引进层次，点明缺少人才层次条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04745532,
+          "error": "JSONDecodeError",
+          "seconds": 92.6301
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:07:32.509271+00:00",
+          "attempt": 2,
+          "prompt_sha256": "3734b2140841e30a41342a9bca0d669ffc47e179af70ff33772a2ddf1351acb1",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "afb514da-0d51-4c1b-840c-767285d602c6",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5951,
+            "completion_tokens": 9285,
+            "total_tokens": 15236,
+            "prompt_tokens_details": {
+              "cached_tokens": 5888
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 8051
+            },
+            "prompt_cache_hit_tokens": 5888,
+            "prompt_cache_miss_tokens": 63
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"需要先确定您被认定的引进层次\",\"reason\":\"答案明确说明无法直接确定金额的原因是需要认定引进层次，表明缺少人才层次条件\"},{\"index\":1,\"met\":true,\"answer_span\":\"以及学校已向您出具的引进层次认定或拟聘协议中的待遇约定（如有）\",\"reason\":\"答案要求提供拟聘协议待遇约定，并说明最终待遇需根据审批/协商结果，体现缺少已签协议等条件\"},{\"index\":2,\"met\":true,\"answer_span\":\"无法直接确定您的具体安家费金额\",\"reason\":\"答案未给出唯一金额，并明确表示无法直接确定具体金额\"},{\"index\":3,\"met\":true,\"answer_span\":\"请提供：您的学历学位、职称、年龄、近三年代表性学术成果，以及学校已向您出具的引进层次认定\",\"reason\":\"答案明确请求用户提供用于判断引进层次的学历、职称、年龄、成果及层次认定信息\"},{\"index\":4,\"met\":true,\"answer_span\":\"拟聘协议中的待遇约定（如有）\",\"reason\":\"答案请求用户补充拟聘协议中的待遇约定，可视为请求补充协议条件\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"第一层次提供安家费100万元\",\"answer_span\":\"第一层次100万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第一层次待遇包含“提供安家费100万元”，且实际已读该条款\"},{\"text\":\"第二层次提供安家费80万元\",\"answer_span\":\"第二层次80万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第二层次待遇包含“提供安家费80万元”，且实际已读该条款\"},{\"text\":\"第三层次提供安家费60万元\",\"answer_span\":\"第三层次60万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第三层次待遇包含“提供安家费60万元”，且实际已读该条款\"},{\"text\":\"第四层次提供安家费20万—30万元\",\"answer_span\":\"第四层次20万—30万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第四层次待遇包含“提供安家费20万—30万元”，且实际已读该条款\"},{\"text\":\"第五层次提供安家费20万元\",\"answer_span\":\"第五层次20万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第五层次待遇包含“提供安家费20万元”，且实际已读该条款\"},{\"text\":\"第六层次提供安家费10万元\",\"answer_span\":\"第六层次10万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第六层次待遇包含“提供安家费10万元”，且实际已读该条款\"},{\"text\":\"第七层次提供安家费5万元\",\"answer_span\":\"第七层次5万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第七层次待遇包含“提供安家费5万元”，且实际已读该条款\"},{\"text\":\"第八层次提供安家费5万元\",\"answer_span\":\"第八层次5万元\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C007中第八层次待遇包含“提供安家费5万元”，且实际已读该条款\"},{\"text\":\"安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\"answer_span\":\"安家费10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C022，quote完全支持该发放规则；实际已读该条\"},{\"text\":\"第一至第五层次人才的确定及待遇由学校人才工作领导小组按“一人一议”原则确定，报学校党委常委会会议研究审批\",\"answer_span\":\"第一至第五层次人才的确定及待遇由学校人才工作领导小组按“一人一议”原则确定，报学校党委常委会会议研究审批\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C010，quote包含第一至第五层次按“一人一议”确定待遇并报党委常委会审批；实际已读该条\"},{\"text\":\"第五至第八层次由考核小组评价、协商确定待遇后报校长办公会议批准\",\"answer_span\":\"第五至第八层次由考核小组评价、协商确定待遇后报校长办公会议批准\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D02-C009，quote包含第五至第八层次经考核小组评价、协商确定待遇后报校长办公会议批准；实际已读该条\"}],\"serious_errors\":[],\"reason\":\"答案说明安家费按层次不同并列出各层次金额，未给出唯一金额，明确请求补充认定层次和协议待遇信息，状态为needs_confirmation，符合要求；所引条款与已读文档一致。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"学历学位\",\"职称\",\"年龄\",\"近三年代表性学术成果\",\"学校已出具的引进层次认定或拟聘协议中的待遇约定\"],\"reason\":\"答案明确列出用户需要补充的具体字段/文件，以便确定人才层次和协商待遇，符合可操作补充要求。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.04462392,
+          "seconds": 80.3634
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c52ed7bd9a12f2be34e5b1e394263f0a74685ddab4d0c00c5bf2fcd835b7f3c3"
+}

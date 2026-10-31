@@ -1,0 +1,46 @@
+{
+  "id": "TEST40",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": null,
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:57.308318+00:00",
+          "attempt": 1,
+          "prompt_sha256": "af292777f48d9f7c452616d1a482df35cf72021a5b65bd872afade5f269aae14",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1578
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:18:57.466371+00:00",
+          "attempt": 2,
+          "prompt_sha256": "af292777f48d9f7c452616d1a482df35cf72021a5b65bd872afade5f269aae14",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 429,
+          "error": "HTTP_429",
+          "seconds": 0.1257
+        }
+      ],
+      "judge_error": "ModelError:HTTP_429",
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "76794b86ace9ec1f387293d90e7819569999ea13d713d51cb736e627c56cc58b"
+}

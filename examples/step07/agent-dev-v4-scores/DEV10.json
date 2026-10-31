@@ -1,0 +1,202 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "岗前培训，培训合格方可上岗",
+            "reason": "实际回答明确说明新选聘专兼职辅导员开展岗前培训且培训合格方可上岗，与要点一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "每名辅导员每年参加不少于16学时的校级培训",
+            "reason": "实际回答明确说明每名辅导员每年参加不少于16学时的校级培训，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗",
+            "answer_span": "学校对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C015？实际引用D07-C016，所引句子与已读原文完全一致，足以支持该事实。"
+          },
+          {
+            "text": "学校每年制定培训计划和要求",
+            "answer_span": "学校每年制定培训计划和要求",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016，所引句子包含“每年制定培训计划和要求”，已读原文支持。"
+          },
+          {
+            "text": "每名辅导员每年参加不少于16学时的校级培训",
+            "answer_span": "每名辅导员每年参加不少于16学时的校级培训",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C016，所引句子明确包含该要求，已读原文支持。"
+          },
+          {
+            "text": "兼职辅导员同样纳入全校辅导员培训体系",
+            "answer_span": "兼职辅导员同样纳入全校辅导员培训体系",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012，所引句子与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "学校对被录用的兼职辅导员开展上岗培训",
+            "answer_span": "学校对被录用的兼职辅导员开展上岗培训",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012，所引句子明确包含该内容，已读原文支持。"
+          },
+          {
+            "text": "对培训合格者颁发聘书",
+            "answer_span": "对培训合格者颁发聘书",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D08-C012，所引句子与已读原文一致，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确覆盖两个必需要点，并补充了兼职辅导员培训信息；所有制度性事实均有引用且与已读原文一致，无错误或遗漏。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:23:46.288600+00:00",
+          "attempt": 1,
+          "prompt_sha256": "5a910e4f55e6419114d2685a72f6cc9c1918c40492e6aad170427656b12b514d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "a505605e-4800-470b-a27c-cb077449960d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2225,
+            "completion_tokens": 5013,
+            "total_tokens": 7238,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4281
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1329
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"岗前培训，培训合格方可上岗\",\n      \"reason\": \"实际回答明确说明新选聘专兼职辅导员开展岗前培训且培训合格方可上岗，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"每名辅导员每年参加不少于16学时的校级培训\",\n      \"reason\": \"实际回答明确说明每名辅导员每年参加不少于16学时的校级培训，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗\",\n      \"answer_span\": \"学校对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C015？实际引用D07-C016，所引句子与已读原文完全一致，足以支持该事实。\"\n    },\n    {\n      \"text\": \"学校每年制定培训计划和要求\",\n      \"answer_span\": \"学校每年制定培训计划和要求\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C016，所引句子包含“每年制定培训计划和要求”，已读原文支持。\"\n    },\n    {\n      \"text\": \"每名辅导员每年参加不少于16学时的校级培训\",\n      \"answer_span\": \"每名辅导员每年参加不少于16学时的校级培训\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D07-C016，所引句子明确包含该要求，已读原文支持。\"\n    },\n    {\n      \"text\": \"兼职辅导员同样纳入全校辅导员培训体系\",\n      \"answer_span\": \"兼职辅导员同样纳入全校辅导员培训体系\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C012，所引句子与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"学校对被录用的兼职辅导员开展上岗培训\",\n      \"answer_span\": \"学校对被录用的兼职辅导员开展上岗培训\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C012，所引句子明确包含该内容，已读原文支持。\"\n    },\n    {\n      \"text\": \"对培训合格者颁发聘书\",\n      \"answer_span\": \"对培训合格者颁发聘书\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D08-C012，所引句子与已读原文一致，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确覆盖两个必需要点，并补充了兼职辅导员培训信息；所有制度性事实均有引用且与已读原文一致，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02278848,
+          "seconds": 46.1763
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "reason": "实际回答明确表述该要点，且引用第十八条支持。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "answer_span": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C019中的相同语句，实际已读原文支持该事实。"
+          },
+          {
+            "text": "专职辅导员的转岗、调动、挂职等，须经过学院、党委学生工作部或党委研究生工作部、人事处审核，并报分管校领导审批。",
+            "answer_span": "专职辅导员的转岗、调动、挂职等，须经过学院、党委学生工作部或党委研究生工作部、人事处审核，并报分管校领导审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D07-C019中的审核审批要求，实际已读原文支持该事实；原文虽有换行但内容一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确给出新入职专职辅导员原则上工作满3年后方可岗位调整，引用与已读资料一致，工具操作合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:24:32.482079+00:00",
+          "attempt": 1,
+          "prompt_sha256": "bc3fa067b224addb68c2dbcf0cfccf8101b1bd93b776e24196bba3212b53a8de",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "73873445-c7af-493f-a893-231c927326f7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2263,
+            "completion_tokens": 1323,
+            "total_tokens": 3586,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1000
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1367
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"reason\":\"实际回答明确表述该要点，且引用第十八条支持。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"answer_span\":\"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C019中的相同语句，实际已读原文支持该事实。\"},{\"text\":\"专职辅导员的转岗、调动、挂职等，须经过学院、党委学生工作部或党委研究生工作部、人事处审核，并报分管校领导审批。\",\"answer_span\":\"专职辅导员的转岗、调动、挂职等，须经过学院、党委学生工作部或党委研究生工作部、人事处审核，并报分管校领导审批。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D07-C019中的审核审批要求，实际已读原文支持该事实；原文虽有换行但内容一致。\"}],\"serious_errors\":[],\"reason\":\"答案准确给出新入职专职辅导员原则上工作满3年后方可岗位调整，引用与已读资料一致，工具操作合理，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00822624,
+          "seconds": 12.0558
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "7f1fb6a691327abef1473d532b228ac53ebdcc0f007582866a065919ed0c1ab5"
+}

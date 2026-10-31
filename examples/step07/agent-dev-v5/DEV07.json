@@ -1,0 +1,87 @@
+{
+  "id": "DEV07",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "兼职辅导员不想继续担任，应提前多久向谁提出申请？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:37.904117+00:00",
+          "attempt": 1,
+          "prompt_sha256": "64e91ca3e29e69c05bc5ebd1d6a70ea25bc6c9fb51f18cedc8ccebfad4b4c8ee",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4163,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "我想卸下兼职辅导员工作，提前多长时间告知哪个单位，口头说一下够吗？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:38.321614+00:00",
+          "attempt": 1,
+          "prompt_sha256": "114a6ac98f9502583f685808eb015670df8c608ed1d2ae8bf18477ab6b1f2341",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.4357
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4519,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.8694,
+  "model_calls": 2,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:38.758295+00:00"
+}

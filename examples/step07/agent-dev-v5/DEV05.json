@@ -1,0 +1,49 @@
+{
+  "id": "DEV05",
+  "category": "insufficient",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校VPN忘记密码后如何重置？",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:37.837394+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b2e2a05071ee8972399c3d88821e37b79ca8e5138117e0f80f1db631010ebcc7",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.394
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.4111,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.4113,
+  "model_calls": 1,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:38.233188+00:00"
+}

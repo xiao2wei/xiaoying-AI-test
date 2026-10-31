@@ -1,0 +1,119 @@
+{
+  "id": "TEST05",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查",
+            "reason": "答案明确写明收到之日起5个工作日内进行审查。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "一次书面通知申诉人需要补正的全部内容和补正期限",
+            "reason": "答案明确写明一次书面通知全部补正内容和补正期限。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "逾期补正视为放弃",
+            "reason": "答案明确写明逾期补正视为放弃。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查",
+            "answer_span": "在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条明确包含该内容，已读原文一致。"
+          },
+          {
+            "text": "区别情况处理",
+            "answer_span": "区别情况处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用中“区别情况作出如下处理”支持该事实，已读原文一致。"
+          },
+          {
+            "text": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "answer_span": "对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条（三）明确包含该内容，已读原文一致。"
+          },
+          {
+            "text": "逾期补正视为放弃申诉",
+            "answer_span": "逾期补正视为放弃申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十三条（三）明确包含该内容，已读原文一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条，所有要点均得到明确表达，事实均有引用且与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:50:54.232210+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7f7deb8e5ab4a59363ea9803156347bb61ef9006c57461b13d1986875f10f038",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "01a296cd-64a2-4418-b7ab-e69590fafffa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3572,
+            "completion_tokens": 9981,
+            "total_tokens": 13553,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9352
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 2548
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查\",\n      \"reason\": \"答案明确写明收到之日起5个工作日内进行审查。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"reason\": \"答案明确写明一次书面通知全部补正内容和补正期限。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"逾期补正视为放弃\",\n      \"reason\": \"答案明确写明逾期补正视为放弃。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查\",\n      \"answer_span\": \"在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条明确包含该内容，已读原文一致。\"\n    },\n    {\n      \"text\": \"区别情况处理\",\n      \"answer_span\": \"区别情况处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用中“区别情况作出如下处理”支持该事实，已读原文一致。\"\n    },\n    {\n      \"text\": \"对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"answer_span\": \"对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条（三）明确包含该内容，已读原文一致。\"\n    },\n    {\n      \"text\": \"逾期补正视为放弃申诉\",\n      \"answer_span\": \"逾期补正视为放弃申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十三条（三）明确包含该内容，已读原文一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条，所有要点均得到明确表达，事实均有引用且与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.042933175999999997,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 88.0313
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a6e6350e1b0d13dc2e81651700ee85158660425d2d50f45dcc342adf0a74ac36"
+}

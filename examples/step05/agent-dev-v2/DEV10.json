@@ -1,0 +1,813 @@
+{
+  "id": "DEV10",
+  "category": "context",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。",
+            "citations": [
+              {
+                "chunk_id": "D07-C016",
+                "quote": "岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "每名辅导员每年参加校级培训不少于16学时。",
+            "citations": [
+              {
+                "chunk_id": "D07-C016",
+                "quote": "职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。",
+            "citations": [
+              {
+                "chunk_id": "D08-C012",
+                "quote": "兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导员开展上岗培训，对培训合格者颁发聘书。",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  34,
+                  35
+                ],
+                "printed_pages": [
+                  29,
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。\n每名辅导员每年参加校级培训不少于16学时。\n兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。",
+            "citations": [
+              {
+                "chunk_id": "D07-C016",
+                "quote": "岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "每名辅导员每年参加校级培训不少于16学时。",
+            "citations": [
+              {
+                "chunk_id": "D07-C016",
+                "quote": "职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。",
+            "citations": [
+              {
+                "chunk_id": "D08-C012",
+                "quote": "兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导员开展上岗培训，对培训合格者颁发聘书。",
+                "doc_id": "D08",
+                "pdf_pages": [
+                  34,
+                  35
+                ],
+                "printed_pages": [
+                  29,
+                  30
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。\n每名辅导员每年参加校级培训不少于16学时。\n兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:06.776888+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9b2ffb710f8a8ce72c92d52320a667e3f7313332ec7869673601799da0018ff4",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "84d7f64a-fc4c-4595-9e45-353b4d22209a",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 877,
+            "completion_tokens": 44,
+            "total_tokens": 921,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 237
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"新选聘辅导员 岗前培训 上岗 校级培训 学时\",\"k\":5,\"doc_ids\":[]},\"reason\":\"检索辅导员培训相关制度条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0003159,
+          "seconds": 0.8383
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "新选聘辅导员 岗前培训 上岗 校级培训 学时",
+            "k": 5,
+            "doc_ids": []
+          },
+          "reason": "检索辅导员培训相关制度条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "新选聘辅导员 岗前培训 上岗 校级培训 学时",
+            "k": 5,
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "新选聘辅导员 岗前培训 上岗 校级培训 学时",
+            "hits": [
+              {
+                "chunk_id": "D07-C016",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十五条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.661952,
+                "lexical_score": 56.6386,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十五条 第十五条 学校将辅导员培养纳入师资队伍和干部队伍培训规划，设置专项\n经费。\n岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。\n职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学\n时的校级培训。\n研修深造：积极选派优秀辅导员参加国家（省）级培训，组织到国内院校学习交\n流；支持专职辅导员在做好大学生思想政治教育工作的基础上攻读相关专业学位，成\n为思想政治教育工作方面的专门人才；支持辅导员到地方党政机关、企业、基层等挂\n职锻炼，以提高辅导员的理论素养和业务水平。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D14-C054",
+                "doc_id": "D14",
+                "title": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版）",
+                "article": "前言或附件",
+                "version_date": "2022-09-21",
+                "pdf_pages": [
+                  118,
+                  119,
+                  120
+                ],
+                "printed_pages": [
+                  113,
+                  114,
+                  115
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.629028,
+                "lexical_score": 24.833,
+                "excerpt": "辽宁科技大学职称和岗位晋升评审工作实施办法（2022年版） 前言或附件 育人效果。\n（四）讲师（组织员）\n任现职以来，申报人需同时满足以下业绩要求。\n1.完成中央和省委规定的培训任务和其他继续教育任务，达到规定的学时要求\n（每年完成集中培训不少于56学时），提交规定的培训成果。组织员应参加由省委教\n育工委组织的岗前培训，并取得结业证书。\n2.讲授过马克思主义理论、中共党史、形式政策教育等相关课程，或主持过入党积\n极分子培训、入党前培训等党务工作专业培训，或讲授党课，或开展党建工作相关的\n讲座、报告等，或与党员、入党积极分子、入党申请人等开展有针对性的谈心谈话，年\n均教学工作量不少于32学时（或谈心谈话学时不少于64学时），效果良好。\n3.具备一定的科学研究能力，在党建工作相关问题研究方面至少取得以下业绩\n2项。\n①获基层党",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D08-C012",
+                "doc_id": "D08",
+                "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  34,
+                  35
+                ],
+                "printed_pages": [
+                  29,
+                  30
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.630568,
+                "lexical_score": 23.3617,
+                "excerpt": "辽宁科技大学兼职辅导员队伍建设实施细则（试行） 第十一条 第十一条 兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导\n员开展上岗培训，对培训合格者颁发聘书。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D11-C001",
+                "doc_id": "D11",
+                "title": "辽宁科技大学辅导员“双线晋升”实施办法（试行）",
+                "article": "前言或附件",
+                "version_date": null,
+                "pdf_pages": [
+                  52,
+                  53,
+                  54
+                ],
+                "printed_pages": [
+                  47,
+                  48,
+                  49
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.645771,
+                "lexical_score": 15.0136,
+                "excerpt": "辽宁科技大学辅导员“双线晋升”实施办法（试行） 前言或附件  |  |  |  |  | 专业技术职务 |  |  |  | 所在部门 | \n现聘岗位类型 |  |  |  |  |  |  | 申请转聘岗位类型 |  |  | \n转岗聘用的有关规定：辅导员在行政职务（五、六、七、八级领导岗）或专业技术职务（助教、讲师、副教授、教授）晋升时可以重新调整一次岗位类型（管理岗或专业技术岗），其他情况（包括领导干部退出领导岗位等情况）聘任的岗位类型一律不得调整。岗位调整的次月起，工资福利待遇等按新聘岗位执行。本人已明确以上规定内容，同意按照以上规定执行。申请人签字（按手印）：年 月 日 |  |  |  |  |  |  |  |  |  | \n学生处意见 | 负责人签字：（盖 章）年 月 日 |  |  |  | ",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C012",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  30
+                ],
+                "printed_pages": [
+                  25
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.651556,
+                "lexical_score": 13.0435,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十一条 第十一条 辅导员的选聘工作在领导小组领导下进行。\n专职辅导员选聘：学院提出申请，由党委学生工作部或党委研究生工作部会同人\n事处核定岗位后，按学校有关规定进行公开招聘。校内其他岗位人员转聘专职辅导\n员的，应符合辅导员选聘基本条件，突出政治标准和工作能力，年龄不超过40周岁，采\n用笔试或面试等方式进行选聘。\n兼职辅导员选聘：学院根据缺编情况和辅导员选聘基本条件制定本学院兼职辅导\n员选聘办法，报党委学生工作部或党委研究生工作部、人事处审核通过后，采用笔试或\n面试等方式进行选聘。选聘结果报党委学生工作部或党委研究生工作部、人事处备案。\n思想政治理论课教师担任辅导员的，按照《辽宁科技大学思想政治理论课教师和辅导员\n队伍联动融合发展实施办法（试行）》执行。兼职辅导",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0084,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:07.626285+00:00",
+          "attempt": 1,
+          "prompt_sha256": "960895d20084021ae9f51e307738a19d48a27bc91e4d0a4ee63dfca43c4ff853",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "a1879db7-1f13-4043-9b9f-890d63b898e9",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2485,
+            "completion_tokens": 41,
+            "total_tokens": 2526,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1717
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D07-C016\", \"D08-C012\"]}, \"reason\": \"读取辅导员岗前培训与学时条款原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0007947000000000001,
+          "seconds": 0.4451
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D07-C016",
+              "D08-C012"
+            ]
+          },
+          "reason": "读取辅导员岗前培训与学时条款原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D07-C016"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D07",
+              "article": "第十五条",
+              "text": "第十五条 学校将辅导员培养纳入师资队伍和干部队伍培训规划，设置专项\n经费。\n岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。\n职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学\n时的校级培训。\n研修深造：积极选派优秀辅导员参加国家（省）级培训，组织到国内院校学习交\n流；支持专职辅导员在做好大学生思想政治教育工作的基础上攻读相关专业学位，成\n为思想政治教育工作方面的专门人才；支持辅导员到地方党政机关、企业、基层等挂\n职锻炼，以提高辅导员的理论素养和业务水平。",
+              "pdf_pages": [
+                31
+              ],
+              "table_ids": [],
+              "chunk_id": "D07-C016",
+              "printed_pages": [
+                26
+              ],
+              "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D07-C015",
+              "next_chunk_id": "D07-C017",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D08-C012"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D08",
+              "article": "第十一条",
+              "text": "第十一条 兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导\n员开展上岗培训，对培训合格者颁发聘书。",
+              "pdf_pages": [
+                34,
+                35
+              ],
+              "table_ids": [],
+              "chunk_id": "D08-C012",
+              "printed_pages": [
+                29,
+                30
+              ],
+              "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D08-C011",
+              "next_chunk_id": "D08-C013",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:08.073645+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7d27c45118b046f9eaee32fb00f84505eacf3aa44bfd403061278641882ba44d",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "83fdb457-d7a4-41d7-9ebd-b714d21b1bdf",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3015,
+            "completion_tokens": 258,
+            "total_tokens": 3273,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 583
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。\", \"citations\": [{\"chunk_id\": \"D07-C016\", \"quote\": \"岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。\"}]}, {\"text\": \"每名辅导员每年参加校级培训不少于16学时。\", \"citations\": [{\"chunk_id\": \"D07-C016\", \"quote\": \"职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。\"}]}, {\"text\": \"兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。\", \"citations\": [{\"chunk_id\": \"D08-C012\", \"quote\": \"兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导员开展上岗培训，对培训合格者颁发聘书。\"}]}], \"gaps\": []}, \"reason\": \"已读取原文，明确岗前培训合格方可上岗及每年不少于16学时校级培训\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0012140999999999999,
+          "seconds": 1.512
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取原文，明确岗前培训合格方可上岗及每年不少于16学时校级培训"
+        }
+      ],
+      "read_ids": [
+        "D07-C016",
+        "D08-C012"
+      ],
+      "first_hits": [
+        "D07-C016",
+        "D14-C054",
+        "D08-C012",
+        "D11-C001",
+        "D07-C012"
+      ],
+      "seconds": 2.8114,
+      "model_calls": 3,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "那新入职专职辅导员通常工作满几年才能调整岗位？",
+      "history": [
+        {
+          "role": "user",
+          "content": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？"
+        },
+        {
+          "role": "assistant",
+          "content": "{\"status\": \"answered\", \"claims\": [{\"text\": \"新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。\", \"citations\": [{\"chunk_id\": \"D07-C016\", \"quote\": \"岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。\", \"doc_id\": \"D07\", \"pdf_pages\": [31], \"printed_pages\": [26], \"version_date\": \"2021-05-25\"}]}, {\"text\": \"每名辅导员每年参加校级培训不少于16学时。\", \"citations\": [{\"chunk_id\": \"D07-C016\", \"quote\": \"职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学时的校级培训。\", \"doc_id\": \"D07\", \"pdf_pages\": [31], \"printed_pages\": [26], \"version_date\": \"2021-05-25\"}]}, {\"text\": \"兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。\", \"citations\": [{\"chunk_id\": \"D08-C012\", \"quote\": \"兼职辅导员纳入全校辅导员培训体系中。学校对被录用的兼职辅导员开展上岗培训，对培训合格者颁发聘书。\", \"doc_id\": \"D08\", \"pdf_pages\": [34, 35], \"printed_pages\": [29, 30], \"version_date\": \"2021-05-25\"}]}], \"gaps\": [], \"answer\": \"新选聘的专兼职辅导员须参加岗前培训，培训合格方可上岗，不能未经培训直接上岗。\\n每名辅导员每年参加校级培训不少于16学时。\\n兼职辅导员纳入全校辅导员培训体系，被录用后开展上岗培训，培训合格者颁发聘书。\"}"
+        }
+      ],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "citations": [
+              {
+                "chunk_id": "D07-C019",
+                "quote": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+            "citations": [
+              {
+                "chunk_id": "D07-C019",
+                "quote": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\n委研究生工作部、人事处审核并报分管校领导审批。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\n专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+            "citations": [
+              {
+                "chunk_id": "D07-C019",
+                "quote": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          },
+          {
+            "text": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。",
+            "citations": [
+              {
+                "chunk_id": "D07-C019",
+                "quote": "专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\n委研究生工作部、人事处审核并报分管校领导审批。",
+                "doc_id": "D07",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "version_date": "2021-05-25"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\n专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:09.588226+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9af33920a866667875374838cdd3440df19450c25db8cbed958c8a3158a3d0fc",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "26fe2bbb-6c3f-46a9-b719-09615fb35930",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1301,
+            "completion_tokens": 40,
+            "total_tokens": 1341,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 533
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"新入职专职辅导员 工作满几年 调整岗位\",\"k\":5,\"doc_ids\":[]},\"reason\":\"查找辅导员岗位调整年限规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00043830000000000003,
+          "seconds": 0.8562
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "新入职专职辅导员 工作满几年 调整岗位",
+            "k": 5,
+            "doc_ids": []
+          },
+          "reason": "查找辅导员岗位调整年限规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "新入职专职辅导员 工作满几年 调整岗位",
+            "k": 5,
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "新入职专职辅导员 工作满几年 调整岗位",
+            "hits": [
+              {
+                "chunk_id": "D07-C019",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十八条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  31
+                ],
+                "printed_pages": [
+                  26
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.744081,
+                "lexical_score": 53.2596,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十八条 第十八条 专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\n委研究生工作部、人事处审核并报分管校领导审批。新入职专职辅导员原则上必须\n在学生工作岗位上工作满3年后才能进行岗位调整。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D11-C001",
+                "doc_id": "D11",
+                "title": "辽宁科技大学辅导员“双线晋升”实施办法（试行）",
+                "article": "前言或附件",
+                "version_date": null,
+                "pdf_pages": [
+                  52,
+                  53,
+                  54
+                ],
+                "printed_pages": [
+                  47,
+                  48,
+                  49
+                ],
+                "score": 0.085455,
+                "semantic_score": 0.715023,
+                "lexical_score": 23.2138,
+                "excerpt": "辽宁科技大学辅导员“双线晋升”实施办法（试行） 前言或附件 授）专业技术职务评聘，但不能参加同级专业技\n术职务内的职级晋升。\n（三）辅导员在行政职务（五、六、七、八级领导岗）或专业技术职称（讲师、副教授、\n教授）晋升时，在有空余岗位的情况下，可以重新选择聘任岗位类型（管理岗或专业技\n术岗），正常情况下聘任的岗位类型不能变化。\n（四）干部任期期满调整时，有行政职务（五、六、七、八级领导岗）的辅导员以现聘\n岗位为基准，根据学校对干部任期的要求进行调整岗位或退出领导岗位。无论是在\n管理岗还是在专业技术岗任职，同一级岗位的任职年限连续（合并）计算。\n（五）辅导员岗位类型发生变化的，自岗位变化的次月起，按照新聘岗位兑现工资\n待遇。\n四、辅导员岗位类型调整的管理\n辅导员在专业技术岗位或管理岗位晋升时，可调整岗位类型，由本人",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D05-C002",
+                "doc_id": "D05",
+                "title": "辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法（试行）",
+                "article": "前言或附件",
+                "version_date": "2019-07-05",
+                "pdf_pages": [
+                  22,
+                  23
+                ],
+                "printed_pages": [
+                  17,
+                  18
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.641273,
+                "lexical_score": 25.7029,
+                "excerpt": "辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法（试行） 前言或附件 院，教学工作由马克思主义学院按照思想政治理论课教师进行管\n理与考核，辅导员工作由学生工作处（部）和所在学院按照辅导员进行管理与考核。\n2.专业技术职务及岗位晋升考核按照辅导员相关标准进行。担任思想政治理论\n课教师工作结束后且考核合格的，在专业技术职务及岗位晋升中同等条件下可优先\n考虑。\n3.年度考核按担任思想政治理论课教师考核，每年承担思想政治理论课教学任务\n工作量不少于本人所聘岗位年度考核要求的额定工作量的60%，担任辅导员工作带\n班工作量可按每自然班（40人）60学时计算。\n四、有关规定\n（一）从事思想政治理论课教学工作的教师，申报晋升副高级以上专业技术职务\n及岗位的，应当具有任现职或现岗位以来担任辅导员工作经历。\n（二）从事专职辅导员工作的人员，",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C023",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第二十二条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  31,
+                  32
+                ],
+                "printed_pages": [
+                  26,
+                  27
+                ],
+                "score": 0.08194,
+                "semantic_score": 0.664916,
+                "lexical_score": 22.7633,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第二十二条 第二十二条 辅导员有下列情形之一，不得继续从事辅导员工作，须调离辅导员\n队伍：\n（一）在事关政治原则、政治立场和政治方向问题上不能与党中央保持一致。\n（二）因个人工作失职而直接造成重大事故，产生严重不良后果。\n（三）不能履行辅导员工作职责，专职辅导员连续两年年度考核不合格或聘期考\n核不合格，兼职辅导员年度考核不合格。\n（四）其他不宜从事辅导员工作的情形。\n第六章 附 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D07-C012",
+                "doc_id": "D07",
+                "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+                "article": "第十一条",
+                "version_date": "2021-05-25",
+                "pdf_pages": [
+                  30
+                ],
+                "printed_pages": [
+                  25
+                ],
+                "score": 0.071429,
+                "semantic_score": 0.635018,
+                "lexical_score": 20.7269,
+                "excerpt": "辽宁科技大学辅导员队伍建设实施办法（试行） 第十一条 第十一条 辅导员的选聘工作在领导小组领导下进行。\n专职辅导员选聘：学院提出申请，由党委学生工作部或党委研究生工作部会同人\n事处核定岗位后，按学校有关规定进行公开招聘。校内其他岗位人员转聘专职辅导\n员的，应符合辅导员选聘基本条件，突出政治标准和工作能力，年龄不超过40周岁，采\n用笔试或面试等方式进行选聘。\n兼职辅导员选聘：学院根据缺编情况和辅导员选聘基本条件制定本学院兼职辅导\n员选聘办法，报党委学生工作部或党委研究生工作部、人事处审核通过后，采用笔试或\n面试等方式进行选聘。选聘结果报党委学生工作部或党委研究生工作部、人事处备案。\n思想政治理论课教师担任辅导员的，按照《辽宁科技大学思想政治理论课教师和辅导员\n队伍联动融合发展实施办法（试行）》执行。兼职辅导",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0097,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:10.458154+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f84652fb5a185aac68a1e65de021c6178ee57faec7ed08261b315d2fd47867de",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "eee6204a-d570-4956-aba6-ae13644d108c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2883,
+            "completion_tokens": 33,
+            "total_tokens": 2916,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1603
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D07-C019\"]}, \"reason\": \"读取第十八条原文核实年限规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0009045,
+          "seconds": 0.7954
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D07-C019"
+            ]
+          },
+          "reason": "读取第十八条原文核实年限规定"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D07-C019"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D07",
+              "article": "第十八条",
+              "text": "第十八条 专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\n委研究生工作部、人事处审核并报分管校领导审批。新入职专职辅导员原则上必须\n在学生工作岗位上工作满3年后才能进行岗位调整。",
+              "pdf_pages": [
+                31
+              ],
+              "table_ids": [],
+              "chunk_id": "D07-C019",
+              "printed_pages": [
+                26
+              ],
+              "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+              "version_date": "2021-05-25",
+              "previous_chunk_id": "D07-C018",
+              "next_chunk_id": "D07-C020",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-30T14:43:11.256421+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a16ded2495a1ca44a632ea5a82a7a6ecf2be6d5e78752e9b9f5651ed96c604bf",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "3e0e9baa-0d41-47ff-b6d8-c7fb1250dcb2",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3153,
+            "completion_tokens": 207,
+            "total_tokens": 3360,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 337
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\", \"citations\": [{\"chunk_id\": \"D07-C019\", \"quote\": \"新入职专职辅导员原则上必须在学生工作岗位上工作满3年后才能进行岗位调整。\"}]}, {\"text\": \"专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党委研究生工作部、人事处审核并报分管校领导审批。\", \"citations\": [{\"chunk_id\": \"D07-C019\", \"quote\": \"专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\\n委研究生工作部、人事处审核并报分管校领导审批。\"}]}], \"gaps\": []}, \"reason\": \"第十八条明确新入职专职辅导员满3年方可调整岗位\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0011943,
+          "seconds": 1.3116
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十八条明确新入职专职辅导员满3年方可调整岗位"
+        }
+      ],
+      "read_ids": [
+        "D07-C019"
+      ],
+      "first_hits": [
+        "D07-C019",
+        "D11-C001",
+        "D05-C002",
+        "D07-C023",
+        "D07-C012"
+      ],
+      "seconds": 2.9838,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 5.7953,
+  "model_calls": 6,
+  "tool_calls": 5,
+  "created_at": "2026-10-30T14:43:12.570644+00:00"
+}

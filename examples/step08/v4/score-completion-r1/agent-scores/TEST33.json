@@ -1,0 +1,226 @@
+{
+  "id": "TEST33",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "首聘期为4年，工作服务期为8年",
+            "reason": "明确表达了首聘期为4年、工作服务期为8年，符合要点要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+            "answer_span": "引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含该内容，且实际已读文档支持。"
+          },
+          {
+            "text": "首聘期为4年",
+            "answer_span": "首聘期为4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含‘首聘期为4年’，且实际已读文档支持。"
+          },
+          {
+            "text": "工作服务期为8年",
+            "answer_span": "工作服务期为8年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含‘工作服务期为8年’，且实际已读文档支持。"
+          },
+          {
+            "text": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+            "answer_span": "首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含该内容，且实际已读文档支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了首聘期和服务期，引用可靠且与已读资料一致，无严重错误，行动决策合理。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:12:08.042170+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3897120f9c5a85dd1da04c65d068ab7acb7fdb5c9817aedfcbcc9ced27e1e499",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c3235ec1-ea66-448b-bbf0-a3b9760e74a9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1873,
+            "completion_tokens": 2856,
+            "total_tokens": 4729,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2387
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 849
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"首聘期为4年，工作服务期为8年\",\n      \"reason\": \"明确表达了首聘期为4年、工作服务期为8年，符合要点要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"answer_span\": \"引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含该内容，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"首聘期为4年\",\n      \"answer_span\": \"首聘期为4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含‘首聘期为4年’，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"工作服务期为8年\",\n      \"answer_span\": \"工作服务期为8年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含‘工作服务期为8年’，且实际已读文档支持。\"\n    },\n    {\n      \"text\": \"首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇\",\n      \"answer_span\": \"首聘期期满后根据协议约定和考核结果再行商议续聘及相关待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文包含该内容，且实际已读文档支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了首聘期和服务期，引用可靠且与已读资料一致，无严重错误，行动决策合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.006237748,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 24.1571
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST33--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "c63a5b2cc654f28facc0a18d6f02030b8f59345da3a69adce659742794c3f9ad",
+        "run_sha256": "b504214a0da38046a44815996c3d93261e123503594f88aaf2a79e28621ea3ed",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核",
+            "reason": "明确说明工作两年后进行中期考核"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理，可以降级聘用或终止聘用",
+            "reason": "明确说明不合格处理方式包括扣减停发返还待遇及降级终止聘用"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核",
+            "answer_span": "在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该事实，且actually_read包含该chunk"
+          },
+          {
+            "text": "对其工作进行检查和督促",
+            "answer_span": "对其工作进行检查和督促",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该事实，且actually_read包含该chunk"
+          },
+          {
+            "text": "引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理",
+            "answer_span": "引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该事实，且actually_read包含该chunk"
+          },
+          {
+            "text": "可以降级聘用或终止聘用",
+            "answer_span": "可以降级聘用或终止聘用",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该事实，且actually_read包含该chunk"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确引用了第十二条，明确回答了中期考核在工作两年后进行，以及不合格处理包括扣减停发返还待遇、降级或终止聘用，证据充分，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:12:12.276444+00:00",
+          "attempt": 1,
+          "prompt_sha256": "6c976c816740581a4d4c6a801e1c630374ec6dc6a5b324b7679a05232c16c835",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "39e15003-497f-4fdf-b234-f6a9d1f15b8f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2838,
+            "completion_tokens": 4013,
+            "total_tokens": 6851,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3391
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1814
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核\",\n      \"reason\": \"明确说明工作两年后进行中期考核\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理，可以降级聘用或终止聘用\",\n      \"reason\": \"明确说明不合格处理方式包括扣减停发返还待遇及降级终止聘用\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核\",\n      \"answer_span\": \"在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该事实，且actually_read包含该chunk\"\n    },\n    {\n      \"text\": \"对其工作进行检查和督促\",\n      \"answer_span\": \"对其工作进行检查和督促\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该事实，且actually_read包含该chunk\"\n    },\n    {\n      \"text\": \"引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理\",\n      \"answer_span\": \"引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该事实，且actually_read包含该chunk\"\n    },\n    {\n      \"text\": \"可以降级聘用或终止聘用\",\n      \"answer_span\": \"可以降级聘用或终止聘用\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该事实，且actually_read包含该chunk\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确引用了第十二条，明确回答了中期考核在工作两年后进行，以及不合格处理包括扣减停发返还待遇、降级或终止聘用，证据充分，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.009165508,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 36.3831
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST33--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "c63a5b2cc654f28facc0a18d6f02030b8f59345da3a69adce659742794c3f9ad",
+        "run_sha256": "b504214a0da38046a44815996c3d93261e123503594f88aaf2a79e28621ea3ed",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b504214a0da38046a44815996c3d93261e123503594f88aaf2a79e28621ea3ed"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "TEST15",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。",
+            "reason": "该句明确对应2020年《辽宁科技大学教职工考勤与请假管理规定》第二十二条，说明“以上”不包括本级，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。",
+            "reason": "该句明确对应2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十九条，说明“以上”包括本级，符合要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。",
+            "reason": "该句直接指出两份规定对“以上”是否包含本级的解释不一致，符合要点。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。",
+            "reason": "该句说明不指定版本时不能统一回答，并明确要求确认适用版本或提供衔接、废止、优先适用条款，符合要点。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D19-C023引用原文明确载明“以上”“超过”均不包括本级，实际已读该条且与引用一致。"
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D20-C020引用原文明确载明“以上”包括本级、“超过”不包括本级，实际已读该条且与引用一致。"
+          },
+          {
+            "text": "两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。",
+            "answer_span": "两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "D19-C023与D20-C020引用内容分别支持“前者不包括本级”和“后者包括本级”，结合可得解释不一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确区分了两份规定对“以上”的解释，明确指出2020版不包含本级、2023版包含本级，并说明不指定版本时不能统一回答，要求用户确认适用版本或提供衔接、废止、优先适用条款，符合needs_confirmation。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "适用版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》）",
+            "规定二者衔接、废止、优先适用的文件条款"
+          ],
+          "reason": "答案明确要求用户在两个可能适用版本中选择，或提供规定衔接、废止、优先适用的文件条款，属于明确说明缺少信息和需要用户补充的具体材料，未让用户自行检索或仅要求补充信息。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:29.056802+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cf2f05f7aa76d2dd0195b46fe45e31de3d1055af85829d65b21a8c3ba4ecac5d",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "325ac4ef-b4a0-493d-97d6-ee5e97cd3cd8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2816,
+            "completion_tokens": 5681,
+            "total_tokens": 8497,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4690
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1920
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\",\n      \"reason\": \"该句明确对应2020年《辽宁科技大学教职工考勤与请假管理规定》第二十二条，说明“以上”不包括本级，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\",\n      \"reason\": \"该句明确对应2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十九条，说明“以上”包括本级，符合要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\",\n      \"reason\": \"该句直接指出两份规定对“以上”是否包含本级的解释不一致，符合要点。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。\",\n      \"reason\": \"该句说明不指定版本时不能统一回答，并明确要求确认适用版本或提供衔接、废止、优先适用条款，符合要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D19-C023引用原文明确载明“以上”“超过”均不包括本级，实际已读该条且与引用一致。\"\n    },\n    {\n      \"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D20-C020引用原文明确载明“以上”包括本级、“超过”不包括本级，实际已读该条且与引用一致。\"\n    },\n    {\n      \"text\": \"两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\",\n      \"answer_span\": \"两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"D19-C023与D20-C020引用内容分别支持“前者不包括本级”和“后者包括本级”，结合可得解释不一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确区分了两份规定对“以上”的解释，明确指出2020版不包含本级、2023版包含本级，并说明不指定版本时不能统一回答，要求用户确认适用版本或提供衔接、废止、优先适用条款，符合needs_confirmation。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"适用版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》）\",\n      \"规定二者衔接、废止、优先适用的文件条款\"\n    ],\n    \"reason\": \"答案明确要求用户在两个可能适用版本中选择，或提供规定衔接、废止、优先适用的文件条款，属于明确说明缺少信息和需要用户补充的具体材料，未让用户自行检索或仅要求补充信息。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02621388,
+          "seconds": 53.5291
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "0f26bd1e45b0d229cfc668b8fe9f3b223e081fce29a20d56ba8a4ecf706879bf"
+}

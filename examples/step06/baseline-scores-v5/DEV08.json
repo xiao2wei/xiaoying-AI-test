@@ -1,0 +1,172 @@
+{
+  "id": "DEV08",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "其适用范围包括学校本科以及研究生兼职辅导员",
+            "reason": "实际答案明确表述了适用范围包括学校本科以及研究生兼职辅导员，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》并非只适用于本科生辅导员",
+            "answer_span": "《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》并非只适用于本科生辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二条明确适用于本科以及研究生兼职辅导员，可支持该否定判断。"
+          },
+          {
+            "text": "其适用范围包括学校本科以及研究生兼职辅导员",
+            "answer_span": "其适用范围包括学校本科以及研究生兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该表述直接对应引用的第二条原文，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确引用实施细则第二条，明确说明适用范围包括本科和研究生兼职辅导员，符合要求；检索和阅读动作合理，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:25:47.848241+00:00",
+          "attempt": 1,
+          "prompt_sha256": "901bcd61c75c20a24d83706508f4616f17742d216db7d9a292d951ee8ac3d56f",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ae04e4d5-7519-4a58-8515-cd6b66d70bd9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1959,
+            "completion_tokens": 2112,
+            "total_tokens": 4071,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1799
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1191
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"其适用范围包括学校本科以及研究生兼职辅导员\",\n      \"reason\": \"实际答案明确表述了适用范围包括学校本科以及研究生兼职辅导员，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》并非只适用于本科生辅导员\",\n      \"answer_span\": \"《辽宁科技大学兼职辅导员队伍建设实施细则（试行）》并非只适用于本科生辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二条明确适用于本科以及研究生兼职辅导员，可支持该否定判断。\"\n    },\n    {\n      \"text\": \"其适用范围包括学校本科以及研究生兼职辅导员\",\n      \"answer_span\": \"其适用范围包括学校本科以及研究生兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该表述直接对应引用的第二条原文，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确引用实施细则第二条，明确说明适用范围包括本科和研究生兼职辅导员，符合要求；检索和阅读动作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010949400000000001,
+          "seconds": 22.7924
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "该细则适用于学校本科以及研究生兼职辅导员",
+            "reason": "实际回答明确给出与要点一致的表述，直接命中适用范围。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "该细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于其适用范围",
+            "answer_span": "该细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于其适用范围",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二条原文，且已直接读取该条款，足以支持适用范围及研究生兼职辅导员属于适用范围。"
+          },
+          {
+            "text": "学校可以从研究生中选聘兼职辅导员",
+            "answer_span": "学校可以从研究生中选聘兼职辅导员",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第七条原文，且已直接读取该条款，明确包含研究生。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行",
+            "answer_span": "研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十四条第二句，且已直接读取该条款，原文一致。"
+          },
+          {
+            "text": "研究生兼任辅导员的管理与考核，并非完全按本细则的考核条款执行",
+            "answer_span": "而非完全按本细则的考核条款执行",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "引用句子仅说明依据三助一辅办法执行，未直接说明并非完全按本细则考核条款；但已读取第十四条全文，可推知其为特别规定，实际读取原文支持该解释。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答直接命中适用范围要点，并补充选聘与考核依据；引用基本准确，考核依据的推论部分未被引用句完全覆盖但已由已读原文支持，整体动作合理。"
+      },
+      "critical_errors": [
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:10.647690+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7cf052e0c3432e3b190be08f48f493c3e2666ea2d7f51512ec7f484880aa6ff9",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "1a119403-8fea-473c-bdd8-cb4bfb6694cc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2201,
+            "completion_tokens": 5824,
+            "total_tokens": 8025,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5285
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 1433
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"该细则适用于学校本科以及研究生兼职辅导员\",\n      \"reason\": \"实际回答明确给出与要点一致的表述，直接命中适用范围。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"该细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于其适用范围\",\n      \"answer_span\": \"该细则适用于学校本科以及研究生兼职辅导员，因此研究生兼职辅导员属于其适用范围\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第二条原文，且已直接读取该条款，足以支持适用范围及研究生兼职辅导员属于适用范围。\"\n    },\n    {\n      \"text\": \"学校可以从研究生中选聘兼职辅导员\",\n      \"answer_span\": \"学校可以从研究生中选聘兼职辅导员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第七条原文，且已直接读取该条款，明确包含研究生。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行\",\n      \"answer_span\": \"研究生兼任辅导员的管理与考核，依据学校研究生“三助一辅”管理办法执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十四条第二句，且已直接读取该条款，原文一致。\"\n    },\n    {\n      \"text\": \"研究生兼任辅导员的管理与考核，并非完全按本细则的考核条款执行\",\n      \"answer_span\": \"而非完全按本细则的考核条款执行\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句子仅说明依据三助一辅办法执行，未直接说明并非完全按本细则考核条款；但已读取第十四条全文，可推知其为特别规定，实际读取原文支持该解释。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答直接命中适用范围要点，并补充选聘与考核依据；引用基本准确，考核依据的推论部分未被引用句完全覆盖但已由已读原文支持，整体动作合理。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02596836,
+          "seconds": 62.7464
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "80110d4ed385298355cbcdb95af815f40b1c1cf20cc4bcc2f790276522d3f2cd"
+}

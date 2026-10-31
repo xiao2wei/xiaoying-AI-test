@@ -1,0 +1,119 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "gaps中明确说明“安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，表达了缺少人才层次条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "claims中引用第二十一条说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，且gaps中要求补充认定层次等信息，但未明确提及“已签协议”作为发放条件；不过claims中已包含协议签订条件，可视为间接表达缺少已签协议等条件。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "gaps中明确说明“无法直接给出唯一金额”，且claims中列出多个层次的不同金额，未给出唯一金额。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "gaps中明确请求“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，包含请求补充人才层次。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "reason": "claims中引用第二十一条说明安家费发放需“首聘期协议签订后”，且gaps中要求补充认定层次等信息，但未明确请求补充已签协议；不过claims中已包含协议签订条件，可视为间接请求补充已签协议。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "辽宁科技大学高层次人才引进安家费按人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实明确引用D02-C007，且actually_read中包含该chunk，原文第六条明确列出各层次安家费金额，与事实一致。",
+            "answer_span": "辽宁科技大学高层次人才引进安家费按人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实明确引用D02-C022，且actually_read中包含该chunk，原文第二十一条明确说明安家费10万元及以上分两次发放的条件，与事实一致。",
+            "answer_span": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。"
+          },
+          {
+            "text": "上述金额单位均为人民币，且不含辽宁省、鞍山市配套待遇。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用D02-C018和D02-C007，actually_read中包含这两个chunk，原文第十七条明确金额单位为人民币，第六条明确待遇不含辽宁省、鞍山市配套待遇，与事实一致。",
+            "answer_span": "上述金额单位均为人民币，且不含辽宁省、鞍山市配套待遇。"
+          },
+          {
+            "text": "无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实为gaps中的说明，未明确引用具体chunk，但actually_read中包含D02-C007，其中第六条明确安家费按层次确定，且需要认定层次等信息，因此该说明得到已读取原文支持。",
+            "answer_span": "无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息。"
+          },
+          {
+            "text": "第四层次安家费为20万—30万元区间，具体数额需由学校按认定结果确定。",
+            "cited": false,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "该事实为gaps中的说明，未明确引用具体chunk，但actually_read中包含D02-C007，其中第六条第四层次明确安家费为20万—30万元，且需按认定结果确定，因此该说明得到已读取原文支持。",
+            "answer_span": "第四层次安家费为20万—30万元区间，具体数额需由学校按认定结果确定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确识别了缺少人才层次和已签协议等条件，未给出唯一金额，并请求补充人才层次和已签协议，符合needs_confirmation状态。所有制度事实均有已读取原文支持，引用准确，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:10:02.691047+00:00",
+          "attempt": 1,
+          "prompt_sha256": "137b7442666f8436f0702ce363fa74c787f77c3f1f2ea5d9eedf6bdcc4d469c9",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "5a33db71-90a3-4d13-9df6-9c43c09635e5",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5763,
+            "completion_tokens": 1228,
+            "total_tokens": 6991,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 5123
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"gaps中明确说明“安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，表达了缺少人才层次条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"claims中引用第二十一条说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，且gaps中要求补充认定层次等信息，但未明确提及“已签协议”作为发放条件；不过claims中已包含协议签订条件，可视为间接表达缺少已签协议等条件。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"gaps中明确说明“无法直接给出唯一金额”，且claims中列出多个层次的不同金额，未给出唯一金额。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"gaps中明确请求“需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息”，包含请求补充人才层次。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"reason\": \"claims中引用第二十一条说明安家费发放需“首聘期协议签订后”，且gaps中要求补充认定层次等信息，但未明确请求补充已签协议；不过claims中已包含协议签订条件，可视为间接请求补充已签协议。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"辽宁科技大学高层次人才引进安家费按人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用D02-C007，且actually_read中包含该chunk，原文第六条明确列出各层次安家费金额，与事实一致。\",\n      \"answer_span\": \"辽宁科技大学高层次人才引进安家费按人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用D02-C022，且actually_read中包含该chunk，原文第二十一条明确说明安家费10万元及以上分两次发放的条件，与事实一致。\",\n      \"answer_span\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\"\n    },\n    {\n      \"text\": \"上述金额单位均为人民币，且不含辽宁省、鞍山市配套待遇。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用D02-C018和D02-C007，actually_read中包含这两个chunk，原文第十七条明确金额单位为人民币，第六条明确待遇不含辽宁省、鞍山市配套待遇，与事实一致。\",\n      \"answer_span\": \"上述金额单位均为人民币，且不含辽宁省、鞍山市配套待遇。\"\n    },\n    {\n      \"text\": \"无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实为gaps中的说明，未明确引用具体chunk，但actually_read中包含D02-C007，其中第六条明确安家费按层次确定，且需要认定层次等信息，因此该说明得到已读取原文支持。\",\n      \"answer_span\": \"无法直接给出唯一金额：安家费取决于您被认定的引进人才层次（第一至第八层次），需补充您的职称、学位、年龄、近三年学术成果及学校认定层次等信息。\"\n    },\n    {\n      \"text\": \"第四层次安家费为20万—30万元区间，具体数额需由学校按认定结果确定。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实为gaps中的说明，未明确引用具体chunk，但actually_read中包含D02-C007，其中第六条第四层次明确安家费为20万—30万元，且需按认定结果确定，因此该说明得到已读取原文支持。\",\n      \"answer_span\": \"第四层次安家费为20万—30万元区间，具体数额需由学校按认定结果确定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别了缺少人才层次和已签协议等条件，未给出唯一金额，并请求补充人才层次和已签协议，符合needs_confirmation状态。所有制度事实均有已读取原文支持，引用准确，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.012470040000000002,
+          "seconds": 10.9224
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "402bc466e4729a4abb83998a2ceefd1efb76e064f95f7b0294f15f3bec71348f"
+}

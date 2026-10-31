@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "缺少您的引进人才层次",
+        "reason": "实际回答明确说明缺少引进人才层次。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答未说明缺少已签协议条件。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "我无法直接给唯一金额",
+        "reason": "实际回答明确表示无法直接给唯一金额。"
+      },
+      {
+        "index": 3,
+        "met": true,
+        "answer_span": "请补充层次",
+        "reason": "实际回答明确追问人才层次。"
+      },
+      {
+        "index": 4,
+        "met": false,
+        "answer_span": "",
+        "reason": "实际回答未追问已签协议。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [],
+    "serious_errors": [],
+    "reason": "实际回答识别出缺少人才层次并追问层次，且未给唯一金额，状态needs_confirmation合理；但遗漏了缺少已签协议条件的说明和对已签协议的追问，两个必需要点未完成，因此答案整体不完整。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:01:22.385910+00:00",
+      "attempt": 1,
+      "prompt_sha256": "2aa5a21031d24d37a2a62f8e428aa4478259e7bbdab828554ac7362ddb170344",
+      "real_api": true,
+      "thinking": "enabled",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "21b238f9-af88-41a4-984c-f611a1696aab",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 3926,
+        "completion_tokens": 1562,
+        "total_tokens": 5488,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1334
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 2902
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"缺少您的引进人才层次\",\"reason\":\"实际回答明确说明缺少引进人才层次。\"},{\"index\":1,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未说明缺少已签协议条件。\"},{\"index\":2,\"met\":true,\"answer_span\":\"我无法直接给唯一金额\",\"reason\":\"实际回答明确表示无法直接给唯一金额。\"},{\"index\":3,\"met\":true,\"answer_span\":\"请补充层次\",\"reason\":\"实际回答明确追问人才层次。\"},{\"index\":4,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未追问已签协议。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":false,\"facts\":[],\"serious_errors\":[],\"reason\":\"实际回答识别出缺少人才层次并追问层次，且未给唯一金额，状态needs_confirmation合理；但遗漏了缺少已签协议条件的说明和对已签协议的追问，两个必需要点未完成，因此答案整体不完整。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01136784,
+      "seconds": 17.6988
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": false,
+  "new_judge_requests": 1,
+  "id": "CAL13",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": false,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

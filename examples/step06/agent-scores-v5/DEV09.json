@@ -1,0 +1,162 @@
+{
+  "id": "DEV09",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+            "reason": "实际答案明确表达每年12月组织一次全校范围荣休仪式，与要求要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+            "answer_span": "学校每年12月份组织一次全校范围的退休教职工荣休仪式。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实有明确引用，引用句子与实际已读原文一致，支持所述事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了学校全校范围荣休仪式的时间，引用与已读原文一致，要点满足，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:03.341403+00:00",
+          "attempt": 1,
+          "prompt_sha256": "197d5f648abf80eba319357392945f7667429b35a023dd5f498fedc6667bcca5",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c9a74342-04f2-45a9-9644-caf5bd2d6330",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2507,
+            "completion_tokens": 1310,
+            "total_tokens": 3817,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1072
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 75
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"学校每年12月份组织一次全校范围的退休教职工荣休仪式。\",\n      \"reason\": \"实际答案明确表达每年12月组织一次全校范围荣休仪式，与要求要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"学校每年12月份组织一次全校范围的退休教职工荣休仪式。\",\n      \"answer_span\": \"学校每年12月份组织一次全校范围的退休教职工荣休仪式。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实有明确引用，引用句子与实际已读原文一致，支持所述事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了学校全校范围荣休仪式的时间，引用与已读原文一致，要点满足，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00849684,
+          "seconds": 15.0436
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "人事处应在教职工退休前一月告知办理退休时间和程序",
+            "reason": "实际答案明确表述了退休前一个月告知办理退休时间和程序，与要点语义一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "人事处应在教职工退休前一月告知办理退休时间和程序",
+            "answer_span": "人事处应在教职工退休前一月告知办理退休时间和程序",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句明确包含该事实，已读原文同样载明。"
+          },
+          {
+            "text": "介绍退休待遇、退休管理等政策",
+            "answer_span": "介绍退休待遇、退休管理等政策",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句明确包含该事实，已读原文同样载明。"
+          },
+          {
+            "text": "协助办理退休手续和管理衔接工作",
+            "answer_span": "协助办理退休手续和管理衔接工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句包含“协助及时办理退休手续和管理衔接工作”，足以支持该事实。"
+          },
+          {
+            "text": "通知教职工所在二级单位",
+            "answer_span": "同时通知教职工所在二级单位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用句明确包含“并通知教职工所在二级单位”，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答准确引用规定，说明人事处在教职工退休前一月告知办理退休时间和程序，并补充了相关服务内容；所引材料已读且支持全部陈述，无错误或虚构。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:26:18.392792+00:00",
+          "attempt": 1,
+          "prompt_sha256": "15f27e3d67320cd3413f5c5847e514c6063a8a2906a67d5a52d9606b4ed7bf18",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "fcb7a921-48dc-4cf8-a2d5-283ee695cf7f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2748,
+            "completion_tokens": 2062,
+            "total_tokens": 4810,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1595
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 60
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"人事处应在教职工退休前一月告知办理退休时间和程序\",\n      \"reason\": \"实际答案明确表述了退休前一个月告知办理退休时间和程序，与要点语义一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"人事处应在教职工退休前一月告知办理退休时间和程序\",\n      \"answer_span\": \"人事处应在教职工退休前一月告知办理退休时间和程序\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句明确包含该事实，已读原文同样载明。\"\n    },\n    {\n      \"text\": \"介绍退休待遇、退休管理等政策\",\n      \"answer_span\": \"介绍退休待遇、退休管理等政策\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句明确包含该事实，已读原文同样载明。\"\n    },\n    {\n      \"text\": \"协助办理退休手续和管理衔接工作\",\n      \"answer_span\": \"协助办理退休手续和管理衔接工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句包含“协助及时办理退休手续和管理衔接工作”，足以支持该事实。\"\n    },\n    {\n      \"text\": \"通知教职工所在二级单位\",\n      \"answer_span\": \"同时通知教职工所在二级单位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用句明确包含“并通知教职工所在二级单位”，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确引用规定，说明人事处在教职工退休前一月告知办理退休时间和程序，并补充了相关服务内容；所引材料已读且支持全部陈述，无错误或虚构。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.011792879999999999,
+          "seconds": 22.7799
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "64c9bd1649c60e3c1b9ae4f38b55651a308dfae20545b1e5d213a2af544f59da"
+}

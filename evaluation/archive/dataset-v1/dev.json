@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "DEV01",
+    "category": "normal",
+    "family": "research_duration",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "人才科研建设专项经费项目从什么时候起算？最长执行多久？期满结余如何处理？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "从学校审批立项时间起算",
+          "最长一般不超过4年",
+          "期满结余由学校统筹管理"
+        ],
+        "evidence_units": [
+          [
+            "D03-C008"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D03-C008",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第七条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              13
+            ],
+            "printed_pages": [
+              8
+            ],
+            "text": "第七条 项目起始时间从学校审批立项时间算起，结束时间可根据研究工作需\n要自行设定。项目执行期限最长一般不得超过4年。项目执行期满后，结余经费由学\n校统筹管理。\n第二章 人才专项经费预算及使用范围"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV02",
+    "category": "normal",
+    "family": "research_reimburse",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "按人才科研建设专项经费办法，单笔恰好5000元和恰好1万元报销分别需要谁签字？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "5000元由项目负责人签字",
+          "1万元由项目负责人和二级教学科研机构负责人签字",
+          "须符合预算及使用范围"
+        ],
+        "evidence_units": [
+          [
+            "D03-C013"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D03-C013",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第十二条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              15,
+              16
+            ],
+            "printed_pages": [
+              10,
+              11
+            ],
+            "text": "第十二条 办理报销的经费须符合经费预算及本办法规定的使用范围，审批权\n限及注意事项如下：\n（一）审批权限\n1.单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\n2.单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二\n级教学（科研）机构负责人签字后报销。\n3.单笔报销经费在1万元以上10万元以下（含10万元）的，由项目负责人、所在二\n级教学（科研）机构、人事处负责人签字后报销。\n4.单笔报销经费在10万元以上的，还须学校主管领导审批。\n（二）注意事项\n1.购置科研用仪器设备及大宗材料须按学校有关文件要求执行，并履行审计手\n续。购置科研仪器设备还须填写《辽宁科技大学仪器设备购置可行性论证报告》（附\n2），经相关部门审批后方可按学校规定流程购买和报销。\n2.因教学科研工作需要，需从设备费中列支办公室、实验室的维修改造费的，或从\n材料费中列支通用的办公材料、办公用品，比如笔、本、纸、硒鼓、墨盒、色带等以及鼠\n标、键盘、内存条、移动硬盘等相关计算机配件的，须项目负责人提供情况说明（所在\n二级教学（科研）机构负责人签署意见），经人事处审批后方可办理报销。\n3.报销出版费须项目负责人提供论文原文及录用通知、出版物样稿及出版合同等\n相关证明材料（所在二级教学（科研）机构负责人签署意见），经人事处审核批准后方\n可办理报销。\n4.报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行。报销开展学\n术、项目等调研活动费用的还须项目负责人填写《开展学术、项目调研活动报告》（附\n3），经人事处审核批准后方可办理报销。\n5.报销劳务费，无论金额大小均须提供相关证明材料，说明项目聘用人员自然情\n况、聘用理由、实际参与程度、劳务费发放标准、依据等，并且由项目负责人、所在二级\n教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV03",
+    "category": "conflict",
+    "family": "attendance_deadline",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "汇编里教职工考勤统计表到底每月25日还是26日报？请查明不同规定，不能直接认定最新日期自动优先。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "2020规定为26日",
+          "2023补充规定为25日",
+          "列出两方来源",
+          "资料未明示整份替代关系，当前执行口径需人事处确认"
+        ],
+        "evidence_units": [
+          [
+            "D19-C015"
+          ],
+          [
+            "D20-C006"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D19-C015",
+            "doc_id": "D19",
+            "title": "辽宁科技大学教职工考勤与请假管理规定",
+            "article": "第十四条",
+            "version_date": "2020-10-19",
+            "pdf_pages": [
+              170
+            ],
+            "printed_pages": [
+              165
+            ],
+            "text": "第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向\n学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并\n报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。"
+          },
+          {
+            "chunk_id": "D20-C006",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第五条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              172
+            ],
+            "printed_pages": [
+              167
+            ],
+            "text": "第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报\n送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚\n报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n第三章 请假管理"
+          },
+          {
+            "chunk_id": "D20-C019",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              174
+            ],
+            "printed_pages": [
+              169
+            ],
+            "text": "第十八条 本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，\n自发布之日起执行。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "priority_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV04",
+    "category": "conflict",
+    "family": "talent_repeal",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "2022版高层次人才引进办法发布后，2021年27号旧办法是否仍同时有效？只根据汇编。",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "2022版第二十二条明确原2021年27号办法同时废止",
+          "依据明确废止条款判断而非只看日期"
+        ],
+        "evidence_units": [
+          [
+            "D02-C023"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D02-C023",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第二十二条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              12
+            ],
+            "printed_pages": [
+              7
+            ],
+            "text": "第二十二条 本办法自发布之日起施行，原《辽宁科技大学高层次人才引进工作\n实施办法（修订）》（辽科大校发〔2021〕27号）同时废止。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "explicit_resolution",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV05",
+    "category": "insufficient",
+    "family": "vpn",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "学校VPN忘记密码后如何重置？",
+        "history_mode": "independent",
+        "expected_status": "insufficient_evidence",
+        "required_points": [
+          "汇编不足以提供VPN密码重置步骤",
+          "请求提供信息化部门操作说明"
+        ],
+        "evidence_units": [],
+        "evidence": [],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "汇编不足以提供VPN密码重置步骤；请求提供信息化部门操作说明"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV06",
+    "category": "insufficient",
+    "family": "talent_unknown",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "我是新引进人才，请直接告诉我能领取多少安家费。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "缺少人才层次和已签协议等条件",
+          "不能给唯一金额",
+          "请求补充层次及协议"
+        ],
+        "evidence_units": [
+          [
+            "D02-C007"
+          ],
+          [
+            "D02-C020"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D02-C007",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第六条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              9,
+              10,
+              11
+            ],
+            "printed_pages": [
+              4,
+              5,
+              6
+            ],
+            "text": "第六条 引进人才的层次标准及待遇（不含辽宁省、鞍山市配套待遇）。\n第一层次：在国内外享有广泛的学术声望和影响力，学术研究处于世界前沿，是\n国内外本学科公认的学术大师、著名专家学者等。\n1.首聘期年薪不低于240万元。\n2.提供安家费100万元。\n3.提供购房补贴200万元。\n4.根据科研需要提供专项科研建设经费（面议）。\n5.协助安排配偶工作。\n第二层次：具有深厚的学术造诣，已取得国内外同行公认的标志性研究成果，达\n到或接近国家级领军人才相应学术水平。\n1.首聘期年薪不低于120万元。\n2.提供安家费80万元。\n3.提供购房补贴150万元。\n4.根据科研需要提供专项科研建设经费（面议）。\n5.协助安排配偶工作。\n第三层次：具有良好的学术影响力，已取得具有重要学术影响的标志性研究成\n果，为所在学科领域的知名学者或学科带头人，达到或接近国家级青年人才相应学术\n水平。\n1.首聘期年薪60万—80万元。\n2.提供安家费60万元。\n3.提供购房补贴100万—120万元。\n4.根据科研需要提供专项科研建设经费100万—300万元（哲学社会科学类50万\n—80万元）。\n5.协助安排配偶工作。\n第四层次：具有较好的学术影响力，已取得具有显著学术影响的研究成果，为所\n在学科领域的学科（学术）带头人，达到或接近省级领军人才相应学术水平。原则上\n年龄不超过45周岁（特别优秀人才年龄可适当放宽）。\n1.首聘期年薪30万—50万元。\n2.提供安家费20万—30万元。\n3.提供购房补贴60万—80万元。\n4.根据科研需要，提供专项科研建设经费40万—60万元（哲学社会科学类：20万\n—30万元）。\n5.协助安排配偶工作。\n第五层次：具有博士学位、正高级职称，年龄不超过45周岁，且近三年有重要学术\n成果，在其研究领域有重要影响力；或具有博士学位、副高级职称，年龄不超过40周\n岁，且近三年学术成果特别突出。\n1.聘任到教授岗位。\n2.提供安家费20万元。\n3.提供45万—60万元购房补贴。\n4.根据科研需要，提供专项科研建设经费20万—40万元（哲学社会科学类：10万\n—20万元）。\n5.协助安排配偶工作。\n第六层次：具有博士学位、副高级职称，年龄不超过40周岁，且近三年内有重要学\n术成果，在其研究领域具有一定影响力；或年龄不超过35周岁，学术成果特别突出的\n博士、博士后。\n1.聘任到副教授岗位。\n2.提供薪酬补贴1000元/月（4年）。\n3.提供安家费10万元。\n4.提供90m2左右住宅1套或购房补贴25万—40万元。\n5.未婚者提供公寓住宿，已婚者提供70m2左右周转房1套（购房后交回，免房租\n使用3年）。\n6.根据科研需要，提供专项科研建设经费10万—20万元（哲学社会科学类：5万—\n10万元）。\n7.协助安排配偶工作。\n第七层次：具有博士学位，年龄不超过35周岁，学术成果突出，具有良好的培养\n潜质。\n1.享受副教授绩效待遇（最多1个聘期）。\n2.提供薪酬补贴1000元/月（4年）。\n3.提供安家费5万元。\n4.提供90m2左右住宅1套或提供购房补贴20万—30万元。\n5.未婚者提供公寓住宿，已婚者提供70m2左右周转房1套（购房后交回，免房租\n使用3年）。\n6.根据科研需要，提供专项科研建设经费5万—10万元（哲学社会科学类：3万—5\n万元）。\n第八层次：具有博士学位，学术成果较突出，具有良好的发展潜力。\n1.提供薪酬补贴1000元/月（4年）。\n2.提供安家费5万元。\n3.提供购房补贴10万—20万元。\n4.未婚者提供公寓住宿，已婚者提供70M2左右周转房1套（购房后交回，免房租\n使用3年）。\n5.根据科研需要，提供专项科研建设经费5万元（哲学社会科学类：3万元）。\n第三章 柔性引进高层次人才的层次及待遇"
+          },
+          {
+            "chunk_id": "D02-C020",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第十九条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              12
+            ],
+            "printed_pages": [
+              7
+            ],
+            "text": "第十九条 对于引进的各层次人才的有关待遇、工作目标任务等实行“一人一\n策“”一事一议”原则，经双方协商确定并签订协议。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "缺少人才层次和已签协议等条件；不能给唯一金额；请求补充层次及协议"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV07",
+    "category": "paraphrase",
+    "family": "parttime_exit",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "兼职辅导员不想继续担任，应提前多久向谁提出申请？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前一个月向所在学院书面申请",
+          "做好学生档案资料及工作交接"
+        ],
+        "evidence_units": [
+          [
+            "D08-C016"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C016",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第十五条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              35
+            ],
+            "printed_pages": [
+              30
+            ],
+            "text": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "我想卸下兼职辅导员工作，提前多长时间告知哪个单位，口头说一下够吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前一个月向所在学院书面申请",
+          "做好学生档案资料及工作交接"
+        ],
+        "evidence_units": [
+          [
+            "D08-C016"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C016",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第十五条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              35
+            ],
+            "printed_pages": [
+              30
+            ],
+            "text": "第十五条 申请不再担任兼职辅导员的，应提前一个月向所在学院提出书面申\n请，并做好学生档案资料及相关工作的交接。\n第六章 附 则"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV08",
+    "category": "paraphrase",
+    "family": "parttime_scope",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "兼职辅导员实施细则是否只适用于本科生辅导员？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "适用于学校本科以及研究生兼职辅导员"
+        ],
+        "evidence_units": [
+          [
+            "D08-C003"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C003",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第二条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              33
+            ],
+            "printed_pages": [
+              28
+            ],
+            "text": "第二条 本细则适用于学校本科以及研究生兼职辅导员。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "研究生的兼职辅导员也归这份实施细则管理吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "适用于学校本科以及研究生兼职辅导员"
+        ],
+        "evidence_units": [
+          [
+            "D08-C003"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C003",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第二条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              33
+            ],
+            "printed_pages": [
+              28
+            ],
+            "text": "第二条 本细则适用于学校本科以及研究生兼职辅导员。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV09",
+    "category": "context",
+    "family": "retirement_ceremony",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "学校全校范围的荣休仪式通常在几月举行？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "每年12月组织一次全校范围荣休仪式"
+        ],
+        "evidence_units": [
+          [
+            "D29-C001"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D29-C001",
+            "doc_id": "D29",
+            "title": "辽宁科技大学教职工荣休工作办法",
+            "article": "前言或附件",
+            "version_date": "2022-10-31",
+            "pdf_pages": [
+              229
+            ],
+            "printed_pages": [
+              224
+            ],
+            "text": "辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转达校党委的深切关怀，肯定教职工的工作成绩，感谢教职工在各自岗位上为学\n校建设与发展做出的长期贡献，引导调整心态，听取意见建议，送上诚挚祝福和美好\n祝愿，让退休教职工感受到关心与温暖。\n制作退休服务手册。离退休工作处应为退休教职工制作《退休教职工服务手\n册》，包含退休教职工工作有关政策、学习活动平台介绍、生活服务平台介绍、看病就\n医指南等内容，为他们退休后的生活提供指导。\n开展辅导讲座培训。离退休工作处要适时组织开展专门辅导，帮助新退休教职\n工更新知识、促进身心健康，鼓励退休教职工根据兴趣爱好体验新角色、享受新生活、\n展示新风采、带动新风气。\n三、发挥退休教职工传帮带作用\n组织引导发挥作用。学校组织的新教师入职、岗前培训、教师节庆祝会和“双代\n会”等活动，可邀请退休教职工代表参加。退休教职工结合自身教学、科研或管理服\n务等岗位的工作经历，分享从事教育事业的经验和感受，对在职教师提出寄语和希\n望，积极参加关心下一代工作委员会工作，力所能及地为党的教育事业继续做贡献。\n离退休工作处要注意发现和培育退休教职工中的先进典型，广泛宣传他们的先\n进事迹，营造全社会尊老敬老爱老的良好氛围。\n（拟文单位：人事处）"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那人事处要提前多久通知退休时间和程序？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "退休前一个月告知办理退休时间和程序"
+        ],
+        "evidence_units": [
+          [
+            "D29-C001"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D29-C001",
+            "doc_id": "D29",
+            "title": "辽宁科技大学教职工荣休工作办法",
+            "article": "前言或附件",
+            "version_date": "2022-10-31",
+            "pdf_pages": [
+              229
+            ],
+            "printed_pages": [
+              224
+            ],
+            "text": "辽宁科技大学教职工荣休工作办法\n（辽科大校发〔2022〕56号附件·2022年10月31日）\n为贯彻落实《关于加强新时代高校教师队伍建设改革的指导意见》（教师〔2020〕\n10号），弘扬教职工诲人不倦、爱岗敬业的高尚师德，褒扬教职工为学校发展做出的贡\n献，进一步激发教职工爱校情怀，增强在职教职工的凝聚力、向心力，结合学校实际情\n况，制定本办法。\n一、适时组织教职工荣休仪式\n举行荣休仪式。学校每年12月份组织一次全校范围的退休教职工荣休仪式。荣\n休仪式由人事处（党委教师工作部、人才工作办公室）、党委组织部、校工会和离退休\n工作处组织，校领导、相关部门负责人、退休教职工代表和青年教师代表参加。荣休\n仪式要紧密联系实际，按照庄重热烈、简朴务实的原则开展多种形式的活动。\n学校各二级单位要适时开展“最后一堂课”或“最后一班岗”活动，并在一定范围\n内组织荣休仪式。各二级单位要注重宣传本单位退休教职工的工作业绩，特别要宣\n传各类先进典型人物事迹，引导广大在职教职工牢记和珍惜退休教职工为学校创造\n的宝贵精神财富。\n二、强化退休教职工服务工作\n做好退休通知工作。人事处应在教职工退休前一月告知办理退休时间和程序，\n介绍退休待遇、退休管理等政策，协助及时办理退休手续和管理衔接工作，并通知教\n职工所在二级单位。\n开展退休前谈心谈话。所在二级单位主要负责人要主动与教职工进行谈心谈\n话，转达校党委的深切关怀，肯定教职工的工作成绩，感谢教职工在各自岗位上为学\n校建设与发展做出的长期贡献，引导调整心态，听取意见建议，送上诚挚祝福和美好\n祝愿，让退休教职工感受到关心与温暖。\n制作退休服务手册。离退休工作处应为退休教职工制作《退休教职工服务手\n册》，包含退休教职工工作有关政策、学习活动平台介绍、生活服务平台介绍、看病就\n医指南等内容，为他们退休后的生活提供指导。\n开展辅导讲座培训。离退休工作处要适时组织开展专门辅导，帮助新退休教职\n工更新知识、促进身心健康，鼓励退休教职工根据兴趣爱好体验新角色、享受新生活、\n展示新风采、带动新风气。\n三、发挥退休教职工传帮带作用\n组织引导发挥作用。学校组织的新教师入职、岗前培训、教师节庆祝会和“双代\n会”等活动，可邀请退休教职工代表参加。退休教职工结合自身教学、科研或管理服\n务等岗位的工作经历，分享从事教育事业的经验和感受，对在职教师提出寄语和希\n望，积极参加关心下一代工作委员会工作，力所能及地为党的教育事业继续做贡献。\n离退休工作处要注意发现和培育退休教职工中的先进典型，广泛宣传他们的先\n进事迹，营造全社会尊老敬老爱老的良好氛围。\n（拟文单位：人事处）"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV10",
+    "category": "context",
+    "family": "counselor_training",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "新选聘辅导员可以不参加岗前培训直接上岗吗？每年校级培训至少多少学时？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "岗前培训合格方可上岗",
+          "每人每年不少于16学时校级培训"
+        ],
+        "evidence_units": [
+          [
+            "D07-C016"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D07-C016",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第十五条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              31
+            ],
+            "printed_pages": [
+              26
+            ],
+            "text": "第十五条 学校将辅导员培养纳入师资队伍和干部队伍培训规划，设置专项\n经费。\n岗前培训：对新选聘的专兼职辅导员开展岗前培训，培训合格方可上岗。\n职业能力培训：每年制定培训计划和要求，确保每名辅导员每年参加不少于16学\n时的校级培训。\n研修深造：积极选派优秀辅导员参加国家（省）级培训，组织到国内院校学习交\n流；支持专职辅导员在做好大学生思想政治教育工作的基础上攻读相关专业学位，成\n为思想政治教育工作方面的专门人才；支持辅导员到地方党政机关、企业、基层等挂\n职锻炼，以提高辅导员的理论素养和业务水平。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那新入职专职辅导员通常工作满几年才能调整岗位？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "原则上在学生工作岗位工作满3年后才能岗位调整"
+        ],
+        "evidence_units": [
+          [
+            "D07-C019"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D07-C019",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第十八条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              31
+            ],
+            "printed_pages": [
+              26
+            ],
+            "text": "第十八条 专职辅导员的转岗、调动、挂职等须经过学院、党委学生工作部或党\n委研究生工作部、人事处审核并报分管校领导审批。新入职专职辅导员原则上必须\n在学生工作岗位上工作满3年后才能进行岗位调整。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV11",
+    "category": "tool_failure",
+    "family": "budget_adjust",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "人才专项经费预算能否直接自行重大调整？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "原则上不予调整",
+          "确有特殊情况需要重大调整时负责人申请",
+          "所在二级机构签署意见",
+          "提交人才工作领导小组办公室审批后执行"
+        ],
+        "evidence_units": [
+          [
+            "D03-C016"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D03-C016",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第十五条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              16
+            ],
+            "printed_pages": [
+              11
+            ],
+            "text": "第十五条 经费预算原则上不予调整，但在项目实施过程中，研究内容或者研\n究计划有特殊情况，确实需要做出重大调整的，项目负责人应当及时提出申请，经\n所在二级教学（科研）机构签署意见后，提交校人才工作领导小组办公室审批通过\n后执行。\n第四章 人才专项经费考核与验收"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "read",
+      "mode": "once",
+      "code": "TEMPORARY_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "DEV12",
+    "category": "tool_failure",
+    "family": "research_yearly",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "人才专项经费项目年度考核什么时候填报进展报告？",
+        "history_mode": "independent",
+        "expected_status": "tool_error",
+        "required_points": [
+          "持续检索故障须明确未完成及工具失败",
+          "不得猜测原文结论"
+        ],
+        "evidence_units": [
+          [
+            "D03-C017"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D03-C017",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第十六条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              16
+            ],
+            "printed_pages": [
+              11
+            ],
+            "text": "第十六条 校人才工作领导小组办公室负责组织开展项目实施情况年度考核。\n项目负责人按项目申请书开展研究工作，并做好项目实施情况记录。项目负责人须\n在项目执行每满一年后的当月填报《辽宁科技大学高层次人才科研建设专项经费资\n助项目年度进展报告》（附4）报人事处，人事处会同科技处组成考核小组，对项目的年\n度进展情况、经费使用情况进行年度考核。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "search",
+      "mode": "always",
+      "code": "PERSISTENT_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  }
+]

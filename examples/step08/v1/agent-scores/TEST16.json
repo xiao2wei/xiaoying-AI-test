@@ -1,0 +1,108 @@
+{
+  "id": "TEST16",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "答案未明确提及废止条款为第十八条，只笼统说明2023年修订办法明确废止；缺少‘第十八条’这一依据位置，无法给出对应答案中的连续文字。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。",
+            "reason": "答案依据废止条款明确解决版本关系，指出2020年19号办法已被废止、不再继续生效。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）",
+            "answer_span": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C001内容包含该办法标题、文号和日期，实际已读原文支持。"
+          },
+          {
+            "text": "自发布之日起施行",
+            "answer_span": "自发布之日起施行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C019第十八条包含‘自发布之日起施行’，实际已读原文支持。"
+          },
+          {
+            "text": "2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）",
+            "answer_span": "2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C019废止条款包含该办法名称及文号，实际已读原文支持。"
+          },
+          {
+            "text": "已被2023年修订办法明确废止，不再继续生效",
+            "answer_span": "已被2023年修订办法明确废止，不再继续生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的D01-C019废止条款明确记载‘同时废止’，足以支持该事实，实际已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确说明2020年19号办法已被2023年修订办法明确废止、不再继续生效，并引用废止条款支持该结论，但未明确点明依据为‘第十八条’，导致要点0不满足，因此整体答案不完整。引用和事实支持情况良好，工具动作合理，状态符合预期。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:46.601413+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3737d0c3af560e750d576f7bdeb9e626cda4e92b5b8f3ff726321c2b405abfc8",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "41b1e011-726a-484e-a2ec-b52c5060322f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2030,
+            "completion_tokens": 6094,
+            "total_tokens": 8124,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5380
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 110
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"answer_span\": \"\",\n      \"reason\": \"答案未明确提及废止条款为第十八条，只笼统说明2023年修订办法明确废止；缺少‘第十八条’这一依据位置，无法给出对应答案中的连续文字。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）已被2023年修订办法明确废止，不再继续生效。\",\n      \"reason\": \"答案依据废止条款明确解决版本关系，指出2020年19号办法已被废止、不再继续生效。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）\",\n      \"answer_span\": \"2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C001内容包含该办法标题、文号和日期，实际已读原文支持。\"\n    },\n    {\n      \"text\": \"自发布之日起施行\",\n      \"answer_span\": \"自发布之日起施行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C019第十八条包含‘自发布之日起施行’，实际已读原文支持。\"\n    },\n    {\n      \"text\": \"2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）\",\n      \"answer_span\": \"2020年19号办法即《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C019废止条款包含该办法名称及文号，实际已读原文支持。\"\n    },\n    {\n      \"text\": \"已被2023年修订办法明确废止，不再继续生效\",\n      \"answer_span\": \"已被2023年修订办法明确废止，不再继续生效\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的D01-C019废止条款明确记载‘同时废止’，足以支持该事实，实际已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确说明2020年19号办法已被2023年修订办法明确废止、不再继续生效，并引用废止条款支持该结论，但未明确点明依据为‘第十八条’，导致要点0不满足，因此整体答案不完整。引用和事实支持情况良好，工具动作合理，状态符合预期。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02681184,
+          "seconds": 58.282
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "6662ef53c02de206693112a9fa9302cff277a4a8a3fe3800d23a3a83bd19cc80"
+}

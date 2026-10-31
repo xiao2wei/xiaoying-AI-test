@@ -1,0 +1,121 @@
+{
+  "id": "STAB-TEST36-R1",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "reason": "实际回答明确表达了该要点，且引用原文支持。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用《辽宁科技大学临时用工管理办法》第十二条，quote与事实完全一致，且实际读取了该条款。"
+          },
+          {
+            "text": "签订合同前，临时用工人员须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位",
+            "answer_span": "签订合同前，临时用工人员须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十五条，quote包含“（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）”，支持该事实，且实际读取了该条款。"
+          },
+          {
+            "text": "临时用工聘用的一般条件包括：坚持四项基本原则、恪守社会公德",
+            "answer_span": "坚持四项基本原则、恪守社会公德",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第九条，quote包含“（一）坚持四项基本原则，恪守社会公德”，支持该事实，且实际读取了该条款。"
+          },
+          {
+            "text": "临时用工聘用的一般条件包括：年龄一般不超过男63周岁、女60周岁",
+            "answer_span": "年龄一般不超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第九条，quote包含“（二）临时用工人员年龄一般不得超过男63周岁、女60周岁”，支持该事实，且实际读取了该条款。"
+          },
+          {
+            "text": "临时用工聘用的一般条件包括：首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "answer_span": "首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第九条，quote包含“（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准”，支持该事实，且实际读取了该条款。"
+          },
+          {
+            "text": "临时用工聘用的一般条件包括：具备岗位要求的工作技能并能坚持正常工作",
+            "answer_span": "具备岗位要求的工作技能并能坚持正常工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第九条，quote包含“（四）具备岗位要求的工作技能，并能坚持正常工作”，支持该事实，且实际读取了该条款。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用了相关制度条款，明确回答了问题，并补充了其他相关条件，所有引用均与原文一致且已实际读取，无错误或遗漏。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:07.599975+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c06b2c5bd9c9b15c1294875a44b92fffc17d5004172c6a20b9d478f96cdaace0",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "c5232cf9-61ff-4282-a675-4a7a6cfc0769",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2636,
+            "completion_tokens": 4042,
+            "total_tokens": 6678,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3229
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1612
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"实际回答明确表达了该要点，且引用原文支持。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用《辽宁科技大学临时用工管理办法》第十二条，quote与事实完全一致，且实际读取了该条款。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位\",\n      \"answer_span\": \"签订合同前，临时用工人员须提交职业技术等级或资格证明，该要求适用于有特殊要求的临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第十五条，quote包含“（四）职业技术等级或资格证明（有特殊要求的临时用工岗位）”，支持该事实，且实际读取了该条款。\"\n    },\n    {\n      \"text\": \"临时用工聘用的一般条件包括：坚持四项基本原则、恪守社会公德\",\n      \"answer_span\": \"坚持四项基本原则、恪守社会公德\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条，quote包含“（一）坚持四项基本原则，恪守社会公德”，支持该事实，且实际读取了该条款。\"\n    },\n    {\n      \"text\": \"临时用工聘用的一般条件包括：年龄一般不超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条，quote包含“（二）临时用工人员年龄一般不得超过男63周岁、女60周岁”，支持该事实，且实际读取了该条款。\"\n    },\n    {\n      \"text\": \"临时用工聘用的一般条件包括：首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"answer_span\": \"首次聘用须经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条，quote包含“（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准”，支持该事实，且实际读取了该条款。\"\n    },\n    {\n      \"text\": \"临时用工聘用的一般条件包括：具备岗位要求的工作技能并能坚持正常工作\",\n      \"answer_span\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条，quote包含“（四）具备岗位要求的工作技能，并能坚持正常工作”，支持该事实，且实际读取了该条款。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用了相关制度条款，明确回答了问题，并补充了其他相关条件，所有引用均与原文一致且已实际读取，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01948584,
+          "seconds": 38.3369
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "15ce211696ace9aaeef7998636f001ef029d12d84cf0508a835e363997c13964"
+}

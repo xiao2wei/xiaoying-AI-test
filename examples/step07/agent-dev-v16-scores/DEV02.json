@@ -1,0 +1,121 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销；因此恰好5000元属于该档，项目负责人签字。",
+            "reason": "实际答案明确说明5000元（含）由项目负责人签字，并指出恰好5000元属于该档。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销；因此恰好1万元属于该档，需上述两人签字。",
+            "reason": "实际答案明确说明1万元（含）由项目负责人和二级教学科研机构负责人签字，并指出恰好1万元属于该档。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "上述金额分档以办理报销的经费符合经费预算及本办法规定的使用范围为前提",
+            "reason": "实际答案明确说明报销须符合预算和使用范围，以该为前提。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。",
+            "answer_span": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文该句，且已读原文包含该句。",
+            "original_answer_span": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。"
+          },
+          {
+            "text": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。",
+            "answer_span": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文该句，且已读原文包含该句。",
+            "original_answer_span": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。"
+          },
+          {
+            "text": "办理报销的经费须符合经费预算及本办法规定的使用范围。",
+            "answer_span": "上述金额分档以办理报销的经费符合经费预算及本办法规定的使用范围为前提",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际表述为“以...为前提”，与“须符合”等价，引用第十二条开头支持，且已读原文包含该句。"
+          },
+          {
+            "text": "报销劳务费，无论金额大小，均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+            "answer_span": "报销劳务费无论金额大小，均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际答案提到劳务费例外，引用第十二条第五条，已读原文包含该句。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确回答了恰好5000元和1万元的签字人，并说明了符合预算和使用范围的前提，所有要点均满足且引用原文支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:01:04.158686+00:00",
+          "attempt": 1,
+          "prompt_sha256": "76c3d4aeddf159c336764ecb5a0b44be971ac03e92132230ab439742d5a5e980",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "21fa591d-66cc-4b4b-bc67-d5eb83befc4d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3471,
+            "completion_tokens": 4858,
+            "total_tokens": 8329,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4036
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1807
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销；因此恰好5000元属于该档，项目负责人签字。\",\n      \"reason\": \"实际答案明确说明5000元（含）由项目负责人签字，并指出恰好5000元属于该档。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销；因此恰好1万元属于该档，需上述两人签字。\",\n      \"reason\": \"实际答案明确说明1万元（含）由项目负责人和二级教学科研机构负责人签字，并指出恰好1万元属于该档。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"上述金额分档以办理报销的经费符合经费预算及本办法规定的使用范围为前提\",\n      \"reason\": \"实际答案明确说明报销须符合预算和使用范围，以该为前提。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\",\n      \"answer_span\": \"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文该句，且已读原文包含该句。\"\n    },\n    {\n      \"text\": \"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"answer_span\": \"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文该句，且已读原文包含该句。\"\n    },\n    {\n      \"text\": \"办理报销的经费须符合经费预算及本办法规定的使用范围。\",\n      \"answer_span\": \"上述金额分档以办理报销的经费符合经费预算及本办法规定的使用范围为前提\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际表述为“以...为前提”，与“须符合”等价，引用第十二条开头支持，且已读原文包含该句。\"\n    },\n    {\n      \"text\": \"报销劳务费，无论金额大小，均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。\",\n      \"answer_span\": \"报销劳务费无论金额大小，均须项目负责人、所在二级教学（科研）机构负责人和人事处负责人共同签字后方可办理报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际答案提到劳务费例外，引用第十二条第五条，已读原文包含该句。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确回答了恰好5000元和1万元的签字人，并说明了符合预算和使用范围的前提，所有要点均满足且引用原文支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010848067999999999,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 41.8466
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "027b0c26653d5890ca6841439b332246f6542f89ccffc9e142df0f9a6bebb06e"
+}

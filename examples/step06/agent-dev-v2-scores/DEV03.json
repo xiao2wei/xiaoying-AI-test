@@ -1,0 +1,95 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确引用并陈述了2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答明确引用并陈述了2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答分别列出了D19第十四条和D20第五条两个来源，并附有引用。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答指出补充规定第十八条未明确废止原规定或声明优先适用，仅凭发布日期不能认定25日自动优先，需向人事处确认当前执行口径。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送考勤统计表。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D19-C015，引文明确包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送考勤统计表。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D20-C006，引文明确包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。"
+          },
+          {
+            "text": "补充规定第十八条仅规定自发布之日起执行，未明确废止原规定或声明优先适用。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际回答引用了D20-C019，引文为“本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行”，确实未提及废止或优先适用，且该chunk已在actually_read中读取。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确列出了两种规定及其来源，并基于已读取的补充规定第十八条指出未明确废止或优先适用，正确请求人事处确认，符合needs_confirmation状态。工具使用中一次无效k参数后立即修正，后续搜索和读取合理，无严重错误。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:52:40.679971+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f95c218b8c16e14ede655e9f0793f335eed70210bee90433d20d52bb844f2f51",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "4283d942-168c-48a5-9e99-5716c58abe6d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2898,
+            "completion_tokens": 639,
+            "total_tokens": 3537,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 2386
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确引用并陈述了2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答明确引用并陈述了2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答分别列出了D19第十四条和D20第五条两个来源，并附有引用。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答指出补充规定第十八条未明确废止原规定或声明优先适用，仅凭发布日期不能认定25日自动优先，需向人事处确认当前执行口径。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第十四条规定每月26日报送考勤统计表。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D19-C015，引文明确包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第五条规定每月25日报送考勤统计表。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D20-C006，引文明确包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中读取。\"\n    },\n    {\n      \"text\": \"补充规定第十八条仅规定自发布之日起执行，未明确废止原规定或声明优先适用。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"实际回答引用了D20-C019，引文为“本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，自发布之日起执行”，确实未提及废止或优先适用，且该chunk已在actually_read中读取。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确列出了两种规定及其来源，并基于已读取的补充规定第十八条指出未明确废止或优先适用，正确请求人事处确认，符合needs_confirmation状态。工具使用中一次无效k参数后立即修正，后续搜索和读取合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0063558,
+          "seconds": 7.0529
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "bc48af05688c90ebea9295b3f4b530a7b1e931f4069de8f75307af3e6ecda956"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "STAB-TEST19-R2",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "现有制度汇编检索结果中未出现食堂WiFi密码或校园无线网络接入账号/密码的规定，无法据此回答。",
+            "reason": "明确说明检索结果中没有食堂WiFi密码及校园无线网络接入账号/密码的规定，符合要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法据此回答。",
+            "reason": "仅报告资料缺失并拒绝给出无依据答案，没有编造密码或制度内容。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "回答如实说明未检索到食堂WiFi密码相关制度，未编造内容，状态与预期一致；检索动作合理，可行动缺口请求明确列出所需制度文件类型。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "校园网络服务管理办法",
+            "信息化建设与网络接入相关制度",
+            "后勤/食堂服务指南"
+          ],
+          "reason": "答案明确要求提供校园网络服务、信息化建设与网络接入、后勤/食堂服务指南等具体制度文件，并说明需包含标题、版本日期和适用对象，属于明确说明缺少的资料。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:59.764720+00:00",
+          "attempt": 1,
+          "prompt_sha256": "aaa99414a078223b2fce91d51b121efecabac4fbe74943d2dd6ffd5a6432b144",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "452c6d8b-fb25-4cde-a294-166b1ee1e8e2",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1261,
+            "completion_tokens": 1488,
+            "total_tokens": 2749,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1166
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 365
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"现有制度汇编检索结果中未出现食堂WiFi密码或校园无线网络接入账号/密码的规定，无法据此回答。\",\n      \"reason\": \"明确说明检索结果中没有食堂WiFi密码及校园无线网络接入账号/密码的规定，符合要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"无法据此回答。\",\n      \"reason\": \"仅报告资料缺失并拒绝给出无依据答案，没有编造密码或制度内容。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"回答如实说明未检索到食堂WiFi密码相关制度，未编造内容，状态与预期一致；检索动作合理，可行动缺口请求明确列出所需制度文件类型。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"校园网络服务管理办法\",\n      \"信息化建设与网络接入相关制度\",\n      \"后勤/食堂服务指南\"\n    ],\n    \"reason\": \"答案明确要求提供校园网络服务、信息化建设与网络接入、后勤/食堂服务指南等具体制度文件，并说明需包含标题、版本日期和适用对象，属于明确说明缺少的资料。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.007557,
+          "seconds": 16.5174
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "639ab7f430f13a14ba5a092d7db853dab7462093eaf1076f00bee161e1e02fc5"
+}

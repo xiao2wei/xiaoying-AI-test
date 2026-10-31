@@ -1,0 +1,105 @@
+{
+  "id": "TEST07",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "reason": "实际答案明确表述男不超过63周岁、女不超过60周岁，且引用已读的第九条（二），支持该要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。",
+            "reason": "实际答案明确表述首次聘用需指定级别医疗单位体检合格并达到岗位健康标准，引用已读第九条（三），支持该要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "answer_span": "临时用工人员年龄一般不得超过男63周岁、女60周岁。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010中的“（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。”与实际陈述一致，且该 chunk 实际已读，支持该事实。"
+          },
+          {
+            "text": "首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。",
+            "answer_span": "首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010中的“（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。”与实际陈述一致，且该 chunk 实际已读，支持该事实。"
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交本人的健康状况证明。",
+            "answer_span": "签订合同前，临时用工人员必须提交本人的健康状况证明。",
+            "cited": true,
+            "citation_supported": false,
+            "supported_by_read": true,
+            "reason": "引用仅提供“（三）本人的健康状况证明。”，未包含“签订合同前，临时用工人员必须提交”这一关键条件，故引用本身不足以支持完整事实；但实际已读D23-C016第十五条完整文本支持该事实。"
+          }
+        ],
+        "serious_errors": [
+          "实际回答第三条事实“签订合同前，临时用工人员必须提交本人的健康状况证明。”所引用的 quote 仅为“（三）本人的健康状况证明。”，不包含签订合同前等关键条件，属于不支持的引用。"
+        ],
+        "reason": "回答覆盖两个必答要点，年龄和首次聘用健康条件均正确且引用已读依据；额外陈述的合同前提交健康证明虽本身被实际已读文本支持，但引用句子不完整、未覆盖关键条件，存在一处不支持的引用。整体判定回答正确。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [
+        "实际回答第三条事实“签订合同前，临时用工人员必须提交本人的健康状况证明。”所引用的 quote 仅为“（三）本人的健康状况证明。”，不包含签订合同前等关键条件，属于不支持的引用。",
+        "存在无依据结论或不支持引用"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:27.109039+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b177b455d0bd935e7d64e4d889b5be48eef327ee0a93df0e4df026bc611b02fe",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "7530ae7e-9bba-4b61-9580-e5046e4778dc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2042,
+            "completion_tokens": 4370,
+            "total_tokens": 6412,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3675
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1146
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁。\",\n      \"reason\": \"实际答案明确表述男不超过63周岁、女不超过60周岁，且引用已读的第九条（二），支持该要点。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。\",\n      \"reason\": \"实际答案明确表述首次聘用需指定级别医疗单位体检合格并达到岗位健康标准，引用已读第九条（三），支持该要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁。\",\n      \"answer_span\": \"临时用工人员年龄一般不得超过男63周岁、女60周岁。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010中的“（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。”与实际陈述一致，且该 chunk 实际已读，支持该事实。\"\n    },\n    {\n      \"text\": \"首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。\",\n      \"answer_span\": \"首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健康标准。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010中的“（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\\n康标准。”与实际陈述一致，且该 chunk 实际已读，支持该事实。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员必须提交本人的健康状况证明。\",\n      \"answer_span\": \"签订合同前，临时用工人员必须提交本人的健康状况证明。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": true,\n      \"reason\": \"引用仅提供“（三）本人的健康状况证明。”，未包含“签订合同前，临时用工人员必须提交”这一关键条件，故引用本身不足以支持完整事实；但实际已读D23-C016第十五条完整文本支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"实际回答第三条事实“签订合同前，临时用工人员必须提交本人的健康状况证明。”所引用的 quote 仅为“（三）本人的健康状况证明。”，不包含签订合同前等关键条件，属于不支持的引用。\"\n  ],\n  \"reason\": \"回答覆盖两个必答要点，年龄和首次聘用健康条件均正确且引用已读依据；额外陈述的合同前提交健康证明虽本身被实际已读文本支持，但引用句子不完整、未覆盖关键条件，存在一处不支持的引用。整体判定回答正确。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02000064,
+          "seconds": 39.9246
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "b649e5cd307b4f5da12e4d87c57213934c121912b6a5410297217bf3a9e0dc1b"
+}

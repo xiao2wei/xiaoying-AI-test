@@ -1,0 +1,93 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答在claims中明确表述“2020规定每月26日上报”，并引用D19-C015。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "reason": "实际回答在claims中明确表述“2023补充规定每月25日上报”，并引用D20-C006。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "reason": "实际回答在gaps中明确表述“两份规定存在差异，请向人事处确认本次适用口径”，符合请求确认要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实明确引用D19-C015，引用内容包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中实际读取，支持该事实。",
+        "answer_span": "2020规定每月26日上报。"
+      },
+      {
+        "text": "2023补充规定每月25日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实明确引用D20-C006，引用内容包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中实际读取，支持该事实。",
+        "answer_span": "2023补充规定每月25日上报。"
+      },
+      {
+        "text": "两份规定存在差异，请向人事处确认本次适用口径。",
+        "cited": false,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "该表述为对差异的总结和请求确认，属于处理建议而非制度事实，不要求引用支持。",
+        "answer_span": "两份规定存在差异，请向人事处确认本次适用口径。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "实际回答准确提取了两份规定的月度报送日，明确指出了差异并请求确认，符合needs_confirmation状态要求。所有关键要点均满足，引用与实际读取内容一致，无严重错误。"
+  },
+  "critical_errors": [
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:40.446267+00:00",
+      "attempt": 1,
+      "prompt_sha256": "12d59d9e377a6d9da5dbc802f6b6f01b39b2a187c2b4c1ab53a5b4d5690063ad",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "f8885781-a231-4e24-87cf-8c1f019c79ce",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1927,
+        "completion_tokens": 554,
+        "total_tokens": 2481,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 1415
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中明确表述“2020规定每月26日上报”，并引用D19-C015。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中明确表述“2023补充规定每月25日上报”，并引用D20-C006。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确表述“两份规定存在差异，请向人事处确认本次适用口径”，符合请求确认要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定每月26日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用D19-C015，引用内容包含“于每月26日向学校人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中实际读取，支持该事实。\",\n      \"answer_span\": \"2020规定每月26日上报。\"\n    },\n    {\n      \"text\": \"2023补充规定每月25日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确引用D20-C006，引用内容包含“各单位每月25日向人事处报送本单位《考勤情况统计表》”，且该chunk已在actually_read中实际读取，支持该事实。\",\n      \"answer_span\": \"2023补充规定每月25日上报。\"\n    },\n    {\n      \"text\": \"两份规定存在差异，请向人事处确认本次适用口径。\",\n      \"cited\": false,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"该表述为对差异的总结和请求确认，属于处理建议而非制度事实，不要求引用支持。\",\n      \"answer_span\": \"两份规定存在差异，请向人事处确认本次适用口径。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际回答准确提取了两份规定的月度报送日，明确指出了差异并请求确认，符合needs_confirmation状态要求。所有关键要点均满足，引用与实际读取内容一致，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0047374800000000005,
+      "seconds": 6.5894
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": false,
+  "agreement_with_human": null
+}

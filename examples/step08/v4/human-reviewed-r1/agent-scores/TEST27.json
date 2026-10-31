@@ -1,0 +1,212 @@
+{
+  "id": "TEST27",
+  "category": "paraphrase",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "提前一个月以书面形式向人事处提出申请",
+            "reason": "明确表达提前一个月书面申请，符合要点"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经人事处审核同意",
+            "reason": "明确表达审核同意，符合要点"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "办理完工作交接手续后方可离岗",
+            "reason": "明确表达办理交接后方可离岗，符合要点"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "answer_span": "临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文直接支持，且实际已读取该条文"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确完整，引用规范，无错误或遗漏。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:10:31.365773+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2e9bed2e2193db967c82f6330c9d207fb6d35be9d619ce770670cea4ce23a1cb",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3520f609-f676-44c1-bb41-eeeeecdcbb95",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1674,
+            "completion_tokens": 377,
+            "total_tokens": 2051,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 35
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 10
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"提前一个月以书面形式向人事处提出申请\",\n      \"reason\": \"明确表达提前一个月书面申请，符合要点\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"经人事处审核同意\",\n      \"reason\": \"明确表达审核同意，符合要点\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"办理完工作交接手续后方可离岗\",\n      \"reason\": \"明确表达办理交接后方可离岗，符合要点\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。\",\n      \"answer_span\": \"临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文直接支持，且实际已读取该条文\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确完整，引用规范，无错误或遗漏。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000789668,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 3.5928
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST27--0",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "1a7607a605307f15a664a91a24317732c3cdbadf777432f50e219d683787bb56",
+        "run_sha256": "1fc695f2fe533d3bed4b852773cc2a940c39e28ed5ac35f7cb97d5eed45129ee",
+        "attempt": 1
+      }
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "reason": "实际回答明确包含“应提前一个月以书面形式向人事处提出申请”，与要点完全一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "经人事处审核同意",
+            "reason": "实际回答明确包含“经人事处审核同意”，满足要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "办理完工作交接手续后方可离岗",
+            "reason": "实际回答明确包含“办理完工作交接手续后方可离岗”，满足要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "应提前一个月以书面形式向人事处提出申请",
+            "answer_span": "应提前一个月以书面形式向人事处提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确写出“应提前一个月以书面的形式向人事处提出申请”，且实际已读该条款，支持该事实。"
+          },
+          {
+            "text": "经人事处审核同意",
+            "answer_span": "经人事处审核同意",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含“经人事处审核同意”，且实际已读该条款，支持该事实。"
+          },
+          {
+            "text": "办理完工作交接手续后方可离岗",
+            "answer_span": "办理完工作交接手续后方可离岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文明确包含“办理完工作交接手续后方可离岗”，且实际已读该条款，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回复准确引用《辽宁科技大学临时用工管理办法》第十九条，回答了提前一个月书面申请、人事处审核、办理交接后方可离岗三个要点，并指出文件未规定交接细节、请求用户提供细则，操作合理，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T05:10:31.414064+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d6d8bd5fe900047a3887e26715cb5531b7ff3955f9379eaca67e455b77ea6873",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3d43934a-364d-45e4-95cc-baa07a252ffa",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1840,
+            "completion_tokens": 1823,
+            "total_tokens": 3663,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1279
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 816
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"reason\": \"实际回答明确包含“应提前一个月以书面形式向人事处提出申请”，与要点完全一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"经人事处审核同意\",\n      \"reason\": \"实际回答明确包含“经人事处审核同意”，满足要点。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"办理完工作交接手续后方可离岗\",\n      \"reason\": \"实际回答明确包含“办理完工作交接手续后方可离岗”，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"answer_span\": \"应提前一个月以书面形式向人事处提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确写出“应提前一个月以书面的形式向人事处提出申请”，且实际已读该条款，支持该事实。\"\n    },\n    {\n      \"text\": \"经人事处审核同意\",\n      \"answer_span\": \"经人事处审核同意\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含“经人事处审核同意”，且实际已读该条款，支持该事实。\"\n    },\n    {\n      \"text\": \"办理完工作交接手续后方可离岗\",\n      \"answer_span\": \"办理完工作交接手续后方可离岗\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文明确包含“办理完工作交接手续后方可离岗”，且实际已读该条款，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回复准确引用《辽宁科技大学临时用工管理办法》第十九条，回答了提前一个月书面申请、人事处审核、办理交接后方可离岗三个要点，并指出文件未规定交接细节、请求用户提供细则，操作合理，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.004170628,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 16.9538
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1,
+      "completion_provenance": {
+        "key": "agent--TEST27--1",
+        "original_error": "ModelError:SSLError",
+        "source_score_sha256": "1a7607a605307f15a664a91a24317732c3cdbadf777432f50e219d683787bb56",
+        "run_sha256": "1fc695f2fe533d3bed4b852773cc2a940c39e28ed5ac35f7cb97d5eed45129ee",
+        "attempt": 1
+      }
+    }
+  ],
+  "pass": true,
+  "run_sha256": "1fc695f2fe533d3bed4b852773cc2a940c39e28ed5ac35f7cb97d5eed45129ee"
+}

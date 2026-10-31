@@ -1,0 +1,65 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述“恰好5000元由项目负责人签字后报销”，直接满足要点“项目负责人签字”。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "恰好5000元由项目负责人签字后报销。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实明确关联引用D03-C013，引用原文“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”支持该事实，且该原文已被实际读取。",
+        "answer_span": "恰好5000元由项目负责人签字后报销。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确回答了5000元报销的签字要求，引用了正确的制度条款并实际读取了相关证据，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:37.234113+00:00",
+      "attempt": 1,
+      "prompt_sha256": "97c20f5f700958ac88d9cdf0a0408aaa6a589d05d4131d1fdfbd00afac68f0f0",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "22c5503f-3b41-4403-922e-b1dec1b2dc50",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 2195,
+        "completion_tokens": 244,
+        "total_tokens": 2439,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 1683
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述“恰好5000元由项目负责人签字后报销”，直接满足要点“项目负责人签字”。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"恰好5000元由项目负责人签字后报销。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实明确关联引用D03-C013，引用原文“单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销”支持该事实，且该原文已被实际读取。\",\n      \"answer_span\": \"恰好5000元由项目负责人签字后报销。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了5000元报销的签字要求，引用了正确的制度条款并实际读取了相关证据，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00386364,
+      "seconds": 3.2064
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL02",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

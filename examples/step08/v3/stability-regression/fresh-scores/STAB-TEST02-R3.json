@@ -1,0 +1,138 @@
+{
+  "id": "STAB-TEST02-R3",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "实际答案明确写出满10年按80%发放，且针对岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "实际答案明确写出不满10年按70%发放，且针对相同项目。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "答案在两个比例中都明确限定了发放项目为岗位工资、薪级工资和基础绩效，没有泛化所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "全年累计请假时间＞6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "answer_span": "全年累计请假时间＞6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实在claims[0]中明确说出，引用quote包含条件＞6个月和80%比例，实际读取的chunk也包含该内容。"
+          },
+          {
+            "text": "同一档中，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "answer_span": "同一档中，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实在claims[1]中明确说出，引用quote包含不满10年比例70%，实际读取的chunk也包含该内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确回答了用户问题，给出了两个不同工作年限下的发放比例，并明确了比例仅适用于岗位工资、薪级工资和基础绩效。所有要点均满足，事实均有引用且被实际读取的文档支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:52:41.424114+00:00",
+          "attempt": 1,
+          "prompt_sha256": "117a324d43fd25d84ba50c79e31ef43f618841f3c4c622e020d6cf6bc3654b27",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "8defee0b-7f14-498c-a8ed-67c4f88ee9f7",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2475,
+            "completion_tokens": 2213,
+            "total_tokens": 4688,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2213
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 939
+          },
+          "content": "",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.010070544,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "error": "JSONDecodeError",
+          "seconds": 22.0951
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:53:03.519463+00:00",
+          "attempt": 2,
+          "prompt_sha256": "117a324d43fd25d84ba50c79e31ef43f618841f3c4c622e020d6cf6bc3654b27",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "16318827-b646-45fe-8742-820be6563a1f",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2475,
+            "completion_tokens": 5025,
+            "total_tokens": 7500,
+            "prompt_tokens_details": {
+              "cached_tokens": 2432
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4452
+            },
+            "prompt_cache_hit_tokens": 2432,
+            "prompt_cache_miss_tokens": 43
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"实际答案明确写出满10年按80%发放，且针对岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"reason\": \"实际答案明确写出不满10年按70%发放，且针对相同项目。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"答案在两个比例中都明确限定了发放项目为岗位工资、薪级工资和基础绩效，没有泛化所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"全年累计请假时间＞6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"answer_span\": \"全年累计请假时间＞6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在claims[0]中明确说出，引用quote包含条件＞6个月和80%比例，实际读取的chunk也包含该内容。\"\n    },\n    {\n      \"text\": \"同一档中，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"answer_span\": \"同一档中，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在claims[1]中明确说出，引用quote包含不满10年比例70%，实际读取的chunk也包含该内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确回答了用户问题，给出了两个不同工作年限下的发放比例，并明确了比例仅适用于岗位工资、薪级工资和基础绩效。所有要点均满足，事实均有引用且被实际读取的文档支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.020062768,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 43.0111
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 2
+    }
+  ],
+  "pass": true,
+  "run_sha256": "fd6f7b2f56102eaf7b77b86bda2212f71dcf9e8830397edcca96e9cc70a1b6d5"
+}

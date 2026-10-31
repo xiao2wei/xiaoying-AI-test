@@ -1,0 +1,471 @@
+{
+  "id": "TEST15",
+  "category": "conflict",
+  "mode": "baseline",
+  "turns": [
+    {
+      "mode": "baseline",
+      "question": "两份考勤请假规定对“以上”是否包含本级的解释一致吗？不指定版本能统一回答吗？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D19-C023",
+                "quote": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D20-C020",
+                "quote": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D19-C023",
+                "quote": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              },
+              {
+                "chunk_id": "D20-C020",
+                "quote": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。"
+        ],
+        "answer": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\n《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\n两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\n两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D19-C023",
+                "quote": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D20-C020",
+                "quote": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。",
+            "citations": [
+              {
+                "chunk_id": "D19-C023",
+                "quote": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              },
+              {
+                "chunk_id": "D20-C020",
+                "quote": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。"
+        ],
+        "answer": "《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\n《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\n两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\n两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "两份考勤请假规定对“以上”是否包含本级的解释一致吗？不指定版本能统一回答吗？"
+          },
+          "result": {
+            "ok": true,
+            "query": "两份考勤请假规定对“以上”是否包含本级的解释一致吗？不指定版本能统一回答吗？",
+            "hits": [
+              {
+                "chunk_id": "D19-C023",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第二十二条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.754878,
+                "lexical_score": 38.3693,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第二十二条 第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C020",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十九条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.748552,
+                "lexical_score": 37.6454,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十九条 第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。\n（拟文单位：人事处）",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C022",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第二十一条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "score": 0.074728,
+                "semantic_score": 0.678226,
+                "lexical_score": 16.9466,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第二十一条 第二十一条 本规定未涉及的，按国家、辽宁省有关规定执行。本规定若与国\n家、辽宁省有关规定不一致时，按国家、辽宁省有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C004",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第三条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.072751,
+                "semantic_score": 0.645826,
+                "lexical_score": 21.6511,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第三条 第三条 人事处负责学校考勤工作的管理，各院级单位具体负责本单位考勤工作\n的组织实施，应指定一名中层领导干部分管考勤工作，同时指定专人承担具体考勤业务。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C024",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第二十三条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "score": 0.072258,
+                "semantic_score": 0.660067,
+                "lexical_score": 17.3844,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第二十三条 第二十三条 本规定由人事处负责解释。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0218,
+          "attempt_number": 1
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C023"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第二十二条",
+              "text": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。",
+              "pdf_pages": [
+                171
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C023",
+              "printed_pages": [
+                166
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C022",
+              "next_chunk_id": "D19-C024",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C020"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第十九条",
+              "text": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                174
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C020",
+              "printed_pages": [
+                169
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C019",
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C022"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第二十一条",
+              "text": "第二十一条 本规定未涉及的，按国家、辽宁省有关规定执行。本规定若与国\n家、辽宁省有关规定不一致时，按国家、辽宁省有关规定执行。",
+              "pdf_pages": [
+                171
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C022",
+              "printed_pages": [
+                166
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C021",
+              "next_chunk_id": "D19-C023",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 4
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C004"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第三条",
+              "text": "第三条 人事处负责学校考勤工作的管理，各院级单位具体负责本单位考勤工作\n的组织实施，应指定一名中层领导干部分管考勤工作，同时指定专人承担具体考勤业务。",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C004",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C003",
+              "next_chunk_id": "D20-C005",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C024"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第二十三条",
+              "text": "第二十三条 本规定由人事处负责解释。",
+              "pdf_pages": [
+                171
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C024",
+              "printed_pages": [
+                166
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C023",
+              "next_chunk_id": "D19-C025",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "model",
+          "purpose": "baseline",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:11:41.264146+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ba57d88e51c21e6af7c11e60f70f27cb714a6af1545aea0c65cf6a6033707389",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "9f353888-7a0d-4239-b444-aba8fc7f4de5",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2192,
+            "completion_tokens": 340,
+            "total_tokens": 2532,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 1808
+          },
+          "content": "{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学教职工考勤与请假管理规定》第二十二条规定：“以上”“超过”均不包括本级。\",\"citations\":[{\"chunk_id\":\"D19-C023\",\"quote\":\"第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\\n本级。\"}]},{\"text\":\"《辽宁科技大学教职工考勤与请假管理补充规定》第十九条规定：“以上”包括本级，“超过”不包括本级。\",\"citations\":[{\"chunk_id\":\"D20-C020\",\"quote\":\"第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。\"}]},{\"text\":\"两份规定对“以上”是否包含本级的解释不一致：前者不包括本级，后者包括本级。\",\"citations\":[{\"chunk_id\":\"D19-C023\",\"quote\":\"第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\\n本级。\"},{\"chunk_id\":\"D20-C020\",\"quote\":\"第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。\"}]}],\"gaps\":[\"两份规定对“以上”的解释存在冲突，且现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，因此不指定版本时不能统一回答；请明确适用哪一版本（2020年《辽宁科技大学教职工考勤与请假管理规定》或2023年《辽宁科技大学教职工考勤与请假管理补充规定》），或提供规定二者衔接、废止、优先适用的文件条款。\"]}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010655999999999999,
+          "seconds": 1.9548
+        }
+      ],
+      "read_ids": [
+        "D19-C023",
+        "D20-C020",
+        "D19-C022",
+        "D20-C004",
+        "D19-C024"
+      ],
+      "first_hits": [
+        "D19-C023",
+        "D20-C020",
+        "D19-C022",
+        "D20-C004",
+        "D19-C024"
+      ],
+      "seconds": 1.9863,
+      "model_calls": 1,
+      "tool_calls": 6,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 1.9863,
+  "model_calls": 1,
+  "tool_calls": 6,
+  "created_at": "2026-10-31T02:11:43.220513+00:00"
+}

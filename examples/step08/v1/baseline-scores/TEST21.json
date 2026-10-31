@@ -1,0 +1,101 @@
+{
+  "id": "TEST21",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "均未载明席别等级或金额上限",
+            "reason": "答案说明现有资料未包含差旅办法原文，仅引用其他财务报销规定，未给出高铁席别和精确上限"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "无法给出本校精确金额上限",
+            "reason": "答案未编造数字，以证据不足表示无法提供精确金额"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "请提供《辽宁科技大学差旅费管理办法（修订）》全文（含城市间交通费席别标准、乘坐人员级别与审批条件、超标准自理或特批条款），或提供该办法中关于高铁/动车席别报销标准的具体条款原文。",
+            "reason": "答案明确要求提供差旅规定具体文件或条款"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条规定“报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行”",
+            "answer_span": "第十二条仅规定“报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行”",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际已读D03-C013包含该条原文，引用准确支持该制度事实"
+          },
+          {
+            "text": "《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十四条规定“差旅费及其他费用报销标准应依据学校财务管理有关规定执行”",
+            "answer_span": "第十四条规定“差旅费及其他费用报销标准应依据学校财务管理有关规定执行”",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "实际已读D03-C015包含该条原文，引用准确支持该制度事实"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确说明证据不足，未编造金额，引用已读条款说明缺失，并明确请求提供差旅规定，符合预期状态。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "《辽宁科技大学差旅费管理办法（修订）》全文（含城市间交通费席别标准、乘坐人员级别与审批条件、超标准自理或特批条款）",
+            "该办法中关于高铁/动车席别报销标准的具体条款原文"
+          ],
+          "reason": "答案明确说明缺少差旅费管理办法原文，并具体请求提供全文或相关条款，属于可操作资料缺口。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:22.599514+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7f45e4b220249ed4afad9c0d642b272b405c2edae8f9f1a4fca9f4900aeadf99",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "352a5795-6437-4793-933e-28dd819953a3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3213,
+            "completion_tokens": 6542,
+            "total_tokens": 9755,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6012
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2317
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"均未载明席别等级或金额上限\",\"reason\":\"答案说明现有资料未包含差旅办法原文，仅引用其他财务报销规定，未给出高铁席别和精确上限\"},{\"index\":1,\"met\":true,\"answer_span\":\"无法给出本校精确金额上限\",\"reason\":\"答案未编造数字，以证据不足表示无法提供精确金额\"},{\"index\":2,\"met\":true,\"answer_span\":\"请提供《辽宁科技大学差旅费管理办法（修订）》全文（含城市间交通费席别标准、乘坐人员级别与审批条件、超标准自理或特批条款），或提供该办法中关于高铁/动车席别报销标准的具体条款原文。\",\"reason\":\"答案明确要求提供差旅规定具体文件或条款\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十二条规定“报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行”\",\"answer_span\":\"第十二条仅规定“报销差旅费按《辽宁科技大学差旅费管理办法（修订）》标准执行”\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读D03-C013包含该条原文，引用准确支持该制度事实\"},{\"text\":\"《辽宁科技大学高层次人才科研建设专项经费管理办法（试行）》第十四条规定“差旅费及其他费用报销标准应依据学校财务管理有关规定执行”\",\"answer_span\":\"第十四条规定“差旅费及其他费用报销标准应依据学校财务管理有关规定执行”\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"实际已读D03-C015包含该条原文，引用准确支持该制度事实\"}],\"serious_errors\":[],\"reason\":\"答案准确说明证据不足，未编造金额，引用已读条款说明缺失，并明确请求提供差旅规定，符合预期状态。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"《辽宁科技大学差旅费管理办法（修订）》全文（含城市间交通费席别标准、乘坐人员级别与审批条件、超标准自理或特批条款）\",\"该办法中关于高铁/动车席别报销标准的具体条款原文\"],\"reason\":\"答案明确说明缺少差旅费管理办法原文，并具体请求提供全文或相关条款，属于可操作资料缺口。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.03014748,
+          "seconds": 59.8451
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "f8117a4f185fff610342b5921ad4daeaf21e695d89d8130d903aa59a7bae4bae"
+}

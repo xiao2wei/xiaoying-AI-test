@@ -1,0 +1,105 @@
+{
+  "id": "TEST04",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工校内申诉可以委托1至2位校内教职工作为申诉代理人",
+            "reason": "直接回答可委托1至2位校内教职工，与要点一致"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "reason": "明确说明重要文书须本人签名，符合要点"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教职工校内申诉可以委托1至2位校内教职工作为申诉代理人，代为办理申诉事项",
+            "answer_span": "教职工校内申诉可以委托1至2位校内教职工作为申诉代理人，代为办理申诉事项。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote完全支持该事实，且已读原文包含相同内容"
+          },
+          {
+            "text": "申诉代理人不能代为签署申诉申请书",
+            "answer_span": "申诉代理人不能代为签署申诉申请书",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote表明重要文书须本人签名，可推出代理人不能代签；已读原文支持"
+          },
+          {
+            "text": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote直接包含该内容，已读原文一致"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确引用制度条款，完整覆盖两个必需要点，证据充分，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:50:50.175252+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2d7fa95f3b8d380c8c4dab99a6433690d79944d889aac0a47919c3fda5a0b814",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "8e3e3529-1c53-4ef3-ae5e-d8d625350362",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2600,
+            "completion_tokens": 4380,
+            "total_tokens": 6980,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3919
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1576
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"教职工校内申诉可以委托1至2位校内教职工作为申诉代理人\",\n      \"reason\": \"直接回答可委托1至2位校内教职工，与要点一致\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"reason\": \"明确说明重要文书须本人签名，符合要点\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教职工校内申诉可以委托1至2位校内教职工作为申诉代理人，代为办理申诉事项\",\n      \"answer_span\": \"教职工校内申诉可以委托1至2位校内教职工作为申诉代理人，代为办理申诉事项。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote完全支持该事实，且已读原文包含相同内容\"\n    },\n    {\n      \"text\": \"申诉代理人不能代为签署申诉申请书\",\n      \"answer_span\": \"申诉代理人不能代为签署申诉申请书\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote表明重要文书须本人签名，可推出代理人不能代签；已读原文支持\"\n    },\n    {\n      \"text\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote直接包含该内容，已读原文一致\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确引用制度条款，完整覆盖两个必需要点，证据充分，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.019470176,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 43.1455
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "e0517d60c58a343a31915d79a2b6191f37c87a84b4ab4f8954b14915ca0995ba"
+}

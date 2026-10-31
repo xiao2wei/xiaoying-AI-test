@@ -1,0 +1,97 @@
+{
+  "id": "TEST04",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "reason": "明确表达了可以委托1至2位校内教职工为代理人。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。",
+            "reason": "明确表达了重要文书须本人签名，且代理人不能代签。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "answer_span": "申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote支持人数和身份，已读原文支持。"
+          },
+          {
+            "text": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。",
+            "answer_span": "申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote支持本人签名要求，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了两个问题，引用来源可靠，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:06:49.043614+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f7393e4c75ef80021c5dbdb32f230be86f852e029dfa2e90fee258e7ff41bc10",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "2755f52b-66f5-407e-8f7e-b17c7e9e9758",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2596,
+            "completion_tokens": 3578,
+            "total_tokens": 6174,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 3175
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1444
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"reason\": \"明确表达了可以委托1至2位校内教职工为代理人。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。\",\n      \"reason\": \"明确表达了重要文书须本人签名，且代理人不能代签。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"answer_span\": \"申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote支持人数和身份，已读原文支持。\"\n    },\n    {\n      \"text\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。\",\n      \"answer_span\": \"申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote支持本人签名要求，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了两个问题，引用来源可靠，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.008062824,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 34.5811
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "1d93bd2049fa6292cdbec5a1b07c91b58d4715f23a5198e409079661711591e4"
+}

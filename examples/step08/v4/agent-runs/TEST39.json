@@ -1,0 +1,204 @@
+{
+  "id": "TEST39",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "学校临时用工岗位设置需经过哪些审批？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程；请稍后重试或提供相关制度文件（如临时用工管理办法）的标题、版本日期及适用对象，以便重新检索。"
+        ],
+        "answer": "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程；请稍后重试或提供相关制度文件（如临时用工管理办法）的标题、版本日期及适用对象，以便重新检索。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程；请稍后重试或提供相关制度文件（如临时用工管理办法）的标题、版本日期及适用对象，以便重新检索。"
+        ],
+        "answer": "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程；请稍后重试或提供相关制度文件（如临时用工管理办法）的标题、版本日期及适用对象，以便重新检索。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:23.699470+00:00",
+          "attempt": 1,
+          "prompt_sha256": "942c39a7398f4886d93eb60b087e9add4a1593bf74a71e9ecf1e6db22bcb263f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ba52977a-0031-4357-84c5-7e0c07b01fcb",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2087,
+            "completion_tokens": 35,
+            "total_tokens": 2122,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 295
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"临时用工 岗位设置 审批\",\"doc_ids\":[]},\"reason\":\"检索临时用工岗位设置审批相关制度条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.062600000000001e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.6391
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批",
+            "doc_ids": []
+          },
+          "reason": "检索临时用工岗位设置审批相关制度条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:24.380028+00:00",
+          "attempt": 1,
+          "prompt_sha256": "8af19a6c5edd18e66abc6696c621813b98c672c77afe47f663ec6f014ed5a36a",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3abe8298-6683-4043-b477-967539c78fae",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2232,
+            "completion_tokens": 47,
+            "total_tokens": 2279,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 184
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"临时用工 岗位设置 审批\", \"doc_ids\": []}, \"reason\": \"首次检索遇持续不可用故障，按规则再尝试一次相同检索\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 6.1944e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.809
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批",
+            "doc_ids": []
+          },
+          "reason": "首次检索遇持续不可用故障，按规则再尝试一次相同检索"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "临时用工 岗位设置 审批",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:25.231374+00:00",
+          "attempt": 1,
+          "prompt_sha256": "c51738262d9207f44db714ec5fcbdc17e79682dfbdb0fa70113d5fe2bcf64bec",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3e64473c-1f7a-439a-be0c-6b2aae6c47ac",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2383,
+            "completion_tokens": 101,
+            "total_tokens": 2484,
+            "prompt_tokens_details": {
+              "cached_tokens": 2176
+            },
+            "prompt_cache_hit_tokens": 2176,
+            "prompt_cache_miss_tokens": 207
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"tool_error\", \"claims\": [], \"gaps\": [\"检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实临时用工岗位设置的审批流程；请稍后重试或提供相关制度文件（如临时用工管理办法）的标题、版本日期及适用对象，以便重新检索。\"]}, \"reason\": \"检索工具持续不可用，无原文可依据\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 9.8178e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.1339
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "检索工具持续不可用，无原文可依据"
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.7076,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 2.7078,
+  "model_calls": 3,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T04:05:26.366441+00:00"
+}

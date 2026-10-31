@@ -1,0 +1,118 @@
+{
+  "id": "STAB-TEST17-R1",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "可以向学校的上一级主管机关提出书面申诉",
+            "reason": "实际答案明确写明正文规定可向学校的上一级主管机关提出书面申诉。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "可以向浙江省教育厅提出书面申诉",
+            "reason": "实际答案明确写出附3备注栏写的是向浙江省教育厅提出书面申诉。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "与正文“学校的上一级主管机关”不一致",
+            "reason": "实际答案明确指出了附3备注与正文表述不一致。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "建议向学校申诉处理委员会或学校办公室确认“上一级主管机关”的具体名称及送达地址",
+            "reason": "实际答案未擅自确认浙江省教育厅或改写为辽宁，而是请求确认具体机关名称。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "向学校申诉处理委员会或学校办公室确认“上一级主管机关”的具体名称及送达地址",
+            "reason": "实际答案建议向学校申诉处理委员会核实，符合要求。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉",
+            "answer_span": "可以向学校的上一级主管机关提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C022第二十一条原文，已读文档支持该规定。"
+          },
+          {
+            "text": "附3备注栏写的是“可以向浙江省教育厅提出书面申诉”",
+            "answer_span": "可以向浙江省教育厅提出书面申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C029附3备注原文，已读文档支持。"
+          },
+          {
+            "text": "附3写“可以向浙江省教育厅提出书面申诉”，与正文“学校的上一级主管机关”不一致",
+            "answer_span": "与正文“学校的上一级主管机关”不一致",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "同时引用D24-C022和D24-C029，两份已读原文分别显示正文与附表不同表述，支持不一致结论。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确识别正文与附表差异，未擅自确认具体上级机关，建议向申诉处理委员会或办公室核实，符合需确认要求；引用真实已读文档，无严重错误。",
+        "actionable_gap": {
+          "passed": false,
+          "requested_items": [],
+          "reason": "答案仅建议联系学校申诉处理委员会或学校办公室核实具体机关名称和送达地址，未明确要求用户补充提供具体材料或文件类型，属于联系有关部门而非可操作的资料补充，不满足要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:41.225692+00:00",
+          "attempt": 1,
+          "prompt_sha256": "48099c42b4c563b5ec2fd683f781e896fab47e4ae1f2f05ebae2492cda3ef6bc",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "67a6667c-409f-4185-bf73-d9423d604a87",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2474,
+            "completion_tokens": 7677,
+            "total_tokens": 10151,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6936
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1578
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"可以向学校的上一级主管机关提出书面申诉\",\n      \"reason\": \"实际答案明确写明正文规定可向学校的上一级主管机关提出书面申诉。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"可以向浙江省教育厅提出书面申诉\",\n      \"reason\": \"实际答案明确写出附3备注栏写的是向浙江省教育厅提出书面申诉。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"与正文“学校的上一级主管机关”不一致\",\n      \"reason\": \"实际答案明确指出了附3备注与正文表述不一致。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"建议向学校申诉处理委员会或学校办公室确认“上一级主管机关”的具体名称及送达地址\",\n      \"reason\": \"实际答案未擅自确认浙江省教育厅或改写为辽宁，而是请求确认具体机关名称。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"向学校申诉处理委员会或学校办公室确认“上一级主管机关”的具体名称及送达地址\",\n      \"reason\": \"实际答案建议向学校申诉处理委员会核实，符合要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉\",\n      \"answer_span\": \"可以向学校的上一级主管机关提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C022第二十一条原文，已读文档支持该规定。\"\n    },\n    {\n      \"text\": \"附3备注栏写的是“可以向浙江省教育厅提出书面申诉”\",\n      \"answer_span\": \"可以向浙江省教育厅提出书面申诉\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D24-C029附3备注原文，已读文档支持。\"\n    },\n    {\n      \"text\": \"附3写“可以向浙江省教育厅提出书面申诉”，与正文“学校的上一级主管机关”不一致\",\n      \"answer_span\": \"与正文“学校的上一级主管机关”不一致\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"同时引用D24-C022和D24-C029，两份已读原文分别显示正文与附表不同表述，支持不一致结论。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确识别正文与附表差异，未擅自确认具体上级机关，建议向申诉处理委员会或办公室核实，符合需确认要求；引用真实已读文档，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": false,\n    \"requested_items\": [],\n    \"reason\": \"答案仅建议联系学校申诉处理委员会或学校办公室核实具体机关名称和送达地址，未明确要求用户补充提供具体材料或文件类型，属于联系有关部门而非可操作的资料补充，不满足要求。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0336666,
+          "seconds": 78.5244
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "b7e783efb013d746d3141d425316722d2e7fd8fa0d846b047d50894e97f1dcb4"
+}

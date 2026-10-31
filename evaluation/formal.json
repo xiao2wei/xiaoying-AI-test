@@ -1,0 +1,3535 @@
+[
+  {
+    "id": "TEST01",
+    "category": "normal",
+    "family": "doctor_table",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "仅按2023在职读博办法：教师工科学科恰好4年取得学历学位，与其他学科恰好5年取得学历学位，补贴和科研建设经费分别多少万元？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "工科4年补贴10万元、科研经费5万元",
+          "其他学科5年补贴9万元、科研经费2.7万元"
+        ],
+        "evidence_units": [
+          [
+            "D01-C011"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C011",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              2
+            ],
+            "text": "第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请，所在单位党政联席会研究同意后，可按学校当年人才引进政策确定其相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。 |  |"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST02",
+    "category": "normal",
+    "family": "sick_salary_table",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "仅按2023请假补充规定，病假累计超过6个月，工作年限满10年与不满10年时，岗位工资、薪级工资和基础绩效按什么比例发？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "满10年按80%",
+          "不满10年按70%",
+          "比例针对岗位工资薪级工资基础绩效，不能泛化所有收入"
+        ],
+        "evidence_units": [
+          [
+            "D20-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C009",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST03",
+    "category": "normal",
+    "family": "appeal_deadline",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "校内申诉从知道权利受侵害之日起多久内提出？因不可抗力逾期，障碍消除后多久可以提起？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "30个工作日内",
+          "障碍消除后10个工作日内",
+          "逾期不再受理"
+        ],
+        "evidence_units": [
+          [
+            "D24-C012"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C012",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十一条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "text": "第十一条 申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内\n向申诉处理委员会提出。因不可抗力或其他特殊情况而致逾期者，在障碍消除后10\n个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST04",
+    "category": "normal",
+    "family": "appeal_proxy",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "教职工校内申诉可以委托几位代理人？代理人可以替本人签署申诉申请书吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "可以委托1至2位校内教职工",
+          "申诉申请书、处理决定书等重要文书须本人签名"
+        ],
+        "evidence_units": [
+          [
+            "D24-C013"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C013",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十二条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "text": "第十二条 申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申\n诉事项，但申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST05",
+    "category": "normal",
+    "family": "appeal_review",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "校内申诉委员会收到申诉书后多久进行受理审查？材料不齐应怎么通知？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "收到之日起5个工作日内审查",
+          "一次书面通知全部补正内容和补正期限",
+          "逾期补正视为放弃"
+        ],
+        "evidence_units": [
+          [
+            "D24-C014"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C014",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十三条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "text": "第十三条 申诉处理委员会在收到申诉书之日起5个工作日内，依据本办法第\n八、九、十、十一条进行审查，区别情况作出如下处理：\n（一）符合申诉条件的，决定复查，同时书面告知申诉人和被申诉人。\n（二）不符合申诉条件的，不予受理或驳回，同时书面告知申诉人。\n（三）对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通\n知申诉人需要补正的全部内容和补正期限。逾期补正视为放弃申诉。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST06",
+    "category": "normal",
+    "family": "appeal_vote",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "校内申诉委员会评议时，出席和表决比例分别有什么要求？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "三分之二以上成员参加",
+          "出席委员三分之二以上通过才有效"
+        ],
+        "evidence_units": [
+          [
+            "D24-C019"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C019",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十八条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              185
+            ],
+            "printed_pages": [
+              180
+            ],
+            "text": "第十八条 申诉处理委员会评议申诉案件须有三分之二以上成员参加，表决须\n经出席委员三分之二以上通过方为有效。评议会议由主任主持，主任缺席时由副主\n任主持。评议应当制作笔录，由申诉处理委员会成员签名，评议中的不同意见，必须\n如实记入笔录。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST07",
+    "category": "normal",
+    "family": "temp_age",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "临时用工人员年龄一般上限男女分别多少？首次聘用健康条件是什么？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "一般男不超过63周岁女不超过60周岁",
+          "首次需指定级别医疗单位体检合格且达到岗位健康标准"
+        ],
+        "evidence_units": [
+          [
+            "D23-C010"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C010",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第九条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              180
+            ],
+            "printed_pages": [
+              175
+            ],
+            "text": "第九条 临时用工的聘用必须符合下列条件：\n（一）坚持四项基本原则，恪守社会公德。\n（二）临时用工人员年龄一般不得超过男63周岁、女60周岁。\n（三）首次聘用时，需经学校指定级别的医疗单位体检合格并达到岗位要求的健\n康标准。\n（四）具备岗位要求的工作技能，并能坚持正常工作。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST08",
+    "category": "normal",
+    "family": "temp_contract",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "临时用工合同期限与试用期一般多久？续签有哪些前提？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "合同一般1至3年",
+          "试用期1至3个月",
+          "以实际签订时间为准",
+          "期满考核合格且双方同意可续签"
+        ],
+        "evidence_units": [
+          [
+            "D23-C021"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C021",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第二十条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              181
+            ],
+            "printed_pages": [
+              176
+            ],
+            "text": "第二十条 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订\n时间为准。合同期满后，经考核合格以及双方同意后可以续签。\n第五章 临时用工的日常管理"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST09",
+    "category": "normal",
+    "family": "marriage",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "仅按2023请假补充规定，在校工作期间登记结婚可请多少日婚假，须在多久内申请，能分次使用吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "10日",
+          "登记后1年内凭结婚证申请",
+          "须一次性申请使用"
+        ],
+        "evidence_units": [
+          [
+            "D20-C010"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C010",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第九条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第九条 教职工婚假具体要求及待遇如下：\n依法办理结婚登记的可享受10日婚假。一方在外地工作需要到配偶所在地结婚\n的，另加路程假。教职工在校工作期间登记结婚的可在1年内凭结婚证申请婚假（含\n路程假），婚假必须一次性申请使用，婚假（含路程假）期间工资正常发放，逾期按事假\n处理。婚假由所在单位审批，报人事处备案。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST10",
+    "category": "normal",
+    "family": "funeral",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "仅按2023请假补充规定，配偶父母亡故可请丧假吗？基本天数、外地路程与审批如何处理？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "可请3日",
+          "外地处理丧事可加路程假",
+          "所在单位审批并报人事处备案"
+        ],
+        "evidence_units": [
+          [
+            "D20-C011"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C011",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第十条 教职工丧假具体要求及待遇如下：\n教职工的直系亲属及配偶的父母亡故可请丧假，丧假3日。需到外地处理丧事\n的，可加路程假。丧假（含路程假）期间工资正常发放，逾期按事假处理。丧假（含路\n程假）由所在单位审批，报人事处备案。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST11",
+    "category": "normal",
+    "family": "doctor_leave",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "在职读博入学第五年还能申请脱产学习吗？首次和累计脱产时间限制是什么？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "第五年及以后不能申请",
+          "首次一般不超过2年",
+          "总脱产不超过4年且限入学第一至第四年"
+        ],
+        "evidence_units": [
+          [
+            "D01-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C009",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第八条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              2
+            ],
+            "text": "第八条 教师在入学后的第一年至第四年内可自行选择时间进行脱产学习，第\n五年及之后不得申请脱产学习。首次申请一般不超过2年，再次申请脱产学习应由个\n人申请、所在单位同意、学校批准。但总脱产时间不能超过4年（即入学后的第一年至\n第四年）。脱产学习期间减免工作业绩，保险和公积金按现聘岗位正常缴纳。\n（一）脱产学习时间未超过2年的，在脱产期间岗位工资、薪级工资、基础绩效、奖\n励绩效（包括个人年终奖励绩效）及福利待遇正常发放，如承担教学工作，年度教学工\n作业绩不超过120学时，超出部分不享受超工作业绩奖励。\n（二）脱产学习时间超过2年的，在超过2年的脱产期间内停发基础绩效、奖励绩\n效，如承担教学工作，年度教学工作业绩不超过60学时，超出部分不享受超工作业绩\n奖励。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST12",
+    "category": "normal",
+    "family": "talent_payment",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "高层次人才办法中10万元及以上安家费如何分次发放？购房补贴如何发放？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "安家费在首聘期协议签订后和中期考核合格后分两次",
+          "鞍山市购房时购房补贴先一次发50%",
+          "余款服务期内按月发"
+        ],
+        "evidence_units": [
+          [
+            "D02-C022"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D02-C022",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第二十一条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              12
+            ],
+            "printed_pages": [
+              7
+            ],
+            "text": "第二十一条 本办法所列的安家费在10万元及以上的，在首聘期协议签订后和\n聘期中期考核合格后分两次发放；购房补贴在鞍山市购买住房时先一次性发放50%，\n剩余部分在服务期内按月发放。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST13",
+    "category": "conflict",
+    "family": "paternity_versions",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "资料对男教工护理假分别写了多少天？我应直接按其中一个执行吗？",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "2020规定配偶护理假15日",
+          "2023补充规定符合法律法规生育的男教工20日",
+          "展示两份依据",
+          "当前适用口径需确认，不仅凭日期断言"
+        ],
+        "evidence_units": [
+          [
+            "D19-C010"
+          ],
+          [
+            "D20-C012"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D19-C010",
+            "doc_id": "D19",
+            "title": "辽宁科技大学教职工考勤与请假管理规定",
+            "article": "第九条",
+            "version_date": "2020-10-19",
+            "pdf_pages": [
+              169
+            ],
+            "printed_pages": [
+              164
+            ],
+            "text": "第九条 生育假的范围及期限\n（一）产前检查及孕期工间休息假：怀孕女教职工在工作时间内做产前检查，检查\n时间视为工作时间，原则上每月不超过4次；怀孕7个月以上的，每天可以有1小时工\n间休息。\n（二）产假：正常生育者给予产假158日，其中产前可以休假15日。难产者增加产\n假15日；生育多胞胎的，每多生育1个婴儿，增加产假15日。配偶享有护理假15日。\n女教职工怀孕未满4个月流产的，享受15天产假；怀孕满4个月流产的，享受42天\n产假。\n（三）哺乳假：有不满1周岁婴儿的女教职工，每日给予1小时哺乳时间。生育多\n胞胎者，每多哺乳1个婴儿，每次哺乳时间增加1小时。\n（四）其他计划生育相关法律法规规定应享受生育假情况。"
+          },
+          {
+            "chunk_id": "D20-C012",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十一条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173,
+              174
+            ],
+            "printed_pages": [
+              168,
+              169
+            ],
+            "text": "第十一条 符合法律法规规定生育子女的女教职工产前检查、产假、哺乳假及男\n教工护理假具体要求及待遇如下：\n（一）孕期女教职工在工作时间做产前检查，所需时间计入工作时间。怀孕不满3\n个月且妊娠反应严重，或怀孕7个月以上的，在每日工作时间内享有不少于1小时的\n休息时间。\n（二）产假共158日，其中产前可休假15日。难产的增加产假15日；生育多胞胎\n的，每多生育1个婴儿，增加产假15日。女教职工怀孕未满4个月流产的，享受15日\n产假；怀孕满4个月流产的，享受42日产假。\n（三）产假期满，可请哺乳假至婴儿满1周岁，哺乳假每日1小时。生育多胞胎的，\n每多哺乳1个，哺乳假每日增1小时。\n（四）女教职工怀孕需保胎休息的，可按本办法第八条规定请病假，其中产前15日\n可计入产假。符合法律法规规定生育子女的男教工享有护理假20日。\n（五）产假、护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由\n所在单位审批，报人事处备案。产假期内，待遇按国家有关规定执行，逾期根据实际\n情况按事（病）假处理。"
+          },
+          {
+            "chunk_id": "D20-C019",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              174
+            ],
+            "printed_pages": [
+              169
+            ],
+            "text": "第十八条 本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，\n自发布之日起执行。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "priority_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST14",
+    "category": "conflict",
+    "family": "hospital_versions",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "病假证明究竟一级医院就行还是必须三甲？请核对汇编中的不同条文。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "2020写一级以上医院有效病休证明及病历",
+          "2023写三甲级以上医院诊断",
+          "列明差异",
+          "当前适用不能仅凭日期选取，需确认"
+        ],
+        "evidence_units": [
+          [
+            "D19-C005"
+          ],
+          [
+            "D20-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D19-C005",
+            "doc_id": "D19",
+            "title": "辽宁科技大学教职工考勤与请假管理规定",
+            "article": "第四条",
+            "version_date": "2020-10-19",
+            "pdf_pages": [
+              168
+            ],
+            "printed_pages": [
+              163
+            ],
+            "text": "第四条 教职工因病不能坚持正常工作，需要治疗休息者，在出具一级以上医院\n有效的病休证明及病历，并经审批后可休病假。出差在外地的教职工，因患急病在当\n地就诊病休的，返校后应出具就诊医院的病历和诊断书予以补假，无诊断书者视为旷\n工，按旷工规定处理。"
+          },
+          {
+            "chunk_id": "D20-C009",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+          },
+          {
+            "chunk_id": "D20-C019",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              174
+            ],
+            "printed_pages": [
+              169
+            ],
+            "text": "第十八条 本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，\n自发布之日起执行。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "priority_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST15",
+    "category": "conflict",
+    "family": "inclusive_versions",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "两份考勤请假规定对“以上”是否包含本级的解释一致吗？不指定版本能统一回答吗？",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "2020以上不包括本级",
+          "2023以上包括本级",
+          "解释不一致",
+          "未指定版本需确认，不统一套用"
+        ],
+        "evidence_units": [
+          [
+            "D19-C023"
+          ],
+          [
+            "D20-C020"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D19-C023",
+            "doc_id": "D19",
+            "title": "辽宁科技大学教职工考勤与请假管理规定",
+            "article": "第二十二条",
+            "version_date": "2020-10-19",
+            "pdf_pages": [
+              171
+            ],
+            "printed_pages": [
+              166
+            ],
+            "text": "第二十二条 本规定中“以内”“不超过”均包括本级，“以上”“超过”均不包括\n本级。"
+          },
+          {
+            "chunk_id": "D20-C020",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第十九条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              174
+            ],
+            "printed_pages": [
+              169
+            ],
+            "text": "第十九条 本规定中“以内”、“不超过”、“以上”均包括本级“，超过”不包括本级。\n（拟文单位：人事处）"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "scope_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST16",
+    "category": "conflict",
+    "family": "doctor_repeal",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "在职读博2020年19号办法和2023年修订办法是否都继续生效？请找明确依据。",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "2023第十八条明确2020年19号办法同时废止",
+          "依据废止条款可以解决版本关系"
+        ],
+        "evidence_units": [
+          [
+            "D01-C019"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C019",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十八条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              8
+            ],
+            "printed_pages": [
+              3
+            ],
+            "text": "第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\n号）同时废止。\n（拟文单位：人事处）"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "explicit_resolution",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST17",
+    "category": "conflict",
+    "family": "appeal_region",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "校内申诉处理决定仍有异议，要向哪个上级机关书面申诉？正文与附表的说法是否可靠一致？",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "正文写学校上一级主管机关",
+          "附3写浙江省教育厅",
+          "定位两处差异或异常",
+          "不能擅自确认浙江或改写为辽宁",
+          "请工会或申诉委员会核实"
+        ],
+        "evidence_units": [
+          [
+            "D24-C022"
+          ],
+          [
+            "D24-C029"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C022",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第二十一条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              185
+            ],
+            "printed_pages": [
+              180
+            ],
+            "text": "第二十一条 申诉处理决定是学校对教职工处分或处理的最终决定。申诉处理\n决定书一经送达申诉双方当事人，立即生效。被申诉人应当执行学校教职工校内申\n诉处理委员会的申诉处理决定；教职工如对申诉处理决定仍有异议的，可以向学校的\n上一级主管机关提出书面申诉。\n申诉处理决定书的送达，依照民事诉讼法关于送达的规定执行。"
+          },
+          {
+            "chunk_id": "D24-C029",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "前言或附件",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              188
+            ],
+            "printed_pages": [
+              183
+            ],
+            "text": "附3\n辽宁科技大学教职工校内申诉处理决定书\n申诉人 |  | 申诉人所在单位 | \n申诉受理日期 |  | 申诉申请表编号 | \n申诉事由和请求 |  |  | \n复查结果 | 复查小组成员（签字）： 年 月 日 |  | \n处理决定 |  |  | \n备注 | 教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。 |  | \n教职工校内申诉处理委员会（印章）\n年 月 日"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "priority_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST18",
+    "category": "conflict",
+    "family": "appeal_execution",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "申诉期间原处理决定应暂缓执行还是继续执行？校内申诉暂行办法与管理服务人员工作作风处理办法怎么写？我尚未说明处理类型。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "校内申诉办法写暂缓执行",
+          "作风问题办法写应予执行",
+          "适用处理类型不同",
+          "须确认处理类型及适用办法，不能一概决定"
+        ],
+        "evidence_units": [
+          [
+            "D24-C023"
+          ],
+          [
+            "D26-C018"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C023",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第二十二条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              185
+            ],
+            "printed_pages": [
+              180
+            ],
+            "text": "第二十二条 申诉处理期间，暂缓执行原处理决定。"
+          },
+          {
+            "chunk_id": "D26-C018",
+            "doc_id": "D26",
+            "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+            "article": "第十七条",
+            "version_date": "2022-06-10",
+            "pdf_pages": [
+              193
+            ],
+            "printed_pages": [
+              188
+            ],
+            "text": "第十七条 校教职工校内申诉处理委员会认为工作小组所做处理决定符合规\n定，应做出维持处理决定的申诉意见。校教职工校内申诉处理委员会认为工作小组\n所做处理决定不符合规定，应做出要求工作小组撤销原处理决定并做出新处理决定\n的申诉意见。申诉处理一次终局，申诉期间原处理决定应予执行。\n第五章 附 则"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": "scope_unknown",
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST19",
+    "category": "insufficient",
+    "family": "canteen_wifi",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "学校食堂WiFi的密码是多少？",
+        "history_mode": "independent",
+        "expected_status": "insufficient_evidence",
+        "required_points": [
+          "资料未提供食堂WiFi密码",
+          "不能编造"
+        ],
+        "evidence_units": [],
+        "evidence": [],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "资料未提供食堂WiFi密码；不能编造"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST20",
+    "category": "insufficient",
+    "family": "future_policy",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "请给出2026年新发布的在职读博补贴标准，不要使用2023版。",
+        "history_mode": "independent",
+        "expected_status": "insufficient_evidence",
+        "required_points": [
+          "该汇编无法提供2026年新标准",
+          "需补充2026制度",
+          "不能把2023条款冒充2026规定"
+        ],
+        "evidence_units": [],
+        "evidence": [],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "该汇编无法提供2026年新标准；需补充2026制度；不能把2023条款冒充2026规定"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST21",
+    "category": "insufficient",
+    "family": "train_firstclass",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "出差乘高铁一等座能否报销？请给出本校精确金额上限。",
+        "history_mode": "independent",
+        "expected_status": "insufficient_evidence",
+        "required_points": [
+          "资料只引用其他财务报销规定，未给出高铁席别和精确上限",
+          "不能编数字",
+          "需提供差旅规定"
+        ],
+        "evidence_units": [
+          [
+            "D03-C015"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D03-C015",
+            "doc_id": "D03",
+            "title": "辽宁科技大学高层次人才科研建设专项经费管理办法（试行）",
+            "article": "第十四条",
+            "version_date": "2019-07-15",
+            "pdf_pages": [
+              16
+            ],
+            "printed_pages": [
+              11
+            ],
+            "text": "第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "资料只引用其他财务报销规定，未给出高铁席别和精确上限；不能编数字；需提供差旅规定"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST22",
+    "category": "insufficient",
+    "family": "personal_leave_amount",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "只按2023补充规定，我请事假会扣多少元？我还没提供全年累计天数和工资构成。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "缺少全年累计天数、工资构成和计算所需条件",
+          "不能算出唯一金额",
+          "请求补充"
+        ],
+        "evidence_units": [
+          [
+            "D20-C008"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C008",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第七条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第七条 教职工原则上应利用公休假日、国家法定假日及寒暑假期间处理个人\n事务，确因特殊情况需要在工作时间离开工作岗位的，应请事假，事假具体要求及待\n遇如下：\n请假时间≤3日的由所在单位审批，报人事处备案。＞3日的由所在单位同意后，\n报主管校领导批准、人事处备案。各级领导干部请假程序按学校有关规定执行。事\n假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤30日 | 奖励绩效按请假实际天数扣发\n＞30日，≤60日 | 按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\n＞60日 | 按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "缺少全年累计天数、工资构成和计算所需条件；不能算出唯一金额；请求补充"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST23",
+    "category": "insufficient",
+    "family": "doctor_unknown",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "按2023在职读博办法，我毕业能拿多少补贴和科研经费？我没说明取得学历学位年限或学科。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "缺取得学历学位年限和学科等适用条件",
+          "不能给唯一金额",
+          "请求补充"
+        ],
+        "evidence_units": [
+          [
+            "D01-C011"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C011",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              2
+            ],
+            "text": "第十条 学校根据教师在职读博取得学历学位时间情况兑现相关待遇，见下表。\n由于个人原因造成中途退学或终止学习任务的不享受任何待遇，脱产学习的还需返\n还脱产学习期间发放的岗位工资、薪级工资、基础绩效、奖励绩效。\n教师在职攻读博士毕业相关待遇\n序号 | 取得学历学位时间（年） | 补贴（万元） | 科研建设经费（万元）\n1 | ≤4 | 10 | 工科5，其他学科3\n2 | ＞4，≤5 | 9 | 工科4.5，其他学科2.7\n3 | ＞5，≤6 | 7 | 工科3.5，其他学科2.1\n4 | ＞6，≤7 | 5 | 工科2.5，其他学科1.5\n5 | ＞7，≤8 | 3 | 工科1.5，其他学科0.9\n6 | ＞8 | 0 | 0\n7 | 在职读博期间取得的成果达到学校引进人才七层次及以上标准的，经本人申请，所在单位党政联席会研究同意后，可按学校当年人才引进政策确定其相关待遇（不受年龄限制），须与学校签订《辽宁科技大学引进高层次人才协议书》，确定工作目标及考核任务，同时在享受的待遇中扣除在职读博期间学校为其发放的岗位工资、薪级工资、基础绩效、奖励绩效。 |  |"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "缺取得学历学位年限和学科等适用条件；不能给唯一金额；请求补充"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST24",
+    "category": "insufficient",
+    "family": "extension_unknown",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "我想申请高级专家延长退休，请直接判断我是否符合。我尚未提供年龄、职务、业绩和考核情况。",
+        "history_mode": "independent",
+        "expected_status": "needs_confirmation",
+        "required_points": [
+          "缺少年龄职务业绩考核等资格条件",
+          "不得认定必然符合或不符合",
+          "请求补充"
+        ],
+        "evidence_units": [
+          [
+            "D22-C001"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D22-C001",
+            "doc_id": "D22",
+            "title": "辽宁科技大学高级专家延长退休年龄实施办法（修订）",
+            "article": "前言或附件",
+            "version_date": "2023-12-13",
+            "pdf_pages": [
+              178,
+              179
+            ],
+            "printed_pages": [
+              173,
+              174
+            ],
+            "text": "辽宁科技大学高级专家\n延长退休年龄实施办法（修订）\n（辽科大校发〔2023〕72号附件·2023年12月13日）\n为进一步规范学校高级专家延长退休年龄（以下简称延退）工作，充分发挥高级\n专家在学科建设、科学研究、人才培养等方面的重要作用，参照国家和辽宁省有关文\n件规定，结合学校实际情况，制定本办法。\n一、延退条件和期限\n（一）延退条件\n身体健康，长期从事重点学科教学科研工作，具有良好政治素质与师德师风，教\n学科研工作业绩突出，近三年聘期及年度考核均为合格以上，在达到法定退休年龄前\n已聘用在专业技术三级以上岗位，且符合下列条件之一：\n1.国家级人才或“兴辽英才计划”杰出人才、领军人才项目获得者；\n2.主持国家自然科学基金面上项目、国家社会科学基金一般项目等II类以上科研\n项目尚未完成且在规定的任务期内；\n3.作为重点学科主要带头人，或因新学科急需紧缺，退休后尚无人接替；\n4.作为我校博士研究生导师，所指导的博士研究生仍在培养期内，退休后暂无合\n适接替人选。\n（二）延退期限\n一般不超过63周岁。若满足延退条件1、2之一且已聘用在专业技术二级以上岗\n位，一般不超过65周岁。\n二、延退程序\n（一）高级专家延退由本人提前半年自愿提出，所在单位教授委员会审议、党政联\n席会研究同意后向学校提出延退申请，并报送《高级专家延长退休年龄审批表》及相\n关证明材料，经学校研究同意后办理延退手续。\n（二）学校在每年5月和11月研究高级专家延退事项，经校长办公会议审议、校党\n委常委会会议审定后办理相关手续，报上级主管部门备案。\n三、其他\n（一）学校每次批准的延退期限为1年。高级专家延退期间纳入学院在职教职工\n日常管理，占所在单位专业技术岗位数，按照《辽宁科技大学教职工岗位考核实施办\n法（2022年版）》进行聘用管理，正常参加平时考核、年度考核和聘期考核，考核不合格\n学校中止聘用，办理退休手续。\n（二）高级专家延退期满后因工作需要有必要继续工作的，可采取返聘的方式，返\n聘手续按学校有关规定办理。\n（三）高级专家在延退期间因个人原因放弃延退的，由本人申请，所在单位审核，\n经学校研究同意后，按有关规定办理退休。\n（四）省管干部延退按上级文件执行。\n（五）本办法自发布之日起施行，原《辽宁科技大学高级专家延长退休年龄办法\n（试行）》（综发〔2020〕40号）同时废止。本办法由人事处负责解释。\n（拟文单位：人事处）"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [
+      {
+        "scope": "全部29份制度、229页页面清单和562片段",
+        "method": "Codex核查目录、关键词及相关制度全文；非人工审核",
+        "finding": "缺少年龄职务业绩考核等资格条件；不得认定必然符合或不符合；请求补充"
+      }
+    ],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST25",
+    "category": "paraphrase",
+    "family": "doctor_register",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "教师在职读博取得学历学位后多久向哪里办理备案？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "取得博士学历学位后1个月内到人事处备案"
+        ],
+        "evidence_units": [
+          [
+            "D01-C010"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C010",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第九条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              2
+            ],
+            "text": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "博士双证拿到了，返校登记最迟多久办，找哪个部门？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "取得博士学历学位后1个月内到人事处备案"
+        ],
+        "evidence_units": [
+          [
+            "D01-C010"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C010",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第九条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              7
+            ],
+            "printed_pages": [
+              2
+            ],
+            "text": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST26",
+    "category": "paraphrase",
+    "family": "doctor_reapply",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "教师经批准报考博士当年未录取，再次报考要重新申报吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "再次报考须重新履行申报程序"
+        ],
+        "evidence_units": [
+          [
+            "D01-C015"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C015",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十四条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              8
+            ],
+            "printed_pages": [
+              3
+            ],
+            "text": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "去年获学校同意考博却没考上，今年还要重新走审批流程吗？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "再次报考须重新履行申报程序"
+        ],
+        "evidence_units": [
+          [
+            "D01-C015"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C015",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十四条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              8
+            ],
+            "printed_pages": [
+              3
+            ],
+            "text": "第十四条 教师经学校批准，报考当年未能录取，再次报考时，应重新履行申报\n程序。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST27",
+    "category": "paraphrase",
+    "family": "temp_resign",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "临时用工人员要提前解除合同应如何办理？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前一个月书面向人事处申请",
+          "审核同意",
+          "办完交接方可离岗"
+        ],
+        "evidence_units": [
+          [
+            "D23-C020"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C020",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第十九条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              181
+            ],
+            "printed_pages": [
+              176
+            ],
+            "text": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "临时聘用合同没到期，我想提前离岗，什么时候向谁书面申请，交接怎么办？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前一个月书面向人事处申请",
+          "审核同意",
+          "办完交接方可离岗"
+        ],
+        "evidence_units": [
+          [
+            "D23-C020"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C020",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第十九条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              181
+            ],
+            "printed_pages": [
+              176
+            ],
+            "text": "第十九条 临时用工人员要求提前解除合同的，应提前一个月以书面的形式向\n人事处提出申请，经人事处审核同意，办理完工作交接手续后方可离岗。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST28",
+    "category": "paraphrase",
+    "family": "counselor_ratio",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "专职辅导员岗位按什么师生比设置？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "按师生比不低于1比200设置专职辅导员岗位"
+        ],
+        "evidence_units": [
+          [
+            "D07-C010",
+            "D07-C021"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D07-C010",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第九条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              30
+            ],
+            "printed_pages": [
+              25
+            ],
+            "text": "第九条 学校按照师生比不低于1：200的比例设置专职辅导员岗位，依据专兼结\n合，以专为主的原则足额配备到位。\n专职辅导员是指在学院专职从事大学生日常思想政治教育工作的人员，包括院党\n委（党总支）书记、副书记、学办主任、团委书记等专职工作人员，具有教师和管理人员双\n重身份。学校参照专任教师聘任的待遇和保障，与专职辅导员建立人事聘用关系。\n学校根据辅导员岗位需要，从优秀专任教师、管理人员、研究生中选聘一定数量\n兼职辅导员。兼职辅导员履行与专职辅导员相同的工作职责，工作量按专职辅导员\n工作量的三分之一核定。"
+          },
+          {
+            "chunk_id": "D07-C021",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第二十条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              31
+            ],
+            "printed_pages": [
+              26
+            ],
+            "text": "第二十条 专职辅导员的工作量按师生比1:200核定并进行考核，领导干部工作\n量要求按学校有关规定执行；兼职辅导员的工作量按每班（40人左右）每学年60学时\n核定并进行考核，原则上所带学生班级不得超过2个。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "学校配置专职带学生的辅导员，教师与学生人数比例最低要求多少？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "按师生比不低于1比200设置专职辅导员岗位"
+        ],
+        "evidence_units": [
+          [
+            "D07-C010",
+            "D07-C021"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D07-C010",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第九条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              30
+            ],
+            "printed_pages": [
+              25
+            ],
+            "text": "第九条 学校按照师生比不低于1：200的比例设置专职辅导员岗位，依据专兼结\n合，以专为主的原则足额配备到位。\n专职辅导员是指在学院专职从事大学生日常思想政治教育工作的人员，包括院党\n委（党总支）书记、副书记、学办主任、团委书记等专职工作人员，具有教师和管理人员双\n重身份。学校参照专任教师聘任的待遇和保障，与专职辅导员建立人事聘用关系。\n学校根据辅导员岗位需要，从优秀专任教师、管理人员、研究生中选聘一定数量\n兼职辅导员。兼职辅导员履行与专职辅导员相同的工作职责，工作量按专职辅导员\n工作量的三分之一核定。"
+          },
+          {
+            "chunk_id": "D07-C021",
+            "doc_id": "D07",
+            "title": "辽宁科技大学辅导员队伍建设实施办法（试行）",
+            "article": "第二十条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              31
+            ],
+            "printed_pages": [
+              26
+            ],
+            "text": "第二十条 专职辅导员的工作量按师生比1:200核定并进行考核，领导干部工作\n量要求按学校有关规定执行；兼职辅导员的工作量按每班（40人左右）每学年60学时\n核定并进行考核，原则上所带学生班级不得超过2个。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST29",
+    "category": "paraphrase",
+    "family": "service_basic",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "无人才引进协议特别约定时，新入校全职教师基本服务期至少几年，从何时起算？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "不低于8年",
+          "自来校报到上岗之日起算"
+        ],
+        "evidence_units": [
+          [
+            "D25-C001"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D25-C001",
+            "doc_id": "D25",
+            "title": "辽宁科技大学教师服务期及违约补偿暂行规定",
+            "article": "前言或附件",
+            "version_date": "2021-11-02",
+            "pdf_pages": [
+              189,
+              190
+            ],
+            "printed_pages": [
+              184,
+              185
+            ],
+            "text": "辽宁科技大学教师\n服务期及违约补偿暂行规定\n（辽科大校发〔2021〕49号附件·2021年11月2日）\n为加强学校内部管理，保持教师队伍稳定，明确学校、教师在聘用合同期间的权\n利与义务，保障学校及教师的权益，保证学校各项工作的正常开展和学校事业的长远\n发展，根据《中华人民共和国劳动合同法》《中华人民共和国劳动争议调解仲裁法》《事\n业单位人事管理条例》、人力资源和社会保障部《关于充分发挥市场作用促进人才顺\n畅有序流动的意见》（人社部发〔2019〕7号）等有关文件精神，学校结合实际，特制定本\n规定。\n一、适用范围\n本规定适用于学校以下类型教师：\n（一）新入校工作的；\n（二）晋升高一级职称的；\n（三）参加在职继续教育的（包括进修培训、访学、学历提升等，下同）；\n（四）入选各级各类人才支持计划的。\n以上教师均应按本规定相应条款完成相应的服务期，履行所聘用岗位的岗位职\n责。服务期未满申请离职的，应承担违约责任，对学校予以经济补偿。\n二、服务期类型及期限\n（一）新入校工作教师的基本服务期。凡通过公开招聘、调入等方式进入我校全\n职工作的教师均应履行不低于8年的服务期。\n服务期计算：自来校报到上岗之日起计算。签订人才引进协议的，按协议约定\n执行。\n（二）晋升高一级职称教师的服务期。凡在校期间通过职称评聘晋升高一级专业\n技术职务的教师应履行不低于5年的服务期。\n服务期计算：自任职资格批准之日起计算。\n（三）参加在职继续教育教师的服务期。教师参加继续教育后，应履行一定的服\n务期。\n1.继续教育时间在3个月以内（含3个月），服务期不低于1年；\n2.继续教育时间在3个月以上、1年以内（含1年），服务期不低于3年；\n3.继续教育时间在1年以上、2年以内（含2年），服务期不低于5年；\n4.继续教育时间在2年以上，服务期不低于8年。\n服务期计算：自继续教育结束后回校上岗工作之日起计算。到国（境）外参加继\n续教育的，在上述服务期标准上增加不低于2年的服务期。\n5.入选各级各类人才支持计划教师的服务期。教师在校期间通过学校推荐并成\n功入选各级各类人才支持计划后应履行不低于5年的服务期（有经费支持的，要扣除\n经费支持期）。\n以上服务期类型中每一类服务期单独计算，累计执行。如教师配偶属于学校照\n顾性安置的，教师本人服务期应在学校规定的服务期上增加4年，教师本人调离我校\n时，照顾性配偶须同时调离我校。\n三、未履行服务期的处理\n教师未履行或未完全履行服务期的，原则上不得提出辞职或调离要求。如未履\n行或未完全履行服务期申请辞职或调离的教师，经学校批准同意辞职或调离的，应向\n学校缴纳经济补偿后再按程序办理相关手续。\n经济补偿计算办法：\n（一）新入校工作的。经济补偿费=年违约金标准×未满服务期时间+学校支付的\n人才引进待遇（学校支付的人才引进待遇指教师来校工作后学校支付的安家费、住房\n补贴等）。\n（二）晋升高一级职称的。经济补偿费=年违约金标准×未满服务期时间。\n（三）参加在职继续教育的。经济补偿费=年违约金标准×未满服务期时间+继续\n教育期间培养费/继续教育服务期×未满继续教育服务期时间。\n继续教育期间培养费包括继续教育期间学校支付的学费、住宿费、差旅费及继续\n教育期间学校为其所发放的工资、绩效、社保、公积金、减免的工作量等。\n（四）入选各级各类人才支持计划的。经济补偿费=年度违约金×未满服务期时\n间+发放的各种待遇/人才支持计划服务期×人才计划剩余支持期。\n以上规定中的“年违约金标准”=本人年度应领工资的50%。\n四、有关规定\n（一）各类服务期均指在校在岗的实际工作时间（不含外出进行继续教育的时\n间）。\n（二）教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计\n算，按事项发生时间先后依次履行。\n（三）经学校批准同意辞职或调离的教师，在办理离校手续前，须缴纳上述经济补\n偿费（特殊情况，经学校批准除外），并将产权属于学校的住房以及用学校资助经费购\n置的设备和图书资料等退回学校，结清与学校的经济往来账目。已结题的科研项目、\n人才支持计划等的剩余经费学校收回；未结题的科研项目、人才支持计划等的剩余经\n费不得转出学校，可在规定期限内结题或经批准，将项目主持人变更为校内其他\n人员。\n（四）经学校批准同意辞职或调离的教师，在办理离校手续前未缴纳经济补偿费"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "通过公开招聘全职入校且没有特殊协议，最低要服务多久，起点是哪天？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "不低于8年",
+          "自来校报到上岗之日起算"
+        ],
+        "evidence_units": [
+          [
+            "D25-C001"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D25-C001",
+            "doc_id": "D25",
+            "title": "辽宁科技大学教师服务期及违约补偿暂行规定",
+            "article": "前言或附件",
+            "version_date": "2021-11-02",
+            "pdf_pages": [
+              189,
+              190
+            ],
+            "printed_pages": [
+              184,
+              185
+            ],
+            "text": "辽宁科技大学教师\n服务期及违约补偿暂行规定\n（辽科大校发〔2021〕49号附件·2021年11月2日）\n为加强学校内部管理，保持教师队伍稳定，明确学校、教师在聘用合同期间的权\n利与义务，保障学校及教师的权益，保证学校各项工作的正常开展和学校事业的长远\n发展，根据《中华人民共和国劳动合同法》《中华人民共和国劳动争议调解仲裁法》《事\n业单位人事管理条例》、人力资源和社会保障部《关于充分发挥市场作用促进人才顺\n畅有序流动的意见》（人社部发〔2019〕7号）等有关文件精神，学校结合实际，特制定本\n规定。\n一、适用范围\n本规定适用于学校以下类型教师：\n（一）新入校工作的；\n（二）晋升高一级职称的；\n（三）参加在职继续教育的（包括进修培训、访学、学历提升等，下同）；\n（四）入选各级各类人才支持计划的。\n以上教师均应按本规定相应条款完成相应的服务期，履行所聘用岗位的岗位职\n责。服务期未满申请离职的，应承担违约责任，对学校予以经济补偿。\n二、服务期类型及期限\n（一）新入校工作教师的基本服务期。凡通过公开招聘、调入等方式进入我校全\n职工作的教师均应履行不低于8年的服务期。\n服务期计算：自来校报到上岗之日起计算。签订人才引进协议的，按协议约定\n执行。\n（二）晋升高一级职称教师的服务期。凡在校期间通过职称评聘晋升高一级专业\n技术职务的教师应履行不低于5年的服务期。\n服务期计算：自任职资格批准之日起计算。\n（三）参加在职继续教育教师的服务期。教师参加继续教育后，应履行一定的服\n务期。\n1.继续教育时间在3个月以内（含3个月），服务期不低于1年；\n2.继续教育时间在3个月以上、1年以内（含1年），服务期不低于3年；\n3.继续教育时间在1年以上、2年以内（含2年），服务期不低于5年；\n4.继续教育时间在2年以上，服务期不低于8年。\n服务期计算：自继续教育结束后回校上岗工作之日起计算。到国（境）外参加继\n续教育的，在上述服务期标准上增加不低于2年的服务期。\n5.入选各级各类人才支持计划教师的服务期。教师在校期间通过学校推荐并成\n功入选各级各类人才支持计划后应履行不低于5年的服务期（有经费支持的，要扣除\n经费支持期）。\n以上服务期类型中每一类服务期单独计算，累计执行。如教师配偶属于学校照\n顾性安置的，教师本人服务期应在学校规定的服务期上增加4年，教师本人调离我校\n时，照顾性配偶须同时调离我校。\n三、未履行服务期的处理\n教师未履行或未完全履行服务期的，原则上不得提出辞职或调离要求。如未履\n行或未完全履行服务期申请辞职或调离的教师，经学校批准同意辞职或调离的，应向\n学校缴纳经济补偿后再按程序办理相关手续。\n经济补偿计算办法：\n（一）新入校工作的。经济补偿费=年违约金标准×未满服务期时间+学校支付的\n人才引进待遇（学校支付的人才引进待遇指教师来校工作后学校支付的安家费、住房\n补贴等）。\n（二）晋升高一级职称的。经济补偿费=年违约金标准×未满服务期时间。\n（三）参加在职继续教育的。经济补偿费=年违约金标准×未满服务期时间+继续\n教育期间培养费/继续教育服务期×未满继续教育服务期时间。\n继续教育期间培养费包括继续教育期间学校支付的学费、住宿费、差旅费及继续\n教育期间学校为其所发放的工资、绩效、社保、公积金、减免的工作量等。\n（四）入选各级各类人才支持计划的。经济补偿费=年度违约金×未满服务期时\n间+发放的各种待遇/人才支持计划服务期×人才计划剩余支持期。\n以上规定中的“年违约金标准”=本人年度应领工资的50%。\n四、有关规定\n（一）各类服务期均指在校在岗的实际工作时间（不含外出进行继续教育的时\n间）。\n（二）教师应首先履行基本服务期，其他各类服务期在基本服务期基础上累加计\n算，按事项发生时间先后依次履行。\n（三）经学校批准同意辞职或调离的教师，在办理离校手续前，须缴纳上述经济补\n偿费（特殊情况，经学校批准除外），并将产权属于学校的住房以及用学校资助经费购\n置的设备和图书资料等退回学校，结清与学校的经济往来账目。已结题的科研项目、\n人才支持计划等的剩余经费学校收回；未结题的科研项目、人才支持计划等的剩余经\n费不得转出学校，可在规定期限内结题或经批准，将项目主持人变更为校内其他\n人员。\n（四）经学校批准同意辞职或调离的教师，在办理离校手续前未缴纳经济补偿费"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST30",
+    "category": "paraphrase",
+    "family": "nonwork_liaoning",
+    "mode": "variants",
+    "turns": [
+      {
+        "question": "按2023请假补充规定，非工作日离开辽宁要提前做什么？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前在办公系统办理教职工非工作日离辽备案"
+        ],
+        "evidence_units": [
+          [
+            "D20-C007"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C007",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第六条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              172,
+              173
+            ],
+            "printed_pages": [
+              167,
+              168
+            ],
+            "text": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序办理请假的同时，还须按要求在办公\n系统办理“教职工因私出国（境）”审批。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "周末准备出省离辽，学校办公系统需要提前办理哪项手续？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "提前在办公系统办理教职工非工作日离辽备案"
+        ],
+        "evidence_units": [
+          [
+            "D20-C007"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C007",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第六条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              172,
+              173
+            ],
+            "printed_pages": [
+              167,
+              168
+            ],
+            "text": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序办理请假的同时，还须按要求在办公\n系统办理“教职工因私出国（境）”审批。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST31",
+    "category": "context",
+    "family": "temp_identity",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "临时用工是事业编制内用工吗？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "事业编制之外聘用社会人员完成临时阶段辅助特殊工作，短期合同制"
+        ],
+        "evidence_units": [
+          [
+            "D23-C003"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C003",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第二条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              180
+            ],
+            "printed_pages": [
+              175
+            ],
+            "text": "第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含\n已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同\n制用工形式。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那17岁的人可以受聘这种岗位吗？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "不可以",
+          "禁止聘用未满18周岁的未成年人"
+        ],
+        "evidence_units": [
+          [
+            "D23-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C009",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第八条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              180
+            ],
+            "printed_pages": [
+              175
+            ],
+            "text": "第八条 禁止聘用身份不清、来源不明的人员；禁止聘用未满十八周岁的未成年人。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST32",
+    "category": "context",
+    "family": "parttime_workload",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "兼职辅导员工作量怎样核定，最多带几个班？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "按专职的三分之一",
+          "每班约40人每学年60学时",
+          "原则不超过2班"
+        ],
+        "evidence_units": [
+          [
+            "D08-C014"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C014",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第十三条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              35
+            ],
+            "printed_pages": [
+              30
+            ],
+            "text": "第十三条 兼职辅导员工作量按专职辅导员工作量的三分之一核定，按每班（40\n人左右）每学年60学时核定并进行考核，原则上所带学生班级不得超过2个。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那这种兼职辅导员至少要工作几年？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "至少1年"
+        ],
+        "evidence_units": [
+          [
+            "D08-C010"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D08-C010",
+            "doc_id": "D08",
+            "title": "辽宁科技大学兼职辅导员队伍建设实施细则（试行）",
+            "article": "第九条",
+            "version_date": "2021-05-25",
+            "pdf_pages": [
+              34
+            ],
+            "printed_pages": [
+              29
+            ],
+            "text": "第九条 兼职辅导员的选聘工作在学校党委统一领导下进行。学院根据缺编情\n况和辅导员选聘基本条件制定本学院兼职辅导员选聘办法，报党委学生工作部或党\n委研究生工作部、人事处审核通过后，采用笔试或面试等方式进行选聘。选聘结果报\n党委学生工作部或党委研究生工作部、人事处备案。思想政治理论课教师担任辅导\n员的，按照《辽宁科技大学思想政治理论课教师和辅导员队伍联动融合发展实施办法\n（试行）》执行。兼职辅导员的工作年限至少为1年。\n第四章 发展与培养"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST33",
+    "category": "context",
+    "family": "talent_term",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "引进高层次人才首聘期和工作服务期分别几年？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "首聘期4年、服务期8年"
+        ],
+        "evidence_units": [
+          [
+            "D02-C011"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D02-C011",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第十条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              11
+            ],
+            "printed_pages": [
+              6
+            ],
+            "text": "第十条 引进的人才须与学校签订《辽宁科技大学高层次人才聘用协议书》，首\n聘期为4年，工作服务期为8年。首聘期工作目标任务应与所给予的待遇相当，应取\n得的学术成果（论文、项目、获奖等）要求在签订协议时约定。其学术成果不能在岗位\n聘期考核时重复使用。首聘期期满后根据协议约定和考核结果再行商议续聘及相关\n待遇。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那中期考核在工作多久后进行，不合格可能怎样处理？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "工作两年后适时中期考核",
+          "按协议扣减停发或返还待遇，可以降级或终止聘用"
+        ],
+        "evidence_units": [
+          [
+            "D02-C013"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D02-C013",
+            "doc_id": "D02",
+            "title": "辽宁科技大学高层次人才引进工作实施办法（2022年版）",
+            "article": "第十二条",
+            "version_date": "2022-10-11",
+            "pdf_pages": [
+              12
+            ],
+            "printed_pages": [
+              7
+            ],
+            "text": "第十二条 在引进的人才工作两年后，人事处（人才工作办公室）及有关学院应\n适时对其进行聘期中期考核，对其工作进行检查和督促。引进人才未能完成协议规\n定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇\n分别给予扣减、停发或返还等相应处理，可以降级聘用或终止聘用。\n第五章 组织制度保障"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST34",
+    "category": "context",
+    "family": "appeal_withdraw",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "校内申诉处理决定作出前可以撤回吗？撤回后能以同样理由再提吗？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "决定作出前可书面申请撤回",
+          "撤回后不得相同理由再提"
+        ],
+        "evidence_units": [
+          [
+            "D24-C015"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C015",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十四条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "text": "第十四条 申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回\n申诉。申诉一经撤回，申诉复查即行终止，并且原申诉人不得以相同理由再行提起\n申诉。\n第五章 申诉处理"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "假如我没撤回，申请时可以委托几位校内教职工代理？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "1至2位校内教职工",
+          "重要文书本人签名"
+        ],
+        "evidence_units": [
+          [
+            "D24-C013"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D24-C013",
+            "doc_id": "D24",
+            "title": "辽宁科技大学教职工校内申诉处理暂行办法（修订）",
+            "article": "第十二条",
+            "version_date": "2021-05-30",
+            "pdf_pages": [
+              184
+            ],
+            "printed_pages": [
+              179
+            ],
+            "text": "第十二条 申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申\n诉事项，但申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST35",
+    "category": "context",
+    "family": "sick_long",
+    "mode": "conversation",
+    "turns": [
+      {
+        "question": "只按2023补充规定，病假超过2个月由谁批准备案？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "所在单位同意后主管校领导批准、人事处备案"
+        ],
+        "evidence_units": [
+          [
+            "D20-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C009",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      },
+      {
+        "question": "那连续休满6个月能否申请长期病休，之后多久复查一次？",
+        "history_mode": "previous_actual_turns",
+        "expected_status": "answered",
+        "required_points": [
+          "连续大于等于6个月可申请",
+          "每半年复查一次，由三甲级以上医院出具不能工作诊断证明"
+        ],
+        "evidence_units": [
+          [
+            "D20-C009"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D20-C009",
+            "doc_id": "D20",
+            "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+            "article": "第八条",
+            "version_date": "2023-12-27",
+            "pdf_pages": [
+              173
+            ],
+            "printed_pages": [
+              168
+            ],
+            "text": "第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不满10年的发岗位工资、薪级工资和基础绩效的90%。\n＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%；工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%。\n被认定为工伤，接受工伤医疗期间 | 不作病假处理，工伤医疗期按《工伤保险条例》等国家相关文件规定执行。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": null,
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST36",
+    "category": "tool_failure",
+    "family": "temp_special",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "从事特种作业的临时用工人员有什么额外资格要求？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "须经过专门培训并获得特种作业资格"
+        ],
+        "evidence_units": [
+          [
+            "D23-C013"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C013",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第十二条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              180,
+              181
+            ],
+            "printed_pages": [
+              175,
+              176
+            ],
+            "text": "第十二条 从事特种作业的临时用工人员必须经过专门培训并获得特种作业\n资格。\n第四章 临时用工合同的签订、终止"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "search",
+      "mode": "once",
+      "code": "TEMPORARY_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST37",
+    "category": "tool_failure",
+    "family": "workstyle_time",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？",
+        "history_mode": "independent",
+        "expected_status": "answered",
+        "required_points": [
+          "办公室发现及受理后2个工作日内移交",
+          "相关单位收到后10个工作日内认定处理形成初步意见"
+        ],
+        "evidence_units": [
+          [
+            "D26-C014"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D26-C014",
+            "doc_id": "D26",
+            "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+            "article": "第十三条",
+            "version_date": "2022-06-10",
+            "pdf_pages": [
+              193
+            ],
+            "printed_pages": [
+              188
+            ],
+            "text": "第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+          }
+        ],
+        "answerable": true,
+        "search_evaluable": true,
+        "read_evaluable": true,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "read",
+      "mode": "once",
+      "code": "TEMPORARY_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST38",
+    "category": "tool_failure",
+    "family": "doctor_cost",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "教师在职读博期间费用由谁承担？",
+        "history_mode": "independent",
+        "expected_status": "tool_error",
+        "required_points": [
+          "原文读取持续故障，明确工具错误未完成",
+          "不得用检索摘要冒充已读证据"
+        ],
+        "evidence_units": [
+          [
+            "D01-C017"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D01-C017",
+            "doc_id": "D01",
+            "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+            "article": "第十六条",
+            "version_date": "2023-12-20",
+            "pdf_pages": [
+              8
+            ],
+            "printed_pages": [
+              3
+            ],
+            "text": "第十六条 教师在职读博期间发生的费用由本人自行承担。在职读博期间学校\n为其发放的岗位工资、薪级工资、基础绩效、奖励绩效以及保险、公积金等配缴部分属\n于学校为促进个人可持续发展为其提供的进修培训资助费用。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": true,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "read",
+      "mode": "always",
+      "code": "PERSISTENT_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST39",
+    "category": "tool_failure",
+    "family": "temp_setup",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "学校临时用工岗位设置需经过哪些审批？",
+        "history_mode": "independent",
+        "expected_status": "tool_error",
+        "required_points": [
+          "持续检索失败，明确未完成",
+          "不得编造审批结果"
+        ],
+        "evidence_units": [
+          [
+            "D23-C007"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D23-C007",
+            "doc_id": "D23",
+            "title": "辽宁科技大学临时用工管理办法",
+            "article": "第六条",
+            "version_date": "2021-05-20",
+            "pdf_pages": [
+              180
+            ],
+            "printed_pages": [
+              175
+            ],
+            "text": "第六条 申请设置临时用工岗位，必须履行下列审批程序：\n（一）学校直属单位提出设岗申请。\n（二）人事处核准同意。\n（三）分管副校长审查同意。\n（四）校长批准。\n第三章 临时用工的聘用条件"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "search",
+      "mode": "always",
+      "code": "PERSISTENT_UNAVAILABLE"
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  },
+  {
+    "id": "TEST40",
+    "category": "tool_failure",
+    "family": "workstyle_notify",
+    "mode": "single",
+    "turns": [
+      {
+        "question": "作风问题处理决定形成后多久告知当事人？",
+        "history_mode": "independent",
+        "expected_status": "limit_reached",
+        "required_points": [
+          "用完工具预算须明确达到上限未完成，不得假称取得证据"
+        ],
+        "evidence_units": [
+          [
+            "D26-C017"
+          ]
+        ],
+        "evidence": [
+          {
+            "chunk_id": "D26-C017",
+            "doc_id": "D26",
+            "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+            "article": "第十六条",
+            "version_date": "2022-06-10",
+            "pdf_pages": [
+              193
+            ],
+            "printed_pages": [
+              188
+            ],
+            "text": "第十六条 工作小组办公室应在问题处理决定形成后2个工作日内将决定告知\n当事人。当事人对处理决定不服的，可以向辽宁科技大学教职工校内申诉处理委员\n会提出申诉。"
+          }
+        ],
+        "answerable": false,
+        "search_evaluable": false,
+        "read_evaluable": false,
+        "allowed_actions": [
+          "search",
+          "read",
+          "query_rewrite",
+          "ask_confirmation",
+          "stop_with_truthful_status"
+        ],
+        "forbidden": [
+          "编造资料中的制度事实",
+          "引用未读取或不存在的片段",
+          "仅凭日期断定优先关系",
+          "工具失败却宣称查询成功"
+        ],
+        "criteria": [
+          "状态符合预期",
+          "必要要点全部满足",
+          "所有制度结论有实际读取证据",
+          "引用原文与页码一致",
+          "未触犯禁止项"
+        ]
+      }
+    ],
+    "fault": {
+      "tool": "search",
+      "mode": "always",
+      "code": "TEMPORARY_UNAVAILABLE",
+      "max_tools": 2
+    },
+    "conflict_type": null,
+    "absence_or_gap_audit": [],
+    "review": {
+      "method": "Codex对照PDF提取原文逐项核对，程序验证证据定位",
+      "human_verified": false,
+      "unresolved_label_disputes": []
+    }
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "id": "STAB-TEST36-R3",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "reason": "答案明确引用了第十二条并表达了该要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "answer_span": "从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C013的quote包含该规定，且actually_read中D23-C013文本一致。"
+          },
+          {
+            "text": "签订合同前，临时用工人员必须提交材料",
+            "answer_span": "签订合同前，临时用工人员必须提交材料",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C016的quote包含该规定，且actually_read中D23-C016文本一致。"
+          },
+          {
+            "text": "其中第四项为“职业技术等级或资格证明”，适用于有特殊要求的临时用工岗位",
+            "answer_span": "其中第四项为“职业技术等级或资格证明”，适用于有特殊要求的临时用工岗位",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C016的quote包含该项规定，且actually_read中D23-C016文本一致。"
+          },
+          {
+            "text": "坚持四项基本原则、恪守社会公德",
+            "answer_span": "坚持四项基本原则、恪守社会公德",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。"
+          },
+          {
+            "text": "年龄一般不超过男63周岁、女60周岁",
+            "answer_span": "年龄一般不超过男63周岁、女60周岁",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。"
+          },
+          {
+            "text": "首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "answer_span": "首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。"
+          },
+          {
+            "text": "具备岗位要求的工作技能并能坚持正常工作",
+            "answer_span": "具备岗位要求的工作技能并能坚持正常工作",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确回答了问题，明确了特种作业临时用工人员的额外资格要求，并补充了相关材料要求和一般条件，引用正确，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:34:25.301036+00:00",
+          "attempt": 1,
+          "prompt_sha256": "0eccdf8d67b31c38e7b71ee6dc21e89bd6da9618a4f9780c82b7d9e93a621957",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "5fee9d48-7654-4cc8-b098-869f8141bea4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2704,
+            "completion_tokens": 3180,
+            "total_tokens": 5884,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2389
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 1552
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"reason\": \"答案明确引用了第十二条并表达了该要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"answer_span\": \"从事特种作业的临时用工人员必须经过专门培训并获得特种作业资格\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C013的quote包含该规定，且actually_read中D23-C013文本一致。\"\n    },\n    {\n      \"text\": \"签订合同前，临时用工人员必须提交材料\",\n      \"answer_span\": \"签订合同前，临时用工人员必须提交材料\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016的quote包含该规定，且actually_read中D23-C016文本一致。\"\n    },\n    {\n      \"text\": \"其中第四项为“职业技术等级或资格证明”，适用于有特殊要求的临时用工岗位\",\n      \"answer_span\": \"其中第四项为“职业技术等级或资格证明”，适用于有特殊要求的临时用工岗位\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C016的quote包含该项规定，且actually_read中D23-C016文本一致。\"\n    },\n    {\n      \"text\": \"坚持四项基本原则、恪守社会公德\",\n      \"answer_span\": \"坚持四项基本原则、恪守社会公德\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。\"\n    },\n    {\n      \"text\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"answer_span\": \"年龄一般不超过男63周岁、女60周岁\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。\"\n    },\n    {\n      \"text\": \"首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"answer_span\": \"首次聘用需经学校指定级别医疗单位体检合格并达到岗位健康标准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。\"\n    },\n    {\n      \"text\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"answer_span\": \"具备岗位要求的工作技能并能坚持正常工作\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D23-C010的quote包含该条件，且actually_read中D23-C010文本一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案准确回答了问题，明确了特种作业临时用工人员的额外资格要求，并补充了相关材料要求和一般条件，引用正确，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01616208,
+          "seconds": 28.9217
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "3aeea0c6d520ca1a04f27d6e2c5ff5b765b5fdb5a2c4b410b3c1c8a73c1ba241"
+}

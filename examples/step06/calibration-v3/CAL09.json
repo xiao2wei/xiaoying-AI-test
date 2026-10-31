@@ -1,0 +1,80 @@
+{
+  "pass": false,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": false,
+        "reason": "实际回答未展示25日和26日差异，仅声称当前只能每月25日报送，未提及26日规定。"
+      },
+      {
+        "index": 1,
+        "met": false,
+        "reason": "实际回答未说明不能仅凭日期选取，反而直接依据日期和文件更新断言25日适用。"
+      },
+      {
+        "index": 2,
+        "met": false,
+        "reason": "实际回答未请求确认，而是直接给出结论。"
+      }
+    ],
+    "status_ok": false,
+    "decision_ok": true,
+    "answer_correct": false,
+    "facts": [
+      {
+        "text": "因为文件更新，当前肯定只能每月25日报送，旧规则自动作废。",
+        "cited": true,
+        "citation_supported": false,
+        "supported_by_read": false,
+        "reason": "该事实声称旧规则自动作废，但所引用的D20第五条仅规定25日报送，未包含废止D19的条款，不能支持自动作废的结论。",
+        "answer_span": "因为文件更新，当前肯定只能每月25日报送，旧规则自动作废。"
+      }
+    ],
+    "serious_errors": [
+      "无依据事实：声称旧规则自动作废，但所引用的D20第五条未包含废止条款，属于无证据擅自消解冲突。"
+    ],
+    "reason": "实际回答未展示两份规定的差异，未说明不能仅凭日期选取，也未请求确认，而是直接依据文件更新断言25日适用并声称旧规则自动作废，但引用证据不支持废止结论，存在严重错误。"
+  },
+  "critical_errors": [
+    "无依据事实：声称旧规则自动作废，但所引用的D20第五条未包含废止条款，属于无证据擅自消解冲突。",
+    "存在无依据结论或不支持引用"
+  ],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:08:54.065512+00:00",
+      "attempt": 1,
+      "prompt_sha256": "0d400859bdcb515333a1b90daacd2059d98aca931fd760c91c431b318e9a2e70",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "1fe2ff11-86de-444c-8f64-ceeb0725a6c2",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1785,
+        "completion_tokens": 385,
+        "total_tokens": 2170,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 1145
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答未展示25日和26日差异，仅声称当前只能每月25日报送，未提及26日规定。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"reason\": \"实际回答未说明不能仅凭日期选取，反而直接依据日期和文件更新断言25日适用。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未请求确认，而是直接给出结论。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [\n    {\n      \"text\": \"因为文件更新，当前肯定只能每月25日报送，旧规则自动作废。\",\n      \"cited\": true,\n      \"citation_supported\": false,\n      \"supported_by_read\": false,\n      \"reason\": \"该事实声称旧规则自动作废，但所引用的D20第五条仅规定25日报送，未包含废止D19的条款，不能支持自动作废的结论。\",\n      \"answer_span\": \"因为文件更新，当前肯定只能每月25日报送，旧规则自动作废。\"\n    }\n  ],\n  \"serious_errors\": [\n    \"无依据事实：声称旧规则自动作废，但所引用的D20第五条未包含废止条款，属于无证据擅自消解冲突。\"\n  ],\n  \"reason\": \"实际回答未展示两份规定的差异，未说明不能仅凭日期选取，也未请求确认，而是直接依据文件更新断言25日适用并声称旧规则自动作废，但引用证据不支持废止结论，存在严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.0038808000000000002,
+      "seconds": 5.3347
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL09",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": false,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

@@ -1,0 +1,64 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "reason": "实际回答明确表述'适用；细则覆盖学校本科以及研究生兼职辅导员'，直接满足'本科及研究生兼职辅导员均适用'这一要点。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "细则适用于学校本科以及研究生兼职辅导员。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "该事实在回答中明确关联引用D08-C003，引用内容'第二条 本细则适用于学校本科以及研究生兼职辅导员。'足以支持该事实；且该chunk已在actually_read中实际读取，内容一致。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确回答了问题，引用了正确的证据并实际读取，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T14:49:51.681465+00:00",
+      "attempt": 1,
+      "prompt_sha256": "50435687fe2c93dd7d1ce7fcb44059fe6f93e78ea9dec29dad49b29b2914c137",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "13ce8691-c8b1-4f98-8dca-33791874c6fd",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1009,
+        "completion_tokens": 220,
+        "total_tokens": 1229,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 497
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确表述'适用；细则覆盖学校本科以及研究生兼职辅导员'，直接满足'本科及研究生兼职辅导员均适用'这一要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"细则适用于学校本科以及研究生兼职辅导员。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实在回答中明确关联引用D08-C003，引用内容'第二条 本细则适用于学校本科以及研究生兼职辅导员。'足以支持该事实；且该chunk已在actually_read中实际读取，内容一致。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了问题，引用了正确的证据并实际读取，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00220308,
+      "seconds": 4.4473
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL06",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

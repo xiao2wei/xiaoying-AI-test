@@ -1,0 +1,49 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "汇编里教职工考勤统计表到底每月25日还是26日报？请查明不同规定，不能直接认定最新日期自动优先。",
+      "history": [],
+      "output": {
+        "status": "model_error",
+        "claims": [],
+        "gaps": [
+          "HTTP_402"
+        ],
+        "answer": "HTTP_402"
+      },
+      "raw_final": null,
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:27:37.384182+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a36407398f0fe491e832800caff5cbbfb8ce034bf8a1281edf19adb8d6d6bda5",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 402,
+          "error": "HTTP_402",
+          "seconds": 0.503
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 0.5367,
+      "model_calls": 1,
+      "tool_calls": 0,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 0.5374,
+  "model_calls": 1,
+  "tool_calls": 0,
+  "created_at": "2026-10-31T02:27:37.888269+00:00"
+}

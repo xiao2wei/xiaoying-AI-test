@@ -1,0 +1,827 @@
+{
+  "id": "DEV03",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "汇编里教职工考勤统计表到底每月25日还是26日报？请查明不同规定，不能直接认定最新日期自动优先。",
+      "history": [],
+      "output": {
+        "status": "needs_confirmation",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；对于瞒报、漏报的，追究主要领导和相关人员责任。",
+            "citations": [
+              {
+                "chunk_id": "D19-C015",
+                "quote": "第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。",
+            "citations": [
+              {
+                "chunk_id": "D20-C006",
+                "quote": "第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。",
+            "citations": [
+              {
+                "chunk_id": "D20-C003",
+                "quote": "第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。",
+            "citations": [
+              {
+                "chunk_id": "D19-C025",
+                "quote": "第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）同时废止。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "两份文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。"
+        ],
+        "answer": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；对于瞒报、漏报的，追究主要领导和相关人员责任。\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。\n原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。\n两份文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。"
+      },
+      "raw_final": {
+        "status": "needs_confirmation",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；对于瞒报、漏报的，追究主要领导和相关人员责任。",
+            "citations": [
+              {
+                "chunk_id": "D19-C015",
+                "quote": "第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          },
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。",
+            "citations": [
+              {
+                "chunk_id": "D20-C006",
+                "quote": "第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。",
+            "citations": [
+              {
+                "chunk_id": "D20-C003",
+                "quote": "第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。",
+            "citations": [
+              {
+                "chunk_id": "D19-C025",
+                "quote": "第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）同时废止。",
+                "doc_id": "D19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "version_date": "2020-10-19"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "两份文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。"
+        ],
+        "answer": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；对于瞒报、漏报的，追究主要领导和相关人员责任。\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。\n原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。\n两份文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:22.741509+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a127bd4f9cd811a0be9f707f93420741c50302e4f4c64ba9f50d0d3c82a29bc2",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "31bc108a-3ee9-42d6-bb3b-d0dec0f4181c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1442,
+            "completion_tokens": 43,
+            "total_tokens": 1485,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 1058
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"教职工考勤统计表 每月25日 26日 报送 规定\"},\"reason\":\"查找考勤统计表报送日期的不同规定及版本关系\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004842,
+          "seconds": 0.8609
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "教职工考勤统计表 每月25日 26日 报送 规定"
+          },
+          "reason": "查找考勤统计表报送日期的不同规定及版本关系"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教职工考勤统计表 每月25日 26日 报送 规定"
+          },
+          "result": {
+            "ok": true,
+            "query": "教职工考勤统计表 每月25日 26日 报送 规定",
+            "hits": [
+              {
+                "chunk_id": "D19-C015",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第十四条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.630532,
+                "lexical_score": 60.6568,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第十四条 第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向\n学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并\n报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C006",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第五条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.594228,
+                "lexical_score": 55.0917,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第五条 第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报\n送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚\n报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n第三章 请假管理",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D23-C023",
+                "doc_id": "D23",
+                "title": "辽宁科技大学临时用工管理办法",
+                "article": "第二十二条",
+                "version_date": "2021-05-20",
+                "pdf_pages": [
+                  181,
+                  182
+                ],
+                "printed_pages": [
+                  176,
+                  177
+                ],
+                "score": 0.076812,
+                "semantic_score": 0.587943,
+                "lexical_score": 36.4397,
+                "excerpt": "辽宁科技大学临时用工管理办法 第二十二条 第二十二条 学校委托设置临时岗位的直属单位负责临时用工人员的日常管\n理，直属单位要安排专人负责临时用工人员的考勤，每月26日向人事处报送临时用工\n人员考勤表，以此作为核发临时用工人员工资的依据。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C010",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第九条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  169
+                ],
+                "printed_pages": [
+                  164
+                ],
+                "score": 0.065489,
+                "semantic_score": 0.578501,
+                "lexical_score": 21.8478,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第九条 第九条 生育假的范围及期限\n（一）产前检查及孕期工间休息假：怀孕女教职工在工作时间内做产前检查，检查\n时间视为工作时间，原则上每月不超过4次；怀孕7个月以上的，每天可以有1小时工\n间休息。\n（二）产假：正常生育者给予产假158日，其中产前可以休假15日。难产者增加产\n假15日；生育多胞胎的，每多生育1个婴儿，增加产假15日。配偶享有护理假15日。\n女教职工怀孕未满4个月流产的，享受15天产假；怀孕满4个月流产的，享受42天\n产假。\n（三）哺乳假：有不满1周岁婴儿的女教职工，每日给予1小时哺乳时间。生育多\n胞胎者，每多哺乳1个婴儿，每次哺乳时间增加1小时。\n（四）其他计划生育相关法律法规规定应享受生育假情况。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C016",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十五条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.060662,
+                "semantic_score": 0.583712,
+                "lexical_score": 16.587,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十五条 第十五条 各单位在本规定基础上，可结合实际制定本单位教职工的考勤管理\n细则。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0093,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:23.626331+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3da9d357bb3b18f6b421d1c1e09469e47c4a3dfa2518443269971546e98864ec",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "81da2b8d-03fa-4170-99c9-8b66ecac2853",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2657,
+            "completion_tokens": 56,
+            "total_tokens": 2713,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 1249
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D19-C015\", \"D20-C006\"]}, \"reason\": \"读取两份规定中关于考勤统计表报送日期的原文，核对差异及是否明示废止或优先关系\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008643,
+          "seconds": 0.9898
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D19-C015",
+              "D20-C006"
+            ]
+          },
+          "reason": "读取两份规定中关于考勤统计表报送日期的原文，核对差异及是否明示废止或优先关系"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C015"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第十四条",
+              "text": "第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向\n学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并\n报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。",
+              "pdf_pages": [
+                170
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C015",
+              "printed_pages": [
+                165
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C014",
+              "next_chunk_id": "D19-C016",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C006"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第五条",
+              "text": "第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报\n送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚\n报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\n第三章 请假管理",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C006",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C005",
+              "next_chunk_id": "D20-C007",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:24.630560+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d5eff34d5d5edaadfa6fb71ed6fb50cb064ed37ad81a28229f4a5b5f4d3c3c2e",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "b5226a6a-c8d1-4337-9a10-91e8a85bcdfa",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3165,
+            "completion_tokens": 70,
+            "total_tokens": 3235,
+            "prompt_tokens_details": {
+              "cached_tokens": 2688
+            },
+            "prompt_cache_hit_tokens": 2688,
+            "prompt_cache_miss_tokens": 477
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"辽宁科技大学教职工考勤与请假管理补充规定 废止 原规定 施行 附则\", \"doc_ids\": [\"D19\", \"D20\"]}, \"reason\": \"需查明补充规定是否明确废止或优先于原规定，不能仅凭日期判断\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0010335,
+          "seconds": 0.8745
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "search",
+          "arguments": {
+            "query": "辽宁科技大学教职工考勤与请假管理补充规定 废止 原规定 施行 附则",
+            "doc_ids": [
+              "D19",
+              "D20"
+            ]
+          },
+          "reason": "需查明补充规定是否明确废止或优先于原规定，不能仅凭日期判断"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "辽宁科技大学教职工考勤与请假管理补充规定 废止 原规定 施行 附则",
+            "doc_ids": [
+              "D19",
+              "D20"
+            ]
+          },
+          "result": {
+            "ok": true,
+            "query": "辽宁科技大学教职工考勤与请假管理补充规定 废止 原规定 施行 附则",
+            "hits": [
+              {
+                "chunk_id": "D20-C001",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "前言或附件",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.879238,
+                "lexical_score": 77.5392,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 前言或附件 辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C016",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十五条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.088933,
+                "semantic_score": 0.893801,
+                "lexical_score": 66.1908,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十五条 第十五条 各单位在本规定基础上，可结合实际制定本单位教职工的考勤管理\n细则。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C002",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第一条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.081169,
+                "semantic_score": 0.858,
+                "lexical_score": 67.1556,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第一条 第一条 为进一步维护学校各项工作秩序，规范教职工考勤和请假管理，强化监\n督检查，根据国家和辽宁省有关规定，依据《辽宁科技大学章程》，结合学校实际，制定\n本规定。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C025",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第二十四条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  171
+                ],
+                "printed_pages": [
+                  166
+                ],
+                "score": 0.08,
+                "semantic_score": 0.871127,
+                "lexical_score": 65.0418,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第二十四条 第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂\n行规定》（综发〔2017〕25号）同时废止。\n（拟文单位：人事处）",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C003",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第二条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.076149,
+                "semantic_score": 0.875216,
+                "lexical_score": 62.7413,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第二条 第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后\n工作人员（以下统称教职工）。\n第二章 考勤管理",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.012,
+          "attempt_number": 4
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:25.535535+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3eca97054dd52ba2cf3cfc6a9a7b71bbd74a7972e0bc9857e2ed62b452855648",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "c4685017-264a-435d-bf14-12759e42fb4f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4171,
+            "completion_tokens": 61,
+            "total_tokens": 4232,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 971
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D20-C001\", \"D20-C002\", \"D20-C003\", \"D19-C025\"]}, \"reason\": \"读取补充规定首部、适用范围及原规定废止条款，判断两文件关系\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0013245,
+          "seconds": 1.1329
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D20-C001",
+              "D20-C002",
+              "D20-C003",
+              "D19-C025"
+            ]
+          },
+          "reason": "读取补充规定首部、适用范围及原规定废止条款，判断两文件关系"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）\n第一章 总 则",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C001",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D20-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 5
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C002"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第一条",
+              "text": "第一条 为进一步维护学校各项工作秩序，规范教职工考勤和请假管理，强化监\n督检查，根据国家和辽宁省有关规定，依据《辽宁科技大学章程》，结合学校实际，制定\n本规定。",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C002",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C001",
+              "next_chunk_id": "D20-C003",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 6
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C003"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第二条",
+              "text": "第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后\n工作人员（以下统称教职工）。\n第二章 考勤管理",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C003",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C002",
+              "next_chunk_id": "D20-C004",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 7
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D19-C025"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D19",
+              "article": "第二十四条",
+              "text": "第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂\n行规定》（综发〔2017〕25号）同时废止。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                171
+              ],
+              "table_ids": [],
+              "chunk_id": "D19-C025",
+              "printed_pages": [
+                166
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理规定",
+              "version_date": "2020-10-19",
+              "previous_chunk_id": "D19-C024",
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 8
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:26.683795+00:00",
+          "attempt": 1,
+          "prompt_sha256": "304e0066b6d6236ce234bd52743e8e672065a10e619ce027247aad87ee62b1a4",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "bed4f84b-22fb-4ec0-ae97-a64124d93562",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4965,
+            "completion_tokens": 683,
+            "total_tokens": 5648,
+            "prompt_tokens_details": {
+              "cached_tokens": 4224
+            },
+            "prompt_cache_hit_tokens": 4224,
+            "prompt_cache_miss_tokens": 741
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"needs_confirmation\", \"claims\": [{\"text\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责考勤、签到，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；瞒报、漏报的追究主要领导和相关人员责任。\", \"citations\": [{\"chunk_id\": \"D19-C015\", \"quote\": \"第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。\"}]}, {\"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对虚报、瞒报、漏报、迟报等现象严肃处理并追究责任。\", \"citations\": [{\"chunk_id\": \"D20-C006\", \"quote\": \"第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\"}]}, {\"text\": \"补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（统称教职工）。\", \"citations\": [{\"chunk_id\": \"D20-C003\", \"quote\": \"第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。\"}]}, {\"text\": \"原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。\", \"citations\": [{\"chunk_id\": \"D19-C025\", \"quote\": \"第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）同时废止。\"}]}], \"gaps\": [\"两份现行文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。\"]}, \"reason\": \"已查明两规定日期冲突，但无原文明示废止或优先关系，不能仅凭日期认定，需确认适用口径\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0023090999999999997,
+          "seconds": 3.3679
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已查明两规定日期冲突，但无原文明示废止或优先关系，不能仅凭日期认定，需确认适用口径"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:30.067325+00:00",
+          "attempt": 1,
+          "prompt_sha256": "dbc5a7e57368b4d764357e0a18730608661e53b06a6eb953e17a792cd94bb233",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "2a2b2125-d864-4bab-9798-4841a0196a51",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 5821,
+            "completion_tokens": 693,
+            "total_tokens": 6514,
+            "prompt_tokens_details": {
+              "cached_tokens": 5632
+            },
+            "prompt_cache_hit_tokens": 5632,
+            "prompt_cache_miss_tokens": 189
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"needs_confirmation\", \"claims\": [{\"text\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第十四条规定：各单位安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者应将诊断书、请假手续一并报送；对于瞒报、漏报的，追究主要领导和相关人员责任。\", \"citations\": [{\"chunk_id\": \"D19-C015\", \"quote\": \"第十四条 各单位要安排专人负责本单位人员的考勤、签到工作，于每月26日向学校人事处报送本单位《考勤情况统计表》，有病、事假者，应将诊断书、请假手续一并报送。对于瞒报、漏报的，将追究主要领导和相关人员责任。\"}]}, {\"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第五条规定：各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续；对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\", \"citations\": [{\"chunk_id\": \"D20-C006\", \"quote\": \"第五条 各单位每月25日向人事处报送本单位《考勤情况统计表》，病、事假须报送病情诊断证明、请假手续。人事处负责劳动工作纪律的检查与监督，对于发生虚报、瞒报、漏报、迟报等现象的单位，学校将严肃处理，追究主要领导和相关人员责任。\"}]}, {\"text\": \"补充规定第二条明确其适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。\", \"citations\": [{\"chunk_id\": \"D20-C003\", \"quote\": \"第二条 本办法适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员（以下统称教职工）。\"}]}, {\"text\": \"原规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号），未提及废止或优先于2023年补充规定。\", \"citations\": [{\"chunk_id\": \"D19-C025\", \"quote\": \"第二十四条 本规定自发布之日起施行。《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）同时废止。\"}]}], \"gaps\": [\"两份文件对教职工《考勤情况统计表》报送日期规定不一致：2020年规定为每月26日，2023年补充规定为每月25日；现有原文未明确补充规定是否废止、修改或优先于2020年规定第十四条，也未明确两者适用对象或衔接关系。请提供学校关于两份文件效力关系、修订说明或适用口径的原文（如文件号、废止/修订条款或人事处执行通知），以便确定应执行25日还是26日。\"]}, \"reason\": \"已核对条款编号、并列要求与责任后果；日期冲突无原文明示裁决依据，需确认适用口径\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0025779,
+          "seconds": 3.2026
+        },
+        {
+          "kind": "decision",
+          "step": 6,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已核对条款编号、并列要求与责任后果；日期冲突无原文明示裁决依据，需确认适用口径"
+        }
+      ],
+      "read_ids": [
+        "D19-C015",
+        "D20-C006",
+        "D20-C001",
+        "D20-C002",
+        "D20-C003",
+        "D19-C025"
+      ],
+      "first_hits": [
+        "D19-C015",
+        "D20-C006",
+        "D23-C023",
+        "D19-C010",
+        "D20-C016"
+      ],
+      "seconds": 10.5619,
+      "model_calls": 6,
+      "tool_calls": 8,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 10.562,
+  "model_calls": 6,
+  "tool_calls": 8,
+  "created_at": "2026-10-31T02:21:33.272075+00:00"
+}

@@ -1,0 +1,203 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "请确认您被认定的引进人才层次",
+            "reason": "答案通过请求用户确认人才层次，明确提示缺少该条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "请提供首聘期协议或学校人才工作领导小组/校长办公会议确定您待遇的文件",
+            "reason": "答案明确要求补充协议或待遇确定文件，提示缺少已签协议等条件。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "引进人才安家费按层次确定：第一层次100万元；第二层次80万元；第三层次60万元；第四层次20万—30万元；第五层次20万元；第六层次10万元；第七层次5万元；第八层次5万元",
+            "reason": "答案仅列明各层次区间和标准，未给出适用于用户的唯一金额，并要求确认层次和协议。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "请确认您被认定的引进人才层次",
+            "reason": "明确请求补充人才层次信息。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "请提供首聘期协议或学校人才工作领导小组/校长办公会议确定您待遇的文件",
+            "reason": "明确请求补充协议或确定待遇的文件。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第六条规定，引进人才安家费按层次确定。",
+            "answer_span": "《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第六条规定，引进人才安家费按层次确定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第六条开头表明按层次确定待遇，已读原文第六条列明各层次安家费，支持该事实。"
+          },
+          {
+            "text": "第一层次安家费为100万元。",
+            "answer_span": "第一层次100万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第一层次中“2.提供安家费100万元”，支持该金额。"
+          },
+          {
+            "text": "第二层次安家费为80万元。",
+            "answer_span": "第二层次80万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第二层次中“2.提供安家费80万元”，支持该金额。"
+          },
+          {
+            "text": "第三层次安家费为60万元。",
+            "answer_span": "第三层次60万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第三层次中“2.提供安家费60万元”，支持该金额。"
+          },
+          {
+            "text": "第四层次安家费为20万—30万元。",
+            "answer_span": "第四层次20万—30万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第四层次中“2.提供安家费20万—30万元”，支持该金额区间。"
+          },
+          {
+            "text": "第五层次安家费为20万元。",
+            "answer_span": "第五层次20万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第五层次中“2.提供安家费20万元”，支持该金额。"
+          },
+          {
+            "text": "第六层次安家费为10万元。",
+            "answer_span": "第六层次10万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第六层次中“3.提供安家费10万元”，支持该金额。"
+          },
+          {
+            "text": "第七层次安家费为5万元。",
+            "answer_span": "第七层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第七层次中“3.提供安家费5万元”，支持该金额。"
+          },
+          {
+            "text": "第八层次安家费为5万元。",
+            "answer_span": "第八层次5万元",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第八层次中“2.提供安家费5万元”，支持该金额。"
+          },
+          {
+            "text": "该条待遇不含辽宁省、鞍山市配套待遇。",
+            "answer_span": "该条同时注明待遇不含辽宁省、鞍山市配套待遇",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第六条括号内容，明确待遇不含省、市配套待遇，已读原文支持。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+            "answer_span": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二十一条原文，明确10万元及以上安家费发放节点，已读原文支持。"
+          },
+          {
+            "text": "第一至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进，确定待遇，报学校党委常委会会议研究审批。",
+            "answer_span": "第一至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进，确定待遇，报学校党委常委会会议研究审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第九条原文，内容一致，已读原文支持。"
+          },
+          {
+            "text": "第五至第八层次人才由考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准。",
+            "answer_span": "第五至第八层次人才由考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第八条原文，内容一致，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案正确识别安家费取决于人才层次和协议等个人条件，列明各层次标准但未给出唯一金额，请求补充层次和协议信息；引用的安家费标准、发放条件及审批程序均有已读原文支持，处理动作合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "被认定的引进人才层次及是否属于一人一议协商确定待遇情形",
+            "首聘期协议或学校人才工作领导小组/校长办公会议确定待遇的文件"
+          ],
+          "reason": "答案明确要求用户提供认定层次、是否一人一议以及协议或待遇确定文件，指出了需要补充的具体项目，不是泛泛要求自行查询。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:03:20.654082+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d0f9a4438e6247ad6f98b8d3dffe0ebcff3924758e8b8cc2573df7ab319ae4e9",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "88958ec2-d2c4-4a7c-a8d2-4c1d63bd57e4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 6511,
+            "completion_tokens": 6550,
+            "total_tokens": 13061,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4781
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 5487
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"请确认您被认定的引进人才层次\",\n      \"reason\": \"答案通过请求用户确认人才层次，明确提示缺少该条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"请提供首聘期协议或学校人才工作领导小组/校长办公会议确定您待遇的文件\",\n      \"reason\": \"答案明确要求补充协议或待遇确定文件，提示缺少已签协议等条件。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"引进人才安家费按层次确定：第一层次100万元；第二层次80万元；第三层次60万元；第四层次20万—30万元；第五层次20万元；第六层次10万元；第七层次5万元；第八层次5万元\",\n      \"reason\": \"答案仅列明各层次区间和标准，未给出适用于用户的唯一金额，并要求确认层次和协议。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"请确认您被认定的引进人才层次\",\n      \"reason\": \"明确请求补充人才层次信息。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"answer_span\": \"请提供首聘期协议或学校人才工作领导小组/校长办公会议确定您待遇的文件\",\n      \"reason\": \"明确请求补充协议或确定待遇的文件。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第六条规定，引进人才安家费按层次确定。\",\n      \"answer_span\": \"《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第六条规定，引进人才安家费按层次确定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第六条开头表明按层次确定待遇，已读原文第六条列明各层次安家费，支持该事实。\"\n    },\n    {\n      \"text\": \"第一层次安家费为100万元。\",\n      \"answer_span\": \"第一层次100万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第一层次中“2.提供安家费100万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第二层次安家费为80万元。\",\n      \"answer_span\": \"第二层次80万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第二层次中“2.提供安家费80万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第三层次安家费为60万元。\",\n      \"answer_span\": \"第三层次60万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第三层次中“2.提供安家费60万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第四层次安家费为20万—30万元。\",\n      \"answer_span\": \"第四层次20万—30万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第四层次中“2.提供安家费20万—30万元”，支持该金额区间。\"\n    },\n    {\n      \"text\": \"第五层次安家费为20万元。\",\n      \"answer_span\": \"第五层次20万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第五层次中“2.提供安家费20万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第六层次安家费为10万元。\",\n      \"answer_span\": \"第六层次10万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第六层次中“3.提供安家费10万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第七层次安家费为5万元。\",\n      \"answer_span\": \"第七层次5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第七层次中“3.提供安家费5万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"第八层次安家费为5万元。\",\n      \"answer_span\": \"第八层次5万元\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用原文第八层次中“2.提供安家费5万元”，支持该金额。\"\n    },\n    {\n      \"text\": \"该条待遇不含辽宁省、鞍山市配套待遇。\",\n      \"answer_span\": \"该条同时注明待遇不含辽宁省、鞍山市配套待遇\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第六条括号内容，明确待遇不含省、市配套待遇，已读原文支持。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\",\n      \"answer_span\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第二十一条原文，明确10万元及以上安家费发放节点，已读原文支持。\"\n    },\n    {\n      \"text\": \"第一至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进，确定待遇，报学校党委常委会会议研究审批。\",\n      \"answer_span\": \"第一至第五层次人才及柔性引进人才的确定，由学校人才工作领导小组按照“一人一议”原则引进，确定待遇，报学校党委常委会会议研究审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第九条原文，内容一致，已读原文支持。\"\n    },\n    {\n      \"text\": \"第五至第八层次人才由考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准。\",\n      \"answer_span\": \"第五至第八层次人才由考核小组通过试讲、面试、答辩等方式评价并投票表决确定拟聘初步人选，经协商确定待遇及工作目标任务后，报请校长办公会议批准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用第八条原文，内容一致，已读原文支持。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案正确识别安家费取决于人才层次和协议等个人条件，列明各层次标准但未给出唯一金额，请求补充层次和协议信息；引用的安家费标准、发放条件及审批程序均有已读原文支持，处理动作合理。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"被认定的引进人才层次及是否属于一人一议协商确定待遇情形\",\n      \"首聘期协议或学校人才工作领导小组/校长办公会议确定待遇的文件\"\n    ],\n    \"reason\": \"答案明确要求用户提供认定层次、是否一人一议以及协议或待遇确定文件，指出了需要补充的具体项目，不是泛泛要求自行查询。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.034532520000000004,
+          "seconds": 57.6872
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "cd3e54843a8bbd5ebc8fa2bd4080341fdefe9dff725233165519930bf7fe0603"
+}

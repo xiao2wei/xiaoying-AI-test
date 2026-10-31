@@ -1,0 +1,926 @@
+{
+  "id": "TEST30",
+  "category": "paraphrase",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "按2023请假补充规定，非工作日离开辽宁要提前做什么？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              },
+              {
+                "chunk_id": "D20-C001",
+                "quote": "辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "前言或附件",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。\n该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              },
+              {
+                "chunk_id": "D20-C001",
+                "quote": "辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "前言或附件",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。\n该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:07.082303+00:00",
+          "attempt": 1,
+          "prompt_sha256": "d36072d94348a84f0958720eed589ddb961f78703cae69f44e3fc4a3dabfdd77",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "ed3ed290-ef5b-4433-93f7-073f2ee987a4",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1728,
+            "completion_tokens": 43,
+            "total_tokens": 1771,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 192
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"2023 请假 补充规定 非工作日 离开辽宁 提前\"},\"reason\":\"查找2023请假补充规定中非工作日离开辽宁的提前要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000118416,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.9803
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "2023 请假 补充规定 非工作日 离开辽宁 提前"
+          },
+          "reason": "查找2023请假补充规定中非工作日离开辽宁的提前要求"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "2023 请假 补充规定 非工作日 离开辽宁 提前"
+          },
+          "result": {
+            "ok": true,
+            "query": "2023 请假 补充规定 非工作日 离开辽宁 提前",
+            "hits": [
+              {
+                "chunk_id": "D20-C007",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.762133,
+                "lexical_score": 51.1191,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第六条 第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C001",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "前言或附件",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172
+                ],
+                "printed_pages": [
+                  167
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.700117,
+                "lexical_score": 34.5684,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 前言或附件 辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C008",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第七条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.083478,
+                "semantic_score": 0.717596,
+                "lexical_score": 22.026,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第七条 第七条 教职工原则上应利用公休假日、国家法定假日及寒暑假期间处理个人\n事务，确因特殊情况需要在工作时间离开工作岗位的，应请事假，事假具体要求及待\n遇如下：\n请假时间≤3日的由所在单位审批，报人事处备案。＞3日的由所在单位同意后，\n报主管校领导批准、人事处备案。各级领导干部请假程序按学校有关规定执行。事\n假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤30日 | 奖励绩效按请假实际天数扣发\n＞30日，≤60日 | 按日扣发基础绩效和奖励绩效，当年年度考核不能评优。\n＞60日 | 按日扣岗位工资、薪级工资、基础绩效和奖励绩效，不参加当年年度考核，不计算连续工龄。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C014",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十三条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.078704,
+                "semantic_score": 0.713165,
+                "lexical_score": 20.6408,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十三条 第十三条 有下列行为之一者，视为旷工：\n（一）不履行请假、续假手续擅离工作岗位的；\n（二）申请调离、解聘、辞职或请假但未获批准，擅离工作岗位的；\n（三）超过批准假期仍未到岗工作的；\n（四）谎报情况，编造理由，欺骗组织请假的；\n（五）其他应视为旷工的行为。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C019",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第十八条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  174
+                ],
+                "printed_pages": [
+                  169
+                ],
+                "score": 0.074483,
+                "semantic_score": 0.704149,
+                "lexical_score": 20.3728,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第十八条 第十八条 本规定未尽事宜，按国家、辽宁省有关规定执行，由人事处负责解释，\n自发布之日起执行。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0094,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:08.107891+00:00",
+          "attempt": 1,
+          "prompt_sha256": "89e01c989c68f76ba1939444c5841186e00dcbfcc5f02cf8292b2585f96f3f99",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "d41788e7-6e3d-463b-a995-d1aba7c5b5a1",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3093,
+            "completion_tokens": 47,
+            "total_tokens": 3140,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1429
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D20-C007\", \"D20-C001\"]}, \"reason\": \"读取第六条原文及文件标题版本信息，核实备案要求与适用对象\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0004950839999999999,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.7456
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D20-C007",
+              "D20-C001"
+            ]
+          },
+          "reason": "读取第六条原文及文件标题版本信息，核实备案要求与适用对象"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C007"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第六条",
+              "text": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序办理请假的同时，还须按要求在办公\n系统办理“教职工因私出国（境）”审批。",
+              "pdf_pages": [
+                172,
+                173
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C007",
+              "printed_pages": [
+                167,
+                168
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C006",
+              "next_chunk_id": "D20-C008",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教职工考勤与请假管理补充规定\n（辽科大人发〔2023〕10号·2023年12月27日）\n第一章 总 则",
+              "pdf_pages": [
+                172
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C001",
+              "printed_pages": [
+                167
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D20-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:08.886474+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b2d48d0359e5a7a339202353443c8a818d3cec399e9006861d2ea9539a9e6234",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "4d4bf5aa-d524-4711-a919-8f21e68a80c4",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3723,
+            "completion_tokens": 274,
+            "total_tokens": 3997,
+            "prompt_tokens_details": {
+              "cached_tokens": 3072
+            },
+            "prompt_cache_hit_tokens": 3072,
+            "prompt_cache_miss_tokens": 651
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。\"}, {\"chunk_id\": \"D20-C001\", \"quote\": \"辽宁科技大学教职工考勤与请假管理补充规定\\n（辽科大人发〔2023〕10号·2023年12月27日）\"}]}, {\"text\": \"该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"凡未备案并\\n造成严重后果的取消当年晋升、评优评奖资格。\"}]}], \"gaps\": []}, \"reason\": \"已读取2023年补充规定第六条原文，明确非工作日离辽须提前在办公系统备案及未备案后果\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000542532,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 1.2525
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取2023年补充规定第六条原文，明确非工作日离辽须提前在办公系统备案及未备案后果"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:10.172945+00:00",
+          "attempt": 1,
+          "prompt_sha256": "866805955918e46c863b5bc17cf2bcf0f1c6d2cd61bb71385492a7aeb406ad3c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "eed83bb3-0bb2-4e3a-9362-1a431c25c34c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4171,
+            "completion_tokens": 1177,
+            "total_tokens": 5348,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 927
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2635
+          },
+          "content": "{\"action\":\"finish\",\"result\":{\"status\":\"answered\",\"claims\":[{\"text\":\"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023年12月27日）第六条规定：教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。\",\"citations\":[{\"chunk_id\":\"D20-C007\",\"quote\":\"非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。\"},{\"chunk_id\":\"D20-C001\",\"quote\":\"辽宁科技大学教职工考勤与请假管理补充规定\\n（辽科大人发〔2023〕10号·2023年12月27日）\"}]},{\"text\":\"该条同时规定，凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\",\"citations\":[{\"chunk_id\":\"D20-C007\",\"quote\":\"凡未备案并\\n造成严重后果的取消当年晋升、评优评奖资格。\"}]}],\"gaps\":[]},\"reason\":\"已读取2023年补充规定第六条原文，明确非工作日离辽须提前在办公系统备案及未备案后果\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.002212116,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 7.2188
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "已读取2023年补充规定第六条原文，明确非工作日离辽须提前在办公系统备案及未备案后果"
+        }
+      ],
+      "read_ids": [
+        "D20-C007",
+        "D20-C001"
+      ],
+      "first_hits": [
+        "D20-C007",
+        "D20-C001",
+        "D20-C008",
+        "D20-C014",
+        "D20-C019"
+      ],
+      "seconds": 10.3437,
+      "model_calls": 4,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    },
+    {
+      "mode": "agent",
+      "question": "周末准备出省离辽，学校办公系统需要提前办理哪项手续？",
+      "history": [],
+      "output": {
+        "status": "needs_confirmation",
+        "claims": [
+          {
+            "text": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "若该次离辽占用工作日而需请假，教职工应按照规定程序和审批权限提前在办公系统提交申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的，应先提交续假申请，经批准后方可续假。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "请确认您的身份是教职工还是学生；若是学生，请提供适用的学生离校备案或请销假制度名称、版本日期。",
+          "请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需明确请假期限并走请假审批流程。"
+        ],
+        "answer": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\n若该次离辽占用工作日而需请假，教职工应按照规定程序和审批权限提前在办公系统提交申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的，应先提交续假申请，经批准后方可续假。\n请确认您的身份是教职工还是学生；若是学生，请提供适用的学生离校备案或请销假制度名称、版本日期。\n请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需明确请假期限并走请假审批流程。"
+      },
+      "raw_final": {
+        "status": "needs_confirmation",
+        "claims": [
+          {
+            "text": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          },
+          {
+            "text": "若该次离辽占用工作日而需请假，教职工应按照规定程序和审批权限提前在办公系统提交申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的，应先提交续假申请，经批准后方可续假。",
+            "citations": [
+              {
+                "chunk_id": "D20-C007",
+                "quote": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "doc_id": "D20",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "version_date": "2023-12-27"
+              }
+            ]
+          }
+        ],
+        "gaps": [
+          "请确认您的身份是教职工还是学生；若是学生，请提供适用的学生离校备案或请销假制度名称、版本日期。",
+          "请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需明确请假期限并走请假审批流程。"
+        ],
+        "answer": "教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\n若该次离辽占用工作日而需请假，教职工应按照规定程序和审批权限提前在办公系统提交申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的，应先提交续假申请，经批准后方可续假。\n请确认您的身份是教职工还是学生；若是学生，请提供适用的学生离校备案或请销假制度名称、版本日期。\n请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需明确请假期限并走请假审批流程。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:17.428576+00:00",
+          "attempt": 1,
+          "prompt_sha256": "66115a5d8a25e57415ac469ddf5f4cc775bf3c4591d3d5490bd2dc0b05be8fc0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "b59defb7-7090-4c32-ac91-da193546276c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1730,
+            "completion_tokens": 41,
+            "total_tokens": 1771,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 194
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"教职工出省离辽 请假 审批 手续 办公系统\"},\"reason\":\"查找教职工离辽出省需办理的手续及审批要求\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00011661599999999998,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.885
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "教职工出省离辽 请假 审批 手续 办公系统"
+          },
+          "reason": "查找教职工离辽出省需办理的手续及审批要求"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "教职工出省离辽 请假 审批 手续 办公系统"
+          },
+          "result": {
+            "ok": true,
+            "query": "教职工出省离辽 请假 审批 手续 办公系统",
+            "hits": [
+              {
+                "chunk_id": "D20-C007",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第六条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  172,
+                  173
+                ],
+                "printed_pages": [
+                  167,
+                  168
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.780403,
+                "lexical_score": 39.9306,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第六条 第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C017",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第十六条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  170
+                ],
+                "printed_pages": [
+                  165
+                ],
+                "score": 0.085455,
+                "semantic_score": 0.728549,
+                "lexical_score": 18.5325,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第十六条 第十六条 教职工请假须事先提交书面申请，按审批权限经批准的假期方为有\n效。请假者不得随意超假，因特殊原因不能按期上班的，须提前办理续假手续。凡未\n经请假、续假或请假、续假未获批准而离岗者按旷工处理。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C003",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第二条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  168
+                ],
+                "printed_pages": [
+                  163
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.707948,
+                "lexical_score": 21.3848,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第二条 第二条 事假审批\n（一）事假在3日以内的，由所在单位主要负责人审批。\n（二）事假在3日以上的，由所在单位签署意见，报主管校领导批准并报人事处\n备案。\n（三）各级领导干部请假程序按学校有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D19-C006",
+                "doc_id": "D19",
+                "title": "辽宁科技大学教职工考勤与请假管理规定",
+                "article": "第五条",
+                "version_date": "2020-10-19",
+                "pdf_pages": [
+                  168,
+                  169
+                ],
+                "printed_pages": [
+                  163,
+                  164
+                ],
+                "score": 0.083916,
+                "semantic_score": 0.697935,
+                "lexical_score": 34.5936,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理规定 第五条 第五条 病假的审批及管理\n（一）全年病休在2个月以内的，由所在单位主要负责人审批，报人事处审核备案。\n（二）全年病休在2个月以上的，由所在单位签署意见，报主管校领导批准并报人\n事处审核备案。\n（三）病休连续超过6个月的，由所在单位签署意见，报主管校领导批准并报人事\n处审核备案，经学校审批后办理长期病休手续。\n（四）患病需休息治疗者，必须先履行请假审批手续。因患急性病未先办理请假\n审批手续者，应及时履行补假手续。请假手续应由患者本人办理，确因特殊原因本人\n不能亲自办理者，可委托他人代为办理。\n（五）已办理长期病休的人员，若要求恢复工作，需由学校指定的医院出具可恢复\n工作证明，经批准后办理恢复工作手续；若需继续病休者，每半年到学校指定的医院\n进行一次复查，",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D20-C009",
+                "doc_id": "D20",
+                "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+                "article": "第八条",
+                "version_date": "2023-12-27",
+                "pdf_pages": [
+                  173
+                ],
+                "printed_pages": [
+                  168
+                ],
+                "score": 0.079193,
+                "semantic_score": 0.690975,
+                "lexical_score": 21.4977,
+                "excerpt": "辽宁科技大学教职工考勤与请假管理补充规定 第八条 第八条 教职工因病经三甲级以上医院诊断不能正常上班，可请病假。每次病\n假申请时间以医生提出建议休息天数为准，具体要求及待遇如下：\n请假时间≤2个月的由所在单位审批，报人事处备案。请假时间大于2个月的经所\n在单位同意后，报主管校领导批准、人事处备案。病假连续≥6个月，可申请长期病休\n手续，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作\n诊断证明，继续办理请假手续。长期病休人员如恢复工作，需由三甲级以上医院证明\n确已康复，办理销假手续，正式返岗工作。病假相关待遇见下表。\n全年累计请假时间 | 相关待遇\n＞5日，≤60日 | 奖励绩效按请假实际天数扣发\n＞60日，≤6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效，工作年限不",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0093,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:18.358752+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1a05465becf51ea02f323ffe9b16c49cca3efca64fe0b97f48b241d7347621d0",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "9b6a89e3-c1dd-4a58-8797-e4c91715fb3c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3303,
+            "completion_tokens": 42,
+            "total_tokens": 3345,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1639
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D20-C007\"]}, \"reason\": \"读取补充规定第六条，确认非工作日离辽备案要求及未备案后果\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000552084,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 0.9286
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D20-C007"
+            ]
+          },
+          "reason": "读取补充规定第六条，确认非工作日离辽备案要求及未备案后果"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D20-C007"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D20",
+              "article": "第六条",
+              "text": "第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\n经批准后方可续假。\n因突发性情况不能及时办理请假、续假手续的，应在第一时间向所在单位分管考\n勤工作的领导报告，并在批准的假期开始之日起5日内补办手续（特殊原因不能亲自\n办理的，可委托他人代办）。请假期满或假期未满提前上班的，应及时按对应的请假\n流程办理销假手续。\n非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\n造成严重后果的取消当年晋升、评优评奖资格。\n《辽宁科技大学因私出国（境）管理办法（试行）》（委发〔2018〕41号）“登记备案人\n员范围”中的人员因私出国（境），在按规定程序办理请假的同时，还须按要求在办公\n系统办理“教职工因私出国（境）”审批。",
+              "pdf_pages": [
+                172,
+                173
+              ],
+              "table_ids": [],
+              "chunk_id": "D20-C007",
+              "printed_pages": [
+                167,
+                168
+              ],
+              "title": "辽宁科技大学教职工考勤与请假管理补充规定",
+              "version_date": "2023-12-27",
+              "previous_chunk_id": "D20-C006",
+              "next_chunk_id": "D20-C008",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:19.321581+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4f5d6d7bfc4b7ffa3f4f465b858251c930f2ccd75af88024883cc0da5aaaf9a8",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "236b99cc-4301-4c34-b151-39ab9a5e962c",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3761,
+            "completion_tokens": 307,
+            "total_tokens": 4068,
+            "prompt_tokens_details": {
+              "cached_tokens": 3328
+            },
+            "prompt_cache_hit_tokens": 3328,
+            "prompt_cache_miss_tokens": 433
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\\n造成严重后果的取消当年晋升、评优评奖资格。\"}]}, {\"text\": \"若离辽期间属于请假（占用工作日），则应按规定的程序和审批权限提前在办公系统提交请假申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的应先提交续假申请并经批准。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\\n经批准后方可续假。\"}]}], \"gaps\": [\"请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需按请假流程提交申请并明确请假期限。\"]}, \"reason\": \"补充规定第六条明确非工作日离辽备案及请假流程，足以回答\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000518268,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 2.0968
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "补充规定第六条明确非工作日离辽备案及请假流程，足以回答"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:51:21.450426+00:00",
+          "attempt": 1,
+          "prompt_sha256": "ba446b6165f81c39fef1aa64b0561e60168df967538f94c45ef4dda318881161",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "f70d37e9-10e0-49aa-94d7-2b29ddfbb3b0",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4236,
+            "completion_tokens": 912,
+            "total_tokens": 5148,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 558
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 2700
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"needs_confirmation\", \"claims\": [{\"text\": \"教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"非工作日离辽须提前在办公系统办理“教职工非工作日离辽”备案。凡未备案并\\n造成严重后果的取消当年晋升、评优评奖资格。\"}]}, {\"text\": \"若该次离辽占用工作日而需请假，教职工应按照规定程序和审批权限提前在办公系统提交申请，说明请假理由、请假期限，经批准后方可离开工作岗位；需续假的，应先提交续假申请，经批准后方可续假。\", \"citations\": [{\"chunk_id\": \"D20-C007\", \"quote\": \"第六条 教职工请假，应按照规定程序和审批权限提前在办公系统提交申请，说\\n明请假理由、请假期限，经批准后方可离开工作岗位。需续假的，应先提交续假申请，\\n经批准后方可续假。\"}]}], \"gaps\": [\"请确认您的身份是教职工还是学生；若是学生，请提供适用的学生离校备案或请销假制度名称、版本日期。\", \"请确认周末离辽是否完全在非工作日、不占用工作日；若占用工作日，还需明确请假期限并走请假审批流程。\"]}, \"reason\": \"教职工非工作日离辽备案规则明确，但身份及是否占用工作日影响适用，需确认\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.001913616,
+          "cost_estimate_method": "peak_price_with_reported_cache_hits_20261031",
+          "seconds": 6.1675
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "教职工非工作日离辽备案规则明确，但身份及是否占用工作日影响适用，需确认"
+        }
+      ],
+      "read_ids": [
+        "D20-C007"
+      ],
+      "first_hits": [
+        "D20-C007",
+        "D19-C017",
+        "D19-C003",
+        "D19-C006",
+        "D20-C009"
+      ],
+      "seconds": 10.2259,
+      "model_calls": 4,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 20.5702,
+  "model_calls": 8,
+  "tool_calls": 5,
+  "created_at": "2026-10-31T03:51:27.619530+00:00"
+}

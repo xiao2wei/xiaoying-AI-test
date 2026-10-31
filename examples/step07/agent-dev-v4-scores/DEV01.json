@@ -1,0 +1,178 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "reason": "明确表达了项目从学校审批立项时间起算。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "reason": "明确表达了最长一般不超过4年。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "reason": "明确表达了期满结余由学校统筹管理。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起",
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C008原文支持该事实。"
+          },
+          {
+            "text": "结束时间可根据研究工作需自行设定",
+            "answer_span": "结束时间可根据研究工作需自行设定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C008原文支持该事实。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年",
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C008原文支持该事实。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C008原文支持该事实。"
+          },
+          {
+            "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次",
+            "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C026原文支持该事实。"
+          },
+          {
+            "text": "期限不超过2年",
+            "answer_span": "期限不超过2年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C026原文支持该事实。"
+          },
+          {
+            "text": "并须在项目原执行期结束前2个月提出申请",
+            "answer_span": "并须在项目原执行期结束前2个月提出申请",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C026原文支持该事实。"
+          },
+          {
+            "text": "由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "answer_span": "由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C026原文支持该事实。"
+          },
+          {
+            "text": "批准延期的项目须按时提交年度进展报告参加年度考核",
+            "answer_span": "批准延期的项目须按时提交年度进展报告参加年度考核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C026原文支持该事实。"
+          },
+          {
+            "text": "学校拨付的人才专项经费在5万元及以下的，可不按项目立项管理",
+            "answer_span": "学校拨付的人才专项经费在5万元及以下的，可不按项目立项管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C022原文支持该事实。"
+          },
+          {
+            "text": "但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6）",
+            "answer_span": "但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C022原文支持该事实。"
+          },
+          {
+            "text": "人才专项经费的执行期、使用范围、拨付及使用按本办法要求执行",
+            "answer_span": "人才专项经费的执行期、使用范围、拨付及使用按本办法要求执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "已读D03-C022原文支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案完整且准确回答了三个要点，引用与已读原文一致；额外提及的第二十五、第二十一条均有已读来源支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:21:48.246596+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4f4a298053611197dab8ba6ab5dcbb654e90570b2b16babb9442d33dca977aac",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "2b21bb7f-f830-4568-913f-f397bca8431d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2598,
+            "completion_tokens": 3535,
+            "total_tokens": 6133,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2310
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 1702
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"reason\": \"明确表达了项目从学校审批立项时间起算。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"reason\": \"明确表达了最长一般不超过4年。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"reason\": \"明确表达了期满结余由学校统筹管理。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"项目起始时间从学校审批立项时间算起\",\n      \"answer_span\": \"项目起始时间从学校审批立项时间算起\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C008原文支持该事实。\"\n    },\n    {\n      \"text\": \"结束时间可根据研究工作需自行设定\",\n      \"answer_span\": \"结束时间可根据研究工作需自行设定\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C008原文支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期限最长一般不得超过4年\",\n      \"answer_span\": \"项目执行期限最长一般不得超过4年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C008原文支持该事实。\"\n    },\n    {\n      \"text\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"answer_span\": \"项目执行期满后，结余经费由学校统筹管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C008原文支持该事实。\"\n    },\n    {\n      \"text\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次\",\n      \"answer_span\": \"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C026原文支持该事实。\"\n    },\n    {\n      \"text\": \"期限不超过2年\",\n      \"answer_span\": \"期限不超过2年\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C026原文支持该事实。\"\n    },\n    {\n      \"text\": \"并须在项目原执行期结束前2个月提出申请\",\n      \"answer_span\": \"并须在项目原执行期结束前2个月提出申请\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C026原文支持该事实。\"\n    },\n    {\n      \"text\": \"由所在二级教学（科研）机构签署意见后，报人事处审批\",\n      \"answer_span\": \"由所在二级教学（科研）机构签署意见后，报人事处审批\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C026原文支持该事实。\"\n    },\n    {\n      \"text\": \"批准延期的项目须按时提交年度进展报告参加年度考核\",\n      \"answer_span\": \"批准延期的项目须按时提交年度进展报告参加年度考核\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C026原文支持该事实。\"\n    },\n    {\n      \"text\": \"学校拨付的人才专项经费在5万元及以下的，可不按项目立项管理\",\n      \"answer_span\": \"学校拨付的人才专项经费在5万元及以下的，可不按项目立项管理\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C022原文支持该事实。\"\n    },\n    {\n      \"text\": \"但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6）\",\n      \"answer_span\": \"但须填报《辽宁科技大学高层次人才科研建设专项经费使用审批表》（附6）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C022原文支持该事实。\"\n    },\n    {\n      \"text\": \"人才专项经费的执行期、使用范围、拨付及使用按本办法要求执行\",\n      \"answer_span\": \"人才专项经费的执行期、使用范围、拨付及使用按本办法要求执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"已读D03-C022原文支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案完整且准确回答了三个要点，引用与已读原文一致；额外提及的第二十五、第二十一条均有已读来源支持，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01742796,
+          "seconds": 31.0702
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "927ff44a30b001c011f17fbae2c56696ee888f5789e95dddd0a528a573dd9906"
+}

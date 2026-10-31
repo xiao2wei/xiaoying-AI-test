@@ -1,0 +1,165 @@
+{
+  "id": "TEST13",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。",
+            "reason": "答案明确说出2020规定配偶护理假15日，并附原文引用。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "答案明确说出2023补充规定男教工护理假20日，并附原文引用。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日",
+            "reason": "答案同时展示两份规定依据及各自条款。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "现有原文只显示护理假分别为15日和20日，未提供明确条款说明2023年补充规定与2020年规定在护理假上的优先适用关系或废止关系，因此不能仅凭日期直接认定应执行20日。",
+            "reason": "答案明确指出适用口径需确认，不能仅凭日期断言，并请求补充衔接或确认依据。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020年《辽宁科技大学教职工考勤与请假管理规定》第九条规定配偶享有护理假15日。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C010原文明确包含配偶护理假15日，且实际已读该条。"
+          },
+          {
+            "text": "2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定符合法律法规规定生育子女的男教工享有护理假20日。",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012第四项原文，实际已读该条。"
+          },
+          {
+            "text": "护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。",
+            "answer_span": "护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C012第五项原文，实际已读该条，支持该程序要求。"
+          },
+          {
+            "text": "补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员，并自发布之日起执行。",
+            "answer_span": "补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员，并自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D20-C003第二条和D20-C019第十八条，实际已读，支持适用范围和生效日期。"
+          },
+          {
+            "text": "2020年规定第二十四条废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）。",
+            "answer_span": "2020年规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D19-C025原文，实际已读，明确列出废止该暂行规定。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案分别展示2020年配偶护理假15日和2023年补充规定男教工护理假20日，并说明缺少衔接/废止条款故不能仅凭日期直接适用，要求确认适用口径。状态为需确认，检索了相关条款，事实均有引用且已读支持，无严重错误。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "学校关于辽科大人发〔2023〕10号与2020年《辽宁科技大学教职工考勤与请假管理规定》衔接、废止或“补充规定优先”的文件条款",
+            "人事处对该护理假适用口径的书面说明",
+            "咨询人是否属于补充规定第二条所列适用人员（事业编制、非事业编制合同制人员或博士后）",
+            "咨询人是否符合“符合法律法规规定生育子女”的情形"
+          ],
+          "reason": "答案明确要求补充具体制度衔接/废止/优先条款或人事处书面说明，并确认适用人员身份和生育情形，而不是让用户自行查资料或泛泛补充信息。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:15:29.712685+00:00",
+          "attempt": 1,
+          "prompt_sha256": "46c3c1702a170e68b9ecf1b426fd7ce55bfc0c6350ba84f0104f1a29d672c9a3",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "ea359406-8ba2-46e0-b845-9d394f751a7d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4726,
+            "completion_tokens": 10000,
+            "total_tokens": 14726,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 9118
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 2934
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\",\n      \"reason\": \"答案明确说明2020年规定第九条规定配偶护理假15日，与要点一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"答案明确说明2023年补充规定第十一条规定符合法律法规规定生育子女的男教工护理假20日，与要点一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日；护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。\",\n      \"reason\": \"答案同时展示了两份文件中的护理假条款及文件信息，满足展示两份依据的要求。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有原文只显示护理假分别为15日和20日，未提供明确条款说明2023年补充规定与2020年规定在护理假上的优先适用关系或废止关系，因此不能仅凭日期直接认定应执行20日。\",\n      \"reason\": \"答案明确说明缺乏优先适用或废止关系条款，不能仅凭日期断言，并要求确认，满足要点。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第九条规定配偶享有护理假15日。\",\n      \"answer_span\": \"配偶享有护理假15日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文包含“配偶享有护理假15日”，且已读记录包含该条。\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定符合法律法规规定生育子女的男教工享有护理假20日。\",\n      \"answer_span\": \"符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012原文包含“符合法律法规规定生育子女的男教工享有护理假20日”，且已读记录包含该条。\"\n    },\n    {\n      \"text\": \"护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。\",\n      \"answer_span\": \"护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012第（五）项原文包含该程序要求，且已读记录包含该条。\"\n    },\n    {\n      \"text\": \"补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员。\",\n      \"answer_span\": \"补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C003第二条原文明确适用范围，",
+          "finish_reason": "length",
+          "estimated_usd_upper_bound": 0.04583832,
+          "error": "JSONDecodeError",
+          "seconds": 88.9684
+        },
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:58.681337+00:00",
+          "attempt": 2,
+          "prompt_sha256": "46c3c1702a170e68b9ecf1b426fd7ce55bfc0c6350ba84f0104f1a29d672c9a3",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "43359cba-227f-4e4e-98ff-07cc8b7f7ac9",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4726,
+            "completion_tokens": 9080,
+            "total_tokens": 13806,
+            "prompt_tokens_details": {
+              "cached_tokens": 4608
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7785
+            },
+            "prompt_cache_hit_tokens": 4608,
+            "prompt_cache_miss_tokens": 118
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\",\n      \"reason\": \"答案明确说出2020规定配偶护理假15日，并附原文引用。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"答案明确说出2023补充规定男教工护理假20日，并附原文引用。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\\n《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"reason\": \"答案同时展示两份规定依据及各自条款。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"现有原文只显示护理假分别为15日和20日，未提供明确条款说明2023年补充规定与2020年规定在护理假上的优先适用关系或废止关系，因此不能仅凭日期直接认定应执行20日。\",\n      \"reason\": \"答案明确指出适用口径需确认，不能仅凭日期断言，并请求补充衔接或确认依据。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020年《辽宁科技大学教职工考勤与请假管理规定》第九条规定配偶享有护理假15日。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第九条规定：配偶享有护理假15日。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C010原文明确包含配偶护理假15日，且实际已读该条。\"\n    },\n    {\n      \"text\": \"2023年《辽宁科技大学教职工考勤与请假管理补充规定》第十一条规定符合法律法规规定生育子女的男教工享有护理假20日。\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（辽科大人发〔2023〕10号，2023-12-27）第十一条规定：符合法律法规规定生育子女的男教工享有护理假20日\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012第四项原文，实际已读该条。\"\n    },\n    {\n      \"text\": \"护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。\",\n      \"answer_span\": \"护理假需提供医院生育证明等材料，自生育之日起按自然日计算，由所在单位审批，报人事处备案。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C012第五项原文，实际已读该条，支持该程序要求。\"\n    },\n    {\n      \"text\": \"补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员，并自发布之日起执行。\",\n      \"answer_span\": \"补充规定适用于学校事业编制教职工和非事业编制合同制人员及博士后工作人员，并自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D20-C003第二条和D20-C019第十八条，实际已读，支持适用范围和生效日期。\"\n    },\n    {\n      \"text\": \"2020年规定第二十四条废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）。\",\n      \"answer_span\": \"2020年规定第二十四条仅明确废止《辽宁科技大学职工考勤、请假管理暂行规定》（综发〔2017〕25号）\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用D19-C025原文，实际已读，明确列出废止该暂行规定。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"答案分别展示2020年配偶护理假15日和2023年补充规定男教工护理假20日，并说明缺少衔接/废止条款故不能仅凭日期直接适用，要求确认适用口径。状态为需确认，检索了相关条款，事实均有引用且已读支持，无严重错误。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"学校关于辽科大人发〔2023〕10号与2020年《辽宁科技大学教职工考勤与请假管理规定》衔接、废止或“补充规定优先”的文件条款\",\n      \"人事处对该护理假适用口径的书面说明\",\n      \"咨询人是否属于补充规定第二条所列适用人员（事业编制、非事业编制合同制人员或博士后）\",\n      \"咨询人是否符合“符合法律法规规定生育子女”的情形\"\n    ],\n    \"reason\": \"答案明确要求补充具体制度衔接/废止/优先条款或人事处书面说明，并确认适用人员身份和生育情形，而不是让用户自行查资料或泛泛补充信息。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.04219512,
+          "seconds": 80.1049
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "52b5111a6beba91ed0cac164debdfe68bca5f97f75a0c063c501eacc4dbbf0b6"
+}

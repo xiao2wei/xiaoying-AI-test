@@ -1,0 +1,103 @@
+{
+  "id": "TEST12",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "reason": "答案明确说明了安家费在首聘期协议签订后和聘期中期考核合格后分两次发放。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "在鞍山市购买住房时先一次性发放50%",
+            "reason": "答案明确说明了购房补贴在鞍山市购买住房时先一次性发放50%。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "剩余部分在服务期内按月发放",
+            "reason": "答案明确说明了剩余部分在服务期内按月发放。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "answer_span": "本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十一条原文包含该事实，且已读取该文档。"
+          },
+          {
+            "text": "购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放",
+            "answer_span": "购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用的第二十一条原文包含该事实，且已读取该文档。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确完整地涵盖了所有要求点，引用正确且已实际读取，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:08:36.056078+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b708e791090d5f4aebc304c76a4524118c2137f542c6fb2bf38f17fb6ef9d40c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "c0fe9407-ab26-49a1-99ca-aed33b79eaff",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4338,
+            "completion_tokens": 1971,
+            "total_tokens": 6309,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1498
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 3058
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"reason\": \"答案明确说明了安家费在首聘期协议签订后和聘期中期考核合格后分两次发放。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"在鞍山市购买住房时先一次性发放50%\",\n      \"reason\": \"答案明确说明了购房补贴在鞍山市购买住房时先一次性发放50%。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"剩余部分在服务期内按月发放\",\n      \"reason\": \"答案明确说明了剩余部分在服务期内按月发放。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"answer_span\": \"本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十一条原文包含该事实，且已读取该文档。\"\n    },\n    {\n      \"text\": \"购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放\",\n      \"answer_span\": \"购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用的第二十一条原文包含该事实，且已读取该文档。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确完整地涵盖了所有要求点，引用正确且已实际读取，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00594902,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 15.789
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "689ecf8ce5f1128ac8d6ab0c3d660db8f5fbc627fbaafd252738d8ad419107f7"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "TEST10",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "丧假基本天数为3日。",
+            "reason": "实际回答明确说明丧假基本天数为3日，覆盖要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "需到外地处理丧事的，可加路程假",
+            "reason": "实际回答明确说明外地处理丧事可加路程假，覆盖要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "丧假（含路程假）由所在单位审批，报人事处备案。",
+            "reason": "实际回答明确说明由所在单位审批并报人事处备案，覆盖要点。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。",
+            "answer_span": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用2023年补充规定第十条，已读原文支持配偶父母亡故可请丧假。"
+          },
+          {
+            "text": "丧假基本天数为3日。",
+            "answer_span": "丧假基本天数为3日。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含丧假3日，已读原文支持。"
+          },
+          {
+            "text": "需到外地处理丧事的，可加路程假。",
+            "answer_span": "需到外地处理丧事的，可加路程假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含该规则，已读原文支持。"
+          },
+          {
+            "text": "丧假（含路程假）期间工资正常发放。",
+            "answer_span": "丧假（含路程假）期间工资正常发放",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含该待遇规则，已读原文支持。"
+          },
+          {
+            "text": "逾期按事假处理。",
+            "answer_span": "逾期按事假处理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含逾期处理规则，已读原文支持。"
+          },
+          {
+            "text": "丧假（含路程假）由所在单位审批，报人事处备案。",
+            "answer_span": "丧假（含路程假）由所在单位审批，报人事处备案。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文包含审批备案规则，已读原文支持。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际回答覆盖全部必需要点，引用2023年补充规定已读且能支持相关陈述，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:45.024667+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7ec697d9d54f089752c172b6d7900936830cacbcb648c0c45438e78c0491b311",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "b2bae32c-387d-4500-9515-2abce3d22c5c",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3078,
+            "completion_tokens": 4693,
+            "total_tokens": 7771,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4085
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2182
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"丧假基本天数为3日。\",\"reason\":\"实际回答明确说明丧假基本天数为3日，覆盖要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"需到外地处理丧事的，可加路程假\",\"reason\":\"实际回答明确说明外地处理丧事可加路程假，覆盖要点。\"},{\"index\":2,\"met\":true,\"answer_span\":\"丧假（含路程假）由所在单位审批，报人事处备案。\",\"reason\":\"实际回答明确说明由所在单位审批并报人事处备案，覆盖要点。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。\",\"answer_span\":\"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》，教职工的直系亲属及配偶的父母亡故可请丧假。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用2023年补充规定第十条，已读原文支持配偶父母亡故可请丧假。\"},{\"text\":\"丧假基本天数为3日。\",\"answer_span\":\"丧假基本天数为3日。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含丧假3日，已读原文支持。\"},{\"text\":\"需到外地处理丧事的，可加路程假。\",\"answer_span\":\"需到外地处理丧事的，可加路程假\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含该规则，已读原文支持。\"},{\"text\":\"丧假（含路程假）期间工资正常发放。\",\"answer_span\":\"丧假（含路程假）期间工资正常发放\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含该待遇规则，已读原文支持。\"},{\"text\":\"逾期按事假处理。\",\"answer_span\":\"逾期按事假处理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含逾期处理规则，已读原文支持。\"},{\"text\":\"丧假（含路程假）由所在单位审批，报人事处备案。\",\"answer_span\":\"丧假（含路程假）由所在单位审批，报人事处备案。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文包含审批备案规则，已读原文支持。\"}],\"serious_errors\":[],\"reason\":\"实际回答覆盖全部必需要点，引用2023年补充规定已读且能支持相关陈述，无错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02264724,
+          "seconds": 44.0133
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "efe2698ddfb36e4d55d316705de6255de0aceaa8bff94e1f1733bfbd79822323"
+}

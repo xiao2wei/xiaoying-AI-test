@@ -1,0 +1,184 @@
+{
+  "id": "TEST35",
+  "category": "context",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "经所在单位同意后，报主管校领导批准、人事处备案",
+            "reason": "实际答案明确表达了所在单位同意、主管校领导批准、人事处备案的完整流程，与要点一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "病假请假时间大于2个月的，需经所在单位同意",
+            "answer_span": "病假请假时间大于2个月的，经所在单位同意后",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与实际读取文本均支持所在单位同意这一条件。"
+          },
+          {
+            "text": "病假请假时间大于2个月的，报主管校领导批准",
+            "answer_span": "报主管校领导批准",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与实际读取文本均支持主管校领导批准这一条件。"
+          },
+          {
+            "text": "病假请假时间大于2个月的，人事处备案",
+            "answer_span": "人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用quote与实际读取文本均支持人事处备案这一条件。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确依据2023年补充规定第八条，正确指出了病假超过2个月的审批备案流程：所在单位同意后，报主管校领导批准、人事处备案。引用与实际读取材料一致，无错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:35:49.036556+00:00",
+          "attempt": 1,
+          "prompt_sha256": "96f32b056cbc4283e7da52b866247bf37458f12d2aa848e18dbaf8c105b6e19e",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "31149c76-8b86-42cc-9c05-6ebc94b798e8",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2209,
+            "completion_tokens": 3026,
+            "total_tokens": 5235,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2619
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1185
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"经所在单位同意后，报主管校领导批准、人事处备案\",\n      \"reason\": \"实际答案明确表达了所在单位同意、主管校领导批准、人事处备案的完整流程，与要点一致。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"病假请假时间大于2个月的，需经所在单位同意\",\n      \"answer_span\": \"病假请假时间大于2个月的，经所在单位同意后\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与实际读取文本均支持所在单位同意这一条件。\"\n    },\n    {\n      \"text\": \"病假请假时间大于2个月的，报主管校领导批准\",\n      \"answer_span\": \"报主管校领导批准\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与实际读取文本均支持主管校领导批准这一条件。\"\n    },\n    {\n      \"text\": \"病假请假时间大于2个月的，人事处备案\",\n      \"answer_span\": \"人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用quote与实际读取文本均支持人事处备案这一条件。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确依据2023年补充规定第八条，正确指出了病假超过2个月的审批备案流程：所在单位同意后，报主管校领导批准、人事处备案。引用与实际读取材料一致，无错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01489884,
+          "seconds": 23.9676
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    },
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "病假连续≥6个月，可申请长期病休手续",
+            "reason": "实际答案明确表达了连续大于等于6个月可申请长期病休。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+            "reason": "实际答案明确表达了每半年复查一次，由三甲级以上医院出具不能工作诊断证明。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。",
+            "answer_span": "按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与实际读到的原文一致，支持该事实。"
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用内容与实际读到的原文一致，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "实际答案准确引用了2023年补充规定第八条，完整回答了连续休满6个月可申请长期病休以及之后每半年复查一次、由三甲级以上医院出具不能工作诊断证明的要求，引用内容与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:36:13.033852+00:00",
+          "attempt": 1,
+          "prompt_sha256": "7dd2c196653b20f638586f0302c1181f825b4ef5e8c07a6ea0c156374689b48c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "524d25f9-5036-48d8-b951-b95bdf1f47c0",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2627,
+            "completion_tokens": 994,
+            "total_tokens": 3621,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 507
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1603
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"病假连续≥6个月，可申请长期病休手续\",\n      \"reason\": \"实际答案明确表达了连续大于等于6个月可申请长期病休。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\",\n      \"reason\": \"实际答案明确表达了每半年复查一次，由三甲级以上医院出具不能工作诊断证明。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\",\n      \"answer_span\": \"按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月，可申请长期病休手续。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与实际读到的原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用内容与实际读到的原文一致，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"实际答案准确引用了2023年补充规定第八条，完整回答了连续休满6个月可申请长期病休以及之后每半年复查一次、由三甲级以上医院出具不能工作诊断证明的要求，引用内容与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00740388,
+          "seconds": 9.8059
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "138653b4451b7b4ea0d3fb8d64339a45e9bfeb1906c8c2da67c2af3dbcbc07ab"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "STAB-TEST17-R3",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "reason": "实际答案明确提出正文第二十一条规定可向学校的上一级主管机关提出书面申诉，语义等价于要点。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”",
+            "reason": "实际答案明确指出附3备注栏写的是浙江省教育厅，满足要点。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "与正文“学校的上一级主管机关”的表述不一致，附表表述不可靠。",
+            "reason": "答案明确定位了正文与附表之间的差异，并指出附表表述不可靠，符合要点。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "附表“浙江省教育厅”与辽宁科技大学所在地不符，疑为模板残留；建议向学校申诉处理委员会核实并更正附表，或提供该办法的修订说明/勘误文件。",
+            "reason": "答案未确认浙江为正确受理机关，也未改写为辽宁，而是指出与学校所在地不符并建议核实，符合不擅自确认的要求。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "answer_span": "建议向学校申诉处理委员会核实并更正附表",
+            "reason": "答案明确建议向学校申诉处理委员会核实，满足要点。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "按正文第二十一条，教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "answer_span": "教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C022中的quote直接支持该事实，且actually_read已读取该部分原文。"
+          },
+          {
+            "text": "该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”。",
+            "answer_span": "该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C029中的quote包含“可以向浙江省教育厅提出书面申诉”，直接支持该事实，且actually_read已读取。"
+          },
+          {
+            "text": "该办法适用于教职工申诉。",
+            "answer_span": "该办法适用于教职工申诉",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C022中的quote“申诉处理决定是学校对教职工处分或处理的最终决定”支持该适用范围，且actually_read已读取。"
+          },
+          {
+            "text": "正文明确申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达双方后立即生效。",
+            "answer_span": "申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达双方后立即生效",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用D24-C022中的quote直接包含该规定，且actually_read已读取该原文。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "答案准确指出正文与附表的差异，未擅自确认浙江或改写辽宁，并建议向申诉处理委员会核实，同时明确需要用户补充文件依据和身份，整体符合needs_confirmation状态；工具读取了正文及附表相关条款，动作合理。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "该校主管部门或上级主管机关的文件依据",
+            "该办法的修订说明/勘误文件",
+            "咨询对象身份（教职工/学生）"
+          ],
+          "reason": "答案明确说明缺少具体主管机关名称、附表的修订说明或勘误文件，以及需要用户说明身份，这些均为可操作的补充信息请求，而非仅让用户自行查资料或联系部门。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:30.318643+00:00",
+          "attempt": 1,
+          "prompt_sha256": "3487f530c4fc9bd21567f555aab0dfaf5878304a9f2dbae71ec21199df34974a",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "d88d58de-01f8-4fad-8d93-95efe122eb02",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 2697,
+            "completion_tokens": 7382,
+            "total_tokens": 10079,
+            "prompt_tokens_details": {
+              "cached_tokens": 1280
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6550
+            },
+            "prompt_cache_hit_tokens": 1280,
+            "prompt_cache_miss_tokens": 1417
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\"reason\":\"实际答案明确提出正文第二十一条规定可向学校的上一级主管机关提出书面申诉，语义等价于要点。\"},{\"index\":1,\"met\":true,\"answer_span\":\"该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”\",\"reason\":\"实际答案明确指出附3备注栏写的是浙江省教育厅，满足要点。\"},{\"index\":2,\"met\":true,\"answer_span\":\"与正文“学校的上一级主管机关”的表述不一致，附表表述不可靠。\",\"reason\":\"答案明确定位了正文与附表之间的差异，并指出附表表述不可靠，符合要点。\"},{\"index\":3,\"met\":true,\"answer_span\":\"附表“浙江省教育厅”与辽宁科技大学所在地不符，疑为模板残留；建议向学校申诉处理委员会核实并更正附表，或提供该办法的修订说明/勘误文件。\",\"reason\":\"答案未确认浙江为正确受理机关，也未改写为辽宁，而是指出与学校所在地不符并建议核实，符合不擅自确认的要求。\"},{\"index\":4,\"met\":true,\"answer_span\":\"建议向学校申诉处理委员会核实并更正附表\",\"reason\":\"答案明确建议向学校申诉处理委员会核实，满足要点。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"按正文第二十一条，教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\"answer_span\":\"教职工对申诉处理决定仍有异议的，可以向学校的上一级主管机关提出书面申诉。\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C022中的quote直接支持该事实，且actually_read已读取该部分原文。\"},{\"text\":\"该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”。\",\"answer_span\":\"该办法附3《辽宁科技大学教职工校内申诉处理决定书》备注栏写的是“可以向浙江省教育厅提出书面申诉”\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C029中的quote包含“可以向浙江省教育厅提出书面申诉”，直接支持该事实，且actually_read已读取。\"},{\"text\":\"该办法适用于教职工申诉。\",\"answer_span\":\"该办法适用于教职工申诉\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C022中的quote“申诉处理决定是学校对教职工处分或处理的最终决定”支持该适用范围，且actually_read已读取。\"},{\"text\":\"正文明确申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达双方后立即生效。\",\"answer_span\":\"申诉处理决定是学校对教职工处分或处理的最终决定，决定书送达双方后立即生效\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D24-C022中的quote直接包含该规定，且actually_read已读取该原文。\"}],\"serious_errors\":[],\"reason\":\"答案准确指出正文与附表的差异，未擅自确认浙江或改写辽宁，并建议向申诉处理委员会核实，同时明确需要用户补充文件依据和身份，整体符合needs_confirmation状态；工具读取了正文及附表相关条款，动作合理。\",\"actionable_gap\":{\"passed\":true,\"requested_items\":[\"该校主管部门或上级主管机关的文件依据\",\"该办法的修订说明/勘误文件\",\"咨询对象身份（教职工/学生）\"],\"reason\":\"答案明确说明缺少具体主管机关名称、附表的修订说明或勘误文件，以及需要用户说明身份，这些均为可操作的补充信息请求，而非仅让用户自行查资料或联系部门。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.032792760000000004,
+          "seconds": 74.9959
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "ec2665292041c9ac8863516c5be7238527d15855a84514a337bab4f5c2312f6e"
+}

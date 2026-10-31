@@ -1,0 +1,80 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "第二十二条明确2021年27号旧办法同时废止。",
+        "reason": "实际回答明确表述了废止。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "第二十二条明确2021年27号旧办法同时废止。",
+        "answer_span": "第二十二条明确2021年27号旧办法同时废止。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用文本明确包含同时废止条款，且已读取原文。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确回答了问题，引用有效，无重大错误。",
+    "actionable_gap": {
+      "applicable": false,
+      "passed": null,
+      "requested_items": []
+    }
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-31T03:08:07.527984+00:00",
+      "attempt": 1,
+      "prompt_sha256": "bd3dd954fac66b4a92269a78609c7f04f91968721148f235cc72a38fed172f43",
+      "real_api": true,
+      "thinking": "enabled",
+      "reasoning_effort": "low",
+      "read_timeout_seconds": 180,
+      "http_status": 200,
+      "response_id": "994ca7e6-8220-4363-92c6-528b51f9cc5d",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1589,
+        "completion_tokens": 943,
+        "total_tokens": 2532,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 740
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1589
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"第二十二条明确2021年27号旧办法同时废止。\",\n      \"reason\": \"实际回答明确表述了废止。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"第二十二条明确2021年27号旧办法同时废止。\",\n      \"answer_span\": \"第二十二条明确2021年27号旧办法同时废止。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用文本明确包含同时废止条款，且已读取原文。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确回答了问题，引用有效，无重大错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.00583176,
+      "seconds": 9.0991
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "judge_cache_hit": true,
+  "cache_source": null,
+  "new_judge_requests": 0,
+  "id": "CAL04",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": true,
+  "agreement_with_proposed": true,
+  "agreement_with_human": true
+}

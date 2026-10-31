@@ -1,0 +1,471 @@
+{
+  "id": "STAB-TEST16-R1",
+  "category": "conflict",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "在职读博2020年19号办法和2023年修订办法是否都继续生效？请找明确依据。",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，本办法自发布之日起施行，并明确原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法不再继续生效，现行有效的是2023年修订办法。",
+            "citations": [
+              {
+                "chunk_id": "D01-C019",
+                "quote": "第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\n号）同时废止。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              },
+              {
+                "chunk_id": "D01-C001",
+                "quote": "辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "前言或附件",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，本办法自发布之日起施行，并明确原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法不再继续生效，现行有效的是2023年修订办法。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，本办法自发布之日起施行，并明确原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法不再继续生效，现行有效的是2023年修订办法。",
+            "citations": [
+              {
+                "chunk_id": "D01-C019",
+                "quote": "第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\n号）同时废止。",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十八条",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "version_date": "2023-12-20"
+              },
+              {
+                "chunk_id": "D01-C001",
+                "quote": "辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "前言或附件",
+                "doc_id": "D01",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "version_date": "2023-12-20"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，本办法自发布之日起施行，并明确原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法不再继续生效，现行有效的是2023年修订办法。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:48.992136+00:00",
+          "attempt": 1,
+          "prompt_sha256": "f7656a7c6bccb71fcfda150201ecc47929b02e854acca476005048ca1f9491c5",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "24a7bff9-6c48-45ab-a979-12650470274f",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1738,
+            "completion_tokens": 59,
+            "total_tokens": 1797,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 202
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"在职攻读博士学位 管理办法 2020 19号 2023 修订 废止 生效\",\"doc_ids\":[]},\"reason\":\"查找两个版本办法及废止、衔接条款\"}\n\n请稍候，正在检索相关制度原文。",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005922,
+          "error": "JSONDecodeError",
+          "seconds": 0.9287
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:49.921295+00:00",
+          "attempt": 2,
+          "prompt_sha256": "23c57575f74835942d24adb5b6d547c4f8310a6db34e171976456ad4113ef7b8",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "79d74473-1b69-406e-9b80-2f9c7a68e691",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1845,
+            "completion_tokens": 47,
+            "total_tokens": 1892,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 181
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"在职攻读博士学位 管理办法 2020 19号 2023 修订 废止 生效\",\"doc_ids\":[]},\"reason\":\"查找两版办法及废止衔接条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006099,
+          "seconds": 0.6263
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "在职攻读博士学位 管理办法 2020 19号 2023 修订 废止 生效",
+            "doc_ids": []
+          },
+          "reason": "查找两版办法及废止衔接条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "在职攻读博士学位 管理办法 2020 19号 2023 修订 废止 生效",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": true,
+            "query": "在职攻读博士学位 管理办法 2020 19号 2023 修订 废止 生效",
+            "hits": [
+              {
+                "chunk_id": "D01-C019",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十八条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.093074,
+                "semantic_score": 0.744972,
+                "lexical_score": 67.6501,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十八条 第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\n号）同时废止。\n（拟文单位：人事处）",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C001",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "前言或附件",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6
+                ],
+                "printed_pages": [
+                  1
+                ],
+                "score": 0.091097,
+                "semantic_score": 0.723957,
+                "lexical_score": 71.3091,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 前言或附件 辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）\n第一章 总 则",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C016",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十五条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.083333,
+                "semantic_score": 0.719472,
+                "lexical_score": 54.1923,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十五条 第十五条 出国（境外）攻读博士研究生的在职读博人员按学校以及上级相关部\n门出国（境）管理有关规定执行。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C008",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第七条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  6,
+                  7
+                ],
+                "printed_pages": [
+                  1,
+                  2
+                ],
+                "score": 0.08,
+                "semantic_score": 0.712496,
+                "lexical_score": 50.9354,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第七条 第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D01-C014",
+                "doc_id": "D01",
+                "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+                "article": "第十三条",
+                "version_date": "2023-12-20",
+                "pdf_pages": [
+                  8
+                ],
+                "printed_pages": [
+                  3
+                ],
+                "score": 0.076812,
+                "semantic_score": 0.685421,
+                "lexical_score": 57.0142,
+                "excerpt": "辽宁科技大学教师在职攻读博士学位管理办法（修订） 第十三条 第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0103,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:50.582580+00:00",
+          "attempt": 1,
+          "prompt_sha256": "da67faa9d52cbf420e0df4d234c21babdc7cdc0373ee10ad48e2fcd701c943a7",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "3254bd3f-cbc2-4914-8ac4-854a6d20439b",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2824,
+            "completion_tokens": 43,
+            "total_tokens": 2867,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 1160
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D01-C019\", \"D01-C001\"]}, \"reason\": \"读取修订办法的废止条款和文号版本信息\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0008988,
+          "seconds": 1.0342
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D01-C019",
+              "D01-C001"
+            ]
+          },
+          "reason": "读取修订办法的废止条款和文号版本信息"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C019"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "第十八条",
+              "text": "第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\n号）同时废止。\n（拟文单位：人事处）",
+              "pdf_pages": [
+                8
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C019",
+              "printed_pages": [
+                3
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": "D01-C018",
+              "next_chunk_id": null,
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D01-C001"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D01",
+              "article": "前言或附件",
+              "text": "辽宁科技大学教师\n在职攻读博士学位管理办法（修订）\n（辽科大校发〔2023〕77号附件·2023年12月20日）\n第一章 总 则",
+              "pdf_pages": [
+                6
+              ],
+              "table_ids": [],
+              "chunk_id": "D01-C001",
+              "printed_pages": [
+                1
+              ],
+              "title": "辽宁科技大学教师在职攻读博士学位管理办法（修订）",
+              "version_date": "2023-12-20",
+              "previous_chunk_id": null,
+              "next_chunk_id": "D01-C002",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:51.643425+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2e8a2cc1722333e5d533358a225cf88cf0090daa3a8c5b1c471ebc7a912e473f",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "46d52fd5-9e1a-43c9-a7c5-93d865ac9e0e",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3271,
+            "completion_tokens": 256,
+            "total_tokens": 3527,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816
+            },
+            "prompt_cache_hit_tokens": 2816,
+            "prompt_cache_miss_tokens": 455
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条明确规定，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此2020年19号办法不再继续生效，现行有效的是2023年修订办法。\", \"citations\": [{\"chunk_id\": \"D01-C019\", \"quote\": \"第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\\n号）同时废止。\"}, {\"chunk_id\": \"D01-C001\", \"quote\": \"辽宁科技大学教师\\n在职攻读博士学位管理办法（修订）\\n（辽科大校发〔2023〕77号附件·2023年12月20日）\"}]}], \"gaps\": []}, \"reason\": \"修订办法第十八条明确废止2020年19号办法，依据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0012885,
+          "seconds": 1.5862
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "修订办法第十八条明确废止2020年19号办法，依据充分"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T03:22:53.255181+00:00",
+          "attempt": 1,
+          "prompt_sha256": "90d4368d84734956d86982089ef634c77e85b18000875bf34c8eeac7d75bb64c",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "b765189d-e65f-4e5f-b913-360c699eaf07",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3701,
+            "completion_tokens": 524,
+            "total_tokens": 4225,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 259
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 2037
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"2023年修订的《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，本办法自发布之日起施行，并明确原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法不再继续生效，现行有效的是2023年修订办法。\", \"citations\": [{\"chunk_id\": \"D01-C019\", \"quote\": \"第十八条 本办法由人事处负责解释，自发布之日起施行，未尽事宜按国家、辽\\n宁省有关规定执行。《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19\\n号）同时废止。\"}, {\"chunk_id\": \"D01-C001\", \"quote\": \"辽宁科技大学教师\\n在职攻读博士学位管理办法（修订）\\n（辽科大校发〔2023〕77号附件·2023年12月20日）\"}]}], \"gaps\": []}, \"reason\": \"修订办法第十八条明确废止2020年19号办法，依据充分\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0017391,
+          "seconds": 3.3059
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "修订办法第十八条明确废止2020年19号办法，依据充分"
+        }
+      ],
+      "read_ids": [
+        "D01-C019",
+        "D01-C001"
+      ],
+      "first_hits": [
+        "D01-C019",
+        "D01-C001",
+        "D01-C016",
+        "D01-C008",
+        "D01-C014"
+      ],
+      "seconds": 7.5933,
+      "model_calls": 5,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {}
+    }
+  ],
+  "seconds": 7.5936,
+  "model_calls": 5,
+  "tool_calls": 3,
+  "created_at": "2026-10-31T03:22:56.562197+00:00"
+}

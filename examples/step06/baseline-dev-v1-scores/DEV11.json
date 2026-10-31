@@ -1,0 +1,77 @@
+{
+  "id": "DEV11",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "reason": "实际回答未提供任何有效内容，仅报告引用校验失败，未表达“原则上不予调整”。"
+          },
+          {
+            "index": 1,
+            "met": false,
+            "reason": "实际回答未提及“确有特殊情况需要重大调整时负责人申请”。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "reason": "实际回答未提及“所在二级机构签署意见”。"
+          },
+          {
+            "index": 3,
+            "met": false,
+            "reason": "实际回答未提及“提交人才工作领导小组办公室审批后执行”。"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [
+          "回答中声称“引用或格式校验未通过：unread_citation:D03-C016”，但工具记录显示读取D03-C016时遇到临时故障，之后未重试该关键证据，导致未能提供任何制度事实。"
+        ],
+        "reason": "实际回答因关键证据读取失败且未重试，未提供任何有效答案，所有必要要点均未满足，且存在未重试关键证据的严重错误。"
+      },
+      "critical_errors": [
+        "回答中声称“引用或格式校验未通过：unread_citation:D03-C016”，但工具记录显示读取D03-C016时遇到临时故障，之后未重试该关键证据，导致未能提供任何制度事实。"
+      ],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:54:42.543226+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b9b2f441c338073f4851c12b47d53ce5736108086042ab6f8496ff9b0d8a2f7c",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "e7d48393-0aca-4186-b5af-80887d4cc79e",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1789,
+            "completion_tokens": 293,
+            "total_tokens": 2082,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 1277
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": false,\n      \"reason\": \"实际回答未提供任何有效内容，仅报告引用校验失败，未表达“原则上不予调整”。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“确有特殊情况需要重大调整时负责人申请”。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“所在二级机构签署意见”。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": false,\n      \"reason\": \"实际回答未提及“提交人才工作领导小组办公室审批后执行”。\"\n    }\n  ],\n  \"status_ok\": false,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [\n    \"回答中声称“引用或格式校验未通过：unread_citation:D03-C016”，但工具记录显示读取D03-C016时遇到临时故障，之后未重试该关键证据，导致未能提供任何制度事实。\"\n  ],\n  \"reason\": \"实际回答因关键证据读取失败且未重试，未提供任何有效答案，所有必要要点均未满足，且存在未重试关键证据的严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00352176,
+          "seconds": 4.1166
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "fa6cbed174444fa21adbab9c09f8601692e6e19c4e63288823f824410f99993e"
+}

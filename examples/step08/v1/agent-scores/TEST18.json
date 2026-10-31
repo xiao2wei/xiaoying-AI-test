@@ -1,0 +1,87 @@
+{
+  "id": "TEST18",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未生成任何内容，未表达校内申诉办法写暂缓执行"
+          },
+          {
+            "index": 1,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未生成任何内容，未表达作风问题办法写应予执行"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未生成任何内容，未说明适用处理类型不同"
+          },
+          {
+            "index": 3,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未生成任何内容，未确认处理类型及适用办法，不能一概决定"
+          }
+        ],
+        "status_ok": false,
+        "decision_ok": false,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "实际回答因JSONDecodeError失败，未提供任何实质内容，未完成冲突展示与确认，未满足任一必需要点；工具仅进行一次搜索后即出现错误，未读取资料、未尝试恢复，动作不合理。",
+        "actionable_gap": {
+          "passed": false,
+          "requested_items": [],
+          "reason": "回答仅返回JSONDecodeError，未明确说明缺少哪些信息或需要用户补充什么，不满足可操作缺口要求。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:16:26.282599+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9ea6fc6b0f6c1088756508bc97529cbd77bd3677bb68fa2eae7411c73726cf69",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "0acfb777-9b5d-4f29-a4a4-59d8f0eaf1c3",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1374,
+            "completion_tokens": 1339,
+            "total_tokens": 2713,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 1078
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 478
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未生成任何内容，未表达校内申诉办法写暂缓执行\"},{\"index\":1,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未生成任何内容，未表达作风问题办法写应予执行\"},{\"index\":2,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未生成任何内容，未说明适用处理类型不同\"},{\"index\":3,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未生成任何内容，未确认处理类型及适用办法，不能一概决定\"}],\"status_ok\":false,\"decision_ok\":false,\"answer_correct\":false,\"facts\":[],\"serious_errors\":[],\"reason\":\"实际回答因JSONDecodeError失败，未提供任何实质内容，未完成冲突展示与确认，未满足任一必需要点；工具仅进行一次搜索后即出现错误，未读取资料、未尝试恢复，动作不合理。\",\"actionable_gap\":{\"passed\":false,\"requested_items\":[],\"reason\":\"回答仅返回JSONDecodeError，未明确说明缺少哪些信息或需要用户补充什么，不满足可操作缺口要求。\"}}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00711612,
+          "seconds": 15.0206
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "dc40252fe2b31144a0f8e43b857266c8a5ce1b563eeb3f1d15a0d6e66cb6bd7e"
+}

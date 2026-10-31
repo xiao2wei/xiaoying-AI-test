@@ -1,0 +1,63 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答明确说明检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认填报时间，符合持续检索故障须明确未完成及工具失败的要求。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答未猜测原文结论，仅说明无法确认，符合不得猜测原文结论的要求。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [],
+        "serious_errors": [],
+        "reason": "检索工具持续返回不可重试的 PERSISTENT_UNAVAILABLE 错误，回答明确说明工具失败且未猜测原文结论，符合预期状态和必要要点。由于未读取任何证据，无法回答具体填报时间，因此 answer_correct 为 false。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T14:53:09.480901+00:00",
+          "attempt": 1,
+          "prompt_sha256": "9f71f17e07b44778fa8987513969ca39ec7ea6cffc772b6d6f4113b9b5e334df",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "15620879-8871-48c0-9056-c52db8b92e10",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 1072,
+            "completion_tokens": 219,
+            "total_tokens": 1291,
+            "prompt_tokens_details": {
+              "cached_tokens": 512
+            },
+            "prompt_cache_hit_tokens": 512,
+            "prompt_cache_miss_tokens": 560
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答明确说明检索工具持续返回 PERSISTENT_UNAVAILABLE（不可重试），未能读取任何制度原文，无法确认填报时间，符合持续检索故障须明确未完成及工具失败的要求。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答未猜测原文结论，仅说明无法确认，符合不得猜测原文结论的要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": false,\n  \"facts\": [],\n  \"serious_errors\": [],\n  \"reason\": \"检索工具持续返回不可重试的 PERSISTENT_UNAVAILABLE 错误，回答明确说明工具失败且未猜测原文结论，符合预期状态和必要要点。由于未读取任何证据，无法回答具体填报时间，因此 answer_correct 为 false。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00228228,
+          "seconds": 3.0708
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "a4d64f47568c4757f53bafa69ecd6243b60610872ae2d3968aba6973333c6ad5"
+}

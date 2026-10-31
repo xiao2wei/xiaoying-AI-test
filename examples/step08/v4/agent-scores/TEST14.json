@@ -1,0 +1,184 @@
+{
+  "id": "TEST14",
+  "category": "conflict",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历",
+            "reason": "明确引用2020版第四条并包含一级以上医院有效病休证明及病历。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班",
+            "reason": "明确引用2023版第八条并包含三甲级以上医院诊断要求。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "两份文件关于病假证明医院等级的要求存在差异",
+            "reason": "明确列出差异，且前文分别展示了两个条文的具体要求。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "answer_span": "已读条文中未见补充规定明确废止或衔接旧规定，不能仅凭日期认定适用关系",
+            "reason": "明确指出不能仅凭日期选取，需要进一步确认。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "2020版第四条规定一级以上医院有效病休证明及病历",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D19-C005与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+            "answer_span": "出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D19-C005与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "无诊断书者视为旷工",
+            "answer_span": "无诊断书者视为旷工",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D19-C005与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "2023补充规定第八条要求三甲级以上医院诊断",
+            "answer_span": "《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "请假时间≤2个月的由所在单位审批、报人事处备案",
+            "answer_span": "请假时间≤2个月的由所在单位审批、报人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "大于2个月的经所在单位同意后报主管校领导批准、人事处备案",
+            "answer_span": "大于2个月的经所在单位同意后报主管校领导批准、人事处备案",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "病假连续≥6个月可申请长期病休",
+            "answer_span": "病假连续≥6个月可申请长期病休",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+            "answer_span": "长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "恢复工作需三甲级以上医院证明已康复后办理销假返岗",
+            "answer_span": "恢复工作需三甲级以上医院证明已康复后办理销假返岗",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C009与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "补充规定第十八条规定其由人事处负责解释，自发布之日起执行",
+            "answer_span": "补充规定第十八条规定其由人事处负责解释，自发布之日起执行",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C019与已读原文一致，支持该事实。"
+          },
+          {
+            "text": "第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则",
+            "answer_span": "第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用chunk D20-C016与已读原文一致，支持该事实。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "总评：实际回答准确列出了2020版一级以上医院和2023版三甲级以上医院的不同要求，明确说明了差异及不能仅凭日期确定适用关系，并给出了请求确认的具体材料，符合needs_confirmation状态。",
+        "actionable_gap": {
+          "passed": true,
+          "requested_items": [
+            "人事处就两份文件病假证明医院等级适用关系出具的正式解释、衔接说明或执行通知（注明适用对象与版本日期）",
+            "所在单位依第十五条制定的考勤管理细则"
+          ],
+          "reason": "答案明确要求提供人事处的解释/衔接说明/执行通知并注明适用对象与版本日期，以及可能存在的单位考勤管理细则，具体且可操作。"
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T04:11:25.718431+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a605933b2823a8f7276f98ca2856be3a5a1d135aae526fd9afed5f6a1151a973",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "low",
+          "read_timeout_seconds": 180,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "a58fa477-28b3-449a-b0f0-41b88c0384b4",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 4755,
+            "completion_tokens": 6369,
+            "total_tokens": 11124,
+            "prompt_tokens_details": {
+              "cached_tokens": 1664
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4795
+            },
+            "prompt_cache_hit_tokens": 1664,
+            "prompt_cache_miss_tokens": 3091
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历\",\n      \"reason\": \"明确引用2020版第四条并包含一级以上医院有效病休证明及病历。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班\",\n      \"reason\": \"明确引用2023版第八条并包含三甲级以上医院诊断要求。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份文件关于病假证明医院等级的要求存在差异\",\n      \"reason\": \"明确列出差异，且前文分别展示了两个条文的具体要求。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"answer_span\": \"已读条文中未见补充规定明确废止或衔接旧规定，不能仅凭日期认定适用关系\",\n      \"reason\": \"明确指出不能仅凭日期选取，需要进一步确认。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020版第四条规定一级以上医院有效病休证明及病历\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）第四条规定：教职工因病不能坚持正常工作、需要治疗休息的，出具一级以上医院有效的病休证明及病历\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D19-C005与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假\",\n      \"answer_span\": \"出差在外地因急病在当地就诊病休的，返校后应出具就诊医院的病历和诊断书补假\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D19-C005与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"无诊断书者视为旷工\",\n      \"answer_span\": \"无诊断书者视为旷工\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D19-C005与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"2023补充规定第八条要求三甲级以上医院诊断\",\n      \"answer_span\": \"《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27）第八条规定：教职工因病经三甲级以上医院诊断不能正常上班\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"请假时间≤2个月的由所在单位审批、报人事处备案\",\n      \"answer_span\": \"请假时间≤2个月的由所在单位审批、报人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"大于2个月的经所在单位同意后报主管校领导批准、人事处备案\",\n      \"answer_span\": \"大于2个月的经所在单位同意后报主管校领导批准、人事处备案\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"病假连续≥6个月可申请长期病休\",\n      \"answer_span\": \"病假连续≥6个月可申请长期病休\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明\",\n      \"answer_span\": \"长期病休人员需每半年到三甲级以上医院复查并由医院出具不能工作诊断证明\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"恢复工作需三甲级以上医院证明已康复后办理销假返岗\",\n      \"answer_span\": \"恢复工作需三甲级以上医院证明已康复后办理销假返岗\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C009与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"补充规定第十八条规定其由人事处负责解释，自发布之日起执行\",\n      \"answer_span\": \"补充规定第十八条规定其由人事处负责解释，自发布之日起执行\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C019与已读原文一致，支持该事实。\"\n    },\n    {\n      \"text\": \"第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则\",\n      \"answer_span\": \"第十五条允许各单位在本规定基础上结合实际制定本单位考勤管理细则\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"引用chunk D20-C016与已读原文一致，支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"总评：实际回答准确列出了2020版一级以上医院和2023版三甲级以上医院的不同要求，明确说明了差异及不能仅凭日期确定适用关系，并给出了请求确认的具体材料，符合needs_confirmation状态。\",\n  \"actionable_gap\": {\n    \"passed\": true,\n    \"requested_items\": [\n      \"人事处就两份文件病假证明医院等级适用关系出具的正式解释、衔接说明或执行通知（注明适用对象与版本日期）\",\n      \"所在单位依第十五条制定的考勤管理细则\"\n    ],\n    \"reason\": \"答案明确要求提供人事处的解释/衔接说明/执行通知并注明适用对象与版本日期，以及可能存在的单位考勤管理细则，具体且可操作。\"\n  }\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.014687287999999998,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 47.9147
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "22132637311e30a5a9c38c3d94b20a7153c822c785a0946dbbd1b4233faf0e1f"
+}

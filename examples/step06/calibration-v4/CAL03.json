@@ -1,0 +1,100 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "2020规定每月26日上报。",
+        "reason": "实际回答明确指出2020规定报送日为26日，与要求一致。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "2023补充规定每月25日上报。",
+        "reason": "实际回答明确指出2023补充规定报送日为25日，与要求一致。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "两份规定存在差异，请向人事处确认本次适用口径。",
+        "reason": "实际回答明确说明了差异，并请求人事处确认适用口径，满足合取要求。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "2020规定每月26日上报",
+        "answer_span": "2020规定每月26日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "回答引用D19第十四条，该引用明确包含每月26日向人事处报送，已读记录支持该事实。"
+      },
+      {
+        "text": "2023补充规定每月25日上报",
+        "answer_span": "2023补充规定每月25日上报。",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "回答引用D20第五条，该引用明确包含每月25日向人事处报送，已读记录支持该事实。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "回答准确识别两份规定的报送日分别为26日和25日，明确差异并请求人事处确认适用口径，状态为needs_confirmation，引用与阅读记录均支持，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:13:22.424397+00:00",
+      "attempt": 1,
+      "prompt_sha256": "25ae5b157625d395b50a518034170066d77a0edf0558878896b702d6607745de",
+      "real_api": true,
+      "error": "ConnectionError",
+      "seconds": 40.4586
+    },
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:14:02.883401+00:00",
+      "attempt": 2,
+      "prompt_sha256": "25ae5b157625d395b50a518034170066d77a0edf0558878896b702d6607745de",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "e87601bd-c083-4642-bb71-597410842ab1",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1977,
+        "completion_tokens": 3533,
+        "total_tokens": 5510,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3088
+        },
+        "prompt_cache_hit_tokens": 1920,
+        "prompt_cache_miss_tokens": 57
+      },
+      "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"2020规定每月26日上报。\",\n      \"reason\": \"实际回答明确指出2020规定报送日为26日，与要求一致。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"2023补充规定每月25日上报。\",\n      \"reason\": \"实际回答明确指出2023补充规定报送日为25日，与要求一致。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"两份规定存在差异，请向人事处确认本次适用口径。\",\n      \"reason\": \"实际回答明确说明了差异，并请求人事处确认适用口径，满足合取要求。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"2020规定每月26日上报\",\n      \"answer_span\": \"2020规定每月26日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D19第十四条，该引用明确包含每月26日向人事处报送，已读记录支持该事实。\"\n    },\n    {\n      \"text\": \"2023补充规定每月25日上报\",\n      \"answer_span\": \"2023补充规定每月25日上报。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"回答引用D20第五条，该引用明确包含每月25日向人事处报送，已读记录支持该事实。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确识别两份规定的报送日分别为26日和25日，明确差异并请求人事处确认适用口径，状态为needs_confirmation，引用与阅读记录均支持，无严重错误。\"\n}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.01660032,
+      "seconds": 40.6764
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL03",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

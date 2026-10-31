@@ -1,0 +1,97 @@
+{
+  "pass": true,
+  "judge": {
+    "points": [
+      {
+        "index": 0,
+        "met": true,
+        "answer_span": "从审批立项时间起算",
+        "reason": "实际回答明确说明项目起始时间从审批立项时间起算，与要点语义一致。"
+      },
+      {
+        "index": 1,
+        "met": true,
+        "answer_span": "最长一般不超过4年",
+        "reason": "实际回答明确说明最长一般不超过4年，与要点一致。"
+      },
+      {
+        "index": 2,
+        "met": true,
+        "answer_span": "期满结余由学校统筹管理",
+        "reason": "实际回答明确说明期满结余由学校统筹管理，与要点一致。"
+      }
+    ],
+    "status_ok": true,
+    "decision_ok": true,
+    "answer_correct": true,
+    "facts": [
+      {
+        "text": "从审批立项时间起算",
+        "answer_span": "从审批立项时间起算",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D03-C008明确包含“项目起始时间从学校审批立项时间算起”，已读记录一致。"
+      },
+      {
+        "text": "最长一般不超过4年",
+        "answer_span": "最长一般不超过4年",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D03-C008包含“项目执行期限最长一般不得超过4年”，已读记录一致。"
+      },
+      {
+        "text": "期满结余由学校统筹管理",
+        "answer_span": "期满结余由学校统筹管理",
+        "cited": true,
+        "citation_supported": true,
+        "supported_by_read": true,
+        "reason": "引用D03-C008包含“项目执行期满后，结余经费由学校统筹管理”，已读记录一致。"
+      }
+    ],
+    "serious_errors": [],
+    "reason": "答案准确覆盖全部三个必需要点，引用与读取支持事实，动作合理，无严重错误。"
+  },
+  "critical_errors": [],
+  "program_errors": [],
+  "judge_trace": [
+    {
+      "kind": "model",
+      "purpose": "judge",
+      "model": "deepseek-v4-pro",
+      "time": "2026-10-30T15:13:10.683238+00:00",
+      "attempt": 1,
+      "prompt_sha256": "82f53fe1acba0e44984a0e95ab34b142b78c702ec71b1bfc0287d5ee74e9aa59",
+      "real_api": true,
+      "http_status": 200,
+      "response_id": "1aa7ea50-8b5e-4788-bef9-6fe8c86c4970",
+      "response_model": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 1396,
+        "completion_tokens": 2562,
+        "total_tokens": 3958,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2200
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 1396
+      },
+      "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"从审批立项时间起算\",\"reason\":\"实际回答明确说明项目起始时间从审批立项时间起算，与要点语义一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"最长一般不超过4年\",\"reason\":\"实际回答明确说明最长一般不超过4年，与要点一致。\"},{\"index\":2,\"met\":true,\"answer_span\":\"期满结余由学校统筹管理\",\"reason\":\"实际回答明确说明期满结余由学校统筹管理，与要点一致。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"从审批立项时间起算\",\"answer_span\":\"从审批立项时间起算\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D03-C008明确包含“项目起始时间从学校审批立项时间算起”，已读记录一致。\"},{\"text\":\"最长一般不超过4年\",\"answer_span\":\"最长一般不超过4年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D03-C008包含“项目执行期限最长一般不得超过4年”，已读记录一致。\"},{\"text\":\"期满结余由学校统筹管理\",\"answer_span\":\"期满结余由学校统筹管理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用D03-C008包含“项目执行期满后，结余经费由学校统筹管理”，已读记录一致。\"}],\"serious_errors\":[],\"reason\":\"答案准确覆盖全部三个必需要点，引用与读取支持事实，动作合理，无严重错误。\"}",
+      "finish_reason": "stop",
+      "estimated_usd_upper_bound": 0.011988239999999999,
+      "seconds": 29.6177
+    }
+  ],
+  "judge_error": null,
+  "human_review": null,
+  "id": "CAL01",
+  "fixture_type": "constructed_judge_calibration_not_agent_performance",
+  "proposed_pass": true,
+  "human_label": null,
+  "agreement_with_proposed": true,
+  "agreement_with_human": null
+}

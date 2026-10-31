@@ -1,0 +1,30 @@
+{
+  "kind": "program_status_precheck_not_AI_quality_score",
+  "modes": [
+    {
+      "mode": "baseline",
+      "count": 40,
+      "statusMismatches": [
+        "TEST36",
+        "TEST37",
+        "TEST40"
+      ],
+      "modelErrors": [],
+      "modelCalls": 51
+    },
+    {
+      "mode": "agent",
+      "count": 40,
+      "statusMismatches": [],
+      "modelErrors": [],
+      "modelCalls": 231
+    },
+    {
+      "mode": "stability",
+      "count": 30,
+      "statusMismatches": [],
+      "modelErrors": [],
+      "modelCalls": 166
+    }
+  ]
+}

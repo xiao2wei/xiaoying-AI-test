@@ -1,0 +1,98 @@
+{
+  "id": "TEST02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "reason": "实际回答明确说明了满10年按80%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "reason": "实际回答明确说明了不满10年按70%发放岗位工资、薪级工资和基础绩效。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "岗位工资、薪级工资和基础绩效",
+            "reason": "回答中明确限定了比例为岗位工资、薪级工资和基础绩效这三项，没有泛化为所有收入。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。",
+            "answer_span": "全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实来自实际回答并引用了D20-C009，引用文本包含“＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%”，足以支持该事实；实际已读原文D20-C009也包含相同内容。"
+          },
+          {
+            "text": "全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。",
+            "answer_span": "全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实来自实际回答并引用了D20-C009，引用文本包含“工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%”，足以支持该事实；实际已读原文D20-C009也包含相同内容。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答准确提供了2023年请假补充规定中病假累计超过6个月的待遇比例：满10年按80%、不满10年按70%，且明确限定为岗位工资、薪级工资和基础绩效，引用与已读原文一致，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T02:14:05.164950+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b5047e6d050dc596024073c38d0ed8f34ba7904d2b1d5545c1339f3d6b5f5447",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "6a750d5b-7737-4093-b87d-c9ac24ac9c77",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3489,
+            "completion_tokens": 3267,
+            "total_tokens": 6756,
+            "prompt_tokens_details": {
+              "cached_tokens": 896
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 2633
+            },
+            "prompt_cache_hit_tokens": 896,
+            "prompt_cache_miss_tokens": 2593
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"answer_span\": \"工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"reason\": \"实际回答明确说明了满10年按80%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"answer_span\": \"工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"reason\": \"实际回答明确说明了不满10年按70%发放岗位工资、薪级工资和基础绩效。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"answer_span\": \"岗位工资、薪级工资和基础绩效\",\n      \"reason\": \"回答中明确限定了比例为岗位工资、薪级工资和基础绩效这三项，没有泛化为所有收入。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。\",\n      \"answer_span\": \"全年累计病假超过6个月时，工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实来自实际回答并引用了D20-C009，引用文本包含“＞6个月 | 工作年限满10年的发岗位工资、薪级工资和基础绩效的80%”，足以支持该事实；实际已读原文D20-C009也包含相同内容。\"\n    },\n    {\n      \"text\": \"全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。\",\n      \"answer_span\": \"全年累计病假超过6个月时，工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实来自实际回答并引用了D20-C009，引用文本包含“工作年限不满10年的发岗位工资、薪级工资和基础绩效的70%”，足以支持该事实；实际已读原文D20-C009也包含相同内容。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答准确提供了2023年请假补充规定中病假累计超过6个月的待遇比例：满10年按80%、不满10年按70%，且明确限定为岗位工资、薪级工资和基础绩效，引用与已读原文一致，无严重错误。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0175428,
+          "seconds": 31.6906
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "c04b8fd25fdb372b60b6f90e4efe71bee7372b31356da5e23b45e9765c9494e8"
+}

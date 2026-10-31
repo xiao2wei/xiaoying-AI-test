@@ -1,0 +1,36 @@
+{
+  "source": "data/source/personnel-policies.pdf",
+  "method": "Codex AI视觉检查 + 程序结构检查（非人工审核）",
+  "visual_pages": [
+    {
+      "page": 1,
+      "result": "封面为图像，包含汇编名、2023版第四卷、人事人才篇及2024年3月，无制度正文，作为封面登记，不进条款索引"
+    },
+    {
+      "page": 7,
+      "result": "在职读博补贴表的≤4、>4且≤5等边界、金额和学科列已对照渲染页核对"
+    },
+    {
+      "page": 50,
+      "result": "空白考核表包含合并单元格，保留表格原始行、null合并标记及定位，不能把空格当作规定值"
+    },
+    {
+      "page": 173,
+      "result": "事假与病假表格条件和待遇逐行对应；比较符号已修复"
+    },
+    {
+      "page": 200,
+      "result": "成果分类表存在纵向类别与合并单元格，原始行及表格定位保留；切片读取需展开整个相关表格"
+    }
+  ],
+  "table_structure_checks": {
+    "tables": 61,
+    "unassigned_table_characters": 0
+  },
+  "unknown_dates": [
+    {
+      "doc_id": "D11",
+      "reason": "首页未列明本制度发布日期，正文所引其他文件的年份不能充当本制度日期"
+    }
+  ]
+}

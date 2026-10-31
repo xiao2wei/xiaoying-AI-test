@@ -1,0 +1,109 @@
+{
+  "id": "DEV02",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": false,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "因此恰好5000元只需项目负责人签字",
+            "reason": "实际回答明确表达恰好5000元只需项目负责人签字，符合审批权限第1项。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "因此恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字",
+            "reason": "实际回答明确表达恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字，符合审批权限第2项。"
+          },
+          {
+            "index": 2,
+            "met": false,
+            "answer_span": "",
+            "reason": "实际回答未提及办理报销须符合经费预算及使用范围这一前提。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": false,
+        "facts": [
+          {
+            "text": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销",
+            "answer_span": "单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第十二条审批权限第1项与此事实一致，实际已读取该条。"
+          },
+          {
+            "text": "恰好5000元只需项目负责人签字",
+            "answer_span": "因此恰好5000元只需项目负责人签字",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款含5000元，支持恰好5000元仅由项目负责人签字的推论；已读取原文。"
+          },
+          {
+            "text": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销",
+            "answer_span": "单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用原文第十二条审批权限第2项与此事实一致，实际已读取该条。"
+          },
+          {
+            "text": "恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字",
+            "answer_span": "因此恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用条款含1万元，支持恰好1万元由项目负责人和二级教学（科研）机构负责人签字的推论；已读取原文。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确给出了两个金额的签字人，但遗漏了“须符合预算及使用范围”这一要点，故整体判定有缺陷；无引用错误或事实性严重问题。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:24:52.806033+00:00",
+          "attempt": 1,
+          "prompt_sha256": "cea56823de3e47b60323743760ae8e19df3571d1cf53d8ad89216fec311f83a9",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "00b6fbc9-66ca-41c4-b16e-ddaa9ee64afc",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3403,
+            "completion_tokens": 5054,
+            "total_tokens": 8457,
+            "prompt_tokens_details": {
+              "cached_tokens": 768
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 4479
+            },
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 2635
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"因此恰好5000元只需项目负责人签字\",\"reason\":\"实际回答明确表达恰好5000元只需项目负责人签字，符合审批权限第1项。\"},{\"index\":1,\"met\":true,\"answer_span\":\"因此恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字\",\"reason\":\"实际回答明确表达恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字，符合审批权限第2项。\"},{\"index\":2,\"met\":false,\"answer_span\":\"\",\"reason\":\"实际回答未提及办理报销须符合经费预算及使用范围这一前提。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":false,\"facts\":[{\"text\":\"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销\",\"answer_span\":\"单笔报销经费在5000元以下（含5000元）的，由项目负责人签字后报销\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文第十二条审批权限第1项与此事实一致，实际已读取该条。\"},{\"text\":\"恰好5000元只需项目负责人签字\",\"answer_span\":\"因此恰好5000元只需项目负责人签字\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用条款含5000元，支持恰好5000元仅由项目负责人签字的推论；已读取原文。\"},{\"text\":\"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销\",\"answer_span\":\"单笔报销经费在5000元以上1万元以下（含1万元）的，由项目负责人、所在二级教学（科研）机构负责人签字后报销\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用原文第十二条审批权限第2项与此事实一致，实际已读取该条。\"},{\"text\":\"恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字\",\"answer_span\":\"因此恰好1万元需项目负责人和所在二级教学（科研）机构负责人签字\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用条款含1万元，支持恰好1万元由项目负责人和二级教学（科研）机构负责人签字的推论；已读取原文。\"}],\"serious_errors\":[],\"reason\":\"回答正确给出了两个金额的签字人，但遗漏了“须符合预算及使用范围”这一要点，故整体判定有缺陷；无引用错误或事实性严重问题。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.024505799999999998,
+          "seconds": 53.1343
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": false,
+  "run_sha256": "7430b135a2e7529b47e5131211151a8d1eac0f8ea84578d95430dc78c85884bc"
+}

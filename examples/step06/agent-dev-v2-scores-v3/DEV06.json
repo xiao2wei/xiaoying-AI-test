@@ -1,0 +1,103 @@
+{
+  "id": "DEV06",
+  "category": "insufficient",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明“需先确认您被认定的引进人才层次（第一至第八层次）”，并指出“无法直接确定您能领取的具体安家费金额”，表达了缺少人才层次条件。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "reason": "实际回答在claims中说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，并在gaps中要求补充引进层次，但未明确要求补充已签协议；不过回答中提及首聘期协议签订作为发放条件，且整体要求补充信息，可视为间接表达缺少已签协议等条件。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "reason": "实际回答在gaps中明确说明“无法直接确定您能领取的具体安家费金额”，没有给出唯一金额。"
+          },
+          {
+            "index": 3,
+            "met": true,
+            "reason": "实际回答在gaps中明确请求“请补充您的引进层次或由学校人才工作领导小组认定结果”。"
+          },
+          {
+            "index": 4,
+            "met": true,
+            "reason": "实际回答在claims中提及“首聘期协议签订后”作为发放条件，并在gaps中要求补充信息，但未明确请求补充已签协议；不过结合上下文，回答要求补充引进层次和认定结果，间接请求补充相关条件。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "安家费金额按引进人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D02-C007，且实际读取了该chunk，其中明确列出各层次安家费金额，与事实一致。",
+            "answer_span": "安家费金额按引进人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。"
+          },
+          {
+            "text": "第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D02-C010，且实际读取了该chunk，其中第九条明确表述了该内容。",
+            "answer_span": "第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。"
+          },
+          {
+            "text": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "该事实引用了D02-C022，且实际读取了该chunk，其中第二十一条明确表述了该内容。",
+            "answer_span": "安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答正确识别了缺少人才层次和协议等条件，未给出唯一金额，并请求补充相关信息，符合needs_confirmation状态。所有事实均有引用且与实际读取的证据一致。"
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-30T15:09:21.181342+00:00",
+          "attempt": 1,
+          "prompt_sha256": "2595e4285dfc73670f02459aefb07f6fc97d33af858c59e34f07904f52f4c7d8",
+          "real_api": true,
+          "http_status": 200,
+          "response_id": "cd3d520c-7b60-4f6d-9a73-d691dfbc1c4d",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 5268,
+            "completion_tokens": 881,
+            "total_tokens": 6149,
+            "prompt_tokens_details": {
+              "cached_tokens": 640
+            },
+            "prompt_cache_hit_tokens": 640,
+            "prompt_cache_miss_tokens": 4628
+          },
+          "content": "{\n  \"points\": [\n    {\n      \"index\": 0,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“需先确认您被认定的引进人才层次（第一至第八层次）”，并指出“无法直接确定您能领取的具体安家费金额”，表达了缺少人才层次条件。\"\n    },\n    {\n      \"index\": 1,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中说明“安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放”，并在gaps中要求补充引进层次，但未明确要求补充已签协议；不过回答中提及首聘期协议签订作为发放条件，且整体要求补充信息，可视为间接表达缺少已签协议等条件。\"\n    },\n    {\n      \"index\": 2,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确说明“无法直接确定您能领取的具体安家费金额”，没有给出唯一金额。\"\n    },\n    {\n      \"index\": 3,\n      \"met\": true,\n      \"reason\": \"实际回答在gaps中明确请求“请补充您的引进层次或由学校人才工作领导小组认定结果”。\"\n    },\n    {\n      \"index\": 4,\n      \"met\": true,\n      \"reason\": \"实际回答在claims中提及“首聘期协议签订后”作为发放条件，并在gaps中要求补充信息，但未明确请求补充已签协议；不过结合上下文，回答要求补充引进层次和认定结果，间接请求补充相关条件。\"\n    }\n  ],\n  \"status_ok\": true,\n  \"decision_ok\": true,\n  \"answer_correct\": true,\n  \"facts\": [\n    {\n      \"text\": \"安家费金额按引进人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D02-C007，且实际读取了该chunk，其中明确列出各层次安家费金额，与事实一致。\",\n      \"answer_span\": \"安家费金额按引进人才层次确定：第一层次100万元，第二层次80万元，第三层次60万元，第四层次20万—30万元，第五层次20万元，第六层次10万元，第七层次5万元，第八层次5万元。\"\n    },\n    {\n      \"text\": \"第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D02-C010，且实际读取了该chunk，其中第九条明确表述了该内容。\",\n      \"answer_span\": \"第一层次至第五层次人才的确定由学校人才工作领导小组按照“一人一议”原则引进并确定待遇，报学校党委常委会会议研究审批。\"\n    },\n    {\n      \"text\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\",\n      \"cited\": true,\n      \"citation_supported\": true,\n      \"supported_by_read\": true,\n      \"reason\": \"该事实引用了D02-C022，且实际读取了该chunk，其中第二十一条明确表述了该内容。\",\n      \"answer_span\": \"安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。\"\n    }\n  ],\n  \"serious_errors\": [],\n  \"reason\": \"回答正确识别了缺少人才层次和协议等条件，未给出唯一金额，并请求补充相关信息，符合needs_confirmation状态。所有事实均有引用且与实际读取的证据一致。\"\n}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.01044252,
+          "seconds": 8.5724
+        }
+      ],
+      "judge_error": null,
+      "human_review": null
+    }
+  ],
+  "pass": true,
+  "run_sha256": "30db2f4c2367edaf4166fb534562bd7a0256ed3fdc77aec7ad3c0fcad571817d"
+}

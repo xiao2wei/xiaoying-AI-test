@@ -1,0 +1,156 @@
+{
+  "id": "DEV01",
+  "category": "normal",
+  "turns": [
+    {
+      "pass": true,
+      "judge": {
+        "points": [
+          {
+            "index": 0,
+            "met": true,
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "reason": "回答明确说明项目起始时间从学校审批立项时间算起，与要求一致。"
+          },
+          {
+            "index": 1,
+            "met": true,
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "reason": "回答明确说明最长执行期限一般不得超过4年，与要求一致。"
+          },
+          {
+            "index": 2,
+            "met": true,
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "reason": "回答明确说明期满结余由学校统筹管理，与要求一致。"
+          }
+        ],
+        "status_ok": true,
+        "decision_ok": true,
+        "answer_correct": true,
+        "facts": [
+          {
+            "text": "项目起始时间从学校审批立项时间算起",
+            "answer_span": "项目起始时间从学校审批立项时间算起",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第七条原文及已读D03-C008均明确包含该起算规则。"
+          },
+          {
+            "text": "结束时间可根据研究工作需自行设定",
+            "answer_span": "结束时间可根据研究工作需自行设定",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第七条含'结束时间可根据研究工作需\n要自行设定'，已读原文一致，可支持；实际回答少一'要'字，不改变可辨语义。"
+          },
+          {
+            "text": "项目执行期限最长一般不得超过4年",
+            "answer_span": "项目执行期限最长一般不得超过4年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第七条及已读D03-C008明确包含该期限限制。"
+          },
+          {
+            "text": "项目执行期满后，结余经费由学校统筹管理",
+            "answer_span": "项目执行期满后，结余经费由学校统筹管理",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第七条及已读D03-C008均明确包含结余处理规则。"
+          },
+          {
+            "text": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年",
+            "answer_span": "因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二十五条及已读D03-C026明确包含延期条件和期限。"
+          },
+          {
+            "text": "延期须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "answer_span": "须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二十五条及已读D03-C026支持延期申请程序。"
+          },
+          {
+            "text": "批准延期的项目须按时提交年度进展报告参加年度考核",
+            "answer_span": "批准延期的项目须按时提交年度进展报告参加年度考核",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第二十五条及已读D03-C026支持延期项目的年度考核要求。"
+          },
+          {
+            "text": "项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5）",
+            "answer_span": "项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5）",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十八条及已读D03-C019支持结题报告填写要求。"
+          },
+          {
+            "text": "结题报告经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收",
+            "answer_span": "经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收",
+            "cited": true,
+            "citation_supported": true,
+            "supported_by_read": true,
+            "reason": "引用第十八条及已读D03-C019支持审核和验收程序。"
+          }
+        ],
+        "serious_errors": [],
+        "reason": "回答已覆盖三个必需要点，引用与已读材料一致；额外说明延期和结题验收内容有来源支持，无严重错误。",
+        "actionable_gap": {
+          "applicable": false,
+          "passed": null,
+          "requested_items": []
+        }
+      },
+      "critical_errors": [],
+      "program_errors": [],
+      "judge_trace": [
+        {
+          "kind": "model",
+          "purpose": "judge",
+          "model": "deepseek-v4-pro",
+          "time": "2026-10-31T03:02:21.467574+00:00",
+          "attempt": 1,
+          "prompt_sha256": "4559469b8b0787061035714e16f303a3bd7045a59aec63b57fc9980452d7ce09",
+          "real_api": true,
+          "thinking": "enabled",
+          "read_timeout_seconds": 180,
+          "http_status": 200,
+          "response_id": "8e2ef7a2-ad09-4c05-a666-3e06df665216",
+          "response_model": "deepseek-v4-pro",
+          "usage": {
+            "prompt_tokens": 3013,
+            "completion_tokens": 6541,
+            "total_tokens": 9554,
+            "prompt_tokens_details": {
+              "cached_tokens": 1024
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 5622
+            },
+            "prompt_cache_hit_tokens": 1024,
+            "prompt_cache_miss_tokens": 1989
+          },
+          "content": "{\"points\":[{\"index\":0,\"met\":true,\"answer_span\":\"项目起始时间从学校审批立项时间算起\",\"reason\":\"回答明确说明项目起始时间从学校审批立项时间算起，与要求一致。\"},{\"index\":1,\"met\":true,\"answer_span\":\"项目执行期限最长一般不得超过4年\",\"reason\":\"回答明确说明最长执行期限一般不得超过4年，与要求一致。\"},{\"index\":2,\"met\":true,\"answer_span\":\"项目执行期满后，结余经费由学校统筹管理\",\"reason\":\"回答明确说明期满结余由学校统筹管理，与要求一致。\"}],\"status_ok\":true,\"decision_ok\":true,\"answer_correct\":true,\"facts\":[{\"text\":\"项目起始时间从学校审批立项时间算起\",\"answer_span\":\"项目起始时间从学校审批立项时间算起\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第七条原文及已读D03-C008均明确包含该起算规则。\"},{\"text\":\"结束时间可根据研究工作需自行设定\",\"answer_span\":\"结束时间可根据研究工作需自行设定\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第七条含'结束时间可根据研究工作需\\n要自行设定'，已读原文一致，可支持；实际回答少一'要'字，不改变可辨语义。\"},{\"text\":\"项目执行期限最长一般不得超过4年\",\"answer_span\":\"项目执行期限最长一般不得超过4年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第七条及已读D03-C008明确包含该期限限制。\"},{\"text\":\"项目执行期满后，结余经费由学校统筹管理\",\"answer_span\":\"项目执行期满后，结余经费由学校统筹管理\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第七条及已读D03-C008均明确包含结余处理规则。\"},{\"text\":\"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年\",\"answer_span\":\"因客观原因不能在规定期限内完成研究计划的项目，一般允许延期一次，期限不超过2年\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第二十五条及已读D03-C026明确包含延期条件和期限。\"},{\"text\":\"延期须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批\",\"answer_span\":\"须在项目原执行期结束前2个月提出申请，由所在二级教学（科研）机构签署意见后，报人事处审批\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第二十五条及已读D03-C026支持延期申请程序。\"},{\"text\":\"批准延期的项目须按时提交年度进展报告参加年度考核\",\"answer_span\":\"批准延期的项目须按时提交年度进展报告参加年度考核\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第二十五条及已读D03-C026支持延期项目的年度考核要求。\"},{\"text\":\"项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5）\",\"answer_span\":\"项目执行期满后10个工作日内，项目负责人须填写《辽宁科技大学高层次人才科研建设专项经费资助项目结题报告》（附5）\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十八条及已读D03-C019支持结题报告填写要求。\"},{\"text\":\"结题报告经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收\",\"answer_span\":\"经所在二级教学（科研）机构审核后提交人事处，人事处会同科技处组成考核小组进行项目验收\",\"cited\":true,\"citation_supported\":true,\"supported_by_read\":true,\"reason\":\"引用第十八条及已读D03-C019支持审核和验收程序。\"}],\"serious_errors\":[],\"reason\":\"回答已覆盖三个必需要点，引用与已读材料一致；额外说明延期和结题验收内容有来源支持，无严重错误。\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.02987952,
+          "seconds": 59.1661
+        }
+      ],
+      "judge_error": null,
+      "human_review": null,
+      "judge_cache_hit": false,
+      "new_judge_requests": 1
+    }
+  ],
+  "pass": true,
+  "run_sha256": "b0fef36426bdc93a972b5ca813f6f6da8d57357622654ea69d06dca3901e7a1c"
+}

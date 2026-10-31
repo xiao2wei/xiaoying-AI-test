@@ -1,0 +1,486 @@
+{
+  "id": "TEST37",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "管理服务人员作风问题线索移交和单位形成初步意见分别多久内完成？",
+      "history": [],
+      "output": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "依据《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "依据《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\n相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+      },
+      "raw_final": {
+        "status": "answered",
+        "claims": [
+          {
+            "text": "依据《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          },
+          {
+            "text": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+            "citations": [
+              {
+                "chunk_id": "D26-C014",
+                "quote": "相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "doc_id": "D26",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "version_date": "2022-06-10"
+              }
+            ]
+          }
+        ],
+        "gaps": [],
+        "answer": "依据《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\n相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:19.498013+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a639c401144aed13953af2bef9bd0a68f0d0401130857f456588adec0fa4a111",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "e73b2e57-4caa-4d65-8b6a-21e52289842b",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 2094,
+            "completion_tokens": 34,
+            "total_tokens": 2128,
+            "prompt_tokens_details": {
+              "cached_tokens": 1792
+            },
+            "prompt_cache_hit_tokens": 1792,
+            "prompt_cache_miss_tokens": 302
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"管理服务人员作风问题线索移交 初步意见 时限\"},\"reason\":\"检索作风问题线索办理时限相关条款\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 7.1076e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.4784
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "管理服务人员作风问题线索移交 初步意见 时限"
+          },
+          "reason": "检索作风问题线索办理时限相关条款"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "管理服务人员作风问题线索移交 初步意见 时限"
+          },
+          "result": {
+            "ok": true,
+            "query": "管理服务人员作风问题线索移交 初步意见 时限",
+            "hits": [
+              {
+                "chunk_id": "D26-C014",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十三条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.095238,
+                "semantic_score": 0.768264,
+                "lexical_score": 77.3568,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十三条 第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C016",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.090909,
+                "semantic_score": 0.710829,
+                "lexical_score": 52.222,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十五条 第十五条 相关单位将问题处理材料、问题处理初步意见报工作小组办公室，工\n作小组审议相关单位处理初步意见，形成问题处理决定。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C006",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第五条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  191
+                ],
+                "printed_pages": [
+                  186
+                ],
+                "score": 0.085145,
+                "semantic_score": 0.686356,
+                "lexical_score": 40.1641,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第五条 第五条 工作小组对管理服务人员劳动纪律和规章制度执行情况进行不定期检\n查，受理师生员工反映的意见并作出相应的处理意见。党委组织部、人事处根据管理\n服务人员的管理权限并针对其工作作风问题，进行调查并报工作小组讨论会商形成\n处理意见；党政办公室、机关党委根据工作小组办公室建立的个人工作作风问题台\n账，将工作作风问题作为管理服务人员所在单位部门年度绩效考核结果的依据，纳入\n年度考核中；纪委综合监察室、纪委审查调查室对工作作风问题履行监督执纪问责\n职责。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C015",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十四条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  193
+                ],
+                "printed_pages": [
+                  188
+                ],
+                "score": 0.077961,
+                "semantic_score": 0.694041,
+                "lexical_score": 33.5726,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十四条 第十四条 相关单位在管理服务人员工作作风问题认定过程中，应听取当事人\n的陈述和申辩。相关单位对所反映的问题处理不及时、处置不力、方式不当或者整改\n不彻底等情况，扣减相关单位年度考核分数。",
+                "related_table_chunks": []
+              },
+              {
+                "chunk_id": "D26-C011",
+                "doc_id": "D26",
+                "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+                "article": "第十条",
+                "version_date": "2022-06-10",
+                "pdf_pages": [
+                  192
+                ],
+                "printed_pages": [
+                  187
+                ],
+                "score": 0.074176,
+                "semantic_score": 0.681714,
+                "lexical_score": 33.6275,
+                "excerpt": "辽宁科技大学管理服务人员工作作风问题处理办法（试行） 第十条 第十条 学校直属各单位所辖管理服务人员出现工作作风问题的，扣减单位年\n度绩效考核分数并根据问题严重程度，由工作小组从一岗双责角度对所在单位、部门\n党政负责人进行约谈或追责。\n第四章 处理程序",
+                "related_table_chunks": []
+              }
+            ],
+            "note": "候选摘要不是已读取原文。须read后引用；日期不自动确定优先关系。低相关候选不能证明有答案。"
+          },
+          "seconds": 0.0111,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:20.044393+00:00",
+          "attempt": 1,
+          "prompt_sha256": "270dd1b2e19c191c0ef1ae4c35ba5d136e338f7fff87112a11d5bbf6aa397486",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "5de3f8db-3f17-4001-923c-ac6764523441",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3236,
+            "completion_tokens": 37,
+            "total_tokens": 3273,
+            "prompt_tokens_details": {
+              "cached_tokens": 2048
+            },
+            "prompt_cache_hit_tokens": 2048,
+            "prompt_cache_miss_tokens": 1188
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D26-C014\"]}, \"reason\": \"读取第十三条原文，核实两个时限及适用条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.000206544,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.7427
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D26-C014"
+            ]
+          },
+          "reason": "读取第十三条原文，核实两个时限及适用条件"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C014"
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "TEMPORARY_UNAVAILABLE",
+              "retryable": true,
+              "message": "显式测试故障注入：TEMPORARY_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:20.827466+00:00",
+          "attempt": 1,
+          "prompt_sha256": "b13b714bae466028dd52c11cc86df2da7dc09c4c62fc288383557b2484bb2d6d",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "2a06ac38-2d45-4b1b-901c-33b26b417223",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3375,
+            "completion_tokens": 35,
+            "total_tokens": 3410,
+            "prompt_tokens_details": {
+              "cached_tokens": 3200
+            },
+            "prompt_cache_hit_tokens": 3200,
+            "prompt_cache_miss_tokens": 175
+          },
+          "content": "{\"action\": \"read\", \"arguments\": {\"chunk_ids\": [\"D26-C014\"]}, \"reason\": \"临时故障，重试读取第十三条原文\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 5.685e-05,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 0.9779
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "read",
+          "arguments": {
+            "chunk_ids": [
+              "D26-C014"
+            ]
+          },
+          "reason": "临时故障，重试读取第十三条原文"
+        },
+        {
+          "kind": "tool",
+          "name": "read",
+          "arguments": {
+            "chunk_id": "D26-C014"
+          },
+          "result": {
+            "ok": true,
+            "chunk": {
+              "doc_id": "D26",
+              "article": "第十三条",
+              "text": "第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问\n题线索移交相关单位，相关单位应在收到工作小组转来的管理服务人员工作作风问\n题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。",
+              "pdf_pages": [
+                193
+              ],
+              "table_ids": [],
+              "chunk_id": "D26-C014",
+              "printed_pages": [
+                188
+              ],
+              "title": "辽宁科技大学管理服务人员工作作风问题处理办法（试行）",
+              "version_date": "2022-06-10",
+              "previous_chunk_id": "D26-C013",
+              "next_chunk_id": "D26-C015",
+              "related_table_chunks": []
+            },
+            "tables": []
+          },
+          "seconds": 0.0,
+          "attempt_number": 3
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:21.846229+00:00",
+          "attempt": 1,
+          "prompt_sha256": "1a36d2126684f0f821c8d7d52f7b7584f7f20511434b581e951cc3fc8768ba95",
+          "real_api": true,
+          "thinking": "disabled",
+          "reasoning_effort": null,
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "75462bb4-6e24-405c-a44d-8cb952e4fbf4",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 3650,
+            "completion_tokens": 218,
+            "total_tokens": 3868,
+            "prompt_tokens_details": {
+              "cached_tokens": 3328
+            },
+            "prompt_cache_hit_tokens": 3328,
+            "prompt_cache_miss_tokens": 322
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条规定：工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位\"}]}, {\"text\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\"}]}], \"gaps\": []}, \"reason\": \"第十三条原文已明确两个时限及起算条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00018908399999999998,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.1075
+        },
+        {
+          "kind": "decision",
+          "step": 4,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十三条原文已明确两个时限及起算条件"
+        },
+        {
+          "kind": "model",
+          "purpose": "agent_review",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T04:05:22.996753+00:00",
+          "attempt": 1,
+          "prompt_sha256": "10e9b9ad7f752ad96072ee594db4d00a680e29e1b037d1845abb1e6b072eb8e6",
+          "real_api": true,
+          "thinking": "enabled",
+          "reasoning_effort": "high",
+          "read_timeout_seconds": 40,
+          "response_transport": "json_object",
+          "http_status": 200,
+          "response_id": "3f6516fe-9660-43fa-9f51-cd8aa90dcbe5",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 4103,
+            "completion_tokens": 353,
+            "total_tokens": 4456,
+            "prompt_tokens_details": {
+              "cached_tokens": 1920
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 121
+            },
+            "prompt_cache_hit_tokens": 1920,
+            "prompt_cache_miss_tokens": 2183
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"answered\", \"claims\": [{\"text\": \"依据《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条，工作小组办公室应在发现问题及受理反映问题后2个工作日内，将问题线索移交相关单位。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"第十三条 工作小组办公室应在发现问题及受理反映问题后2个工作日内将问题线索移交相关单位\"}]}, {\"text\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索后10个工作日内，对问题进行认定、处理并形成初步处理意见。\", \"citations\": [{\"chunk_id\": \"D26-C014\", \"quote\": \"相关单位应在收到工作小组转来的管理服务人员工作作风问题线索10个工作日内，对问题进行认定、处理并形成初步处理意见。\"}]}], \"gaps\": []}, \"reason\": \"第十三条已明确线索移交2个工作日、形成初步处理意见10个工作日及各自起算条件\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00054501,
+          "cost_estimate_method": "published_time_band_with_cache_hits_holidays_conservative_20261031",
+          "seconds": 1.9759
+        },
+        {
+          "kind": "decision",
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "reason": "第十三条已明确线索移交2个工作日、形成初步处理意见10个工作日及各自起算条件"
+        }
+      ],
+      "read_ids": [
+        "D26-C014"
+      ],
+      "first_hits": [
+        "D26-C014",
+        "D26-C016",
+        "D26-C006",
+        "D26-C015",
+        "D26-C011"
+      ],
+      "seconds": 5.5176,
+      "model_calls": 5,
+      "tool_calls": 3,
+      "real_model": true,
+      "fault": {
+        "tool": "read",
+        "mode": "once",
+        "code": "TEMPORARY_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 5.5178,
+  "model_calls": 5,
+  "tool_calls": 3,
+  "created_at": "2026-10-31T04:05:24.974048+00:00"
+}

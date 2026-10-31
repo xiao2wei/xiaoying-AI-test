@@ -1,0 +1,195 @@
+{
+  "id": "DEV12",
+  "category": "tool_failure",
+  "mode": "agent",
+  "turns": [
+    {
+      "mode": "agent",
+      "question": "人才专项经费项目年度考核什么时候填报进展报告？",
+      "history": [],
+      "output": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。请稍后重试，或提供相关制度文件（如人才专项经费管理办法/年度考核通知，含标题、版本日期和适用对象）。"
+        ],
+        "answer": "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。请稍后重试，或提供相关制度文件（如人才专项经费管理办法/年度考核通知，含标题、版本日期和适用对象）。"
+      },
+      "raw_final": {
+        "status": "tool_error",
+        "claims": [],
+        "gaps": [
+          "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。请稍后重试，或提供相关制度文件（如人才专项经费管理办法/年度考核通知，含标题、版本日期和适用对象）。"
+        ],
+        "answer": "检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。请稍后重试，或提供相关制度文件（如人才专项经费管理办法/年度考核通知，含标题、版本日期和适用对象）。"
+      },
+      "validation_errors": [],
+      "trace": [
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:41.138560+00:00",
+          "attempt": 1,
+          "prompt_sha256": "27513361811a71ecd36adb192ae738f42a44642c3221c7c745644fd9b98819a3",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "79a591ad-aabf-4301-af62-f13ed703f55b",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1425,
+            "completion_tokens": 42,
+            "total_tokens": 1467,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152
+            },
+            "prompt_cache_hit_tokens": 1152,
+            "prompt_cache_miss_tokens": 273
+          },
+          "content": "{\"action\":\"search\",\"arguments\":{\"query\":\"人才专项经费项目年度考核 进展报告 填报时间\",\"doc_ids\":[]},\"reason\":\"检索人才专项经费年度考核进展报告填报时间规定\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.00047789999999999996,
+          "seconds": 0.7305
+        },
+        {
+          "kind": "decision",
+          "step": 1,
+          "action": "search",
+          "arguments": {
+            "query": "人才专项经费项目年度考核 进展报告 填报时间",
+            "doc_ids": []
+          },
+          "reason": "检索人才专项经费年度考核进展报告填报时间规定"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人才专项经费项目年度考核 进展报告 填报时间",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 1
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:41.884298+00:00",
+          "attempt": 1,
+          "prompt_sha256": "a82025cb321af9b2528ae0b79f1775e45f023e70e1073b7f6617017bf1da87d9",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "9546e77b-d257-4568-96a1-9f9037ee25f9",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1577,
+            "completion_tokens": 50,
+            "total_tokens": 1627,
+            "prompt_tokens_details": {
+              "cached_tokens": 1408
+            },
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 169
+          },
+          "content": "{\"action\": \"search\", \"arguments\": {\"query\": \"人才专项经费 年度考核 进展报告 时间\", \"doc_ids\": []}, \"reason\": \"首次检索工具持续不可用，按规则再尝试一次相同检索\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0005330999999999999,
+          "seconds": 0.7318
+        },
+        {
+          "kind": "decision",
+          "step": 2,
+          "action": "search",
+          "arguments": {
+            "query": "人才专项经费 年度考核 进展报告 时间",
+            "doc_ids": []
+          },
+          "reason": "首次检索工具持续不可用，按规则再尝试一次相同检索"
+        },
+        {
+          "kind": "tool",
+          "name": "search",
+          "arguments": {
+            "query": "人才专项经费 年度考核 进展报告 时间",
+            "doc_ids": []
+          },
+          "result": {
+            "ok": false,
+            "error": {
+              "code": "PERSISTENT_UNAVAILABLE",
+              "retryable": false,
+              "message": "显式测试故障注入：PERSISTENT_UNAVAILABLE"
+            },
+            "fault_injected": true
+          },
+          "seconds": 0.0,
+          "attempt_number": 2
+        },
+        {
+          "kind": "model",
+          "purpose": "agent",
+          "model": "deepseek-flash",
+          "time": "2026-10-31T02:21:42.631500+00:00",
+          "attempt": 1,
+          "prompt_sha256": "dc64c2235de2c3d3e067f53e1c005095160130935be53ca15416ecb6acaf8adb",
+          "real_api": true,
+          "thinking": "disabled",
+          "read_timeout_seconds": 40,
+          "http_status": 200,
+          "response_id": "8892d971-cdad-4de0-854a-c6cc5f410708",
+          "response_model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 1731,
+            "completion_tokens": 105,
+            "total_tokens": 1836,
+            "prompt_tokens_details": {
+              "cached_tokens": 1536
+            },
+            "prompt_cache_hit_tokens": 1536,
+            "prompt_cache_miss_tokens": 195
+          },
+          "content": "{\"action\": \"finish\", \"result\": {\"status\": \"tool_error\", \"claims\": [], \"gaps\": [\"检索工具连续两次返回 PERSISTENT_UNAVAILABLE，未能读取任何制度原文，无法核实人才专项经费项目年度考核进展报告的填报时间。请稍后重试，或提供相关制度文件（如人才专项经费管理办法/年度考核通知，含标题、版本日期和适用对象）。\"]}, \"reason\": \"工具持续不可用，无法查证\"}",
+          "finish_reason": "stop",
+          "estimated_usd_upper_bound": 0.0006452999999999999,
+          "seconds": 1.3247
+        },
+        {
+          "kind": "decision",
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "reason": "工具持续不可用，无法查证"
+        }
+      ],
+      "read_ids": [],
+      "first_hits": [],
+      "seconds": 2.8325,
+      "model_calls": 3,
+      "tool_calls": 2,
+      "real_model": true,
+      "fault": {
+        "tool": "search",
+        "mode": "always",
+        "code": "PERSISTENT_UNAVAILABLE"
+      }
+    }
+  ],
+  "seconds": 2.8326,
+  "model_calls": 3,
+  "tool_calls": 2,
+  "created_at": "2026-10-31T02:21:43.957214+00:00"
+}
