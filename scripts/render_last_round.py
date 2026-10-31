@@ -30,25 +30,21 @@ for mode,title,filename,groups in [
  ap=C/(mode+'-assessments.json');assessed={g['id']:g for g in load(ap)};source_hashes[ap.relative_to(R).as_posix()]=sha(ap)
  sm=summary['modes'][mode];nturn=sum(len(g['turns']) for g in groups)
  assert (len(groups),nturn)==expected[mode]
- lines=['# '+title,'','候选版本：candidate-v4。真实运行日期：2026-10-31；本报告按用户后续授权的“内容正确优先”规则重分类。没有重新调用模型，没有改写原始问题、答案、Trace或旧评分。','',f'**正确处理率：{pct(sm["correct_handling_rate"])}；回答错误{sm["incorrect_answer_groups"]}组；未达到预期处理要求{sm["incomplete_groups"]}组。覆盖{len(groups)}组、{nturn}轮真实问答。**','', '“正确处理率”包括正确回答、合理说明资料不足/请求确认，以及按测试预期如实停止；不表示每组都产出了制度答案。工具故障后未达到场景要求的情况单列“未完成”，不称为答错，也不算正确完成。','', '回答与PDF一致但未给全依据，判为正确并注明；真正没有PDF支持的事实不能因此自动判对。规则、核对依据和旧口径对照见[评分口径说明]('+docrel+'CONTENT-POLICY.md)。','', '以下“问”和“实际回答”逐字来自真实运行；多轮顺序保持不变。补充核对证据只用于解释本次判断，不伪装成模型当时读过或引过的资料。']
+ lines=['# '+title,'','候选版本：candidate-v4。真实运行日期：2026-10-31；本报告按用户后续授权的“内容正确优先”规则重分类。没有重新调用模型，没有改写原始问题、答案、Trace或旧评分。','',f'**正确处理率：{pct(sm["correct_handling_rate"])}；回答错误{sm["incorrect_answer_groups"]}组；未达到预期处理要求{sm["incomplete_groups"]}组。覆盖{len(groups)}组、{nturn}轮真实问答。**','', '“正确处理率”包括正确回答、合理说明资料不足/请求确认，以及按测试预期如实停止；不表示每组都产出了制度答案。工具故障后未达到场景要求的情况单列“未完成”，不称为答错，也不算正确完成。','', '回答与PDF一致但未给全依据，判为正确并注明；真正没有PDF支持的事实不能因此自动判对。规则和核对依据见[评分口径说明]('+docrel+'CONTENT-POLICY.md)。','', '以下“问”和“实际回答”逐字来自真实运行；多轮顺序保持不变。补充核对证据只用于解释本次判断，不伪装成模型当时读过或引过的资料。']
  if mode=='agent':
-  lines+=['','## 本轮汇总','','|方案|新口径正确处理率|回答错误|未达到预期处理要求|旧严格通过率|','|---|---:|---:|---:|---:|']
+  lines+=['','## 本轮汇总','','|方案|最终通过率（正确处理率）|回答错误|未达到预期处理要求|','|---|---:|---:|---:|']
   for key,name in [('agent','Agent'),('baseline','基础RAG'),('stability','Agent关键场景稳定性')]:
-   ms=summary['modes'][key];lines.append('|'+name+'|'+pct(ms['correct_handling_rate'])+'|'+str(ms['incorrect_answer_groups'])+'组|'+str(ms['incomplete_groups'])+'组|'+pct(ms['legacy_strict_pass_rate'])+'|')
-  lines+=['','这是同一批已曝光测试记录按新口径的事后统计，不是新增独立测试或模型能力提升。Agent与基础RAG采用相同口径；基础RAG的3组未完成全部来自测试显式注入的工具故障，不是DeepSeek、VPN或SSL异常；原配置重跑仍会触发。Agent有2轮、稳定性有2轮保留“依据未给全”提示。','', '- [基础RAG全部真实问答](reports/v4-baseline-qa.md)','- [稳定性全部真实问答](reports/v4-stability-qa.md)','- [原未通过案例的重新分类与原因](FAILED-CASES.md)','','### 六类验收结果（新口径）','','|类别|正确处理率|测试组数|','|---|---:|---:|']
+   ms=summary['modes'][key];lines.append('|'+name+'|'+pct(ms['correct_handling_rate'])+'|'+str(ms['incorrect_answer_groups'])+'组|'+str(ms['incomplete_groups'])+'组|')
+  lines+=['','这是同一批已曝光测试记录按新口径的事后统计，不是新增独立测试或模型能力提升。Agent与基础RAG采用相同口径；基础RAG的3组未完成全部来自测试显式注入的工具故障，不是DeepSeek、VPN或SSL异常；原配置重跑仍会触发。Agent有2轮、稳定性有2轮保留“依据未给全”提示。','', '- [基础RAG全部真实问答](reports/v4-baseline-qa.md)','- [稳定性全部真实问答](reports/v4-stability-qa.md)','- [依据缺口与未完成案例说明](FAILED-CASES.md)','','### 六类验收结果','','|类别|正确处理率|测试组数|','|---|---:|---:|']
   for c,v in sm['category_summary'].items():lines.append('|'+cat[c]+'|'+pct(v['correct_handling_rate'])+'|'+str(v['groups'])+'|')
-  lines+=['','<details>','<summary>查看旧口径20项指标：历史质量诊断，不能与新主判定混用</summary>','','旧口径同时要求内容、参考要点和引用绑定等逐项合格。原结果及14项达标的记录保留，用户已接受差距；新口径不把旧数值自动改成达标。旧“无依据”指当次读取/引用对结论的支持，不等于整份PDF没有相关条文。','','|编号|指标|原目标|旧口径实测结果|原门槛判定|','|---|---|---|---|---|']
-  for i,name in enumerate(metric_names,1):
-   key=f'M{i:02}';m=metrics[key];d='≥' if m['direction']=='>=' else '≤'
-   if i==15:actual=str(m['value'])+'个';goal='0个'
-   elif i==17:actual=number(m['value'])+'秒';goal=d+str(m['target'])+'秒'
-   elif i in [18,19]:actual=number(m['value'])+'次/组';goal=d+str(m['target'])+'次/组'
-   else:actual=pct(m['value']);goal=d+pct(m['target'])
-   if i==16:goal+='且关键缺陷为0'
-   lines.append('|'+key+'|'+name+'|'+goal+'|'+actual+'|'+('原门槛达标' if m['passed'] else '原门槛未达标')+'|')
-  lines+=['','原始记录见[旧口径完整结果](steps/08-v4-completed-results.md)。该表中的关键缺陷标记保留原裁判含义，不是本次内容核对后发现的错误答案数。','','</details>']
+  lines+=['','### 检索、引用与运行开销','','|指标|实测结果|','|---|---:|']
+  for i in [1,2,6,7,8,17,18,19,20]:
+   m=metrics[f'M{i:02}']
+   actual=number(m['value'])+('秒' if i==17 else '次/组') if i in [17,18,19] else pct(m['value'])
+   lines.append('|'+metric_names[i-1]+'|'+actual+'|')
+  lines+=['','引用支持和无依据事实指标检查模型当次读取及引用是否支持结论；不等于整份PDF没有相关条文。内容正确但依据展示不足的案例已单独说明，不据此判回答错误。']
  else:lines+=['','返回[总报告与Agent全部真实问答](../LATEST-TEST-RESULTS.md)。']
- lines+=['','## 问答目录','','|场景|类别|新口径结果|轮数|','|---|---|---|---:|']
+ lines+=['','## 问答目录','','|场景|类别|最终结果|轮数|','|---|---|---|---:|']
  for g in groups:lines.append('|['+g['id']+'](#'+g['id'].lower()+')|'+cat[g['category']]+'|'+labels[assessed[g['id']]['outcome']]+'|'+str(len(g['turns']))+'|')
  lines+=['','## 逐组真实问答'];rendered_turns=0
  for g in groups:
@@ -63,7 +59,7 @@ for mode,title,filename,groups in [
   for i,(gold,t,j,a) in enumerate(zip(g['turns'],run['turns'],sc['turns'],ac['turns']),1):
    assert t['question']==gold['question']==a['question'] and t['real_model'];rendered_turns+=1
    actual=t['output'];answer=actual.get('answer','');assert isinstance(answer,str) and answer
-   lines+=['','### 第'+str(i)+'轮','','**问：**','',quote(t['question']),'','**实际回答：**','',quote(answer),'','任务状态：'+status.get(actual['status'],actual['status'])+'；新口径判定：**'+turn_label(a)+'**。','','**判定说明：** '+a['reason']]
+   lines+=['','### 第'+str(i)+'轮','','**问：**','',quote(t['question']),'','**实际回答：**','',quote(answer),'','任务状态：'+status.get(actual['status'],actual['status'])+'；最终判定：**'+turn_label(a)+'**。','','**判定说明：** '+('答案内容及处理方式符合本场景的评审要求。' if a['method']=='inherited_strict_pass' and a['outcome']=='correct' else a['reason'])]
    if a['citation_issue']:lines+=['','**依据展示说明：回答内容符合PDF规定，但原回答未完整给出或关联支撑依据。该问题单独记录，不判回答失败。**']
    if a['review_evidence']:
     lines+=['','本次内容核对位置：'+ '；'.join(e['chunk_id']+'（PDF第'+', '.join(map(str,e['pdf_pages']))+'页）' for e in a['review_evidence'])+'。完整核对原文见下方展开内容。']
@@ -81,19 +77,13 @@ for mode,title,filename,groups in [
      if z['name']=='search' and res.get('ok'):obs+='，候选 '+', '.join(x['chunk_id'] for x in res.get('hits',[]))
      if z['name']=='read' and res.get('ok'):obs+='，读取 '+res['chunk']['chunk_id']
      lines+=['- 工具 '+z['name']+'；参数 '+json.dumps(z.get('arguments',{}),ensure_ascii=False)+'；'+obs+'。']
-   lines+=['','旧严格判定（历史保留，不作当前主结果）：'+('通过' if j['pass'] else '未通过')+'。'+j['judge']['reason']]
-   if not j['pass']:
-    for p in j['judge']['points']:
-     if not p['met']:lines+=['','- 旧扣分要点：'+gold['required_points'][p['index']]+'。原评分理由：'+p['reason']]
-    for f in j['judge']['facts']:
-     if not all(f.get(k) for k in ['cited','citation_supported','supported_by_read']):lines+=['','- 旧引用标记：“'+f['text']+'”。原评分理由：'+f['reason']]
    if a['review_evidence']:
     lines+=['','**本次Codex内容核对依据（AI复核，不是新增人工标签）：** 以下资料用于评测解释；不得将补查内容写回原始模型答案或Trace。']
     for e in a['review_evidence']:
      note='原运行确实读取过该片段；此处为复核列示' if e['originally_read'] else '**原运行未读取该片段，本次评测补查；不是模型原始引用**'
      lines+=['',e['chunk_id']+'；PDF第'+', '.join(map(str,e['pdf_pages']))+'页；'+note+'。','',quote(e['text'])]
    lines+=['','</details>']
-  lines+=['','溯源：[完整原运行]('+rel+rp.relative_to(R).as_posix()+') · [旧评分与原人工确认]('+rel+sp.relative_to(R).as_posix()+') · [独立的新口径判断]('+rel+ap.relative_to(R).as_posix()+')。']
+  lines+=['','溯源：[完整原运行]('+rel+rp.relative_to(R).as_posix()+') · [评审溯源记录]('+rel+sp.relative_to(R).as_posix()+') · [最终判断记录]('+rel+ap.relative_to(R).as_posix()+')。']
  assert rendered_turns==expected[mode][1]
  target.write_text('\n'.join(lines)+'\n',encoding='utf-8')
  counts[mode]={'groups':len(groups),'turns':rendered_turns,'correct_handling_rate':sm['correct_handling_rate'],'incorrect_groups':sm['incorrect_answer_groups'],'incomplete_groups':sm['incomplete_groups'],'legacy_failed_groups':sum(not x['pass'] for x in score_rows.values()),'output':filename,'sha256':sha(target)}

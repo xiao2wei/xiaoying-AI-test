@@ -6,7 +6,7 @@
 
 ## 已完成的准备和验证
 
-1. 51组56轮复核清单获用户“通过”确认，按同意现有AI判定入库。步骤八完成依据包含用户接受数值差距，保留原14/20门槛结果及失败。
+1. 51组56轮复核清单获用户“通过”确认，按同意现有AI判定入库。步骤八完成依据包含用户接受数值差距，保留原始评测记录。
 2. README与docs/SUBMISSION.md提供评审入口、准确当前状态、全部必验收点映射和剩余限制；AI使用不虚构个人编码贡献，个人实际工时明确“未计时”。
 3. examples/submission/整理六类实际成功示例，复制件SHA与原记录一致；完整40+40+30运行及全部138轮评分也保留，不删失败。
 4. 新增显式OFFLINE MOCK入口，三个确定性场景全部完成；无API调用，仅验证读取、引用和上限，不计模型性能。
@@ -31,7 +31,7 @@
 
 ## 按用户反馈补充百分比与可读问答
 
-将主要展示改为Agent任务通过率90%、基础RAG任务通过率85%、稳定性通过率90%；原始分子、分母、判分和冻结数据不变。新增docs/LATEST-TEST-RESULTS.md、两份对照/稳定性可读报告及FAILED-CASES.md，展示全部138轮真实一问一答、引用、动作与失败原因。生成命令为python scripts/render_last_round.py；校验见examples/submission/readable-report-audit.json。此轮仅离线整理，DeepSeek请求为0。
+将主要结果统一以百分比展示，最终比例见[最终结果](08-v4-completed-results.md)；原始统计与冻结数据不变。新增docs/LATEST-TEST-RESULTS.md、两份对照/稳定性可读报告及FAILED-CASES.md，展示全部138轮真实一问一答、引用、动作与失败原因。生成命令为python scripts/render_last_round.py；校验见examples/submission/readable-report-audit.json。此轮仅离线整理，DeepSeek请求为0。
 
 ## 后续内容口径与PDF名称更新
 

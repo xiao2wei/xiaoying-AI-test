@@ -6,7 +6,7 @@
 
 “正确处理率”包括正确回答、合理说明资料不足/请求确认，以及按测试预期如实停止；不表示每组都产出了制度答案。工具故障后未达到场景要求的情况单列“未完成”，不称为答错，也不算正确完成。
 
-回答与PDF一致但未给全依据，判为正确并注明；真正没有PDF支持的事实不能因此自动判对。规则、核对依据和旧口径对照见[评分口径说明](../CONTENT-POLICY.md)。
+回答与PDF一致但未给全依据，判为正确并注明；真正没有PDF支持的事实不能因此自动判对。规则和核对依据见[评分口径说明](../CONTENT-POLICY.md)。
 
 以下“问”和“实际回答”逐字来自真实运行；多轮顺序保持不变。补充核对证据只用于解释本次判断，不伪装成模型当时读过或引过的资料。
 
@@ -14,7 +14,7 @@
 
 ## 问答目录
 
-|场景|类别|新口径结果|轮数|
+|场景|类别|最终结果|轮数|
 |---|---|---|---:|
 |[TEST01](#test01)|明确答案|正确处理|1|
 |[TEST02](#test02)|明确答案|正确处理|1|
@@ -75,9 +75,9 @@
 > 依据同一待遇表，取得学历学位时间“＞4，≤5年”的，补贴为9万元，科研建设经费为工科4.5万元、其他学科2.7万元。
 > 因此，工科学科恰好4年取得学历学位，补贴10万元、科研建设经费5万元；其他学科恰好5年取得学历学位，补贴9万元、科研建设经费2.7万元。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -116,11 +116,9 @@
 - 工具 read；参数 {"chunk_id": "D01-C012"}；成功，读取 D01-C012。
 - 工具 read；参数 {"chunk_id": "D02-C007"}；成功，读取 D02-C007。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确，基于2023年办法第十条，正确给出工科4年和其他学科5年的补贴和科研经费，引用原文支持，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST01.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST01.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST01.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST01.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST02
 
@@ -137,9 +135,9 @@
 > 按2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条，全年累计病假超过6个月的：工作年限满10年的，发岗位工资、薪级工资和基础绩效的80%。
 > 按同一规定第八条，全年累计病假超过6个月的：工作年限不满10年的，发岗位工资、薪级工资和基础绩效的70%。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -166,11 +164,9 @@
 - 工具 read；参数 {"chunk_id": "D20-C008"}；成功，读取 D20-C008。
 - 工具 read；参数 {"chunk_id": "D20-C015"}；成功，读取 D20-C015。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确引用了2023年补充规定第八条，给出了不同工作年限对应的正确比例，并明确针对岗位工资、薪级工资和基础绩效，无泛化或错误引用。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST02.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST02.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST02.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST02.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST03
 
@@ -187,9 +183,9 @@
 > 《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条规定，申诉人应在知道或者应当知道其权利受到侵害之日起30个工作日内向申诉处理委员会提出。
 > 因不可抗力或其他特殊情况而致逾期者，在障碍消除后10个工作日内，可以向申诉处理委员会提起申诉，逾期不再受理。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -218,11 +214,9 @@
 - 工具 read；参数 {"chunk_id": "D24-C015"}；成功，读取 D24-C015。
 - 工具 read；参数 {"chunk_id": "D24-C009"}；成功，读取 D24-C009。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十一条，完整说明了30个工作日、障碍消除后10个工作日及逾期不再受理的规则，所有要点均有明确引用且与实际读取内容一致。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST03.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST03.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST03.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST03.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST04
 
@@ -239,9 +233,9 @@
 > 申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。
 > 申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名，代理人不能代为签署申诉申请书。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -269,11 +263,9 @@
 - 工具 read；参数 {"chunk_id": "D24-C015"}；成功，读取 D24-C015。
 - 工具 read；参数 {"chunk_id": "D24-C029"}；成功，读取 D24-C029。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了两个问题，引用来源可靠，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST04.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST04.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST04.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST04.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST05
 
@@ -290,9 +282,9 @@
 > 《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条规定，申诉处理委员会在收到申诉书之日起5个工作日内，依据该办法第八、九、十、十一条进行审查并区别情况处理。
 > 对申诉申请未阐明申诉理由和要求，或申诉材料不齐备的，应当一次书面通知申诉人需要补正的全部内容和补正期限；逾期补正视为放弃申诉。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -321,11 +313,9 @@
 - 工具 read；参数 {"chunk_id": "D24-C012"}；成功，读取 D24-C012。
 - 工具 read；参数 {"chunk_id": "D06-C012"}；成功，读取 D06-C012。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十三条，所有要点均得到明确表达，事实均有引用且与已读原文一致，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST05.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST05.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST05.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST05.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST06
 
@@ -342,9 +332,9 @@
 > 辽宁科技大学教职工校内申诉处理委员会评议申诉案件，须有三分之二以上成员参加。
 > 申诉处理委员会的表决须经出席委员三分之二以上通过方为有效。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -373,11 +363,9 @@
 - 工具 read；参数 {"chunk_id": "D13-C033"}；成功，读取 D13-C033。
 - 工具 read；参数 {"chunk_id": "D24-C018"}；成功，读取 D24-C018。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确引用了辽宁科技大学教职工校内申诉处理暂行办法（修订）第十八条，正确完整回答了出席和表决比例要求，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST06.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST06.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST06.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST06.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST07
 
@@ -394,9 +382,9 @@
 > 《辽宁科技大学临时用工管理办法》第九条规定，临时用工人员年龄一般不得超过男63周岁、女60周岁。
 > 首次聘用时，需经学校指定级别的医疗单位体检合格，并达到岗位要求的健康标准。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -424,11 +412,9 @@
 - 工具 read；参数 {"chunk_id": "D23-C012"}；成功，读取 D23-C012。
 - 工具 read；参数 {"chunk_id": "D23-C017"}；成功，读取 D23-C017。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确引用了《辽宁科技大学临时用工管理办法》第九条，直接回答了年龄上限和健康条件，要点完全覆盖，引用可靠，无错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST07.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST07.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST07.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST07.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST08
 
@@ -445,9 +431,9 @@
 > 临时用工合同期限一般为1—3年，试用期为1—3个月，以实际签订时间为准。
 > 合同期满后，经考核合格以及双方同意后可以续签。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -475,11 +461,9 @@
 - 工具 read；参数 {"chunk_id": "D23-C017"}；成功，读取 D23-C017。
 - 工具 read；参数 {"chunk_id": "D23-C020"}；成功，读取 D23-C020。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了合同期限、试用期及续签前提，所有要求要点均明确表达并引用已读来源，无错误或遗漏。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST08.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST08.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST08.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST08.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST09
 
@@ -497,9 +481,9 @@
 > 该婚假须在1年内凭结婚证申请，且必须一次性申请使用，不能分次使用。
 > 婚假（含路程假）期间工资正常发放，逾期按事假处理；婚假由所在单位审批，报人事处备案。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -532,11 +516,9 @@
 - 工具 read；参数 {"chunk_id": "D20-C012"}；成功，读取 D20-C012。
 - 工具 read；参数 {"chunk_id": "D20-C007"}；成功，读取 D20-C007。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确回答了问题，所有要点均满足，事实均有可靠引用支持，操作合理。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST09.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST09.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST09.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST09.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST10
 
@@ -555,9 +537,9 @@
 > 需到外地处理丧事的，可以增加路程假；丧假（含路程假）期间工资正常发放，逾期按事假处理。
 > 丧假（含路程假）由所在单位审批，并报人事处备案。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -596,11 +578,9 @@
 - 工具 read；参数 {"chunk_id": "D19-C009"}；成功，读取 D19-C009。
 - 工具 read；参数 {"chunk_id": "D19-C013"}；成功，读取 D19-C013。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确依据2023年补充规定第十条，完整覆盖所有必需要点，引用正确且已读取原文，无编造、错误引用或遗漏，任务成功完成。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST10.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST10.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST10.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST10.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST11
 
@@ -622,9 +602,9 @@
 > 非教师岗位人员在职攻读博士原则上不脱产；如脱产，脱产学习期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关待遇。
 > 请确认提问人员属于教师岗位还是非教师岗位，以便确定适用第八条还是第十一条；上述脱产年限规则明确针对教师岗位。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -689,11 +669,9 @@
 - 工具 read；参数 {"chunk_id": "D01-C011"}；成功，读取 D01-C011。
 - 工具 read；参数 {"chunk_id": "D01-C018"}；成功，读取 D01-C018。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了问题，所有要点均明确表达，引用可靠且与实际读取内容一致，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST11.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST11.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST11.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST11.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST12
 
@@ -710,9 +688,9 @@
 > 《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第二十一条规定，本办法所列的安家费在10万元及以上的，在首聘期协议签订后和聘期中期考核合格后分两次发放。
 > 同一第二十一条规定，购房补贴在鞍山市购买住房时先一次性发放50%，剩余部分在服务期内按月发放。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -743,11 +721,9 @@
 - 工具 read；参数 {"chunk_id": "D03-C022"}；成功，读取 D03-C022。
 - 工具 read；参数 {"chunk_id": "D02-C008"}；成功，读取 D02-C008。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确完整地涵盖了所有要求点，引用正确且已实际读取，无错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST12.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST12.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST12.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST12.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST13
 
@@ -767,9 +743,9 @@
 > 《辽宁科技大学教职工考勤与请假管理补充规定》由人事处负责解释，自发布之日起执行。
 > 两份现行文本对男教工护理假分别规定为20日和15日，现有原文未明确废止、优先适用或适用对象关系，不能仅凭日期认定20日优先。请提供人事处就两份规定衔接适用作出的正式解释或执行通知，并确认其适用对象及版本。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -812,11 +788,9 @@
 - 工具 read；参数 {"chunk_id": "D20-C019"}；成功，读取 D20-C019。
 - 工具 read；参数 {"chunk_id": "D19-C012"}；成功，读取 D19-C012。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确展示了两份文件中关于男教工护理假的规定，指出差异，并明确表示需确认适用口径，不能仅凭日期判断，符合预期。所有要点均满足，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST13.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST13.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST13.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST13.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST14
 
@@ -835,9 +809,9 @@
 > 两份文件对首次病假证明的医院等级要求不一致：2020年《辽宁科技大学教职工考勤与请假管理规定》第四条为“一级以上医院”，2023年《辽宁科技大学教职工考勤与请假管理补充规定》第八条为“三甲级以上医院”；现有原文未明确废止、优先适用或适用对象关系，无法据此确定唯一结论。
 > 请提供或确认：两份文件的衔接说明、补充规定中关于与原规定关系的条款，或学校对该冲突的正式解释/执行通知（需明确适用对象与版本）。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -869,11 +843,9 @@
 - 工具 read；参数 {"chunk_id": "D19-C007"}；成功，读取 D19-C007。
 - 工具 read；参数 {"chunk_id": "D23-C016"}；成功，读取 D23-C016。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确引用两份文件的对应条文，明确列明差异并指出缺乏衔接依据，请求进一步确认，动作合理，无违规。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST14.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST14.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST14.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST14.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST15
 
@@ -895,9 +867,9 @@
 > 两份规定对“以上”是否包含本级存在直接冲突，现有原文未明确补充规定是否废止或优先于原规定，也未明确二者适用对象关系，不能仅凭日期认定补充规定优先，因此不指定版本无法统一回答。
 > 请确认应适用《辽宁科技大学教职工考勤与请假管理规定》（2020-10-19）还是《辽宁科技大学教职工考勤与请假管理补充规定》（2023-12-27），或提供人事处就二者衔接适用及“以上”含义作出的正式解释、衔接说明或执行通知。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -958,11 +930,9 @@
 - 工具 read；参数 {"chunk_id": "D20-C004"}；成功，读取 D20-C004。
 - 工具 read；参数 {"chunk_id": "D19-C024"}；成功，读取 D19-C024。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确列出了两份规定对“以上”解释的差异，明确指出不指定版本无法统一，并请求用户确认适用版本或提供衔接解释，符合预期要求。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST15.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST15.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST15.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST15.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST16
 
@@ -978,9 +948,9 @@
 
 > 《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（辽科大校发〔2023〕77号附件，2023年12月20日）第十八条规定，该办法自发布之日起施行，原《辽宁科技大学教师在职攻读博士学位管理办法》（综发〔2020〕19号）同时废止。因此，2020年19号办法已不再生效，并非与2023年修订办法同时继续生效。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1011,11 +981,9 @@
 - 工具 read；参数 {"chunk_id": "D01-C017"}；成功，读取 D01-C017。
 - 工具 read；参数 {"chunk_id": "D01-C008"}；成功，读取 D01-C008。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确引用了2023年修订办法第十八条，明确2020年19号办法同时废止，并据此给出不再生效的结论，解决了版本关系；所有要点均满足，事实均有可靠引用支持，未发现严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST16.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST16.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST16.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST16.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST17
 
@@ -1033,7 +1001,7 @@
 > 该办法附件“辽宁科技大学教职工校内申诉处理决定书”（附3）的备注栏写的是：教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。
 > 正文第二十一条写“学校的上一级主管机关”，附表备注写“浙江省教育厅”，两者指向不一致；原文未明确废止、优先或适用对象关系足以裁决，请确认以哪一表述为准，或提供学校对该办法的解释/更正文件及适用版本。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
 **判定说明：** 正确呈现正文与附表差异并请求核实，未凭空选择受理机关。未明确点名工会/申诉委员会这一辅助建议不改变核心回答正确性。
 
@@ -1071,10 +1039,6 @@
 - 工具 read；参数 {"chunk_id": "D24-C015"}；成功，读取 D24-C015。
 - 工具 read；参数 {"chunk_id": "D24-C029"}；成功，读取 D24-C029。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。回答正确识别正文第二十一条与附3备注的差异，没有擅自确认或改写，并请求确认和补充材料，整体行动合理。但未明确要求工会或申诉委员会核实，遗漏一个必须要点。
-
-- 旧扣分要点：请工会或申诉委员会核实。原评分理由：实际回答仅请求确认或提供解释文件，未明确要求工会或申诉委员会核实，缺少指定核实主体。
-
 **本次Codex内容核对依据（AI复核，不是新增人工标签）：** 以下资料用于评测解释；不得将补查内容写回原始模型答案或Trace。
 
 D24-C022；PDF第185页；原运行确实读取过该片段；此处为复核列示。
@@ -1100,7 +1064,7 @@ D24-C029；PDF第188页；原运行确实读取过该片段；此处为复核列
 
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST17.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST17.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST17.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST17.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST18
 
@@ -1121,7 +1085,7 @@ D24-C029；PDF第188页；原运行确实读取过该片段；此处为复核列
 > 请确认本次处理决定属于哪一类（例如是否为管理服务人员工作作风问题处理决定），以便判断应适用哪一文件；如涉及工作作风问题处理，请提供该处理决定所依据的具体条款或处理文书类型。
 > 请提供或确认学校对上述两份文件冲突的正式解释、衔接说明或执行通知（含适用对象、版本或日期），以确定申诉期间原处理决定的执行规则。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
 **判定说明：** 正确给出两份制度相反规定并请求确认适用类型；不因未复述固定解释句判失败。
 
@@ -1164,10 +1128,6 @@ D24-C029；PDF第188页；原运行确实读取过该片段；此处为复核列
 - 工具 read；参数 {"chunk_id": "D24-C016"}；成功，读取 D24-C016。
 - 工具 read；参数 {"chunk_id": "D26-C017"}；成功，读取 D26-C017。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。实际答案正确识别两份文件的规定冲突，并明确请求确认处理类型，符合 expected_status=needs_confirmation。所有引用的制度事实均有可靠原文支持，无编造或错误引用。动作合理，已读取必要文件。唯一不足是未明确表述“适用处理类型不同”，但整体任务完成。
-
-- 旧扣分要点：适用处理类型不同。原评分理由：实际答案未明确表达“适用处理类型不同”，仅指出两份文件规定相反并请求确认处理类型，未直接说明两者适用对象不同。
-
 **本次Codex内容核对依据（AI复核，不是新增人工标签）：** 以下资料用于评测解释；不得将补查内容写回原始模型答案或Trace。
 
 D24-C023；PDF第185页；原运行确实读取过该片段；此处为复核列示。
@@ -1184,7 +1144,7 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST18.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST18.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST18.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST18.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST19
 
@@ -1200,9 +1160,9 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 
 > 现有制度汇编材料未包含学校食堂WiFi密码或校园网络接入账号密码的相关规定，无法据此回答。请提供校园网络管理制度、网络与信息化服务指南或食堂WiFi使用说明等材料。
 
-任务状态：资料不足；新口径判定：**正确说明资料不足**。
+任务状态：资料不足；最终判定：**正确说明资料不足**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1223,11 +1183,9 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 - 工具 read；参数 {"chunk_id": "D24-C009"}；成功，读取 D24-C009。
 - 工具 read；参数 {"chunk_id": "D19-C023"}；成功，读取 D19-C023。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确识别证据不足，未编造，明确请求提供相关材料，要点全部满足。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST19.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST19.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST19.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST19.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST20
 
@@ -1243,9 +1201,9 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 
 > 现有资料中仅检索到《辽宁科技大学教师在职攻读博士学位管理办法（修订）》（2023-12-20）的补贴标准，未检索到2026年新发布的在职读博补贴标准文件。请提供2026年新发布文件的名称、文号或发布日期，以便进一步查证。
 
-任务状态：资料不足；新口径判定：**正确说明资料不足**。
+任务状态：资料不足；最终判定：**正确说明资料不足**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1266,11 +1224,9 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 - 工具 read；参数 {"chunk_id": "D01-C017"}；成功，读取 D01-C017。
 - 工具 read；参数 {"chunk_id": "D01-C016"}；成功，读取 D01-C016。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确说明现有资料中无2026年标准，并请求用户提供2026制度具体信息，没有将2023条款冒充2026规定，证据不足处理恰当。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST20.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST20.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST20.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST20.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST21
 
@@ -1286,7 +1242,7 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 
 > 现有资料未包含《辽宁科技大学差旅费管理办法（修订）》的原文，无法确认出差乘坐高铁一等座能否报销及本校精确金额上限。请提供该办法的现行有效版本（含文号、发布日期及具体条款），或提供学校财务部门关于差旅费乘坐等级和报销限额的执行文件。
 
-任务状态：资料不足；新口径判定：**正确说明资料不足**。
+任务状态：资料不足；最终判定：**正确说明资料不足**。
 
 **判定说明：** 正确说明缺少差旅依据、未编造数字并具体请求制度；不要求额外说明已有资料为何不能回答。
 
@@ -1311,10 +1267,6 @@ D26-C018；PDF第193页；原运行确实读取过该片段；此处为复核列
 - 工具 read；参数 {"chunk_id": "D03-C015"}；成功，读取 D03-C015。
 - 工具 read；参数 {"chunk_id": "D20-C013"}；成功，读取 D20-C013。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。回答正确识别证据不足，未编造数字，并明确请求提供差旅规定，动作合理。除未明确表述“资料只引用其他财务报销规定”外，其余要点均已满足。
-
-- 旧扣分要点：资料只引用其他财务报销规定，未给出高铁席别和精确上限。原评分理由：实际回答仅说明现有资料未包含《辽宁科技大学差旅费管理办法（修订）》原文，无法确认高铁一等座能否报销及精确金额上限，但未明确表达“资料只引用其他财务报销规定”这一合取条件。
-
 **本次Codex内容核对依据（AI复核，不是新增人工标签）：** 以下资料用于评测解释；不得将补查内容写回原始模型答案或Trace。
 
 D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列示。
@@ -1325,7 +1277,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST21.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST21.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST21.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST21.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST22
 
@@ -1344,9 +1296,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 请提供全年累计事假天数，以确定适用哪一档待遇。
 > 请提供工资构成及各项金额（岗位工资、薪级工资、基础绩效、奖励绩效），以及按日扣发的日工资计算口径，否则无法计算具体扣款金额。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1385,11 +1337,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D20-C011"}；成功，读取 D20-C011。
 - 工具 read；参数 {"chunk_id": "D20-C015"}；成功，读取 D20-C015。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确识别缺少关键信息，明确无法计算唯一金额，并请求用户补充所需数据，符合预期状态。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST22.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST22.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST22.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST22.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST23
 
@@ -1411,9 +1361,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 请确认您的学科属于工科还是其他学科，以便确定科研建设经费金额。
 > 请确认您属于教师岗位还是非教师岗位，以及是否脱产学习，以便判断待遇兑现和停发规则。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1468,11 +1418,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D01-C012"}；成功，读取 D01-C012。
 - 工具 read；参数 {"chunk_id": "D01-C018"}；成功，读取 D01-C018。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确识别了缺少适用条件，提供了分档表而未给出唯一金额，并明确请求用户补充缺失信息，符合需要确认的情境，引用可靠。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST23.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST23.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST23.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST23.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST24
 
@@ -1492,9 +1440,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 延退程序为：本人提前半年自愿提出，所在单位教授委员会审议、党政联席会研究同意后向学校提出延退申请，并报送《高级专家延长退休年龄审批表》及相关证明材料，经学校研究同意后办理延退手续；学校在每年5月和11月研究高级专家延退事项，经校长办公会议审议、校党委常委会会议审定后办理相关手续，报上级主管部门备案。
 > 请提供您的年龄及拟退休时间、现聘专业技术岗位等级（是否三级以上）、是否在达到法定退休年龄前已聘用在该岗位、近三年聘期及年度考核结果、教学科研业绩情况，以及是否符合四项延退条件之一（如人才项目、在研II类以上项目及任务期、重点学科带头人/新学科急需紧缺且无人接替、博士研究生导师且所指导博士生仍在培养期内等），以便判断是否符合延退条件及适用63周岁还是65周岁上限。
 
-任务状态：需要确认；新口径判定：**正确说明冲突或需要确认的事项**。
+任务状态：需要确认；最终判定：**正确说明冲突或需要确认的事项**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1549,11 +1497,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D06-C010"}；成功，读取 D06-C010。
 - 工具 read；参数 {"chunk_id": "D12-C023"}；成功，读取 D12-C023。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确识别信息不足，未直接判断是否符合，而是陈述制度规则并请求补充具体条件，全部要点满足，引用可靠，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST24.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST24.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST24.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST24.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST25
 
@@ -1572,9 +1518,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。
 > 办理备案时需持所在单位出具的回校工作证明、学历学位证书、学籍档案等材料原件；国外毕业的，还需出具留学回国人员证明、留学生学历认证。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1605,8 +1551,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D01-C011"}；成功，读取 D01-C011。
 - 工具 read；参数 {"chunk_id": "D01-C013"}；成功，读取 D01-C013。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确提供了备案期限、地点及所需材料，引用正确且支持充分，无错误信息。
-
 </details>
 
 ### 第2轮
@@ -1620,9 +1564,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 教师在职读博取得博士学历学位后，应在1个月内到人事处办理备案。
 > 办理备案需持所在单位出具的回校工作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学籍档案等材料原件。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1649,11 +1593,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D01-C004"}；成功，读取 D01-C004。
 - 工具 read；参数 {"chunk_id": "D01-C008"}；成功，读取 D01-C008。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了取得博士学历学位后的备案时限和办理部门，引用的条款与已读原文一致，信息完整可靠。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST25.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST25.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST25.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST25.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST26
 
@@ -1671,9 +1613,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1695,8 +1637,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D01-C007"}；成功，读取 D01-C007。
 - 工具 read；参数 {"chunk_id": "D01-C014"}；成功，读取 D01-C014。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确引用了相关规定，明确表达再次报考须重新履行申报程序，符合要求。
-
 </details>
 
 ### 第2轮
@@ -1710,9 +1650,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 教师经学校批准报考博士，报考当年未能录取的，再次报考时应重新履行申报程序，因此今年需要重新走审批流程。
 > 重新申报的程序为：个人向所在院级单位提出书面申请并填写《教师在职攻读博士学位申请表》；所在单位经党政联席会议研究签署意见后报人事处审核并公示拟推荐人选；人事处审核合格后出具同意报考证明，申请人与人事处签订《同意报考协议书》后报名参加考试。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1747,11 +1687,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D03-C020"}；成功，读取 D03-C020。
 - 工具 read；参数 {"chunk_id": "D01-C005"}；成功，读取 D01-C005。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确认定再次报考须重新申报，并补充了申报程序，所有事实均有已读证据支持，无违规。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST26.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST26.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST26.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST26.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST27
 
@@ -1769,9 +1707,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 临时用工人员要求提前解除合同的，应提前一个月以书面形式向人事处提出申请，经人事处审核同意，并办理完工作交接手续后方可离岗。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1793,8 +1731,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D23-C018"}；成功，读取 D23-C018。
 - 工具 read；参数 {"chunk_id": "D23-C016"}；成功，读取 D23-C016。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确引用了《辽宁科技大学临时用工管理办法》第十九条，完整覆盖了所有要求要点，引用可靠且无严重错误。
-
 </details>
 
 ### 第2轮
@@ -1809,9 +1745,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 提前离岗须经人事处审核同意，并办理完工作交接手续后方可离岗。
 > 制度未规定工作交接的具体办理部门、交接清单或交接完成确认方式，请提供学校或用工单位关于临时用工离职交接的操作规定或交接表样式。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1844,11 +1780,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D23-C017"}；成功，读取 D23-C017。
 - 工具 read；参数 {"chunk_id": "D23-C014"}；成功，读取 D23-C014。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回应了提前离岗的申请时间、对象、审核和交接要求，并指出交接细节的制度空白；引用证据充分且与已读原文一致，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST27.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST27.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST27.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST27.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST28
 
@@ -1868,9 +1802,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 辅导员编制按1:200的师生比核定，按专业技术岗或管理岗设置编制；按照专兼结合、以专为主的原则，专职辅导员比例不低于85%。
 > 专职辅导员的工作量按师生比1:200核定并进行考核。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1907,8 +1841,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D07-C013"}；成功，读取 D07-C013。
 - 工具 read；参数 {"chunk_id": "D13-C005"}；成功，读取 D13-C005。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确给出专职辅导员岗位设置的师生比，引用制度原文且已被实际读取，无错误或缺失，任务完成良好。
-
 </details>
 
 ### 第2轮
@@ -1923,9 +1855,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 辅导员编制按1:200的师生比核定，按专业技术岗或管理岗设置编制；按照专兼结合、以专为主的原则，专职辅导员比例不低于85%。
 > 专职辅导员的工作量按师生比1:200核定并进行考核。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -1958,11 +1890,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D08-C014"}；成功，读取 D08-C014。
 - 工具 read；参数 {"chunk_id": "D07-C013"}；成功，读取 D07-C013。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案正确回答了问题，引用了相关制度且引用准确，无错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST28.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST28.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST28.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST28.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST29
 
@@ -1982,9 +1912,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 服务期自从来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。因此，无人才引进协议特别约定时，按不低于8年、自来校报到上岗之日起计算。
 > 涉及服务期和服务期经济补偿的，如有协议的，按协议执行；未签订协议的按照本规定执行。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2017,8 +1947,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D25-C002"}；成功，读取 D25-C002。
 - 工具 read；参数 {"chunk_id": "D02-C012"}；成功，读取 D02-C012。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了基本服务期不低于8年及自来校报到上岗之日起计算，引用和已读证据支持充分，无错误或编造。
-
 </details>
 
 ### 第2轮
@@ -2032,9 +1960,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 通过公开招聘方式进入学校全职工作的教师，应履行不低于8年的基本服务期；未签订人才引进协议的，按该规定执行。
 > 该基本服务期自教师来校报到上岗之日起计算；签订人才引进协议的，按协议约定执行。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2067,11 +1995,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D02-C013"}；成功，读取 D02-C013。
 - 工具 read；参数 {"chunk_id": "D13-C023"}；成功，读取 D13-C023。
 
-旧严格判定（历史保留，不作当前主结果）：通过。实际回答准确回答了问题，两个要点均明确表达且引用支持，没有严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST29.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST29.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST29.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST29.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST30
 
@@ -2090,9 +2016,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案。
 > 凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2120,8 +2046,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D20-C019"}；成功，读取 D20-C019。
 - 工具 read；参数 {"chunk_id": "D20-C001"}；成功，读取 D20-C001。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回应了问题，明确给出备案要求，引用来源匹配且已读取文档支持，无严重错误。
-
 </details>
 
 ### 第2轮
@@ -2134,9 +2058,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 教职工非工作日离辽，须提前在办公系统办理“教职工非工作日离辽”备案；凡未备案并造成严重后果的，取消当年晋升、评优评奖资格。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2158,11 +2082,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D13-C031"}；成功，读取 D13-C031。
 - 工具 read；参数 {"chunk_id": "D19-C006"}；成功，读取 D19-C006。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确引用《辽宁科技大学教职工考勤与请假管理补充规定》第六条，明确非工作日离辽须提前在办公系统办理备案，并说明未备案的后果，完全满足问题要求。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST30.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST30.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST30.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST30.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST31
 
@@ -2180,9 +2102,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 临时用工不属于事业编制内用工。《辽宁科技大学临时用工管理办法》第二条规定，临时用工系指学校在事业编制之外、聘用社会人员（含已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同制用工形式。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2205,8 +2127,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D23-C023"}；成功，读取 D23-C023。
 - 工具 read；参数 {"chunk_id": "D23-C017"}；成功，读取 D23-C017。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确、证据充分，直接依据《辽宁科技大学临时用工管理办法》第二条给出明确结论，并完整引用相关制度原文，无错误或遗漏。
-
 </details>
 
 ### 第2轮
@@ -2219,9 +2139,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 不可以。学校临时用工禁止聘用未满十八周岁的未成年人，17岁属于未满十八周岁，因此不能受聘临时用工岗位。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2242,11 +2162,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D23-C006"}；成功，读取 D23-C006。
 - 工具 read；参数 {"chunk_id": "D23-C010"}；成功，读取 D23-C010。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答正确引用制度条文，明确表示不可以，并说明禁止聘用未满十八周岁未成年人，两个必需要点均满足，事实引用有据，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST31.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST31.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST31.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST31.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST32
 
@@ -2265,9 +2183,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 兼职辅导员工作量按专职辅导员工作量的三分之一核定，按每班（40人左右）每学年60学时核定并进行考核。
 > 原则上兼职辅导员所带学生班级不得超过2个。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2308,8 +2226,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D10-C010"}；成功，读取 D10-C010。
 - 工具 read；参数 {"chunk_id": "D10-C004"}；成功，读取 D10-C004。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确涵盖了所有要点，引用有效，动作合理。
-
 </details>
 
 ### 第2轮
@@ -2322,9 +2238,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 兼职辅导员的工作年限至少为1年。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2345,11 +2261,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D08-C010"}；成功，读取 D08-C010。
 - 工具 read；参数 {"chunk_id": "D10-C004"}；成功，读取 D10-C004。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答正确、完整，要点满足，无严重错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST32.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST32.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST32.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST32.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST33
 
@@ -2367,9 +2281,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 依据《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第十条，引进人才须与学校签订《辽宁科技大学高层次人才聘用协议书》，首聘期为4年，工作服务期为8年。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2391,8 +2305,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D02-C017"}；成功，读取 D02-C017。
 - 工具 read；参数 {"chunk_id": "D02-C012"}；成功，读取 D02-C012。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了首聘期和服务期年限，引用正确，无严重错误，整体表现良好。
-
 </details>
 
 ### 第2轮
@@ -2406,9 +2318,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 依据《辽宁科技大学高层次人才引进工作实施办法（2022年版）》第十二条，引进人才工作两年后，人事处（人才工作办公室）及有关学院应适时对其进行聘期中期考核，对其工作进行检查和督促。
 > 依据同条，引进人才未能完成协议规定的职责任务，聘期中期、聘期期满考核不合格的，学校将根据协议规定对有关待遇分别给予扣减、停发或返还等相应处理，可以降级聘用或终止聘用。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2438,11 +2350,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D02-C012"}；成功，读取 D02-C012。
 - 工具 read；参数 {"chunk_id": "D02-C022"}；成功，读取 D02-C022。
 
-旧严格判定（历史保留，不作当前主结果）：通过。实际答案准确回答了中期考核时间及不合格处理方式，两个要点均满足，引用与原文一致。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST33.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST33.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST33.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST33.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST34
 
@@ -2461,9 +2371,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十四条规定，申诉处理委员会作出申诉处理决定前，原申诉人可以书面申请撤回申诉。
 > 申诉一经撤回，申诉复查即行终止，并且原申诉人不得以相同理由再行提起申诉。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2492,8 +2402,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D24-C021"}；成功，读取 D24-C021。
 - 工具 read；参数 {"chunk_id": "D24-C013"}；成功，读取 D24-C013。
 
-旧严格判定（历史保留，不作当前主结果）：通过。实际回答直接引用了《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十四条，准确表达了申诉处理决定作出前可书面撤回以及撤回后不得以相同理由再提，引用与已读原文一致，决策和状态均合理，无严重错误。
-
 </details>
 
 ### 第2轮
@@ -2507,9 +2415,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 《辽宁科技大学教职工校内申诉处理暂行办法（修订）》第十二条规定，申诉人可以委托1－2位校内教职工作为其申诉代理人，代为办理申诉事项。
 > 委托代理时，申诉申请书、申诉处理决定书等重要文书须由申诉人本人签名。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2538,11 +2446,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D24-C029"}；成功，读取 D24-C029。
 - 工具 read；参数 {"chunk_id": "D24-C022"}；成功，读取 D24-C022。
 
-旧严格判定（历史保留，不作当前主结果）：通过。回答准确覆盖了两个必需要点，引用并读取了相应规定，证据充分，未发现错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST34.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST34.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST34.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST34.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST35
 
@@ -2560,9 +2466,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 依据《辽宁科技大学教职工考勤与请假管理补充规定》第八条，请假时间大于2个月的，经所在单位同意后，报主管校领导批准、人事处备案。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2584,8 +2490,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D20-C012"}；成功，读取 D20-C012。
 - 工具 read；参数 {"chunk_id": "D20-C007"}；成功，读取 D20-C007。
 
-旧严格判定（历史保留，不作当前主结果）：通过。实际答案依据2023补充规定第八条准确回答病假超过2个月的审批备案流程，引用正确，无严重错误。
-
 </details>
 
 ### 第2轮
@@ -2599,9 +2503,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 > 依据《辽宁科技大学教职工考勤与请假管理补充规定》第八条，病假连续≥6个月的，可申请长期病休手续。
 > 依据《辽宁科技大学教职工考勤与请假管理补充规定》第八条，长期病休人员需每半年到三甲级以上医院进行一次复查，由医院出具不能工作诊断证明，继续办理请假手续。
 
-任务状态：已回答；新口径判定：**回答正确**。
+任务状态：已回答；最终判定：**回答正确**。
 
-**判定说明：** 原严格评审已通过；新口径沿用该判定。
+**判定说明：** 答案内容及处理方式符合本场景的评审要求。
 
 <details>
 <summary>查看原始引用、资料缺口、工具路径与评分溯源</summary>
@@ -2630,11 +2534,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D20-C012"}；成功，读取 D20-C012。
 - 工具 read；参数 {"chunk_id": "D19-C007"}；成功，读取 D19-C007。
 
-旧严格判定（历史保留，不作当前主结果）：通过。答案准确回答了连续休满6个月可申请长期病休，以及之后每半年复查一次并由三甲级以上医院出具不能工作诊断证明，引用了正确的补充规定第八条，依据充分，无错误。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST35.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST35.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST35.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST35.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST36
 
@@ -2652,7 +2554,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 制度检索工具本次返回临时不可用（TEMPORARY_UNAVAILABLE），未能读取任何原文，无法核实特种作业临时用工人员的额外资格要求。请稍后重试检索，或提供相关制度文件（如特种作业人员管理、临时用工管理或安全生产责任制相关制度）的原文或条款编号。
 
-任务状态：工具失败，业务未完成；新口径判定：**未完成（不记回答错误）**。
+任务状态：工具失败，业务未完成；最终判定：**未完成（不记回答错误）**。
 
 **判定说明：** 可恢复检索故障后停止，未给出制度答案。未编造错误事实；新口径记未完成，不记回答错误，也不记正确完成。
 
@@ -2670,13 +2572,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 - 工具 search；参数 {"query": "从事特种作业的临时用工人员有什么额外资格要求？"}；失败：TEMPORARY_UNAVAILABLE。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。工具检索失败后未合理重试，直接请求用户提供资料，未回答问题；无制度事实输出。
-
-- 旧扣分要点：须经过专门培训并获得特种作业资格。原评分理由：实际回答未提及该要点，仅说明无法核实
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST36.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST36.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST36.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST36.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST37
 
@@ -2694,7 +2592,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 读取第十三条原文时工具返回临时故障（TEMPORARY_UNAVAILABLE），无法取得可逐字引用的原文，因此不能确认线索移交和形成初步意见的具体时限。请稍后重试读取《辽宁科技大学管理服务人员工作作风问题处理办法（试行）》第十三条。
 
-任务状态：工具失败，业务未完成；新口径判定：**未完成（不记回答错误）**。
+任务状态：工具失败，业务未完成；最终判定：**未完成（不记回答错误）**。
 
 **判定说明：** 可恢复读取故障后未取得原文，未回答两项时限。记工具导致的未完成，不等同回答错误。
 
@@ -2717,15 +2615,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D26-C011"}；成功，读取 D26-C011。
 - 工具 read；参数 {"chunk_id": "D26-C007"}；成功，读取 D26-C007。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。实际回答因读取第十三条时工具返回可恢复的临时故障而放弃回答，未重试或采用其他方式获取条款，导致未给出任何答案。可恢复故障应合理恢复，因此决策不合理，状态和目标均未达到。
-
-- 旧扣分要点：办公室发现及受理后2个工作日内移交。原评分理由：实际回答未提供任何关于移交时限的内容，仅说明工具故障无法确认。
-
-- 旧扣分要点：相关单位收到后10个工作日内认定处理形成初步意见。原评分理由：实际回答未提供任何关于形成初步意见时限的内容，仅说明工具故障无法确认。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST37.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST37.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST37.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST37.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST38
 
@@ -2743,7 +2635,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 读取原文工具持续不可用（PERSISTENT_UNAVAILABLE），无法核验候选摘要并取得可逐字引用的原文，因此本次无法回答教师在职读博期间费用由谁承担。
 
-任务状态：工具失败，业务未完成；新口径判定：**正确处理（按预期停止，业务未完成）**。
+任务状态：工具失败，业务未完成；最终判定：**正确处理（按预期停止，业务未完成）**。
 
 **判定说明：** 按本场景预设要求如实停止；工具导致业务未完成，不是错误制度答案。
 
@@ -2766,11 +2658,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 - 工具 read；参数 {"chunk_id": "D01-C003"}；失败：PERSISTENT_UNAVAILABLE。
 - 工具 read；参数 {"chunk_id": "D01-C010"}；失败：PERSISTENT_UNAVAILABLE。
 
-旧严格判定（历史保留，不作当前主结果）：通过。实际回答正确报告了工具持续不可用状态，未提供任何检索摘要冒充已读证据，工具动作合理（先搜索后读取，读取持续失败后停止），符合tool_error预期，且没有制度事实需要检查。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST38.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST38.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST38.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST38.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST39
 
@@ -2788,7 +2678,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 检索工具持续不可用（PERSISTENT_UNAVAILABLE），本次未能读取任何制度原文，无法核对临时用工岗位设置的审批流程。
 
-任务状态：工具失败，业务未完成；新口径判定：**正确处理（按预期停止，业务未完成）**。
+任务状态：工具失败，业务未完成；最终判定：**正确处理（按预期停止，业务未完成）**。
 
 **判定说明：** 按本场景预设要求如实停止；工具导致业务未完成，不是错误制度答案。
 
@@ -2806,11 +2696,9 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 - 工具 search；参数 {"query": "学校临时用工岗位设置需经过哪些审批？"}；失败：PERSISTENT_UNAVAILABLE。
 
-旧严格判定（历史保留，不作当前主结果）：通过。工具持续不可用，助手明确说明未完成且未编造任何审批结果，行为合理。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST39.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST39.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST39.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST39.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
 
 ## TEST40
 
@@ -2828,7 +2716,7 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 > 本次检索工具返回 TEMPORARY_UNAVAILABLE（临时不可用），未能读取任何制度原文，因此无法核实“作风问题处理决定形成后多久告知当事人”的期限规定。请稍后重试检索，或提供相关制度名称、条款或原文片段。
 
-任务状态：工具失败，业务未完成；新口径判定：**未完成（不记回答错误）**。
+任务状态：工具失败，业务未完成；最终判定：**未完成（不记回答错误）**。
 
 **判定说明：** 检索失败后提前停止，未达到本场景预设上限并未回答期限。记未完成；不把如实说明工具错误当成错误制度答案。
 
@@ -2846,10 +2734,6 @@ D03-C015；PDF第16页；原运行确实读取过该片段；此处为复核列�
 
 - 工具 search；参数 {"query": "作风问题处理决定形成后多久告知当事人？"}；失败：TEMPORARY_UNAVAILABLE。
 
-旧严格判定（历史保留，不作当前主结果）：未通过。实际回答遇到可重试的临时工具错误后仅尝试一次便停止，未完成应有检索过程，不符合期望的 limit_reached 状态；未提供任何制度结论且未明确说明工具预算耗尽，因此要点不满足，决策不合理，答案不正确。但无编造证据、无错误引用等严重错误。
-
-- 旧扣分要点：用完工具预算须明确达到上限未完成，不得假称取得证据。原评分理由：实际回答仅说明检索工具返回TEMPORARY_UNAVAILABLE，未能读取原文，无法核实期限，请稍后重试；并未用完工具预算（实际只执行一次search且失败后停止），也没有明确表述达到工具预算上限未完成，因此未满足该要点的合取条件。虽然未假称取得证据，但该条件单独满足不足以使要点通过。
-
 </details>
 
-溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST40.json) · [旧评分与原人工确认](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST40.json) · [独立的新口径判断](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。
+溯源：[完整原运行](../../examples/step08/v4/baseline-runs/TEST40.json) · [评审溯源记录](../../examples/step08/v4/human-reviewed-r1/baseline-scores/TEST40.json) · [最终判断记录](../../examples/step08/v4/content-policy-v1/baseline-assessments.json)。

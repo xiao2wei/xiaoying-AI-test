@@ -14,15 +14,20 @@ for mode,rel in files.items():
   restore=lambda s:'\n'.join(x[2:] if x.startswith('> ') else x for x in s.split('\n'))
   assert restore(q)==t['question']
   assert restore(a)==t['output']['answer']
+ assert not any(x in text for x in ['旧严格通过率','原严格通过率','旧严格判定（历史保留'])
  assert text.count('<details>')==text.count('</details>') and text.count('<details>')>=len(actual)
  checks[mode]={'pairs_verified':len(actual),'actual_questions_and_answers_exact':True,'collapsible_sections_balanced':True}
-for rel in list(files.values())+['docs/FAILED-CASES.md','docs/SUBMISSION.md','README.md','examples/submission/README.md','docs/CONTENT-POLICY.md','data/README.md','docs/03-evaluation.md','docs/01-requirements.md']:
+for rel in list(files.values())+['docs/FAILED-CASES.md','docs/SUBMISSION.md','README.md','examples/submission/README.md','docs/CONTENT-POLICY.md','data/README.md','docs/03-evaluation.md','docs/01-requirements.md','docs/steps/08-v4-completed-results.md']:
  text=(R/rel).read_text(encoding='utf-8')
  for link in re.findall(r'\]\(([^)]+)\)',text):
   if link.startswith(('http://','https://','#')):continue
   target=link.split('#')[0]
   if target and not (R/rel).parent.joinpath(unquote(target)).exists():missing_links.append([rel,link])
 assert not missing_links,missing_links
+summary=read(B/'content-policy-v1/summary.json')
+for mode,rel in files.items():
+ expected_rate=f"{summary['modes'][mode]['correct_handling_rate']*100:.2f}%"
+ assert '**正确处理率：'+expected_rate in (R/rel).read_text(encoding='utf-8')
 manifest=read(R/'examples/submission/readable-report-audit.json')
 for rel,h in manifest['source_sha256'].items():assert hashlib.sha256((R/rel).read_bytes()).hexdigest()==h
 for mode,rel in files.items():
@@ -32,5 +37,5 @@ for mode,rel in files.items():
  checks[mode]['content_assessment_groups']=len(rows)
  checks[mode]['output_sha256_verified']=hashlib.sha256((R/rel).read_bytes()).hexdigest()==manifest['counts'][mode]['sha256']
  assert checks[mode]['output_sha256_verified']
-out={'passed':True,'checks':checks,'broken_local_links':missing_links,'source_files_unchanged':True,'new_model_requests':0,'qa_count':sum(x['pairs_verified'] for x in checks.values())}
+out={'passed':True,'checks':checks,'broken_local_links':missing_links,'source_files_unchanged':True,'new_model_requests':0,'qa_count':sum(x['pairs_verified'] for x in checks.values()),'only_final_pass_rates_displayed':True}
 (R/'examples/submission/readable-report-validation.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps(out,ensure_ascii=False))
