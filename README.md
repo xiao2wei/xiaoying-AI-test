@@ -2,9 +2,9 @@
 
 面向教职工的人事制度问答 CLI。使用用户指定的唯一 PDF，通过中文混合检索与真实 DeepSeek 决策，输出回答、文档 ID、原文引用、资料缺口和任务状态。
 
-**评审入口：[交付与验收对照表](docs/SUBMISSION.md) → [最后一轮结果与真实一问一答](docs/LATEST-TEST-RESULTS.md) → [未通过案例说明](docs/FAILED-CASES.md)。**
+**评审入口：[交付与验收对照表](docs/SUBMISSION.md) → [最后一轮结果与真实一问一答](docs/LATEST-TEST-RESULTS.md) → [原扣分案例重新分类](docs/FAILED-CASES.md)。**
 
-本轮正式 **Agent任务通过率90%**，**基础RAG任务通过率85%**，**关键场景稳定性通过率90%**；138轮问答均有有效 AI 评分。用户接受当前指标，并确认51组、56轮正式复核清单。原定20项数值门槛中14项达标，失败和差距完整保留，不宣称全部用例或所有质量门槛通过。
+当前按用户授权的“内容正确优先”口径：**Agent正确处理率100.00%**，**基础RAG正确处理率92.50%**，**关键场景稳定性正确处理率100.00%**。比例包含合理资料不足、追问及预期停止；基础RAG另有3组因测试注入故障后缺少恢复流程而未完成，不记回答错误。原答案不变，属于既有记录的事后重分类，规则与证据见[评分说明](docs/CONTENT-POLICY.md)。旧严格通过率90.00%、85.00%、90.00%及原20项指标完整保留。
 
 ## 安装与无需密钥的检查
 
@@ -44,6 +44,9 @@ Copy-Item .env.example .env
 ## 复核已有结果，不产生 API 费用
 
 ~~~powershell
+# 当前内容口径复算（输出目录必须尚不存在）
+.venv\Scripts\python -m policy_agent.content_scoring --out work/content-policy-recomputed
+# 以下为原严格指标的历史复算
 .venv\Scripts\python -m policy_agent.metrics --dataset evaluation/formal.json --runs examples/step08/v4/agent-runs --scores examples/step08/v4/human-reviewed-r1/agent-scores --program examples/step07/program-tests-v17.json --stability examples/step08/v4/human-reviewed-r1/stability-observations.json --out work/recomputed-metrics
 .venv\Scripts\python scripts/check_submission.py --out work/submission-check.json
 ~~~
@@ -59,7 +62,7 @@ metrics命令只复算数值；人工确认状态和用户接受差距的决定�
 
 ## 数据、结构与技术取舍
 
-- data/source/personnel-policies.pdf：唯一原始资料，229页。29份制度、562个片段、61张表格保留出处。使用真实制度汇编而非合成制度；合成的是测试问题与工具故障。某制度发布日期未知时保留null，不臆造日期。
+- [辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf](data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf)：唯一原始资料，229页。29份制度、562个片段、61张表格保留出处。使用真实制度汇编而非合成制度；合成的是测试问题与工具故障。某制度发布日期未知时保留null，不臆造日期。
 - src/policy_agent/：原生Python Agent、模型接入、检索/读取、引用校验、独立评测。无Agent框架；框架名称不替代决策证据。
 - tests/：确定性程序测试；不计入模型答题正确率。
 - evaluation/：12组开发题、40组正式题、校准标签及人工确认。参考答案不进入检索索引或回答提示。
@@ -70,10 +73,10 @@ metrics命令只复算数值；人工确认状态和用户接受差距的决定�
 
 ## 实测限制与实际用时
 
-- 正式失败为TEST11、TEST18、TEST21、TEST25；稳定性另有3次失败。引用支持率99.04%，无依据事实率0.48%，保留3个关键缺陷场景标记及其原判理由。通过案例不代表其他输入无错误。
+- 当前有Agent 2轮、稳定性2轮“回答正确但依据未给全”提示，未把补查证据伪装成原始模型引用。原严格评分的引用支持率99.04%、无依据事实率0.48%及3个关键缺陷场景标记保留为历史质量诊断；它们不等于新口径的内容错误数。
 - 正式题库自早期版本起已用于返修，当前是已曝光题库的回归结果，不包装成未见测试。
 - PDF只证明资料所载条文，不证明制度目前仍有效；不联网补充制度。数据提取的程序/AI检查不等于全文人工逐字校对。
 - 项目主要实施日期为2026-10-30至2026-10-31。用户本人明确“未计时”；未虚构个人工时或声称3小时完成。可审计的问答用量和运行时间见examples/submission/time-record.json。
 - 代码、资料处理和文档主要由Codex完成；用户负责选题、资料、范围、校准反馈与验收，详见AI使用记录。剩余改进不纳入本轮已接受范围。
 
-未通过场景的具体问题、实际回答和判定原因见[失败案例说明](docs/FAILED-CASES.md)。百分比用于结果展示，样本数量与原始分子、分母保留在评测记录中；未更改评分口径。
+原扣分场景的实际回答、原文位置与重新分类见[案例说明](docs/FAILED-CASES.md)。本次不新增DeepSeek请求，68项程序测试通过；[新规则](docs/CONTENT-POLICY.md)与旧分分别保留，不将口径变化宣称为模型能力提升。

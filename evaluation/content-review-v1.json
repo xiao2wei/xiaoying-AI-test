@@ -1,0 +1,424 @@
+{
+  "policy_version": "pdf-content-v1",
+  "review_method": "沿用原严格评审已通过项；对全部13个原未通过场景逐项由Codex核对PDF和实际运行。不是新增DeepSeek评分，不冒充新增人工逐题标签。",
+  "source_pdf": "data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf",
+  "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+  "items": [
+    {
+      "key": "agent/TEST11/1",
+      "mode": "agent",
+      "id": "TEST11",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": true,
+      "reason": "第八条明确教师脱产期间和年限，第十一条明确非教师原则上不脱产；回答结论与PDF一致。对应结论未完整关联第八条引用，属于引用绑定缺口。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "fc10df5147df1ca65124cc234dddde79728c1d15a14cb86a87463aba346a197b",
+      "strict_score_sha256": "3d5795af1fd88ed818b74cc207474090a210c0be61ee67f4ab2a0adbdf2d5c0b",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D01-C009",
+          "doc_id": "D01",
+          "pdf_pages": [
+            7
+          ],
+          "text": "第八条 教师在入学后的第一年至第四年内可自行选择时间进行脱产学习，第\n五年及之后不得申请脱产学习。首次申请一般不超过2年，再次申请脱产学习应由个\n人申请、所在单位同意、学校批准。但总脱产时间不能超过4年（即入学后的第一年至\n第四年）。脱产学习期间减免工作业绩，保险和公积金按现聘岗位正常缴纳。\n（一）脱产学习时间未超过2年的，在脱产期间岗位工资、薪级工资、基础绩效、奖\n励绩效（包括个人年终奖励绩效）及福利待遇正常发放，如承担教学工作，年度教学工\n作业绩不超过120学时，超出部分不享受超工作业绩奖励。\n（二）脱产学习时间超过2年的，在超过2年的脱产期间内停发基础绩效、奖励绩\n效，如承担教学工作，年度教学工作业绩不超过60学时，超出部分不享受超工作业绩\n奖励。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D01-C012",
+          "doc_id": "D01",
+          "pdf_pages": [
+            7
+          ],
+          "text": "第十一条 非教师岗位人员在职攻读博士原则上不脱产。如脱产，在脱产学习\n期间停发基础绩效、奖励绩效，保险公积金按现聘岗位正常缴纳，毕业后不享受相关\n待遇，在学习期间或完成学业取得博士学历学位后转到教师岗位按本办法“第十条”\n兑现相关待遇。教师岗位人员在学习期间不得转岗，完成学业取得博士学历学位后\n转到非教师岗位，相关待遇停止发放。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "agent/TEST18/1",
+      "mode": "agent",
+      "id": "TEST18",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "已准确列出两份规定，未擅自裁决，并追问处理类型及衔接依据。用户实际问题已得到正确回应，不要求额外复述“适用处理类型不同”的固定解释句。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "da4144855054a24267a02bbe82252b8c06162d66a0803c4bb5bed8c5210c1e6b",
+      "strict_score_sha256": "c1729bafd35c145e583e16453e6285bfd6bad268e988322ce34612bf4f79832b",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D24-C023",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十二条 申诉处理期间，暂缓执行原处理决定。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D26-C018",
+          "doc_id": "D26",
+          "pdf_pages": [
+            193
+          ],
+          "text": "第十七条 校教职工校内申诉处理委员会认为工作小组所做处理决定符合规\n定，应做出维持处理决定的申诉意见。校教职工校内申诉处理委员会认为工作小组\n所做处理决定不符合规定，应做出要求工作小组撤销原处理决定并做出新处理决定\n的申诉意见。申诉处理一次终局，申诉期间原处理决定应予执行。\n第五章 附 则",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "agent/TEST21/1",
+      "mode": "agent",
+      "id": "TEST21",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "PDF未提供所问高铁等级及精确金额；实际回答正确说明缺资料并具体请求差旅规定，没有编造。没有复述“当前资料只引用其他财务规定”不构成回答错误。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "a4a5f3d9ea63ee8c9408818b0df89efc9799f4e26073a6b64c1bc8befe55ddfb",
+      "strict_score_sha256": "cf63520c70f71495421b5cec3d8ff554ec3161f79786d0ef48251b76ae77ed93",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D03-C015",
+          "doc_id": "D03",
+          "pdf_pages": [
+            16
+          ],
+          "text": "第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+          "originally_read": false,
+          "supplementary_review_only": true
+        }
+      ]
+    },
+    {
+      "key": "agent/TEST25/2",
+      "mode": "agent",
+      "id": "TEST25",
+      "turn": 1,
+      "verdict": "correct",
+      "citation_issue": true,
+      "reason": "第九条支持1个月内到人事处；第六、七条给出审批与协议程序，第十三条明确未经学校批准不办理相关手续。回答内容可由PDF支持，但原回答未完整读取/引用第十三条等支撑，属于依据展示不完整。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "04e778a604e70330772a264a580d479a35fbe7096f22f7f7e81e49e268f6723c",
+      "strict_score_sha256": "2a06a2edbd049678f43769e49de106ac7ce3051e6798cf6e04ed96d50595a88b",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D01-C007",
+          "doc_id": "D01",
+          "pdf_pages": [
+            6
+          ],
+          "text": "第六条 申请、审核与审批\n（一）个人申请。符合报考条件的教师按照学校统一安排向所在院级单位提出书\n面申请，填写《教师在职攻读博士学位申请表》。\n（二）学校直属各单位审核。申请人所在单位在保证本单位工作正常开展的前提\n下，结合本单位发展规划，择优推荐。经本单位党政联席会议研究签署意见后报人事\n处审核，拟推荐人选在本单位公示。\n（三）学校审批。人事处审核合格后，出具同意报考证明，申请人与人事处签订\n《同意报考协议书》后报名参加考试。",
+          "originally_read": false,
+          "supplementary_review_only": true
+        },
+        {
+          "chunk_id": "D01-C008",
+          "doc_id": "D01",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "text": "第七条 录取备案。经学校批准的教师被录取后，持录取通知书到人事处签订\n《教师在职攻读博士学位协议》，明确学习方式、学习期限（学习期限以培养单位学制\n为准，学制不明确的按4年计算）以及双方的权利义务、违约责任等。\n第四章 学习管理及相关待遇",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D01-C010",
+          "doc_id": "D01",
+          "pdf_pages": [
+            7
+          ],
+          "text": "第九条 教师在职读博取得博士学历学位后1个月内持所在单位出具的回校工\n作证明、学历学位证书（国外毕业的需出具留学回国人员证明、留学生学历认证）、学\n籍档案等材料原件到人事处办理备案。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D01-C014",
+          "doc_id": "D01",
+          "pdf_pages": [
+            8
+          ],
+          "text": "第十三条 出现下列情形的，学校不予认可，不办理相关手续，不享受相关待遇。\n（一）未经学校批准在职攻读博士学位的；\n（二）未经学校同意，擅自更改报考专业、培养方式的；\n（三）未与学校签订《教师在职攻读博士学位申请表》的。",
+          "originally_read": false,
+          "supplementary_review_only": true
+        }
+      ]
+    },
+    {
+      "key": "baseline/TEST17/1",
+      "mode": "baseline",
+      "id": "TEST17",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "正确呈现正文与附表差异并请求核实，未凭空选择受理机关。未明确点名工会/申诉委员会这一辅助建议不改变核心回答正确性。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "1409ddb76a773dd302cf772d9bd14b546afffe62592903c8ced1004002bcce5a",
+      "strict_score_sha256": "247f263af36ebc8061d3420470ff7d8954b16c2e9916898fc5e730b493b565f8",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D24-C022",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十一条 申诉处理决定是学校对教职工处分或处理的最终决定。申诉处理\n决定书一经送达申诉双方当事人，立即生效。被申诉人应当执行学校教职工校内申\n诉处理委员会的申诉处理决定；教职工如对申诉处理决定仍有异议的，可以向学校的\n上一级主管机关提出书面申诉。\n申诉处理决定书的送达，依照民事诉讼法关于送达的规定执行。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D24-C029",
+          "doc_id": "D24",
+          "pdf_pages": [
+            188
+          ],
+          "text": "附3\n辽宁科技大学教职工校内申诉处理决定书\n申诉人 |  | 申诉人所在单位 | \n申诉受理日期 |  | 申诉申请表编号 | \n申诉事由和请求 |  |  | \n复查结果 | 复查小组成员（签字）： 年 月 日 |  | \n处理决定 |  |  | \n备注 | 教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。 |  | \n教职工校内申诉处理委员会（印章）\n年 月 日",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "baseline/TEST18/1",
+      "mode": "baseline",
+      "id": "TEST18",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "正确给出两份制度相反规定并请求确认适用类型；不因未复述固定解释句判失败。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "b54330c8f0645e8d8e77368096c7316ab6e5a53cf33d46f5414582d464b23919",
+      "strict_score_sha256": "92752e68f9f029f0341f41ac066bbc742e9c7b219229fbe78dd355a7f97023f7",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D24-C023",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十二条 申诉处理期间，暂缓执行原处理决定。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D26-C018",
+          "doc_id": "D26",
+          "pdf_pages": [
+            193
+          ],
+          "text": "第十七条 校教职工校内申诉处理委员会认为工作小组所做处理决定符合规\n定，应做出维持处理决定的申诉意见。校教职工校内申诉处理委员会认为工作小组\n所做处理决定不符合规定，应做出要求工作小组撤销原处理决定并做出新处理决定\n的申诉意见。申诉处理一次终局，申诉期间原处理决定应予执行。\n第五章 附 则",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "baseline/TEST21/1",
+      "mode": "baseline",
+      "id": "TEST21",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "正确说明缺少差旅依据、未编造数字并具体请求制度；不要求额外说明已有资料为何不能回答。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "867907db25bdaaf20ec4fea29149fe24435ed8ba7cf340213fa38aa108e0161c",
+      "strict_score_sha256": "0385b7e31bbf48ed7942b09f5ec09c08bc44102c2a46c1b18e89cf212037223b",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D03-C015",
+          "doc_id": "D03",
+          "pdf_pages": [
+            16
+          ],
+          "text": "第十四条 经费的使用审批权限及流程严格按照学校财务相关管理规定进行。\n使用经费购置设备、材料报人事处审核后按照学校国有资产管理有关规定执行，差旅\n费及其他费用报销标准应依据学校财务管理有关规定执行。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "baseline/TEST36/1",
+      "mode": "baseline",
+      "id": "TEST36",
+      "turn": 0,
+      "verdict": "incomplete",
+      "citation_issue": false,
+      "reason": "可恢复检索故障后停止，未给出制度答案。未编造错误事实；新口径记未完成，不记回答错误，也不记正确完成。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "76d882c68d4417548246d7c8573d6c6b68a906b2c90872439d6d441cea0fbe98",
+      "strict_score_sha256": "9a6695c7cc20721c3c2fd1ccf3c3584c9e761cd4c729753495239b9482ab2d5f",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": []
+    },
+    {
+      "key": "baseline/TEST37/1",
+      "mode": "baseline",
+      "id": "TEST37",
+      "turn": 0,
+      "verdict": "incomplete",
+      "citation_issue": false,
+      "reason": "可恢复读取故障后未取得原文，未回答两项时限。记工具导致的未完成，不等同回答错误。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "e4d87649ec4c45b4450431896ac2c0146d282d4d3908637ebd8e0360d956b36b",
+      "strict_score_sha256": "cf65cca28a1c260c8e0c35029b7f43bbbfe3a37573f991156e47fe9f0d98a962",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": []
+    },
+    {
+      "key": "baseline/TEST40/1",
+      "mode": "baseline",
+      "id": "TEST40",
+      "turn": 0,
+      "verdict": "incomplete",
+      "citation_issue": false,
+      "reason": "检索失败后提前停止，未达到本场景预设上限并未回答期限。记未完成；不把如实说明工具错误当成错误制度答案。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "8515bb3a2eae98bc6a0bab47ca0cbd32b3086e91ad6b631fde317d8eed79f208",
+      "strict_score_sha256": "74aa2a7e27974305bb91ecd5fe5428b7b8f470080fac3a290377b10d73f78e47",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": []
+    },
+    {
+      "key": "stability/STAB-TEST17-R1/1",
+      "mode": "stability",
+      "id": "STAB-TEST17-R1",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": true,
+      "reason": "已在前文引用双方原文，gaps对两者差异的总结符合PDF。总结未独立重复绑定引用仅作依据展示提示，不构成事实错误。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "c88a9815aef1e42675f41fd630d6dc3d489cfa9cb1e9ba4a2734e44b147b62fa",
+      "strict_score_sha256": "ed4cc48a24cdca42c21387b13fd609c0dd4e0c47a4f1947f0b40d796f0e3ed74",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D24-C022",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十一条 申诉处理决定是学校对教职工处分或处理的最终决定。申诉处理\n决定书一经送达申诉双方当事人，立即生效。被申诉人应当执行学校教职工校内申\n诉处理委员会的申诉处理决定；教职工如对申诉处理决定仍有异议的，可以向学校的\n上一级主管机关提出书面申诉。\n申诉处理决定书的送达，依照民事诉讼法关于送达的规定执行。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D24-C029",
+          "doc_id": "D24",
+          "pdf_pages": [
+            188
+          ],
+          "text": "附3\n辽宁科技大学教职工校内申诉处理决定书\n申诉人 |  | 申诉人所在单位 | \n申诉受理日期 |  | 申诉申请表编号 | \n申诉事由和请求 |  |  | \n复查结果 | 复查小组成员（签字）： 年 月 日 |  | \n处理决定 |  |  | \n备注 | 教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。 |  | \n教职工校内申诉处理委员会（印章）\n年 月 日",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "stability/STAB-TEST17-R3/1",
+      "mode": "stability",
+      "id": "STAB-TEST17-R3",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": true,
+      "reason": "正文、附表和解释/废止条款均已给出依据；总结重复事实及对已读条文的有限观察没有与原文矛盾。原裁判将总结段孤立判作无依据，此次按内容一致性判正确，保留引用绑定提示。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "daedd5ae20e7908960a4ecbf472d98417067cc7e60aa67a730d978f02fbe5f08",
+      "strict_score_sha256": "8cfc8d2bbc173ad56af011a7088954d3b52debe2afc28abc5a08bb456a296eb5",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D24-C022",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十一条 申诉处理决定是学校对教职工处分或处理的最终决定。申诉处理\n决定书一经送达申诉双方当事人，立即生效。被申诉人应当执行学校教职工校内申\n诉处理委员会的申诉处理决定；教职工如对申诉处理决定仍有异议的，可以向学校的\n上一级主管机关提出书面申诉。\n申诉处理决定书的送达，依照民事诉讼法关于送达的规定执行。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D24-C029",
+          "doc_id": "D24",
+          "pdf_pages": [
+            188
+          ],
+          "text": "附3\n辽宁科技大学教职工校内申诉处理决定书\n申诉人 |  | 申诉人所在单位 | \n申诉受理日期 |  | 申诉申请表编号 | \n申诉事由和请求 |  |  | \n复查结果 | 复查小组成员（签字）： 年 月 日 |  | \n处理决定 |  |  | \n备注 | 教职工如对本复查处理结果仍有异议，可以向浙江省教育厅提出书面申诉。 |  | \n教职工校内申诉处理委员会（印章）\n年 月 日",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D24-C025",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十四条 本暂行办法由学校教职工申诉处理委员会或工会负责解释。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        },
+        {
+          "chunk_id": "D24-C026",
+          "doc_id": "D24",
+          "pdf_pages": [
+            185
+          ],
+          "text": "第二十五条 本暂行办法自发布之日起施行，同时废止科大工字〔2015〕2号《辽\n宁科技大学教职工校内申诉处理暂行办法》。\n附：1.辽宁科技大学教职工校内申诉处理申请表\n2.辽宁科技大学教职工校内申诉处理意见答复表\n3.辽宁科技大学教职工校内申诉处理决定书\n（拟文单位：工会）",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    },
+    {
+      "key": "stability/STAB-TEST31-R1/1",
+      "mode": "stability",
+      "id": "STAB-TEST31-R1",
+      "turn": 0,
+      "verdict": "correct",
+      "citation_issue": false,
+      "reason": "用户只问是否属于事业编制，回答明确不属于，并给出短期合同制性质，与第二条一致。无需为回答该问复述完整工作任务类型定义。",
+      "assessment_author": "Codex（AI核对）",
+      "human_label": false,
+      "run_sha256": "ac7000540d59fff9d2f96f2806feea61f92bb38f235c225dbb0ecd7b3c384405",
+      "strict_score_sha256": "752fce573c8ea35ed121f6ed66fc8855618bc78a880e62eecb191b34db3eb12a",
+      "source_pdf_sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+      "evidence": [
+        {
+          "chunk_id": "D23-C003",
+          "doc_id": "D23",
+          "pdf_pages": [
+            180
+          ],
+          "text": "第二条 本办法所称的临时用工，系指学校在事业编制之外、聘用社会人员（含\n已退休人员）完成学校临时性、阶段性、辅助性或特殊性工作任务，而采取的短期合同\n制用工形式。",
+          "originally_read": true,
+          "supplementary_review_only": false
+        }
+      ]
+    }
+  ]
+}

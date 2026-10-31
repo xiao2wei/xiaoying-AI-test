@@ -1,6 +1,8 @@
 # 数据来源与使用边界
 
-唯一知识来源为用户指定的辽宁科技大学《制度汇编·人事人才篇》PDF，原件副本在source/personnel-policies.pdf；229页、29份制度、562个片段、61张表格。SHA-256见processed/manifest.json。
+唯一知识来源为用户提供的[《辽宁科技大学制度汇编（2023版第四卷）人事人才篇》](source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf)，229页、29份制度、562个片段、61张表格。名称按PDF封面逐字核对；封面编印日期为2024年3月，编者为辽宁科技大学党政办公室。SHA-256见processed/manifest.json。
+
+2026-10-31按用户要求，将仓库原名personnel-policies.pdf及桌面乱码原件改为上述真实名称；PDF字节不变，SHA-256为28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e。旧冻结清单保留当时路径，由[evaluation/source-path-migration.json](../evaluation/source-path-migration.json)记录迁移，交付检查验证同一文件。
 
 这里使用实际制度汇编，不将它称为合成FAQ或本项目原创制度。合成测试问题、参考要点、工具故障配置位于evaluation/；正式答案不进入知识库。原资料的著作权归原权利人，本项目未对其另行授予开源许可。仅用来演示题目要求的文档问答与证据追溯，不证明制度现在仍有效。
 

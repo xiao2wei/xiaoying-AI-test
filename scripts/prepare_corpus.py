@@ -4,7 +4,7 @@ import hashlib,json,re,collections
 import pdfplumber
 from pdfplumber.utils import extract_text
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=ROOT/'data/source/personnel-policies.pdf'
+SOURCE=ROOT/'data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf'
 OUT=ROOT/'data/processed'
 STARTS=[1,4,8,13,16,19,23,28,31,34,47,50,56,72,122,149,154,158,163,167,170,173,175,178,184,186,189,206,224]
 TITLES=['教师在职攻读博士学位管理办法（修订）','高层次人才引进工作实施办法（2022年版）','高层次人才科研建设专项经费管理办法（试行）','“双师双能型”教师认定办法','思想政治理论课教师和辅导员队伍联动融合发展实施办法（试行）','思想政治理论课教师选聘与退出管理办法（试行）','辅导员队伍建设实施办法（试行）','兼职辅导员队伍建设实施细则（试行）','班主任队伍建设实施细则（试行）','辅导员考核办法','辅导员“双线晋升”实施办法（试行）','特设岗位计划实施办法','岗位设置与聘用管理实施办法（2022年版）','职称和岗位晋升评审工作实施办法（2022年版）','教职工岗位考核实施办法（2022年版）','师德师风考核实施办法（2022年版）','教师师德负面清单及失范行为处理办法（2022年版）','关于加强和改进新时代师德师风建设的实施意见','教职工考勤与请假管理规定','教职工考勤与请假管理补充规定','退休返聘人员管理办法（试行）','高级专家延长退休年龄实施办法（修订）','临时用工管理办法','教职工校内申诉处理暂行办法（修订）','教师服务期及违约补偿暂行规定','管理服务人员工作作风问题处理办法（试行）','研究成果分类分级认定办法（2022年版）','岗位绩效工资发放办法','教职工荣休工作办法']
@@ -93,7 +93,7 @@ def main():
    c['previous_chunk_id']=dc[i-1]['chunk_id'] if i else None
    c['next_chunk_id']=dc[i+1]['chunk_id'] if i+1<len(dc) else None
    c['related_table_chunks']=[q['chunk_id'] for q in dc if q['chunk_id']!=c['chunk_id'] and set(c['table_ids'])&set(q['table_ids'])]
- manifest={'source':'data/source/personnel-policies.pdf','sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'pages':len(pages),'documents':len(docs),'chunks':len(chunks),'tables':len(tables_all),'extraction':'pdfplumber; baseline-normalized glyph coordinates; table cells retained; source-specific header/footer removal','printed_page_offset':5}
+ manifest={'source':'data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf','sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'pages':len(pages),'documents':len(docs),'chunks':len(chunks),'tables':len(tables_all),'extraction':'pdfplumber; baseline-normalized glyph coordinates; table cells retained; source-specific header/footer removal','printed_page_offset':5}
  dump('pages.json',pages);dump('documents.json',docs);dump('chunks.json',chunks);dump('tables.json',tables_all);dump('extraction_checks.json',qa);dump('manifest.json',manifest)
  (OUT/'fulltext.md').write_text('\n\n'.join(f"<!-- PDF {p['pdf_page']} / 印刷 {p['printed_page']} -->\n"+p['text'] for p in pages),encoding='utf8')
  print(json.dumps(manifest,ensure_ascii=True),flush=True)

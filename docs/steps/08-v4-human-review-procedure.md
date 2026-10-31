@@ -95,5 +95,5 @@
 - 仅离线读取冻结v4问答、补齐后的有效评分和原文，新增模型请求为0。
 - 每项保留原问答、评分SHA-256，全部candidate-v4冻结文件已校验；没有改动分数、题库或源代码。
 - 可追溯JSON：正式人工复核-待填写.json；所有人工判断为null，human_review_complete为false。
-- 原始资料：E:/xiaoying/AItest/data/source/personnel-policies.pdf。
+- 原始资料：E:/xiaoying/AItest/data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf。
 - 复现脚本：work/build_v4_human_packet.py；canonical材料目录：examples/step08/v4/human-review-packet-r1/。

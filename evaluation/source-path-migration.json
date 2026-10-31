@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-31",
+  "reason": "用户要求按真实封面标题更名；不改变知识内容",
+  "old_path": "data/source/personnel-policies.pdf",
+  "new_path": "data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf",
+  "sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+  "title": "辽宁科技大学制度汇编（2023版第四卷）人事人才篇",
+  "publication_date": "2024-03",
+  "source_title_verified_by": "Codex查看PDF封面图像及前言",
+  "source_bytes_changed": false,
+  "modified_scripts": [
+    {
+      "path": "scripts/prepare_corpus.py",
+      "before_sha256": "840cc1c92ce93d25b9129746fae9f331502354db4f006c53fe596366159d3577",
+      "after_sha256": "e8368a34a77417bc84900911d0e3942707efdcf49b79d13a0e2bcd23dc29c4bc",
+      "allowed_edit": "仅把旧PDF相对路径替换为新名称；其他字符不变"
+    },
+    {
+      "path": "scripts/freeze_candidate.py",
+      "before_sha256": "88985f3272101f8aa23faf646c11b6c00ec8d7042afa0e1f799af1f8dc0d3c45",
+      "after_sha256": "fccbd141e397ce38f3f10343882745b36a09828de98dded64b2c47466a215a71",
+      "allowed_edit": "仅把旧PDF相对路径替换为新名称；其他字符不变"
+    }
+  ],
+  "desktop": {
+    "old_path": "D:/desktop/74A4A0D3E5ADE43E2CD84E5D427_0F62F9B5_4EBAE4.pdf",
+    "new_path": "D:/desktop/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf",
+    "result": "原始上传文件已更名，内容不变"
+  }
+}

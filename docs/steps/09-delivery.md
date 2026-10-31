@@ -32,3 +32,7 @@
 ## 按用户反馈补充百分比与可读问答
 
 将主要展示改为Agent任务通过率90%、基础RAG任务通过率85%、稳定性通过率90%；原始分子、分母、判分和冻结数据不变。新增docs/LATEST-TEST-RESULTS.md、两份对照/稳定性可读报告及FAILED-CASES.md，展示全部138轮真实一问一答、引用、动作与失败原因。生成命令为python scripts/render_last_round.py；校验见examples/submission/readable-report-audit.json。此轮仅离线整理，DeepSeek请求为0。
+
+## 后续内容口径与PDF名称更新
+
+用户进一步要求只将内容错误标失败，将符合PDF但依据未给全的答案判正确并说明。本次新统计独立保存，旧严格评分不覆盖；当前正确处理率Agent100.00%、基础RAG92.50%、稳定性100.00%，基础RAG3组工具未完成单列。全部138轮问答仍逐字展示，PDF按封面更名且哈希不变；新增DeepSeek请求0，68项程序测试通过。详见[步骤十](10-content-policy-and-pdf-name.md)。

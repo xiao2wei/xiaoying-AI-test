@@ -4,7 +4,7 @@
 
 ## 目标与输入
 
-仅处理指定 PDF。原件 SHA-256 与步骤一一致，229 页全部登记。原始副本为 data/source/personnel-policies.pdf。
+仅处理指定 PDF。原件 SHA-256 与步骤一一致，229 页全部登记。原始副本为 data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf。
 
 ## 实际产物
 

@@ -10,8 +10,20 @@ def check(out):
  record('required_files',all((r/p).is_file() for p in required),required)
  m=load(r/'examples/step07/candidate-v4/manifest.json');derived=[p for p in m['source_files'] if '.egg-info/' in p]
  controlled={p:h for p,h in m['source_files'].items() if p not in derived}|m['data_files']
- changed=[p for p,h in controlled.items() if not (r/p).is_file() or sha(r/p)!=h]
- record('frozen_controlled_files',not changed,{'checked':len(controlled),'changed':changed,'excluded_generated_packaging_metadata':derived,'reason':'egg-info为安装生成文件，原冻结清单保留；不作为跨目录可移植的源码承诺'})
+ migration=load(r/'evaluation/source-path-migration.json')
+ renamed={migration['old_path']:migration['new_path']}
+ adjusted={x['path']:x for x in migration['modified_scripts']}
+ changed=[]
+ for p,h in controlled.items():
+  current=r/renamed.get(p,p)
+  if not current.is_file():changed.append(p);continue
+  if p in adjusted:
+   import hashlib
+   restored=current.read_bytes().replace(migration['new_path'].encode('utf-8'),migration['old_path'].encode('utf-8'))
+   valid=hashlib.sha256(restored).hexdigest()==h and sha(current)==adjusted[p]['after_sha256']
+  else:valid=sha(current)==h
+  if not valid:changed.append(p)
+ record('frozen_controlled_files',not changed,{'checked':len(controlled),'changed':changed,'source_path_migration':migration,'excluded_generated_packaging_metadata':derived,'reason':'PDF字节不变；仅允许已记录的PDF路径迁移，两个脚本逆替换后须恢复原冻结哈希；egg-info为安装生成文件。'})
  ex=load(r/'examples/submission/manifest.json');record('six_acceptance_categories',len(ex)==6 and len({x['category'] for x in ex})==6)
  for x in ex:
   raw=load(r/x['run_source']);sc=load(r/x['score_source'])

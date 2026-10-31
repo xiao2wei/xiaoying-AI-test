@@ -1,0 +1,259 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "required_files",
+      "passed": true,
+      "detail": [
+        "README.md",
+        ".env.example",
+        "requirements.txt",
+        "pyproject.toml",
+        "constraints-tested.txt",
+        "docs/01-requirements.md",
+        "docs/02-solution.md",
+        "docs/03-evaluation.md",
+        "docs/04-ai-usage.md",
+        "docs/05-retrospective.md",
+        "docs/SUBMISSION.md",
+        "scripts/demo_offline.py"
+      ]
+    },
+    {
+      "check": "frozen_controlled_files",
+      "passed": true,
+      "detail": {
+        "checked": 65,
+        "changed": [],
+        "source_path_migration": {
+          "date": "2026-10-31",
+          "reason": "用户要求按真实封面标题更名；不改变知识内容",
+          "old_path": "data/source/personnel-policies.pdf",
+          "new_path": "data/source/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf",
+          "sha256": "28b2d518c7e9347883640ee0614503bdc3e3039ff01c2c4d7a2bfcb38be41d3e",
+          "title": "辽宁科技大学制度汇编（2023版第四卷）人事人才篇",
+          "publication_date": "2024-03",
+          "source_title_verified_by": "Codex查看PDF封面图像及前言",
+          "source_bytes_changed": false,
+          "modified_scripts": [
+            {
+              "path": "scripts/prepare_corpus.py",
+              "before_sha256": "840cc1c92ce93d25b9129746fae9f331502354db4f006c53fe596366159d3577",
+              "after_sha256": "e8368a34a77417bc84900911d0e3942707efdcf49b79d13a0e2bcd23dc29c4bc",
+              "allowed_edit": "仅把旧PDF相对路径替换为新名称；其他字符不变"
+            },
+            {
+              "path": "scripts/freeze_candidate.py",
+              "before_sha256": "88985f3272101f8aa23faf646c11b6c00ec8d7042afa0e1f799af1f8dc0d3c45",
+              "after_sha256": "fccbd141e397ce38f3f10343882745b36a09828de98dded64b2c47466a215a71",
+              "allowed_edit": "仅把旧PDF相对路径替换为新名称；其他字符不变"
+            }
+          ],
+          "desktop": {
+            "old_path": "D:/desktop/74A4A0D3E5ADE43E2CD84E5D427_0F62F9B5_4EBAE4.pdf",
+            "new_path": "D:/desktop/辽宁科技大学制度汇编（2023版第四卷）人事人才篇.pdf",
+            "result": "原始上传文件已更名，内容不变"
+          }
+        },
+        "excluded_generated_packaging_metadata": [
+          "src/xiaoying_policy_agent.egg-info/dependency_links.txt",
+          "src/xiaoying_policy_agent.egg-info/entry_points.txt",
+          "src/xiaoying_policy_agent.egg-info/requires.txt",
+          "src/xiaoying_policy_agent.egg-info/SOURCES.txt",
+          "src/xiaoying_policy_agent.egg-info/top_level.txt"
+        ],
+        "reason": "PDF字节不变；仅允许已记录的PDF路径迁移，两个脚本逆替换后须恢复原冻结哈希；egg-info为安装生成文件。"
+      }
+    },
+    {
+      "check": "six_acceptance_categories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_example_TEST36",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_actual_scores_present",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual_user_confirmation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "metric_acceptance_keeps_failures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "clean_environment_reproduction",
+      "passed": true,
+      "detail": [
+        {
+          "step": "01-create-venv",
+          "command": [
+            "F:\\Python\\py313\\python.exe",
+            "-m",
+            "venv",
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1"
+          ],
+          "exit_code": 0,
+          "seconds": 2.627
+        },
+        {
+          "step": "02-install",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "install",
+            "-c",
+            "constraints-tested.txt",
+            "-r",
+            "requirements.txt"
+          ],
+          "exit_code": 0,
+          "seconds": 217.213
+        },
+        {
+          "step": "03-pip-check",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "pip",
+            "check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.349
+        },
+        {
+          "step": "10-rebuild-index",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "policy_agent.cli",
+            "build-index"
+          ],
+          "exit_code": 0,
+          "seconds": 32.945
+        },
+        {
+          "step": "11-program-tests",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "scripts/run_tests.py",
+            "work/reproduced-tests.json"
+          ],
+          "exit_code": 0,
+          "seconds": 1.249
+        },
+        {
+          "step": "12-offline-demo",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "scripts/demo_offline.py",
+            "--out",
+            "work/reproduced-mock"
+          ],
+          "exit_code": 0,
+          "seconds": 0.687
+        },
+        {
+          "step": "13-cli-help",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-m",
+            "policy_agent.cli",
+            "--help"
+          ],
+          "exit_code": 0,
+          "seconds": 0.612
+        },
+        {
+          "step": "14-retrieval-smoke",
+          "command": [
+            "E:\\xiaoying\\AItest\\work\\delivery-venv-r1\\Scripts\\python.exe",
+            "-c",
+            "import json; from policy_agent.retrieval import Retriever; r=Retriever(); q=r.search('人才科研建设专项经费项目最长执行多久'); assert q['ok'] and len(q['hits'])==5; ids=[x['chunk_id'] for x in q['hits']]; assert 'D03-C008' in ids; a=r.read('D03-C008'); assert a['ok']; print(json.dumps({'hits':ids,'read':a['chunk']['chunk_id']},ensure_ascii=False))"
+          ],
+          "exit_code": 0,
+          "seconds": 1.011
+        }
+      ]
+    },
+    {
+      "check": "offline_mock_separated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "real_document_view_change",
+      "passed": true,
+      "detail": {
+        "both_real_models": true,
+        "single_has_evidence": true,
+        "both_reads_conflict": true,
+        "output_changed": true
+      }
+    },
+    {
+      "check": "personal_time_honest",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "private_and_generated_files_excluded",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_detected_live_secrets",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "no_internal_reasoning_body",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "file_size_limits",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "candidate_file_count": 2529,
+  "candidate_size_bytes": 51264701,
+  "new_model_requests": 0,
+  "note": "程序交付检查不证明全部模型答案正确；人工确认和已知质量失败单独保留。"
+}
