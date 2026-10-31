@@ -4,6 +4,15 @@
 
 本项目已具备完整提交材料，六类验收能力均有真实通过案例。正式结果保留已知失败和关键缺陷标记；覆盖验收点不等于所有输入都正确，也不保证评审评分。用户已接受本轮指标差距并确认正式复核清单，原始数值与判定没有更改。
 
+## 最后一轮可直接阅读的结果
+
+- **[汇总指标与Agent全部真实一问一答](LATEST-TEST-RESULTS.md)**：40组、51轮，含多轮上下文、实际答案、通过状态和原因。
+- [基础RAG全部真实一问一答](reports/v4-baseline-qa.md)：40组、51轮。
+- [稳定性每次真实一问一答](reports/v4-stability-qa.md)：30次、36轮。
+- [未通过案例的通俗说明](FAILED-CASES.md)。
+
+这些内容直接从本轮真实运行文件提取，未改写模型回答，原文引用与工具路径可展开。原JSON继续作为溯源材料，不必先读JSON才能理解结果。
+
 ## 交付清单
 
 |考核要求|本项目交付|证据入口|
@@ -11,9 +20,9 @@
 |用户、范围、成功标准|教职工人事制度查询；唯一PDF|[需求](01-requirements.md)|
 |可运行CLI与配置|克隆、虚拟环境、依赖、建索引、问答、多轮批处理命令|[README](../README.md)、[配置](../.env.example)|
 |代码与工具|原生Python；search、read；真实DeepSeek动作|[Agent](../src/policy_agent/agent.py)、[工具](../src/policy_agent/tools.py)|
-|回答、ID、原文、缺口、状态|claims/citations、gaps、status、answer，引用附双页码|[正常实际结果](../examples/submission/TEST02.json)|
+|回答、ID、原文、缺口、状态|claims/citations、gaps、status、answer，引用附双页码|[正常实际问答](LATEST-TEST-RESULTS.md#test02)|
 |动态循环与至少两条路径|直接回答、发现冲突后补查、无资料改写查询、工具错误后重试|[六类路径](../examples/submission/README.md)|
-|执行上限|12轮决策、10次工具尝试，失败和每次批量读取均计数|[真实限额退出](../examples/step08/v4/agent-runs/TEST40.json)|
+|执行上限|12轮决策、10次工具尝试，失败和每次批量读取均计数|[限额退出的实际问答](LATEST-TEST-RESULTS.md#test40)|
 |六个必验收点|TEST02、13、19、26、31、36，均有输入/输出/Trace|[示例目录](../examples/submission/README.md)|
 |替换资料后的行为|同一问题切换唯一PDF中的可见制度范围，真实模型输出改变|[扰动结果](../examples/submission/evidence-change/summary.json)|
 |可执行测试|61/61，含检索、引用、预算、模型故障、评测公式等|[新环境测试](../examples/submission/reproduction/program-tests.json)|
@@ -27,7 +36,7 @@
 
 ## 质量结果与保留限制
 
-- Agent36/40，基础RAG34/40，稳定性27/30。Recall@5为95.83%，最终证据覆盖97.14%；P95为18.55秒。
+- Agent任务通过率90%，基础RAG任务通过率85%，关键场景稳定性通过率90%。Recall@5为95.83%，最终证据覆盖97.14%；P95为18.55秒。
 - 正式未通过TEST11、TEST18、TEST21、TEST25；稳定性另有3次失败。引用支持99.04%、无依据事实0.48%，3个关键缺陷场景标记保留。
 - 原20项门槛14项通过；项目负责人明确接受当前差距，未把未达标数值改成达标。完整数值见[本轮结果](steps/08-v4-completed-results.md)。
 - 正式题库已用于返修，当前成绩是回归结果。未验证任意新PDF整套自动切分；资料变化测试只改变同一PDF内可见制度。
@@ -40,3 +49,5 @@
 首次复现发现原README在构建索引前运行集成测试，已修正安装顺序；失败尝试和修复记录保留。正式问答算法与原候选受控文件未更改，交付仅增加演示、核验脚本、依赖约束和文档。新证据变化测试共2次真实Agent任务、12个模型请求，单独统计；其余交付核验没有新增DeepSeek请求。
 
 不需要界面、线上部署、多Agent或生产Runtime，这些未实现且不作为本题缺失交付项。提交历史、材料与日志位于同一仓库；最终提交SHA由Git提供，避免在提交内容中写入其自身SHA。
+
+未通过场景的输入、实际回答及判定原因见[失败案例说明](FAILED-CASES.md)。本次展示改为百分比，原始统计计数和分数不变。

@@ -28,3 +28,7 @@
 本文件随交付提交保存。最终commit SHA使用git rev-parse HEAD获取，远端用git ls-remote origin refs/heads/main核对；推送成功与最终SHA在对话交付记录中提供，不在提交内容中伪造自引用SHA。未新增界面、部署或多Agent服务。
 
 本次隔离复现成功步骤耗时合计：256.693秒（不含中止的首次测试等待，不等于人工工时）。新增资料变化验证：12个真实模型请求、56322 tokens。
+
+## 按用户反馈补充百分比与可读问答
+
+将主要展示改为Agent任务通过率90%、基础RAG任务通过率85%、稳定性通过率90%；原始分子、分母、判分和冻结数据不变。新增docs/LATEST-TEST-RESULTS.md、两份对照/稳定性可读报告及FAILED-CASES.md，展示全部138轮真实一问一答、引用、动作与失败原因。生成命令为python scripts/render_last_round.py；校验见examples/submission/readable-report-audit.json。此轮仅离线整理，DeepSeek请求为0。
